@@ -1,0 +1,30 @@
+{
+    "name": "cantie/app-store-connect-api",
+    "description": "A PHP client library for accessing App Store Connect APIs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Long Pham",
+            "email": "cantie912@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "google/auth": "^1.10",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "nesbot/carbon": "^2.31",
+        "firebase/php-jwt": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Cantie\\AppStoreConnect\\": "src/"
+        },
+        "files": [
+            "src/aliases.php"
+        ],
+        "classmap": [
+            "src/aliases.php"
+        ]
+    }
+}
