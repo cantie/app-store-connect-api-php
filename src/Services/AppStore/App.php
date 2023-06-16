@@ -9,11 +9,9 @@ class App extends \Cantie\AppStoreConnect\Model
     protected $linksType = ResourceLinks::class;
     protected $linksDataType = '';
 
-    public AppAttributes $attributes;
     public $id;
     // public $relationships;
     public $type;
-    public ResourceLinks $links;
 
     /**
      * Get the value of attributes

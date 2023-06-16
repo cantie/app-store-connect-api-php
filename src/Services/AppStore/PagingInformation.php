@@ -54,8 +54,6 @@ class PagingInformation extends \Cantie\AppStoreConnect\Model
     protected $pagingType = PagingInformation_Paging::class;
     protected $pagingDataType = '';
 
-    public PagingInformation_Paging $paging;
-
     /**
      * Get the value of paging
      */

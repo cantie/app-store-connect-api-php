@@ -14,9 +14,6 @@ class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Collection
     protected $metaType = PagingInformation::class;
     protected $metaDataType = '';
 
-    public PagedDocumentLinks $links;
-    public PagingInformation $meta;
-
     /**
      * @param CustomerReview[]
      */
