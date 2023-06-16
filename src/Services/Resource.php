@@ -127,7 +127,6 @@ class Resource
           'type' => 'string'
       ];
     }
-
     // TODO: optParams here probably should have been
     // handled already - this may well be redundant code.
     if (isset($parameters['optParams'])) {
@@ -146,7 +145,7 @@ class Resource
     );
 
     foreach ($parameters as $key => $val) {
-      if ($key != 'postBody' && $key != 'cursor' && !isset($method['parameters'][$key])) {
+      if ($key != 'postBody' && ! isset($method['parameters'][$key])) {
         $this->client->getLogger()->error(
             'Service parameter unknown',
             array(
@@ -196,7 +195,6 @@ class Resource
             'arguments' => $parameters,
         )
     );
-    
     // build the service uri
     $url = $this->createRequestUri(
         $method['path'],
@@ -300,6 +298,7 @@ class Resource
         }
       }
     }
+
     if (count($uriTemplateVars)) {
       $uriTemplateParser = new UriTemplate();
       $requestUrl = $uriTemplateParser->parse($requestUrl, $uriTemplateVars);
