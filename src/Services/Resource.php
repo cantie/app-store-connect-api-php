@@ -118,7 +118,7 @@ class Resource
 
     // add config for cursor if this param existed.
     // add it here for all APIs
-    if ($parameters['cursor'] == null) {
+    if (isset($parameters['cursor']) && $parameters['cursor'] == null) {
       unset($parameters['cursor']);
     }
     if (isset($parameters['cursor'])) {
