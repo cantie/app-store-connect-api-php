@@ -95,6 +95,12 @@ class Resource
       );
     }
     $method = $this->methods[$name];
+    // add config for cursor if this param existed.
+    // add it here for all APIs
+    $method['parameters']['cursor'] = [
+      'location' => 'query',
+      'type' => 'string'
+    ];
     $parameters = $arguments[0];
 
     // postBody is a special case since it's not defined in the discovery
@@ -116,16 +122,8 @@ class Resource
       unset($parameters['postBody']);
     }
 
-    // add config for cursor if this param existed.
-    // add it here for all APIs
     if (isset($parameters['cursor']) && $parameters['cursor'] == null) {
       unset($parameters['cursor']);
-    }
-    if (isset($parameters['cursor'])) {
-      $method['parameters']['cursor'] = [
-          'location' => 'query',
-          'type' => 'string'
-      ];
     }
     // TODO: optParams here probably should have been
     // handled already - this may well be redundant code.

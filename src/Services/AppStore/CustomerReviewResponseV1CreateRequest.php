@@ -53,7 +53,6 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review extends \C
 {
     protected $dataType = CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data::class;
     protected $dataDataType = '';
-    public CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data $data;
 
     public function getData()
     {
@@ -70,7 +69,6 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationship extends \Cantie\Ap
     
     protected $reviewType = CustomerReviewResponseV1CreateRequest_Data_Relationships_Review::class;
     protected $reviewDataType = '';
-    public CustomerReviewResponseV1CreateRequest_Data_Relationships_Review $review;
 
     /**
      * Get the value of review
@@ -100,8 +98,6 @@ class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect
     protected $attributesDataType = '';
     protected $relationshipsType = CustomerReviewResponseV1CreateRequest_Data_Relationship::class;
     protected $relationshipsDataType = '';
-    public CustomerReviewResponseV1CreateRequest_Data_Attributes $attributes;
-    public CustomerReviewResponseV1CreateRequest_Data_Relationship $relationships;
     public $type = 'customerReviewResponses';
 
     /**
@@ -170,8 +166,6 @@ class CustomerReviewResponseV1CreateRequest extends \Cantie\AppStoreConnect\Mode
 
     protected $dataType = CustomerReviewResponseV1CreateRequest_Data::class;
     protected $dataDataType = '';
-
-    public CustomerReviewResponseV1CreateRequest_Data $data;
 
     /**
      * Get the value of data

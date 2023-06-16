@@ -14,9 +14,6 @@ class CustomerReviewResponseV1Response extends \Cantie\AppStoreConnect\Collectio
     protected $linksType = DocumentLinks::class;
     protected $linksDataType = '';
 
-    public CustomerReviewResponseV1 $data;
-    public DocumentLinks $links;
-
     /**
      * @param CustomerReviewResponseV1
      */

@@ -10,9 +10,6 @@ class CustomerReviewResponse extends \Cantie\AppStoreConnect\Model
     protected $linksType = DocumentLinks::class;
     protected $linksDataType = '';
 
-    public CustomerReview $data;
-    public DocumentLinks $links;
-
     /**
      * @param CustomerReview
      */
