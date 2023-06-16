@@ -116,6 +116,18 @@ class Resource
       unset($parameters['postBody']);
     }
 
+    // add config for cursor if this param existed.
+    // add it here for all APIs
+    if ($parameters['cursor'] == null) {
+      unset($parameters['cursor']);
+    }
+    if (isset($parameters['cursor'])) {
+      $method['parameters']['cursor'] = [
+          'location' => 'query',
+          'type' => 'string'
+      ];
+    }
+
     // TODO: optParams here probably should have been
     // handled already - this may well be redundant code.
     if (isset($parameters['optParams'])) {
@@ -134,7 +146,7 @@ class Resource
     );
 
     foreach ($parameters as $key => $val) {
-      if ($key != 'postBody' && ! isset($method['parameters'][$key])) {
+      if ($key != 'postBody' && $key != 'cursor' && !isset($method['parameters'][$key])) {
         $this->client->getLogger()->error(
             'Service parameter unknown',
             array(
@@ -184,7 +196,7 @@ class Resource
             'arguments' => $parameters,
         )
     );
-
+    
     // build the service uri
     $url = $this->createRequestUri(
         $method['path'],
@@ -279,15 +291,15 @@ class Resource
         $uriTemplateVars[$paramName] = $paramSpec['value'];
       } else if ($paramSpec['location'] == 'query') {
         if (is_array($paramSpec['value'])) {
-          foreach ($paramSpec['value'] as $value) {
-            $queryVars[] = $paramName . '=' . rawurlencode(rawurldecode($value));
-          }
+          // foreach ($paramSpec['value'] as $value) {
+          //   $queryVars[] = $paramName . '=' . rawurlencode(rawurldecode($value));
+          // }
+          $queryVars[] = $paramName . '=' . rawurlencode(implode(',', $paramSpec['value']));
         } else {
           $queryVars[] = $paramName . '=' . rawurlencode(rawurldecode($paramSpec['value']));
         }
       }
     }
-
     if (count($uriTemplateVars)) {
       $uriTemplateParser = new UriTemplate();
       $requestUrl = $uriTemplateParser->parse($requestUrl, $uriTemplateVars);
