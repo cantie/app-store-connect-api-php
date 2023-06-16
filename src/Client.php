@@ -242,7 +242,7 @@ class Client
         return REST::execute(
             $http,
             $request,
-            $expectedClass,
+            $expectedClass
             // $this->config['retry'],
             // $this->config['retry_map']
         );

@@ -18,7 +18,7 @@ namespace Cantie\AppStoreConnect\Http;
 
 use Google\Auth\HttpHandler\HttpHandlerFactory;
 use Cantie\AppStoreConnect\Client;
-use Google\Task\Runner;
+use Cantie\AppStoreConnect\Task\Runner;
 use Cantie\AppStoreConnect\Services\Exception as AppleServiceException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;

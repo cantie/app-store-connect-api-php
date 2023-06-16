@@ -95,6 +95,12 @@ class Resource
       );
     }
     $method = $this->methods[$name];
+    // add config for cursor if this param existed.
+    // add it here for all APIs
+    $method['parameters']['cursor'] = [
+      'location' => 'query',
+      'type' => 'string'
+    ];
     $parameters = $arguments[0];
 
     // postBody is a special case since it's not defined in the discovery
@@ -116,6 +122,9 @@ class Resource
       unset($parameters['postBody']);
     }
 
+    if (isset($parameters['cursor']) && $parameters['cursor'] == null) {
+      unset($parameters['cursor']);
+    }
     // TODO: optParams here probably should have been
     // handled already - this may well be redundant code.
     if (isset($parameters['optParams'])) {
@@ -184,7 +193,6 @@ class Resource
             'arguments' => $parameters,
         )
     );
-
     // build the service uri
     $url = $this->createRequestUri(
         $method['path'],
@@ -279,9 +287,10 @@ class Resource
         $uriTemplateVars[$paramName] = $paramSpec['value'];
       } else if ($paramSpec['location'] == 'query') {
         if (is_array($paramSpec['value'])) {
-          foreach ($paramSpec['value'] as $value) {
-            $queryVars[] = $paramName . '=' . rawurlencode(rawurldecode($value));
-          }
+          // foreach ($paramSpec['value'] as $value) {
+          //   $queryVars[] = $paramName . '=' . rawurlencode(rawurldecode($value));
+          // }
+          $queryVars[] = $paramName . '=' . rawurlencode(implode(',', $paramSpec['value']));
         } else {
           $queryVars[] = $paramName . '=' . rawurlencode(rawurldecode($paramSpec['value']));
         }

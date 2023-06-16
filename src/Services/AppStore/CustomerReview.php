@@ -140,9 +140,7 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
     protected $linksType = ResourceLinks::class;
     protected $linksDataType = '';
 
-    public CustomerReview_Attributes $attributes;
     public $id;
-    public ResourceLinks $links;
     // public $relationships;
     public $type; // = 'customerReviews'
 
