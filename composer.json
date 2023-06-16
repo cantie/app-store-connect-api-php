@@ -1,6 +1,7 @@
 {
     "name": "cantie/app-store-connect-api",
     "description": "A PHP client library for accessing App Store Connect APIs",
+    "keywords": ["apple", "appstore", "connect", "api"],
     "license": "MIT",
     "authors": [
         {
