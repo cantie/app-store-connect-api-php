@@ -133,15 +133,111 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
     }
 }
 
+class CustomerReview_Relationships_Response_Data extends \Cantie\AppStoreConnect\Model
+{
+    public $id;
+    public $type;
+
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+    public function getType()
+    {
+        return $this->type;
+    }
+    public function setType($type)
+    {
+        $this->type = $type;
+        return $this;
+    }
+}
+class CustomerReview_Relationships_Response_Links extends \Cantie\AppStoreConnect\Model
+{
+    public $related;
+    public $self;
+
+    public function getRelated()
+    {
+        return $this->related;
+    }
+    public function seRelated($related)
+    {
+        $this->related = $related;
+        return $this;
+    }
+    public function getSelf()
+    {
+        return $this->self;
+    }
+    public function setType($self)
+    {
+        $this->self = $self;
+        return $this;
+    }
+}
+
+class CustomerReview_Relationships_Response extends \Cantie\AppStoreConnect\Model
+{
+    protected $dataType = CustomerReview_Relationships_Response_Data::class;
+    protected $dataDataType = '';
+
+    protected $linksType = CustomerReview_Relationships_Response_Links::class;
+    protected $linksDataType = '';
+
+    public function getData()
+    {
+        return $this->data;
+    }
+    public function setData($data)
+    {
+        $this->data = $data;
+        return $this;
+    }
+    public function getLinks()
+    {
+        return $this->links;
+    }
+    public function setLinks($links)
+    {
+        $this->links = $links;
+        return $this;
+    }
+}
+
+class CustomerReview_Relationships extends \Cantie\AppStoreConnect\Model
+{
+    protected $responseType = CustomerReview_Relationships_Response::class;
+    protected $responseDataType = '';
+
+    public function getResponse()
+    {
+        return $this->response;
+    }
+
+    public function setResponse($response)
+    {
+        $this->response = $response;
+
+        return $this;
+    }
+}
+
 class CustomerReview extends \Cantie\AppStoreConnect\Model
 {
     protected $attributesType = CustomerReview_Attributes::class;
     protected $attributesDataType = '';
+    protected $relationshipsType = CustomerReview_Relationships::class;
+    protected $relationshipsDataType = '';
     protected $linksType = ResourceLinks::class;
     protected $linksDataType = '';
 
     public $id;
-    // public $relationships;
     public $type; // = 'customerReviews'
 
     /**
@@ -187,22 +283,22 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
     /**
      * Get the value of relationships
      */
-    // public function getRelationships()
-    // {
-    //     return $this->relationships;
-    // }
+    public function getRelationships()
+    {
+        return $this->relationships;
+    }
 
     /**
      * Set the value of relationships
      *
      * @return  self
      */
-    // public function setRelationships($relationships)
-    // {
-    //     $this->relationships = $relationships;
+    public function setRelationships($relationships)
+    {
+        $this->relationships = $relationships;
 
-    //     return $this;
-    // }
+        return $this;
+    }
 
     /**
      * Get the value of type
@@ -243,7 +339,9 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 
         return $this;
     }
+
 }
 
 class_alias(CustomerReview_Attributes::class, 'AppleService_AppStore_CustomerReview_Attributes');
+class_alias(CustomerReview_Relationships::class, 'AppleService_AppStore_CustomerReview_Relationships');
 class_alias(CustomerReview::class, 'AppleService_AppStore_CustomerReview');
