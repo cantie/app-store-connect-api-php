@@ -295,12 +295,16 @@ class InAppPurchaseV2CreateRequest extends \Cantie\AppStoreConnect\Model
         return $this;
     }
 
-    public function makeData($inAppPurchaseType, $name, $productId, $appId)
+    public function makeData($inAppPurchaseType, $name, $productId, $appId, $availableInAllTerritories = true,
+        $familySharable = true, $reviewNote = "")
     {
         $attributes = new InAppPurchaseV2CreateRequest_Data_Attributes();
         $attributes->setInAppPurchaseType($inAppPurchaseType);
         $attributes->setName($name);
         $attributes->setProductId($productId);
+        $attributes->setAvailableInAllTerritories($availableInAllTerritories);
+        $attributes->setFamilySharable($familySharable);
+        $attributes->setReviewNote($reviewNote);
 
         $relationshipsAppData = new InAppPurchaseV2CreateRequest_Data_Relationships_App_Data();
         $relationshipsAppData->setId($appId);

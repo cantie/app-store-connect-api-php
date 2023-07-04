@@ -595,7 +595,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                     ],
                     'listPricePoints' => [
                         'path' => 'v2/inAppPurchases/{id}/pricePoints',
-                        'httpMethod' => 'DELETE',
+                        'httpMethod' => 'GET',
                         'parameters' => [
                             'id' => [
                                 'location' => 'path',
