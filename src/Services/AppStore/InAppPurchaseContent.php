@@ -2,7 +2,7 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseContent_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
     public $id;
     public $type;
@@ -27,7 +27,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data e
     }
 }
 
-class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseContent_Relationships_InAppPurchaseV2_Links extends \Cantie\AppStoreConnect\Model
 {
     public $related;
     public $self;
@@ -52,12 +52,12 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links 
     }
 }
 
-class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseContent_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
-    protected $dataType = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data::class;
+    protected $dataType = InAppPurchaseContent_Relationships_InAppPurchaseV2_Data::class;
     protected $dataDataType = '';
 
-    protected $linksType = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links::class;
+    protected $linksType = InAppPurchaseContent_Relationships_InAppPurchaseV2_Links::class;
     protected $linksDataType = '';
 
     public function getData()
@@ -80,13 +80,13 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extend
     }
 }
 
-class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseContent_Relationships extends \Cantie\AppStoreConnect\Model
 {
-    protected $inAppPurchaseV2Type = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2::class;
+    protected $inAppPurchaseV2Type = InAppPurchaseContent_Relationships_InAppPurchaseV2::class;
     protected $inAppPurchaseV2DataType = '';
 
     /**
-     * Get the value of inAppPurchaseV2
+     * Get the value of territory
      */ 
     public function getInAppPurchaseV2()
     {
@@ -94,7 +94,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppSto
     }
 
     /**
-     * Set the value of inAppPurchaseV2
+     * Set the value of territory
      *
      * @return  self
      */ 
@@ -106,85 +106,12 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppSto
     }
 }
 
-class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreConnect\Collection
+class InAppPurchaseContent_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    protected $assetDeliveryStateType = AppMediaAssetState::class;
-    protected $assetDeliveryStateDataType = '';
-
-    public $assetToken;
-    public $assetType;
     public $fileName;
     public $fileSize;
-    
-    protected $imageAssetType = ImageAsset::class;
-    protected $imageAssetDataType = '';
-
-    public $sourceFileChecksum;
-    public $uploadOperations;
-    
-    protected $collection_key = 'uploadOperations';
-    protected $uploadOperationsType = UploadOperation::class;
-    protected $uploadOperationsDataType = 'array';
-
-    /**
-     * Get the value of assetDeliveryState
-     */ 
-    public function getAssetDeliveryState()
-    {
-        return $this->assetDeliveryState;
-    }
-
-    /**
-     * Set the value of assetDeliveryState
-     *
-     * @return  self
-     */ 
-    public function setAssetDeliveryState($assetDeliveryState)
-    {
-        $this->assetDeliveryState = $assetDeliveryState;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of assetToken
-     */ 
-    public function getAssetToken()
-    {
-        return $this->assetToken;
-    }
-
-    /**
-     * Set the value of assetToken
-     *
-     * @return  self
-     */ 
-    public function setAssetToken($assetToken)
-    {
-        $this->assetToken = $assetToken;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of assetType
-     */ 
-    public function getAssetType()
-    {
-        return $this->assetType;
-    }
-
-    /**
-     * Set the value of assetType
-     *
-     * @return  self
-     */ 
-    public function setAssetType($assetType)
-    {
-        $this->assetType = $assetType;
-
-        return $this;
-    }
+    public $lastModifiedDate;
+    public $url;
 
     /**
      * Get the value of fileName
@@ -227,77 +154,57 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
     }
 
     /**
-     * Get the value of imageAsset
+     * Get the value of lastModifiedDate
      */ 
-    public function getImageAsset()
+    public function getLastModifiedDate()
     {
-        return $this->imageAsset;
+        return $this->lastModifiedDate;
     }
 
     /**
-     * Set the value of imageAsset
+     * Set the value of lastModifiedDate
      *
      * @return  self
      */ 
-    public function setImageAsset($imageAsset)
+    public function setLastModifiedDate($lastModifiedDate)
     {
-        $this->imageAsset = $imageAsset;
+        $this->lastModifiedDate = $lastModifiedDate;
 
         return $this;
     }
 
     /**
-     * Get the value of sourceFileChecksum
+     * Get the value of url
      */ 
-    public function getSourceFileChecksum()
+    public function getUrl()
     {
-        return $this->sourceFileChecksum;
+        return $this->url;
     }
 
     /**
-     * Set the value of sourceFileChecksum
+     * Set the value of url
      *
      * @return  self
      */ 
-    public function setSourceFileChecksum($sourceFileChecksum)
+    public function setUrl($url)
     {
-        $this->sourceFileChecksum = $sourceFileChecksum;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of uploadOperations
-     */ 
-    public function getUploadOperations()
-    {
-        return $this->uploadOperations;
-    }
-
-    /**
-     * Set the value of uploadOperations
-     *
-     * @return  self
-     */ 
-    public function setUploadOperations($uploadOperations)
-    {
-        $this->uploadOperations = $uploadOperations;
+        $this->url = $url;
 
         return $this;
     }
 }
 
-class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseContent extends \Cantie\AppStoreConnect\Model
 {
-    protected $attributesType = InAppPurchaseAppStoreReviewScreenshot_Attributes::class;
+    protected $attributesType = InAppPurchaseContent_Attributes::class;
     protected $attributesDataType = '';
-    protected $relationshipsType = InAppPurchaseAppStoreReviewScreenshot_Relationships::class;
+    protected $relationshipsType = InAppPurchaseContent_Relationships::class;
     protected $relationshipsDataType = '';
     protected $linksType = ResourceLinks::class;
     protected $linksDataType = '';
 
     public $id;
-    public $type; // = 'inAppPurchaseAppStoreReviewScreenshots'
+    public $type; // = 'inAppPurchaseContents'
 
     /**
      * Get the value of attributes
@@ -401,6 +308,6 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 
 }
 
-class_alias(InAppPurchaseAppStoreReviewScreenshot::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot');
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Attributes');
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships');
+class_alias(InAppPurchaseContent::class, 'AppleService_AppStore_InAppPurchaseContent');
+class_alias(InAppPurchaseContent_Attributes::class, 'AppleService_AppStore_InAppPurchaseContent_Attributes');
+class_alias(InAppPurchaseContent_Relationships::class, 'AppleService_AppStore_InAppPurchaseContent_Relationships');

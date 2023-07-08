@@ -449,7 +449,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                         'httpMethod' => 'POST',
                         'parameters' => []
                     ],
-                    'readIAP' => [
+                    'getIAP' => [
                         'path' => 'v2/inAppPurchases/{id}',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -503,7 +503,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'listAllAppIAP' => [
+                    'listIAPs' => [
                         'path' => 'v1/apps/{id}/inAppPurchasesV2',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -573,7 +573,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'modifyIAP' => [
+                    'updateIAP' => [
                         'path' => 'v2/inAppPurchases/{id}',
                         'httpMethod' => 'PATCH',
                         'parameters' => [
@@ -627,7 +627,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readPromotedPurchase' => [
+                    'getPromotedPurchase' => [
                         'path' => 'v2/inAppPurchases/{id}/promotedPurchase',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -661,7 +661,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'listAllLocalizations' => [
+                    'listLocalizations' => [
                         'path' => 'v2/inAppPurchases/{id}/inAppPurchaseLocalizations',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -687,7 +687,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readReviewScreenshot' => [
+                    'getReviewScreenshot' => [
                         'path' => 'v2/inAppPurchases/{id}/appStoreReviewScreenshot',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -714,7 +714,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                         'httpMethod' => 'POST',
                         'parameters' => []
                     ],
-                    'readPriceSchedule' => [
+                    'getPriceSchedule' => [
                         'path' => 'v2/inAppPurchases/{id}/iapPriceSchedule',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -752,7 +752,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readContent' => [
+                    'getContentByIAPId' => [
                         'path' => 'v2/inAppPurchases/{id}/content',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -774,7 +774,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readContentV1' => [
+                    'getContentByContentId' => [
                         'path' => 'v1/inAppPurchaseContents/{id}',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -792,7 +792,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readAvailability' => [
+                    'getAvailability' => [
                         'path' => 'v2/inAppPurchases/{id}/inAppPurchaseAvailability',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -818,38 +818,12 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'listLocalizations' => [
-                        'path' => 'v2/inAppPurchases/{id}/inAppPurchaseLocalizations',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[inAppPurchaseLocalizations]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[inAppPurchases]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ]
-                        ]
-                    ],
                     'createLocalization' => [
                         'path' => 'v1/inAppPurchaseLocalizations',
                         'httpMethod' => 'POST',
                         'parameters' => []
                     ],
-                    'readLocalization' => [
+                    'getLocalization' => [
                         'path' => 'v1/inAppPurchaseLocalizations/{id}',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -867,7 +841,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'modifyLocalization' => [
+                    'updateLocalization' => [
                         'path' => 'v1/inAppPurchaseLocalizations/{id}',
                         'httpMethod' => 'PATCH',
                         'parameters' => [
@@ -887,41 +861,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readPriceSchedule' => [
-                        'path' => 'v1/inAppPurchasePriceSchedules/{id}',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[inAppPurchasePriceSchedules]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[inAppPurchasePrices]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit[manualPrices]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'fields[territories]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit[automaticPrices]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                        ]
-                    ],
-                    'readPriceSchedulePrice' => [
+                    'getPriceSchedulePrice' => [
                         'path' => 'v1/inAppPurchasePriceSchedules/{id}/manualPrices',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -955,7 +895,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'addScheduledPriceChange' => [
+                    'createScheduledPrice' => [
                         'path' => 'v1/inAppPurchasePriceSchedules',
                         'httpMethod' => 'POST',
                         'parameters' => []
@@ -994,7 +934,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readSelectedBaseTerritory' => [
+                    'getBaseTerritory' => [
                         'path' => 'v1/inAppPurchasePriceSchedules/{id}/baseTerritory',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -1008,19 +948,56 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ]
                         ]
                     ],
-                    'readAvailability' => [
-                        
+                    'getAvailabilityV1' => [
+                        'path' => 'v1/inAppPurchaseAvailabilities/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[inAppPurchaseAvailabilities]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[territories]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[availableTerritories]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ]
+                        ]
                     ],
-                    'listTerritoryAvailable' => [
-
+                    'listAvailableTerritories' => [
+                        'path' => 'v1/inAppPurchaseAvailabilities/{id}/availableTerritories',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[territories]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ]
+                        ]
                     ],
-                    'modifyTerritoryAvailable' => [
-
+                    'updateAvailableTerritory' => [
+                        'path' => 'v1/inAppPurchaseAvailabilities',
+                        'httpMethod' => 'POST',
+                        'parameters' => []
                     ],
-                    'createReviewSubmission' => [
-
-                    ],
-                    'readReviewScreenshot' => [
+                    'getReviewScreenshotV1' => [
                         'path' => 'v1/inAppPurchaseAppStoreReviewScreenshots/{id}',
                         'httpMethod' => 'GET',
                         'parameters' => [

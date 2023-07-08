@@ -2,24 +2,20 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class InAppPurchasePricePointsResponse extends \Cantie\AppStoreConnect\Collection
+class TerritoriesResponse extends \Cantie\AppStoreConnect\Collection
 {
-
     protected $collection_key = 'data';
-    protected $dataType = InAppPurchasePricePoint::class;
+    protected $dataType = Territory::class;
     protected $dataDataType = 'array';
 
-    protected $includedType = Territory::class;
-    protected $includedDataType = 'array';
-
-    protected $linksType = PagedDocumentLinks::class;
+    protected $linksType = DocumentLinks::class;
     protected $linksDataType = '';
 
     protected $metaType = PagingInformation::class;
     protected $metaDataType = '';
-
+    
     /**
-     * @param InAppPurchasePricePoint[]
+     * @param Territory
      */
     public function setData($data)
     {
@@ -27,27 +23,11 @@ class InAppPurchasePricePointsResponse extends \Cantie\AppStoreConnect\Collectio
     }
 
     /**
-     * @return InAppPurchasePricePoint[]
+     * @return Territory
      */
     public function getData()
     {
         return $this->data;
-    }
-    
-    /**
-     * @return Territory[]
-     */
-    public function getIncluded()
-    {
-        return $this->included;
-    }
-
-    /**
-     * @param Territory[]
-     */
-    public function setIncluded($included)
-    {
-        $this->included = $included;
     }
 
     /**
@@ -91,4 +71,4 @@ class InAppPurchasePricePointsResponse extends \Cantie\AppStoreConnect\Collectio
     }
 }
 
-class_alias(InAppPurchasePricePointsResponse::class, 'AppleService_AppStore_InAppPurchasePricePointsResponse');
+class_alias(TerritoriesResponse::class, 'AppleService_AppStore_TerritoriesResponse');

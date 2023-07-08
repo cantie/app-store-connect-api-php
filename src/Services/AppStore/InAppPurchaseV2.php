@@ -364,7 +364,7 @@ class InAppPurchaseV2_Relationships_PricePoints_Links extends \Cantie\AppStoreCo
         return $this;
     }
 }
-class InAppPurchaseV2_Relationships_PricePoints extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseV2_Relationships_PricePoints extends \Cantie\AppStoreConnect\Collection
 {
     protected $collection_key = 'data';
     protected $dataType = InAppPurchaseV2_Relationships_PricePoints_Data::class;
@@ -427,7 +427,7 @@ class InAppPurchaseV2_Relationships_InAppPurchaseLocalizations_Links extends \Ca
     }
 }
 
-class InAppPurchaseV2_Relationships_InAppPurchaseLocalizations extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseV2_Relationships_InAppPurchaseLocalizations extends \Cantie\AppStoreConnect\Collection
 {
     protected $collection_key = 'data';
     protected $dataType = InAppPurchaseV2_Relationships_InAppPurchaseLocalizations_Data::class;

@@ -6,7 +6,7 @@ class InAppPurchaseV2Response extends \Cantie\AppStoreConnect\Collection
 {
 
     // protected $collection_key = 'included';
-    // protected $includedType = CustomerReview::class;
+    // protected $includedType = ::class;
     // protected $includedDataType = 'array';
 
     protected $dataType = InAppPurchaseV2::class;

@@ -48,7 +48,7 @@ class HttpHeader extends \Cantie\AppStoreConnect\Model
     }
 }
 
-class UploadOperation extends \Cantie\AppStoreConnect\Model
+class UploadOperation extends \Cantie\AppStoreConnect\Collection
 {
     protected $collection_key = 'requestHeaders';
     protected $requestHeadersType = HttpHeader::class;
