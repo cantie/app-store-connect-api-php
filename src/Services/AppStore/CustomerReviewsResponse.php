@@ -14,6 +14,9 @@ class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Collection
     protected $metaType = PagingInformation::class;
     protected $metaDataType = '';
 
+    protected $includedType = CustomerReviewResponseV1::class;
+    protected $includedDataType = 'array';
+    
     /**
      * @param CustomerReview[]
      */
@@ -66,6 +69,26 @@ class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Collection
     public function setMeta($meta)
     {
         $this->meta = $meta;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of included
+     */ 
+    public function getIncluded()
+    {
+        return $this->included;
+    }
+
+    /**
+     * Set the value of included
+     *
+     * @return  self
+     */ 
+    public function setIncluded($included)
+    {
+        $this->included = $included;
 
         return $this;
     }
