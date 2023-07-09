@@ -175,7 +175,7 @@ class CustomerReview_Relationships_Response_Links extends \Cantie\AppStoreConnec
     {
         return $this->self;
     }
-    public function setType($self)
+    public function setSelf($self)
     {
         $this->self = $self;
         return $this;

@@ -2,20 +2,20 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class CustomerReviewResponseV1Response extends \Cantie\AppStoreConnect\Collection
+class InAppPurchaseSubmissionResponse extends \Cantie\AppStoreConnect\Collection
 {
 
-    // protected $collection_key = 'included';
-    // protected $includedType = CustomerReview::class;
-    // protected $includedDataType = 'array';
+    protected $collection_key = 'included';
+    protected $includedType = InAppPurchaseV2::class;
+    protected $includedDataType = 'array';
 
-    protected $dataType = CustomerReviewResponseV1::class;
+    protected $dataType = InAppPurchaseSubmission::class;
     protected $dataDataType = '';
     protected $linksType = DocumentLinks::class;
     protected $linksDataType = '';
 
     /**
-     * @param CustomerReviewResponseV1
+     * @param InAppPurchaseSubmission
      */
     public function setData($data)
     {
@@ -23,7 +23,7 @@ class CustomerReviewResponseV1Response extends \Cantie\AppStoreConnect\Collectio
     }
 
     /**
-     * @return CustomerReviewResponseV1
+     * @return InAppPurchaseSubmission
      */
     public function getData()
     {
@@ -31,7 +31,7 @@ class CustomerReviewResponseV1Response extends \Cantie\AppStoreConnect\Collectio
     }
 
     /**
-     * @param CustomerReview[]
+     * @param InAppPurchaseV2[]
      */
     public function setIncluded($included)
     {
@@ -39,7 +39,7 @@ class CustomerReviewResponseV1Response extends \Cantie\AppStoreConnect\Collectio
     }
 
     /**
-     * @return CustomerReview[]
+     * @return InAppPurchaseV2[]
      */
     public function getIncluded()
     {
@@ -67,4 +67,4 @@ class CustomerReviewResponseV1Response extends \Cantie\AppStoreConnect\Collectio
     }
 }
 
-class_alias(CustomerReviewResponseV1Response::class, 'AppleService_AppStore_CustomerReviewResponseV1Response');
+class_alias(InAppPurchaseSubmissionResponse::class, 'AppleService_AppStore_InAppPurchaseSubmissionResponse');

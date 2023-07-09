@@ -2,23 +2,25 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Collection
+class InAppPurchaseLocalizationsResponse extends \Cantie\AppStoreConnect\Collection
 {
 
     protected $collection_key = 'data';
-    protected $dataType = CustomerReview::class;
+    protected $dataType = InAppPurchaseLocalization::class;
     protected $dataDataType = 'array';
+
+    // protected $collection_key = 'included';
+    // protected $dataType = InAppPurchaseV2::class;
+    // protected $dataDataType = 'array';
 
     protected $linksType = PagedDocumentLinks::class;
     protected $linksDataType = '';
+
     protected $metaType = PagingInformation::class;
     protected $metaDataType = '';
 
-    protected $includedType = CustomerReviewResponseV1::class;
-    protected $includedDataType = 'array';
-    
     /**
-     * @param CustomerReview[]
+     * @param [InAppPurchasePricePoint]
      */
     public function setData($data)
     {
@@ -26,7 +28,7 @@ class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Collection
     }
 
     /**
-     * @return CustomerReview[]
+     * @return [InAppPurchasePricePoint]
      */
     public function getData()
     {
@@ -72,26 +74,6 @@ class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Collection
 
         return $this;
     }
-
-    /**
-     * Get the value of included
-     */ 
-    public function getIncluded()
-    {
-        return $this->included;
-    }
-
-    /**
-     * Set the value of included
-     *
-     * @return  self
-     */ 
-    public function setIncluded($included)
-    {
-        $this->included = $included;
-
-        return $this;
-    }
 }
 
-class_alias(CustomerReviewsResponse::class, 'AppleService_AppStore_CustomerReviewsResponse');
+class_alias(InAppPurchaseLocalizationsResponse::class, 'AppleService_AppStore_InAppPurchaseLocalizationsResponse');
