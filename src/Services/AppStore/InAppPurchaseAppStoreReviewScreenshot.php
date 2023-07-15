@@ -1,406 +1,333 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
+class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    public $id;
-    public $type;
+	public $fileSize;
+	public $fileName;
+	public $sourceFileChecksum;
+	protected $imageAssetType = ImageAsset::class;
+	protected $imageAssetDataType = '';
+	public $assetToken;
+	public $assetType;
+	protected $uploadOperationsType = UploadOperation::class;
+	protected $uploadOperationsDataType = 'array';
+	protected $assetDeliveryStateType = AppMediaAssetState::class;
+	protected $assetDeliveryStateDataType = '';
 
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-        return $this;
-    }
+	public function getFileSize()
+	{
+		return $this->fileSize;
+	}
+	public function setFileSize($fileSize)
+	{
+		$this->fileSize = $fileSize;
+		return $fileSize;
+	}
+	public function getFileName()
+	{
+		return $this->fileName;
+	}
+	public function setFileName($fileName)
+	{
+		$this->fileName = $fileName;
+		return $fileName;
+	}
+	public function getSourceFileChecksum()
+	{
+		return $this->sourceFileChecksum;
+	}
+	public function setSourceFileChecksum($sourceFileChecksum)
+	{
+		$this->sourceFileChecksum = $sourceFileChecksum;
+		return $sourceFileChecksum;
+	}
+	/**
+	* @return  ImageAsset
+	*/
+	public function getImageAsset()
+	{
+		return $this->imageAsset;
+	}
+	/**
+	* @param  ImageAsset
+	*/
+	public function setImageAsset($imageAsset)
+	{
+		$this->imageAsset = $imageAsset;
+		return $imageAsset;
+	}
+	public function getAssetToken()
+	{
+		return $this->assetToken;
+	}
+	public function setAssetToken($assetToken)
+	{
+		$this->assetToken = $assetToken;
+		return $assetToken;
+	}
+	public function getAssetType()
+	{
+		return $this->assetType;
+	}
+	public function setAssetType($assetType)
+	{
+		$this->assetType = $assetType;
+		return $assetType;
+	}
+	/**
+	* @return  UploadOperation[]
+	*/
+	public function getUploadOperations()
+	{
+		return $this->uploadOperations;
+	}
+	/**
+	* @param  UploadOperation[]
+	*/
+	public function setUploadOperations($uploadOperations)
+	{
+		$this->uploadOperations = $uploadOperations;
+		return $uploadOperations;
+	}
+	/**
+	* @return  AppMediaAssetState
+	*/
+	public function getAssetDeliveryState()
+	{
+		return $this->assetDeliveryState;
+	}
+	/**
+	* @param  AppMediaAssetState
+	*/
+	public function setAssetDeliveryState($assetDeliveryState)
+	{
+		$this->assetDeliveryState = $assetDeliveryState;
+		return $assetDeliveryState;
+	}
+
 }
+class_alias(InAppPurchaseAppStoreReviewScreenshot_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Attributes');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links extends \Cantie\AppStoreConnect\Model
 {
-    public $related;
-    public $self;
+	public $self;
+	public $related;
 
-    public function getRelated()
-    {
-        return $this->related;
-    }
-    public function seRelated($related)
-    {
-        $this->related = $related;
-        return $this;
-    }
-    public function getSelf()
-    {
-        return $this->self;
-    }
-    public function setSelf($self)
-    {
-        $this->self = $self;
-        return $this;
-    }
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $self;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $related;
+	}
+
 }
+class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links');
+
+class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'inAppPurchases';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
+}
+class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
-    protected $dataType = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data::class;
-    protected $dataDataType = '';
+	protected $linksType = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links::class;
+	protected $linksDataType = 'object';
+	protected $dataType = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $linksType = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links::class;
-    protected $linksDataType = '';
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
 
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-    public function getLinks()
-    {
-        return $this->links;
-    }
-    public function setLinks($links)
-    {
-        $this->links = $links;
-        return $this;
-    }
 }
+class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 {
-    protected $inAppPurchaseV2Type = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2::class;
-    protected $inAppPurchaseV2DataType = '';
+	protected $inAppPurchaseV2Type = InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2::class;
+	protected $inAppPurchaseV2DataType = 'object';
 
-    /**
-     * Get the value of inAppPurchaseV2
-     */ 
-    public function getInAppPurchaseV2()
-    {
-        return $this->inAppPurchaseV2;
-    }
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2
+	*/
+	public function getInAppPurchaseV2()
+	{
+		return $this->inAppPurchaseV2;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2
+	*/
+	public function setInAppPurchaseV2($inAppPurchaseV2)
+	{
+		$this->inAppPurchaseV2 = $inAppPurchaseV2;
+		return $inAppPurchaseV2;
+	}
 
-    /**
-     * Set the value of inAppPurchaseV2
-     *
-     * @return  self
-     */ 
-    public function setInAppPurchaseV2($inAppPurchaseV2)
-    {
-        $this->inAppPurchaseV2 = $inAppPurchaseV2;
-
-        return $this;
-    }
 }
-
-class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreConnect\Collection
-{
-    protected $assetDeliveryStateType = AppMediaAssetState::class;
-    protected $assetDeliveryStateDataType = '';
-
-    public $assetToken;
-    public $assetType;
-    public $fileName;
-    public $fileSize;
-    
-    protected $imageAssetType = ImageAsset::class;
-    protected $imageAssetDataType = '';
-
-    public $sourceFileChecksum;
-    public $uploadOperations;
-    
-    protected $collection_key = 'uploadOperations';
-    protected $uploadOperationsType = UploadOperation::class;
-    protected $uploadOperationsDataType = 'array';
-
-    /**
-     * Get the value of assetDeliveryState
-     */ 
-    public function getAssetDeliveryState()
-    {
-        return $this->assetDeliveryState;
-    }
-
-    /**
-     * Set the value of assetDeliveryState
-     *
-     * @return  self
-     */ 
-    public function setAssetDeliveryState($assetDeliveryState)
-    {
-        $this->assetDeliveryState = $assetDeliveryState;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of assetToken
-     */ 
-    public function getAssetToken()
-    {
-        return $this->assetToken;
-    }
-
-    /**
-     * Set the value of assetToken
-     *
-     * @return  self
-     */ 
-    public function setAssetToken($assetToken)
-    {
-        $this->assetToken = $assetToken;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of assetType
-     */ 
-    public function getAssetType()
-    {
-        return $this->assetType;
-    }
-
-    /**
-     * Set the value of assetType
-     *
-     * @return  self
-     */ 
-    public function setAssetType($assetType)
-    {
-        $this->assetType = $assetType;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of fileName
-     */ 
-    public function getFileName()
-    {
-        return $this->fileName;
-    }
-
-    /**
-     * Set the value of fileName
-     *
-     * @return  self
-     */ 
-    public function setFileName($fileName)
-    {
-        $this->fileName = $fileName;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of fileSize
-     */ 
-    public function getFileSize()
-    {
-        return $this->fileSize;
-    }
-
-    /**
-     * Set the value of fileSize
-     *
-     * @return  self
-     */ 
-    public function setFileSize($fileSize)
-    {
-        $this->fileSize = $fileSize;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of imageAsset
-     */ 
-    public function getImageAsset()
-    {
-        return $this->imageAsset;
-    }
-
-    /**
-     * Set the value of imageAsset
-     *
-     * @return  self
-     */ 
-    public function setImageAsset($imageAsset)
-    {
-        $this->imageAsset = $imageAsset;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of sourceFileChecksum
-     */ 
-    public function getSourceFileChecksum()
-    {
-        return $this->sourceFileChecksum;
-    }
-
-    /**
-     * Set the value of sourceFileChecksum
-     *
-     * @return  self
-     */ 
-    public function setSourceFileChecksum($sourceFileChecksum)
-    {
-        $this->sourceFileChecksum = $sourceFileChecksum;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of uploadOperations
-     */ 
-    public function getUploadOperations()
-    {
-        return $this->uploadOperations;
-    }
-
-    /**
-     * Set the value of uploadOperations
-     *
-     * @return  self
-     */ 
-    public function setUploadOperations($uploadOperations)
-    {
-        $this->uploadOperations = $uploadOperations;
-
-        return $this;
-    }
-}
+class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships');
 
 class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Model
 {
-    protected $attributesType = InAppPurchaseAppStoreReviewScreenshot_Attributes::class;
-    protected $attributesDataType = '';
-    protected $relationshipsType = InAppPurchaseAppStoreReviewScreenshot_Relationships::class;
-    protected $relationshipsDataType = '';
-    protected $linksType = ResourceLinks::class;
-    protected $linksDataType = '';
+	public $type = 'inAppPurchaseAppStoreReviewScreenshots';
+	public $id;
+	protected $attributesType = InAppPurchaseAppStoreReviewScreenshot_Attributes::class;
+	protected $attributesDataType = 'object';
+	protected $relationshipsType = InAppPurchaseAppStoreReviewScreenshot_Relationships::class;
+	protected $relationshipsDataType = 'object';
+	protected $linksType = ResourceLinks::class;
+	protected $linksDataType = '';
 
-    public $id;
-    public $type; // = 'inAppPurchaseAppStoreReviewScreenshots'
-
-    /**
-     * Get the value of attributes
-     */
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
-
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of relationships
-     */
-    public function getRelationships()
-    {
-        return $this->relationships;
-    }
-
-    /**
-     * Set the value of relationships
-     *
-     * @return  self
-     */
-    public function setRelationships($relationships)
-    {
-        $this->relationships = $relationships;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of links
-     */
-    public function getLinks()
-    {
-        return $this->links;
-    }
-
-    /**
-     * Set the value of links
-     *
-     * @return  self
-     */
-    public function setLinks($links)
-    {
-        $this->links = $links;
-
-        return $this;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshot_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshot_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $attributes;
+	}
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshot_Relationships
+	*/
+	public function getRelationships()
+	{
+		return $this->relationships;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshot_Relationships
+	*/
+	public function setRelationships($relationships)
+	{
+		$this->relationships = $relationships;
+		return $relationships;
+	}
+	/**
+	* @return  ResourceLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ResourceLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
 
 }
-
 class_alias(InAppPurchaseAppStoreReviewScreenshot::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot');
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Attributes');
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships');
+

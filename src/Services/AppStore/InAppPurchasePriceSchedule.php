@@ -1,529 +1,578 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
-
-class InAppPurchasePriceSchedule_Relationships_ManualPrices_Data extends \Cantie\AppStoreConnect\Model
-{
-    public $id;
-    public $type;
-
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-        return $this;
-    }
-}
-
-class InAppPurchasePriceSchedule_Relationships_ManualPrices_Links extends \Cantie\AppStoreConnect\Model
-{
-    public $related;
-    public $self;
-
-    public function getRelated()
-    {
-        return $this->related;
-    }
-    public function seRelated($related)
-    {
-        $this->related = $related;
-        return $this;
-    }
-    public function getSelf()
-    {
-        return $this->self;
-    }
-    public function setSelf($self)
-    {
-        $this->self = $self;
-        return $this;
-    }
-}
-
-class InAppPurchasePriceSchedule_Relationships_ManualPrices extends \Cantie\AppStoreConnect\Collection
-{
-    
-    protected $collection_key = 'data';
-    protected $dataType = InAppPurchasePriceSchedule_Relationships_ManualPrices_Data::class;
-    protected $dataDataType = 'array';
-
-    protected $linksType = InAppPurchasePriceSchedule_Relationships_ManualPrices_Links::class;
-    protected $linksDataType = '';
-
-    protected $metaType = PagingInformation::class;
-    protected $metaDataType = '';
-
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-    public function getLinks()
-    {
-        return $this->links;
-    }
-    public function setLinks($links)
-    {
-        $this->links = $links;
-        return $this;
-    }
-    public function getMeta()
-    {
-        return $this->meta;
-    }
-    public function setMeta($meta)
-    {
-        $this->meta = $meta;
-        return $this;
-    }
-}
-
-class InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data extends \Cantie\AppStoreConnect\Model
-{
-    public $id;
-    public $type;
-
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-        return $this;
-    }
-}
 
 class InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links extends \Cantie\AppStoreConnect\Model
 {
-    public $related;
-    public $self;
+	public $self;
+	public $related;
 
-    public function getRelated()
-    {
-        return $this->related;
-    }
-    public function seRelated($related)
-    {
-        $this->related = $related;
-        return $this;
-    }
-    public function getSelf()
-    {
-        return $this->self;
-    }
-    public function setSelf($self)
-    {
-        $this->self = $self;
-        return $this;
-    }
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $self;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $related;
+	}
+
 }
+class_alias(InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links');
+
+class InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'inAppPurchases';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
+}
+class_alias(InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data');
 
 class InAppPurchasePriceSchedule_Relationships_InAppPurchase extends \Cantie\AppStoreConnect\Model
 {
-    protected $dataType = InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data::class;
-    protected $dataDataType = '';
+	protected $linksType = InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links::class;
+	protected $linksDataType = 'object';
+	protected $dataType = InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $linksType = InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links::class;
-    protected $linksDataType = '';
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_InAppPurchase_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_InAppPurchase_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
 
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-    public function getLinks()
-    {
-        return $this->links;
-    }
-    public function setLinks($links)
-    {
-        $this->links = $links;
-        return $this;
-    }
 }
-
-class InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data extends \Cantie\AppStoreConnect\Model
-{
-    public $id;
-    public $type;
-
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-        return $this;
-    }
-}
+class_alias(InAppPurchasePriceSchedule_Relationships_InAppPurchase::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_InAppPurchase');
 
 class InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links extends \Cantie\AppStoreConnect\Model
 {
-    public $related;
-    public $self;
+	public $self;
+	public $related;
 
-    public function getRelated()
-    {
-        return $this->related;
-    }
-    public function seRelated($related)
-    {
-        $this->related = $related;
-        return $this;
-    }
-    public function getSelf()
-    {
-        return $this->self;
-    }
-    public function setSelf($self)
-    {
-        $this->self = $self;
-        return $this;
-    }
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $self;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $related;
+	}
+
 }
+class_alias(InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links');
+
+class InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'territories';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
+}
+class_alias(InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data');
 
 class InAppPurchasePriceSchedule_Relationships_BaseTerritory extends \Cantie\AppStoreConnect\Model
 {
-    protected $dataType = InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data::class;
-    protected $dataDataType = '';
+	protected $linksType = InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links::class;
+	protected $linksDataType = 'object';
+	protected $dataType = InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $linksType = InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links::class;
-    protected $linksDataType = '';
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_BaseTerritory_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_BaseTerritory_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
 
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-    public function getLinks()
-    {
-        return $this->links;
-    }
-    public function setLinks($links)
-    {
-        $this->links = $links;
-        return $this;
-    }
 }
+class_alias(InAppPurchasePriceSchedule_Relationships_BaseTerritory::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_BaseTerritory');
 
-class InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data extends \Cantie\AppStoreConnect\Model
+class InAppPurchasePriceSchedule_Relationships_ManualPrices_Links extends \Cantie\AppStoreConnect\Model
 {
-    public $id;
-    public $type;
+	public $self;
+	public $related;
 
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-        return $this;
-    }
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $self;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $related;
+	}
+
 }
+class_alias(InAppPurchasePriceSchedule_Relationships_ManualPrices_Links::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_ManualPrices_Links');
+
+class InAppPurchasePriceSchedule_Relationships_ManualPrices_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'inAppPurchasePrices';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
+}
+class_alias(InAppPurchasePriceSchedule_Relationships_ManualPrices_Data::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_ManualPrices_Data');
+
+class InAppPurchasePriceSchedule_Relationships_ManualPrices extends \Cantie\AppStoreConnect\Model
+{
+	protected $linksType = InAppPurchasePriceSchedule_Relationships_ManualPrices_Links::class;
+	protected $linksDataType = 'object';
+	protected $metaType = PagingInformation::class;
+	protected $metaDataType = '';
+	protected $dataType = InAppPurchasePriceSchedule_Relationships_ManualPrices_Data::class;
+	protected $dataDataType = 'array';
+
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_ManualPrices_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_ManualPrices_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
+	/**
+	* @return  PagingInformation
+	*/
+	public function getMeta()
+	{
+		return $this->meta;
+	}
+	/**
+	* @param  PagingInformation
+	*/
+	public function setMeta($meta)
+	{
+		$this->meta = $meta;
+		return $meta;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_ManualPrices_Data[]
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_ManualPrices_Data[]
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
+
+}
+class_alias(InAppPurchasePriceSchedule_Relationships_ManualPrices::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_ManualPrices');
 
 class InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links extends \Cantie\AppStoreConnect\Model
 {
-    public $related;
-    public $self;
+	public $self;
+	public $related;
 
-    public function getRelated()
-    {
-        return $this->related;
-    }
-    public function seRelated($related)
-    {
-        $this->related = $related;
-        return $this;
-    }
-    public function getSelf()
-    {
-        return $this->self;
-    }
-    public function setSelf($self)
-    {
-        $this->self = $self;
-        return $this;
-    }
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $self;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $related;
+	}
+
 }
+class_alias(InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links');
 
-class InAppPurchasePriceSchedule_Relationships_AutomaticPrices extends \Cantie\AppStoreConnect\Collection
+class InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data extends \Cantie\AppStoreConnect\Model
 {
-    protected $collection_key = 'data';
-    protected $dataType = InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data::class;
-    protected $dataDataType = 'array';
+	public $type = 'inAppPurchasePrices';
+	public $id;
 
-    protected $linksType = InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links::class;
-    protected $linksDataType = '';
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
 
-    protected $metaType = PagingInformation::class;
-    protected $metaDataType = '';
-
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-    public function getLinks()
-    {
-        return $this->links;
-    }
-    public function setLinks($links)
-    {
-        $this->links = $links;
-        return $this;
-    }
-    public function getMeta()
-    {
-        return $this->meta;
-    }
-    public function setMeta($meta)
-    {
-        $this->meta = $meta;
-        return $this;
-    }
 }
+class_alias(InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data');
+
+class InAppPurchasePriceSchedule_Relationships_AutomaticPrices extends \Cantie\AppStoreConnect\Model
+{
+	protected $linksType = InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links::class;
+	protected $linksDataType = 'object';
+	protected $metaType = PagingInformation::class;
+	protected $metaDataType = '';
+	protected $dataType = InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data::class;
+	protected $dataDataType = 'array';
+
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
+	/**
+	* @return  PagingInformation
+	*/
+	public function getMeta()
+	{
+		return $this->meta;
+	}
+	/**
+	* @param  PagingInformation
+	*/
+	public function setMeta($meta)
+	{
+		$this->meta = $meta;
+		return $meta;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data[]
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_AutomaticPrices_Data[]
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
+
+}
+class_alias(InAppPurchasePriceSchedule_Relationships_AutomaticPrices::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships_AutomaticPrices');
 
 class InAppPurchasePriceSchedule_Relationships extends \Cantie\AppStoreConnect\Model
 {
-    protected $automaticPricesType = InAppPurchasePriceSchedule_Relationships_AutomaticPrices::class;
-    protected $automaticPricesDataType = '';
-    protected $baseTerritoryType = InAppPurchasePriceSchedule_Relationships_BaseTerritory::class;
-    protected $baseTerritoryDataType = '';
-    protected $inAppPurchaseType = InAppPurchasePriceSchedule_Relationships_InAppPurchase::class;
-    protected $inAppPurchaseDataType = '';
-    protected $manualPricesType = InAppPurchasePriceSchedule_Relationships_ManualPrices::class;
-    protected $manualPricesDataType = '';
-    
-    /**
-     * Get the value of automaticPrices
-     */ 
-    public function getAutomaticPrices()
-    {
-        return $this->automaticPrices;
-    }
+	protected $inAppPurchaseType = InAppPurchasePriceSchedule_Relationships_InAppPurchase::class;
+	protected $inAppPurchaseDataType = 'object';
+	protected $baseTerritoryType = InAppPurchasePriceSchedule_Relationships_BaseTerritory::class;
+	protected $baseTerritoryDataType = 'object';
+	protected $manualPricesType = InAppPurchasePriceSchedule_Relationships_ManualPrices::class;
+	protected $manualPricesDataType = 'object';
+	protected $automaticPricesType = InAppPurchasePriceSchedule_Relationships_AutomaticPrices::class;
+	protected $automaticPricesDataType = 'object';
 
-    /**
-     * Set the value of automaticPrices
-     *
-     * @return  self
-     */ 
-    public function setAutomaticPrices($automaticPrices)
-    {
-        $this->automaticPrices = $automaticPrices;
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_InAppPurchase
+	*/
+	public function getInAppPurchase()
+	{
+		return $this->inAppPurchase;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_InAppPurchase
+	*/
+	public function setInAppPurchase($inAppPurchase)
+	{
+		$this->inAppPurchase = $inAppPurchase;
+		return $inAppPurchase;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_BaseTerritory
+	*/
+	public function getBaseTerritory()
+	{
+		return $this->baseTerritory;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_BaseTerritory
+	*/
+	public function setBaseTerritory($baseTerritory)
+	{
+		$this->baseTerritory = $baseTerritory;
+		return $baseTerritory;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_ManualPrices
+	*/
+	public function getManualPrices()
+	{
+		return $this->manualPrices;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_ManualPrices
+	*/
+	public function setManualPrices($manualPrices)
+	{
+		$this->manualPrices = $manualPrices;
+		return $manualPrices;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships_AutomaticPrices
+	*/
+	public function getAutomaticPrices()
+	{
+		return $this->automaticPrices;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships_AutomaticPrices
+	*/
+	public function setAutomaticPrices($automaticPrices)
+	{
+		$this->automaticPrices = $automaticPrices;
+		return $automaticPrices;
+	}
 
-        return $this;
-    }
-
-    /**
-     * Get the value of baseTerritory
-     */ 
-    public function getBaseTerritory()
-    {
-        return $this->baseTerritory;
-    }
-
-    /**
-     * Set the value of baseTerritory
-     *
-     * @return  self
-     */ 
-    public function setBaseTerritory($baseTerritory)
-    {
-        $this->baseTerritory = $baseTerritory;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of inAppPurchase
-     */ 
-    public function getInAppPurchase()
-    {
-        return $this->inAppPurchase;
-    }
-
-    /**
-     * Set the value of inAppPurchase
-     *
-     * @return  self
-     */ 
-    public function setInAppPurchase($inAppPurchase)
-    {
-        $this->inAppPurchase = $inAppPurchase;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of manualPrices
-     */ 
-    public function getManualPrices()
-    {
-        return $this->manualPrices;
-    }
-
-    /**
-     * Set the value of manualPrices
-     *
-     * @return  self
-     */ 
-    public function setManualPrices($manualPrices)
-    {
-        $this->manualPrices = $manualPrices;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchasePriceSchedule_Relationships::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships');
 
 class InAppPurchasePriceSchedule extends \Cantie\AppStoreConnect\Model
 {
-    protected $relationshipsType = InAppPurchasePriceSchedule_Relationships::class;
-    protected $relationshipsDataType = '';
-    protected $linksType = ResourceLinks::class;
-    protected $linksDataType = '';
+	public $type = 'inAppPurchasePriceSchedules';
+	public $id;
+	protected $relationshipsType = InAppPurchasePriceSchedule_Relationships::class;
+	protected $relationshipsDataType = 'object';
+	protected $linksType = ResourceLinks::class;
+	protected $linksDataType = '';
 
-    public $id;
-    public $type; // = 'inAppPurchasePriceSchedules'
-
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of relationships
-     */
-    public function getRelationships()
-    {
-        return $this->relationships;
-    }
-
-    /**
-     * Set the value of relationships
-     *
-     * @return  self
-     */
-    public function setRelationships($relationships)
-    {
-        $this->relationships = $relationships;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of links
-     */
-    public function getLinks()
-    {
-        return $this->links;
-    }
-
-    /**
-     * Set the value of links
-     *
-     * @return  self
-     */
-    public function setLinks($links)
-    {
-        $this->links = $links;
-
-        return $this;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+	/**
+	* @return  InAppPurchasePriceSchedule_Relationships
+	*/
+	public function getRelationships()
+	{
+		return $this->relationships;
+	}
+	/**
+	* @param  InAppPurchasePriceSchedule_Relationships
+	*/
+	public function setRelationships($relationships)
+	{
+		$this->relationships = $relationships;
+		return $relationships;
+	}
+	/**
+	* @return  ResourceLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ResourceLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
 
 }
-
 class_alias(InAppPurchasePriceSchedule::class, 'AppleService_AppStore_InAppPurchasePriceSchedule');
-class_alias(InAppPurchasePriceSchedule_Relationships::class, 'AppleService_AppStore_InAppPurchasePriceSchedule_Relationships');
+

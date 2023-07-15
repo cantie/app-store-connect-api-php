@@ -3,6 +3,7 @@
 $config_file_path = dirname(__FILE__) . "/openapi.json";
 $template_header_file_path = dirname(__FILE__) . "/template-header.txt";
 $template_class_file_path = dirname(__FILE__) . "/template-class.txt";
+$model_config_file_path = dirname(__FILE__) . "/template-model-config.txt";
 
 $config = fopen($config_file_path, "r") or die("Unable to open config file!");
 $content = fread($config, filesize($config_file_path));
@@ -15,24 +16,39 @@ fclose($headerFile);
 $clazzFile = fopen($template_class_file_path, "r") or die("Unable to open class template file!");
 $clazz = fread($clazzFile, filesize($template_class_file_path));
 fclose($clazzFile);
-// echo $clazz;
+
+$modelConfigFile = fopen($model_config_file_path, "r") or die("Unable to open model config template file!");
+$modelConfig = fread($modelConfigFile, filesize($model_config_file_path));
+fclose($modelConfigFile);
 
 $config = json_decode($content);
 // echo json_encode($config->components->schemas->Actor);
 
 
 function genPrimitiveAttribute($key, $possibleValues) {
-    $str = "\tpublic $@key@;@comment@\n";
+    $str = "\tpublic $@key@@defaultValue@;@comment@\n";
     $str = str_replace("@key@", $key, $str);
-    $str = str_replace("@comment@", isset($possibleValues) ? (" // " . implode(", ", $possibleValues)) : "", $str);
+    if (isset($possibleValues) && count($possibleValues) == 1) {
+        $str = str_replace("@defaultValue@", " = '" . $possibleValues[0] . "'", $str);
+        $str = str_replace("@comment@", '', $str);
+    }
+    else {
+        $str = str_replace("@defaultValue@", '', $str);
+        $str = str_replace("@comment@", isset($possibleValues) ? (" // " . implode(", ", $possibleValues)) : "", $str);
+    }
     return $str;
 }
 
 function genClassAttribute($key, $className, $type = null) {
-    $str = "\tprotected $@key@Type = @className@::class;\n\tprotected $@key@DataType = '@type@';\n";
+    $str = "\tprotected $@key@Type = @className@;\n\tprotected $@key@DataType = '@type@';\n";
     $str = str_replace("@key@", $key, $str);
-    $str = str_replace("@className@", $className, $str);
-    $str = str_replace("@type@", $type == "array" ? $type : "", $str);
+    if (is_array($className)) {
+        $tmpClassNames = '[' . implode("::class, ", $className) . '::class]';
+        $str = str_replace("@className@", $tmpClassNames, $str);
+    } else {
+        $str = str_replace("@className@", $className == '' ? '\'\'' : ($className . '::class'), $str);
+    }
+    $str = str_replace("@type@", $type ?? "", $str);
     return $str;
 }
 
@@ -59,6 +75,22 @@ function genGetterAndSetter($key, $className = null, $type = null) {
     return $getterStr . $setterStr;
 }
 
+$MAP_TYPE_TO_CLASSNAME = [];
+function addMapTypeToClassName($className, $type) {
+    global $MAP_TYPE_TO_CLASSNAME;
+    $MAP_TYPE_TO_CLASSNAME[$type] = $className;
+}
+function genConfigClassName($modelConfigTemplate) {
+    global $MAP_TYPE_TO_CLASSNAME;
+    $str = "";
+    foreach ($MAP_TYPE_TO_CLASSNAME as $type => $className) {
+        $str .= "\t\t\"" . $type . "\" => \"Cantie\AppStoreConnect\Services\AppStore\\" . $className . "\",\n";
+    }
+    $str = substr($str, 0, strlen($str) - 2);
+    $str = str_replace("@array@", $str, $modelConfigTemplate);
+    return $str;
+}
+
 function genClass($className, $classData, $classTemplate) {
     $REF_INDEX_PREFIX_LENGTH = 21; // "#/components/schemas/"
     $str = str_replace("@className@", $className, $classTemplate);
@@ -66,6 +98,10 @@ function genClass($className, $classData, $classTemplate) {
     $attString = '';
     $getSetString = '';
     $subClassesString = '';
+    $isNeedMapping = false;
+    if (property_exists($classData, 'title') && $classData->title == $className) {
+        $isNeedMapping = true;
+    }
     if (property_exists($classData, 'properties')) {
         foreach ($classData->properties as $k => $v) {
             if (property_exists($v, '$ref')) {
@@ -73,43 +109,64 @@ function genClass($className, $classData, $classTemplate) {
                 $attString .= genClassAttribute($k, $refClassName, property_exists($v, 'type') ? $v->type : null);
                 $getSetString .= genGetterAndSetter($k, $refClassName, property_exists($v, 'type') ? $v->type : null);
             }
-            else if ($v->type == 'array') {
-                if (property_exists($v->items, 'type')) {
-                    if ($v->items->type == 'object') {
-                        $subClassName = $className . '_' . ucfirst($k);
-                        $attString .= genClassAttribute($k, $subClassName, $v->type);
-                        $getSetString .= genGetterAndSetter($k, $subClassName, $v->type);
-            
-                        // recursively
-                        $subClassesString .= genClass($subClassName, $v->items, $classTemplate);
+            else if (property_exists($v, 'type')) {
+                if ($v->type == 'array') {
+                    if (property_exists($v->items, 'type')) {
+                        if ($v->items->type == 'object') {
+                            $subClassName = $className . '_' . ucfirst($k);
+                            $attString .= genClassAttribute($k, $subClassName, $v->type);
+                            $getSetString .= genGetterAndSetter($k, $subClassName, $v->type);
+                
+                            // recursively
+                            $subClassesString .= genClass($subClassName, $v->items, $classTemplate);
+                            continue;
+                        }
+                    }
+                    if (property_exists($v->items, 'oneOf')) {
+                        // can be one of many classes
+                        $refClassName = [];
+                        foreach ($v->items->oneOf as $oK => $oV) {
+                            $refClassName[] = substr($oV->{'$ref'}, $REF_INDEX_PREFIX_LENGTH);
+                        }
+                        $attString .= genClassAttribute($k, $refClassName, 'array[*]');
+                        $getSetString .= genGetterAndSetter($k);
                         continue;
-                    }
-                }
-                else if (property_exists($v->items, 'oneOf')) {
-                    // can be one of many classes
-                    $refClassName = 'Model';
-                } else {
-                    if (property_exists($v->items, '$ref')) {
-                        $refClassName = substr($v->items->{'$ref'}, $REF_INDEX_PREFIX_LENGTH);
                     } else {
-                        $refClassName = 'Model';
+                        if (property_exists($v->items, '$ref')) {
+                            $refClassName = substr($v->items->{'$ref'}, $REF_INDEX_PREFIX_LENGTH);
+                        } else {
+                            $refClassName = '';
+                        }
+                    }
+                    $attString .= genClassAttribute($k, $refClassName, $v->type);
+                    $getSetString .= genGetterAndSetter($k, $refClassName, $v->type);
+                }
+                else if ($v->type == 'object') {
+                    $subClassName = $className . '_' . ucfirst($k);
+                    $attString .= genClassAttribute($k, $subClassName, $v->type);
+                    $getSetString .= genGetterAndSetter($k, $subClassName, $v->type);
+        
+                    // recursively
+                    $subClassesString .= genClass($subClassName, $v, $classTemplate);
+                }
+                else {
+                    $attString .= genPrimitiveAttribute($k, property_exists($v, 'enum') ? $v->enum : null);
+                    $getSetString .= genGetterAndSetter($k);
+    
+                    if ($isNeedMapping && $k == 'type' && property_exists($v, 'enum') && count($v->enum) == 1) {
+                        addMapTypeToClassName($className, $v->enum[0]);
                     }
                 }
-                $attString .= genClassAttribute($k, $refClassName, $v->type);
-                $getSetString .= genGetterAndSetter($k, $refClassName, $v->type);
             }
-            else if ($v->type == 'object') {
-                $subClassName = $className . '_' . ucfirst($k);
-                $attString .= genClassAttribute($k, $subClassName, $v->type);
-                $getSetString .= genGetterAndSetter($k, $subClassName, $v->type);
-    
-                // recursively
-                $subClassesString .= genClass($subClassName, $v, $classTemplate);
-            }
-            else {
-    
-                $attString .= genPrimitiveAttribute($k, property_exists($v, 'enum') ? $v->enum : null);
+            else if (property_exists($v, 'oneOf')) {
+                // can be one of many classes
+                $refClassName = [];
+                foreach ($v->oneOf as $oK => $oV) {
+                    $refClassName[] = substr($oV->{'$ref'}, $REF_INDEX_PREFIX_LENGTH);
+                }
+                $attString .= genClassAttribute($k, $refClassName, '[*]');
                 $getSetString .= genGetterAndSetter($k);
+                continue;
             }
         }
     }
@@ -131,10 +188,15 @@ foreach ($config->components->schemas as $key => $value) {
     // }
     $str = genClass($key, $value, $clazz);
     file_put_contents(
-        'zzzz/' . $key . ".php",
+        'src/Services/AppStore/' . $key . ".php",
         $header . $str
     );
     // echo $key . "\n";
 }
+
+file_put_contents(
+    'src/ModelConfig' . ".php",
+    genConfigClassName($modelConfig)
+);
 
 echo "\n" . 'end';

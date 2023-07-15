@@ -3,6 +3,7 @@
 namespace Cantie\AppStoreConnect;
 
 use Cantie\AppStoreConnect\Exception as AppleException;
+use Cantie\AppStoreConnect\ModelConfig as ModelConfig;
 use ReflectionObject;
 use ReflectionProperty;
 use stdClass;
@@ -91,7 +92,18 @@ class Model implements \ArrayAccess
         foreach ($array as $key => $val) {
             if ($keyType = $this->keyType($key)) {
                 $dataType = $this->dataType($key);
-                if ($dataType == 'array' || $dataType == 'map') {
+                if ($dataType == 'array[*]') {
+                    $this->$key = [];
+                    foreach ($val as $itemKey => $itemVal) {
+                        // Check type to initialize class
+                        $type = ModelConfig::getModelNameByType($itemVal['type']);
+                        if ($itemVal instanceof $type) {
+                            $this->{$key}[$itemKey] = $itemVal;
+                        } else {
+                            $this->{$key}[$itemKey] = new $type($itemVal);
+                        }
+                    }
+                } elseif ($dataType == 'array' || $dataType == 'map') {
                     $this->$key = [];
                     foreach ($val as $itemKey => $itemVal) {
                         if ($itemVal instanceof $keyType) {
@@ -99,6 +111,13 @@ class Model implements \ArrayAccess
                         } else {
                             $this->{$key}[$itemKey] = new $keyType($itemVal);
                         }
+                    }
+                } elseif ($dataType == '[*]') {
+                    $type = ModelConfig::getModelNameByType($val['type']);
+                    if ($val instanceof $type) {
+                        $this->$key = $val;
+                    } else {
+                        $this->$key = new $type($val);
                     }
                 } elseif ($val instanceof $keyType) {
                     $this->$key = $val;
@@ -279,7 +298,9 @@ class Model implements \ArrayAccess
         $keyType = $key . "Type";
 
         // ensure keyType is a valid class
-        if (property_exists($this, $keyType) && $this->$keyType !== null && class_exists($this->$keyType)) {
+        if (property_exists($this, $keyType) && $this->$keyType !== null && 
+            (is_array($this->$keyType) || class_exists($this->$keyType))
+        ) {
             return $this->$keyType;
         }
     }

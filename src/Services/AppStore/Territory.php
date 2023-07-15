@@ -1,124 +1,106 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class Territory_Attributes extends \Cantie\AppStoreConnect\Model
 {
+	public $currency;
 
-    public $currency;
+	public function getCurrency()
+	{
+		return $this->currency;
+	}
+	public function setCurrency($currency)
+	{
+		$this->currency = $currency;
+		return $currency;
+	}
 
-    /**
-     * Get the value of currency
-     */ 
-    public function getCurrency()
-    {
-        return $this->currency;
-    }
-
-    /**
-     * Set the value of currency
-     *
-     * @return  self
-     */ 
-    public function setCurrency($currency)
-    {
-        $this->currency = $currency;
-
-        return $this;
-    }
 }
+class_alias(Territory_Attributes::class, 'AppleService_AppStore_Territory_Attributes');
 
 class Territory extends \Cantie\AppStoreConnect\Model
 {
-    protected $attributesType = Territory_Attributes::class;
-    protected $attributesDataType = '';
-    protected $linksType = ResourceLinks::class;
-    protected $linksDataType = '';
+	public $type = 'territories';
+	public $id;
+	protected $attributesType = Territory_Attributes::class;
+	protected $attributesDataType = 'object';
+	protected $linksType = ResourceLinks::class;
+	protected $linksDataType = '';
 
-    public $id;
-    public $type; // = 'inAppPurchasePricePoints'
-
-    /**
-     * Get the value of attributes
-     */
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
-
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of links
-     */
-    public function getLinks()
-    {
-        return $this->links;
-    }
-
-    /**
-     * Set the value of links
-     *
-     * @return  self
-     */
-    public function setLinks($links)
-    {
-        $this->links = $links;
-
-        return $this;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+	/**
+	* @return  Territory_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  Territory_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $attributes;
+	}
+	/**
+	* @return  ResourceLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ResourceLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
 
 }
-
 class_alias(Territory::class, 'AppleService_AppStore_Territory');
-class_alias(Territory_Attributes::class, 'AppleService_AppStore_Territory_Attributes');
+

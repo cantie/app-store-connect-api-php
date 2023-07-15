@@ -1,322 +1,308 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
-
-class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data extends \Cantie\AppStoreConnect\Model
-{
-    public $id;
-    public $type = "territories";
-
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-    
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
-}
-
-class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory extends \Cantie\AppStoreConnect\Model
-{
-
-    protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data::class;
-    protected $dataDataType = '';
-
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
-}
-
-class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data extends \Cantie\AppStoreConnect\Model
-{
-    public $id;
-    public $type = "inAppPurchasePrices";
-
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-    
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
-}
-
-class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices extends \Cantie\AppStoreConnect\Collection
-{
-
-    protected $collection_key = 'data';
-    protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data::class;
-    protected $dataDataType = 'array';
-
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
-}
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data extends \Cantie\AppStoreConnect\Model
 {
-    public $id;
-    public $type = "inAppPurchases";
+	public $type = 'inAppPurchases';
+	public $id;
 
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-    
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
 }
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data::class;
-    protected $dataDataType = '';
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
 
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
 }
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase');
+
+class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'territories';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
+}
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data');
+
+class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory extends \Cantie\AppStoreConnect\Model
+{
+	protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data::class;
+	protected $dataDataType = 'object';
+
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
+
+}
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory');
+
+class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'inAppPurchasePrices';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
+}
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data');
+
+class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices extends \Cantie\AppStoreConnect\Model
+{
+	protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data::class;
+	protected $dataDataType = 'array';
+
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data[]
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data[]
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
+
+}
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
-    
-    protected $inAppPurchaseType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase::class;
-    protected $inAppPurchaseDataType = '';
+	protected $inAppPurchaseType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase::class;
+	protected $inAppPurchaseDataType = 'object';
+	protected $baseTerritoryType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory::class;
+	protected $baseTerritoryDataType = 'object';
+	protected $manualPricesType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices::class;
+	protected $manualPricesDataType = 'object';
 
-    protected $manualPricesType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices::class;
-    protected $manualPricesDataType = '';
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase
+	*/
+	public function getInAppPurchase()
+	{
+		return $this->inAppPurchase;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase
+	*/
+	public function setInAppPurchase($inAppPurchase)
+	{
+		$this->inAppPurchase = $inAppPurchase;
+		return $inAppPurchase;
+	}
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory
+	*/
+	public function getBaseTerritory()
+	{
+		return $this->baseTerritory;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory
+	*/
+	public function setBaseTerritory($baseTerritory)
+	{
+		$this->baseTerritory = $baseTerritory;
+		return $baseTerritory;
+	}
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices
+	*/
+	public function getManualPrices()
+	{
+		return $this->manualPrices;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices
+	*/
+	public function setManualPrices($manualPrices)
+	{
+		$this->manualPrices = $manualPrices;
+		return $manualPrices;
+	}
 
-    // optional
-    protected $baseTerritoryType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory::class;
-    protected $baseTerritoryDataType = '';
-
-    /**
-     * Get the value of inAppPurchase
-     */ 
-    public function getInAppPurchase()
-    {
-        return $this->inAppPurchase;
-    }
-
-    /**
-     * Set the value of inAppPurchase
-     *
-     * @return  self
-     */ 
-    public function setInAppPurchase($inAppPurchase)
-    {
-        $this->inAppPurchase = $inAppPurchase;
-
-        return $this;
-    }
-    
-    /**
-     * Get the value of manualPrices
-     */ 
-    public function getManualPrices()
-    {
-        return $this->manualPrices;
-    }
-
-    /**
-     * Set the value of manualPrices
-     *
-     * @return  self
-     */ 
-    public function setManualPrices($manualPrices)
-    {
-        $this->manualPrices = $manualPrices;
-
-        return $this;
-    }
-    
-    /**
-     * Get the value of baseTerritory
-     */ 
-    public function getBaseTerritory()
-    {
-        return $this->baseTerritory;
-    }
-
-    /**
-     * Set the value of baseTerritory
-     *
-     * @return  self
-     */ 
-    public function setBaseTerritory($baseTerritory)
-    {
-        $this->baseTerritory = $baseTerritory;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships');
 
 class InAppPurchasePriceScheduleCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
+	public $type = 'inAppPurchasePriceSchedules';
+	protected $relationshipsType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships::class;
+	protected $relationshipsDataType = 'object';
 
-    protected $relationshipsType = InAppPurchasePriceScheduleCreateRequest_Data_Relationships::class;
-    protected $relationshipsDataType = '';
-    public $type = 'inAppPurchasePriceSchedules';
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships
+	*/
+	public function getRelationships()
+	{
+		return $this->relationships;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data_Relationships
+	*/
+	public function setRelationships($relationships)
+	{
+		$this->relationships = $relationships;
+		return $relationships;
+	}
 
-    /**
-     * Get the value of relationships
-     */ 
-    public function getRelationships()
-    {
-        return $this->relationships;
-    }
-
-    /**
-     * Set the value of relationships
-     *
-     * @return  self
-     */ 
-    public function setRelationships($relationships)
-    {
-        $this->relationships = $relationships;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */ 
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */ 
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchasePriceScheduleCreateRequest_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data');
 
 class InAppPurchasePriceScheduleCreateRequest extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data::class;
+	protected $dataDataType = 'object';
+	protected $includedType = [InAppPurchasePriceInlineCreate::class, TerritoryInlineCreate::class];
+	protected $includedDataType = 'array[*]';
 
-    protected $dataType = InAppPurchasePriceScheduleCreateRequest_Data::class;
-    protected $dataDataType = '';
+	/**
+	* @return  InAppPurchasePriceScheduleCreateRequest_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchasePriceScheduleCreateRequest_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
+	public function getIncluded()
+	{
+		return $this->included;
+	}
+	public function setIncluded($included)
+	{
+		$this->included = $included;
+		return $included;
+	}
 
-    // TODO: included
-
-    /**
-     * Get the value of data
-     */ 
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Set the value of data
-     *
-     * @return  self
-     */ 
-    public function setData($data)
-    {
-        $this->data = $data;
-
-        return $this;
-    }
-
-    public function makeData($iapId, $manualPriceIds, $baseTerritoryId = null)
-    {
-        $relationshipsIAPData = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data();
-        $relationshipsIAPData->setId($iapId);
-        $relationshipsIAP = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase();
-        $relationshipsIAP->setData($relationshipsIAPData);
-
-        $relationshipsManualPriceDatas = [];
-        foreach ($manualPriceIds as $manualPriceId) {
-            $relationshipsManualPriceData = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data();
-            $relationshipsManualPriceData->setId($manualPriceId);
-            $relationshipsManualPriceDatas[] = $relationshipsManualPriceData;
-        }
-        $relationshipsManualPrice = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices();
-        $relationshipsManualPrice->setData($relationshipsManualPriceDatas);
-
-        if ($baseTerritoryId != null) {
-            $relationshipsTerritoryData = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data();
-            $relationshipsTerritoryData->setId($baseTerritoryId);
-            $relationshipsTerritory = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory();
-            $relationshipsTerritory->setData($relationshipsTerritoryData);
-        } else {
-            $relationshipsTerritory = null;
-        }
-
-        $relationships = new InAppPurchasePriceScheduleCreateRequest_Data_Relationships();
-        $relationships->setInAppPurchase($relationshipsIAP);
-        $relationships->setManualPrices($relationshipsManualPrice);
-        $relationships->setBaseTerritory($relationshipsTerritory);
-        
-        $data = new InAppPurchasePriceScheduleCreateRequest_Data();
-        $data->setRelationships($relationships);
-        $this->setData($data);
-
-        return $this;
-    }
 }
-
 class_alias(InAppPurchasePriceScheduleCreateRequest::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory');
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data');
+

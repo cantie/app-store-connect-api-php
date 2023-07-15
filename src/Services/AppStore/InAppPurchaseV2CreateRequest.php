@@ -1,329 +1,252 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    public $availableInAllTerritories; // boolean
-    public $familySharable; // boolean
-    public $inAppPurchaseType; // InAppPurchaseType
-    public $name;
-    public $productId;
-    public $reviewNote;
-    
-    /**
-     * Get the value of availableInAllTerritories
-     */ 
-    public function getAvailableInAllTerritories()
-    {
-        return $this->availableInAllTerritories;
-    }
+	public $name;
+	public $productId;
+	protected $inAppPurchaseTypeType = InAppPurchaseType::class;
+	protected $inAppPurchaseTypeDataType = '';
+	public $reviewNote;
+	public $familySharable;
+	public $availableInAllTerritories;
 
-    /**
-     * Set the value of availableInAllTerritories
-     *
-     * @return  self
-     */ 
-    public function setAvailableInAllTerritories($availableInAllTerritories)
-    {
-        $this->availableInAllTerritories = $availableInAllTerritories;
+	public function getName()
+	{
+		return $this->name;
+	}
+	public function setName($name)
+	{
+		$this->name = $name;
+		return $name;
+	}
+	public function getProductId()
+	{
+		return $this->productId;
+	}
+	public function setProductId($productId)
+	{
+		$this->productId = $productId;
+		return $productId;
+	}
+	/**
+	* @return  InAppPurchaseType
+	*/
+	public function getInAppPurchaseType()
+	{
+		return $this->inAppPurchaseType;
+	}
+	/**
+	* @param  InAppPurchaseType
+	*/
+	public function setInAppPurchaseType($inAppPurchaseType)
+	{
+		$this->inAppPurchaseType = $inAppPurchaseType;
+		return $inAppPurchaseType;
+	}
+	public function getReviewNote()
+	{
+		return $this->reviewNote;
+	}
+	public function setReviewNote($reviewNote)
+	{
+		$this->reviewNote = $reviewNote;
+		return $reviewNote;
+	}
+	public function getFamilySharable()
+	{
+		return $this->familySharable;
+	}
+	public function setFamilySharable($familySharable)
+	{
+		$this->familySharable = $familySharable;
+		return $familySharable;
+	}
+	public function getAvailableInAllTerritories()
+	{
+		return $this->availableInAllTerritories;
+	}
+	public function setAvailableInAllTerritories($availableInAllTerritories)
+	{
+		$this->availableInAllTerritories = $availableInAllTerritories;
+		return $availableInAllTerritories;
+	}
 
-        return $this;
-    }
-    
-    /**
-     * Get the value of familySharable
-     */ 
-    public function getFamilySharable()
-    {
-        return $this->familySharable;
-    }
-
-    /**
-     * Set the value of familySharable
-     *
-     * @return  self
-     */ 
-    public function setFamilySharable($familySharable)
-    {
-        $this->familySharable = $familySharable;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of inAppPurchaseType
-     */ 
-    public function getInAppPurchaseType()
-    {
-        return $this->inAppPurchaseType;
-    }
-
-    /**
-     * Set the value of inAppPurchaseType
-     *
-     * @return  self
-     */ 
-    public function setInAppPurchaseType($inAppPurchaseType)
-    {
-        $this->inAppPurchaseType = $inAppPurchaseType;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of name
-     */ 
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */ 
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of productId
-     */ 
-    public function getProductId()
-    {
-        return $this->productId;
-    }
-
-    /**
-     * Set the value of productId
-     *
-     * @return  self
-     */ 
-    public function setProductId($productId)
-    {
-        $this->productId = $productId;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of reviewNote
-     */ 
-    public function getReviewNote()
-    {
-        return $this->reviewNote;
-    }
-
-    /**
-     * Set the value of reviewNote
-     *
-     * @return  self
-     */ 
-    public function setReviewNote($reviewNote)
-    {
-        $this->reviewNote = $reviewNote;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseV2CreateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Attributes');
 
 class InAppPurchaseV2CreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
-    public $id;
-    public $type = "apps";
+	public $type = 'apps';
+	public $id;
 
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-    
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $id;
+	}
+
 }
+class_alias(InAppPurchaseV2CreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships_App_Data');
 
 class InAppPurchaseV2CreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = InAppPurchaseV2CreateRequest_Data_Relationships_App_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $dataType = InAppPurchaseV2CreateRequest_Data_Relationships_App_Data::class;
-    protected $dataDataType = '';
+	/**
+	* @return  InAppPurchaseV2CreateRequest_Data_Relationships_App_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchaseV2CreateRequest_Data_Relationships_App_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
 
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
 }
+class_alias(InAppPurchaseV2CreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships_App');
 
 class InAppPurchaseV2CreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
-    
-    protected $appType = InAppPurchaseV2CreateRequest_Data_Relationships_App::class;
-    protected $appDataType = '';
+	protected $appType = InAppPurchaseV2CreateRequest_Data_Relationships_App::class;
+	protected $appDataType = 'object';
 
-    /**
-     * Get the value of app
-     */ 
-    public function getApp()
-    {
-        return $this->app;
-    }
+	/**
+	* @return  InAppPurchaseV2CreateRequest_Data_Relationships_App
+	*/
+	public function getApp()
+	{
+		return $this->app;
+	}
+	/**
+	* @param  InAppPurchaseV2CreateRequest_Data_Relationships_App
+	*/
+	public function setApp($app)
+	{
+		$this->app = $app;
+		return $app;
+	}
 
-    /**
-     * Set the value of app
-     *
-     * @return  self
-     */ 
-    public function setApp($app)
-    {
-        $this->app = $app;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseV2CreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships');
 
 class InAppPurchaseV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
+	public $type = 'inAppPurchases';
+	protected $attributesType = InAppPurchaseV2CreateRequest_Data_Attributes::class;
+	protected $attributesDataType = 'object';
+	protected $relationshipsType = InAppPurchaseV2CreateRequest_Data_Relationships::class;
+	protected $relationshipsDataType = 'object';
 
-    protected $attributesType = InAppPurchaseV2CreateRequest_Data_Attributes::class;
-    protected $attributesDataType = '';
-    protected $relationshipsType = InAppPurchaseV2CreateRequest_Data_Relationships::class;
-    protected $relationshipsDataType = '';
-    public $type = 'inAppPurchases';
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $type;
+	}
+	/**
+	* @return  InAppPurchaseV2CreateRequest_Data_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  InAppPurchaseV2CreateRequest_Data_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $attributes;
+	}
+	/**
+	* @return  InAppPurchaseV2CreateRequest_Data_Relationships
+	*/
+	public function getRelationships()
+	{
+		return $this->relationships;
+	}
+	/**
+	* @param  InAppPurchaseV2CreateRequest_Data_Relationships
+	*/
+	public function setRelationships($relationships)
+	{
+		$this->relationships = $relationships;
+		return $relationships;
+	}
 
-    /**
-     * Get the value of attributes
-     */
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
-
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of relationships
-     */ 
-    public function getRelationships()
-    {
-        return $this->relationships;
-    }
-
-    /**
-     * Set the value of relationships
-     *
-     * @return  self
-     */ 
-    public function setRelationships($relationships)
-    {
-        $this->relationships = $relationships;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */ 
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */ 
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseV2CreateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data');
 
 class InAppPurchaseV2CreateRequest extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = InAppPurchaseV2CreateRequest_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $dataType = InAppPurchaseV2CreateRequest_Data::class;
-    protected $dataDataType = '';
+	/**
+	* @return  InAppPurchaseV2CreateRequest_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchaseV2CreateRequest_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
 
-    /**
-     * Get the value of data
-     */ 
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Set the value of data
-     *
-     * @return  self
-     */ 
-    public function setData($data)
-    {
-        $this->data = $data;
-
-        return $this;
-    }
-
-    public function makeData($inAppPurchaseType, $name, $productId, $appId, $availableInAllTerritories = true,
-        $familySharable = true, $reviewNote = "")
-    {
-        $attributes = new InAppPurchaseV2CreateRequest_Data_Attributes();
-        $attributes->setInAppPurchaseType($inAppPurchaseType);
-        $attributes->setName($name);
-        $attributes->setProductId($productId);
-        $attributes->setAvailableInAllTerritories($availableInAllTerritories);
-        $attributes->setFamilySharable($familySharable);
-        $attributes->setReviewNote($reviewNote);
-
-        $relationshipsAppData = new InAppPurchaseV2CreateRequest_Data_Relationships_App_Data();
-        $relationshipsAppData->setId($appId);
-        $relationshipsApp = new InAppPurchaseV2CreateRequest_Data_Relationships_App();
-        $relationshipsApp->setData($relationshipsAppData);
-        $relationships = new InAppPurchaseV2CreateRequest_Data_Relationships();
-        $relationships->setApp($relationshipsApp);
-        $data = new InAppPurchaseV2CreateRequest_Data();
-        $data->setAttributes($attributes);
-        $data->setRelationships($relationships);
-        $this->setData($data);
-
-        return $this;
-    }
 }
-
 class_alias(InAppPurchaseV2CreateRequest::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest');
-class_alias(InAppPurchaseV2CreateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data');
-class_alias(InAppPurchaseV2CreateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Attributes');
-class_alias(InAppPurchaseV2CreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships');
-class_alias(InAppPurchaseV2CreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships_App');
-class_alias(InAppPurchaseV2CreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships_App_Data');
+

@@ -1,164 +1,92 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class HttpHeader extends \Cantie\AppStoreConnect\Model
+class UploadOperation extends \Cantie\AppStoreConnect\Model
 {
-    public $name;
-    public $value;
+	public $method;
+	public $url;
+	public $length;
+	public $offset;
+	protected $requestHeadersType = HttpHeader::class;
+	protected $requestHeadersDataType = 'array';
 
-    /**
-     * Get the value of name
-     */ 
-    public function getName()
-    {
-        return $this->name;
-    }
+	public function getMethod()
+	{
+		return $this->method;
+	}
+	public function setMethod($method)
+	{
+		$this->method = $method;
+		return $method;
+	}
+	public function getUrl()
+	{
+		return $this->url;
+	}
+	public function setUrl($url)
+	{
+		$this->url = $url;
+		return $url;
+	}
+	public function getLength()
+	{
+		return $this->length;
+	}
+	public function setLength($length)
+	{
+		$this->length = $length;
+		return $length;
+	}
+	public function getOffset()
+	{
+		return $this->offset;
+	}
+	public function setOffset($offset)
+	{
+		$this->offset = $offset;
+		return $offset;
+	}
+	/**
+	* @return  HttpHeader[]
+	*/
+	public function getRequestHeaders()
+	{
+		return $this->requestHeaders;
+	}
+	/**
+	* @param  HttpHeader[]
+	*/
+	public function setRequestHeaders($requestHeaders)
+	{
+		$this->requestHeaders = $requestHeaders;
+		return $requestHeaders;
+	}
 
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */ 
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of value
-     */ 
-    public function getValue()
-    {
-        return $this->value;
-    }
-
-    /**
-     * Set the value of value
-     *
-     * @return  self
-     */ 
-    public function setValue($value)
-    {
-        $this->value = $value;
-
-        return $this;
-    }
 }
-
-class UploadOperation extends \Cantie\AppStoreConnect\Collection
-{
-    protected $collection_key = 'requestHeaders';
-    protected $requestHeadersType = HttpHeader::class;
-    protected $requestHeadersDataType = 'array';
-
-    public $length;
-    public $method;
-    public $offset;
-    public $url;
-
-    /**
-     * Get the value of length
-     */ 
-    public function getLength()
-    {
-        return $this->length;
-    }
-
-    /**
-     * Set the value of length
-     *
-     * @return  self
-     */ 
-    public function setLength($length)
-    {
-        $this->length = $length;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of method
-     */ 
-    public function getMethod()
-    {
-        return $this->method;
-    }
-
-    /**
-     * Set the value of method
-     *
-     * @return  self
-     */ 
-    public function setMethod($method)
-    {
-        $this->method = $method;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of offset
-     */ 
-    public function getOffset()
-    {
-        return $this->offset;
-    }
-
-    /**
-     * Set the value of offset
-     *
-     * @return  self
-     */ 
-    public function setOffset($offset)
-    {
-        $this->offset = $offset;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of requestHeaders
-     */ 
-    public function getRequestHeaders()
-    {
-        return $this->requestHeaders;
-    }
-
-    /**
-     * Set the value of requestHeaders
-     *
-     * @return  self
-     */ 
-    public function setRequestHeaders($requestHeaders)
-    {
-        $this->requestHeaders = $requestHeaders;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of url
-     */ 
-    public function getUrl()
-    {
-        return $this->url;
-    }
-
-    /**
-     * Set the value of url
-     *
-     * @return  self
-     */ 
-    public function setUrl($url)
-    {
-        $this->url = $url;
-
-        return $this;
-    }
-}
-
 class_alias(UploadOperation::class, 'AppleService_AppStore_UploadOperation');
-class_alias(HttpHeader::class, 'AppleService_AppStore_HttpHeader');
+

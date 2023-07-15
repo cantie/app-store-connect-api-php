@@ -1,50 +1,86 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CustomerReviewResponse extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = CustomerReview::class;
+	protected $dataDataType = '';
+	protected $includedType = CustomerReviewResponseV1::class;
+	protected $includedDataType = 'array';
+	protected $linksType = DocumentLinks::class;
+	protected $linksDataType = '';
 
-    protected $dataType = CustomerReview::class;
-    protected $dataDataType = '';
-    protected $linksType = DocumentLinks::class;
-    protected $linksDataType = '';
+	/**
+	* @return  CustomerReview
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  CustomerReview
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $data;
+	}
+	/**
+	* @return  CustomerReviewResponseV1[]
+	*/
+	public function getIncluded()
+	{
+		return $this->included;
+	}
+	/**
+	* @param  CustomerReviewResponseV1[]
+	*/
+	public function setIncluded($included)
+	{
+		$this->included = $included;
+		return $included;
+	}
+	/**
+	* @return  DocumentLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  DocumentLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $links;
+	}
 
-    /**
-     * @param CustomerReview
-     */
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
-
-    /**
-     * @return CustomerReview
-     */
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Get the value of links
-     */ 
-    public function getLinks()
-    {
-        return $this->links;
-    }
-
-    /**
-     * Set the value of links
-     *
-     * @return  self
-     */ 
-    public function setLinks($links)
-    {
-        $this->links = $links;
-
-        return $this;
-    }
 }
-
 class_alias(CustomerReviewResponse::class, 'AppleService_AppStore_CustomerReviewResponse');
+
