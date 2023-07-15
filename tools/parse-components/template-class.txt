@@ -1,7 +1,0 @@
-class @className@ extends \Cantie\AppStoreConnect\@model@
-{
-@attributes@
-@getterandsetter@
-}
-class_alias(@className@::class, 'AppleService_AppStore_@className@');
-
