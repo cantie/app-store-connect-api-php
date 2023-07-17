@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\UserInvitationsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\UserInvitationResponse;
+use Cantie\AppStoreConnect\Services\AppStore\UserInvitationCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,59 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class UserInvitations extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return UserInvitationsResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listUserInvitations($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listUserInvitations', [$params], UserInvitationsResponse::class);
+    }
+    /**
+	 * @param UserInvitationCreateRequest $postBody
+     * @return UserInvitationResponse
+     */
+    public function createUserInvitations(UserInvitationCreateRequest $postBody)
+    {
+		$params = ['postBody' => $postBody];
+        return $this->call('createUserInvitations', [$params], UserInvitationResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return UserInvitationResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getUserInvitations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getUserInvitations', [$params], UserInvitationResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteUserInvitations($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteUserInvitations', [$params], null);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppsResponse
+     */
+    public function listUserInvitationsVisibleApps($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listUserInvitationsVisibleApps', [$params], AppsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(UserInvitations::class, 'AppleService_AppStore_ResourceUserInvitations');

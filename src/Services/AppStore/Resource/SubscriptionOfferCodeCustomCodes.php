@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeCustomCodeResponse;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeCustomCodeCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeCustomCodeUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,39 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SubscriptionOfferCodeCustomCodes extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param SubscriptionOfferCodeCustomCodeCreateRequest $postBody
+     * @return SubscriptionOfferCodeCustomCodeResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createSubscriptionOfferCodeCustomCodes(SubscriptionOfferCodeCustomCodeCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createSubscriptionOfferCodeCustomCodes', [$params], SubscriptionOfferCodeCustomCodeResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return SubscriptionOfferCodeCustomCodeResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getSubscriptionOfferCodeCustomCodes($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getSubscriptionOfferCodeCustomCodes', [$params], SubscriptionOfferCodeCustomCodeResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param SubscriptionOfferCodeCustomCodeUpdateRequest $postBody
+     * @return SubscriptionOfferCodeCustomCodeResponse
+     */
+    public function updateSubscriptionOfferCodeCustomCodes($id, SubscriptionOfferCodeCustomCodeUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateSubscriptionOfferCodeCustomCodes', [$params], SubscriptionOfferCodeCustomCodeResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SubscriptionOfferCodeCustomCodes::class, 'AppleService_AppStore_ResourceSubscriptionOfferCodeCustomCodes');

@@ -26,8 +26,8 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPricePointResponse;
+use Cantie\AppStoreConnect\Services\AppStore\csv;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +37,31 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SubscriptionPricePoints extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return SubscriptionPricePointResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function getSubscriptionPricePoints($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('getSubscriptionPricePoints', [$params], SubscriptionPricePointResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return csv
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function listSubscriptionPricePointsEqualizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('listSubscriptionPricePointsEqualizations', [$params], csv::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SubscriptionPricePoints::class, 'AppleService_AppStore_ResourceSubscriptionPricePoints');

@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,52 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class PreReleaseVersions extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return PreReleaseVersionsResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listPreReleaseVersions($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listPreReleaseVersions', [$params], PreReleaseVersionsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return PreReleaseVersionResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getPreReleaseVersions($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getPreReleaseVersions', [$params], PreReleaseVersionResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppResponse
+     */
+    public function getPreReleaseVersionsApp($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getPreReleaseVersionsApp', [$params], AppResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return BuildsResponse
+     */
+    public function listPreReleaseVersionsBuilds($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listPreReleaseVersionsBuilds', [$params], BuildsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(PreReleaseVersions::class, 'AppleService_AppStore_ResourcePreReleaseVersions');

@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,37 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppStoreVersionPhasedReleases extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppStoreVersionPhasedReleaseCreateRequest $postBody
+     * @return AppStoreVersionPhasedReleaseResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppStoreVersionPhasedReleases(AppStoreVersionPhasedReleaseCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppStoreVersionPhasedReleases', [$params], AppStoreVersionPhasedReleaseResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+	 * @param AppStoreVersionPhasedReleaseUpdateRequest $postBody
+     * @return AppStoreVersionPhasedReleaseResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function updateAppStoreVersionPhasedReleases($id, AppStoreVersionPhasedReleaseUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppStoreVersionPhasedReleases', [$params], AppStoreVersionPhasedReleaseResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppStoreVersionPhasedReleases($id)
     {
 		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('deleteAppStoreVersionPhasedReleases', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppStoreVersionPhasedReleases::class, 'AppleService_AppStore_ResourceAppStoreVersionPhasedReleases');

@@ -26,8 +26,8 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppCategoriesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppCategoryResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +37,52 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppCategories extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return AppCategoriesResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listAppCategories($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listAppCategories', [$params], AppCategoriesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppCategoryResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppCategories($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppCategories', [$params], AppCategoryResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppCategoryResponse
+     */
+    public function getAppCategoriesParent($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getAppCategoriesParent', [$params], AppCategoryResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppCategoriesResponse
+     */
+    public function listAppCategoriesSubcategories($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppCategoriesSubcategories', [$params], AppCategoriesResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppCategories::class, 'AppleService_AppStore_ResourceAppCategories');

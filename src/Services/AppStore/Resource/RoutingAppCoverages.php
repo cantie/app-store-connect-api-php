@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageResponse;
+use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class RoutingAppCoverages extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param RoutingAppCoverageCreateRequest $postBody
+     * @return RoutingAppCoverageResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createRoutingAppCoverages(RoutingAppCoverageCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createRoutingAppCoverages', [$params], RoutingAppCoverageResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return RoutingAppCoverageResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getRoutingAppCoverages($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getRoutingAppCoverages', [$params], RoutingAppCoverageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param RoutingAppCoverageUpdateRequest $postBody
+     * @return RoutingAppCoverageResponse
+     */
+    public function updateRoutingAppCoverages($id, RoutingAppCoverageUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateRoutingAppCoverages', [$params], RoutingAppCoverageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteRoutingAppCoverages($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteRoutingAppCoverages', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(RoutingAppCoverages::class, 'AppleService_AppStore_ResourceRoutingAppCoverages');

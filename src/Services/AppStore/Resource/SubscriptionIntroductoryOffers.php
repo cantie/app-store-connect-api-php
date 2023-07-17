@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionIntroductoryOfferResponse;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionIntroductoryOfferCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionIntroductoryOfferUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,37 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SubscriptionIntroductoryOffers extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param SubscriptionIntroductoryOfferCreateRequest $postBody
+     * @return SubscriptionIntroductoryOfferResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createSubscriptionIntroductoryOffers(SubscriptionIntroductoryOfferCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createSubscriptionIntroductoryOffers', [$params], SubscriptionIntroductoryOfferResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+	 * @param SubscriptionIntroductoryOfferUpdateRequest $postBody
+     * @return SubscriptionIntroductoryOfferResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function updateSubscriptionIntroductoryOffers($id, SubscriptionIntroductoryOfferUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateSubscriptionIntroductoryOffers', [$params], SubscriptionIntroductoryOfferResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteSubscriptionIntroductoryOffers($id)
     {
 		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('deleteSubscriptionIntroductoryOffers', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SubscriptionIntroductoryOffers::class, 'AppleService_AppStore_ResourceSubscriptionIntroductoryOffers');

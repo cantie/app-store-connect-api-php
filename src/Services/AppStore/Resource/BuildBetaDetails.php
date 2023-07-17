@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailUpdateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,51 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class BuildBetaDetails extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return BuildBetaDetailsResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listBuildBetaDetails($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listBuildBetaDetails', [$params], BuildBetaDetailsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return BuildBetaDetailResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getBuildBetaDetails($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getBuildBetaDetails', [$params], BuildBetaDetailResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param BuildBetaDetailUpdateRequest $postBody
+     * @return BuildBetaDetailResponse
+     */
+    public function updateBuildBetaDetails($id, BuildBetaDetailUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateBuildBetaDetails', [$params], BuildBetaDetailResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return BuildResponse
+     */
+    public function getBuildBetaDetailsBuild($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getBuildBetaDetailsBuild', [$params], BuildResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(BuildBetaDetails::class, 'AppleService_AppStore_ResourceBuildBetaDetails');

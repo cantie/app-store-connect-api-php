@@ -26,8 +26,8 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGracePeriodResponse;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGracePeriodUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +37,30 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SubscriptionGracePeriods extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return SubscriptionGracePeriodResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function getSubscriptionGracePeriods($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('getSubscriptionGracePeriods', [$params], SubscriptionGracePeriodResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+	 * @param SubscriptionGracePeriodUpdateRequest $postBody
+     * @return SubscriptionGracePeriodResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function updateSubscriptionGracePeriods($id, SubscriptionGracePeriodUpdateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateSubscriptionGracePeriods', [$params], SubscriptionGracePeriodResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SubscriptionGracePeriods::class, 'AppleService_AppStore_ResourceSubscriptionGracePeriods');

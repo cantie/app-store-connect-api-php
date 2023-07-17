@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\DevicesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\DeviceResponse;
+use Cantie\AppStoreConnect\Services\AppStore\DeviceCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\DeviceUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,49 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class Devices extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return DevicesResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listDevices($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listDevices', [$params], DevicesResponse::class);
+    }
+    /**
+	 * @param DeviceCreateRequest $postBody
+     * @return DeviceResponse
+     */
+    public function createDevices(DeviceCreateRequest $postBody)
+    {
+		$params = ['postBody' => $postBody];
+        return $this->call('createDevices', [$params], DeviceResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return DeviceResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getDevices($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getDevices', [$params], DeviceResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param DeviceUpdateRequest $postBody
+     * @return DeviceResponse
+     */
+    public function updateDevices($id, DeviceUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateDevices', [$params], DeviceResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(Devices::class, 'AppleService_AppStore_ResourceDevices');

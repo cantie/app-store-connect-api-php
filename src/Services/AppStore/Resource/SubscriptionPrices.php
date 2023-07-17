@@ -26,8 +26,8 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPriceResponse;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPriceCreateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +37,27 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SubscriptionPrices extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param SubscriptionPriceCreateRequest $postBody
+     * @return SubscriptionPriceResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createSubscriptionPrices(SubscriptionPriceCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createSubscriptionPrices', [$params], SubscriptionPriceResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return null
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function deleteSubscriptionPrices($id)
     {
 		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('deleteSubscriptionPrices', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SubscriptionPrices::class, 'AppleService_AppStore_ResourceSubscriptionPrices');

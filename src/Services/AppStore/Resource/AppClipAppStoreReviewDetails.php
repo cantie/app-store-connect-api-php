@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAppStoreReviewDetailResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAppStoreReviewDetailCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAppStoreReviewDetailUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,39 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppClipAppStoreReviewDetails extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppClipAppStoreReviewDetailCreateRequest $postBody
+     * @return AppClipAppStoreReviewDetailResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppClipAppStoreReviewDetails(AppClipAppStoreReviewDetailCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppClipAppStoreReviewDetails', [$params], AppClipAppStoreReviewDetailResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppClipAppStoreReviewDetailResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppClipAppStoreReviewDetails($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppClipAppStoreReviewDetails', [$params], AppClipAppStoreReviewDetailResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppClipAppStoreReviewDetailUpdateRequest $postBody
+     * @return AppClipAppStoreReviewDetailResponse
+     */
+    public function updateAppClipAppStoreReviewDetails($id, AppClipAppStoreReviewDetailUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppClipAppStoreReviewDetails', [$params], AppClipAppStoreReviewDetailResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppClipAppStoreReviewDetails::class, 'AppleService_AppStore_ResourceAppClipAppStoreReviewDetails');

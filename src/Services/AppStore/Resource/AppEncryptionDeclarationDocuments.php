@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,39 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppEncryptionDeclarationDocuments extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppEncryptionDeclarationDocumentCreateRequest $postBody
+     * @return AppEncryptionDeclarationDocumentResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppEncryptionDeclarationDocuments(AppEncryptionDeclarationDocumentCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppEncryptionDeclarationDocuments', [$params], AppEncryptionDeclarationDocumentResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppEncryptionDeclarationDocumentResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppEncryptionDeclarationDocuments($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppEncryptionDeclarationDocuments', [$params], AppEncryptionDeclarationDocumentResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppEncryptionDeclarationDocumentUpdateRequest $postBody
+     * @return AppEncryptionDeclarationDocumentResponse
+     */
+    public function updateAppEncryptionDeclarationDocuments($id, AppEncryptionDeclarationDocumentUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppEncryptionDeclarationDocuments', [$params], AppEncryptionDeclarationDocumentResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppEncryptionDeclarationDocuments::class, 'AppleService_AppStore_ResourceAppEncryptionDeclarationDocuments');

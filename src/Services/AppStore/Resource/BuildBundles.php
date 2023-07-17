@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipDomainStatusResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildBundleFileSizesResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,53 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class BuildBundles extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return AppClipDomainStatusResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function getBuildBundlesAppClipDomainCacheStatus($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('getBuildBundlesAppClipDomainCacheStatus', [$params], AppClipDomainStatusResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppClipDomainStatusResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getBuildBundlesAppClipDomainDebugStatus($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getBuildBundlesAppClipDomainDebugStatus', [$params], AppClipDomainStatusResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return BetaAppClipInvocationsResponse
+     */
+    public function listBuildBundlesBetaAppClipInvocations($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listBuildBundlesBetaAppClipInvocations', [$params], BetaAppClipInvocationsResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return BuildBundleFileSizesResponse
+     */
+    public function listBuildBundlesBuildBundleFileSizes($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listBuildBundlesBuildBundleFileSizes', [$params], BuildBundleFileSizesResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(BuildBundles::class, 'AppleService_AppStore_ResourceBuildBundles');

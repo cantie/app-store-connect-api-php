@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppPreOrders extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppPreOrderCreateRequest $postBody
+     * @return AppPreOrderResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppPreOrders(AppPreOrderCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppPreOrders', [$params], AppPreOrderResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppPreOrderResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppPreOrders($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppPreOrders', [$params], AppPreOrderResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppPreOrderUpdateRequest $postBody
+     * @return AppPreOrderResponse
+     */
+    public function updateAppPreOrders($id, AppPreOrderUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppPreOrders', [$params], AppPreOrderResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppPreOrders($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppPreOrders', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppPreOrders::class, 'AppleService_AppStore_ResourceAppPreOrders');

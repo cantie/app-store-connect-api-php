@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipHeaderImageResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipHeaderImageCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipHeaderImageUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppClipHeaderImages extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppClipHeaderImageCreateRequest $postBody
+     * @return AppClipHeaderImageResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppClipHeaderImages(AppClipHeaderImageCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppClipHeaderImages', [$params], AppClipHeaderImageResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppClipHeaderImageResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppClipHeaderImages($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppClipHeaderImages', [$params], AppClipHeaderImageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppClipHeaderImageUpdateRequest $postBody
+     * @return AppClipHeaderImageResponse
+     */
+    public function updateAppClipHeaderImages($id, AppClipHeaderImageUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppClipHeaderImages', [$params], AppClipHeaderImageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppClipHeaderImages($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppClipHeaderImages', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppClipHeaderImages::class, 'AppleService_AppStore_ResourceAppClipHeaderImages');

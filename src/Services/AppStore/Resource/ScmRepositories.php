@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\ScmRepositoriesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\ScmRepositoryResponse;
+use Cantie\AppStoreConnect\Services\AppStore\ScmGitReferencesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\ScmPullRequestsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,52 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class ScmRepositories extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return ScmRepositoriesResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listScmRepositories($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listScmRepositories', [$params], ScmRepositoriesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return ScmRepositoryResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getScmRepositories($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getScmRepositories', [$params], ScmRepositoryResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return ScmGitReferencesResponse
+     */
+    public function listScmRepositoriesGitReferences($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listScmRepositoriesGitReferences', [$params], ScmGitReferencesResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return ScmPullRequestsResponse
+     */
+    public function listScmRepositoriesPullRequests($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listScmRepositoriesPullRequests', [$params], ScmPullRequestsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(ScmRepositories::class, 'AppleService_AppStore_ResourceScmRepositories');

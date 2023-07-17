@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class BetaAppClipInvocations extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param BetaAppClipInvocationCreateRequest $postBody
+     * @return BetaAppClipInvocationResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createBetaAppClipInvocations(BetaAppClipInvocationCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createBetaAppClipInvocations', [$params], BetaAppClipInvocationResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return BetaAppClipInvocationResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getBetaAppClipInvocations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getBetaAppClipInvocations', [$params], BetaAppClipInvocationResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param BetaAppClipInvocationUpdateRequest $postBody
+     * @return BetaAppClipInvocationResponse
+     */
+    public function updateBetaAppClipInvocations($id, BetaAppClipInvocationUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateBetaAppClipInvocations', [$params], BetaAppClipInvocationResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteBetaAppClipInvocations($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteBetaAppClipInvocations', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(BetaAppClipInvocations::class, 'AppleService_AppStore_ResourceBetaAppClipInvocations');

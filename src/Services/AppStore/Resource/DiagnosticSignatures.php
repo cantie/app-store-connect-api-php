@@ -26,8 +26,7 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\diagnosticLogs;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +36,20 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class DiagnosticSignatures extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return diagnosticLogs
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listDiagnosticSignaturesLogs($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
-     */
-    public function getCustomerReviewsResponse($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('listDiagnosticSignaturesLogs', [$params], diagnosticLogs::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(DiagnosticSignatures::class, 'AppleService_AppStore_ResourceDiagnosticSignatures');

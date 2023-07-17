@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppEventScreenshotResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppEventScreenshotCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppEventScreenshotUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppEventScreenshots extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppEventScreenshotCreateRequest $postBody
+     * @return AppEventScreenshotResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppEventScreenshots(AppEventScreenshotCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppEventScreenshots', [$params], AppEventScreenshotResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppEventScreenshotResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppEventScreenshots($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppEventScreenshots', [$params], AppEventScreenshotResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppEventScreenshotUpdateRequest $postBody
+     * @return AppEventScreenshotResponse
+     */
+    public function updateAppEventScreenshots($id, AppEventScreenshotUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppEventScreenshots', [$params], AppEventScreenshotResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppEventScreenshots($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppEventScreenshots', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppEventScreenshots::class, 'AppleService_AppStore_ResourceAppEventScreenshots');

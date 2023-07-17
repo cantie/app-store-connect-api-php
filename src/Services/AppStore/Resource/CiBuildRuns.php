@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\CiBuildRunResponse;
+use Cantie\AppStoreConnect\Services\AppStore\CiBuildRunCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\CiBuildActionsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,51 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class CiBuildRuns extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param CiBuildRunCreateRequest $postBody
+     * @return CiBuildRunResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createCiBuildRuns(CiBuildRunCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createCiBuildRuns', [$params], CiBuildRunResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return CiBuildRunResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getCiBuildRuns($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getCiBuildRuns', [$params], CiBuildRunResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return CiBuildActionsResponse
+     */
+    public function listCiBuildRunsActions($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listCiBuildRunsActions', [$params], CiBuildActionsResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return BuildsResponse
+     */
+    public function listCiBuildRunsBuilds($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listCiBuildRunsBuilds', [$params], BuildsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(CiBuildRuns::class, 'AppleService_AppStore_ResourceCiBuildRuns');

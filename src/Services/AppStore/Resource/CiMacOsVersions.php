@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\CiMacOsVersionsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\CiMacOsVersionResponse;
+use Cantie\AppStoreConnect\Services\AppStore\CiXcodeVersionsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,41 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class CiMacOsVersions extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return CiMacOsVersionsResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listCiMacOsVersions($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listCiMacOsVersions', [$params], CiMacOsVersionsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return CiMacOsVersionResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getCiMacOsVersions($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getCiMacOsVersions', [$params], CiMacOsVersionResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return CiXcodeVersionsResponse
+     */
+    public function listCiMacOsVersionsXcodeVersions($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listCiMacOsVersionsXcodeVersions', [$params], CiXcodeVersionsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(CiMacOsVersions::class, 'AppleService_AppStore_ResourceCiMacOsVersions');

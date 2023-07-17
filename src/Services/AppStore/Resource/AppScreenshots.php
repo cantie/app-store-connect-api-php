@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppScreenshots extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppScreenshotCreateRequest $postBody
+     * @return AppScreenshotResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppScreenshots(AppScreenshotCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppScreenshots', [$params], AppScreenshotResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppScreenshotResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppScreenshots($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppScreenshots', [$params], AppScreenshotResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppScreenshotUpdateRequest $postBody
+     * @return AppScreenshotResponse
+     */
+    public function updateAppScreenshots($id, AppScreenshotUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppScreenshots', [$params], AppScreenshotResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppScreenshots($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppScreenshots', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppScreenshots::class, 'AppleService_AppStore_ResourceAppScreenshots');

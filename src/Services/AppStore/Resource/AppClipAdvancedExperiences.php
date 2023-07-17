@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperienceResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperienceCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperienceUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,39 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppClipAdvancedExperiences extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppClipAdvancedExperienceCreateRequest $postBody
+     * @return AppClipAdvancedExperienceResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppClipAdvancedExperiences(AppClipAdvancedExperienceCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppClipAdvancedExperiences', [$params], AppClipAdvancedExperienceResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppClipAdvancedExperienceResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppClipAdvancedExperiences($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppClipAdvancedExperiences', [$params], AppClipAdvancedExperienceResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppClipAdvancedExperienceUpdateRequest $postBody
+     * @return AppClipAdvancedExperienceResponse
+     */
+    public function updateAppClipAdvancedExperiences($id, AppClipAdvancedExperienceUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppClipAdvancedExperiences', [$params], AppClipAdvancedExperienceResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppClipAdvancedExperiences::class, 'AppleService_AppStore_ResourceAppClipAdvancedExperiences');

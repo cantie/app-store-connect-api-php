@@ -26,8 +26,8 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGroupSubmissionResponse;
+use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGroupSubmissionCreateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +37,18 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SubscriptionGroupSubmissions extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param SubscriptionGroupSubmissionCreateRequest $postBody
+     * @return SubscriptionGroupSubmissionResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createSubscriptionGroupSubmissions(SubscriptionGroupSubmissionCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
-     */
-    public function getCustomerReviewsResponse($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createSubscriptionGroupSubmissions', [$params], SubscriptionGroupSubmissionResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SubscriptionGroupSubmissions::class, 'AppleService_AppStore_ResourceSubscriptionGroupSubmissions');

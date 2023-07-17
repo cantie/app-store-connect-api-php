@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementUpdateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,51 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class BetaLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return BetaLicenseAgreementsResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listBetaLicenseAgreements($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listBetaLicenseAgreements', [$params], BetaLicenseAgreementsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return BetaLicenseAgreementResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getBetaLicenseAgreements($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getBetaLicenseAgreements', [$params], BetaLicenseAgreementResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param BetaLicenseAgreementUpdateRequest $postBody
+     * @return BetaLicenseAgreementResponse
+     */
+    public function updateBetaLicenseAgreements($id, BetaLicenseAgreementUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateBetaLicenseAgreements', [$params], BetaLicenseAgreementResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppResponse
+     */
+    public function getBetaLicenseAgreementsApp($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getBetaLicenseAgreementsApp', [$params], AppResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(BetaLicenseAgreements::class, 'AppleService_AppStore_ResourceBetaLicenseAgreements');

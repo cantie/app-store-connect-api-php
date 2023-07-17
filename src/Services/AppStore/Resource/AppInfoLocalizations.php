@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppInfoLocalizationResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppInfoLocalizationCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppInfoLocalizationUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppInfoLocalizations extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppInfoLocalizationCreateRequest $postBody
+     * @return AppInfoLocalizationResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppInfoLocalizations(AppInfoLocalizationCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppInfoLocalizations', [$params], AppInfoLocalizationResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppInfoLocalizationResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppInfoLocalizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppInfoLocalizations', [$params], AppInfoLocalizationResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppInfoLocalizationUpdateRequest $postBody
+     * @return AppInfoLocalizationResponse
+     */
+    public function updateAppInfoLocalizations($id, AppInfoLocalizationUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppInfoLocalizations', [$params], AppInfoLocalizationResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppInfoLocalizations($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppInfoLocalizations', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppInfoLocalizations::class, 'AppleService_AppStore_ResourceAppInfoLocalizations');

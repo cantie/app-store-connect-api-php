@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppPriceTiersResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppPriceTierResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppPricePointsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,41 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppPriceTiers extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return AppPriceTiersResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listAppPriceTiers($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listAppPriceTiers', [$params], AppPriceTiersResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppPriceTierResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppPriceTiers($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppPriceTiers', [$params], AppPriceTierResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppPricePointsResponse
+     */
+    public function listAppPriceTiersPricePoints($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppPriceTiersPricePoints', [$params], AppPricePointsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppPriceTiers::class, 'AppleService_AppStore_ResourceAppPriceTiers');

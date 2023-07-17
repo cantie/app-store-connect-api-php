@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,40 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppAvailabilities extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppAvailabilityCreateRequest $postBody
+     * @return AppAvailabilityResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppAvailabilities(AppAvailabilityCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppAvailabilities', [$params], AppAvailabilityResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppAvailabilityResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppAvailabilities($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppAvailabilities', [$params], AppAvailabilityResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return TerritoriesResponse
+     */
+    public function listAppAvailabilitiesAvailableTerritories($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppAvailabilitiesAvailableTerritories', [$params], TerritoriesResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppAvailabilities::class, 'AppleService_AppStore_ResourceAppAvailabilities');

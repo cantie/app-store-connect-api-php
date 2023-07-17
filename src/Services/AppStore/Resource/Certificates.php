@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\CertificatesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\CertificateResponse;
+use Cantie\AppStoreConnect\Services\AppStore\CertificateCreateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class Certificates extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return CertificatesResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listCertificates($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listCertificates', [$params], CertificatesResponse::class);
+    }
+    /**
+	 * @param CertificateCreateRequest $postBody
+     * @return CertificateResponse
+     */
+    public function createCertificates(CertificateCreateRequest $postBody)
+    {
+		$params = ['postBody' => $postBody];
+        return $this->call('createCertificates', [$params], CertificateResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return CertificateResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getCertificates($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getCertificates', [$params], CertificateResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteCertificates($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteCertificates', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(Certificates::class, 'AppleService_AppStore_ResourceCertificates');

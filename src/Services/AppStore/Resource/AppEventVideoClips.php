@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppEventVideoClipResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppEventVideoClipCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppEventVideoClipUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppEventVideoClips extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppEventVideoClipCreateRequest $postBody
+     * @return AppEventVideoClipResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppEventVideoClips(AppEventVideoClipCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppEventVideoClips', [$params], AppEventVideoClipResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppEventVideoClipResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppEventVideoClips($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppEventVideoClips', [$params], AppEventVideoClipResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppEventVideoClipUpdateRequest $postBody
+     * @return AppEventVideoClipResponse
+     */
+    public function updateAppEventVideoClips($id, AppEventVideoClipUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppEventVideoClips', [$params], AppEventVideoClipResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppEventVideoClips($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppEventVideoClips', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppEventVideoClips::class, 'AppleService_AppStore_ResourceAppEventVideoClips');

@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppPreviewResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppPreviewCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppPreviewUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppPreviews extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppPreviewCreateRequest $postBody
+     * @return AppPreviewResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppPreviews(AppPreviewCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppPreviews', [$params], AppPreviewResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppPreviewResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppPreviews($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppPreviews', [$params], AppPreviewResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppPreviewUpdateRequest $postBody
+     * @return AppPreviewResponse
+     */
+    public function updateAppPreviews($id, AppPreviewUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppPreviews', [$params], AppPreviewResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteAppPreviews($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deleteAppPreviews', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppPreviews::class, 'AppleService_AppStore_ResourceAppPreviews');

@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\ReviewSubmissionItemResponse;
+use Cantie\AppStoreConnect\Services\AppStore\ReviewSubmissionItemCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\ReviewSubmissionItemUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,37 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class ReviewSubmissionItems extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param ReviewSubmissionItemCreateRequest $postBody
+     * @return ReviewSubmissionItemResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createReviewSubmissionItems(ReviewSubmissionItemCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createReviewSubmissionItems', [$params], ReviewSubmissionItemResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+	 * @param ReviewSubmissionItemUpdateRequest $postBody
+     * @return ReviewSubmissionItemResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function updateReviewSubmissionItems($id, ReviewSubmissionItemUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateReviewSubmissionItems', [$params], ReviewSubmissionItemResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteReviewSubmissionItems($id)
     {
 		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('deleteReviewSubmissionItems', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(ReviewSubmissionItems::class, 'AppleService_AppStore_ResourceReviewSubmissionItems');

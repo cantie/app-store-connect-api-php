@@ -26,8 +26,10 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewDetailResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewDetailCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewDetailUpdateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewAttachmentsResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +39,50 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppStoreReviewDetails extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param AppStoreReviewDetailCreateRequest $postBody
+     * @return AppStoreReviewDetailResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createAppStoreReviewDetails(AppStoreReviewDetailCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppStoreReviewDetails', [$params], AppStoreReviewDetailResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppStoreReviewDetailResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getAppStoreReviewDetails($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getAppStoreReviewDetails', [$params], AppStoreReviewDetailResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppStoreReviewDetailUpdateRequest $postBody
+     * @return AppStoreReviewDetailResponse
+     */
+    public function updateAppStoreReviewDetails($id, AppStoreReviewDetailUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppStoreReviewDetails', [$params], AppStoreReviewDetailResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppStoreReviewAttachmentsResponse
+     */
+    public function listAppStoreReviewDetailsAppStoreReviewAttachments($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppStoreReviewDetailsAppStoreReviewAttachments', [$params], AppStoreReviewAttachmentsResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppStoreReviewDetails::class, 'AppleService_AppStore_ResourceAppStoreReviewDetails');

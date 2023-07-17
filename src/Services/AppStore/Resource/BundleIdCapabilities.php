@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilityResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilityCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilityUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,37 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class BundleIdCapabilities extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param BundleIdCapabilityCreateRequest $postBody
+     * @return BundleIdCapabilityResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createBundleIdCapabilities(BundleIdCapabilityCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createBundleIdCapabilities', [$params], BundleIdCapabilityResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+	 * @param BundleIdCapabilityUpdateRequest $postBody
+     * @return BundleIdCapabilityResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function updateBundleIdCapabilities($id, BundleIdCapabilityUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateBundleIdCapabilities', [$params], BundleIdCapabilityResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deleteBundleIdCapabilities($id)
     {
 		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('deleteBundleIdCapabilities', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(BundleIdCapabilities::class, 'AppleService_AppStore_ResourceBundleIdCapabilities');

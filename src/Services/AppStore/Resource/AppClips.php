@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperiencesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppClipDefaultExperiencesResponse;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,42 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class AppClips extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return AppClipResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function getAppClips($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('getAppClips', [$params], AppClipResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return AppClipAdvancedExperiencesResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function listAppClipsAppClipAdvancedExperiences($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('listAppClipsAppClipAdvancedExperiences', [$params], AppClipAdvancedExperiencesResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppClipDefaultExperiencesResponse
+     */
+    public function listAppClipsAppClipDefaultExperiences($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppClipsAppClipDefaultExperiences', [$params], AppClipDefaultExperiencesResponse::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(AppClips::class, 'AppleService_AppStore_ResourceAppClips');

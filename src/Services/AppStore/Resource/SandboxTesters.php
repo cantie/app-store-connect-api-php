@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\SandboxTestersV2Response;
+use Cantie\AppStoreConnect\Services\AppStore\SandboxTesterV2Response;
+use Cantie\AppStoreConnect\Services\AppStore\SandboxTesterV2UpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,29 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class SandboxTesters extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+     * @return SandboxTestersV2Response
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function listSandboxTesters($optParams = [])
     {
-		$params = ['id' => $id];
+		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+        return $this->call('listSandboxTesters', [$params], SandboxTestersV2Response::class);
     }
     /**
 	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+	 * @param SandboxTesterV2UpdateRequest $postBody
+     * @return SandboxTesterV2Response
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function updateSandboxTesters($id, SandboxTesterV2UpdateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateSandboxTesters', [$params], SandboxTesterV2Response::class);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(SandboxTesters::class, 'AppleService_AppStore_ResourceSandboxTesters');

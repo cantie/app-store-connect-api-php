@@ -26,8 +26,9 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
+use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchaseImageResponse;
+use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchaseImageCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchaseImageUpdateRequest;
 
 /**
  * The "apps" collection of methods.
@@ -37,31 +38,48 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
  *   $apps = $appStoreService->apps;
  *  </code>
  */
-class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
+class PromotedPurchaseImages extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponse
+	 * @param PromotedPurchaseImageCreateRequest $postBody
+     * @return PromotedPurchaseImageResponse
      */
-    public function getCustomerReviews($id, $optParams = [])
+    public function createPromotedPurchaseImages(PromotedPurchaseImageCreateRequest $postBody)
     {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviews', [$params], CustomerReviewResponse::class);
+		$params = ['postBody' => $postBody];
+        return $this->call('createPromotedPurchaseImages', [$params], PromotedPurchaseImageResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CustomerReviewResponseV1Response
+     * @return PromotedPurchaseImageResponse
      */
-    public function getCustomerReviewsResponse($id, $optParams = [])
+    public function getPromotedPurchaseImages($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getCustomerReviewsResponse', [$params], CustomerReviewResponseV1Response::class);
+        return $this->call('getPromotedPurchaseImages', [$params], PromotedPurchaseImageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param PromotedPurchaseImageUpdateRequest $postBody
+     * @return PromotedPurchaseImageResponse
+     */
+    public function updatePromotedPurchaseImages($id, PromotedPurchaseImageUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updatePromotedPurchaseImages', [$params], PromotedPurchaseImageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+     * @return null
+     */
+    public function deletePromotedPurchaseImages($id)
+    {
+		$params = ['id' => $id];
+        return $this->call('deletePromotedPurchaseImages', [$params], null);
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');
+class_alias(PromotedPurchaseImages::class, 'AppleService_AppStore_ResourcePromotedPurchaseImages');
