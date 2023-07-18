@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponse;
 use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1Response;
 
 /**
- * The "apps" collection of methods.
+ * The "customerReviews" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $customerReviews = $appStoreService->customerReviews;
  *  </code>
  */
 class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource

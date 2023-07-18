@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\DeviceCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\DeviceUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "devices" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $devices = $appStoreService->devices;
  *  </code>
  */
 class Devices extends \Cantie\AppStoreConnect\Services\Resource

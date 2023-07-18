@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppPriceTierResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppPricePointsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appPriceTiers" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appPriceTiers = $appStoreService->appPriceTiers;
  *  </code>
  */
 class AppPriceTiers extends \Cantie\AppStoreConnect\Services\Resource

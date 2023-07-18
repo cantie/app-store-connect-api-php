@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageVersionCreateRe
 use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageLocalizationsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appCustomProductPageVersions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appCustomProductPageVersions = $appStoreService->appCustomProductPageVersions;
  *  </code>
  */
 class AppCustomProductPageVersions extends \Cantie\AppStoreConnect\Services\Resource

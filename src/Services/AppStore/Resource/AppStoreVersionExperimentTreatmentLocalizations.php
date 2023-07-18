@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppPreviewSetsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotSetsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionExperimentTreatmentLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionExperimentTreatmentLocalizations = $appStoreService->appStoreVersionExperimentTreatmentLocalizations;
  *  </code>
  */
 class AppStoreVersionExperimentTreatmentLocalizations extends \Cantie\AppStoreConnect\Services\Resource

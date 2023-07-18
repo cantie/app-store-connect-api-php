@@ -34,11 +34,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CertificatesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\DevicesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "profiles" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $profiles = $appStoreService->profiles;
  *  </code>
  */
 class Profiles extends \Cantie\AppStoreConnect\Services\Resource

@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\gzip;
 
 /**
- * The "apps" collection of methods.
+ * The "salesReports" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $salesReports = $appStoreService->salesReports;
  *  </code>
  */
 class SalesReports extends \Cantie\AppStoreConnect\Services\Resource

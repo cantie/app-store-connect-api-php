@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppPreviewSetAppPreviewsLinkagesReq
 use Cantie\AppStoreConnect\Services\AppStore\AppPreviewsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appPreviewSets" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appPreviewSets = $appStoreService->appPreviewSets;
  *  </code>
  */
 class AppPreviewSets extends \Cantie\AppStoreConnect\Services\Resource

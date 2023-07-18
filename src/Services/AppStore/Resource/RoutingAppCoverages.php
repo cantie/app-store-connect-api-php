@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "routingAppCoverages" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $routingAppCoverages = $appStoreService->routingAppCoverages;
  *  </code>
  */
 class RoutingAppCoverages extends \Cantie\AppStoreConnect\Services\Resource

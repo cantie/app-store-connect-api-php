@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\UserInvitationCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "userInvitations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $userInvitations = $appStoreService->userInvitations;
  *  </code>
  */
 class UserInvitations extends \Cantie\AppStoreConnect\Services\Resource

@@ -39,11 +39,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBuildsLinkagesRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "betaGroups" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaGroups = $appStoreService->betaGroups;
  *  </code>
  */
 class BetaGroups extends \Cantie\AppStoreConnect\Services\Resource

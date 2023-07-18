@@ -35,11 +35,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilitiesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ProfilesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "bundleIds" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $bundleIds = $appStoreService->bundleIds;
  *  </code>
  */
 class BundleIds extends \Cantie\AppStoreConnect\Services\Resource

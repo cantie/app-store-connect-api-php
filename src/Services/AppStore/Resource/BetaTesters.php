@@ -40,11 +40,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaTesterBuildsLinkagesRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "betaTesters" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaTesters = $appStoreService->betaTesters;
  *  </code>
  */
 class BetaTesters extends \Cantie\AppStoreConnect\Services\Resource

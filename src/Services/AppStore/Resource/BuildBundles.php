@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBundleFileSizesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "buildBundles" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $buildBundles = $appStoreService->buildBundles;
  *  </code>
  */
 class BuildBundles extends \Cantie\AppStoreConnect\Services\Resource

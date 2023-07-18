@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppClipDefaultExperienceLocalizatio
 use Cantie\AppStoreConnect\Services\AppStore\AppClipHeaderImageResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appClipDefaultExperienceLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appClipDefaultExperienceLocalizations = $appStoreService->appClipDefaultExperienceLocalizations;
  *  </code>
  */
 class AppClipDefaultExperienceLocalizations extends \Cantie\AppStoreConnect\Services\Resource

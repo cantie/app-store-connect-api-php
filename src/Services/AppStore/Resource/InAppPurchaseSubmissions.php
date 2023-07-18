@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseSubmissionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseSubmissionCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchaseSubmissions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchaseSubmissions = $appStoreService->inAppPurchaseSubmissions;
  *  </code>
  */
 class InAppPurchaseSubmissions extends \Cantie\AppStoreConnect\Services\Resource

@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionAvailabilityCreateReque
 use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionAvailabilities" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionAvailabilities = $appStoreService->subscriptionAvailabilities;
  *  </code>
  */
 class SubscriptionAvailabilities extends \Cantie\AppStoreConnect\Services\Resource

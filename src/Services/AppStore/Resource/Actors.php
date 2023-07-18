@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\ActorsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ActorResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "actors" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $actors = $appStoreService->actors;
  *  </code>
  */
 class Actors extends \Cantie\AppStoreConnect\Services\Resource

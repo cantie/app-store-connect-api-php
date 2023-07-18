@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CiXcodeVersionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\CiMacOsVersionsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "ciXcodeVersions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ciXcodeVersions = $appStoreService->ciXcodeVersions;
  *  </code>
  */
 class CiXcodeVersions extends \Cantie\AppStoreConnect\Services\Resource

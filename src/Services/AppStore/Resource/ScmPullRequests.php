@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\ScmPullRequestResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "scmPullRequests" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $scmPullRequests = $appStoreService->scmPullRequests;
  *  </code>
  */
 class ScmPullRequests extends \Cantie\AppStoreConnect\Services\Resource

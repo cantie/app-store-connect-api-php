@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPricePointResponse;
 use Cantie\AppStoreConnect\Services\AppStore\csv;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionPricePoints" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionPricePoints = $appStoreService->subscriptionPricePoints;
  *  </code>
  */
 class SubscriptionPricePoints extends \Cantie\AppStoreConnect\Services\Resource

@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\ReviewSubmissionUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\ReviewSubmissionItemsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "reviewSubmissions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $reviewSubmissions = $appStoreService->reviewSubmissions;
  *  </code>
  */
 class ReviewSubmissions extends \Cantie\AppStoreConnect\Services\Resource

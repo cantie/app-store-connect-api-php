@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewAttachmentCreateReque
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewAttachmentUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreReviewAttachments" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreReviewAttachments = $appStoreService->appStoreReviewAttachments;
  *  </code>
  */
 class AppStoreReviewAttachments extends \Cantie\AppStoreConnect\Services\Resource

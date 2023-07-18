@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SandboxTesterV2Response;
 use Cantie\AppStoreConnect\Services\AppStore\SandboxTesterV2UpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "sandboxTesters" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $sandboxTesters = $appStoreService->sandboxTesters;
  *  </code>
  */
 class SandboxTesters extends \Cantie\AppStoreConnect\Services\Resource

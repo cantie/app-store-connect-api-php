@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentTreatmentU
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentTreatmentLocalizationsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionExperimentTreatments" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionExperimentTreatments = $appStoreService->appStoreVersionExperimentTreatments;
  *  </code>
  */
 class AppStoreVersionExperimentTreatments extends \Cantie\AppStoreConnect\Services\Resource

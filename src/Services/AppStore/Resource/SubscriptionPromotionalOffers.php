@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPromotionalOfferUpdateR
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPromotionalOfferPricesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionPromotionalOffers" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionPromotionalOffers = $appStoreService->subscriptionPromotionalOffers;
  *  </code>
  */
 class SubscriptionPromotionalOffers extends \Cantie\AppStoreConnect\Services\Resource

@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BuildBetaNotificationResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBetaNotificationCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "buildBetaNotifications" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $buildBetaNotifications = $appStoreService->buildBetaNotifications;
  *  </code>
  */
 class BuildBetaNotifications extends \Cantie\AppStoreConnect\Services\Resource

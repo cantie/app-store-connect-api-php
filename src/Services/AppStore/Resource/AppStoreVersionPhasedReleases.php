@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseCreateR
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionPhasedReleases" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionPhasedReleases = $appStoreService->appStoreVersionPhasedReleases;
  *  </code>
  */
 class AppStoreVersionPhasedReleases extends \Cantie\AppStoreConnect\Services\Resource

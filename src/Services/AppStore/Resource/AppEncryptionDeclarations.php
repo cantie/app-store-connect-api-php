@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentRes
 use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationBuildsLinkagesRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appEncryptionDeclarations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appEncryptionDeclarations = $appStoreService->appEncryptionDeclarations;
  *  </code>
  */
 class AppEncryptionDeclarations extends \Cantie\AppStoreConnect\Services\Resource

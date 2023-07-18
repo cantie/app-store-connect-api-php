@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppPreviewCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppPreviewUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appPreviews" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appPreviews = $appStoreService->appPreviews;
  *  </code>
  */
 class AppPreviews extends \Cantie\AppStoreConnect\Services\Resource

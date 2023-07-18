@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPriceResponse;
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionPriceCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionPrices" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionPrices = $appStoreService->subscriptionPrices;
  *  </code>
  */
 class SubscriptionPrices extends \Cantie\AppStoreConnect\Services\Resource

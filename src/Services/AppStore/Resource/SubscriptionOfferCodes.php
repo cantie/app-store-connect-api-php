@@ -34,11 +34,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeOneTimeUseCode
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodePricesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionOfferCodes" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionOfferCodes = $appStoreService->subscriptionOfferCodes;
  *  </code>
  */
 class SubscriptionOfferCodes extends \Cantie\AppStoreConnect\Services\Resource

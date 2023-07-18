@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaTesterInvitationResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaTesterInvitationCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "betaTesterInvitations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaTesterInvitations = $appStoreService->betaTesterInvitations;
  *  </code>
  */
 class BetaTesterInvitations extends \Cantie\AppStoreConnect\Services\Resource

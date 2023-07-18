@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionIntroductoryOfferCreate
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionIntroductoryOfferUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionIntroductoryOffers" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionIntroductoryOffers = $appStoreService->subscriptionIntroductoryOffers;
  *  </code>
  */
 class SubscriptionIntroductoryOffers extends \Cantie\AppStoreConnect\Services\Resource

@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appAvailabilities" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appAvailabilities = $appStoreService->appAvailabilities;
  *  </code>
  */
 class AppAvailabilities extends \Cantie\AppStoreConnect\Services\Resource

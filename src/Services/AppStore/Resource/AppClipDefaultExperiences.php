@@ -36,11 +36,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppClipDefaultExperienceReleaseWith
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appClipDefaultExperiences" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appClipDefaultExperiences = $appStoreService->appClipDefaultExperiences;
  *  </code>
  */
 class AppClipDefaultExperiences extends \Cantie\AppStoreConnect\Services\Resource

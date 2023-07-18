@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseContentResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchaseContents" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchaseContents = $appStoreService->inAppPurchaseContents;
  *  </code>
  */
 class InAppPurchaseContents extends \Cantie\AppStoreConnect\Services\Resource

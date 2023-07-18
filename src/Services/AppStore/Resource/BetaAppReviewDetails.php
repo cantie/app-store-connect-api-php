@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewDetailUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "betaAppReviewDetails" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaAppReviewDetails = $appStoreService->betaAppReviewDetails;
  *  </code>
  */
 class BetaAppReviewDetails extends \Cantie\AppStoreConnect\Services\Resource

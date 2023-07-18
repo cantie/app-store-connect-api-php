@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseAppStoreReviewScreensh
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseAppStoreReviewScreenshotUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchaseAppStoreReviewScreenshots" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchaseAppStoreReviewScreenshots = $appStoreService->inAppPurchaseAppStoreReviewScreenshots;
  *  </code>
  */
 class InAppPurchaseAppStoreReviewScreenshots extends \Cantie\AppStoreConnect\Services\Resource

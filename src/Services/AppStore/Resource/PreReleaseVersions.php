@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "preReleaseVersions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $preReleaseVersions = $appStoreService->preReleaseVersions;
  *  </code>
  */
 class PreReleaseVersions extends \Cantie\AppStoreConnect\Services\Resource

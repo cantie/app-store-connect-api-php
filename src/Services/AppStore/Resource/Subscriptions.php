@@ -44,11 +44,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionAvailabilityResponse;
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionLocalizationsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptions = $appStoreService->subscriptions;
  *  </code>
  */
 class Subscriptions extends \Cantie\AppStoreConnect\Services\Resource

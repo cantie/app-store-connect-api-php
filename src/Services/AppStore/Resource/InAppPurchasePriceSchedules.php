@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\InAppPurchasePricesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\TerritoryResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchasePriceSchedules" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchasePriceSchedules = $appStoreService->inAppPurchasePriceSchedules;
  *  </code>
  */
 class InAppPurchasePriceSchedules extends \Cantie\AppStoreConnect\Services\Resource

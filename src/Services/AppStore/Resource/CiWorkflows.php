@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CiBuildRunsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ScmRepositoryResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "ciWorkflows" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ciWorkflows = $appStoreService->ciWorkflows;
  *  </code>
  */
 class CiWorkflows extends \Cantie\AppStoreConnect\Services\Resource

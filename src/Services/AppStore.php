@@ -150,10 +150,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
     public function __construct($clientOrConfig = [], $rootUrl = null)
     {
         parent::__construct($clientOrConfig);
-        $this->rootUrl = $rootUrl ?: '@rootUrl@';
+        $this->rootUrl = $rootUrl ?: 'https://api.appstoreconnect.apple.com/';
         $this->servicePath = '';
         $this->batchPath = 'batch';
-        $this->version = 'v1';
+        $this->version = 'v2.4';
         $this->serviceName = 'appstore';
         
         $this->actors = new AppStore\Resource\Actors(

@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SandboxTestersClearPurchaseHistoryR
 use Cantie\AppStoreConnect\Services\AppStore\SandboxTestersClearPurchaseHistoryRequestV2CreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "sandboxTestersClearPurchaseHistoryRequest" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $sandboxTestersClearPurchaseHistoryRequest = $appStoreService->sandboxTestersClearPurchaseHistoryRequest;
  *  </code>
  */
 class SandboxTestersClearPurchaseHistoryRequest extends \Cantie\AppStoreConnect\Services\Resource

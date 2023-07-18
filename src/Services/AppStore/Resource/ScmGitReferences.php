@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\ScmGitReferenceResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "scmGitReferences" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $scmGitReferences = $appStoreService->scmGitReferences;
  *  </code>
  */
 class ScmGitReferences extends \Cantie\AppStoreConnect\Services\Resource

@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeOneTimeUseCode
 use Cantie\AppStoreConnect\Services\AppStore\csv;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionOfferCodeOneTimeUseCodes" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionOfferCodeOneTimeUseCodes = $appStoreService->subscriptionOfferCodeOneTimeUseCodes;
  *  </code>
  */
 class SubscriptionOfferCodeOneTimeUseCodes extends \Cantie\AppStoreConnect\Services\Resource

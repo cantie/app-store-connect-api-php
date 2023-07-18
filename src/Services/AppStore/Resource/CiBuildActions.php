@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CiIssuesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\CiTestResultsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "ciBuildActions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ciBuildActions = $appStoreService->ciBuildActions;
  *  </code>
  */
 class CiBuildActions extends \Cantie\AppStoreConnect\Services\Resource

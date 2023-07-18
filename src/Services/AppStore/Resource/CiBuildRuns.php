@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CiBuildActionsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "ciBuildRuns" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ciBuildRuns = $appStoreService->ciBuildRuns;
  *  </code>
  */
 class CiBuildRuns extends \Cantie\AppStoreConnect\Services\Resource

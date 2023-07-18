@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\ScmProviderResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ScmRepositoriesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "scmProviders" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $scmProviders = $appStoreService->scmProviders;
  *  </code>
  */
 class ScmProviders extends \Cantie\AppStoreConnect\Services\Resource

@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationLocalizationCr
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationLocalizationUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "betaAppClipInvocationLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaAppClipInvocationLocalizations = $appStoreService->betaAppClipInvocationLocalizations;
  *  </code>
  */
 class BetaAppClipInvocationLocalizations extends \Cantie\AppStoreConnect\Services\Resource

@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionSubmissionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionSubmissionCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionSubmissions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionSubmissions = $appStoreService->appStoreVersionSubmissions;
  *  </code>
  */
 class AppStoreVersionSubmissions extends \Cantie\AppStoreConnect\Services\Resource

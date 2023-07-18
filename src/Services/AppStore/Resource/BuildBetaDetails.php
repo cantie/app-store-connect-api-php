@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "buildBetaDetails" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $buildBetaDetails = $appStoreService->buildBetaDetails;
  *  </code>
  */
 class BuildBetaDetails extends \Cantie\AppStoreConnect\Services\Resource

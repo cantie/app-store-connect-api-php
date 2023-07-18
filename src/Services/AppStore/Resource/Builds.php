@@ -47,11 +47,11 @@ use Cantie\AppStoreConnect\Services\AppStore\xcodeMetrics;
 use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "builds" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $builds = $appStoreService->builds;
  *  </code>
  */
 class Builds extends \Cantie\AppStoreConnect\Services\Resource

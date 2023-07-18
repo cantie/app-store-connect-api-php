@@ -39,11 +39,11 @@ use Cantie\AppStoreConnect\Services\AppStore\csv;
 use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchaseResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchases" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchases = $appStoreService->inAppPurchases;
  *  </code>
  */
 class InAppPurchases extends \Cantie\AppStoreConnect\Services\Resource

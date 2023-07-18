@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppInfoLocalizationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppCategoryResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appInfos" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appInfos = $appStoreService->appInfos;
  *  </code>
  */
 class AppInfos extends \Cantie\AppStoreConnect\Services\Resource

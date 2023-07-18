@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppLocalizationUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "betaAppLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaAppLocalizations = $appStoreService->betaAppLocalizations;
  *  </code>
  */
 class BetaAppLocalizations extends \Cantie\AppStoreConnect\Services\Resource

@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\AppPriceResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appPrices" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appPrices = $appStoreService->appPrices;
  *  </code>
  */
 class AppPrices extends \Cantie\AppStoreConnect\Services\Resource

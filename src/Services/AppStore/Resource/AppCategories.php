@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppCategoriesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppCategoryResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appCategories" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appCategories = $appStoreService->appCategories;
  *  </code>
  */
 class AppCategories extends \Cantie\AppStoreConnect\Services\Resource

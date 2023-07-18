@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CertificateResponse;
 use Cantie\AppStoreConnect\Services\AppStore\CertificateCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "certificates" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $certificates = $appStoreService->certificates;
  *  </code>
  */
 class Certificates extends \Cantie\AppStoreConnect\Services\Resource

@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppEventVideoClipCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppEventVideoClipUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appEventVideoClips" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appEventVideoClips = $appStoreService->appEventVideoClips;
  *  </code>
  */
 class AppEventVideoClips extends \Cantie\AppStoreConnect\Services\Resource

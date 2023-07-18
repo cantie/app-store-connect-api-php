@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppEventScreenshotsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppEventVideoClipsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appEventLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appEventLocalizations = $appStoreService->appEventLocalizations;
  *  </code>
  */
 class AppEventLocalizations extends \Cantie\AppStoreConnect\Services\Resource

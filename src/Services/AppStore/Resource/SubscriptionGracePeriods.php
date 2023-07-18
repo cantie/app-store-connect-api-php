@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGracePeriodResponse;
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGracePeriodUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionGracePeriods" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionGracePeriods = $appStoreService->subscriptionGracePeriods;
  *  </code>
  */
 class SubscriptionGracePeriods extends \Cantie\AppStoreConnect\Services\Resource

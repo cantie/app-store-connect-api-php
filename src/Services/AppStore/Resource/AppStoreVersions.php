@@ -46,11 +46,11 @@ use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersions = $appStoreService->appStoreVersions;
  *  </code>
  */
 class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource

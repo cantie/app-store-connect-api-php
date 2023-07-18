@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppEventScreenshotCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppEventScreenshotUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appEventScreenshots" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appEventScreenshots = $appStoreService->appEventScreenshots;
  *  </code>
  */
 class AppEventScreenshots extends \Cantie\AppStoreConnect\Services\Resource

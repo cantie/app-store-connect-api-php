@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGroupSubmissionResponse
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGroupSubmissionCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionGroupSubmissions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionGroupSubmissions = $appStoreService->subscriptionGroupSubmissions;
  *  </code>
  */
 class SubscriptionGroupSubmissions extends \Cantie\AppStoreConnect\Services\Resource

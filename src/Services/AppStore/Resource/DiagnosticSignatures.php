@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\diagnosticLogs;
 
 /**
- * The "apps" collection of methods.
+ * The "diagnosticSignatures" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $diagnosticSignatures = $appStoreService->diagnosticSignatures;
  *  </code>
  */
 class DiagnosticSignatures extends \Cantie\AppStoreConnect\Services\Resource

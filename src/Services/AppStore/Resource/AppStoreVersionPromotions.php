@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPromotionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPromotionCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionPromotions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionPromotions = $appStoreService->appStoreVersionPromotions;
  *  </code>
  */
 class AppStoreVersionPromotions extends \Cantie\AppStoreConnect\Services\Resource

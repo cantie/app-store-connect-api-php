@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\CiIssueResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "ciIssues" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ciIssues = $appStoreService->ciIssues;
  *  </code>
  */
 class CiIssues extends \Cantie\AppStoreConnect\Services\Resource

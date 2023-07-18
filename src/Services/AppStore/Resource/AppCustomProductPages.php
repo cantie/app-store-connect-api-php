@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageVersionsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appCustomProductPages" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appCustomProductPages = $appStoreService->appCustomProductPages;
  *  </code>
  */
 class AppCustomProductPages extends \Cantie\AppStoreConnect\Services\Resource

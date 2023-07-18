@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionReleaseRequestRespon
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionReleaseRequestCreateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionReleaseRequests" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionReleaseRequests = $appStoreService->appStoreVersionReleaseRequests;
  *  </code>
  */
 class AppStoreVersionReleaseRequests extends \Cantie\AppStoreConnect\Services\Resource

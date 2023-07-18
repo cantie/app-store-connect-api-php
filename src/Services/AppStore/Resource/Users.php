@@ -34,11 +34,11 @@ use Cantie\AppStoreConnect\Services\AppStore\UserVisibleAppsLinkagesRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "users" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $users = $appStoreService->users;
  *  </code>
  */
 class Users extends \Cantie\AppStoreConnect\Services\Resource

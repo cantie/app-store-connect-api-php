@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchaseUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchaseImagesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "promotedPurchases" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $promotedPurchases = $appStoreService->promotedPurchases;
  *  </code>
  */
 class PromotedPurchases extends \Cantie\AppStoreConnect\Services\Resource

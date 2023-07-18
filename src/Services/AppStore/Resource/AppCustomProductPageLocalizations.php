@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppPreviewSetsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotSetsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appCustomProductPageLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appCustomProductPageLocalizations = $appStoreService->appCustomProductPageLocalizations;
  *  </code>
  */
 class AppCustomProductPageLocalizations extends \Cantie\AppStoreConnect\Services\Resource

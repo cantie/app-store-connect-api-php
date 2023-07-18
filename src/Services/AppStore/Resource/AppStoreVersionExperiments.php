@@ -35,11 +35,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentUpdateRequ
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentTreatmentsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appStoreVersionExperiments" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appStoreVersionExperiments = $appStoreService->appStoreVersionExperiments;
  *  </code>
  */
 class AppStoreVersionExperiments extends \Cantie\AppStoreConnect\Services\Resource

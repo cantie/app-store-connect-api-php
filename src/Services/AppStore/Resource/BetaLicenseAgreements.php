@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "betaLicenseAgreements" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaLicenseAgreements = $appStoreService->betaLicenseAgreements;
  *  </code>
  */
 class BetaLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource

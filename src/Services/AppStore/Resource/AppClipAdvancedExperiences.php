@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperienceCreateRequ
 use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperienceUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appClipAdvancedExperiences" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appClipAdvancedExperiences = $appStoreService->appClipAdvancedExperiences;
  *  </code>
  */
 class AppClipAdvancedExperiences extends \Cantie\AppStoreConnect\Services\Resource

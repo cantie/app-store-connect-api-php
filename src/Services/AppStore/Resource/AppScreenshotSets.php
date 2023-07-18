@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotSetAppScreenshotsLinka
 use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appScreenshotSets" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appScreenshotSets = $appStoreService->appScreenshotSets;
  *  </code>
  */
 class AppScreenshotSets extends \Cantie\AppStoreConnect\Services\Resource

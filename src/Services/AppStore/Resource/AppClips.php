@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppClipAdvancedExperiencesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppClipDefaultExperiencesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appClips" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appClips = $appStoreService->appClips;
  *  </code>
  */
 class AppClips extends \Cantie\AppStoreConnect\Services\Resource

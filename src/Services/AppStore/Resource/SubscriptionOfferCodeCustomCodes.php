@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeCustomCodeCrea
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionOfferCodeCustomCodeUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionOfferCodeCustomCodes" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionOfferCodeCustomCodes = $appStoreService->subscriptionOfferCodeCustomCodes;
  *  </code>
  */
 class SubscriptionOfferCodeCustomCodes extends \Cantie\AppStoreConnect\Services\Resource

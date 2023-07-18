@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseAvailabilityCreateRequ
 use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchaseAvailabilities" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchaseAvailabilities = $appStoreService->inAppPurchaseAvailabilities;
  *  </code>
  */
 class InAppPurchaseAvailabilities extends \Cantie\AppStoreConnect\Services\Resource

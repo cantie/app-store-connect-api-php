@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionLocalizationCreateReque
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionLocalizationUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionLocalizations = $appStoreService->subscriptionLocalizations;
  *  </code>
  */
 class SubscriptionLocalizations extends \Cantie\AppStoreConnect\Services\Resource

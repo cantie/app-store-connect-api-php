@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppEventUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppEventLocalizationsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "appEvents" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appEvents = $appStoreService->appEvents;
  *  </code>
  */
 class AppEvents extends \Cantie\AppStoreConnect\Services\Resource

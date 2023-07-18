@@ -29,11 +29,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\CiArtifactResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "ciArtifacts" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ciArtifacts = $appStoreService->ciArtifacts;
  *  </code>
  */
 class CiArtifacts extends \Cantie\AppStoreConnect\Services\Resource

@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilityCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilityUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "bundleIdCapabilities" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $bundleIdCapabilities = $appStoreService->bundleIdCapabilities;
  *  </code>
  */
 class BundleIdCapabilities extends \Cantie\AppStoreConnect\Services\Resource

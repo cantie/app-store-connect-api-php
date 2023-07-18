@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\EndUserLicenseAgreementUpdateReques
 use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "endUserLicenseAgreements" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $endUserLicenseAgreements = $appStoreService->endUserLicenseAgreements;
  *  </code>
  */
 class EndUserLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource

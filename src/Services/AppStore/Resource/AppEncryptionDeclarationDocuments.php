@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentCre
 use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appEncryptionDeclarationDocuments" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appEncryptionDeclarationDocuments = $appStoreService->appEncryptionDeclarationDocuments;
  *  </code>
  */
 class AppEncryptionDeclarationDocuments extends \Cantie\AppStoreConnect\Services\Resource

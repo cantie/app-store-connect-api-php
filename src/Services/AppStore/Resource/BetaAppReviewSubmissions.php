@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionCreateReques
 use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "betaAppReviewSubmissions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaAppReviewSubmissions = $appStoreService->betaAppReviewSubmissions;
  *  </code>
  */
 class BetaAppReviewSubmissions extends \Cantie\AppStoreConnect\Services\Resource

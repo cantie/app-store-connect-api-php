@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseLocalizationCreateRequ
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseLocalizationUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "inAppPurchaseLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $inAppPurchaseLocalizations = $appStoreService->inAppPurchaseLocalizations;
  *  </code>
  */
 class InAppPurchaseLocalizations extends \Cantie\AppStoreConnect\Services\Resource

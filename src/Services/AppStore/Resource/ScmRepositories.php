@@ -32,11 +32,11 @@ use Cantie\AppStoreConnect\Services\AppStore\ScmGitReferencesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ScmPullRequestsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "scmRepositories" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $scmRepositories = $appStoreService->scmRepositories;
  *  </code>
  */
 class ScmRepositories extends \Cantie\AppStoreConnect\Services\Resource

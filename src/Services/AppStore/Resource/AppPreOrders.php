@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appPreOrders" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appPreOrders = $appStoreService->appPreOrders;
  *  </code>
  */
 class AppPreOrders extends \Cantie\AppStoreConnect\Services\Resource

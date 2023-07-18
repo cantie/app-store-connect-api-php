@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\GameCenterEnabledVersionCompatibleV
 use Cantie\AppStoreConnect\Services\AppStore\GameCenterEnabledVersionsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "gameCenterEnabledVersions" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $gameCenterEnabledVersions = $appStoreService->gameCenterEnabledVersions;
  *  </code>
  */
 class GameCenterEnabledVersions extends \Cantie\AppStoreConnect\Services\Resource

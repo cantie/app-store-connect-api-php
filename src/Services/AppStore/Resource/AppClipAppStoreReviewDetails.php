@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppClipAppStoreReviewDetailCreateRe
 use Cantie\AppStoreConnect\Services\AppStore\AppClipAppStoreReviewDetailUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appClipAppStoreReviewDetails" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appClipAppStoreReviewDetails = $appStoreService->appClipAppStoreReviewDetails;
  *  </code>
  */
 class AppClipAppStoreReviewDetails extends \Cantie\AppStoreConnect\Services\Resource

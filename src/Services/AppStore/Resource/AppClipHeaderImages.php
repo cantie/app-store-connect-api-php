@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppClipHeaderImageCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppClipHeaderImageUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appClipHeaderImages" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appClipHeaderImages = $appStoreService->appClipHeaderImages;
  *  </code>
  */
 class AppClipHeaderImages extends \Cantie\AppStoreConnect\Services\Resource

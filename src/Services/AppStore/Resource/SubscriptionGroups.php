@@ -33,11 +33,11 @@ use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGroupLocalizationsRespo
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionsResponse;
 
 /**
- * The "apps" collection of methods.
+ * The "subscriptionGroups" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $subscriptionGroups = $appStoreService->subscriptionGroups;
  *  </code>
  */
 class SubscriptionGroups extends \Cantie\AppStoreConnect\Services\Resource

@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppClipInvocationUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "betaAppClipInvocations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $betaAppClipInvocations = $appStoreService->betaAppClipInvocations;
  *  </code>
  */
 class BetaAppClipInvocations extends \Cantie\AppStoreConnect\Services\Resource

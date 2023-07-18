@@ -31,11 +31,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AppInfoLocalizationCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppInfoLocalizationUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "appInfoLocalizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $appInfoLocalizations = $appStoreService->appInfoLocalizations;
  *  </code>
  */
 class AppInfoLocalizations extends \Cantie\AppStoreConnect\Services\Resource

@@ -30,11 +30,11 @@ use Cantie\AppStoreConnect\Services\AppStore\AgeRatingDeclarationResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AgeRatingDeclarationUpdateRequest;
 
 /**
- * The "apps" collection of methods.
+ * The "ageRatingDeclarations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $apps = $appStoreService->apps;
+ *   $ageRatingDeclarations = $appStoreService->ageRatingDeclarations;
  *  </code>
  */
 class AgeRatingDeclarations extends \Cantie\AppStoreConnect\Services\Resource
