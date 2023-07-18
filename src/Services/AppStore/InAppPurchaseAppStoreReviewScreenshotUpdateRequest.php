@@ -1,140 +1,123 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    public $sourceFileChecksum;
-    public $uploaded;
+	public $sourceFileChecksum;
+	public $uploaded;
 
-    /**
-     * Get the value of sourceFileChecksum
-     */ 
-    public function getSourceFileChecksum()
-    {
-        return $this->sourceFileChecksum;
-    }
+	public function getSourceFileChecksum()
+	{
+		return $this->sourceFileChecksum;
+	}
+	public function setSourceFileChecksum($sourceFileChecksum)
+	{
+		$this->sourceFileChecksum = $sourceFileChecksum;
+		return $this;
+	}
+	public function getUploaded()
+	{
+		return $this->uploaded;
+	}
+	public function setUploaded($uploaded)
+	{
+		$this->uploaded = $uploaded;
+		return $this;
+	}
 
-    /**
-     * Set the value of sourceFileChecksum
-     *
-     * @return  self
-     */ 
-    public function setSourceFileChecksum($sourceFileChecksum)
-    {
-        $this->sourceFileChecksum = $sourceFileChecksum;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of uploaded
-     */ 
-    public function getUploaded()
-    {
-        return $this->uploaded;
-    }
-
-    /**
-     * Set the value of uploaded
-     *
-     * @return  self
-     */ 
-    public function setUploaded($uploaded)
-    {
-        $this->uploaded = $uploaded;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes');
 
 class InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
-    protected $attributesType = InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes::class;
-    protected $attributesDataType = '';
-    public $type = 'inAppPurchaseAppStoreReviewScreenshots';
+	public $type = 'inAppPurchaseAppStoreReviewScreenshots';
+	public $id;
+	protected $attributesType = InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes::class;
+	protected $attributesDataType = 'object';
 
-    /**
-     * Get the value of attributes
-     */ 
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $this;
+	}
 
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */ 
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */ 
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */ 
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data');
 
 class InAppPurchaseAppStoreReviewScreenshotUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $dataType = InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data::class;
-    protected $dataDataType = '';
+	/**
+	* @return  InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
 
-    /**
-     * Get the value of data
-     */ 
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Set the value of data
-     *
-     * @return  self
-     */ 
-    public function setData($data)
-    {
-        $this->data = $data;
-
-        return $this;
-    }
-
-    public function makeData($sourceFileChecksum, $uploaded)
-    {
-        $attributes = new InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes();
-        $attributes->setSourceFileChecksum($sourceFileChecksum);
-        $attributes->setUploaded($uploaded);
-
-        $data = new InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data();
-        $data->setAttributes($attributes);
-        $this->setData($data);
-
-        return $this;
-    }
 }
-
 class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest');
-class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data');
-class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes');
+

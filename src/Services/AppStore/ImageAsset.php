@@ -1,72 +1,65 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class ImageAsset extends \Cantie\AppStoreConnect\Model
 {
-    public $templateUrl;
-    public $height;
-    public $width;
+	public $templateUrl;
+	public $width;
+	public $height;
 
-    /**
-     * Get the value of templateUrl
-     */ 
-    public function getTemplateUrl()
-    {
-        return $this->templateUrl;
-    }
+	public function getTemplateUrl()
+	{
+		return $this->templateUrl;
+	}
+	public function setTemplateUrl($templateUrl)
+	{
+		$this->templateUrl = $templateUrl;
+		return $this;
+	}
+	public function getWidth()
+	{
+		return $this->width;
+	}
+	public function setWidth($width)
+	{
+		$this->width = $width;
+		return $this;
+	}
+	public function getHeight()
+	{
+		return $this->height;
+	}
+	public function setHeight($height)
+	{
+		$this->height = $height;
+		return $this;
+	}
 
-    /**
-     * Set the value of templateUrl
-     *
-     * @return  self
-     */ 
-    public function setTemplateUrl($templateUrl)
-    {
-        $this->templateUrl = $templateUrl;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of height
-     */ 
-    public function getHeight()
-    {
-        return $this->height;
-    }
-
-    /**
-     * Set the value of height
-     *
-     * @return  self
-     */ 
-    public function setHeight($height)
-    {
-        $this->height = $height;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of width
-     */ 
-    public function getWidth()
-    {
-        return $this->width;
-    }
-
-    /**
-     * Set the value of width
-     *
-     * @return  self
-     */ 
-    public function setWidth($width)
-    {
-        $this->width = $width;
-
-        return $this;
-    }
 }
-
 class_alias(ImageAsset::class, 'AppleService_AppStore_ImageAsset');
+

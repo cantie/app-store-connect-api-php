@@ -1,210 +1,195 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CustomerReviewResponseV1CreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    public $responseBody;
-    
-    /**
-     * Get the value of responseBody
-     */ 
-    public function getResponseBody()
-    {
-        return $this->responseBody;
-    }
+	public $responseBody;
 
-    /**
-     * Set the value of responseBody
-     *
-     * @return  self
-     */ 
-    public function setResponseBody($responseBody)
-    {
-        $this->responseBody = $responseBody;
+	public function getResponseBody()
+	{
+		return $this->responseBody;
+	}
+	public function setResponseBody($responseBody)
+	{
+		$this->responseBody = $responseBody;
+		return $this;
+	}
 
-        return $this;
-    }
 }
+class_alias(CustomerReviewResponseV1CreateRequest_Data_Attributes::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Attributes');
 
 class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data extends \Cantie\AppStoreConnect\Model
 {
-    public $id;
-    public $type = 'customerReviews';
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
+	public $type = 'customerReviews';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
 }
+class_alias(CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data');
 
 class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review extends \Cantie\AppStoreConnect\Model
 {
-    protected $dataType = CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data::class;
-    protected $dataDataType = '';
+	protected $dataType = CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data::class;
+	protected $dataDataType = 'object';
 
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
+	/**
+	* @return  CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
 }
+class_alias(CustomerReviewResponseV1CreateRequest_Data_Relationships_Review::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Relationships_Review');
 
-class CustomerReviewResponseV1CreateRequest_Data_Relationship extends \Cantie\AppStoreConnect\Model
+class CustomerReviewResponseV1CreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
-    
-    protected $reviewType = CustomerReviewResponseV1CreateRequest_Data_Relationships_Review::class;
-    protected $reviewDataType = '';
+	protected $reviewType = CustomerReviewResponseV1CreateRequest_Data_Relationships_Review::class;
+	protected $reviewDataType = 'object';
 
-    /**
-     * Get the value of review
-     */ 
-    public function getReview()
-    {
-        return $this->review;
-    }
+	/**
+	* @return  CustomerReviewResponseV1CreateRequest_Data_Relationships_Review
+	*/
+	public function getReview()
+	{
+		return $this->review;
+	}
+	/**
+	* @param  CustomerReviewResponseV1CreateRequest_Data_Relationships_Review
+	*/
+	public function setReview($review)
+	{
+		$this->review = $review;
+		return $this;
+	}
 
-    /**
-     * Set the value of review
-     *
-     * @return  self
-     */ 
-    public function setReview($review)
-    {
-        $this->review = $review;
-
-        return $this;
-    }
 }
+class_alias(CustomerReviewResponseV1CreateRequest_Data_Relationships::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Relationships');
 
 class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
+	public $type = 'customerReviewResponses';
+	protected $attributesType = CustomerReviewResponseV1CreateRequest_Data_Attributes::class;
+	protected $attributesDataType = 'object';
+	protected $relationshipsType = CustomerReviewResponseV1CreateRequest_Data_Relationships::class;
+	protected $relationshipsDataType = 'object';
 
-    protected $attributesType = CustomerReviewResponseV1CreateRequest_Data_Attributes::class;
-    protected $attributesDataType = '';
-    protected $relationshipsType = CustomerReviewResponseV1CreateRequest_Data_Relationship::class;
-    protected $relationshipsDataType = '';
-    public $type = 'customerReviewResponses';
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	/**
+	* @return  CustomerReviewResponseV1CreateRequest_Data_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  CustomerReviewResponseV1CreateRequest_Data_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $this;
+	}
+	/**
+	* @return  CustomerReviewResponseV1CreateRequest_Data_Relationships
+	*/
+	public function getRelationships()
+	{
+		return $this->relationships;
+	}
+	/**
+	* @param  CustomerReviewResponseV1CreateRequest_Data_Relationships
+	*/
+	public function setRelationships($relationships)
+	{
+		$this->relationships = $relationships;
+		return $this;
+	}
 
-    /**
-     * Get the value of attributes
-     */
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
-
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of relationships
-     */ 
-    public function getRelationships()
-    {
-        return $this->relationships;
-    }
-
-    /**
-     * Set the value of relationships
-     *
-     * @return  self
-     */ 
-    public function setRelationships($relationships)
-    {
-        $this->relationships = $relationships;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */ 
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */ 
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
 }
+class_alias(CustomerReviewResponseV1CreateRequest_Data::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data');
 
 class CustomerReviewResponseV1CreateRequest extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = CustomerReviewResponseV1CreateRequest_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $dataType = CustomerReviewResponseV1CreateRequest_Data::class;
-    protected $dataDataType = '';
-
-    /**
-     * Get the value of data
-     */ 
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Set the value of data
-     *
-     * @return  self
-     */ 
-    public function setData($data)
-    {
-        $this->data = $data;
-
-        return $this;
-    }
-
-    public function makeData($responseBody, $customerReviewId)
-    {
-        $attributes = new CustomerReviewResponseV1CreateRequest_Data_Attributes();
-        $attributes->setResponseBody($responseBody);
-        $relationshipReviewData = new CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data();
-        $relationshipReviewData->setId($customerReviewId);
-        $relationshipReview = new CustomerReviewResponseV1CreateRequest_Data_Relationships_Review();
-        $relationshipReview->setData($relationshipReviewData);
-        $relationship = new CustomerReviewResponseV1CreateRequest_Data_Relationship();
-        $relationship->setReview($relationshipReview);
-        $data = new CustomerReviewResponseV1CreateRequest_Data();
-        $data->setAttributes($attributes);
-        $data->setRelationships($relationship);
-        $this->setData($data);
-        
-        return $this;
-    }
+	/**
+	* @return  CustomerReviewResponseV1CreateRequest_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  CustomerReviewResponseV1CreateRequest_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
 
 }
-
 class_alias(CustomerReviewResponseV1CreateRequest::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest');
+

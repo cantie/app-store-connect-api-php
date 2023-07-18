@@ -1,162 +1,123 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class InAppPurchaseLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    public $description;
-    public $name;
+	public $name;
+	public $description;
 
-    /**
-     * Get the value of description
-     */ 
-    public function getDescription()
-    {
-        return $this->description;
-    }
+	public function getName()
+	{
+		return $this->name;
+	}
+	public function setName($name)
+	{
+		$this->name = $name;
+		return $this;
+	}
+	public function getDescription()
+	{
+		return $this->description;
+	}
+	public function setDescription($description)
+	{
+		$this->description = $description;
+		return $this;
+	}
 
-    /**
-     * Set the value of description
-     *
-     * @return  self
-     */ 
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of name
-     */ 
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */ 
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest_Data_Attributes');
 
 class InAppPurchaseLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
+	public $type = 'inAppPurchaseLocalizations';
+	public $id;
+	protected $attributesType = InAppPurchaseLocalizationUpdateRequest_Data_Attributes::class;
+	protected $attributesDataType = 'object';
 
-    protected $attributesType = InAppPurchaseLocalizationUpdateRequest_Data_Attributes::class;
-    protected $attributesDataType = '';
-    public $type = 'inAppPurchaseLocalizations';
-    public $id;
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+	/**
+	* @return  InAppPurchaseLocalizationUpdateRequest_Data_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  InAppPurchaseLocalizationUpdateRequest_Data_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $this;
+	}
 
-    /**
-     * Get the value of attributes
-     */
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
-
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */ 
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */ 
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest_Data');
 
 class InAppPurchaseLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
+	protected $dataType = InAppPurchaseLocalizationUpdateRequest_Data::class;
+	protected $dataDataType = 'object';
 
-    protected $dataType = InAppPurchaseLocalizationUpdateRequest_Data::class;
-    protected $dataDataType = '';
+	/**
+	* @return  InAppPurchaseLocalizationUpdateRequest_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchaseLocalizationUpdateRequest_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
 
-    /**
-     * Get the value of data
-     */ 
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Set the value of data
-     *
-     * @return  self
-     */ 
-    public function setData($data)
-    {
-        $this->data = $data;
-
-        return $this;
-    }
-
-    public function makeData($iapLocalizationId, $description, $name)
-    {
-        $attributes = new InAppPurchaseLocalizationUpdateRequest_Data_Attributes();
-        $attributes->setDescription($description);
-        $attributes->setName($name);
-        $data = new InAppPurchaseLocalizationUpdateRequest_Data();
-        $data->setAttributes($attributes);
-        $data->setId($iapLocalizationId);
-        $this->setData($data);
-
-        return $this;
-    }
 }
-
 class_alias(InAppPurchaseLocalizationUpdateRequest::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest');
-class_alias(InAppPurchaseLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest_Data');
-class_alias(InAppPurchaseLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest_Data_Attributes');
+

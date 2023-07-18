@@ -1,263 +1,259 @@
 <?php
 
+/**
+ * MIT License
+ * 
+ * Copyright (c) 2023 Long Pham
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
+
 namespace Cantie\AppStoreConnect\Services\AppStore;
-
-class InAppPurchaseContent_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
-{
-    public $id;
-    public $type;
-
-    public function getId()
-    {
-        return $this->id;
-    }
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-    public function getType()
-    {
-        return $this->type;
-    }
-    public function setType($type)
-    {
-        $this->type = $type;
-        return $this;
-    }
-}
-
-class InAppPurchaseContent_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
-{
-    public $related;
-    public $self;
-
-    public function getRelated()
-    {
-        return $this->related;
-    }
-    public function seRelated($related)
-    {
-        $this->related = $related;
-        return $this;
-    }
-    public function getSelf()
-    {
-        return $this->self;
-    }
-    public function setSelf($self)
-    {
-        $this->self = $self;
-        return $this;
-    }
-}
-
-class InAppPurchaseContent_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Collection
-{
-    protected $collection_key = 'data';
-    protected $dataType = InAppPurchaseContent_Relationships_AvailableTerritories_Data::class;
-    protected $dataDataType = 'array';
-
-    protected $linksType = InAppPurchaseContent_Relationships_AvailableTerritories_Links::class;
-    protected $linksDataType = '';
-
-    protected $metaType = PagingInformation::class;
-    protected $metaDataType = '';
-
-    public function getData()
-    {
-        return $this->data;
-    }
-    public function setData($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-    public function getLinks()
-    {
-        return $this->links;
-    }
-    public function setLinks($links)
-    {
-        $this->links = $links;
-        return $this;
-    }
-    public function getMeta()
-    {
-        return $this->meta;
-    }
-    public function setMeta($meta)
-    {
-        $this->meta = $meta;
-        return $this;
-    }
-}
-
-class InAppPurchaseContent_Relationships extends \Cantie\AppStoreConnect\Model
-{
-    protected $availableTerritoriesType = InAppPurchaseContent_Relationships_AvailableTerritories::class;
-    protected $availableTerritoriesDataType = '';
-
-    /**
-     * Get the value of availableTerritories
-     */ 
-    public function getAvailableTerritories()
-    {
-        return $this->availableTerritories;
-    }
-
-    /**
-     * Set the value of availableTerritories
-     *
-     * @return  self
-     */ 
-    public function setAvailableTerritories($availableTerritories)
-    {
-        $this->availableTerritories = $availableTerritories;
-
-        return $this;
-    }
-}
 
 class InAppPurchaseAvailability_Attributes extends \Cantie\AppStoreConnect\Model
 {
-    public $availableInNewTerritories;
+	public $availableInNewTerritories;
 
-    /**
-     * Get the value of availableInNewTerritories
-     */ 
-    public function getAvailableInNewTerritories()
-    {
-        return $this->availableInNewTerritories;
-    }
+	public function getAvailableInNewTerritories()
+	{
+		return $this->availableInNewTerritories;
+	}
+	public function setAvailableInNewTerritories($availableInNewTerritories)
+	{
+		$this->availableInNewTerritories = $availableInNewTerritories;
+		return $this;
+	}
 
-    /**
-     * Set the value of availableInNewTerritories
-     *
-     * @return  self
-     */ 
-    public function setAvailableInNewTerritories($availableInNewTerritories)
-    {
-        $this->availableInNewTerritories = $availableInNewTerritories;
-
-        return $this;
-    }
 }
+class_alias(InAppPurchaseAvailability_Attributes::class, 'AppleService_AppStore_InAppPurchaseAvailability_Attributes');
+
+class InAppPurchaseAvailability_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
+{
+	public $self;
+	public $related;
+
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $this;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $this;
+	}
+
+}
+class_alias(InAppPurchaseAvailability_Relationships_AvailableTerritories_Links::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships_AvailableTerritories_Links');
+
+class InAppPurchaseAvailability_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'territories';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
+}
+class_alias(InAppPurchaseAvailability_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships_AvailableTerritories_Data');
+
+class InAppPurchaseAvailability_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
+{
+	protected $linksType = InAppPurchaseAvailability_Relationships_AvailableTerritories_Links::class;
+	protected $linksDataType = 'object';
+	protected $metaType = PagingInformation::class;
+	protected $metaDataType = '';
+	protected $dataType = InAppPurchaseAvailability_Relationships_AvailableTerritories_Data::class;
+	protected $dataDataType = 'array';
+
+	/**
+	* @return  InAppPurchaseAvailability_Relationships_AvailableTerritories_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  InAppPurchaseAvailability_Relationships_AvailableTerritories_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $this;
+	}
+	/**
+	* @return  PagingInformation
+	*/
+	public function getMeta()
+	{
+		return $this->meta;
+	}
+	/**
+	* @param  PagingInformation
+	*/
+	public function setMeta($meta)
+	{
+		$this->meta = $meta;
+		return $this;
+	}
+	/**
+	* @return  InAppPurchaseAvailability_Relationships_AvailableTerritories_Data[]
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  InAppPurchaseAvailability_Relationships_AvailableTerritories_Data[]
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
+}
+class_alias(InAppPurchaseAvailability_Relationships_AvailableTerritories::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships_AvailableTerritories');
+
+class InAppPurchaseAvailability_Relationships extends \Cantie\AppStoreConnect\Model
+{
+	protected $availableTerritoriesType = InAppPurchaseAvailability_Relationships_AvailableTerritories::class;
+	protected $availableTerritoriesDataType = 'object';
+
+	/**
+	* @return  InAppPurchaseAvailability_Relationships_AvailableTerritories
+	*/
+	public function getAvailableTerritories()
+	{
+		return $this->availableTerritories;
+	}
+	/**
+	* @param  InAppPurchaseAvailability_Relationships_AvailableTerritories
+	*/
+	public function setAvailableTerritories($availableTerritories)
+	{
+		$this->availableTerritories = $availableTerritories;
+		return $this;
+	}
+
+}
+class_alias(InAppPurchaseAvailability_Relationships::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships');
 
 class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 {
-    protected $attributesType = InAppPurchaseAvailability_Attributes::class;
-    protected $attributesDataType = '';
-    protected $relationshipsType = InAppPurchaseAvailability_Relationships::class;
-    protected $relationshipsDataType = '';
-    protected $linksType = ResourceLinks::class;
-    protected $linksDataType = '';
+	public $type = 'inAppPurchaseAvailabilities';
+	public $id;
+	protected $attributesType = InAppPurchaseAvailability_Attributes::class;
+	protected $attributesDataType = 'object';
+	protected $relationshipsType = InAppPurchaseAvailability_Relationships::class;
+	protected $relationshipsDataType = 'object';
+	protected $linksType = ResourceLinks::class;
+	protected $linksDataType = '';
 
-    public $id;
-    public $type; // = 'inAppPurchaseAvailabilities'
-
-    /**
-     * Get the value of attributes
-     */
-    public function getAttributes()
-    {
-        return $this->attributes;
-    }
-
-    /**
-     * Set the value of attributes
-     *
-     * @return  self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of relationships
-     */
-    public function getRelationships()
-    {
-        return $this->relationships;
-    }
-
-    /**
-     * Set the value of relationships
-     *
-     * @return  self
-     */
-    public function setRelationships($relationships)
-    {
-        $this->relationships = $relationships;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of type
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Set the value of type
-     *
-     * @return  self
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of links
-     */
-    public function getLinks()
-    {
-        return $this->links;
-    }
-
-    /**
-     * Set the value of links
-     *
-     * @return  self
-     */
-    public function setLinks($links)
-    {
-        $this->links = $links;
-
-        return $this;
-    }
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+	/**
+	* @return  InAppPurchaseAvailability_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  InAppPurchaseAvailability_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
+		return $this;
+	}
+	/**
+	* @return  InAppPurchaseAvailability_Relationships
+	*/
+	public function getRelationships()
+	{
+		return $this->relationships;
+	}
+	/**
+	* @param  InAppPurchaseAvailability_Relationships
+	*/
+	public function setRelationships($relationships)
+	{
+		$this->relationships = $relationships;
+		return $this;
+	}
+	/**
+	* @return  ResourceLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ResourceLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $this;
+	}
 
 }
-
 class_alias(InAppPurchaseAvailability::class, 'AppleService_AppStore_InAppPurchaseAvailability');
-class_alias(InAppPurchaseAvailability_Attributes::class, 'AppleService_AppStore_InAppPurchaseAvailability_Attributes');
-class_alias(InAppPurchaseAvailability_Relationships::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships');
+
