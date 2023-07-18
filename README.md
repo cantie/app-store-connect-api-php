@@ -28,8 +28,24 @@ $appstore = new AppleService_AppStore($client);
 $results = $appstore->apps->listApps([
     "filter[bundleId]" => "YOUR_BUNDLE_ID" // filter LIKE
 ]);
+
 foreach ($results->getData() as $app) {
-    $appCustomerReviews = $appstore->customerReviews->listReviewsForApp($app->getId());
-    echo $appCustomerReviews->getAttributes()->getReviewerNickName(), "<br /> \n";
+    // Get all customer reviews for each app
+    $appCustomerReviews = $appstore->apps->listAppsCustomerReviews($app->getId());
+    foreach ($appCustomerReviews as $appCustomerReview) {
+        // Print all reviewer's nickname
+        $appCustomerReview->getAttributes()->getReviewerNickName(), "<br /> \n";
+
+        // Get response for this review
+        $customerReviewResponseV1Response = $appstore->customerReviews->getCustomerReviewsResponse($appCustomerReview->getId());
+
+        // Create or update response for this review
+        $postBody = new CustomerReviewResponseV1CreateRequest();
+        /* TODO: make data here */
+        $customerReviewResponseV1Response = $appstore->customerReviewResponses->createCustomerReviewResponses($postBody);
+
+        // Or just delete the response if existed
+        $appstore->customerReviewResponses->deleteCustomerReviewResponses($customerReviewResponseV1Response->getData()->getId());
+    }
 }
 ```
