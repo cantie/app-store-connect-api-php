@@ -37,7 +37,7 @@ class ReviewSubmissionItem_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion_Links extends \Cantie\A
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion_Links extends \Cantie\A
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion_Data extends \Cantie\Ap
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion_Data extends \Cantie\Ap
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -117,7 +117,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion extends \Cantie\AppStor
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppStoreVersion_Data
@@ -132,7 +132,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion extends \Cantie\AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -150,7 +150,7 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Links exten
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -159,7 +159,7 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Links exten
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -177,7 +177,7 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data extend
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -186,7 +186,7 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data extend
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -212,7 +212,7 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion extends \Ca
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data
@@ -227,7 +227,7 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion extends \Ca
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -245,7 +245,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Links extends
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -254,7 +254,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Links extends
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -272,7 +272,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data extends 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -281,7 +281,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data extends 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -307,7 +307,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment extends \Cant
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data
@@ -322,7 +322,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment extends \Cant
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -340,7 +340,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Links exten
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -349,7 +349,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Links exten
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -367,7 +367,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data extend
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -376,7 +376,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data extend
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -402,7 +402,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2 extends \Ca
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data
@@ -417,7 +417,7 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2 extends \Ca
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -435,7 +435,7 @@ class ReviewSubmissionItem_Relationships_AppEvent_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -444,7 +444,7 @@ class ReviewSubmissionItem_Relationships_AppEvent_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -462,7 +462,7 @@ class ReviewSubmissionItem_Relationships_AppEvent_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -471,7 +471,7 @@ class ReviewSubmissionItem_Relationships_AppEvent_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -497,7 +497,7 @@ class ReviewSubmissionItem_Relationships_AppEvent extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppEvent_Data
@@ -512,7 +512,7 @@ class ReviewSubmissionItem_Relationships_AppEvent extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -544,7 +544,7 @@ class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppCustomProductPageVersion
@@ -559,7 +559,7 @@ class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppCustomProductPageVersion($appCustomProductPageVersion)
 	{
 		$this->appCustomProductPageVersion = $appCustomProductPageVersion;
-		return $appCustomProductPageVersion;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppStoreVersionExperiment
@@ -574,7 +574,7 @@ class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersionExperiment($appStoreVersionExperiment)
 	{
 		$this->appStoreVersionExperiment = $appStoreVersionExperiment;
-		return $appStoreVersionExperiment;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2
@@ -589,7 +589,7 @@ class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersionExperimentV2($appStoreVersionExperimentV2)
 	{
 		$this->appStoreVersionExperimentV2 = $appStoreVersionExperimentV2;
-		return $appStoreVersionExperimentV2;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships_AppEvent
@@ -604,7 +604,7 @@ class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppEvent($appEvent)
 	{
 		$this->appEvent = $appEvent;
-		return $appEvent;
+		return $this;
 	}
 
 }
@@ -628,7 +628,7 @@ class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -637,7 +637,7 @@ class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Attributes
@@ -652,7 +652,7 @@ class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItem_Relationships
@@ -667,7 +667,7 @@ class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -682,7 +682,7 @@ class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_D
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_D
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase e
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_D
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_D
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory e
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Da
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -149,7 +149,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Da
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices ex
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -201,7 +201,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships extends \Cantie
 	public function setInAppPurchase($inAppPurchase)
 	{
 		$this->inAppPurchase = $inAppPurchase;
-		return $inAppPurchase;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory
@@ -216,7 +216,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships extends \Cantie
 	public function setBaseTerritory($baseTerritory)
 	{
 		$this->baseTerritory = $baseTerritory;
-		return $baseTerritory;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices
@@ -231,7 +231,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships extends \Cantie
 	public function setManualPrices($manualPrices)
 	{
 		$this->manualPrices = $manualPrices;
-		return $manualPrices;
+		return $this;
 	}
 
 }
@@ -250,7 +250,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePriceScheduleCreateRequest_Data_Relationships
@@ -265,7 +265,7 @@ class InAppPurchasePriceScheduleCreateRequest_Data extends \Cantie\AppStoreConne
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -291,7 +291,7 @@ class InAppPurchasePriceScheduleCreateRequest extends \Cantie\AppStoreConnect\Mo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	public function getIncluded()
 	{
@@ -300,7 +300,7 @@ class InAppPurchasePriceScheduleCreateRequest extends \Cantie\AppStoreConnect\Mo
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 
 }

@@ -40,7 +40,7 @@ class AppEventLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getName()
 	{
@@ -49,7 +49,7 @@ class AppEventLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getShortDescription()
 	{
@@ -58,7 +58,7 @@ class AppEventLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setShortDescription($shortDescription)
 	{
 		$this->shortDescription = $shortDescription;
-		return $shortDescription;
+		return $this;
 	}
 	public function getLongDescription()
 	{
@@ -67,7 +67,7 @@ class AppEventLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLongDescription($longDescription)
 	{
 		$this->longDescription = $longDescription;
-		return $longDescription;
+		return $this;
 	}
 
 }
@@ -85,7 +85,7 @@ class AppEventLocalization_Relationships_AppEvent_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -94,7 +94,7 @@ class AppEventLocalization_Relationships_AppEvent_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class AppEventLocalization_Relationships_AppEvent_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -121,7 +121,7 @@ class AppEventLocalization_Relationships_AppEvent_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -147,7 +147,7 @@ class AppEventLocalization_Relationships_AppEvent extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Relationships_AppEvent_Data
@@ -162,7 +162,7 @@ class AppEventLocalization_Relationships_AppEvent extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -180,7 +180,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots_Links extends \Cant
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -189,7 +189,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots_Links extends \Cant
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -207,7 +207,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots_Data extends \Canti
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -216,7 +216,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots_Data extends \Canti
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -244,7 +244,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots extends \Cantie\App
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -259,7 +259,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots extends \Cantie\App
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Relationships_AppEventScreenshots_Data[]
@@ -274,7 +274,7 @@ class AppEventLocalization_Relationships_AppEventScreenshots extends \Cantie\App
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -292,7 +292,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips_Links extends \Canti
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -301,7 +301,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips_Links extends \Canti
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -319,7 +319,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -328,7 +328,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -356,7 +356,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips extends \Cantie\AppS
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -371,7 +371,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips extends \Cantie\AppS
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Relationships_AppEventVideoClips_Data[]
@@ -386,7 +386,7 @@ class AppEventLocalization_Relationships_AppEventVideoClips extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -414,7 +414,7 @@ class AppEventLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppEvent($appEvent)
 	{
 		$this->appEvent = $appEvent;
-		return $appEvent;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Relationships_AppEventScreenshots
@@ -429,7 +429,7 @@ class AppEventLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppEventScreenshots($appEventScreenshots)
 	{
 		$this->appEventScreenshots = $appEventScreenshots;
-		return $appEventScreenshots;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Relationships_AppEventVideoClips
@@ -444,7 +444,7 @@ class AppEventLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppEventVideoClips($appEventVideoClips)
 	{
 		$this->appEventVideoClips = $appEventVideoClips;
-		return $appEventVideoClips;
+		return $this;
 	}
 
 }
@@ -468,7 +468,7 @@ class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -477,7 +477,7 @@ class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Attributes
@@ -492,7 +492,7 @@ class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization_Relationships
@@ -507,7 +507,7 @@ class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -522,7 +522,7 @@ class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

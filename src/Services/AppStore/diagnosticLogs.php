@@ -39,7 +39,7 @@ class diagnosticLogs_ProductData_DiagnosticInsights extends \Cantie\AppStoreConn
 	public function setInsightsURL($insightsURL)
 	{
 		$this->insightsURL = $insightsURL;
-		return $insightsURL;
+		return $this;
 	}
 	public function getInsightsCategory()
 	{
@@ -48,7 +48,7 @@ class diagnosticLogs_ProductData_DiagnosticInsights extends \Cantie\AppStoreConn
 	public function setInsightsCategory($insightsCategory)
 	{
 		$this->insightsCategory = $insightsCategory;
-		return $insightsCategory;
+		return $this;
 	}
 	public function getInsightsString()
 	{
@@ -57,7 +57,7 @@ class diagnosticLogs_ProductData_DiagnosticInsights extends \Cantie\AppStoreConn
 	public function setInsightsString($insightsString)
 	{
 		$this->insightsString = $insightsString;
-		return $insightsString;
+		return $this;
 	}
 
 }
@@ -81,7 +81,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree_CallStacks extends
 	public function setCallStackRootFrames($callStackRootFrames)
 	{
 		$this->callStackRootFrames = $callStackRootFrames;
-		return $callStackRootFrames;
+		return $this;
 	}
 
 }
@@ -100,7 +100,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree extends \Cantie\Ap
 	public function setCallStackPerThread($callStackPerThread)
 	{
 		$this->callStackPerThread = $callStackPerThread;
-		return $callStackPerThread;
+		return $this;
 	}
 	/**
 	* @return  diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree_CallStacks[]
@@ -115,7 +115,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree extends \Cantie\Ap
 	public function setCallStacks($callStacks)
 	{
 		$this->callStacks = $callStacks;
-		return $callStacks;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 	public function getEvent()
 	{
@@ -149,7 +149,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setEvent($event)
 	{
 		$this->event = $event;
-		return $event;
+		return $this;
 	}
 	public function getOsVersion()
 	{
@@ -158,7 +158,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setOsVersion($osVersion)
 	{
 		$this->osVersion = $osVersion;
-		return $osVersion;
+		return $this;
 	}
 	public function getAppVersion()
 	{
@@ -167,7 +167,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setAppVersion($appVersion)
 	{
 		$this->appVersion = $appVersion;
-		return $appVersion;
+		return $this;
 	}
 	public function getWritesCaused()
 	{
@@ -176,7 +176,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setWritesCaused($writesCaused)
 	{
 		$this->writesCaused = $writesCaused;
-		return $writesCaused;
+		return $this;
 	}
 	public function getDeviceType()
 	{
@@ -185,7 +185,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setDeviceType($deviceType)
 	{
 		$this->deviceType = $deviceType;
-		return $deviceType;
+		return $this;
 	}
 	public function getPlatformArchitecture()
 	{
@@ -194,7 +194,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setPlatformArchitecture($platformArchitecture)
 	{
 		$this->platformArchitecture = $platformArchitecture;
-		return $platformArchitecture;
+		return $this;
 	}
 	public function getEventDetail()
 	{
@@ -203,7 +203,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setEventDetail($eventDetail)
 	{
 		$this->eventDetail = $eventDetail;
-		return $eventDetail;
+		return $this;
 	}
 	public function getBuildVersion()
 	{
@@ -212,7 +212,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	public function setBuildVersion($buildVersion)
 	{
 		$this->buildVersion = $buildVersion;
-		return $buildVersion;
+		return $this;
 	}
 
 }
@@ -238,7 +238,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs extends \Cantie\AppStoreConnect\
 	public function setCallStackTree($callStackTree)
 	{
 		$this->callStackTree = $callStackTree;
-		return $callStackTree;
+		return $this;
 	}
 	/**
 	* @return  diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData
@@ -253,7 +253,7 @@ class diagnosticLogs_ProductData_DiagnosticLogs extends \Cantie\AppStoreConnect\
 	public function setDiagnosticMetaData($diagnosticMetaData)
 	{
 		$this->diagnosticMetaData = $diagnosticMetaData;
-		return $diagnosticMetaData;
+		return $this;
 	}
 
 }
@@ -274,7 +274,7 @@ class diagnosticLogs_ProductData extends \Cantie\AppStoreConnect\Model
 	public function setSignatureId($signatureId)
 	{
 		$this->signatureId = $signatureId;
-		return $signatureId;
+		return $this;
 	}
 	/**
 	* @return  diagnosticLogs_ProductData_DiagnosticInsights[]
@@ -289,7 +289,7 @@ class diagnosticLogs_ProductData extends \Cantie\AppStoreConnect\Model
 	public function setDiagnosticInsights($diagnosticInsights)
 	{
 		$this->diagnosticInsights = $diagnosticInsights;
-		return $diagnosticInsights;
+		return $this;
 	}
 	/**
 	* @return  diagnosticLogs_ProductData_DiagnosticLogs[]
@@ -304,7 +304,7 @@ class diagnosticLogs_ProductData extends \Cantie\AppStoreConnect\Model
 	public function setDiagnosticLogs($diagnosticLogs)
 	{
 		$this->diagnosticLogs = $diagnosticLogs;
-		return $diagnosticLogs;
+		return $this;
 	}
 
 }
@@ -329,7 +329,7 @@ class diagnosticLogs extends \Cantie\AppStoreConnect\Model
 	public function setProductData($productData)
 	{
 		$this->productData = $productData;
-		return $productData;
+		return $this;
 	}
 	public function getVersion()
 	{
@@ -338,7 +338,7 @@ class diagnosticLogs extends \Cantie\AppStoreConnect\Model
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 
 }

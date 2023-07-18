@@ -48,7 +48,7 @@ class SubscriptionOfferCodeOneTimeUseCodeResponse extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCode[]
@@ -63,7 +63,7 @@ class SubscriptionOfferCodeOneTimeUseCodeResponse extends \Cantie\AppStoreConnec
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 	/**
 	* @return  DocumentLinks
@@ -78,7 +78,7 @@ class SubscriptionOfferCodeOneTimeUseCodeResponse extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

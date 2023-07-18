@@ -37,7 +37,7 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data_Attributes extends \
 	public function setActive($active)
 	{
 		$this->active = $active;
-		return $active;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data extends \Cantie\AppS
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data extends \Cantie\AppS
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

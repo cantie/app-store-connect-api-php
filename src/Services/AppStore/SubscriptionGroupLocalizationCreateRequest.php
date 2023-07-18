@@ -39,7 +39,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Attributes extends \Cantie
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getCustomAppName()
 	{
@@ -48,7 +48,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Attributes extends \Cantie
 	public function setCustomAppName($customAppName)
 	{
 		$this->customAppName = $customAppName;
-		return $customAppName;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -57,7 +57,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Attributes extends \Cantie
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_Subscription
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -84,7 +84,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_Subscription
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -108,7 +108,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_Subscription
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships extends \Can
 	public function setSubscriptionGroup($subscriptionGroup)
 	{
 		$this->subscriptionGroup = $subscriptionGroup;
-		return $subscriptionGroup;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupLocalizationCreateRequest_Data_Attributes
@@ -168,7 +168,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data extends \Cantie\AppStoreCo
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupLocalizationCreateRequest_Data_Relationships
@@ -183,7 +183,7 @@ class SubscriptionGroupLocalizationCreateRequest_Data extends \Cantie\AppStoreCo
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -207,7 +207,7 @@ class SubscriptionGroupLocalizationCreateRequest extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

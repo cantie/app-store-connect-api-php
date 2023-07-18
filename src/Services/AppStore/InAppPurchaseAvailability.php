@@ -37,7 +37,7 @@ class InAppPurchaseAvailability_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAvailableInNewTerritories($availableInNewTerritories)
 	{
 		$this->availableInNewTerritories = $availableInNewTerritories;
-		return $availableInNewTerritories;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories_Links extends
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories_Links extends
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories_Data extends 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories_Data extends 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories extends \Cant
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -134,7 +134,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories extends \Cant
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAvailability_Relationships_AvailableTerritories_Data[]
@@ -149,7 +149,7 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories extends \Cant
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class InAppPurchaseAvailability_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setAvailableTerritories($availableTerritories)
 	{
 		$this->availableTerritories = $availableTerritories;
-		return $availableTerritories;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -206,7 +206,7 @@ class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAvailability_Attributes
@@ -221,7 +221,7 @@ class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAvailability_Relationships
@@ -236,7 +236,7 @@ class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -251,7 +251,7 @@ class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion_D
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion_D
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion e
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionEx
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionEx
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionEx
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -148,7 +148,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships extends \Cantie\A
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment
@@ -163,7 +163,7 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships extends \Cantie\A
 	public function setAppStoreVersionExperimentTreatment($appStoreVersionExperimentTreatment)
 	{
 		$this->appStoreVersionExperimentTreatment = $appStoreVersionExperimentTreatment;
-		return $appStoreVersionExperimentTreatment;
+		return $this;
 	}
 
 }
@@ -182,7 +182,7 @@ class AppStoreVersionPromotionCreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionPromotionCreateRequest_Data_Relationships
@@ -197,7 +197,7 @@ class AppStoreVersionPromotionCreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -221,7 +221,7 @@ class AppStoreVersionPromotionCreateRequest extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

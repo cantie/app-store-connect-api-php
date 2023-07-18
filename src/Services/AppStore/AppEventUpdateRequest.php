@@ -47,7 +47,7 @@ class AppEventUpdateRequest_Data_Attributes_TerritorySchedules extends \Cantie\A
 	public function setTerritories($territories)
 	{
 		$this->territories = $territories;
-		return $territories;
+		return $this;
 	}
 	public function getPublishStart()
 	{
@@ -56,7 +56,7 @@ class AppEventUpdateRequest_Data_Attributes_TerritorySchedules extends \Cantie\A
 	public function setPublishStart($publishStart)
 	{
 		$this->publishStart = $publishStart;
-		return $publishStart;
+		return $this;
 	}
 	public function getEventStart()
 	{
@@ -65,7 +65,7 @@ class AppEventUpdateRequest_Data_Attributes_TerritorySchedules extends \Cantie\A
 	public function setEventStart($eventStart)
 	{
 		$this->eventStart = $eventStart;
-		return $eventStart;
+		return $this;
 	}
 	public function getEventEnd()
 	{
@@ -74,7 +74,7 @@ class AppEventUpdateRequest_Data_Attributes_TerritorySchedules extends \Cantie\A
 	public function setEventEnd($eventEnd)
 	{
 		$this->eventEnd = $eventEnd;
-		return $eventEnd;
+		return $this;
 	}
 
 }
@@ -99,7 +99,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setReferenceName($referenceName)
 	{
 		$this->referenceName = $referenceName;
-		return $referenceName;
+		return $this;
 	}
 	public function getBadge()
 	{
@@ -108,7 +108,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setBadge($badge)
 	{
 		$this->badge = $badge;
-		return $badge;
+		return $this;
 	}
 	public function getDeepLink()
 	{
@@ -117,7 +117,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setDeepLink($deepLink)
 	{
 		$this->deepLink = $deepLink;
-		return $deepLink;
+		return $this;
 	}
 	public function getPurchaseRequirement()
 	{
@@ -126,7 +126,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setPurchaseRequirement($purchaseRequirement)
 	{
 		$this->purchaseRequirement = $purchaseRequirement;
-		return $purchaseRequirement;
+		return $this;
 	}
 	public function getPrimaryLocale()
 	{
@@ -135,7 +135,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setPrimaryLocale($primaryLocale)
 	{
 		$this->primaryLocale = $primaryLocale;
-		return $primaryLocale;
+		return $this;
 	}
 	public function getPriority()
 	{
@@ -144,7 +144,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setPriority($priority)
 	{
 		$this->priority = $priority;
-		return $priority;
+		return $this;
 	}
 	public function getPurpose()
 	{
@@ -153,7 +153,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setPurpose($purpose)
 	{
 		$this->purpose = $purpose;
-		return $purpose;
+		return $this;
 	}
 	/**
 	* @return  AppEventUpdateRequest_Data_Attributes_TerritorySchedules[]
@@ -168,7 +168,7 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setTerritorySchedules($territorySchedules)
 	{
 		$this->territorySchedules = $territorySchedules;
-		return $territorySchedules;
+		return $this;
 	}
 
 }
@@ -188,7 +188,7 @@ class AppEventUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -197,7 +197,7 @@ class AppEventUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEventUpdateRequest_Data_Attributes
@@ -212,7 +212,7 @@ class AppEventUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -236,7 +236,7 @@ class AppEventUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

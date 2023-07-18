@@ -43,7 +43,7 @@ class RoutingAppCoverage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -52,7 +52,7 @@ class RoutingAppCoverage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -61,7 +61,7 @@ class RoutingAppCoverage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -76,7 +76,7 @@ class RoutingAppCoverage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -91,7 +91,7 @@ class RoutingAppCoverage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 
 }
@@ -109,7 +109,7 @@ class RoutingAppCoverage_Relationships_AppStoreVersion_Links extends \Cantie\App
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -118,7 +118,7 @@ class RoutingAppCoverage_Relationships_AppStoreVersion_Links extends \Cantie\App
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -136,7 +136,7 @@ class RoutingAppCoverage_Relationships_AppStoreVersion_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -145,7 +145,7 @@ class RoutingAppCoverage_Relationships_AppStoreVersion_Data extends \Cantie\AppS
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -171,7 +171,7 @@ class RoutingAppCoverage_Relationships_AppStoreVersion extends \Cantie\AppStoreC
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  RoutingAppCoverage_Relationships_AppStoreVersion_Data
@@ -186,7 +186,7 @@ class RoutingAppCoverage_Relationships_AppStoreVersion extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -210,7 +210,7 @@ class RoutingAppCoverage_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 
 }
@@ -234,7 +234,7 @@ class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -243,7 +243,7 @@ class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  RoutingAppCoverage_Attributes
@@ -258,7 +258,7 @@ class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  RoutingAppCoverage_Relationships
@@ -273,7 +273,7 @@ class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -288,7 +288,7 @@ class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class AppCustomProductPageUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getVisible()
 	{
@@ -47,7 +47,7 @@ class AppCustomProductPageUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setVisible($visible)
 	{
 		$this->visible = $visible;
-		return $visible;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class AppCustomProductPageUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class AppCustomProductPageUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class AppCustomProductPageUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class AppCustomProductPageUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

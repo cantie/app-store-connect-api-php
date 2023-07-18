@@ -38,7 +38,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProdu
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProdu
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProdu
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProdu
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProdu
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProdu
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -148,7 +148,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships extends \Canti
 	public function setAppCustomProductPage($appCustomProductPage)
 	{
 		$this->appCustomProductPage = $appCustomProductPage;
-		return $appCustomProductPage;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProductPageLocalizations
@@ -163,7 +163,7 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships extends \Canti
 	public function setAppCustomProductPageLocalizations($appCustomProductPageLocalizations)
 	{
 		$this->appCustomProductPageLocalizations = $appCustomProductPageLocalizations;
-		return $appCustomProductPageLocalizations;
+		return $this;
 	}
 
 }
@@ -182,7 +182,7 @@ class AppCustomProductPageVersionCreateRequest_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersionCreateRequest_Data_Relationships
@@ -197,7 +197,7 @@ class AppCustomProductPageVersionCreateRequest_Data extends \Cantie\AppStoreConn
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -221,7 +221,7 @@ class AppCustomProductPageVersionCreateRequest extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

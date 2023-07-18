@@ -40,7 +40,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2 extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -49,7 +49,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2 extends \Cantie\AppStoreConnec
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -64,7 +64,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2 extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

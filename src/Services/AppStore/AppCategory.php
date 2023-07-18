@@ -44,7 +44,7 @@ class AppCategory_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatforms($platforms)
 	{
 		$this->platforms = $platforms;
-		return $platforms;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppCategory_Relationships_Subcategories_Links extends \Cantie\AppStoreConn
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -71,7 +71,7 @@ class AppCategory_Relationships_Subcategories_Links extends \Cantie\AppStoreConn
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class AppCategory_Relationships_Subcategories_Data extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class AppCategory_Relationships_Subcategories_Data extends \Cantie\AppStoreConne
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -126,7 +126,7 @@ class AppCategory_Relationships_Subcategories extends \Cantie\AppStoreConnect\Mo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -141,7 +141,7 @@ class AppCategory_Relationships_Subcategories extends \Cantie\AppStoreConnect\Mo
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppCategory_Relationships_Subcategories_Data[]
@@ -156,7 +156,7 @@ class AppCategory_Relationships_Subcategories extends \Cantie\AppStoreConnect\Mo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -174,7 +174,7 @@ class AppCategory_Relationships_Parent_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -183,7 +183,7 @@ class AppCategory_Relationships_Parent_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -201,7 +201,7 @@ class AppCategory_Relationships_Parent_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -210,7 +210,7 @@ class AppCategory_Relationships_Parent_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -236,7 +236,7 @@ class AppCategory_Relationships_Parent extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppCategory_Relationships_Parent_Data
@@ -251,7 +251,7 @@ class AppCategory_Relationships_Parent extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -277,7 +277,7 @@ class AppCategory_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setSubcategories($subcategories)
 	{
 		$this->subcategories = $subcategories;
-		return $subcategories;
+		return $this;
 	}
 	/**
 	* @return  AppCategory_Relationships_Parent
@@ -292,7 +292,7 @@ class AppCategory_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setParent($parent)
 	{
 		$this->parent = $parent;
-		return $parent;
+		return $this;
 	}
 
 }
@@ -316,7 +316,7 @@ class AppCategory extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -325,7 +325,7 @@ class AppCategory extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppCategory_Attributes
@@ -340,7 +340,7 @@ class AppCategory extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppCategory_Relationships
@@ -355,7 +355,7 @@ class AppCategory extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -370,7 +370,7 @@ class AppCategory extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -42,7 +42,7 @@ class AppInfoLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getName()
 	{
@@ -51,7 +51,7 @@ class AppInfoLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -60,7 +60,7 @@ class AppInfoLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 	public function getPrivacyPolicyUrl()
 	{
@@ -69,7 +69,7 @@ class AppInfoLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyPolicyUrl($privacyPolicyUrl)
 	{
 		$this->privacyPolicyUrl = $privacyPolicyUrl;
-		return $privacyPolicyUrl;
+		return $this;
 	}
 	public function getPrivacyChoicesUrl()
 	{
@@ -78,7 +78,7 @@ class AppInfoLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyChoicesUrl($privacyChoicesUrl)
 	{
 		$this->privacyChoicesUrl = $privacyChoicesUrl;
-		return $privacyChoicesUrl;
+		return $this;
 	}
 	public function getPrivacyPolicyText()
 	{
@@ -87,7 +87,7 @@ class AppInfoLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyPolicyText($privacyPolicyText)
 	{
 		$this->privacyPolicyText = $privacyPolicyText;
-		return $privacyPolicyText;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppInfoLocalizationCreateRequest_Data_Relationships_AppInfo_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -114,7 +114,7 @@ class AppInfoLocalizationCreateRequest_Data_Relationships_AppInfo_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -138,7 +138,7 @@ class AppInfoLocalizationCreateRequest_Data_Relationships_AppInfo extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -162,7 +162,7 @@ class AppInfoLocalizationCreateRequest_Data_Relationships extends \Cantie\AppSto
 	public function setAppInfo($appInfo)
 	{
 		$this->appInfo = $appInfo;
-		return $appInfo;
+		return $this;
 	}
 
 }
@@ -183,7 +183,7 @@ class AppInfoLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppInfoLocalizationCreateRequest_Data_Attributes
@@ -198,7 +198,7 @@ class AppInfoLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppInfoLocalizationCreateRequest_Data_Relationships
@@ -213,7 +213,7 @@ class AppInfoLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -237,7 +237,7 @@ class AppInfoLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

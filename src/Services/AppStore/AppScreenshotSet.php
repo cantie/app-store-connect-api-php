@@ -44,7 +44,7 @@ class AppScreenshotSet_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setScreenshotDisplayType($screenshotDisplayType)
 	{
 		$this->screenshotDisplayType = $screenshotDisplayType;
-		return $screenshotDisplayType;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionLocalization_Links extends \
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -71,7 +71,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionLocalization_Links extends \
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionLocalization_Data extends \C
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionLocalization_Data extends \C
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -124,7 +124,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionLocalization extends \Cantie
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppStoreVersionLocalization_Data
@@ -139,7 +139,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionLocalization extends \Cantie
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -157,7 +157,7 @@ class AppScreenshotSet_Relationships_AppCustomProductPageLocalization_Links exte
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -166,7 +166,7 @@ class AppScreenshotSet_Relationships_AppCustomProductPageLocalization_Links exte
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -184,7 +184,7 @@ class AppScreenshotSet_Relationships_AppCustomProductPageLocalization_Data exten
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -193,7 +193,7 @@ class AppScreenshotSet_Relationships_AppCustomProductPageLocalization_Data exten
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -219,7 +219,7 @@ class AppScreenshotSet_Relationships_AppCustomProductPageLocalization extends \C
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppCustomProductPageLocalization_Data
@@ -234,7 +234,7 @@ class AppScreenshotSet_Relationships_AppCustomProductPageLocalization extends \C
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -252,7 +252,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalizat
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -261,7 +261,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalizat
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -279,7 +279,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalizat
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -288,7 +288,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalizat
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -314,7 +314,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalizat
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalization_Data
@@ -329,7 +329,7 @@ class AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalizat
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -347,7 +347,7 @@ class AppScreenshotSet_Relationships_AppScreenshots_Links extends \Cantie\AppSto
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -356,7 +356,7 @@ class AppScreenshotSet_Relationships_AppScreenshots_Links extends \Cantie\AppSto
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -374,7 +374,7 @@ class AppScreenshotSet_Relationships_AppScreenshots_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -383,7 +383,7 @@ class AppScreenshotSet_Relationships_AppScreenshots_Data extends \Cantie\AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -411,7 +411,7 @@ class AppScreenshotSet_Relationships_AppScreenshots extends \Cantie\AppStoreConn
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -426,7 +426,7 @@ class AppScreenshotSet_Relationships_AppScreenshots extends \Cantie\AppStoreConn
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppScreenshots_Data[]
@@ -441,7 +441,7 @@ class AppScreenshotSet_Relationships_AppScreenshots extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -471,7 +471,7 @@ class AppScreenshotSet_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersionLocalization($appStoreVersionLocalization)
 	{
 		$this->appStoreVersionLocalization = $appStoreVersionLocalization;
-		return $appStoreVersionLocalization;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppCustomProductPageLocalization
@@ -486,7 +486,7 @@ class AppScreenshotSet_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppCustomProductPageLocalization($appCustomProductPageLocalization)
 	{
 		$this->appCustomProductPageLocalization = $appCustomProductPageLocalization;
-		return $appCustomProductPageLocalization;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppStoreVersionExperimentTreatmentLocalization
@@ -501,7 +501,7 @@ class AppScreenshotSet_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersionExperimentTreatmentLocalization($appStoreVersionExperimentTreatmentLocalization)
 	{
 		$this->appStoreVersionExperimentTreatmentLocalization = $appStoreVersionExperimentTreatmentLocalization;
-		return $appStoreVersionExperimentTreatmentLocalization;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships_AppScreenshots
@@ -516,7 +516,7 @@ class AppScreenshotSet_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppScreenshots($appScreenshots)
 	{
 		$this->appScreenshots = $appScreenshots;
-		return $appScreenshots;
+		return $this;
 	}
 
 }
@@ -540,7 +540,7 @@ class AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -549,7 +549,7 @@ class AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Attributes
@@ -564,7 +564,7 @@ class AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppScreenshotSet_Relationships
@@ -579,7 +579,7 @@ class AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -594,7 +594,7 @@ class AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class CiGitUser extends \Cantie\AppStoreConnect\Model
 	public function setDisplayName($displayName)
 	{
 		$this->displayName = $displayName;
-		return $displayName;
+		return $this;
 	}
 	public function getAvatarUrl()
 	{
@@ -47,7 +47,7 @@ class CiGitUser extends \Cantie\AppStoreConnect\Model
 	public function setAvatarUrl($avatarUrl)
 	{
 		$this->avatarUrl = $avatarUrl;
-		return $avatarUrl;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class AppStoreVersionAppClipDefaultExperienceLinkageResponse_Data extends \Canti
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class AppStoreVersionAppClipDefaultExperienceLinkageResponse_Data extends \Canti
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -73,7 +73,7 @@ class AppStoreVersionAppClipDefaultExperienceLinkageResponse extends \Cantie\App
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  DocumentLinks
@@ -88,7 +88,7 @@ class AppStoreVersionAppClipDefaultExperienceLinkageResponse extends \Cantie\App
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

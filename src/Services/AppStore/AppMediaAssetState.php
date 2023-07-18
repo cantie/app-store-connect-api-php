@@ -47,7 +47,7 @@ class AppMediaAssetState extends \Cantie\AppStoreConnect\Model
 	public function setErrors($errors)
 	{
 		$this->errors = $errors;
-		return $errors;
+		return $this;
 	}
 	/**
 	* @return  AppMediaStateError[]
@@ -62,7 +62,7 @@ class AppMediaAssetState extends \Cantie\AppStoreConnect\Model
 	public function setWarnings($warnings)
 	{
 		$this->warnings = $warnings;
-		return $warnings;
+		return $this;
 	}
 	public function getState()
 	{
@@ -71,7 +71,7 @@ class AppMediaAssetState extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }

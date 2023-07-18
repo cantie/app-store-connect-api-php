@@ -38,7 +38,7 @@ class BetaAppClipInvocationLocalization_Attributes extends \Cantie\AppStoreConne
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -47,7 +47,7 @@ class BetaAppClipInvocationLocalization_Attributes extends \Cantie\AppStoreConne
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -69,7 +69,7 @@ class BetaAppClipInvocationLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -78,7 +78,7 @@ class BetaAppClipInvocationLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocationLocalization_Attributes
@@ -93,7 +93,7 @@ class BetaAppClipInvocationLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -108,7 +108,7 @@ class BetaAppClipInvocationLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

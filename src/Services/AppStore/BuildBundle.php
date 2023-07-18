@@ -66,7 +66,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 	public function getBundleType()
 	{
@@ -75,7 +75,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBundleType($bundleType)
 	{
 		$this->bundleType = $bundleType;
-		return $bundleType;
+		return $this;
 	}
 	public function getSdkBuild()
 	{
@@ -84,7 +84,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSdkBuild($sdkBuild)
 	{
 		$this->sdkBuild = $sdkBuild;
-		return $sdkBuild;
+		return $this;
 	}
 	public function getPlatformBuild()
 	{
@@ -93,7 +93,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatformBuild($platformBuild)
 	{
 		$this->platformBuild = $platformBuild;
-		return $platformBuild;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -102,7 +102,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getHasSirikit()
 	{
@@ -111,7 +111,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setHasSirikit($hasSirikit)
 	{
 		$this->hasSirikit = $hasSirikit;
-		return $hasSirikit;
+		return $this;
 	}
 	public function getHasOnDemandResources()
 	{
@@ -120,7 +120,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setHasOnDemandResources($hasOnDemandResources)
 	{
 		$this->hasOnDemandResources = $hasOnDemandResources;
-		return $hasOnDemandResources;
+		return $this;
 	}
 	public function getHasPrerenderedIcon()
 	{
@@ -129,7 +129,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setHasPrerenderedIcon($hasPrerenderedIcon)
 	{
 		$this->hasPrerenderedIcon = $hasPrerenderedIcon;
-		return $hasPrerenderedIcon;
+		return $this;
 	}
 	public function getUsesLocationServices()
 	{
@@ -138,7 +138,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUsesLocationServices($usesLocationServices)
 	{
 		$this->usesLocationServices = $usesLocationServices;
-		return $usesLocationServices;
+		return $this;
 	}
 	public function getIsIosBuildMacAppStoreCompatible()
 	{
@@ -147,7 +147,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsIosBuildMacAppStoreCompatible($isIosBuildMacAppStoreCompatible)
 	{
 		$this->isIosBuildMacAppStoreCompatible = $isIosBuildMacAppStoreCompatible;
-		return $isIosBuildMacAppStoreCompatible;
+		return $this;
 	}
 	public function getIncludesSymbols()
 	{
@@ -156,7 +156,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIncludesSymbols($includesSymbols)
 	{
 		$this->includesSymbols = $includesSymbols;
-		return $includesSymbols;
+		return $this;
 	}
 	public function getDSYMUrl()
 	{
@@ -165,7 +165,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDSYMUrl($dSYMUrl)
 	{
 		$this->dSYMUrl = $dSYMUrl;
-		return $dSYMUrl;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -180,7 +180,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSupportedArchitectures($supportedArchitectures)
 	{
 		$this->supportedArchitectures = $supportedArchitectures;
-		return $supportedArchitectures;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -195,7 +195,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setRequiredCapabilities($requiredCapabilities)
 	{
 		$this->requiredCapabilities = $requiredCapabilities;
-		return $requiredCapabilities;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -210,7 +210,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDeviceProtocols($deviceProtocols)
 	{
 		$this->deviceProtocols = $deviceProtocols;
-		return $deviceProtocols;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -225,7 +225,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLocales($locales)
 	{
 		$this->locales = $locales;
-		return $locales;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Attributes_Entitlements
@@ -240,7 +240,7 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setEntitlements($entitlements)
 	{
 		$this->entitlements = $entitlements;
-		return $entitlements;
+		return $this;
 	}
 
 }
@@ -258,7 +258,7 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus_Links extends \Cantie\A
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -267,7 +267,7 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus_Links extends \Cantie\A
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -285,7 +285,7 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus_Data extends \Cantie\Ap
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -294,7 +294,7 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus_Data extends \Cantie\Ap
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -320,7 +320,7 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus extends \Cantie\AppStor
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_AppClipDomainCacheStatus_Data
@@ -335,7 +335,7 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus extends \Cantie\AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -353,7 +353,7 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus_Links extends \Cantie\A
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -362,7 +362,7 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus_Links extends \Cantie\A
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -380,7 +380,7 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus_Data extends \Cantie\Ap
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -389,7 +389,7 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus_Data extends \Cantie\Ap
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -415,7 +415,7 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus extends \Cantie\AppStor
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_AppClipDomainDebugStatus_Data
@@ -430,7 +430,7 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus extends \Cantie\AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -448,7 +448,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations_Links extends \Cantie\App
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -457,7 +457,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations_Links extends \Cantie\App
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -475,7 +475,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -484,7 +484,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations_Data extends \Cantie\AppS
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -512,7 +512,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations extends \Cantie\AppStoreC
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -527,7 +527,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations extends \Cantie\AppStoreC
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_BetaAppClipInvocations_Data[]
@@ -542,7 +542,7 @@ class BuildBundle_Relationships_BetaAppClipInvocations extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -560,7 +560,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes_Links extends \Cantie\AppSt
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -569,7 +569,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes_Links extends \Cantie\AppSt
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -587,7 +587,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes_Data extends \Cantie\AppSto
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -596,7 +596,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes_Data extends \Cantie\AppSto
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -624,7 +624,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes extends \Cantie\AppStoreCon
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -639,7 +639,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes extends \Cantie\AppStoreCon
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_BuildBundleFileSizes_Data[]
@@ -654,7 +654,7 @@ class BuildBundle_Relationships_BuildBundleFileSizes extends \Cantie\AppStoreCon
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -684,7 +684,7 @@ class BuildBundle_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppClipDomainCacheStatus($appClipDomainCacheStatus)
 	{
 		$this->appClipDomainCacheStatus = $appClipDomainCacheStatus;
-		return $appClipDomainCacheStatus;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_AppClipDomainDebugStatus
@@ -699,7 +699,7 @@ class BuildBundle_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppClipDomainDebugStatus($appClipDomainDebugStatus)
 	{
 		$this->appClipDomainDebugStatus = $appClipDomainDebugStatus;
-		return $appClipDomainDebugStatus;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_BetaAppClipInvocations
@@ -714,7 +714,7 @@ class BuildBundle_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBetaAppClipInvocations($betaAppClipInvocations)
 	{
 		$this->betaAppClipInvocations = $betaAppClipInvocations;
-		return $betaAppClipInvocations;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships_BuildBundleFileSizes
@@ -729,7 +729,7 @@ class BuildBundle_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBuildBundleFileSizes($buildBundleFileSizes)
 	{
 		$this->buildBundleFileSizes = $buildBundleFileSizes;
-		return $buildBundleFileSizes;
+		return $this;
 	}
 
 }
@@ -753,7 +753,7 @@ class BuildBundle extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -762,7 +762,7 @@ class BuildBundle extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Attributes
@@ -777,7 +777,7 @@ class BuildBundle extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BuildBundle_Relationships
@@ -792,7 +792,7 @@ class BuildBundle extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -807,7 +807,7 @@ class BuildBundle extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

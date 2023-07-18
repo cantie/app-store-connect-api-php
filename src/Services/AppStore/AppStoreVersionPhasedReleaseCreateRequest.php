@@ -44,7 +44,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Attributes extends \Cantie\
 	public function setPhasedReleaseState($phasedReleaseState)
 	{
 		$this->phasedReleaseState = $phasedReleaseState;
-		return $phasedReleaseState;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersi
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -71,7 +71,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersi
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersi
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships extends \Cant
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionPhasedReleaseCreateRequest_Data_Attributes
@@ -155,7 +155,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data extends \Cantie\AppStoreCon
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships
@@ -170,7 +170,7 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data extends \Cantie\AppStoreCon
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -194,7 +194,7 @@ class AppStoreVersionPhasedReleaseCreateRequest extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

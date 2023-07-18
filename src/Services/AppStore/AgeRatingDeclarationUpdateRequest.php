@@ -54,7 +54,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setAlcoholTobaccoOrDrugUseOrReferences($alcoholTobaccoOrDrugUseOrReferences)
 	{
 		$this->alcoholTobaccoOrDrugUseOrReferences = $alcoholTobaccoOrDrugUseOrReferences;
-		return $alcoholTobaccoOrDrugUseOrReferences;
+		return $this;
 	}
 	public function getContests()
 	{
@@ -63,7 +63,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setContests($contests)
 	{
 		$this->contests = $contests;
-		return $contests;
+		return $this;
 	}
 	public function getGamblingAndContests()
 	{
@@ -72,7 +72,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setGamblingAndContests($gamblingAndContests)
 	{
 		$this->gamblingAndContests = $gamblingAndContests;
-		return $gamblingAndContests;
+		return $this;
 	}
 	public function getGambling()
 	{
@@ -81,7 +81,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setGambling($gambling)
 	{
 		$this->gambling = $gambling;
-		return $gambling;
+		return $this;
 	}
 	public function getGamblingSimulated()
 	{
@@ -90,7 +90,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setGamblingSimulated($gamblingSimulated)
 	{
 		$this->gamblingSimulated = $gamblingSimulated;
-		return $gamblingSimulated;
+		return $this;
 	}
 	/**
 	* @return  KidsAgeBand
@@ -105,7 +105,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setKidsAgeBand($kidsAgeBand)
 	{
 		$this->kidsAgeBand = $kidsAgeBand;
-		return $kidsAgeBand;
+		return $this;
 	}
 	public function getMedicalOrTreatmentInformation()
 	{
@@ -114,7 +114,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setMedicalOrTreatmentInformation($medicalOrTreatmentInformation)
 	{
 		$this->medicalOrTreatmentInformation = $medicalOrTreatmentInformation;
-		return $medicalOrTreatmentInformation;
+		return $this;
 	}
 	public function getProfanityOrCrudeHumor()
 	{
@@ -123,7 +123,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setProfanityOrCrudeHumor($profanityOrCrudeHumor)
 	{
 		$this->profanityOrCrudeHumor = $profanityOrCrudeHumor;
-		return $profanityOrCrudeHumor;
+		return $this;
 	}
 	public function getSexualContentGraphicAndNudity()
 	{
@@ -132,7 +132,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setSexualContentGraphicAndNudity($sexualContentGraphicAndNudity)
 	{
 		$this->sexualContentGraphicAndNudity = $sexualContentGraphicAndNudity;
-		return $sexualContentGraphicAndNudity;
+		return $this;
 	}
 	public function getSexualContentOrNudity()
 	{
@@ -141,7 +141,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setSexualContentOrNudity($sexualContentOrNudity)
 	{
 		$this->sexualContentOrNudity = $sexualContentOrNudity;
-		return $sexualContentOrNudity;
+		return $this;
 	}
 	public function getSeventeenPlus()
 	{
@@ -150,7 +150,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setSeventeenPlus($seventeenPlus)
 	{
 		$this->seventeenPlus = $seventeenPlus;
-		return $seventeenPlus;
+		return $this;
 	}
 	public function getHorrorOrFearThemes()
 	{
@@ -159,7 +159,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setHorrorOrFearThemes($horrorOrFearThemes)
 	{
 		$this->horrorOrFearThemes = $horrorOrFearThemes;
-		return $horrorOrFearThemes;
+		return $this;
 	}
 	public function getMatureOrSuggestiveThemes()
 	{
@@ -168,7 +168,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setMatureOrSuggestiveThemes($matureOrSuggestiveThemes)
 	{
 		$this->matureOrSuggestiveThemes = $matureOrSuggestiveThemes;
-		return $matureOrSuggestiveThemes;
+		return $this;
 	}
 	public function getUnrestrictedWebAccess()
 	{
@@ -177,7 +177,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setUnrestrictedWebAccess($unrestrictedWebAccess)
 	{
 		$this->unrestrictedWebAccess = $unrestrictedWebAccess;
-		return $unrestrictedWebAccess;
+		return $this;
 	}
 	public function getViolenceCartoonOrFantasy()
 	{
@@ -186,7 +186,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setViolenceCartoonOrFantasy($violenceCartoonOrFantasy)
 	{
 		$this->violenceCartoonOrFantasy = $violenceCartoonOrFantasy;
-		return $violenceCartoonOrFantasy;
+		return $this;
 	}
 	public function getViolenceRealisticProlongedGraphicOrSadistic()
 	{
@@ -195,7 +195,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setViolenceRealisticProlongedGraphicOrSadistic($violenceRealisticProlongedGraphicOrSadistic)
 	{
 		$this->violenceRealisticProlongedGraphicOrSadistic = $violenceRealisticProlongedGraphicOrSadistic;
-		return $violenceRealisticProlongedGraphicOrSadistic;
+		return $this;
 	}
 	public function getViolenceRealistic()
 	{
@@ -204,7 +204,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setViolenceRealistic($violenceRealistic)
 	{
 		$this->violenceRealistic = $violenceRealistic;
-		return $violenceRealistic;
+		return $this;
 	}
 
 }
@@ -224,7 +224,7 @@ class AgeRatingDeclarationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -233,7 +233,7 @@ class AgeRatingDeclarationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AgeRatingDeclarationUpdateRequest_Data_Attributes
@@ -248,7 +248,7 @@ class AgeRatingDeclarationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -272,7 +272,7 @@ class AgeRatingDeclarationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

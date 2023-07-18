@@ -40,7 +40,7 @@ class BuildBundleFileSize_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDeviceModel($deviceModel)
 	{
 		$this->deviceModel = $deviceModel;
-		return $deviceModel;
+		return $this;
 	}
 	public function getOsVersion()
 	{
@@ -49,7 +49,7 @@ class BuildBundleFileSize_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setOsVersion($osVersion)
 	{
 		$this->osVersion = $osVersion;
-		return $osVersion;
+		return $this;
 	}
 	public function getDownloadBytes()
 	{
@@ -58,7 +58,7 @@ class BuildBundleFileSize_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDownloadBytes($downloadBytes)
 	{
 		$this->downloadBytes = $downloadBytes;
-		return $downloadBytes;
+		return $this;
 	}
 	public function getInstallBytes()
 	{
@@ -67,7 +67,7 @@ class BuildBundleFileSize_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setInstallBytes($installBytes)
 	{
 		$this->installBytes = $installBytes;
-		return $installBytes;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class BuildBundleFileSize extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class BuildBundleFileSize extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BuildBundleFileSize_Attributes
@@ -113,7 +113,7 @@ class BuildBundleFileSize extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -128,7 +128,7 @@ class BuildBundleFileSize extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

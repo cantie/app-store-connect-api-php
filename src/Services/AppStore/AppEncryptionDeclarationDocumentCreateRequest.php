@@ -38,7 +38,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Attributes extends \Can
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -47,7 +47,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Attributes extends \Can
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryp
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryp
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryp
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships extends \
 	public function setAppEncryptionDeclaration($appEncryptionDeclaration)
 	{
 		$this->appEncryptionDeclaration = $appEncryptionDeclaration;
-		return $appEncryptionDeclaration;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclarationDocumentCreateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data extends \Cantie\AppStor
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data extends \Cantie\AppStor
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class AppEncryptionDeclarationDocumentCreateRequest extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

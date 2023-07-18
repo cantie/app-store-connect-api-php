@@ -53,7 +53,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -62,7 +62,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	/**
 	* @return  CiBranchStartCondition
@@ -77,7 +77,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBranchStartCondition($branchStartCondition)
 	{
 		$this->branchStartCondition = $branchStartCondition;
-		return $branchStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiTagStartCondition
@@ -92,7 +92,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTagStartCondition($tagStartCondition)
 	{
 		$this->tagStartCondition = $tagStartCondition;
-		return $tagStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiPullRequestStartCondition
@@ -107,7 +107,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPullRequestStartCondition($pullRequestStartCondition)
 	{
 		$this->pullRequestStartCondition = $pullRequestStartCondition;
-		return $pullRequestStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiScheduledStartCondition
@@ -122,7 +122,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setScheduledStartCondition($scheduledStartCondition)
 	{
 		$this->scheduledStartCondition = $scheduledStartCondition;
-		return $scheduledStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiAction[]
@@ -137,7 +137,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setActions($actions)
 	{
 		$this->actions = $actions;
-		return $actions;
+		return $this;
 	}
 	public function getIsEnabled()
 	{
@@ -146,7 +146,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsEnabled($isEnabled)
 	{
 		$this->isEnabled = $isEnabled;
-		return $isEnabled;
+		return $this;
 	}
 	public function getIsLockedForEditing()
 	{
@@ -155,7 +155,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsLockedForEditing($isLockedForEditing)
 	{
 		$this->isLockedForEditing = $isLockedForEditing;
-		return $isLockedForEditing;
+		return $this;
 	}
 	public function getClean()
 	{
@@ -164,7 +164,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setClean($clean)
 	{
 		$this->clean = $clean;
-		return $clean;
+		return $this;
 	}
 	public function getContainerFilePath()
 	{
@@ -173,7 +173,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContainerFilePath($containerFilePath)
 	{
 		$this->containerFilePath = $containerFilePath;
-		return $containerFilePath;
+		return $this;
 	}
 	public function getLastModifiedDate()
 	{
@@ -182,7 +182,7 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLastModifiedDate($lastModifiedDate)
 	{
 		$this->lastModifiedDate = $lastModifiedDate;
-		return $lastModifiedDate;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class CiWorkflow_Relationships_Product_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -209,7 +209,7 @@ class CiWorkflow_Relationships_Product_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -227,7 +227,7 @@ class CiWorkflow_Relationships_Product_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -236,7 +236,7 @@ class CiWorkflow_Relationships_Product_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -262,7 +262,7 @@ class CiWorkflow_Relationships_Product extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_Product_Data
@@ -277,7 +277,7 @@ class CiWorkflow_Relationships_Product extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -295,7 +295,7 @@ class CiWorkflow_Relationships_Repository_Links extends \Cantie\AppStoreConnect\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -304,7 +304,7 @@ class CiWorkflow_Relationships_Repository_Links extends \Cantie\AppStoreConnect\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -322,7 +322,7 @@ class CiWorkflow_Relationships_Repository_Data extends \Cantie\AppStoreConnect\M
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -331,7 +331,7 @@ class CiWorkflow_Relationships_Repository_Data extends \Cantie\AppStoreConnect\M
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -357,7 +357,7 @@ class CiWorkflow_Relationships_Repository extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_Repository_Data
@@ -372,7 +372,7 @@ class CiWorkflow_Relationships_Repository extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -390,7 +390,7 @@ class CiWorkflow_Relationships_XcodeVersion_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -399,7 +399,7 @@ class CiWorkflow_Relationships_XcodeVersion_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -417,7 +417,7 @@ class CiWorkflow_Relationships_XcodeVersion_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -426,7 +426,7 @@ class CiWorkflow_Relationships_XcodeVersion_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -452,7 +452,7 @@ class CiWorkflow_Relationships_XcodeVersion extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_XcodeVersion_Data
@@ -467,7 +467,7 @@ class CiWorkflow_Relationships_XcodeVersion extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -485,7 +485,7 @@ class CiWorkflow_Relationships_MacOsVersion_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -494,7 +494,7 @@ class CiWorkflow_Relationships_MacOsVersion_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -512,7 +512,7 @@ class CiWorkflow_Relationships_MacOsVersion_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -521,7 +521,7 @@ class CiWorkflow_Relationships_MacOsVersion_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -547,7 +547,7 @@ class CiWorkflow_Relationships_MacOsVersion extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_MacOsVersion_Data
@@ -562,7 +562,7 @@ class CiWorkflow_Relationships_MacOsVersion extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -592,7 +592,7 @@ class CiWorkflow_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setProduct($product)
 	{
 		$this->product = $product;
-		return $product;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_Repository
@@ -607,7 +607,7 @@ class CiWorkflow_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setRepository($repository)
 	{
 		$this->repository = $repository;
-		return $repository;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_XcodeVersion
@@ -622,7 +622,7 @@ class CiWorkflow_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setXcodeVersion($xcodeVersion)
 	{
 		$this->xcodeVersion = $xcodeVersion;
-		return $xcodeVersion;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships_MacOsVersion
@@ -637,7 +637,7 @@ class CiWorkflow_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setMacOsVersion($macOsVersion)
 	{
 		$this->macOsVersion = $macOsVersion;
-		return $macOsVersion;
+		return $this;
 	}
 
 }
@@ -661,7 +661,7 @@ class CiWorkflow extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -670,7 +670,7 @@ class CiWorkflow extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Attributes
@@ -685,7 +685,7 @@ class CiWorkflow extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflow_Relationships
@@ -700,7 +700,7 @@ class CiWorkflow extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -715,7 +715,7 @@ class CiWorkflow extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

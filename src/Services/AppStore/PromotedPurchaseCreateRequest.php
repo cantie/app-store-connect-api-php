@@ -38,7 +38,7 @@ class PromotedPurchaseCreateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setVisibleForAllUsers($visibleForAllUsers)
 	{
 		$this->visibleForAllUsers = $visibleForAllUsers;
-		return $visibleForAllUsers;
+		return $this;
 	}
 	public function getEnabled()
 	{
@@ -47,7 +47,7 @@ class PromotedPurchaseCreateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setEnabled($enabled)
 	{
 		$this->enabled = $enabled;
-		return $enabled;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_App_Data extends \Cantie\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_App_Data extends \Cantie\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_App extends \Cantie\AppSt
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2_Data exte
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -125,7 +125,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2_Data exte
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2 extends \
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -167,7 +167,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_Subscription_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -176,7 +176,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_Subscription_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships_Subscription extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -228,7 +228,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships extends \Cantie\AppStoreC
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2
@@ -243,7 +243,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships extends \Cantie\AppStoreC
 	public function setInAppPurchaseV2($inAppPurchaseV2)
 	{
 		$this->inAppPurchaseV2 = $inAppPurchaseV2;
-		return $inAppPurchaseV2;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseCreateRequest_Data_Relationships_Subscription
@@ -258,7 +258,7 @@ class PromotedPurchaseCreateRequest_Data_Relationships extends \Cantie\AppStoreC
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 
 }
@@ -279,7 +279,7 @@ class PromotedPurchaseCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseCreateRequest_Data_Attributes
@@ -294,7 +294,7 @@ class PromotedPurchaseCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseCreateRequest_Data_Relationships
@@ -309,7 +309,7 @@ class PromotedPurchaseCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -333,7 +333,7 @@ class PromotedPurchaseCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

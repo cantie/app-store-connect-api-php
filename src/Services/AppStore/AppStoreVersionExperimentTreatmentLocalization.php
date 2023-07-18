@@ -37,7 +37,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Attributes extends \Cantie\
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersi
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersi
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersi
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersi
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -117,7 +117,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersi
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersionExperimentTreatment_Data
@@ -132,7 +132,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppStoreVersi
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -150,7 +150,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -159,7 +159,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -177,7 +177,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -186,7 +186,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -214,7 +214,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -229,7 +229,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshotSets_Data[]
@@ -244,7 +244,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshot
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -262,7 +262,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -271,7 +271,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -289,7 +289,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -298,7 +298,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -326,7 +326,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -341,7 +341,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSets_Data[]
@@ -356,7 +356,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSet
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -384,7 +384,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships extends \Cant
 	public function setAppStoreVersionExperimentTreatment($appStoreVersionExperimentTreatment)
 	{
 		$this->appStoreVersionExperimentTreatment = $appStoreVersionExperimentTreatment;
-		return $appStoreVersionExperimentTreatment;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Relationships_AppScreenshotSets
@@ -399,7 +399,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships extends \Cant
 	public function setAppScreenshotSets($appScreenshotSets)
 	{
 		$this->appScreenshotSets = $appScreenshotSets;
-		return $appScreenshotSets;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Relationships_AppPreviewSets
@@ -414,7 +414,7 @@ class AppStoreVersionExperimentTreatmentLocalization_Relationships extends \Cant
 	public function setAppPreviewSets($appPreviewSets)
 	{
 		$this->appPreviewSets = $appPreviewSets;
-		return $appPreviewSets;
+		return $this;
 	}
 
 }
@@ -438,7 +438,7 @@ class AppStoreVersionExperimentTreatmentLocalization extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -447,7 +447,7 @@ class AppStoreVersionExperimentTreatmentLocalization extends \Cantie\AppStoreCon
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Attributes
@@ -462,7 +462,7 @@ class AppStoreVersionExperimentTreatmentLocalization extends \Cantie\AppStoreCon
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalization_Relationships
@@ -477,7 +477,7 @@ class AppStoreVersionExperimentTreatmentLocalization extends \Cantie\AppStoreCon
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -492,7 +492,7 @@ class AppStoreVersionExperimentTreatmentLocalization extends \Cantie\AppStoreCon
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

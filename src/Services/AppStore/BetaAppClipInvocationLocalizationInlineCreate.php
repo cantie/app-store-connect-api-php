@@ -38,7 +38,7 @@ class BetaAppClipInvocationLocalizationInlineCreate_Attributes extends \Cantie\A
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -47,7 +47,7 @@ class BetaAppClipInvocationLocalizationInlineCreate_Attributes extends \Cantie\A
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInv
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInv
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInv
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships extends \Canti
 	public function setBetaAppClipInvocation($betaAppClipInvocation)
 	{
 		$this->betaAppClipInvocation = $betaAppClipInvocation;
-		return $betaAppClipInvocation;
+		return $this;
 	}
 
 }
@@ -144,7 +144,7 @@ class BetaAppClipInvocationLocalizationInlineCreate extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -153,7 +153,7 @@ class BetaAppClipInvocationLocalizationInlineCreate extends \Cantie\AppStoreConn
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocationLocalizationInlineCreate_Attributes
@@ -168,7 +168,7 @@ class BetaAppClipInvocationLocalizationInlineCreate extends \Cantie\AppStoreConn
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocationLocalizationInlineCreate_Relationships
@@ -183,7 +183,7 @@ class BetaAppClipInvocationLocalizationInlineCreate extends \Cantie\AppStoreConn
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }

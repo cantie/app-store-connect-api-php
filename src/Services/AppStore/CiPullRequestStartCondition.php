@@ -49,7 +49,7 @@ class CiPullRequestStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setSource($source)
 	{
 		$this->source = $source;
-		return $source;
+		return $this;
 	}
 	/**
 	* @return  CiBranchPatterns
@@ -64,7 +64,7 @@ class CiPullRequestStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setDestination($destination)
 	{
 		$this->destination = $destination;
-		return $destination;
+		return $this;
 	}
 	/**
 	* @return  CiFilesAndFoldersRule
@@ -79,7 +79,7 @@ class CiPullRequestStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setFilesAndFoldersRule($filesAndFoldersRule)
 	{
 		$this->filesAndFoldersRule = $filesAndFoldersRule;
-		return $filesAndFoldersRule;
+		return $this;
 	}
 	public function getAutoCancel()
 	{
@@ -88,7 +88,7 @@ class CiPullRequestStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setAutoCancel($autoCancel)
 	{
 		$this->autoCancel = $autoCancel;
-		return $autoCancel;
+		return $this;
 	}
 
 }

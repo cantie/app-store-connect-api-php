@@ -39,7 +39,7 @@ class ScmProviderType extends \Cantie\AppStoreConnect\Model
 	public function setKind($kind)
 	{
 		$this->kind = $kind;
-		return $kind;
+		return $this;
 	}
 	public function getDisplayName()
 	{
@@ -48,7 +48,7 @@ class ScmProviderType extends \Cantie\AppStoreConnect\Model
 	public function setDisplayName($displayName)
 	{
 		$this->displayName = $displayName;
-		return $displayName;
+		return $this;
 	}
 	public function getIsOnPremise()
 	{
@@ -57,7 +57,7 @@ class ScmProviderType extends \Cantie\AppStoreConnect\Model
 	public function setIsOnPremise($isOnPremise)
 	{
 		$this->isOnPremise = $isOnPremise;
-		return $isOnPremise;
+		return $this;
 	}
 
 }

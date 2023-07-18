@@ -37,7 +37,7 @@ class DocumentLinks extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 
 }

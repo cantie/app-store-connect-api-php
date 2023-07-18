@@ -39,7 +39,7 @@ class ImageAsset extends \Cantie\AppStoreConnect\Model
 	public function setTemplateUrl($templateUrl)
 	{
 		$this->templateUrl = $templateUrl;
-		return $templateUrl;
+		return $this;
 	}
 	public function getWidth()
 	{
@@ -48,7 +48,7 @@ class ImageAsset extends \Cantie\AppStoreConnect\Model
 	public function setWidth($width)
 	{
 		$this->width = $width;
-		return $width;
+		return $this;
 	}
 	public function getHeight()
 	{
@@ -57,7 +57,7 @@ class ImageAsset extends \Cantie\AppStoreConnect\Model
 	public function setHeight($height)
 	{
 		$this->height = $height;
-		return $height;
+		return $this;
 	}
 
 }

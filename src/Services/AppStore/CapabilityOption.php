@@ -42,7 +42,7 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	public function setKey($key)
 	{
 		$this->key = $key;
-		return $key;
+		return $this;
 	}
 	public function getName()
 	{
@@ -51,7 +51,7 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -60,7 +60,7 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	public function getEnabledByDefault()
 	{
@@ -69,7 +69,7 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	public function setEnabledByDefault($enabledByDefault)
 	{
 		$this->enabledByDefault = $enabledByDefault;
-		return $enabledByDefault;
+		return $this;
 	}
 	public function getEnabled()
 	{
@@ -78,7 +78,7 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	public function setEnabled($enabled)
 	{
 		$this->enabled = $enabled;
-		return $enabled;
+		return $this;
 	}
 	public function getSupportsWildcard()
 	{
@@ -87,7 +87,7 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	public function setSupportsWildcard($supportsWildcard)
 	{
 		$this->supportsWildcard = $supportsWildcard;
-		return $supportsWildcard;
+		return $this;
 	}
 
 }

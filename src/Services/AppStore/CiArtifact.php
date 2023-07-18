@@ -40,7 +40,7 @@ class CiArtifact_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileType($fileType)
 	{
 		$this->fileType = $fileType;
-		return $fileType;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -49,7 +49,7 @@ class CiArtifact_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getFileSize()
 	{
@@ -58,7 +58,7 @@ class CiArtifact_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getDownloadUrl()
 	{
@@ -67,7 +67,7 @@ class CiArtifact_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDownloadUrl($downloadUrl)
 	{
 		$this->downloadUrl = $downloadUrl;
-		return $downloadUrl;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class CiArtifact extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class CiArtifact extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiArtifact_Attributes
@@ -113,7 +113,7 @@ class CiArtifact extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -128,7 +128,7 @@ class CiArtifact extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

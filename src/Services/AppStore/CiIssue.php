@@ -41,7 +41,7 @@ class CiIssue_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIssueType($issueType)
 	{
 		$this->issueType = $issueType;
-		return $issueType;
+		return $this;
 	}
 	public function getMessage()
 	{
@@ -50,7 +50,7 @@ class CiIssue_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setMessage($message)
 	{
 		$this->message = $message;
-		return $message;
+		return $this;
 	}
 	/**
 	* @return  FileLocation
@@ -65,7 +65,7 @@ class CiIssue_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSource($fileSource)
 	{
 		$this->fileSource = $fileSource;
-		return $fileSource;
+		return $this;
 	}
 	public function getCategory()
 	{
@@ -74,7 +74,7 @@ class CiIssue_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCategory($category)
 	{
 		$this->category = $category;
-		return $category;
+		return $this;
 	}
 
 }
@@ -96,7 +96,7 @@ class CiIssue extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -105,7 +105,7 @@ class CiIssue extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiIssue_Attributes
@@ -120,7 +120,7 @@ class CiIssue extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -135,7 +135,7 @@ class CiIssue extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

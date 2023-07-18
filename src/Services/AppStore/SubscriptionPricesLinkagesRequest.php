@@ -38,7 +38,7 @@ class SubscriptionPricesLinkagesRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class SubscriptionPricesLinkagesRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class SubscriptionPricesLinkagesRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

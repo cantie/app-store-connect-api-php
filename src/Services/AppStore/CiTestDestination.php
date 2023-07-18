@@ -42,7 +42,7 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	public function setDeviceTypeName($deviceTypeName)
 	{
 		$this->deviceTypeName = $deviceTypeName;
-		return $deviceTypeName;
+		return $this;
 	}
 	public function getDeviceTypeIdentifier()
 	{
@@ -51,7 +51,7 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	public function setDeviceTypeIdentifier($deviceTypeIdentifier)
 	{
 		$this->deviceTypeIdentifier = $deviceTypeIdentifier;
-		return $deviceTypeIdentifier;
+		return $this;
 	}
 	public function getRuntimeName()
 	{
@@ -60,7 +60,7 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	public function setRuntimeName($runtimeName)
 	{
 		$this->runtimeName = $runtimeName;
-		return $runtimeName;
+		return $this;
 	}
 	public function getRuntimeIdentifier()
 	{
@@ -69,7 +69,7 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	public function setRuntimeIdentifier($runtimeIdentifier)
 	{
 		$this->runtimeIdentifier = $runtimeIdentifier;
-		return $runtimeIdentifier;
+		return $this;
 	}
 	/**
 	* @return  CiTestDestinationKind
@@ -84,7 +84,7 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	public function setKind($kind)
 	{
 		$this->kind = $kind;
-		return $kind;
+		return $this;
 	}
 
 }

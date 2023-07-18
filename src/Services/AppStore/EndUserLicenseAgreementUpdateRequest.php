@@ -37,7 +37,7 @@ class EndUserLicenseAgreementUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	public function setAgreementText($agreementText)
 	{
 		$this->agreementText = $agreementText;
-		return $agreementText;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories_Data e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories_Data e
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories extend
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships extends \Cantie\Ap
 	public function setTerritories($territories)
 	{
 		$this->territories = $territories;
-		return $territories;
+		return $this;
 	}
 
 }
@@ -134,7 +134,7 @@ class EndUserLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -143,7 +143,7 @@ class EndUserLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  EndUserLicenseAgreementUpdateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class EndUserLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  EndUserLicenseAgreementUpdateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class EndUserLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class EndUserLicenseAgreementUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

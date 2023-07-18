@@ -38,7 +38,7 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data_Attributes extends \C
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getAppIconName()
 	{
@@ -47,7 +47,7 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data_Attributes extends \C
 	public function setAppIconName($appIconName)
 	{
 		$this->appIconName = $appIconName;
-		return $appIconName;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data extends \Cantie\AppSt
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data extends \Cantie\AppSt
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data extends \Cantie\AppSt
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class AppStoreVersionExperimentTreatmentUpdateRequest extends \Cantie\AppStoreCo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

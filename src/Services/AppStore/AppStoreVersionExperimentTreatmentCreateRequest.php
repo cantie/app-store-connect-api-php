@@ -38,7 +38,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Attributes extends \C
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getAppIconName()
 	{
@@ -47,7 +47,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Attributes extends \C
 	public function setAppIconName($appIconName)
 	{
 		$this->appIconName = $appIconName;
-		return $appIconName;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -125,7 +125,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -175,7 +175,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships extends
 	public function setAppStoreVersionExperiment($appStoreVersionExperiment)
 	{
 		$this->appStoreVersionExperiment = $appStoreVersionExperiment;
-		return $appStoreVersionExperiment;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2
@@ -190,7 +190,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships extends
 	public function setAppStoreVersionExperimentV2($appStoreVersionExperimentV2)
 	{
 		$this->appStoreVersionExperimentV2 = $appStoreVersionExperimentV2;
-		return $appStoreVersionExperimentV2;
+		return $this;
 	}
 
 }
@@ -211,7 +211,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data extends \Cantie\AppSt
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentCreateRequest_Data_Attributes
@@ -226,7 +226,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data extends \Cantie\AppSt
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships
@@ -241,7 +241,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data extends \Cantie\AppSt
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -265,7 +265,7 @@ class AppStoreVersionExperimentTreatmentCreateRequest extends \Cantie\AppStoreCo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

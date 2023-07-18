@@ -37,7 +37,7 @@ class AppClip_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class AppClip_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class AppClip_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class AppClip_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class AppClip_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -117,7 +117,7 @@ class AppClip_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppClip_Relationships_App_Data
@@ -132,7 +132,7 @@ class AppClip_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -150,7 +150,7 @@ class AppClip_Relationships_AppClipDefaultExperiences_Links extends \Cantie\AppS
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -159,7 +159,7 @@ class AppClip_Relationships_AppClipDefaultExperiences_Links extends \Cantie\AppS
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -177,7 +177,7 @@ class AppClip_Relationships_AppClipDefaultExperiences_Data extends \Cantie\AppSt
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -186,7 +186,7 @@ class AppClip_Relationships_AppClipDefaultExperiences_Data extends \Cantie\AppSt
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -214,7 +214,7 @@ class AppClip_Relationships_AppClipDefaultExperiences extends \Cantie\AppStoreCo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -229,7 +229,7 @@ class AppClip_Relationships_AppClipDefaultExperiences extends \Cantie\AppStoreCo
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppClip_Relationships_AppClipDefaultExperiences_Data[]
@@ -244,7 +244,7 @@ class AppClip_Relationships_AppClipDefaultExperiences extends \Cantie\AppStoreCo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -270,7 +270,7 @@ class AppClip_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  AppClip_Relationships_AppClipDefaultExperiences
@@ -285,7 +285,7 @@ class AppClip_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppClipDefaultExperiences($appClipDefaultExperiences)
 	{
 		$this->appClipDefaultExperiences = $appClipDefaultExperiences;
-		return $appClipDefaultExperiences;
+		return $this;
 	}
 
 }
@@ -309,7 +309,7 @@ class AppClip extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -318,7 +318,7 @@ class AppClip extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClip_Attributes
@@ -333,7 +333,7 @@ class AppClip extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClip_Relationships
@@ -348,7 +348,7 @@ class AppClip extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -363,7 +363,7 @@ class AppClip extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

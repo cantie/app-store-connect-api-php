@@ -38,7 +38,7 @@ class BuildIndividualTestersLinkagesRequest_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class BuildIndividualTestersLinkagesRequest_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class BuildIndividualTestersLinkagesRequest extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

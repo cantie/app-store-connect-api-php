@@ -47,7 +47,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -56,7 +56,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -65,7 +65,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -80,7 +80,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setImageAsset($imageAsset)
 	{
 		$this->imageAsset = $imageAsset;
-		return $imageAsset;
+		return $this;
 	}
 	public function getAssetToken()
 	{
@@ -89,7 +89,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setAssetToken($assetToken)
 	{
 		$this->assetToken = $assetToken;
-		return $assetToken;
+		return $this;
 	}
 	public function getAssetType()
 	{
@@ -98,7 +98,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setAssetType($assetType)
 	{
 		$this->assetType = $assetType;
-		return $assetType;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -113,7 +113,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -128,7 +128,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 
 }
@@ -146,7 +146,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links 
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -155,7 +155,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links 
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -182,7 +182,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data e
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -208,7 +208,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extend
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data
@@ -223,7 +223,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extend
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -247,7 +247,7 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppSto
 	public function setInAppPurchaseV2($inAppPurchaseV2)
 	{
 		$this->inAppPurchaseV2 = $inAppPurchaseV2;
-		return $inAppPurchaseV2;
+		return $this;
 	}
 
 }
@@ -271,7 +271,7 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -280,7 +280,7 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAppStoreReviewScreenshot_Attributes
@@ -295,7 +295,7 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAppStoreReviewScreenshot_Relationships
@@ -310,7 +310,7 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -325,7 +325,7 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

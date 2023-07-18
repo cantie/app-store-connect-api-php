@@ -44,7 +44,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  BundleIdPlatform
@@ -59,7 +59,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getUdid()
 	{
@@ -68,7 +68,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUdid($udid)
 	{
 		$this->udid = $udid;
-		return $udid;
+		return $this;
 	}
 	public function getDeviceClass()
 	{
@@ -77,7 +77,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDeviceClass($deviceClass)
 	{
 		$this->deviceClass = $deviceClass;
-		return $deviceClass;
+		return $this;
 	}
 	public function getStatus()
 	{
@@ -86,7 +86,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStatus($status)
 	{
 		$this->status = $status;
-		return $status;
+		return $this;
 	}
 	public function getModel()
 	{
@@ -95,7 +95,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setModel($model)
 	{
 		$this->model = $model;
-		return $model;
+		return $this;
 	}
 	public function getAddedDate()
 	{
@@ -104,7 +104,7 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAddedDate($addedDate)
 	{
 		$this->addedDate = $addedDate;
-		return $addedDate;
+		return $this;
 	}
 
 }
@@ -126,7 +126,7 @@ class Device extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -135,7 +135,7 @@ class Device extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Device_Attributes
@@ -150,7 +150,7 @@ class Device extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -165,7 +165,7 @@ class Device extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

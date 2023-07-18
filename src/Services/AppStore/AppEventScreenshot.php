@@ -47,7 +47,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -56,7 +56,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -71,7 +71,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setImageAsset($imageAsset)
 	{
 		$this->imageAsset = $imageAsset;
-		return $imageAsset;
+		return $this;
 	}
 	public function getAssetToken()
 	{
@@ -80,7 +80,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetToken($assetToken)
 	{
 		$this->assetToken = $assetToken;
-		return $assetToken;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -95,7 +95,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -110,7 +110,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 	/**
 	* @return  AppEventAssetType
@@ -125,7 +125,7 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAppEventAssetType($appEventAssetType)
 	{
 		$this->appEventAssetType = $appEventAssetType;
-		return $appEventAssetType;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class AppEventScreenshot_Relationships_AppEventLocalization_Links extends \Canti
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -152,7 +152,7 @@ class AppEventScreenshot_Relationships_AppEventLocalization_Links extends \Canti
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -170,7 +170,7 @@ class AppEventScreenshot_Relationships_AppEventLocalization_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -179,7 +179,7 @@ class AppEventScreenshot_Relationships_AppEventLocalization_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -205,7 +205,7 @@ class AppEventScreenshot_Relationships_AppEventLocalization extends \Cantie\AppS
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppEventScreenshot_Relationships_AppEventLocalization_Data
@@ -220,7 +220,7 @@ class AppEventScreenshot_Relationships_AppEventLocalization extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -244,7 +244,7 @@ class AppEventScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppEventLocalization($appEventLocalization)
 	{
 		$this->appEventLocalization = $appEventLocalization;
-		return $appEventLocalization;
+		return $this;
 	}
 
 }
@@ -268,7 +268,7 @@ class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -277,7 +277,7 @@ class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEventScreenshot_Attributes
@@ -292,7 +292,7 @@ class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEventScreenshot_Relationships
@@ -307,7 +307,7 @@ class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -322,7 +322,7 @@ class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -46,7 +46,7 @@ class AppEncryptionDeclarationDocumentResponse extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  DocumentLinks
@@ -61,7 +61,7 @@ class AppEncryptionDeclarationDocumentResponse extends \Cantie\AppStoreConnect\M
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -40,7 +40,7 @@ class AppClipDomainStatus_Attributes_Domains extends \Cantie\AppStoreConnect\Mod
 	public function setDomain($domain)
 	{
 		$this->domain = $domain;
-		return $domain;
+		return $this;
 	}
 	public function getIsValid()
 	{
@@ -49,7 +49,7 @@ class AppClipDomainStatus_Attributes_Domains extends \Cantie\AppStoreConnect\Mod
 	public function setIsValid($isValid)
 	{
 		$this->isValid = $isValid;
-		return $isValid;
+		return $this;
 	}
 	public function getLastUpdatedDate()
 	{
@@ -58,7 +58,7 @@ class AppClipDomainStatus_Attributes_Domains extends \Cantie\AppStoreConnect\Mod
 	public function setLastUpdatedDate($lastUpdatedDate)
 	{
 		$this->lastUpdatedDate = $lastUpdatedDate;
-		return $lastUpdatedDate;
+		return $this;
 	}
 	public function getErrorCode()
 	{
@@ -67,7 +67,7 @@ class AppClipDomainStatus_Attributes_Domains extends \Cantie\AppStoreConnect\Mod
 	public function setErrorCode($errorCode)
 	{
 		$this->errorCode = $errorCode;
-		return $errorCode;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class AppClipDomainStatus_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDomains($domains)
 	{
 		$this->domains = $domains;
-		return $domains;
+		return $this;
 	}
 	public function getLastUpdatedDate()
 	{
@@ -101,7 +101,7 @@ class AppClipDomainStatus_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLastUpdatedDate($lastUpdatedDate)
 	{
 		$this->lastUpdatedDate = $lastUpdatedDate;
-		return $lastUpdatedDate;
+		return $this;
 	}
 
 }
@@ -123,7 +123,7 @@ class AppClipDomainStatus extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -132,7 +132,7 @@ class AppClipDomainStatus extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipDomainStatus_Attributes
@@ -147,7 +147,7 @@ class AppClipDomainStatus extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -162,7 +162,7 @@ class AppClipDomainStatus extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

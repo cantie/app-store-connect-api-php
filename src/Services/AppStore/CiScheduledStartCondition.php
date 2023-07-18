@@ -42,7 +42,7 @@ class CiScheduledStartCondition_Schedule extends \Cantie\AppStoreConnect\Model
 	public function setFrequency($frequency)
 	{
 		$this->frequency = $frequency;
-		return $frequency;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -57,7 +57,7 @@ class CiScheduledStartCondition_Schedule extends \Cantie\AppStoreConnect\Model
 	public function setDays($days)
 	{
 		$this->days = $days;
-		return $days;
+		return $this;
 	}
 	public function getHour()
 	{
@@ -66,7 +66,7 @@ class CiScheduledStartCondition_Schedule extends \Cantie\AppStoreConnect\Model
 	public function setHour($hour)
 	{
 		$this->hour = $hour;
-		return $hour;
+		return $this;
 	}
 	public function getMinute()
 	{
@@ -75,7 +75,7 @@ class CiScheduledStartCondition_Schedule extends \Cantie\AppStoreConnect\Model
 	public function setMinute($minute)
 	{
 		$this->minute = $minute;
-		return $minute;
+		return $this;
 	}
 	public function getTimezone()
 	{
@@ -84,7 +84,7 @@ class CiScheduledStartCondition_Schedule extends \Cantie\AppStoreConnect\Model
 	public function setTimezone($timezone)
 	{
 		$this->timezone = $timezone;
-		return $timezone;
+		return $this;
 	}
 
 }
@@ -110,7 +110,7 @@ class CiScheduledStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setSource($source)
 	{
 		$this->source = $source;
-		return $source;
+		return $this;
 	}
 	/**
 	* @return  CiScheduledStartCondition_Schedule
@@ -125,7 +125,7 @@ class CiScheduledStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setSchedule($schedule)
 	{
 		$this->schedule = $schedule;
-		return $schedule;
+		return $this;
 	}
 
 }

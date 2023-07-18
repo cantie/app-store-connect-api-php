@@ -43,7 +43,7 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUsername($username)
 	{
 		$this->username = $username;
-		return $username;
+		return $this;
 	}
 	public function getFirstName()
 	{
@@ -52,7 +52,7 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFirstName($firstName)
 	{
 		$this->firstName = $firstName;
-		return $firstName;
+		return $this;
 	}
 	public function getLastName()
 	{
@@ -61,7 +61,7 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLastName($lastName)
 	{
 		$this->lastName = $lastName;
-		return $lastName;
+		return $this;
 	}
 	/**
 	* @return  UserRole[]
@@ -76,7 +76,7 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setRoles($roles)
 	{
 		$this->roles = $roles;
-		return $roles;
+		return $this;
 	}
 	public function getAllAppsVisible()
 	{
@@ -85,7 +85,7 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAllAppsVisible($allAppsVisible)
 	{
 		$this->allAppsVisible = $allAppsVisible;
-		return $allAppsVisible;
+		return $this;
 	}
 	public function getProvisioningAllowed()
 	{
@@ -94,7 +94,7 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProvisioningAllowed($provisioningAllowed)
 	{
 		$this->provisioningAllowed = $provisioningAllowed;
-		return $provisioningAllowed;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class User_Relationships_VisibleApps_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -121,7 +121,7 @@ class User_Relationships_VisibleApps_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class User_Relationships_VisibleApps_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -148,7 +148,7 @@ class User_Relationships_VisibleApps_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -176,7 +176,7 @@ class User_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -191,7 +191,7 @@ class User_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  User_Relationships_VisibleApps_Data[]
@@ -206,7 +206,7 @@ class User_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -230,7 +230,7 @@ class User_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setVisibleApps($visibleApps)
 	{
 		$this->visibleApps = $visibleApps;
-		return $visibleApps;
+		return $this;
 	}
 
 }
@@ -254,7 +254,7 @@ class User extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -263,7 +263,7 @@ class User extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  User_Attributes
@@ -278,7 +278,7 @@ class User extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  User_Relationships
@@ -293,7 +293,7 @@ class User extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -308,7 +308,7 @@ class User extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

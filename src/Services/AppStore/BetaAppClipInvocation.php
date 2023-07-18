@@ -37,7 +37,7 @@ class BetaAppClipInvocation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUrl($url)
 	{
 		$this->url = $url;
-		return $url;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Lin
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Lin
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Dat
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Dat
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations ext
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -134,7 +134,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations ext
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Data[]
@@ -149,7 +149,7 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations ext
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class BetaAppClipInvocation_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBetaAppClipInvocationLocalizations($betaAppClipInvocationLocalizations)
 	{
 		$this->betaAppClipInvocationLocalizations = $betaAppClipInvocationLocalizations;
-		return $betaAppClipInvocationLocalizations;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -206,7 +206,7 @@ class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocation_Attributes
@@ -221,7 +221,7 @@ class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocation_Relationships
@@ -236,7 +236,7 @@ class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -251,7 +251,7 @@ class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

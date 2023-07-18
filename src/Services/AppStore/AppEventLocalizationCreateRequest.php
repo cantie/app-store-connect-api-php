@@ -40,7 +40,7 @@ class AppEventLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getName()
 	{
@@ -49,7 +49,7 @@ class AppEventLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getShortDescription()
 	{
@@ -58,7 +58,7 @@ class AppEventLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setShortDescription($shortDescription)
 	{
 		$this->shortDescription = $shortDescription;
-		return $shortDescription;
+		return $this;
 	}
 	public function getLongDescription()
 	{
@@ -67,7 +67,7 @@ class AppEventLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setLongDescription($longDescription)
 	{
 		$this->longDescription = $longDescription;
-		return $longDescription;
+		return $this;
 	}
 
 }
@@ -85,7 +85,7 @@ class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -94,7 +94,7 @@ class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -118,7 +118,7 @@ class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class AppEventLocalizationCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppEvent($appEvent)
 	{
 		$this->appEvent = $appEvent;
-		return $appEvent;
+		return $this;
 	}
 
 }
@@ -163,7 +163,7 @@ class AppEventLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalizationCreateRequest_Data_Attributes
@@ -178,7 +178,7 @@ class AppEventLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalizationCreateRequest_Data_Relationships
@@ -193,7 +193,7 @@ class AppEventLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -217,7 +217,7 @@ class AppEventLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

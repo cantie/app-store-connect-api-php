@@ -38,7 +38,7 @@ class BetaTesterAppsLinkagesResponse_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class BetaTesterAppsLinkagesResponse_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class BetaTesterAppsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  PagedDocumentLinks
@@ -90,7 +90,7 @@ class BetaTesterAppsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -105,7 +105,7 @@ class BetaTesterAppsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 
 }

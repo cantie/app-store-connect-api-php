@@ -38,7 +38,7 @@ class FileLocation extends \Cantie\AppStoreConnect\Model
 	public function setPath($path)
 	{
 		$this->path = $path;
-		return $path;
+		return $this;
 	}
 	public function getLineNumber()
 	{
@@ -47,7 +47,7 @@ class FileLocation extends \Cantie\AppStoreConnect\Model
 	public function setLineNumber($lineNumber)
 	{
 		$this->lineNumber = $lineNumber;
-		return $lineNumber;
+		return $this;
 	}
 
 }

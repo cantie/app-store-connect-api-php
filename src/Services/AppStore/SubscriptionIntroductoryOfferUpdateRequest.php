@@ -37,7 +37,7 @@ class SubscriptionIntroductoryOfferUpdateRequest_Data_Attributes extends \Cantie
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
-		return $endDate;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class SubscriptionIntroductoryOfferUpdateRequest_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class SubscriptionIntroductoryOfferUpdateRequest_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionIntroductoryOfferUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class SubscriptionIntroductoryOfferUpdateRequest_Data extends \Cantie\AppStoreCo
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class SubscriptionIntroductoryOfferUpdateRequest extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

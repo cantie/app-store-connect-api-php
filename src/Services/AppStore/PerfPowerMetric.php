@@ -39,7 +39,7 @@ class PerfPowerMetric_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getMetricType()
 	{
@@ -48,7 +48,7 @@ class PerfPowerMetric_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setMetricType($metricType)
 	{
 		$this->metricType = $metricType;
-		return $metricType;
+		return $this;
 	}
 	public function getDeviceType()
 	{
@@ -57,7 +57,7 @@ class PerfPowerMetric_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDeviceType($deviceType)
 	{
 		$this->deviceType = $deviceType;
-		return $deviceType;
+		return $this;
 	}
 
 }
@@ -79,7 +79,7 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -88,7 +88,7 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  PerfPowerMetric_Attributes
@@ -103,7 +103,7 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -118,7 +118,7 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

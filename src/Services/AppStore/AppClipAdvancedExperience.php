@@ -50,7 +50,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setStreetAddress($streetAddress)
 	{
 		$this->streetAddress = $streetAddress;
-		return $streetAddress;
+		return $this;
 	}
 	public function getFloor()
 	{
@@ -59,7 +59,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setFloor($floor)
 	{
 		$this->floor = $floor;
-		return $floor;
+		return $this;
 	}
 	public function getNeighborhood()
 	{
@@ -68,7 +68,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setNeighborhood($neighborhood)
 	{
 		$this->neighborhood = $neighborhood;
-		return $neighborhood;
+		return $this;
 	}
 	public function getLocality()
 	{
@@ -77,7 +77,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setLocality($locality)
 	{
 		$this->locality = $locality;
-		return $locality;
+		return $this;
 	}
 	public function getStateProvince()
 	{
@@ -86,7 +86,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setStateProvince($stateProvince)
 	{
 		$this->stateProvince = $stateProvince;
-		return $stateProvince;
+		return $this;
 	}
 	public function getPostalCode()
 	{
@@ -95,7 +95,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setPostalCode($postalCode)
 	{
 		$this->postalCode = $postalCode;
-		return $postalCode;
+		return $this;
 	}
 	public function getCountryCode()
 	{
@@ -104,7 +104,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress e
 	public function setCountryCode($countryCode)
 	{
 		$this->countryCode = $countryCode;
-		return $countryCode;
+		return $this;
 	}
 
 }
@@ -123,7 +123,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress extends \Cantie\App
 	public function setFullAddress($fullAddress)
 	{
 		$this->fullAddress = $fullAddress;
-		return $fullAddress;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Attributes_Place_MainAddress_StructuredAddress
@@ -138,7 +138,7 @@ class AppClipAdvancedExperience_Attributes_Place_MainAddress extends \Cantie\App
 	public function setStructuredAddress($structuredAddress)
 	{
 		$this->structuredAddress = $structuredAddress;
-		return $structuredAddress;
+		return $this;
 	}
 
 }
@@ -156,7 +156,7 @@ class AppClipAdvancedExperience_Attributes_Place_DisplayPoint_Coordinates extend
 	public function setLatitude($latitude)
 	{
 		$this->latitude = $latitude;
-		return $latitude;
+		return $this;
 	}
 	public function getLongitude()
 	{
@@ -165,7 +165,7 @@ class AppClipAdvancedExperience_Attributes_Place_DisplayPoint_Coordinates extend
 	public function setLongitude($longitude)
 	{
 		$this->longitude = $longitude;
-		return $longitude;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class AppClipAdvancedExperience_Attributes_Place_DisplayPoint extends \Cantie\Ap
 	public function setCoordinates($coordinates)
 	{
 		$this->coordinates = $coordinates;
-		return $coordinates;
+		return $this;
 	}
 	public function getSource()
 	{
@@ -199,7 +199,7 @@ class AppClipAdvancedExperience_Attributes_Place_DisplayPoint extends \Cantie\Ap
 	public function setSource($source)
 	{
 		$this->source = $source;
-		return $source;
+		return $this;
 	}
 
 }
@@ -218,7 +218,7 @@ class AppClipAdvancedExperience_Attributes_Place_PhoneNumber extends \Cantie\App
 	public function setNumber($number)
 	{
 		$this->number = $number;
-		return $number;
+		return $this;
 	}
 	public function getType()
 	{
@@ -227,7 +227,7 @@ class AppClipAdvancedExperience_Attributes_Place_PhoneNumber extends \Cantie\App
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getIntent()
 	{
@@ -236,7 +236,7 @@ class AppClipAdvancedExperience_Attributes_Place_PhoneNumber extends \Cantie\App
 	public function setIntent($intent)
 	{
 		$this->intent = $intent;
-		return $intent;
+		return $this;
 	}
 
 }
@@ -266,7 +266,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setPlaceId($placeId)
 	{
 		$this->placeId = $placeId;
-		return $placeId;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -281,7 +281,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setNames($names)
 	{
 		$this->names = $names;
-		return $names;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Attributes_Place_MainAddress
@@ -296,7 +296,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setMainAddress($mainAddress)
 	{
 		$this->mainAddress = $mainAddress;
-		return $mainAddress;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Attributes_Place_DisplayPoint
@@ -311,7 +311,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setDisplayPoint($displayPoint)
 	{
 		$this->displayPoint = $displayPoint;
-		return $displayPoint;
+		return $this;
 	}
 	public function getMapAction()
 	{
@@ -320,7 +320,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setMapAction($mapAction)
 	{
 		$this->mapAction = $mapAction;
-		return $mapAction;
+		return $this;
 	}
 	public function getRelationship()
 	{
@@ -329,7 +329,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setRelationship($relationship)
 	{
 		$this->relationship = $relationship;
-		return $relationship;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Attributes_Place_PhoneNumber
@@ -344,7 +344,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setPhoneNumber($phoneNumber)
 	{
 		$this->phoneNumber = $phoneNumber;
-		return $phoneNumber;
+		return $this;
 	}
 	public function getHomePage()
 	{
@@ -353,7 +353,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setHomePage($homePage)
 	{
 		$this->homePage = $homePage;
-		return $homePage;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -368,7 +368,7 @@ class AppClipAdvancedExperience_Attributes_Place extends \Cantie\AppStoreConnect
 	public function setCategories($categories)
 	{
 		$this->categories = $categories;
-		return $categories;
+		return $this;
 	}
 
 }
@@ -396,7 +396,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLink($link)
 	{
 		$this->link = $link;
-		return $link;
+		return $this;
 	}
 	public function getVersion()
 	{
@@ -405,7 +405,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	public function getStatus()
 	{
@@ -414,7 +414,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStatus($status)
 	{
 		$this->status = $status;
-		return $status;
+		return $this;
 	}
 	/**
 	* @return  AppClipAction
@@ -429,7 +429,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAction($action)
 	{
 		$this->action = $action;
-		return $action;
+		return $this;
 	}
 	public function getIsPoweredBy()
 	{
@@ -438,7 +438,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsPoweredBy($isPoweredBy)
 	{
 		$this->isPoweredBy = $isPoweredBy;
-		return $isPoweredBy;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Attributes_Place
@@ -453,7 +453,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlace($place)
 	{
 		$this->place = $place;
-		return $place;
+		return $this;
 	}
 	public function getPlaceStatus()
 	{
@@ -462,7 +462,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlaceStatus($placeStatus)
 	{
 		$this->placeStatus = $placeStatus;
-		return $placeStatus;
+		return $this;
 	}
 	public function getBusinessCategory()
 	{
@@ -471,7 +471,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBusinessCategory($businessCategory)
 	{
 		$this->businessCategory = $businessCategory;
-		return $businessCategory;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceLanguage
@@ -486,7 +486,7 @@ class AppClipAdvancedExperience_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDefaultLanguage($defaultLanguage)
 	{
 		$this->defaultLanguage = $defaultLanguage;
-		return $defaultLanguage;
+		return $this;
 	}
 
 }
@@ -504,7 +504,7 @@ class AppClipAdvancedExperience_Relationships_AppClip_Links extends \Cantie\AppS
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -513,7 +513,7 @@ class AppClipAdvancedExperience_Relationships_AppClip_Links extends \Cantie\AppS
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -531,7 +531,7 @@ class AppClipAdvancedExperience_Relationships_AppClip_Data extends \Cantie\AppSt
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -540,7 +540,7 @@ class AppClipAdvancedExperience_Relationships_AppClip_Data extends \Cantie\AppSt
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -566,7 +566,7 @@ class AppClipAdvancedExperience_Relationships_AppClip extends \Cantie\AppStoreCo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Relationships_AppClip_Data
@@ -581,7 +581,7 @@ class AppClipAdvancedExperience_Relationships_AppClip extends \Cantie\AppStoreCo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -599,7 +599,7 @@ class AppClipAdvancedExperience_Relationships_HeaderImage_Links extends \Cantie\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -608,7 +608,7 @@ class AppClipAdvancedExperience_Relationships_HeaderImage_Links extends \Cantie\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -626,7 +626,7 @@ class AppClipAdvancedExperience_Relationships_HeaderImage_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -635,7 +635,7 @@ class AppClipAdvancedExperience_Relationships_HeaderImage_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -661,7 +661,7 @@ class AppClipAdvancedExperience_Relationships_HeaderImage extends \Cantie\AppSto
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Relationships_HeaderImage_Data
@@ -676,7 +676,7 @@ class AppClipAdvancedExperience_Relationships_HeaderImage extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -694,7 +694,7 @@ class AppClipAdvancedExperience_Relationships_Localizations_Links extends \Canti
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -703,7 +703,7 @@ class AppClipAdvancedExperience_Relationships_Localizations_Links extends \Canti
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -721,7 +721,7 @@ class AppClipAdvancedExperience_Relationships_Localizations_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -730,7 +730,7 @@ class AppClipAdvancedExperience_Relationships_Localizations_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -758,7 +758,7 @@ class AppClipAdvancedExperience_Relationships_Localizations extends \Cantie\AppS
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -773,7 +773,7 @@ class AppClipAdvancedExperience_Relationships_Localizations extends \Cantie\AppS
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Relationships_Localizations_Data[]
@@ -788,7 +788,7 @@ class AppClipAdvancedExperience_Relationships_Localizations extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -816,7 +816,7 @@ class AppClipAdvancedExperience_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setAppClip($appClip)
 	{
 		$this->appClip = $appClip;
-		return $appClip;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Relationships_HeaderImage
@@ -831,7 +831,7 @@ class AppClipAdvancedExperience_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setHeaderImage($headerImage)
 	{
 		$this->headerImage = $headerImage;
-		return $headerImage;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Relationships_Localizations
@@ -846,7 +846,7 @@ class AppClipAdvancedExperience_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setLocalizations($localizations)
 	{
 		$this->localizations = $localizations;
-		return $localizations;
+		return $this;
 	}
 
 }
@@ -870,7 +870,7 @@ class AppClipAdvancedExperience extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -879,7 +879,7 @@ class AppClipAdvancedExperience extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Attributes
@@ -894,7 +894,7 @@ class AppClipAdvancedExperience extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperience_Relationships
@@ -909,7 +909,7 @@ class AppClipAdvancedExperience extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -924,7 +924,7 @@ class AppClipAdvancedExperience extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

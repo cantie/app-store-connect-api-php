@@ -38,7 +38,7 @@ class DeviceUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getStatus()
 	{
@@ -47,7 +47,7 @@ class DeviceUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStatus($status)
 	{
 		$this->status = $status;
-		return $status;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class DeviceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class DeviceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  DeviceUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class DeviceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class DeviceUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

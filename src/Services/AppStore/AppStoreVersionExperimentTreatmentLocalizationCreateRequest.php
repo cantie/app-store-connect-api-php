@@ -37,7 +37,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Attribute
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	public function setAppStoreVersionExperimentTreatment($appStoreVersionExperimentTreatment)
 	{
 		$this->appStoreVersionExperimentTreatment = $appStoreVersionExperimentTreatment;
-		return $appStoreVersionExperimentTreatment;
+		return $this;
 	}
 
 }
@@ -133,7 +133,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Attributes
@@ -148,7 +148,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data extends \
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships
@@ -163,7 +163,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data extends \
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

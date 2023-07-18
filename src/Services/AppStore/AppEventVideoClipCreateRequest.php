@@ -41,7 +41,7 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -50,7 +50,7 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getPreviewFrameTimeCode()
 	{
@@ -59,7 +59,7 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setPreviewFrameTimeCode($previewFrameTimeCode)
 	{
 		$this->previewFrameTimeCode = $previewFrameTimeCode;
-		return $previewFrameTimeCode;
+		return $this;
 	}
 	/**
 	* @return  AppEventAssetType
@@ -74,7 +74,7 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setAppEventAssetType($appEventAssetType)
 	{
 		$this->appEventAssetType = $appEventAssetType;
-		return $appEventAssetType;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization_Dat
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization_Dat
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization ext
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class AppEventVideoClipCreateRequest_Data_Relationships extends \Cantie\AppStore
 	public function setAppEventLocalization($appEventLocalization)
 	{
 		$this->appEventLocalization = $appEventLocalization;
-		return $appEventLocalization;
+		return $this;
 	}
 
 }
@@ -170,7 +170,7 @@ class AppEventVideoClipCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppEventVideoClipCreateRequest_Data_Attributes
@@ -185,7 +185,7 @@ class AppEventVideoClipCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEventVideoClipCreateRequest_Data_Relationships
@@ -200,7 +200,7 @@ class AppEventVideoClipCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -224,7 +224,7 @@ class AppEventVideoClipCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

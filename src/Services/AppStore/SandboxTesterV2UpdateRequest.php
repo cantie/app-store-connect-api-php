@@ -46,7 +46,7 @@ class SandboxTesterV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 	public function getInterruptPurchases()
 	{
@@ -55,7 +55,7 @@ class SandboxTesterV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setInterruptPurchases($interruptPurchases)
 	{
 		$this->interruptPurchases = $interruptPurchases;
-		return $interruptPurchases;
+		return $this;
 	}
 	public function getSubscriptionRenewalRate()
 	{
@@ -64,7 +64,7 @@ class SandboxTesterV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setSubscriptionRenewalRate($subscriptionRenewalRate)
 	{
 		$this->subscriptionRenewalRate = $subscriptionRenewalRate;
-		return $subscriptionRenewalRate;
+		return $this;
 	}
 
 }
@@ -84,7 +84,7 @@ class SandboxTesterV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -93,7 +93,7 @@ class SandboxTesterV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SandboxTesterV2UpdateRequest_Data_Attributes
@@ -108,7 +108,7 @@ class SandboxTesterV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class SandboxTesterV2UpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

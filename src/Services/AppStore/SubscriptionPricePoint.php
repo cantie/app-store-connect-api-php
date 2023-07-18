@@ -39,7 +39,7 @@ class SubscriptionPricePoint_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCustomerPrice($customerPrice)
 	{
 		$this->customerPrice = $customerPrice;
-		return $customerPrice;
+		return $this;
 	}
 	public function getProceeds()
 	{
@@ -48,7 +48,7 @@ class SubscriptionPricePoint_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProceeds($proceeds)
 	{
 		$this->proceeds = $proceeds;
-		return $proceeds;
+		return $this;
 	}
 	public function getProceedsYear2()
 	{
@@ -57,7 +57,7 @@ class SubscriptionPricePoint_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProceedsYear2($proceedsYear2)
 	{
 		$this->proceedsYear2 = $proceedsYear2;
-		return $proceedsYear2;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class SubscriptionPricePoint_Relationships_Territory_Links extends \Cantie\AppSt
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -84,7 +84,7 @@ class SubscriptionPricePoint_Relationships_Territory_Links extends \Cantie\AppSt
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -102,7 +102,7 @@ class SubscriptionPricePoint_Relationships_Territory_Data extends \Cantie\AppSto
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -111,7 +111,7 @@ class SubscriptionPricePoint_Relationships_Territory_Data extends \Cantie\AppSto
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -137,7 +137,7 @@ class SubscriptionPricePoint_Relationships_Territory extends \Cantie\AppStoreCon
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPricePoint_Relationships_Territory_Data
@@ -152,7 +152,7 @@ class SubscriptionPricePoint_Relationships_Territory extends \Cantie\AppStoreCon
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -176,7 +176,7 @@ class SubscriptionPricePoint_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -209,7 +209,7 @@ class SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPricePoint_Attributes
@@ -224,7 +224,7 @@ class SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPricePoint_Relationships
@@ -239,7 +239,7 @@ class SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -254,7 +254,7 @@ class SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

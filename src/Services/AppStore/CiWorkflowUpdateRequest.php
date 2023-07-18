@@ -52,7 +52,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -61,7 +61,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	/**
 	* @return  CiBranchStartCondition
@@ -76,7 +76,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setBranchStartCondition($branchStartCondition)
 	{
 		$this->branchStartCondition = $branchStartCondition;
-		return $branchStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiTagStartCondition
@@ -91,7 +91,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setTagStartCondition($tagStartCondition)
 	{
 		$this->tagStartCondition = $tagStartCondition;
-		return $tagStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiPullRequestStartCondition
@@ -106,7 +106,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setPullRequestStartCondition($pullRequestStartCondition)
 	{
 		$this->pullRequestStartCondition = $pullRequestStartCondition;
-		return $pullRequestStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiScheduledStartCondition
@@ -121,7 +121,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setScheduledStartCondition($scheduledStartCondition)
 	{
 		$this->scheduledStartCondition = $scheduledStartCondition;
-		return $scheduledStartCondition;
+		return $this;
 	}
 	/**
 	* @return  CiAction[]
@@ -136,7 +136,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setActions($actions)
 	{
 		$this->actions = $actions;
-		return $actions;
+		return $this;
 	}
 	public function getIsEnabled()
 	{
@@ -145,7 +145,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setIsEnabled($isEnabled)
 	{
 		$this->isEnabled = $isEnabled;
-		return $isEnabled;
+		return $this;
 	}
 	public function getIsLockedForEditing()
 	{
@@ -154,7 +154,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setIsLockedForEditing($isLockedForEditing)
 	{
 		$this->isLockedForEditing = $isLockedForEditing;
-		return $isLockedForEditing;
+		return $this;
 	}
 	public function getClean()
 	{
@@ -163,7 +163,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setClean($clean)
 	{
 		$this->clean = $clean;
-		return $clean;
+		return $this;
 	}
 	public function getContainerFilePath()
 	{
@@ -172,7 +172,7 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setContainerFilePath($containerFilePath)
 	{
 		$this->containerFilePath = $containerFilePath;
-		return $containerFilePath;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -199,7 +199,7 @@ class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -223,7 +223,7 @@ class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -241,7 +241,7 @@ class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -250,7 +250,7 @@ class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -274,7 +274,7 @@ class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -300,7 +300,7 @@ class CiWorkflowUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setXcodeVersion($xcodeVersion)
 	{
 		$this->xcodeVersion = $xcodeVersion;
-		return $xcodeVersion;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion
@@ -315,7 +315,7 @@ class CiWorkflowUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setMacOsVersion($macOsVersion)
 	{
 		$this->macOsVersion = $macOsVersion;
-		return $macOsVersion;
+		return $this;
 	}
 
 }
@@ -337,7 +337,7 @@ class CiWorkflowUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -346,7 +346,7 @@ class CiWorkflowUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflowUpdateRequest_Data_Attributes
@@ -361,7 +361,7 @@ class CiWorkflowUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiWorkflowUpdateRequest_Data_Relationships
@@ -376,7 +376,7 @@ class CiWorkflowUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -400,7 +400,7 @@ class CiWorkflowUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion_
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion_
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships extends \Cantie\
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 
 }
@@ -114,7 +114,7 @@ class AppStoreVersionSubmissionCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionSubmissionCreateRequest_Data_Relationships
@@ -129,7 +129,7 @@ class AppStoreVersionSubmissionCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class AppStoreVersionSubmissionCreateRequest extends \Cantie\AppStoreConnect\Mod
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -39,7 +39,7 @@ class PagedDocumentLinks extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getFirst()
 	{
@@ -48,7 +48,7 @@ class PagedDocumentLinks extends \Cantie\AppStoreConnect\Model
 	public function setFirst($first)
 	{
 		$this->first = $first;
-		return $first;
+		return $this;
 	}
 	public function getNext()
 	{
@@ -57,7 +57,7 @@ class PagedDocumentLinks extends \Cantie\AppStoreConnect\Model
 	public function setNext($next)
 	{
 		$this->next = $next;
-		return $next;
+		return $this;
 	}
 
 }

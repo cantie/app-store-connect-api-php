@@ -46,7 +46,7 @@ class BundleIdCapabilityCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setCapabilityType($capabilityType)
 	{
 		$this->capabilityType = $capabilityType;
-		return $capabilityType;
+		return $this;
 	}
 	/**
 	* @return  CapabilitySetting[]
@@ -61,7 +61,7 @@ class BundleIdCapabilityCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setSettings($settings)
 	{
 		$this->settings = $settings;
-		return $settings;
+		return $this;
 	}
 
 }
@@ -79,7 +79,7 @@ class BundleIdCapabilityCreateRequest_Data_Relationships_BundleId_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -88,7 +88,7 @@ class BundleIdCapabilityCreateRequest_Data_Relationships_BundleId_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class BundleIdCapabilityCreateRequest_Data_Relationships_BundleId extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -136,7 +136,7 @@ class BundleIdCapabilityCreateRequest_Data_Relationships extends \Cantie\AppStor
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 
 }
@@ -157,7 +157,7 @@ class BundleIdCapabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BundleIdCapabilityCreateRequest_Data_Attributes
@@ -172,7 +172,7 @@ class BundleIdCapabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BundleIdCapabilityCreateRequest_Data_Relationships
@@ -187,7 +187,7 @@ class BundleIdCapabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -211,7 +211,7 @@ class BundleIdCapabilityCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

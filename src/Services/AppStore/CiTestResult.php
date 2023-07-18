@@ -42,7 +42,7 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	public function setUuid($uuid)
 	{
 		$this->uuid = $uuid;
-		return $uuid;
+		return $this;
 	}
 	public function getDeviceName()
 	{
@@ -51,7 +51,7 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	public function setDeviceName($deviceName)
 	{
 		$this->deviceName = $deviceName;
-		return $deviceName;
+		return $this;
 	}
 	public function getOsVersion()
 	{
@@ -60,7 +60,7 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	public function setOsVersion($osVersion)
 	{
 		$this->osVersion = $osVersion;
-		return $osVersion;
+		return $this;
 	}
 	/**
 	* @return  CiTestStatus
@@ -75,7 +75,7 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	public function setStatus($status)
 	{
 		$this->status = $status;
-		return $status;
+		return $this;
 	}
 	public function getDuration()
 	{
@@ -84,7 +84,7 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	public function setDuration($duration)
 	{
 		$this->duration = $duration;
-		return $duration;
+		return $this;
 	}
 
 }
@@ -109,7 +109,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setClassName($className)
 	{
 		$this->className = $className;
-		return $className;
+		return $this;
 	}
 	public function getName()
 	{
@@ -118,7 +118,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  CiTestStatus
@@ -133,7 +133,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStatus($status)
 	{
 		$this->status = $status;
-		return $status;
+		return $this;
 	}
 	/**
 	* @return  FileLocation
@@ -148,7 +148,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSource($fileSource)
 	{
 		$this->fileSource = $fileSource;
-		return $fileSource;
+		return $this;
 	}
 	public function getMessage()
 	{
@@ -157,7 +157,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setMessage($message)
 	{
 		$this->message = $message;
-		return $message;
+		return $this;
 	}
 	/**
 	* @return  CiTestResult_Attributes_DestinationTestResults[]
@@ -172,7 +172,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDestinationTestResults($destinationTestResults)
 	{
 		$this->destinationTestResults = $destinationTestResults;
-		return $destinationTestResults;
+		return $this;
 	}
 
 }
@@ -194,7 +194,7 @@ class CiTestResult extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -203,7 +203,7 @@ class CiTestResult extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiTestResult_Attributes
@@ -218,7 +218,7 @@ class CiTestResult extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -233,7 +233,7 @@ class CiTestResult extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

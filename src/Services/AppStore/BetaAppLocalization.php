@@ -42,7 +42,7 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFeedbackEmail($feedbackEmail)
 	{
 		$this->feedbackEmail = $feedbackEmail;
-		return $feedbackEmail;
+		return $this;
 	}
 	public function getMarketingUrl()
 	{
@@ -51,7 +51,7 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setMarketingUrl($marketingUrl)
 	{
 		$this->marketingUrl = $marketingUrl;
-		return $marketingUrl;
+		return $this;
 	}
 	public function getPrivacyPolicyUrl()
 	{
@@ -60,7 +60,7 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPrivacyPolicyUrl($privacyPolicyUrl)
 	{
 		$this->privacyPolicyUrl = $privacyPolicyUrl;
-		return $privacyPolicyUrl;
+		return $this;
 	}
 	public function getTvOsPrivacyPolicy()
 	{
@@ -69,7 +69,7 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTvOsPrivacyPolicy($tvOsPrivacyPolicy)
 	{
 		$this->tvOsPrivacyPolicy = $tvOsPrivacyPolicy;
-		return $tvOsPrivacyPolicy;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -78,7 +78,7 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -87,7 +87,7 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class BetaAppLocalization_Relationships_App_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -114,7 +114,7 @@ class BetaAppLocalization_Relationships_App_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class BetaAppLocalization_Relationships_App_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -141,7 +141,7 @@ class BetaAppLocalization_Relationships_App_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -167,7 +167,7 @@ class BetaAppLocalization_Relationships_App extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BetaAppLocalization_Relationships_App_Data
@@ -182,7 +182,7 @@ class BetaAppLocalization_Relationships_App extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -206,7 +206,7 @@ class BetaAppLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -230,7 +230,7 @@ class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -239,7 +239,7 @@ class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppLocalization_Attributes
@@ -254,7 +254,7 @@ class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppLocalization_Relationships
@@ -269,7 +269,7 @@ class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -284,7 +284,7 @@ class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

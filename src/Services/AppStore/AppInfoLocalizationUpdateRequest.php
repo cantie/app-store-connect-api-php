@@ -41,7 +41,7 @@ class AppInfoLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -50,7 +50,7 @@ class AppInfoLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 	public function getPrivacyPolicyUrl()
 	{
@@ -59,7 +59,7 @@ class AppInfoLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyPolicyUrl($privacyPolicyUrl)
 	{
 		$this->privacyPolicyUrl = $privacyPolicyUrl;
-		return $privacyPolicyUrl;
+		return $this;
 	}
 	public function getPrivacyChoicesUrl()
 	{
@@ -68,7 +68,7 @@ class AppInfoLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyChoicesUrl($privacyChoicesUrl)
 	{
 		$this->privacyChoicesUrl = $privacyChoicesUrl;
-		return $privacyChoicesUrl;
+		return $this;
 	}
 	public function getPrivacyPolicyText()
 	{
@@ -77,7 +77,7 @@ class AppInfoLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyPolicyText($privacyPolicyText)
 	{
 		$this->privacyPolicyText = $privacyPolicyText;
-		return $privacyPolicyText;
+		return $this;
 	}
 
 }
@@ -97,7 +97,7 @@ class AppInfoLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -106,7 +106,7 @@ class AppInfoLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppInfoLocalizationUpdateRequest_Data_Attributes
@@ -121,7 +121,7 @@ class AppInfoLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -145,7 +145,7 @@ class AppInfoLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

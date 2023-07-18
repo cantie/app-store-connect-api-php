@@ -52,7 +52,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAppDescription($appDescription)
 	{
 		$this->appDescription = $appDescription;
-		return $appDescription;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -61,7 +61,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	public function getUsesEncryption()
 	{
@@ -70,7 +70,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUsesEncryption($usesEncryption)
 	{
 		$this->usesEncryption = $usesEncryption;
-		return $usesEncryption;
+		return $this;
 	}
 	public function getExempt()
 	{
@@ -79,7 +79,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExempt($exempt)
 	{
 		$this->exempt = $exempt;
-		return $exempt;
+		return $this;
 	}
 	public function getContainsProprietaryCryptography()
 	{
@@ -88,7 +88,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContainsProprietaryCryptography($containsProprietaryCryptography)
 	{
 		$this->containsProprietaryCryptography = $containsProprietaryCryptography;
-		return $containsProprietaryCryptography;
+		return $this;
 	}
 	public function getContainsThirdPartyCryptography()
 	{
@@ -97,7 +97,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContainsThirdPartyCryptography($containsThirdPartyCryptography)
 	{
 		$this->containsThirdPartyCryptography = $containsThirdPartyCryptography;
-		return $containsThirdPartyCryptography;
+		return $this;
 	}
 	public function getAvailableOnFrenchStore()
 	{
@@ -106,7 +106,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAvailableOnFrenchStore($availableOnFrenchStore)
 	{
 		$this->availableOnFrenchStore = $availableOnFrenchStore;
-		return $availableOnFrenchStore;
+		return $this;
 	}
 	/**
 	* @return  Platform
@@ -121,7 +121,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getUploadedDate()
 	{
@@ -130,7 +130,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadedDate($uploadedDate)
 	{
 		$this->uploadedDate = $uploadedDate;
-		return $uploadedDate;
+		return $this;
 	}
 	public function getDocumentUrl()
 	{
@@ -139,7 +139,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDocumentUrl($documentUrl)
 	{
 		$this->documentUrl = $documentUrl;
-		return $documentUrl;
+		return $this;
 	}
 	public function getDocumentName()
 	{
@@ -148,7 +148,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDocumentName($documentName)
 	{
 		$this->documentName = $documentName;
-		return $documentName;
+		return $this;
 	}
 	public function getDocumentType()
 	{
@@ -157,7 +157,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDocumentType($documentType)
 	{
 		$this->documentType = $documentType;
-		return $documentType;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclarationState
@@ -172,7 +172,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAppEncryptionDeclarationState($appEncryptionDeclarationState)
 	{
 		$this->appEncryptionDeclarationState = $appEncryptionDeclarationState;
-		return $appEncryptionDeclarationState;
+		return $this;
 	}
 	public function getCodeValue()
 	{
@@ -181,7 +181,7 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCodeValue($codeValue)
 	{
 		$this->codeValue = $codeValue;
-		return $codeValue;
+		return $this;
 	}
 
 }
@@ -199,7 +199,7 @@ class AppEncryptionDeclaration_Relationships_App_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -208,7 +208,7 @@ class AppEncryptionDeclaration_Relationships_App_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -226,7 +226,7 @@ class AppEncryptionDeclaration_Relationships_App_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -235,7 +235,7 @@ class AppEncryptionDeclaration_Relationships_App_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -261,7 +261,7 @@ class AppEncryptionDeclaration_Relationships_App extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Relationships_App_Data
@@ -276,7 +276,7 @@ class AppEncryptionDeclaration_Relationships_App extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -294,7 +294,7 @@ class AppEncryptionDeclaration_Relationships_Builds_Links extends \Cantie\AppSto
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -303,7 +303,7 @@ class AppEncryptionDeclaration_Relationships_Builds_Links extends \Cantie\AppSto
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -321,7 +321,7 @@ class AppEncryptionDeclaration_Relationships_Builds_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -330,7 +330,7 @@ class AppEncryptionDeclaration_Relationships_Builds_Data extends \Cantie\AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -358,7 +358,7 @@ class AppEncryptionDeclaration_Relationships_Builds extends \Cantie\AppStoreConn
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -373,7 +373,7 @@ class AppEncryptionDeclaration_Relationships_Builds extends \Cantie\AppStoreConn
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Relationships_Builds_Data[]
@@ -388,7 +388,7 @@ class AppEncryptionDeclaration_Relationships_Builds extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -406,7 +406,7 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Li
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -415,7 +415,7 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Li
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -433,7 +433,7 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Da
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -442,7 +442,7 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Da
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -468,7 +468,7 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument ex
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Data
@@ -483,7 +483,7 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument ex
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -511,7 +511,7 @@ class AppEncryptionDeclaration_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Relationships_Builds
@@ -526,7 +526,7 @@ class AppEncryptionDeclaration_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setBuilds($builds)
 	{
 		$this->builds = $builds;
-		return $builds;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument
@@ -541,7 +541,7 @@ class AppEncryptionDeclaration_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setAppEncryptionDeclarationDocument($appEncryptionDeclarationDocument)
 	{
 		$this->appEncryptionDeclarationDocument = $appEncryptionDeclarationDocument;
-		return $appEncryptionDeclarationDocument;
+		return $this;
 	}
 
 }
@@ -565,7 +565,7 @@ class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -574,7 +574,7 @@ class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Attributes
@@ -589,7 +589,7 @@ class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclaration_Relationships
@@ -604,7 +604,7 @@ class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -619,7 +619,7 @@ class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -44,7 +44,7 @@ class AppPreviewSetCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect
 	public function setPreviewType($previewType)
 	{
 		$this->previewType = $previewType;
-		return $previewType;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization_
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -71,7 +71,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization_
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -113,7 +113,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocaliza
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -122,7 +122,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocaliza
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -146,7 +146,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocaliza
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -164,7 +164,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTre
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -173,7 +173,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTre
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTre
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -225,7 +225,7 @@ class AppPreviewSetCreateRequest_Data_Relationships extends \Cantie\AppStoreConn
 	public function setAppStoreVersionLocalization($appStoreVersionLocalization)
 	{
 		$this->appStoreVersionLocalization = $appStoreVersionLocalization;
-		return $appStoreVersionLocalization;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization
@@ -240,7 +240,7 @@ class AppPreviewSetCreateRequest_Data_Relationships extends \Cantie\AppStoreConn
 	public function setAppCustomProductPageLocalization($appCustomProductPageLocalization)
 	{
 		$this->appCustomProductPageLocalization = $appCustomProductPageLocalization;
-		return $appCustomProductPageLocalization;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization
@@ -255,7 +255,7 @@ class AppPreviewSetCreateRequest_Data_Relationships extends \Cantie\AppStoreConn
 	public function setAppStoreVersionExperimentTreatmentLocalization($appStoreVersionExperimentTreatmentLocalization)
 	{
 		$this->appStoreVersionExperimentTreatmentLocalization = $appStoreVersionExperimentTreatmentLocalization;
-		return $appStoreVersionExperimentTreatmentLocalization;
+		return $this;
 	}
 
 }
@@ -276,7 +276,7 @@ class AppPreviewSetCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewSetCreateRequest_Data_Attributes
@@ -291,7 +291,7 @@ class AppPreviewSetCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewSetCreateRequest_Data_Relationships
@@ -306,7 +306,7 @@ class AppPreviewSetCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -330,7 +330,7 @@ class AppPreviewSetCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

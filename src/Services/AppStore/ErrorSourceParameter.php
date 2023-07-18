@@ -37,7 +37,7 @@ class ErrorSourceParameter extends \Cantie\AppStoreConnect\Model
 	public function setParameter($parameter)
 	{
 		$this->parameter = $parameter;
-		return $parameter;
+		return $this;
 	}
 
 }

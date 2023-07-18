@@ -38,7 +38,7 @@ class HttpHeader extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getValue()
 	{
@@ -47,7 +47,7 @@ class HttpHeader extends \Cantie\AppStoreConnect\Model
 	public function setValue($value)
 	{
 		$this->value = $value;
-		return $value;
+		return $this;
 	}
 
 }

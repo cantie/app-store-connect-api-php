@@ -41,7 +41,7 @@ class SubscriptionOfferCodeCustomCode_Attributes extends \Cantie\AppStoreConnect
 	public function setCustomCode($customCode)
 	{
 		$this->customCode = $customCode;
-		return $customCode;
+		return $this;
 	}
 	public function getNumberOfCodes()
 	{
@@ -50,7 +50,7 @@ class SubscriptionOfferCodeCustomCode_Attributes extends \Cantie\AppStoreConnect
 	public function setNumberOfCodes($numberOfCodes)
 	{
 		$this->numberOfCodes = $numberOfCodes;
-		return $numberOfCodes;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -59,7 +59,7 @@ class SubscriptionOfferCodeCustomCode_Attributes extends \Cantie\AppStoreConnect
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -68,7 +68,7 @@ class SubscriptionOfferCodeCustomCode_Attributes extends \Cantie\AppStoreConnect
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 	public function getActive()
 	{
@@ -77,7 +77,7 @@ class SubscriptionOfferCodeCustomCode_Attributes extends \Cantie\AppStoreConnect
 	public function setActive($active)
 	{
 		$this->active = $active;
-		return $active;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class SubscriptionOfferCodeCustomCode_Relationships_OfferCode_Links extends \Can
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -104,7 +104,7 @@ class SubscriptionOfferCodeCustomCode_Relationships_OfferCode_Links extends \Can
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class SubscriptionOfferCodeCustomCode_Relationships_OfferCode_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -131,7 +131,7 @@ class SubscriptionOfferCodeCustomCode_Relationships_OfferCode_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -157,7 +157,7 @@ class SubscriptionOfferCodeCustomCode_Relationships_OfferCode extends \Cantie\Ap
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeCustomCode_Relationships_OfferCode_Data
@@ -172,7 +172,7 @@ class SubscriptionOfferCodeCustomCode_Relationships_OfferCode extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -196,7 +196,7 @@ class SubscriptionOfferCodeCustomCode_Relationships extends \Cantie\AppStoreConn
 	public function setOfferCode($offerCode)
 	{
 		$this->offerCode = $offerCode;
-		return $offerCode;
+		return $this;
 	}
 
 }
@@ -220,7 +220,7 @@ class SubscriptionOfferCodeCustomCode extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -229,7 +229,7 @@ class SubscriptionOfferCodeCustomCode extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeCustomCode_Attributes
@@ -244,7 +244,7 @@ class SubscriptionOfferCodeCustomCode extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeCustomCode_Relationships
@@ -259,7 +259,7 @@ class SubscriptionOfferCodeCustomCode extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -274,7 +274,7 @@ class SubscriptionOfferCodeCustomCode extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

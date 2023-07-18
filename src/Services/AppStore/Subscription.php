@@ -44,7 +44,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getProductId()
 	{
@@ -53,7 +53,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProductId($productId)
 	{
 		$this->productId = $productId;
-		return $productId;
+		return $this;
 	}
 	public function getFamilySharable()
 	{
@@ -62,7 +62,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFamilySharable($familySharable)
 	{
 		$this->familySharable = $familySharable;
-		return $familySharable;
+		return $this;
 	}
 	public function getState()
 	{
@@ -71,7 +71,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 	public function getSubscriptionPeriod()
 	{
@@ -80,7 +80,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionPeriod($subscriptionPeriod)
 	{
 		$this->subscriptionPeriod = $subscriptionPeriod;
-		return $subscriptionPeriod;
+		return $this;
 	}
 	public function getReviewNote()
 	{
@@ -89,7 +89,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setReviewNote($reviewNote)
 	{
 		$this->reviewNote = $reviewNote;
-		return $reviewNote;
+		return $this;
 	}
 	public function getGroupLevel()
 	{
@@ -98,7 +98,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setGroupLevel($groupLevel)
 	{
 		$this->groupLevel = $groupLevel;
-		return $groupLevel;
+		return $this;
 	}
 	public function getAvailableInAllTerritories()
 	{
@@ -107,7 +107,7 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAvailableInAllTerritories($availableInAllTerritories)
 	{
 		$this->availableInAllTerritories = $availableInAllTerritories;
-		return $availableInAllTerritories;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class Subscription_Relationships_SubscriptionLocalizations_Links extends \Cantie
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -134,7 +134,7 @@ class Subscription_Relationships_SubscriptionLocalizations_Links extends \Cantie
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -152,7 +152,7 @@ class Subscription_Relationships_SubscriptionLocalizations_Data extends \Cantie\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -161,7 +161,7 @@ class Subscription_Relationships_SubscriptionLocalizations_Data extends \Cantie\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -189,7 +189,7 @@ class Subscription_Relationships_SubscriptionLocalizations extends \Cantie\AppSt
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -204,7 +204,7 @@ class Subscription_Relationships_SubscriptionLocalizations extends \Cantie\AppSt
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_SubscriptionLocalizations_Data[]
@@ -219,7 +219,7 @@ class Subscription_Relationships_SubscriptionLocalizations extends \Cantie\AppSt
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -237,7 +237,7 @@ class Subscription_Relationships_AppStoreReviewScreenshot_Links extends \Cantie\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -246,7 +246,7 @@ class Subscription_Relationships_AppStoreReviewScreenshot_Links extends \Cantie\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -264,7 +264,7 @@ class Subscription_Relationships_AppStoreReviewScreenshot_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -273,7 +273,7 @@ class Subscription_Relationships_AppStoreReviewScreenshot_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -299,7 +299,7 @@ class Subscription_Relationships_AppStoreReviewScreenshot extends \Cantie\AppSto
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_AppStoreReviewScreenshot_Data
@@ -314,7 +314,7 @@ class Subscription_Relationships_AppStoreReviewScreenshot extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -332,7 +332,7 @@ class Subscription_Relationships_Group_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -341,7 +341,7 @@ class Subscription_Relationships_Group_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -359,7 +359,7 @@ class Subscription_Relationships_Group_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -368,7 +368,7 @@ class Subscription_Relationships_Group_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -394,7 +394,7 @@ class Subscription_Relationships_Group extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_Group_Data
@@ -409,7 +409,7 @@ class Subscription_Relationships_Group extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -427,7 +427,7 @@ class Subscription_Relationships_IntroductoryOffers_Links extends \Cantie\AppSto
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -436,7 +436,7 @@ class Subscription_Relationships_IntroductoryOffers_Links extends \Cantie\AppSto
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -454,7 +454,7 @@ class Subscription_Relationships_IntroductoryOffers_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -463,7 +463,7 @@ class Subscription_Relationships_IntroductoryOffers_Data extends \Cantie\AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -491,7 +491,7 @@ class Subscription_Relationships_IntroductoryOffers extends \Cantie\AppStoreConn
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -506,7 +506,7 @@ class Subscription_Relationships_IntroductoryOffers extends \Cantie\AppStoreConn
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_IntroductoryOffers_Data[]
@@ -521,7 +521,7 @@ class Subscription_Relationships_IntroductoryOffers extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -539,7 +539,7 @@ class Subscription_Relationships_PromotionalOffers_Links extends \Cantie\AppStor
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -548,7 +548,7 @@ class Subscription_Relationships_PromotionalOffers_Links extends \Cantie\AppStor
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -566,7 +566,7 @@ class Subscription_Relationships_PromotionalOffers_Data extends \Cantie\AppStore
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -575,7 +575,7 @@ class Subscription_Relationships_PromotionalOffers_Data extends \Cantie\AppStore
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -603,7 +603,7 @@ class Subscription_Relationships_PromotionalOffers extends \Cantie\AppStoreConne
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -618,7 +618,7 @@ class Subscription_Relationships_PromotionalOffers extends \Cantie\AppStoreConne
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_PromotionalOffers_Data[]
@@ -633,7 +633,7 @@ class Subscription_Relationships_PromotionalOffers extends \Cantie\AppStoreConne
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -651,7 +651,7 @@ class Subscription_Relationships_OfferCodes_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -660,7 +660,7 @@ class Subscription_Relationships_OfferCodes_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -678,7 +678,7 @@ class Subscription_Relationships_OfferCodes_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -687,7 +687,7 @@ class Subscription_Relationships_OfferCodes_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -715,7 +715,7 @@ class Subscription_Relationships_OfferCodes extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -730,7 +730,7 @@ class Subscription_Relationships_OfferCodes extends \Cantie\AppStoreConnect\Mode
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_OfferCodes_Data[]
@@ -745,7 +745,7 @@ class Subscription_Relationships_OfferCodes extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -763,7 +763,7 @@ class Subscription_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Mo
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -772,7 +772,7 @@ class Subscription_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Mo
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -790,7 +790,7 @@ class Subscription_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -799,7 +799,7 @@ class Subscription_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -827,7 +827,7 @@ class Subscription_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -842,7 +842,7 @@ class Subscription_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_Prices_Data[]
@@ -857,7 +857,7 @@ class Subscription_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -875,7 +875,7 @@ class Subscription_Relationships_PromotedPurchase_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -884,7 +884,7 @@ class Subscription_Relationships_PromotedPurchase_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -902,7 +902,7 @@ class Subscription_Relationships_PromotedPurchase_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -911,7 +911,7 @@ class Subscription_Relationships_PromotedPurchase_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -937,7 +937,7 @@ class Subscription_Relationships_PromotedPurchase extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_PromotedPurchase_Data
@@ -952,7 +952,7 @@ class Subscription_Relationships_PromotedPurchase extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -970,7 +970,7 @@ class Subscription_Relationships_SubscriptionAvailability_Links extends \Cantie\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -979,7 +979,7 @@ class Subscription_Relationships_SubscriptionAvailability_Links extends \Cantie\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -997,7 +997,7 @@ class Subscription_Relationships_SubscriptionAvailability_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1006,7 +1006,7 @@ class Subscription_Relationships_SubscriptionAvailability_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -1032,7 +1032,7 @@ class Subscription_Relationships_SubscriptionAvailability extends \Cantie\AppSto
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_SubscriptionAvailability_Data
@@ -1047,7 +1047,7 @@ class Subscription_Relationships_SubscriptionAvailability extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -1087,7 +1087,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionLocalizations($subscriptionLocalizations)
 	{
 		$this->subscriptionLocalizations = $subscriptionLocalizations;
-		return $subscriptionLocalizations;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_AppStoreReviewScreenshot
@@ -1102,7 +1102,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreReviewScreenshot($appStoreReviewScreenshot)
 	{
 		$this->appStoreReviewScreenshot = $appStoreReviewScreenshot;
-		return $appStoreReviewScreenshot;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_Group
@@ -1117,7 +1117,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setGroup($group)
 	{
 		$this->group = $group;
-		return $group;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_IntroductoryOffers
@@ -1132,7 +1132,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setIntroductoryOffers($introductoryOffers)
 	{
 		$this->introductoryOffers = $introductoryOffers;
-		return $introductoryOffers;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_PromotionalOffers
@@ -1147,7 +1147,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPromotionalOffers($promotionalOffers)
 	{
 		$this->promotionalOffers = $promotionalOffers;
-		return $promotionalOffers;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_OfferCodes
@@ -1162,7 +1162,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setOfferCodes($offerCodes)
 	{
 		$this->offerCodes = $offerCodes;
-		return $offerCodes;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_Prices
@@ -1177,7 +1177,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPrices($prices)
 	{
 		$this->prices = $prices;
-		return $prices;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_PromotedPurchase
@@ -1192,7 +1192,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPromotedPurchase($promotedPurchase)
 	{
 		$this->promotedPurchase = $promotedPurchase;
-		return $promotedPurchase;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships_SubscriptionAvailability
@@ -1207,7 +1207,7 @@ class Subscription_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionAvailability($subscriptionAvailability)
 	{
 		$this->subscriptionAvailability = $subscriptionAvailability;
-		return $subscriptionAvailability;
+		return $this;
 	}
 
 }
@@ -1231,7 +1231,7 @@ class Subscription extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1240,7 +1240,7 @@ class Subscription extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Attributes
@@ -1255,7 +1255,7 @@ class Subscription extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  Subscription_Relationships
@@ -1270,7 +1270,7 @@ class Subscription extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -1285,7 +1285,7 @@ class Subscription extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

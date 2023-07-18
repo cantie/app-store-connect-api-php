@@ -42,7 +42,7 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getName()
 	{
@@ -51,7 +51,7 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -60,7 +60,7 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 	public function getPrivacyPolicyUrl()
 	{
@@ -69,7 +69,7 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPrivacyPolicyUrl($privacyPolicyUrl)
 	{
 		$this->privacyPolicyUrl = $privacyPolicyUrl;
-		return $privacyPolicyUrl;
+		return $this;
 	}
 	public function getPrivacyChoicesUrl()
 	{
@@ -78,7 +78,7 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPrivacyChoicesUrl($privacyChoicesUrl)
 	{
 		$this->privacyChoicesUrl = $privacyChoicesUrl;
-		return $privacyChoicesUrl;
+		return $this;
 	}
 	public function getPrivacyPolicyText()
 	{
@@ -87,7 +87,7 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPrivacyPolicyText($privacyPolicyText)
 	{
 		$this->privacyPolicyText = $privacyPolicyText;
-		return $privacyPolicyText;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppInfoLocalization_Relationships_AppInfo_Links extends \Cantie\AppStoreCo
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -114,7 +114,7 @@ class AppInfoLocalization_Relationships_AppInfo_Links extends \Cantie\AppStoreCo
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class AppInfoLocalization_Relationships_AppInfo_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -141,7 +141,7 @@ class AppInfoLocalization_Relationships_AppInfo_Data extends \Cantie\AppStoreCon
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -167,7 +167,7 @@ class AppInfoLocalization_Relationships_AppInfo extends \Cantie\AppStoreConnect\
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppInfoLocalization_Relationships_AppInfo_Data
@@ -182,7 +182,7 @@ class AppInfoLocalization_Relationships_AppInfo extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -206,7 +206,7 @@ class AppInfoLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppInfo($appInfo)
 	{
 		$this->appInfo = $appInfo;
-		return $appInfo;
+		return $this;
 	}
 
 }
@@ -230,7 +230,7 @@ class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -239,7 +239,7 @@ class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppInfoLocalization_Attributes
@@ -254,7 +254,7 @@ class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppInfoLocalization_Relationships
@@ -269,7 +269,7 @@ class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -284,7 +284,7 @@ class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

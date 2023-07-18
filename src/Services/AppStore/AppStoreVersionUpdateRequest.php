@@ -41,7 +41,7 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setVersionString($versionString)
 	{
 		$this->versionString = $versionString;
-		return $versionString;
+		return $this;
 	}
 	public function getCopyright()
 	{
@@ -50,7 +50,7 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setCopyright($copyright)
 	{
 		$this->copyright = $copyright;
-		return $copyright;
+		return $this;
 	}
 	public function getReleaseType()
 	{
@@ -59,7 +59,7 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setReleaseType($releaseType)
 	{
 		$this->releaseType = $releaseType;
-		return $releaseType;
+		return $this;
 	}
 	public function getEarliestReleaseDate()
 	{
@@ -68,7 +68,7 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setEarliestReleaseDate($earliestReleaseDate)
 	{
 		$this->earliestReleaseDate = $earliestReleaseDate;
-		return $earliestReleaseDate;
+		return $this;
 	}
 	public function getDownloadable()
 	{
@@ -77,7 +77,7 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setDownloadable($downloadable)
 	{
 		$this->downloadable = $downloadable;
-		return $downloadable;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships_Build_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -104,7 +104,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships_Build_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -128,7 +128,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships_Build extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -146,7 +146,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience_D
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -155,7 +155,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience_D
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -179,7 +179,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience e
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -205,7 +205,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setBuild($build)
 	{
 		$this->build = $build;
-		return $build;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience
@@ -220,7 +220,7 @@ class AppStoreVersionUpdateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setAppClipDefaultExperience($appClipDefaultExperience)
 	{
 		$this->appClipDefaultExperience = $appClipDefaultExperience;
-		return $appClipDefaultExperience;
+		return $this;
 	}
 
 }
@@ -242,7 +242,7 @@ class AppStoreVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -251,7 +251,7 @@ class AppStoreVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionUpdateRequest_Data_Attributes
@@ -266,7 +266,7 @@ class AppStoreVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionUpdateRequest_Data_Relationships
@@ -281,7 +281,7 @@ class AppStoreVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -305,7 +305,7 @@ class AppStoreVersionUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -40,7 +40,7 @@ class CiIssueCounts extends \Cantie\AppStoreConnect\Model
 	public function setAnalyzerWarnings($analyzerWarnings)
 	{
 		$this->analyzerWarnings = $analyzerWarnings;
-		return $analyzerWarnings;
+		return $this;
 	}
 	public function getErrors()
 	{
@@ -49,7 +49,7 @@ class CiIssueCounts extends \Cantie\AppStoreConnect\Model
 	public function setErrors($errors)
 	{
 		$this->errors = $errors;
-		return $errors;
+		return $this;
 	}
 	public function getTestFailures()
 	{
@@ -58,7 +58,7 @@ class CiIssueCounts extends \Cantie\AppStoreConnect\Model
 	public function setTestFailures($testFailures)
 	{
 		$this->testFailures = $testFailures;
-		return $testFailures;
+		return $this;
 	}
 	public function getWarnings()
 	{
@@ -67,7 +67,7 @@ class CiIssueCounts extends \Cantie\AppStoreConnect\Model
 	public function setWarnings($warnings)
 	{
 		$this->warnings = $warnings;
-		return $warnings;
+		return $this;
 	}
 
 }

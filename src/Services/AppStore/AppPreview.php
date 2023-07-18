@@ -48,7 +48,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -57,7 +57,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -66,7 +66,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	public function getPreviewFrameTimeCode()
 	{
@@ -75,7 +75,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPreviewFrameTimeCode($previewFrameTimeCode)
 	{
 		$this->previewFrameTimeCode = $previewFrameTimeCode;
-		return $previewFrameTimeCode;
+		return $this;
 	}
 	public function getMimeType()
 	{
@@ -84,7 +84,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setMimeType($mimeType)
 	{
 		$this->mimeType = $mimeType;
-		return $mimeType;
+		return $this;
 	}
 	public function getVideoUrl()
 	{
@@ -93,7 +93,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setVideoUrl($videoUrl)
 	{
 		$this->videoUrl = $videoUrl;
-		return $videoUrl;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -108,7 +108,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPreviewImage($previewImage)
 	{
 		$this->previewImage = $previewImage;
-		return $previewImage;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -123,7 +123,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -138,7 +138,7 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 
 }
@@ -156,7 +156,7 @@ class AppPreview_Relationships_AppPreviewSet_Links extends \Cantie\AppStoreConne
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -165,7 +165,7 @@ class AppPreview_Relationships_AppPreviewSet_Links extends \Cantie\AppStoreConne
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -183,7 +183,7 @@ class AppPreview_Relationships_AppPreviewSet_Data extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -192,7 +192,7 @@ class AppPreview_Relationships_AppPreviewSet_Data extends \Cantie\AppStoreConnec
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -218,7 +218,7 @@ class AppPreview_Relationships_AppPreviewSet extends \Cantie\AppStoreConnect\Mod
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppPreview_Relationships_AppPreviewSet_Data
@@ -233,7 +233,7 @@ class AppPreview_Relationships_AppPreviewSet extends \Cantie\AppStoreConnect\Mod
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -257,7 +257,7 @@ class AppPreview_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppPreviewSet($appPreviewSet)
 	{
 		$this->appPreviewSet = $appPreviewSet;
-		return $appPreviewSet;
+		return $this;
 	}
 
 }
@@ -281,7 +281,7 @@ class AppPreview extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -290,7 +290,7 @@ class AppPreview extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppPreview_Attributes
@@ -305,7 +305,7 @@ class AppPreview extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppPreview_Relationships
@@ -320,7 +320,7 @@ class AppPreview extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -335,7 +335,7 @@ class AppPreview extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

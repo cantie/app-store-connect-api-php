@@ -41,7 +41,7 @@ class ScmRepository_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLastAccessedDate($lastAccessedDate)
 	{
 		$this->lastAccessedDate = $lastAccessedDate;
-		return $lastAccessedDate;
+		return $this;
 	}
 	public function getHttpCloneUrl()
 	{
@@ -50,7 +50,7 @@ class ScmRepository_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setHttpCloneUrl($httpCloneUrl)
 	{
 		$this->httpCloneUrl = $httpCloneUrl;
-		return $httpCloneUrl;
+		return $this;
 	}
 	public function getSshCloneUrl()
 	{
@@ -59,7 +59,7 @@ class ScmRepository_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSshCloneUrl($sshCloneUrl)
 	{
 		$this->sshCloneUrl = $sshCloneUrl;
-		return $sshCloneUrl;
+		return $this;
 	}
 	public function getOwnerName()
 	{
@@ -68,7 +68,7 @@ class ScmRepository_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setOwnerName($ownerName)
 	{
 		$this->ownerName = $ownerName;
-		return $ownerName;
+		return $this;
 	}
 	public function getRepositoryName()
 	{
@@ -77,7 +77,7 @@ class ScmRepository_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setRepositoryName($repositoryName)
 	{
 		$this->repositoryName = $repositoryName;
-		return $repositoryName;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class ScmRepository_Relationships_ScmProvider_Links extends \Cantie\AppStoreConn
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -104,7 +104,7 @@ class ScmRepository_Relationships_ScmProvider_Links extends \Cantie\AppStoreConn
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class ScmRepository_Relationships_ScmProvider_Data extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -131,7 +131,7 @@ class ScmRepository_Relationships_ScmProvider_Data extends \Cantie\AppStoreConne
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -157,7 +157,7 @@ class ScmRepository_Relationships_ScmProvider extends \Cantie\AppStoreConnect\Mo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ScmRepository_Relationships_ScmProvider_Data
@@ -172,7 +172,7 @@ class ScmRepository_Relationships_ScmProvider extends \Cantie\AppStoreConnect\Mo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class ScmRepository_Relationships_DefaultBranch_Links extends \Cantie\AppStoreCo
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -199,7 +199,7 @@ class ScmRepository_Relationships_DefaultBranch_Links extends \Cantie\AppStoreCo
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -217,7 +217,7 @@ class ScmRepository_Relationships_DefaultBranch_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -226,7 +226,7 @@ class ScmRepository_Relationships_DefaultBranch_Data extends \Cantie\AppStoreCon
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -252,7 +252,7 @@ class ScmRepository_Relationships_DefaultBranch extends \Cantie\AppStoreConnect\
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ScmRepository_Relationships_DefaultBranch_Data
@@ -267,7 +267,7 @@ class ScmRepository_Relationships_DefaultBranch extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -293,7 +293,7 @@ class ScmRepository_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setScmProvider($scmProvider)
 	{
 		$this->scmProvider = $scmProvider;
-		return $scmProvider;
+		return $this;
 	}
 	/**
 	* @return  ScmRepository_Relationships_DefaultBranch
@@ -308,7 +308,7 @@ class ScmRepository_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setDefaultBranch($defaultBranch)
 	{
 		$this->defaultBranch = $defaultBranch;
-		return $defaultBranch;
+		return $this;
 	}
 
 }
@@ -332,7 +332,7 @@ class ScmRepository extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -341,7 +341,7 @@ class ScmRepository extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  ScmRepository_Attributes
@@ -356,7 +356,7 @@ class ScmRepository extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ScmRepository_Relationships
@@ -371,7 +371,7 @@ class ScmRepository extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -386,7 +386,7 @@ class ScmRepository extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

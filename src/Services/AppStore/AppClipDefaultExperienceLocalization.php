@@ -38,7 +38,7 @@ class AppClipDefaultExperienceLocalization_Attributes extends \Cantie\AppStoreCo
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -47,7 +47,7 @@ class AppClipDefaultExperienceLocalization_Attributes extends \Cantie\AppStoreCo
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperienc
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -74,7 +74,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperienc
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperienc
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperienc
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -127,7 +127,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperienc
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperience_Data
@@ -142,7 +142,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipDefaultExperienc
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage_Link
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -169,7 +169,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage_Link
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage_Data
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -196,7 +196,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage_Data
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -222,7 +222,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage exte
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage_Data
@@ -237,7 +237,7 @@ class AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage exte
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -263,7 +263,7 @@ class AppClipDefaultExperienceLocalization_Relationships extends \Cantie\AppStor
 	public function setAppClipDefaultExperience($appClipDefaultExperience)
 	{
 		$this->appClipDefaultExperience = $appClipDefaultExperience;
-		return $appClipDefaultExperience;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalization_Relationships_AppClipHeaderImage
@@ -278,7 +278,7 @@ class AppClipDefaultExperienceLocalization_Relationships extends \Cantie\AppStor
 	public function setAppClipHeaderImage($appClipHeaderImage)
 	{
 		$this->appClipHeaderImage = $appClipHeaderImage;
-		return $appClipHeaderImage;
+		return $this;
 	}
 
 }
@@ -302,7 +302,7 @@ class AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -311,7 +311,7 @@ class AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalization_Attributes
@@ -326,7 +326,7 @@ class AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalization_Relationships
@@ -341,7 +341,7 @@ class AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -356,7 +356,7 @@ class AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class InAppPurchaseSubmission_Relationships_InAppPurchaseV2_Links extends \Canti
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -47,7 +47,7 @@ class InAppPurchaseSubmission_Relationships_InAppPurchaseV2_Links extends \Canti
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class InAppPurchaseSubmission_Relationships_InAppPurchaseV2_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class InAppPurchaseSubmission_Relationships_InAppPurchaseV2_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -100,7 +100,7 @@ class InAppPurchaseSubmission_Relationships_InAppPurchaseV2 extends \Cantie\AppS
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseSubmission_Relationships_InAppPurchaseV2_Data
@@ -115,7 +115,7 @@ class InAppPurchaseSubmission_Relationships_InAppPurchaseV2 extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class InAppPurchaseSubmission_Relationships extends \Cantie\AppStoreConnect\Mode
 	public function setInAppPurchaseV2($inAppPurchaseV2)
 	{
 		$this->inAppPurchaseV2 = $inAppPurchaseV2;
-		return $inAppPurchaseV2;
+		return $this;
 	}
 
 }
@@ -161,7 +161,7 @@ class InAppPurchaseSubmission extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -170,7 +170,7 @@ class InAppPurchaseSubmission extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseSubmission_Relationships
@@ -185,7 +185,7 @@ class InAppPurchaseSubmission extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -200,7 +200,7 @@ class InAppPurchaseSubmission extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

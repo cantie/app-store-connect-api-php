@@ -37,7 +37,7 @@ class CustomerReviewResponseV1CreateRequest_Data_Attributes extends \Cantie\AppS
 	public function setResponseBody($responseBody)
 	{
 		$this->responseBody = $responseBody;
-		return $responseBody;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data exten
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data exten
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review extends \C
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships extends \Cantie\A
 	public function setReview($review)
 	{
 		$this->review = $review;
-		return $review;
+		return $this;
 	}
 
 }
@@ -133,7 +133,7 @@ class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  CustomerReviewResponseV1CreateRequest_Data_Attributes
@@ -148,7 +148,7 @@ class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CustomerReviewResponseV1CreateRequest_Data_Relationships
@@ -163,7 +163,7 @@ class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class CustomerReviewResponseV1CreateRequest extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class SubscriptionGroupLocalizationUpdateRequest_Data_Attributes extends \Cantie
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getCustomAppName()
 	{
@@ -47,7 +47,7 @@ class SubscriptionGroupLocalizationUpdateRequest_Data_Attributes extends \Cantie
 	public function setCustomAppName($customAppName)
 	{
 		$this->customAppName = $customAppName;
-		return $customAppName;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class SubscriptionGroupLocalizationUpdateRequest_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class SubscriptionGroupLocalizationUpdateRequest_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupLocalizationUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class SubscriptionGroupLocalizationUpdateRequest_Data extends \Cantie\AppStoreCo
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class SubscriptionGroupLocalizationUpdateRequest extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

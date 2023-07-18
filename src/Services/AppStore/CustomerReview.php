@@ -43,7 +43,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setRating($rating)
 	{
 		$this->rating = $rating;
-		return $rating;
+		return $this;
 	}
 	public function getTitle()
 	{
@@ -52,7 +52,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getBody()
 	{
@@ -61,7 +61,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBody($body)
 	{
 		$this->body = $body;
-		return $body;
+		return $this;
 	}
 	public function getReviewerNickname()
 	{
@@ -70,7 +70,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setReviewerNickname($reviewerNickname)
 	{
 		$this->reviewerNickname = $reviewerNickname;
-		return $reviewerNickname;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -79,7 +79,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	/**
 	* @return  TerritoryCode
@@ -94,7 +94,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class CustomerReview_Relationships_Response_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -121,7 +121,7 @@ class CustomerReview_Relationships_Response_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class CustomerReview_Relationships_Response_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -148,7 +148,7 @@ class CustomerReview_Relationships_Response_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -174,7 +174,7 @@ class CustomerReview_Relationships_Response extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CustomerReview_Relationships_Response_Data
@@ -189,7 +189,7 @@ class CustomerReview_Relationships_Response extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -213,7 +213,7 @@ class CustomerReview_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setResponse($response)
 	{
 		$this->response = $response;
-		return $response;
+		return $this;
 	}
 
 }
@@ -237,7 +237,7 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -246,7 +246,7 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CustomerReview_Attributes
@@ -261,7 +261,7 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CustomerReview_Relationships
@@ -276,7 +276,7 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -291,7 +291,7 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

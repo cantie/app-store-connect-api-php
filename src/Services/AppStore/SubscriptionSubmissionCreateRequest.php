@@ -38,7 +38,7 @@ class SubscriptionSubmissionCreateRequest_Data_Relationships_Subscription_Data e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class SubscriptionSubmissionCreateRequest_Data_Relationships_Subscription_Data e
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class SubscriptionSubmissionCreateRequest_Data_Relationships_Subscription extend
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class SubscriptionSubmissionCreateRequest_Data_Relationships extends \Cantie\App
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 
 }
@@ -114,7 +114,7 @@ class SubscriptionSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\M
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionSubmissionCreateRequest_Data_Relationships
@@ -129,7 +129,7 @@ class SubscriptionSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\M
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class SubscriptionSubmissionCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

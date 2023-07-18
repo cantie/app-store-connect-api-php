@@ -39,7 +39,7 @@ class InAppPurchasePrice_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStartDate($startDate)
 	{
 		$this->startDate = $startDate;
-		return $startDate;
+		return $this;
 	}
 	public function getEndDate()
 	{
@@ -48,7 +48,7 @@ class InAppPurchasePrice_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
-		return $endDate;
+		return $this;
 	}
 	public function getManual()
 	{
@@ -57,7 +57,7 @@ class InAppPurchasePrice_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setManual($manual)
 	{
 		$this->manual = $manual;
-		return $manual;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Links extends \Ca
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -84,7 +84,7 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Links extends \Ca
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -102,7 +102,7 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -111,7 +111,7 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data extends \Can
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -137,7 +137,7 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint extends \Cantie\A
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data
@@ -152,7 +152,7 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -170,7 +170,7 @@ class InAppPurchasePrice_Relationships_Territory_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -179,7 +179,7 @@ class InAppPurchasePrice_Relationships_Territory_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class InAppPurchasePrice_Relationships_Territory_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -206,7 +206,7 @@ class InAppPurchasePrice_Relationships_Territory_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -232,7 +232,7 @@ class InAppPurchasePrice_Relationships_Territory extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePrice_Relationships_Territory_Data
@@ -247,7 +247,7 @@ class InAppPurchasePrice_Relationships_Territory extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -273,7 +273,7 @@ class InAppPurchasePrice_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setInAppPurchasePricePoint($inAppPurchasePricePoint)
 	{
 		$this->inAppPurchasePricePoint = $inAppPurchasePricePoint;
-		return $inAppPurchasePricePoint;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePrice_Relationships_Territory
@@ -288,7 +288,7 @@ class InAppPurchasePrice_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 
 }
@@ -312,7 +312,7 @@ class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -321,7 +321,7 @@ class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePrice_Attributes
@@ -336,7 +336,7 @@ class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePrice_Relationships
@@ -351,7 +351,7 @@ class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -366,7 +366,7 @@ class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

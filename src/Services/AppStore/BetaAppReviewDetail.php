@@ -44,7 +44,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactFirstName($contactFirstName)
 	{
 		$this->contactFirstName = $contactFirstName;
-		return $contactFirstName;
+		return $this;
 	}
 	public function getContactLastName()
 	{
@@ -53,7 +53,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactLastName($contactLastName)
 	{
 		$this->contactLastName = $contactLastName;
-		return $contactLastName;
+		return $this;
 	}
 	public function getContactPhone()
 	{
@@ -62,7 +62,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactPhone($contactPhone)
 	{
 		$this->contactPhone = $contactPhone;
-		return $contactPhone;
+		return $this;
 	}
 	public function getContactEmail()
 	{
@@ -71,7 +71,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactEmail($contactEmail)
 	{
 		$this->contactEmail = $contactEmail;
-		return $contactEmail;
+		return $this;
 	}
 	public function getDemoAccountName()
 	{
@@ -80,7 +80,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDemoAccountName($demoAccountName)
 	{
 		$this->demoAccountName = $demoAccountName;
-		return $demoAccountName;
+		return $this;
 	}
 	public function getDemoAccountPassword()
 	{
@@ -89,7 +89,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDemoAccountPassword($demoAccountPassword)
 	{
 		$this->demoAccountPassword = $demoAccountPassword;
-		return $demoAccountPassword;
+		return $this;
 	}
 	public function getDemoAccountRequired()
 	{
@@ -98,7 +98,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDemoAccountRequired($demoAccountRequired)
 	{
 		$this->demoAccountRequired = $demoAccountRequired;
-		return $demoAccountRequired;
+		return $this;
 	}
 	public function getNotes()
 	{
@@ -107,7 +107,7 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setNotes($notes)
 	{
 		$this->notes = $notes;
-		return $notes;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class BetaAppReviewDetail_Relationships_App_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -134,7 +134,7 @@ class BetaAppReviewDetail_Relationships_App_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -152,7 +152,7 @@ class BetaAppReviewDetail_Relationships_App_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -161,7 +161,7 @@ class BetaAppReviewDetail_Relationships_App_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class BetaAppReviewDetail_Relationships_App extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BetaAppReviewDetail_Relationships_App_Data
@@ -202,7 +202,7 @@ class BetaAppReviewDetail_Relationships_App extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -226,7 +226,7 @@ class BetaAppReviewDetail_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -250,7 +250,7 @@ class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -259,7 +259,7 @@ class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppReviewDetail_Attributes
@@ -274,7 +274,7 @@ class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppReviewDetail_Relationships
@@ -289,7 +289,7 @@ class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -304,7 +304,7 @@ class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -42,7 +42,7 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setFeedbackEmail($feedbackEmail)
 	{
 		$this->feedbackEmail = $feedbackEmail;
-		return $feedbackEmail;
+		return $this;
 	}
 	public function getMarketingUrl()
 	{
@@ -51,7 +51,7 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setMarketingUrl($marketingUrl)
 	{
 		$this->marketingUrl = $marketingUrl;
-		return $marketingUrl;
+		return $this;
 	}
 	public function getPrivacyPolicyUrl()
 	{
@@ -60,7 +60,7 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyPolicyUrl($privacyPolicyUrl)
 	{
 		$this->privacyPolicyUrl = $privacyPolicyUrl;
-		return $privacyPolicyUrl;
+		return $this;
 	}
 	public function getTvOsPrivacyPolicy()
 	{
@@ -69,7 +69,7 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setTvOsPrivacyPolicy($tvOsPrivacyPolicy)
 	{
 		$this->tvOsPrivacyPolicy = $tvOsPrivacyPolicy;
-		return $tvOsPrivacyPolicy;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -78,7 +78,7 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -87,7 +87,7 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class BetaAppLocalizationCreateRequest_Data_Relationships_App_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -114,7 +114,7 @@ class BetaAppLocalizationCreateRequest_Data_Relationships_App_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -138,7 +138,7 @@ class BetaAppLocalizationCreateRequest_Data_Relationships_App extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -162,7 +162,7 @@ class BetaAppLocalizationCreateRequest_Data_Relationships extends \Cantie\AppSto
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -183,7 +183,7 @@ class BetaAppLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BetaAppLocalizationCreateRequest_Data_Attributes
@@ -198,7 +198,7 @@ class BetaAppLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppLocalizationCreateRequest_Data_Relationships
@@ -213,7 +213,7 @@ class BetaAppLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -237,7 +237,7 @@ class BetaAppLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

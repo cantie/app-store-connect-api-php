@@ -38,7 +38,7 @@ class GameCenterEnabledVersionCompatibleVersionsLinkagesRequest_Data extends \Ca
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class GameCenterEnabledVersionCompatibleVersionsLinkagesRequest_Data extends \Ca
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class GameCenterEnabledVersionCompatibleVersionsLinkagesRequest extends \Cantie\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

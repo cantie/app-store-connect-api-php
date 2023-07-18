@@ -49,7 +49,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	public function getUploadedDate()
 	{
@@ -58,7 +58,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadedDate($uploadedDate)
 	{
 		$this->uploadedDate = $uploadedDate;
-		return $uploadedDate;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -67,7 +67,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 	public function getExpired()
 	{
@@ -76,7 +76,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExpired($expired)
 	{
 		$this->expired = $expired;
-		return $expired;
+		return $this;
 	}
 	public function getMinOsVersion()
 	{
@@ -85,7 +85,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setMinOsVersion($minOsVersion)
 	{
 		$this->minOsVersion = $minOsVersion;
-		return $minOsVersion;
+		return $this;
 	}
 	public function getLsMinimumSystemVersion()
 	{
@@ -94,7 +94,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLsMinimumSystemVersion($lsMinimumSystemVersion)
 	{
 		$this->lsMinimumSystemVersion = $lsMinimumSystemVersion;
-		return $lsMinimumSystemVersion;
+		return $this;
 	}
 	public function getComputedMinMacOsVersion()
 	{
@@ -103,7 +103,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setComputedMinMacOsVersion($computedMinMacOsVersion)
 	{
 		$this->computedMinMacOsVersion = $computedMinMacOsVersion;
-		return $computedMinMacOsVersion;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -118,7 +118,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIconAssetToken($iconAssetToken)
 	{
 		$this->iconAssetToken = $iconAssetToken;
-		return $iconAssetToken;
+		return $this;
 	}
 	public function getProcessingState()
 	{
@@ -127,7 +127,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProcessingState($processingState)
 	{
 		$this->processingState = $processingState;
-		return $processingState;
+		return $this;
 	}
 	/**
 	* @return  BuildAudienceType
@@ -142,7 +142,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBuildAudienceType($buildAudienceType)
 	{
 		$this->buildAudienceType = $buildAudienceType;
-		return $buildAudienceType;
+		return $this;
 	}
 	public function getUsesNonExemptEncryption()
 	{
@@ -151,7 +151,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUsesNonExemptEncryption($usesNonExemptEncryption)
 	{
 		$this->usesNonExemptEncryption = $usesNonExemptEncryption;
-		return $usesNonExemptEncryption;
+		return $this;
 	}
 
 }
@@ -169,7 +169,7 @@ class Build_Relationships_PreReleaseVersion_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -178,7 +178,7 @@ class Build_Relationships_PreReleaseVersion_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -196,7 +196,7 @@ class Build_Relationships_PreReleaseVersion_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -205,7 +205,7 @@ class Build_Relationships_PreReleaseVersion_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -231,7 +231,7 @@ class Build_Relationships_PreReleaseVersion extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_PreReleaseVersion_Data
@@ -246,7 +246,7 @@ class Build_Relationships_PreReleaseVersion extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -264,7 +264,7 @@ class Build_Relationships_IndividualTesters_Links extends \Cantie\AppStoreConnec
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -273,7 +273,7 @@ class Build_Relationships_IndividualTesters_Links extends \Cantie\AppStoreConnec
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -291,7 +291,7 @@ class Build_Relationships_IndividualTesters_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -300,7 +300,7 @@ class Build_Relationships_IndividualTesters_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -328,7 +328,7 @@ class Build_Relationships_IndividualTesters extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -343,7 +343,7 @@ class Build_Relationships_IndividualTesters extends \Cantie\AppStoreConnect\Mode
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_IndividualTesters_Data[]
@@ -358,7 +358,7 @@ class Build_Relationships_IndividualTesters extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -376,7 +376,7 @@ class Build_Relationships_BetaGroups_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -385,7 +385,7 @@ class Build_Relationships_BetaGroups_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -403,7 +403,7 @@ class Build_Relationships_BetaGroups_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -412,7 +412,7 @@ class Build_Relationships_BetaGroups_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -440,7 +440,7 @@ class Build_Relationships_BetaGroups extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -455,7 +455,7 @@ class Build_Relationships_BetaGroups extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BetaGroups_Data[]
@@ -470,7 +470,7 @@ class Build_Relationships_BetaGroups extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -488,7 +488,7 @@ class Build_Relationships_BetaBuildLocalizations_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -497,7 +497,7 @@ class Build_Relationships_BetaBuildLocalizations_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -515,7 +515,7 @@ class Build_Relationships_BetaBuildLocalizations_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -524,7 +524,7 @@ class Build_Relationships_BetaBuildLocalizations_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -552,7 +552,7 @@ class Build_Relationships_BetaBuildLocalizations extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -567,7 +567,7 @@ class Build_Relationships_BetaBuildLocalizations extends \Cantie\AppStoreConnect
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BetaBuildLocalizations_Data[]
@@ -582,7 +582,7 @@ class Build_Relationships_BetaBuildLocalizations extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -600,7 +600,7 @@ class Build_Relationships_AppEncryptionDeclaration_Links extends \Cantie\AppStor
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -609,7 +609,7 @@ class Build_Relationships_AppEncryptionDeclaration_Links extends \Cantie\AppStor
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -627,7 +627,7 @@ class Build_Relationships_AppEncryptionDeclaration_Data extends \Cantie\AppStore
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -636,7 +636,7 @@ class Build_Relationships_AppEncryptionDeclaration_Data extends \Cantie\AppStore
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -662,7 +662,7 @@ class Build_Relationships_AppEncryptionDeclaration extends \Cantie\AppStoreConne
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_AppEncryptionDeclaration_Data
@@ -677,7 +677,7 @@ class Build_Relationships_AppEncryptionDeclaration extends \Cantie\AppStoreConne
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -695,7 +695,7 @@ class Build_Relationships_BetaAppReviewSubmission_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -704,7 +704,7 @@ class Build_Relationships_BetaAppReviewSubmission_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -722,7 +722,7 @@ class Build_Relationships_BetaAppReviewSubmission_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -731,7 +731,7 @@ class Build_Relationships_BetaAppReviewSubmission_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -757,7 +757,7 @@ class Build_Relationships_BetaAppReviewSubmission extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BetaAppReviewSubmission_Data
@@ -772,7 +772,7 @@ class Build_Relationships_BetaAppReviewSubmission extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -790,7 +790,7 @@ class Build_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -799,7 +799,7 @@ class Build_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -817,7 +817,7 @@ class Build_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -826,7 +826,7 @@ class Build_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -852,7 +852,7 @@ class Build_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_App_Data
@@ -867,7 +867,7 @@ class Build_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -885,7 +885,7 @@ class Build_Relationships_BuildBetaDetail_Links extends \Cantie\AppStoreConnect\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -894,7 +894,7 @@ class Build_Relationships_BuildBetaDetail_Links extends \Cantie\AppStoreConnect\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -912,7 +912,7 @@ class Build_Relationships_BuildBetaDetail_Data extends \Cantie\AppStoreConnect\M
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -921,7 +921,7 @@ class Build_Relationships_BuildBetaDetail_Data extends \Cantie\AppStoreConnect\M
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -947,7 +947,7 @@ class Build_Relationships_BuildBetaDetail extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BuildBetaDetail_Data
@@ -962,7 +962,7 @@ class Build_Relationships_BuildBetaDetail extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -980,7 +980,7 @@ class Build_Relationships_AppStoreVersion_Links extends \Cantie\AppStoreConnect\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -989,7 +989,7 @@ class Build_Relationships_AppStoreVersion_Links extends \Cantie\AppStoreConnect\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -1007,7 +1007,7 @@ class Build_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\M
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1016,7 +1016,7 @@ class Build_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\M
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -1042,7 +1042,7 @@ class Build_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_AppStoreVersion_Data
@@ -1057,7 +1057,7 @@ class Build_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -1075,7 +1075,7 @@ class Build_Relationships_Icons_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -1084,7 +1084,7 @@ class Build_Relationships_Icons_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -1102,7 +1102,7 @@ class Build_Relationships_Icons_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1111,7 +1111,7 @@ class Build_Relationships_Icons_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -1139,7 +1139,7 @@ class Build_Relationships_Icons extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -1154,7 +1154,7 @@ class Build_Relationships_Icons extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_Icons_Data[]
@@ -1169,7 +1169,7 @@ class Build_Relationships_Icons extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -1187,7 +1187,7 @@ class Build_Relationships_BuildBundles_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -1196,7 +1196,7 @@ class Build_Relationships_BuildBundles_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -1214,7 +1214,7 @@ class Build_Relationships_BuildBundles_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1223,7 +1223,7 @@ class Build_Relationships_BuildBundles_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -1251,7 +1251,7 @@ class Build_Relationships_BuildBundles extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -1266,7 +1266,7 @@ class Build_Relationships_BuildBundles extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BuildBundles_Data[]
@@ -1281,7 +1281,7 @@ class Build_Relationships_BuildBundles extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -1325,7 +1325,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPreReleaseVersion($preReleaseVersion)
 	{
 		$this->preReleaseVersion = $preReleaseVersion;
-		return $preReleaseVersion;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_IndividualTesters
@@ -1340,7 +1340,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setIndividualTesters($individualTesters)
 	{
 		$this->individualTesters = $individualTesters;
-		return $individualTesters;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BetaGroups
@@ -1355,7 +1355,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBetaGroups($betaGroups)
 	{
 		$this->betaGroups = $betaGroups;
-		return $betaGroups;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BetaBuildLocalizations
@@ -1370,7 +1370,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBetaBuildLocalizations($betaBuildLocalizations)
 	{
 		$this->betaBuildLocalizations = $betaBuildLocalizations;
-		return $betaBuildLocalizations;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_AppEncryptionDeclaration
@@ -1385,7 +1385,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppEncryptionDeclaration($appEncryptionDeclaration)
 	{
 		$this->appEncryptionDeclaration = $appEncryptionDeclaration;
-		return $appEncryptionDeclaration;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BetaAppReviewSubmission
@@ -1400,7 +1400,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBetaAppReviewSubmission($betaAppReviewSubmission)
 	{
 		$this->betaAppReviewSubmission = $betaAppReviewSubmission;
-		return $betaAppReviewSubmission;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_App
@@ -1415,7 +1415,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BuildBetaDetail
@@ -1430,7 +1430,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBuildBetaDetail($buildBetaDetail)
 	{
 		$this->buildBetaDetail = $buildBetaDetail;
-		return $buildBetaDetail;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_AppStoreVersion
@@ -1445,7 +1445,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_Icons
@@ -1460,7 +1460,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setIcons($icons)
 	{
 		$this->icons = $icons;
-		return $icons;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships_BuildBundles
@@ -1475,7 +1475,7 @@ class Build_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBuildBundles($buildBundles)
 	{
 		$this->buildBundles = $buildBundles;
-		return $buildBundles;
+		return $this;
 	}
 
 }
@@ -1499,7 +1499,7 @@ class Build extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1508,7 +1508,7 @@ class Build extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Build_Attributes
@@ -1523,7 +1523,7 @@ class Build extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  Build_Relationships
@@ -1538,7 +1538,7 @@ class Build extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -1553,7 +1553,7 @@ class Build extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

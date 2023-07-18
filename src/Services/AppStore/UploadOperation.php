@@ -42,7 +42,7 @@ class UploadOperation extends \Cantie\AppStoreConnect\Model
 	public function setMethod($method)
 	{
 		$this->method = $method;
-		return $method;
+		return $this;
 	}
 	public function getUrl()
 	{
@@ -51,7 +51,7 @@ class UploadOperation extends \Cantie\AppStoreConnect\Model
 	public function setUrl($url)
 	{
 		$this->url = $url;
-		return $url;
+		return $this;
 	}
 	public function getLength()
 	{
@@ -60,7 +60,7 @@ class UploadOperation extends \Cantie\AppStoreConnect\Model
 	public function setLength($length)
 	{
 		$this->length = $length;
-		return $length;
+		return $this;
 	}
 	public function getOffset()
 	{
@@ -69,7 +69,7 @@ class UploadOperation extends \Cantie\AppStoreConnect\Model
 	public function setOffset($offset)
 	{
 		$this->offset = $offset;
-		return $offset;
+		return $this;
 	}
 	/**
 	* @return  HttpHeader[]
@@ -84,7 +84,7 @@ class UploadOperation extends \Cantie\AppStoreConnect\Model
 	public function setRequestHeaders($requestHeaders)
 	{
 		$this->requestHeaders = $requestHeaders;
-		return $requestHeaders;
+		return $this;
 	}
 
 }

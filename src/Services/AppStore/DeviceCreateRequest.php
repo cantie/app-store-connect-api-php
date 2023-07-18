@@ -40,7 +40,7 @@ class DeviceCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  BundleIdPlatform
@@ -55,7 +55,7 @@ class DeviceCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getUdid()
 	{
@@ -64,7 +64,7 @@ class DeviceCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUdid($udid)
 	{
 		$this->udid = $udid;
-		return $udid;
+		return $this;
 	}
 
 }
@@ -83,7 +83,7 @@ class DeviceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  DeviceCreateRequest_Data_Attributes
@@ -98,7 +98,7 @@ class DeviceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class DeviceCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

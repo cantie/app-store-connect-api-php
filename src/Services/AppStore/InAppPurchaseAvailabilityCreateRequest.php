@@ -37,7 +37,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Attributes extends \Cantie\App
 	public function setAvailableInNewTerritories($availableInNewTerritories)
 	{
 		$this->availableInNewTerritories = $availableInNewTerritories;
-		return $availableInNewTerritories;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase_Da
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase_Da
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase ex
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -106,7 +106,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerrito
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -115,7 +115,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerrito
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerrito
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -165,7 +165,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships extends \Cantie\
 	public function setInAppPurchase($inAppPurchase)
 	{
 		$this->inAppPurchase = $inAppPurchase;
-		return $inAppPurchase;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories
@@ -180,7 +180,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships extends \Cantie\
 	public function setAvailableTerritories($availableTerritories)
 	{
 		$this->availableTerritories = $availableTerritories;
-		return $availableTerritories;
+		return $this;
 	}
 
 }
@@ -201,7 +201,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAvailabilityCreateRequest_Data_Attributes
@@ -216,7 +216,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseAvailabilityCreateRequest_Data_Relationships
@@ -231,7 +231,7 @@ class InAppPurchaseAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -255,7 +255,7 @@ class InAppPurchaseAvailabilityCreateRequest extends \Cantie\AppStoreConnect\Mod
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

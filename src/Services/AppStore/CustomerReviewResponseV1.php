@@ -39,7 +39,7 @@ class CustomerReviewResponseV1_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setResponseBody($responseBody)
 	{
 		$this->responseBody = $responseBody;
-		return $responseBody;
+		return $this;
 	}
 	public function getLastModifiedDate()
 	{
@@ -48,7 +48,7 @@ class CustomerReviewResponseV1_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLastModifiedDate($lastModifiedDate)
 	{
 		$this->lastModifiedDate = $lastModifiedDate;
-		return $lastModifiedDate;
+		return $this;
 	}
 	public function getState()
 	{
@@ -57,7 +57,7 @@ class CustomerReviewResponseV1_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class CustomerReviewResponseV1_Relationships_Review_Links extends \Cantie\AppSto
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -84,7 +84,7 @@ class CustomerReviewResponseV1_Relationships_Review_Links extends \Cantie\AppSto
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -102,7 +102,7 @@ class CustomerReviewResponseV1_Relationships_Review_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -111,7 +111,7 @@ class CustomerReviewResponseV1_Relationships_Review_Data extends \Cantie\AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -137,7 +137,7 @@ class CustomerReviewResponseV1_Relationships_Review extends \Cantie\AppStoreConn
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CustomerReviewResponseV1_Relationships_Review_Data
@@ -152,7 +152,7 @@ class CustomerReviewResponseV1_Relationships_Review extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -176,7 +176,7 @@ class CustomerReviewResponseV1_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setReview($review)
 	{
 		$this->review = $review;
-		return $review;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class CustomerReviewResponseV1 extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -209,7 +209,7 @@ class CustomerReviewResponseV1 extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CustomerReviewResponseV1_Attributes
@@ -224,7 +224,7 @@ class CustomerReviewResponseV1 extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CustomerReviewResponseV1_Relationships
@@ -239,7 +239,7 @@ class CustomerReviewResponseV1 extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -254,7 +254,7 @@ class CustomerReviewResponseV1 extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class AppClipAdvancedExperienceImageCreateRequest_Data_Attributes extends \Canti
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -47,7 +47,7 @@ class AppClipAdvancedExperienceImageCreateRequest_Data_Attributes extends \Canti
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 
 }
@@ -66,7 +66,7 @@ class AppClipAdvancedExperienceImageCreateRequest_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceImageCreateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class AppClipAdvancedExperienceImageCreateRequest_Data extends \Cantie\AppStoreC
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppClipAdvancedExperienceImageCreateRequest extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

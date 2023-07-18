@@ -39,7 +39,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Attributes extends \Cantie\App
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -48,7 +48,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Attributes extends \Cantie\App
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -57,7 +57,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Attributes extends \Cantie\App
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2_
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -84,7 +84,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2_
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -108,7 +108,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships extends \Cantie\
 	public function setInAppPurchaseV2($inAppPurchaseV2)
 	{
 		$this->inAppPurchaseV2 = $inAppPurchaseV2;
-		return $inAppPurchaseV2;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class InAppPurchaseLocalizationCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseLocalizationCreateRequest_Data_Attributes
@@ -168,7 +168,7 @@ class InAppPurchaseLocalizationCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseLocalizationCreateRequest_Data_Relationships
@@ -183,7 +183,7 @@ class InAppPurchaseLocalizationCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -207,7 +207,7 @@ class InAppPurchaseLocalizationCreateRequest extends \Cantie\AppStoreConnect\Mod
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

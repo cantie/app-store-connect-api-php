@@ -50,7 +50,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setSampleCount($sampleCount)
 	{
 		$this->sampleCount = $sampleCount;
-		return $sampleCount;
+		return $this;
 	}
 	public function getIsBlameFrame()
 	{
@@ -59,7 +59,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setIsBlameFrame($isBlameFrame)
 	{
 		$this->isBlameFrame = $isBlameFrame;
-		return $isBlameFrame;
+		return $this;
 	}
 	public function getSymbolName()
 	{
@@ -68,7 +68,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setSymbolName($symbolName)
 	{
 		$this->symbolName = $symbolName;
-		return $symbolName;
+		return $this;
 	}
 	public function getInsightsCategory()
 	{
@@ -77,7 +77,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setInsightsCategory($insightsCategory)
 	{
 		$this->insightsCategory = $insightsCategory;
-		return $insightsCategory;
+		return $this;
 	}
 	public function getOffsetIntoSymbol()
 	{
@@ -86,7 +86,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setOffsetIntoSymbol($offsetIntoSymbol)
 	{
 		$this->offsetIntoSymbol = $offsetIntoSymbol;
-		return $offsetIntoSymbol;
+		return $this;
 	}
 	public function getBinaryName()
 	{
@@ -95,7 +95,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setBinaryName($binaryName)
 	{
 		$this->binaryName = $binaryName;
-		return $binaryName;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -104,7 +104,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getBinaryUUID()
 	{
@@ -113,7 +113,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setBinaryUUID($binaryUUID)
 	{
 		$this->binaryUUID = $binaryUUID;
-		return $binaryUUID;
+		return $this;
 	}
 	public function getLineNumber()
 	{
@@ -122,7 +122,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setLineNumber($lineNumber)
 	{
 		$this->lineNumber = $lineNumber;
-		return $lineNumber;
+		return $this;
 	}
 	public function getAddress()
 	{
@@ -131,7 +131,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setAddress($address)
 	{
 		$this->address = $address;
-		return $address;
+		return $this;
 	}
 	public function getOffsetIntoBinaryTextSegment()
 	{
@@ -140,7 +140,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setOffsetIntoBinaryTextSegment($offsetIntoBinaryTextSegment)
 	{
 		$this->offsetIntoBinaryTextSegment = $offsetIntoBinaryTextSegment;
-		return $offsetIntoBinaryTextSegment;
+		return $this;
 	}
 	public function getRawFrame()
 	{
@@ -149,7 +149,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setRawFrame($rawFrame)
 	{
 		$this->rawFrame = $rawFrame;
-		return $rawFrame;
+		return $this;
 	}
 	/**
 	* @return  DiagnosticLogCallStackNode[]
@@ -164,7 +164,7 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	public function setSubFrames($subFrames)
 	{
 		$this->subFrames = $subFrames;
-		return $subFrames;
+		return $this;
 	}
 
 }

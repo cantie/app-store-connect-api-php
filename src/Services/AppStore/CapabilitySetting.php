@@ -45,7 +45,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setKey($key)
 	{
 		$this->key = $key;
-		return $key;
+		return $this;
 	}
 	public function getName()
 	{
@@ -54,7 +54,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -63,7 +63,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	public function getEnabledByDefault()
 	{
@@ -72,7 +72,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setEnabledByDefault($enabledByDefault)
 	{
 		$this->enabledByDefault = $enabledByDefault;
-		return $enabledByDefault;
+		return $this;
 	}
 	public function getVisible()
 	{
@@ -81,7 +81,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setVisible($visible)
 	{
 		$this->visible = $visible;
-		return $visible;
+		return $this;
 	}
 	public function getAllowedInstances()
 	{
@@ -90,7 +90,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setAllowedInstances($allowedInstances)
 	{
 		$this->allowedInstances = $allowedInstances;
-		return $allowedInstances;
+		return $this;
 	}
 	public function getMinInstances()
 	{
@@ -99,7 +99,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setMinInstances($minInstances)
 	{
 		$this->minInstances = $minInstances;
-		return $minInstances;
+		return $this;
 	}
 	/**
 	* @return  CapabilityOption[]
@@ -114,7 +114,7 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	public function setOptions($options)
 	{
 		$this->options = $options;
-		return $options;
+		return $this;
 	}
 
 }

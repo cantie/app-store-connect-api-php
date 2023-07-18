@@ -41,7 +41,7 @@ class Actor_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setActorType($actorType)
 	{
 		$this->actorType = $actorType;
-		return $actorType;
+		return $this;
 	}
 	public function getUserFirstName()
 	{
@@ -50,7 +50,7 @@ class Actor_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUserFirstName($userFirstName)
 	{
 		$this->userFirstName = $userFirstName;
-		return $userFirstName;
+		return $this;
 	}
 	public function getUserLastName()
 	{
@@ -59,7 +59,7 @@ class Actor_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUserLastName($userLastName)
 	{
 		$this->userLastName = $userLastName;
-		return $userLastName;
+		return $this;
 	}
 	public function getUserEmail()
 	{
@@ -68,7 +68,7 @@ class Actor_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUserEmail($userEmail)
 	{
 		$this->userEmail = $userEmail;
-		return $userEmail;
+		return $this;
 	}
 	public function getApiKeyId()
 	{
@@ -77,7 +77,7 @@ class Actor_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setApiKeyId($apiKeyId)
 	{
 		$this->apiKeyId = $apiKeyId;
-		return $apiKeyId;
+		return $this;
 	}
 
 }
@@ -99,7 +99,7 @@ class Actor extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -108,7 +108,7 @@ class Actor extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Actor_Attributes
@@ -123,7 +123,7 @@ class Actor extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -138,7 +138,7 @@ class Actor extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

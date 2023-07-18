@@ -45,7 +45,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  CertificateType
@@ -60,7 +60,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCertificateType($certificateType)
 	{
 		$this->certificateType = $certificateType;
-		return $certificateType;
+		return $this;
 	}
 	public function getDisplayName()
 	{
@@ -69,7 +69,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDisplayName($displayName)
 	{
 		$this->displayName = $displayName;
-		return $displayName;
+		return $this;
 	}
 	public function getSerialNumber()
 	{
@@ -78,7 +78,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSerialNumber($serialNumber)
 	{
 		$this->serialNumber = $serialNumber;
-		return $serialNumber;
+		return $this;
 	}
 	/**
 	* @return  BundleIdPlatform
@@ -93,7 +93,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -102,7 +102,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 	public function getCertificateContent()
 	{
@@ -111,7 +111,7 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCertificateContent($certificateContent)
 	{
 		$this->certificateContent = $certificateContent;
-		return $certificateContent;
+		return $this;
 	}
 
 }
@@ -133,7 +133,7 @@ class Certificate extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -142,7 +142,7 @@ class Certificate extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Certificate_Attributes
@@ -157,7 +157,7 @@ class Certificate extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -172,7 +172,7 @@ class Certificate extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

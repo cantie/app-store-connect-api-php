@@ -37,7 +37,7 @@ class SubscriptionGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setReferenceName($referenceName)
 	{
 		$this->referenceName = $referenceName;
-		return $referenceName;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class SubscriptionGroupCreateRequest_Data_Relationships_App_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class SubscriptionGroupCreateRequest_Data_Relationships_App_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class SubscriptionGroupCreateRequest_Data_Relationships_App extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class SubscriptionGroupCreateRequest_Data_Relationships extends \Cantie\AppStore
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -133,7 +133,7 @@ class SubscriptionGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupCreateRequest_Data_Attributes
@@ -148,7 +148,7 @@ class SubscriptionGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupCreateRequest_Data_Relationships
@@ -163,7 +163,7 @@ class SubscriptionGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class SubscriptionGroupCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

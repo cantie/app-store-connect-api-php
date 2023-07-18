@@ -39,7 +39,7 @@ class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDiagnosticType($diagnosticType)
 	{
 		$this->diagnosticType = $diagnosticType;
-		return $diagnosticType;
+		return $this;
 	}
 	public function getSignature()
 	{
@@ -48,7 +48,7 @@ class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSignature($signature)
 	{
 		$this->signature = $signature;
-		return $signature;
+		return $this;
 	}
 	public function getWeight()
 	{
@@ -57,7 +57,7 @@ class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setWeight($weight)
 	{
 		$this->weight = $weight;
-		return $weight;
+		return $this;
 	}
 
 }
@@ -79,7 +79,7 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -88,7 +88,7 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  DiagnosticSignature_Attributes
@@ -103,7 +103,7 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -118,7 +118,7 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

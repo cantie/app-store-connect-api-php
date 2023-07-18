@@ -37,7 +37,7 @@ class BetaLicenseAgreement_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAgreementText($agreementText)
 	{
 		$this->agreementText = $agreementText;
-		return $agreementText;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class BetaLicenseAgreement_Relationships_App_Links extends \Cantie\AppStoreConne
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class BetaLicenseAgreement_Relationships_App_Links extends \Cantie\AppStoreConne
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class BetaLicenseAgreement_Relationships_App_Data extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class BetaLicenseAgreement_Relationships_App_Data extends \Cantie\AppStoreConnec
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -117,7 +117,7 @@ class BetaLicenseAgreement_Relationships_App extends \Cantie\AppStoreConnect\Mod
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BetaLicenseAgreement_Relationships_App_Data
@@ -132,7 +132,7 @@ class BetaLicenseAgreement_Relationships_App extends \Cantie\AppStoreConnect\Mod
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -156,7 +156,7 @@ class BetaLicenseAgreement_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -180,7 +180,7 @@ class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -189,7 +189,7 @@ class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaLicenseAgreement_Attributes
@@ -204,7 +204,7 @@ class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaLicenseAgreement_Relationships
@@ -219,7 +219,7 @@ class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -234,7 +234,7 @@ class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

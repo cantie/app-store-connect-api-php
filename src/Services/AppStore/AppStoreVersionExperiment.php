@@ -42,7 +42,7 @@ class AppStoreVersionExperiment_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getTrafficProportion()
 	{
@@ -51,7 +51,7 @@ class AppStoreVersionExperiment_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTrafficProportion($trafficProportion)
 	{
 		$this->trafficProportion = $trafficProportion;
-		return $trafficProportion;
+		return $this;
 	}
 	public function getState()
 	{
@@ -60,7 +60,7 @@ class AppStoreVersionExperiment_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 	public function getReviewRequired()
 	{
@@ -69,7 +69,7 @@ class AppStoreVersionExperiment_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setReviewRequired($reviewRequired)
 	{
 		$this->reviewRequired = $reviewRequired;
-		return $reviewRequired;
+		return $this;
 	}
 	public function getStartDate()
 	{
@@ -78,7 +78,7 @@ class AppStoreVersionExperiment_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStartDate($startDate)
 	{
 		$this->startDate = $startDate;
-		return $startDate;
+		return $this;
 	}
 	public function getEndDate()
 	{
@@ -87,7 +87,7 @@ class AppStoreVersionExperiment_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
-		return $endDate;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersion_Links extends \Can
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -114,7 +114,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersion_Links extends \Can
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersion_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -141,7 +141,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersion_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -167,7 +167,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersion extends \Cantie\Ap
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperiment_Relationships_AppStoreVersion_Data
@@ -182,7 +182,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersion extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -209,7 +209,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -227,7 +227,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -236,7 +236,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -264,7 +264,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -279,7 +279,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatments_Data[]
@@ -294,7 +294,7 @@ class AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatment
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -320,7 +320,7 @@ class AppStoreVersionExperiment_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperiment_Relationships_AppStoreVersionExperimentTreatments
@@ -335,7 +335,7 @@ class AppStoreVersionExperiment_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setAppStoreVersionExperimentTreatments($appStoreVersionExperimentTreatments)
 	{
 		$this->appStoreVersionExperimentTreatments = $appStoreVersionExperimentTreatments;
-		return $appStoreVersionExperimentTreatments;
+		return $this;
 	}
 
 }
@@ -359,7 +359,7 @@ class AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -368,7 +368,7 @@ class AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperiment_Attributes
@@ -383,7 +383,7 @@ class AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperiment_Relationships
@@ -398,7 +398,7 @@ class AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -413,7 +413,7 @@ class AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

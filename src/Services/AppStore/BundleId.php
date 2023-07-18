@@ -41,7 +41,7 @@ class BundleId_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  BundleIdPlatform
@@ -56,7 +56,7 @@ class BundleId_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getIdentifier()
 	{
@@ -65,7 +65,7 @@ class BundleId_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIdentifier($identifier)
 	{
 		$this->identifier = $identifier;
-		return $identifier;
+		return $this;
 	}
 	public function getSeedId()
 	{
@@ -74,7 +74,7 @@ class BundleId_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSeedId($seedId)
 	{
 		$this->seedId = $seedId;
-		return $seedId;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class BundleId_Relationships_Profiles_Links extends \Cantie\AppStoreConnect\Mode
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -101,7 +101,7 @@ class BundleId_Relationships_Profiles_Links extends \Cantie\AppStoreConnect\Mode
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class BundleId_Relationships_Profiles_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -128,7 +128,7 @@ class BundleId_Relationships_Profiles_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -156,7 +156,7 @@ class BundleId_Relationships_Profiles extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -171,7 +171,7 @@ class BundleId_Relationships_Profiles extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Relationships_Profiles_Data[]
@@ -186,7 +186,7 @@ class BundleId_Relationships_Profiles extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -204,7 +204,7 @@ class BundleId_Relationships_BundleIdCapabilities_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -213,7 +213,7 @@ class BundleId_Relationships_BundleIdCapabilities_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -231,7 +231,7 @@ class BundleId_Relationships_BundleIdCapabilities_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -240,7 +240,7 @@ class BundleId_Relationships_BundleIdCapabilities_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -268,7 +268,7 @@ class BundleId_Relationships_BundleIdCapabilities extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -283,7 +283,7 @@ class BundleId_Relationships_BundleIdCapabilities extends \Cantie\AppStoreConnec
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Relationships_BundleIdCapabilities_Data[]
@@ -298,7 +298,7 @@ class BundleId_Relationships_BundleIdCapabilities extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -316,7 +316,7 @@ class BundleId_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -325,7 +325,7 @@ class BundleId_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -343,7 +343,7 @@ class BundleId_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -352,7 +352,7 @@ class BundleId_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -378,7 +378,7 @@ class BundleId_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Relationships_App_Data
@@ -393,7 +393,7 @@ class BundleId_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -421,7 +421,7 @@ class BundleId_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setProfiles($profiles)
 	{
 		$this->profiles = $profiles;
-		return $profiles;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Relationships_BundleIdCapabilities
@@ -436,7 +436,7 @@ class BundleId_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBundleIdCapabilities($bundleIdCapabilities)
 	{
 		$this->bundleIdCapabilities = $bundleIdCapabilities;
-		return $bundleIdCapabilities;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Relationships_App
@@ -451,7 +451,7 @@ class BundleId_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -475,7 +475,7 @@ class BundleId extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -484,7 +484,7 @@ class BundleId extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Attributes
@@ -499,7 +499,7 @@ class BundleId extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BundleId_Relationships
@@ -514,7 +514,7 @@ class BundleId extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -529,7 +529,7 @@ class BundleId extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -47,7 +47,7 @@ class CiBranchStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setSource($source)
 	{
 		$this->source = $source;
-		return $source;
+		return $this;
 	}
 	/**
 	* @return  CiFilesAndFoldersRule
@@ -62,7 +62,7 @@ class CiBranchStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setFilesAndFoldersRule($filesAndFoldersRule)
 	{
 		$this->filesAndFoldersRule = $filesAndFoldersRule;
-		return $filesAndFoldersRule;
+		return $this;
 	}
 	public function getAutoCancel()
 	{
@@ -71,7 +71,7 @@ class CiBranchStartCondition extends \Cantie\AppStoreConnect\Model
 	public function setAutoCancel($autoCancel)
 	{
 		$this->autoCancel = $autoCancel;
-		return $autoCancel;
+		return $this;
 	}
 
 }

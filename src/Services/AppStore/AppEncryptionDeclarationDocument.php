@@ -45,7 +45,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -54,7 +54,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getAssetToken()
 	{
@@ -63,7 +63,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setAssetToken($assetToken)
 	{
 		$this->assetToken = $assetToken;
-		return $assetToken;
+		return $this;
 	}
 	public function getDownloadUrl()
 	{
@@ -72,7 +72,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setDownloadUrl($downloadUrl)
 	{
 		$this->downloadUrl = $downloadUrl;
-		return $downloadUrl;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -81,7 +81,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -96,7 +96,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -111,7 +111,7 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 
 }
@@ -133,7 +133,7 @@ class AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -142,7 +142,7 @@ class AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEncryptionDeclarationDocument_Attributes
@@ -157,7 +157,7 @@ class AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -172,7 +172,7 @@ class AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

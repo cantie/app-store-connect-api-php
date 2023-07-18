@@ -38,7 +38,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Attributes extends 
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -47,7 +47,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Attributes extends 
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppCl
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppCl
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppCl
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships exten
 	public function setAppClipDefaultExperience($appClipDefaultExperience)
 	{
 		$this->appClipDefaultExperience = $appClipDefaultExperience;
-		return $appClipDefaultExperience;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data extends \Cantie\App
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalizationCreateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data extends \Cantie\App
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data extends \Cantie\App
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class AppClipDefaultExperienceLocalizationCreateRequest extends \Cantie\AppStore
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

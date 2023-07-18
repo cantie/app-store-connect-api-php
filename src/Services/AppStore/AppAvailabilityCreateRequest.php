@@ -37,7 +37,7 @@ class AppAvailabilityCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setAvailableInNewTerritories($availableInNewTerritories)
 	{
 		$this->availableInNewTerritories = $availableInNewTerritories;
-		return $availableInNewTerritories;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class AppAvailabilityCreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class AppAvailabilityCreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class AppAvailabilityCreateRequest_Data_Relationships_App extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -106,7 +106,7 @@ class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -115,7 +115,7 @@ class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories exten
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -165,7 +165,7 @@ class AppAvailabilityCreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories
@@ -180,7 +180,7 @@ class AppAvailabilityCreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setAvailableTerritories($availableTerritories)
 	{
 		$this->availableTerritories = $availableTerritories;
-		return $availableTerritories;
+		return $this;
 	}
 
 }
@@ -201,7 +201,7 @@ class AppAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppAvailabilityCreateRequest_Data_Attributes
@@ -216,7 +216,7 @@ class AppAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppAvailabilityCreateRequest_Data_Relationships
@@ -231,7 +231,7 @@ class AppAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -255,7 +255,7 @@ class AppAvailabilityCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

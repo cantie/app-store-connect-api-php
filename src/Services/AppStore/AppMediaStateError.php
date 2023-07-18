@@ -38,7 +38,7 @@ class AppMediaStateError extends \Cantie\AppStoreConnect\Model
 	public function setCode($code)
 	{
 		$this->code = $code;
-		return $code;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -47,7 +47,7 @@ class AppMediaStateError extends \Cantie\AppStoreConnect\Model
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 
 }

@@ -46,7 +46,7 @@ class AppStoreVersionReleaseRequestResponse extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  DocumentLinks
@@ -61,7 +61,7 @@ class AppStoreVersionReleaseRequestResponse extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

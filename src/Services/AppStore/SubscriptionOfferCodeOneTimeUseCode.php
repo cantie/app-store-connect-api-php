@@ -40,7 +40,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Attributes extends \Cantie\AppStoreCon
 	public function setNumberOfCodes($numberOfCodes)
 	{
 		$this->numberOfCodes = $numberOfCodes;
-		return $numberOfCodes;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -49,7 +49,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Attributes extends \Cantie\AppStoreCon
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -58,7 +58,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Attributes extends \Cantie\AppStoreCon
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 	public function getActive()
 	{
@@ -67,7 +67,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Attributes extends \Cantie\AppStoreCon
 	public function setActive($active)
 	{
 		$this->active = $active;
-		return $active;
+		return $this;
 	}
 
 }
@@ -85,7 +85,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Links extends 
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -94,7 +94,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Links extends 
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -121,7 +121,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -147,7 +147,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode extends \Canti
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data
@@ -162,7 +162,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -186,7 +186,7 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships extends \Cantie\AppStore
 	public function setOfferCode($offerCode)
 	{
 		$this->offerCode = $offerCode;
-		return $offerCode;
+		return $this;
 	}
 
 }
@@ -210,7 +210,7 @@ class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -219,7 +219,7 @@ class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeOneTimeUseCode_Attributes
@@ -234,7 +234,7 @@ class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeOneTimeUseCode_Relationships
@@ -249,7 +249,7 @@ class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -264,7 +264,7 @@ class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

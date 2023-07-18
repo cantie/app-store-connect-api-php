@@ -39,7 +39,7 @@ class AppPreviewUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	public function getPreviewFrameTimeCode()
 	{
@@ -48,7 +48,7 @@ class AppPreviewUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setPreviewFrameTimeCode($previewFrameTimeCode)
 	{
 		$this->previewFrameTimeCode = $previewFrameTimeCode;
-		return $previewFrameTimeCode;
+		return $this;
 	}
 	public function getUploaded()
 	{
@@ -57,7 +57,7 @@ class AppPreviewUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setUploaded($uploaded)
 	{
 		$this->uploaded = $uploaded;
-		return $uploaded;
+		return $this;
 	}
 
 }
@@ -77,7 +77,7 @@ class AppPreviewUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -86,7 +86,7 @@ class AppPreviewUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewUpdateRequest_Data_Attributes
@@ -101,7 +101,7 @@ class AppPreviewUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class AppPreviewUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

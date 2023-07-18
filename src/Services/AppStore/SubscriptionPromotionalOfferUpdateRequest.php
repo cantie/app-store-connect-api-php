@@ -38,7 +38,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data_Relationships_Prices_Data e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data_Relationships_Prices_Data e
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data_Relationships_Prices extend
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data_Relationships extends \Cant
 	public function setPrices($prices)
 	{
 		$this->prices = $prices;
-		return $prices;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -124,7 +124,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data extends \Cantie\AppStoreCon
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferUpdateRequest_Data_Relationships
@@ -139,7 +139,7 @@ class SubscriptionPromotionalOfferUpdateRequest_Data extends \Cantie\AppStoreCon
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -165,7 +165,7 @@ class SubscriptionPromotionalOfferUpdateRequest extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferPriceInlineCreate[]
@@ -180,7 +180,7 @@ class SubscriptionPromotionalOfferUpdateRequest extends \Cantie\AppStoreConnect\
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 
 }

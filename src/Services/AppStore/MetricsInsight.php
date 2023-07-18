@@ -42,7 +42,7 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	public function setDeltaPercentage($deltaPercentage)
 	{
 		$this->deltaPercentage = $deltaPercentage;
-		return $deltaPercentage;
+		return $this;
 	}
 	public function getPercentile()
 	{
@@ -51,7 +51,7 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	public function setPercentile($percentile)
 	{
 		$this->percentile = $percentile;
-		return $percentile;
+		return $this;
 	}
 	public function getSummaryString()
 	{
@@ -60,7 +60,7 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	public function setSummaryString($summaryString)
 	{
 		$this->summaryString = $summaryString;
-		return $summaryString;
+		return $this;
 	}
 	public function getReferenceAverageValue()
 	{
@@ -69,7 +69,7 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	public function setReferenceAverageValue($referenceAverageValue)
 	{
 		$this->referenceAverageValue = $referenceAverageValue;
-		return $referenceAverageValue;
+		return $this;
 	}
 	public function getLatestVersionValue()
 	{
@@ -78,7 +78,7 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	public function setLatestVersionValue($latestVersionValue)
 	{
 		$this->latestVersionValue = $latestVersionValue;
-		return $latestVersionValue;
+		return $this;
 	}
 	public function getDevice()
 	{
@@ -87,7 +87,7 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	public function setDevice($device)
 	{
 		$this->device = $device;
-		return $device;
+		return $this;
 	}
 
 }
@@ -120,7 +120,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setMetricCategory($metricCategory)
 	{
 		$this->metricCategory = $metricCategory;
-		return $metricCategory;
+		return $this;
 	}
 	public function getLatestVersion()
 	{
@@ -129,7 +129,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setLatestVersion($latestVersion)
 	{
 		$this->latestVersion = $latestVersion;
-		return $latestVersion;
+		return $this;
 	}
 	public function getMetric()
 	{
@@ -138,7 +138,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setMetric($metric)
 	{
 		$this->metric = $metric;
-		return $metric;
+		return $this;
 	}
 	public function getSummaryString()
 	{
@@ -147,7 +147,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setSummaryString($summaryString)
 	{
 		$this->summaryString = $summaryString;
-		return $summaryString;
+		return $this;
 	}
 	public function getReferenceVersions()
 	{
@@ -156,7 +156,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setReferenceVersions($referenceVersions)
 	{
 		$this->referenceVersions = $referenceVersions;
-		return $referenceVersions;
+		return $this;
 	}
 	public function getMaxLatestVersionValue()
 	{
@@ -165,7 +165,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setMaxLatestVersionValue($maxLatestVersionValue)
 	{
 		$this->maxLatestVersionValue = $maxLatestVersionValue;
-		return $maxLatestVersionValue;
+		return $this;
 	}
 	public function getSubSystemLabel()
 	{
@@ -174,7 +174,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setSubSystemLabel($subSystemLabel)
 	{
 		$this->subSystemLabel = $subSystemLabel;
-		return $subSystemLabel;
+		return $this;
 	}
 	public function getHighImpact()
 	{
@@ -183,7 +183,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setHighImpact($highImpact)
 	{
 		$this->highImpact = $highImpact;
-		return $highImpact;
+		return $this;
 	}
 	/**
 	* @return  MetricsInsight_Populations[]
@@ -198,7 +198,7 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	public function setPopulations($populations)
 	{
 		$this->populations = $populations;
-		return $populations;
+		return $this;
 	}
 
 }

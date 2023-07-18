@@ -41,7 +41,7 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	public function setOptIn($optIn)
 	{
 		$this->optIn = $optIn;
-		return $optIn;
+		return $this;
 	}
 	public function getSandboxOptIn()
 	{
@@ -50,7 +50,7 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	public function setSandboxOptIn($sandboxOptIn)
 	{
 		$this->sandboxOptIn = $sandboxOptIn;
-		return $sandboxOptIn;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGracePeriodDuration
@@ -65,7 +65,7 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	public function setDuration($duration)
 	{
 		$this->duration = $duration;
-		return $duration;
+		return $this;
 	}
 	public function getRenewalType()
 	{
@@ -74,7 +74,7 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	public function setRenewalType($renewalType)
 	{
 		$this->renewalType = $renewalType;
-		return $renewalType;
+		return $this;
 	}
 
 }
@@ -94,7 +94,7 @@ class SubscriptionGracePeriodUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -103,7 +103,7 @@ class SubscriptionGracePeriodUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGracePeriodUpdateRequest_Data_Attributes
@@ -118,7 +118,7 @@ class SubscriptionGracePeriodUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class SubscriptionGracePeriodUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

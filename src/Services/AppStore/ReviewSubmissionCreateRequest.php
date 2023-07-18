@@ -44,7 +44,7 @@ class ReviewSubmissionCreateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class ReviewSubmissionCreateRequest_Data_Relationships_App_Data extends \Cantie\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -71,7 +71,7 @@ class ReviewSubmissionCreateRequest_Data_Relationships_App_Data extends \Cantie\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class ReviewSubmissionCreateRequest_Data_Relationships_App extends \Cantie\AppSt
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class ReviewSubmissionCreateRequest_Data_Relationships extends \Cantie\AppStoreC
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class ReviewSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionCreateRequest_Data_Attributes
@@ -155,7 +155,7 @@ class ReviewSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionCreateRequest_Data_Relationships
@@ -170,7 +170,7 @@ class ReviewSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -194,7 +194,7 @@ class ReviewSubmissionCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

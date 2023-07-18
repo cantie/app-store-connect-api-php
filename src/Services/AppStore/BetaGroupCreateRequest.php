@@ -43,7 +43,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getIsInternalGroup()
 	{
@@ -52,7 +52,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setIsInternalGroup($isInternalGroup)
 	{
 		$this->isInternalGroup = $isInternalGroup;
-		return $isInternalGroup;
+		return $this;
 	}
 	public function getHasAccessToAllBuilds()
 	{
@@ -61,7 +61,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setHasAccessToAllBuilds($hasAccessToAllBuilds)
 	{
 		$this->hasAccessToAllBuilds = $hasAccessToAllBuilds;
-		return $hasAccessToAllBuilds;
+		return $this;
 	}
 	public function getPublicLinkEnabled()
 	{
@@ -70,7 +70,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPublicLinkEnabled($publicLinkEnabled)
 	{
 		$this->publicLinkEnabled = $publicLinkEnabled;
-		return $publicLinkEnabled;
+		return $this;
 	}
 	public function getPublicLinkLimitEnabled()
 	{
@@ -79,7 +79,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPublicLinkLimitEnabled($publicLinkLimitEnabled)
 	{
 		$this->publicLinkLimitEnabled = $publicLinkLimitEnabled;
-		return $publicLinkLimitEnabled;
+		return $this;
 	}
 	public function getPublicLinkLimit()
 	{
@@ -88,7 +88,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPublicLinkLimit($publicLinkLimit)
 	{
 		$this->publicLinkLimit = $publicLinkLimit;
-		return $publicLinkLimit;
+		return $this;
 	}
 	public function getFeedbackEnabled()
 	{
@@ -97,7 +97,7 @@ class BetaGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setFeedbackEnabled($feedbackEnabled)
 	{
 		$this->feedbackEnabled = $feedbackEnabled;
-		return $feedbackEnabled;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class BetaGroupCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -124,7 +124,7 @@ class BetaGroupCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -148,7 +148,7 @@ class BetaGroupCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -166,7 +166,7 @@ class BetaGroupCreateRequest_Data_Relationships_Builds_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -175,7 +175,7 @@ class BetaGroupCreateRequest_Data_Relationships_Builds_Data extends \Cantie\AppS
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -199,7 +199,7 @@ class BetaGroupCreateRequest_Data_Relationships_Builds extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -217,7 +217,7 @@ class BetaGroupCreateRequest_Data_Relationships_BetaTesters_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -226,7 +226,7 @@ class BetaGroupCreateRequest_Data_Relationships_BetaTesters_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -250,7 +250,7 @@ class BetaGroupCreateRequest_Data_Relationships_BetaTesters extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -278,7 +278,7 @@ class BetaGroupCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  BetaGroupCreateRequest_Data_Relationships_Builds
@@ -293,7 +293,7 @@ class BetaGroupCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\
 	public function setBuilds($builds)
 	{
 		$this->builds = $builds;
-		return $builds;
+		return $this;
 	}
 	/**
 	* @return  BetaGroupCreateRequest_Data_Relationships_BetaTesters
@@ -308,7 +308,7 @@ class BetaGroupCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\
 	public function setBetaTesters($betaTesters)
 	{
 		$this->betaTesters = $betaTesters;
-		return $betaTesters;
+		return $this;
 	}
 
 }
@@ -329,7 +329,7 @@ class BetaGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BetaGroupCreateRequest_Data_Attributes
@@ -344,7 +344,7 @@ class BetaGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaGroupCreateRequest_Data_Relationships
@@ -359,7 +359,7 @@ class BetaGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -383,7 +383,7 @@ class BetaGroupCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

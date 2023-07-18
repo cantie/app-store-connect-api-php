@@ -38,7 +38,7 @@ class AppCustomProductPageLocalizationInlineCreate_Attributes extends \Cantie\Ap
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getPromotionalText()
 	{
@@ -47,7 +47,7 @@ class AppCustomProductPageLocalizationInlineCreate_Attributes extends \Cantie\Ap
 	public function setPromotionalText($promotionalText)
 	{
 		$this->promotionalText = $promotionalText;
-		return $promotionalText;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProduc
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProduc
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProduc
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships extends \Cantie
 	public function setAppCustomProductPageVersion($appCustomProductPageVersion)
 	{
 		$this->appCustomProductPageVersion = $appCustomProductPageVersion;
-		return $appCustomProductPageVersion;
+		return $this;
 	}
 
 }
@@ -144,7 +144,7 @@ class AppCustomProductPageLocalizationInlineCreate extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -153,7 +153,7 @@ class AppCustomProductPageLocalizationInlineCreate extends \Cantie\AppStoreConne
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageLocalizationInlineCreate_Attributes
@@ -168,7 +168,7 @@ class AppCustomProductPageLocalizationInlineCreate extends \Cantie\AppStoreConne
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageLocalizationInlineCreate_Relationships
@@ -183,7 +183,7 @@ class AppCustomProductPageLocalizationInlineCreate extends \Cantie\AppStoreConne
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class SubscriptionPriceCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setStartDate($startDate)
 	{
 		$this->startDate = $startDate;
-		return $startDate;
+		return $this;
 	}
 	public function getPreserveCurrentPrice()
 	{
@@ -47,7 +47,7 @@ class SubscriptionPriceCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setPreserveCurrentPrice($preserveCurrentPrice)
 	{
 		$this->preserveCurrentPrice = $preserveCurrentPrice;
-		return $preserveCurrentPrice;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Subscription_Data extend
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Subscription_Data extend
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Subscription extends \Ca
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Territory_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -125,7 +125,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Territory_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Territory extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -167,7 +167,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint_D
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -176,7 +176,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint_D
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint e
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -228,7 +228,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships extends \Cantie\AppStore
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPriceCreateRequest_Data_Relationships_Territory
@@ -243,7 +243,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships extends \Cantie\AppStore
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint
@@ -258,7 +258,7 @@ class SubscriptionPriceCreateRequest_Data_Relationships extends \Cantie\AppStore
 	public function setSubscriptionPricePoint($subscriptionPricePoint)
 	{
 		$this->subscriptionPricePoint = $subscriptionPricePoint;
-		return $subscriptionPricePoint;
+		return $this;
 	}
 
 }
@@ -279,7 +279,7 @@ class SubscriptionPriceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPriceCreateRequest_Data_Attributes
@@ -294,7 +294,7 @@ class SubscriptionPriceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPriceCreateRequest_Data_Relationships
@@ -309,7 +309,7 @@ class SubscriptionPriceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -333,7 +333,7 @@ class SubscriptionPriceCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

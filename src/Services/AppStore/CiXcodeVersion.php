@@ -38,7 +38,7 @@ class CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes extends \Cant
 	public function setRuntimeName($runtimeName)
 	{
 		$this->runtimeName = $runtimeName;
-		return $runtimeName;
+		return $this;
 	}
 	public function getRuntimeIdentifier()
 	{
@@ -47,7 +47,7 @@ class CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes extends \Cant
 	public function setRuntimeIdentifier($runtimeIdentifier)
 	{
 		$this->runtimeIdentifier = $runtimeIdentifier;
-		return $runtimeIdentifier;
+		return $this;
 	}
 
 }
@@ -69,7 +69,7 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 	public function setDeviceTypeName($deviceTypeName)
 	{
 		$this->deviceTypeName = $deviceTypeName;
-		return $deviceTypeName;
+		return $this;
 	}
 	public function getDeviceTypeIdentifier()
 	{
@@ -78,7 +78,7 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 	public function setDeviceTypeIdentifier($deviceTypeIdentifier)
 	{
 		$this->deviceTypeIdentifier = $deviceTypeIdentifier;
-		return $deviceTypeIdentifier;
+		return $this;
 	}
 	/**
 	* @return  CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes[]
@@ -93,7 +93,7 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 	public function setAvailableRuntimes($availableRuntimes)
 	{
 		$this->availableRuntimes = $availableRuntimes;
-		return $availableRuntimes;
+		return $this;
 	}
 	/**
 	* @return  CiTestDestinationKind
@@ -108,7 +108,7 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 	public function setKind($kind)
 	{
 		$this->kind = $kind;
-		return $kind;
+		return $this;
 	}
 
 }
@@ -128,7 +128,7 @@ class CiXcodeVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	public function getName()
 	{
@@ -137,7 +137,7 @@ class CiXcodeVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  CiXcodeVersion_Attributes_TestDestinations[]
@@ -152,7 +152,7 @@ class CiXcodeVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTestDestinations($testDestinations)
 	{
 		$this->testDestinations = $testDestinations;
-		return $testDestinations;
+		return $this;
 	}
 
 }
@@ -170,7 +170,7 @@ class CiXcodeVersion_Relationships_MacOsVersions_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -179,7 +179,7 @@ class CiXcodeVersion_Relationships_MacOsVersions_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class CiXcodeVersion_Relationships_MacOsVersions_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -206,7 +206,7 @@ class CiXcodeVersion_Relationships_MacOsVersions_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -234,7 +234,7 @@ class CiXcodeVersion_Relationships_MacOsVersions extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -249,7 +249,7 @@ class CiXcodeVersion_Relationships_MacOsVersions extends \Cantie\AppStoreConnect
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  CiXcodeVersion_Relationships_MacOsVersions_Data[]
@@ -264,7 +264,7 @@ class CiXcodeVersion_Relationships_MacOsVersions extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -288,7 +288,7 @@ class CiXcodeVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setMacOsVersions($macOsVersions)
 	{
 		$this->macOsVersions = $macOsVersions;
-		return $macOsVersions;
+		return $this;
 	}
 
 }
@@ -312,7 +312,7 @@ class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -321,7 +321,7 @@ class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiXcodeVersion_Attributes
@@ -336,7 +336,7 @@ class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiXcodeVersion_Relationships
@@ -351,7 +351,7 @@ class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -366,7 +366,7 @@ class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

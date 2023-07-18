@@ -43,7 +43,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -52,7 +52,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getKeywords()
 	{
@@ -61,7 +61,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setKeywords($keywords)
 	{
 		$this->keywords = $keywords;
-		return $keywords;
+		return $this;
 	}
 	public function getMarketingUrl()
 	{
@@ -70,7 +70,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setMarketingUrl($marketingUrl)
 	{
 		$this->marketingUrl = $marketingUrl;
-		return $marketingUrl;
+		return $this;
 	}
 	public function getPromotionalText()
 	{
@@ -79,7 +79,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPromotionalText($promotionalText)
 	{
 		$this->promotionalText = $promotionalText;
-		return $promotionalText;
+		return $this;
 	}
 	public function getSupportUrl()
 	{
@@ -88,7 +88,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setSupportUrl($supportUrl)
 	{
 		$this->supportUrl = $supportUrl;
-		return $supportUrl;
+		return $this;
 	}
 	public function getWhatsNew()
 	{
@@ -97,7 +97,7 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setWhatsNew($whatsNew)
 	{
 		$this->whatsNew = $whatsNew;
-		return $whatsNew;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion_Links extends \C
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -124,7 +124,7 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion_Links extends \C
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion_Data extends \Ca
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -151,7 +151,7 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion_Data extends \Ca
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -177,7 +177,7 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion extends \Cantie\
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Relationships_AppStoreVersion_Data
@@ -192,7 +192,7 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion extends \Cantie\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -210,7 +210,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Links extends 
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -219,7 +219,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Links extends 
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -237,7 +237,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -246,7 +246,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -274,7 +274,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets extends \Canti
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -289,7 +289,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets extends \Canti
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data[]
@@ -304,7 +304,7 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -322,7 +322,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets_Links extends \Ca
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -331,7 +331,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets_Links extends \Ca
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -349,7 +349,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -358,7 +358,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets_Data extends \Can
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -386,7 +386,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets extends \Cantie\A
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -401,7 +401,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets extends \Cantie\A
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Relationships_AppPreviewSets_Data[]
@@ -416,7 +416,7 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -444,7 +444,7 @@ class AppStoreVersionLocalization_Relationships extends \Cantie\AppStoreConnect\
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Relationships_AppScreenshotSets
@@ -459,7 +459,7 @@ class AppStoreVersionLocalization_Relationships extends \Cantie\AppStoreConnect\
 	public function setAppScreenshotSets($appScreenshotSets)
 	{
 		$this->appScreenshotSets = $appScreenshotSets;
-		return $appScreenshotSets;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Relationships_AppPreviewSets
@@ -474,7 +474,7 @@ class AppStoreVersionLocalization_Relationships extends \Cantie\AppStoreConnect\
 	public function setAppPreviewSets($appPreviewSets)
 	{
 		$this->appPreviewSets = $appPreviewSets;
-		return $appPreviewSets;
+		return $this;
 	}
 
 }
@@ -498,7 +498,7 @@ class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -507,7 +507,7 @@ class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Attributes
@@ -522,7 +522,7 @@ class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionLocalization_Relationships
@@ -537,7 +537,7 @@ class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -552,7 +552,7 @@ class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

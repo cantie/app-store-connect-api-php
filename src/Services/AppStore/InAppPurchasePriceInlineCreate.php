@@ -38,7 +38,7 @@ class InAppPurchasePriceInlineCreate_Attributes extends \Cantie\AppStoreConnect\
 	public function setStartDate($startDate)
 	{
 		$this->startDate = $startDate;
-		return $startDate;
+		return $this;
 	}
 	public function getEndDate()
 	{
@@ -47,7 +47,7 @@ class InAppPurchasePriceInlineCreate_Attributes extends \Cantie\AppStoreConnect\
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
-		return $endDate;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2_Data extends 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2_Data extends 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2 extends \Cant
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint_Data 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -125,7 +125,7 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint_Data 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint exten
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -175,7 +175,7 @@ class InAppPurchasePriceInlineCreate_Relationships extends \Cantie\AppStoreConne
 	public function setInAppPurchaseV2($inAppPurchaseV2)
 	{
 		$this->inAppPurchaseV2 = $inAppPurchaseV2;
-		return $inAppPurchaseV2;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint
@@ -190,7 +190,7 @@ class InAppPurchasePriceInlineCreate_Relationships extends \Cantie\AppStoreConne
 	public function setInAppPurchasePricePoint($inAppPurchasePricePoint)
 	{
 		$this->inAppPurchasePricePoint = $inAppPurchasePricePoint;
-		return $inAppPurchasePricePoint;
+		return $this;
 	}
 
 }
@@ -212,7 +212,7 @@ class InAppPurchasePriceInlineCreate extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -221,7 +221,7 @@ class InAppPurchasePriceInlineCreate extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePriceInlineCreate_Attributes
@@ -236,7 +236,7 @@ class InAppPurchasePriceInlineCreate extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchasePriceInlineCreate_Relationships
@@ -251,7 +251,7 @@ class InAppPurchasePriceInlineCreate extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }

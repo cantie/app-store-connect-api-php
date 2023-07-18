@@ -37,7 +37,7 @@ class AppCustomProductPageCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_App_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_App_Data extends \Can
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_App extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -106,7 +106,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_AppCustomProductPageV
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -115,7 +115,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_AppCustomProductPageV
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_AppCustomProductPageV
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -157,7 +157,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_AppStoreVersionTempla
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -166,7 +166,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_AppStoreVersionTempla
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_AppStoreVersionTempla
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -208,7 +208,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_CustomProductPageTemp
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -217,7 +217,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_CustomProductPageTemp
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -241,7 +241,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships_CustomProductPageTemp
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -271,7 +271,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageCreateRequest_Data_Relationships_AppCustomProductPageVersions
@@ -286,7 +286,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppCustomProductPageVersions($appCustomProductPageVersions)
 	{
 		$this->appCustomProductPageVersions = $appCustomProductPageVersions;
-		return $appCustomProductPageVersions;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageCreateRequest_Data_Relationships_AppStoreVersionTemplate
@@ -301,7 +301,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppStoreVersionTemplate($appStoreVersionTemplate)
 	{
 		$this->appStoreVersionTemplate = $appStoreVersionTemplate;
-		return $appStoreVersionTemplate;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageCreateRequest_Data_Relationships_CustomProductPageTemplate
@@ -316,7 +316,7 @@ class AppCustomProductPageCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setCustomProductPageTemplate($customProductPageTemplate)
 	{
 		$this->customProductPageTemplate = $customProductPageTemplate;
-		return $customProductPageTemplate;
+		return $this;
 	}
 
 }
@@ -337,7 +337,7 @@ class AppCustomProductPageCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageCreateRequest_Data_Attributes
@@ -352,7 +352,7 @@ class AppCustomProductPageCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageCreateRequest_Data_Relationships
@@ -367,7 +367,7 @@ class AppCustomProductPageCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -393,7 +393,7 @@ class AppCustomProductPageCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	public function getIncluded()
 	{
@@ -402,7 +402,7 @@ class AppCustomProductPageCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 
 }

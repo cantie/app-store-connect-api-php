@@ -47,7 +47,7 @@ class AppStoreVersionPhasedRelease_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setPhasedReleaseState($phasedReleaseState)
 	{
 		$this->phasedReleaseState = $phasedReleaseState;
-		return $phasedReleaseState;
+		return $this;
 	}
 	public function getStartDate()
 	{
@@ -56,7 +56,7 @@ class AppStoreVersionPhasedRelease_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setStartDate($startDate)
 	{
 		$this->startDate = $startDate;
-		return $startDate;
+		return $this;
 	}
 	public function getTotalPauseDuration()
 	{
@@ -65,7 +65,7 @@ class AppStoreVersionPhasedRelease_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setTotalPauseDuration($totalPauseDuration)
 	{
 		$this->totalPauseDuration = $totalPauseDuration;
-		return $totalPauseDuration;
+		return $this;
 	}
 	public function getCurrentDayNumber()
 	{
@@ -74,7 +74,7 @@ class AppStoreVersionPhasedRelease_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setCurrentDayNumber($currentDayNumber)
 	{
 		$this->currentDayNumber = $currentDayNumber;
-		return $currentDayNumber;
+		return $this;
 	}
 
 }
@@ -96,7 +96,7 @@ class AppStoreVersionPhasedRelease extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -105,7 +105,7 @@ class AppStoreVersionPhasedRelease extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionPhasedRelease_Attributes
@@ -120,7 +120,7 @@ class AppStoreVersionPhasedRelease extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -135,7 +135,7 @@ class AppStoreVersionPhasedRelease extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

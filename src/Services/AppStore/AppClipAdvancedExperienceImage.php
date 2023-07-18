@@ -45,7 +45,7 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -54,7 +54,7 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -63,7 +63,7 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -78,7 +78,7 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	public function setImageAsset($imageAsset)
 	{
 		$this->imageAsset = $imageAsset;
-		return $imageAsset;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -93,7 +93,7 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -108,7 +108,7 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 
 }
@@ -130,7 +130,7 @@ class AppClipAdvancedExperienceImage extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -139,7 +139,7 @@ class AppClipAdvancedExperienceImage extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceImage_Attributes
@@ -154,7 +154,7 @@ class AppClipAdvancedExperienceImage extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -169,7 +169,7 @@ class AppClipAdvancedExperienceImage extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

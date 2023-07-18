@@ -38,7 +38,7 @@ class BetaBuildLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setWhatsNew($whatsNew)
 	{
 		$this->whatsNew = $whatsNew;
-		return $whatsNew;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -47,7 +47,7 @@ class BetaBuildLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class BetaBuildLocalization_Relationships_Build_Links extends \Cantie\AppStoreCo
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -74,7 +74,7 @@ class BetaBuildLocalization_Relationships_Build_Links extends \Cantie\AppStoreCo
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class BetaBuildLocalization_Relationships_Build_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class BetaBuildLocalization_Relationships_Build_Data extends \Cantie\AppStoreCon
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -127,7 +127,7 @@ class BetaBuildLocalization_Relationships_Build extends \Cantie\AppStoreConnect\
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BetaBuildLocalization_Relationships_Build_Data
@@ -142,7 +142,7 @@ class BetaBuildLocalization_Relationships_Build extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -166,7 +166,7 @@ class BetaBuildLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBuild($build)
 	{
 		$this->build = $build;
-		return $build;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -199,7 +199,7 @@ class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaBuildLocalization_Attributes
@@ -214,7 +214,7 @@ class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaBuildLocalization_Relationships
@@ -229,7 +229,7 @@ class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -244,7 +244,7 @@ class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

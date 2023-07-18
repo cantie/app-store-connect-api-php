@@ -46,7 +46,7 @@ class AppClipAdvancedExperienceLocalization_Attributes extends \Cantie\AppStoreC
 	public function setLanguage($language)
 	{
 		$this->language = $language;
-		return $language;
+		return $this;
 	}
 	public function getTitle()
 	{
@@ -55,7 +55,7 @@ class AppClipAdvancedExperienceLocalization_Attributes extends \Cantie\AppStoreC
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -64,7 +64,7 @@ class AppClipAdvancedExperienceLocalization_Attributes extends \Cantie\AppStoreC
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 
 }
@@ -86,7 +86,7 @@ class AppClipAdvancedExperienceLocalization extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -95,7 +95,7 @@ class AppClipAdvancedExperienceLocalization extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceLocalization_Attributes
@@ -110,7 +110,7 @@ class AppClipAdvancedExperienceLocalization extends \Cantie\AppStoreConnect\Mode
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -125,7 +125,7 @@ class AppClipAdvancedExperienceLocalization extends \Cantie\AppStoreConnect\Mode
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

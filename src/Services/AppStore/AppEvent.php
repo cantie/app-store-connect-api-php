@@ -47,7 +47,7 @@ class AppEvent_Attributes_TerritorySchedules extends \Cantie\AppStoreConnect\Mod
 	public function setTerritories($territories)
 	{
 		$this->territories = $territories;
-		return $territories;
+		return $this;
 	}
 	public function getPublishStart()
 	{
@@ -56,7 +56,7 @@ class AppEvent_Attributes_TerritorySchedules extends \Cantie\AppStoreConnect\Mod
 	public function setPublishStart($publishStart)
 	{
 		$this->publishStart = $publishStart;
-		return $publishStart;
+		return $this;
 	}
 	public function getEventStart()
 	{
@@ -65,7 +65,7 @@ class AppEvent_Attributes_TerritorySchedules extends \Cantie\AppStoreConnect\Mod
 	public function setEventStart($eventStart)
 	{
 		$this->eventStart = $eventStart;
-		return $eventStart;
+		return $this;
 	}
 	public function getEventEnd()
 	{
@@ -74,7 +74,7 @@ class AppEvent_Attributes_TerritorySchedules extends \Cantie\AppStoreConnect\Mod
 	public function setEventEnd($eventEnd)
 	{
 		$this->eventEnd = $eventEnd;
-		return $eventEnd;
+		return $this;
 	}
 
 }
@@ -101,7 +101,7 @@ class AppEvent_Attributes_ArchivedTerritorySchedules extends \Cantie\AppStoreCon
 	public function setTerritories($territories)
 	{
 		$this->territories = $territories;
-		return $territories;
+		return $this;
 	}
 	public function getPublishStart()
 	{
@@ -110,7 +110,7 @@ class AppEvent_Attributes_ArchivedTerritorySchedules extends \Cantie\AppStoreCon
 	public function setPublishStart($publishStart)
 	{
 		$this->publishStart = $publishStart;
-		return $publishStart;
+		return $this;
 	}
 	public function getEventStart()
 	{
@@ -119,7 +119,7 @@ class AppEvent_Attributes_ArchivedTerritorySchedules extends \Cantie\AppStoreCon
 	public function setEventStart($eventStart)
 	{
 		$this->eventStart = $eventStart;
-		return $eventStart;
+		return $this;
 	}
 	public function getEventEnd()
 	{
@@ -128,7 +128,7 @@ class AppEvent_Attributes_ArchivedTerritorySchedules extends \Cantie\AppStoreCon
 	public function setEventEnd($eventEnd)
 	{
 		$this->eventEnd = $eventEnd;
-		return $eventEnd;
+		return $this;
 	}
 
 }
@@ -156,7 +156,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setReferenceName($referenceName)
 	{
 		$this->referenceName = $referenceName;
-		return $referenceName;
+		return $this;
 	}
 	public function getBadge()
 	{
@@ -165,7 +165,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBadge($badge)
 	{
 		$this->badge = $badge;
-		return $badge;
+		return $this;
 	}
 	public function getEventState()
 	{
@@ -174,7 +174,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setEventState($eventState)
 	{
 		$this->eventState = $eventState;
-		return $eventState;
+		return $this;
 	}
 	public function getDeepLink()
 	{
@@ -183,7 +183,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDeepLink($deepLink)
 	{
 		$this->deepLink = $deepLink;
-		return $deepLink;
+		return $this;
 	}
 	public function getPurchaseRequirement()
 	{
@@ -192,7 +192,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPurchaseRequirement($purchaseRequirement)
 	{
 		$this->purchaseRequirement = $purchaseRequirement;
-		return $purchaseRequirement;
+		return $this;
 	}
 	public function getPrimaryLocale()
 	{
@@ -201,7 +201,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPrimaryLocale($primaryLocale)
 	{
 		$this->primaryLocale = $primaryLocale;
-		return $primaryLocale;
+		return $this;
 	}
 	public function getPriority()
 	{
@@ -210,7 +210,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPriority($priority)
 	{
 		$this->priority = $priority;
-		return $priority;
+		return $this;
 	}
 	public function getPurpose()
 	{
@@ -219,7 +219,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPurpose($purpose)
 	{
 		$this->purpose = $purpose;
-		return $purpose;
+		return $this;
 	}
 	/**
 	* @return  AppEvent_Attributes_TerritorySchedules[]
@@ -234,7 +234,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTerritorySchedules($territorySchedules)
 	{
 		$this->territorySchedules = $territorySchedules;
-		return $territorySchedules;
+		return $this;
 	}
 	/**
 	* @return  AppEvent_Attributes_ArchivedTerritorySchedules[]
@@ -249,7 +249,7 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setArchivedTerritorySchedules($archivedTerritorySchedules)
 	{
 		$this->archivedTerritorySchedules = $archivedTerritorySchedules;
-		return $archivedTerritorySchedules;
+		return $this;
 	}
 
 }
@@ -267,7 +267,7 @@ class AppEvent_Relationships_Localizations_Links extends \Cantie\AppStoreConnect
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -276,7 +276,7 @@ class AppEvent_Relationships_Localizations_Links extends \Cantie\AppStoreConnect
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -294,7 +294,7 @@ class AppEvent_Relationships_Localizations_Data extends \Cantie\AppStoreConnect\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -303,7 +303,7 @@ class AppEvent_Relationships_Localizations_Data extends \Cantie\AppStoreConnect\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -331,7 +331,7 @@ class AppEvent_Relationships_Localizations extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -346,7 +346,7 @@ class AppEvent_Relationships_Localizations extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppEvent_Relationships_Localizations_Data[]
@@ -361,7 +361,7 @@ class AppEvent_Relationships_Localizations extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -385,7 +385,7 @@ class AppEvent_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setLocalizations($localizations)
 	{
 		$this->localizations = $localizations;
-		return $localizations;
+		return $this;
 	}
 
 }
@@ -409,7 +409,7 @@ class AppEvent extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -418,7 +418,7 @@ class AppEvent extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEvent_Attributes
@@ -433,7 +433,7 @@ class AppEvent extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppEvent_Relationships
@@ -448,7 +448,7 @@ class AppEvent extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -463,7 +463,7 @@ class AppEvent extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

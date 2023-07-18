@@ -45,7 +45,7 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -54,7 +54,7 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -63,7 +63,7 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -78,7 +78,7 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setImageAsset($imageAsset)
 	{
 		$this->imageAsset = $imageAsset;
-		return $imageAsset;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -93,7 +93,7 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	/**
 	* @return  AppMediaAssetState
@@ -108,7 +108,7 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetDeliveryState($assetDeliveryState)
 	{
 		$this->assetDeliveryState = $assetDeliveryState;
-		return $assetDeliveryState;
+		return $this;
 	}
 
 }
@@ -126,7 +126,7 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Link
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -135,7 +135,7 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Link
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -162,7 +162,7 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -188,7 +188,7 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization exte
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data
@@ -203,7 +203,7 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization exte
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -227,7 +227,7 @@ class AppClipHeaderImage_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppClipDefaultExperienceLocalization($appClipDefaultExperienceLocalization)
 	{
 		$this->appClipDefaultExperienceLocalization = $appClipDefaultExperienceLocalization;
-		return $appClipDefaultExperienceLocalization;
+		return $this;
 	}
 
 }
@@ -251,7 +251,7 @@ class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -260,7 +260,7 @@ class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipHeaderImage_Attributes
@@ -275,7 +275,7 @@ class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipHeaderImage_Relationships
@@ -290,7 +290,7 @@ class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -305,7 +305,7 @@ class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

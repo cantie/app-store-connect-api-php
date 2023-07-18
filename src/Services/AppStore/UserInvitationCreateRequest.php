@@ -43,7 +43,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public function setEmail($email)
 	{
 		$this->email = $email;
-		return $email;
+		return $this;
 	}
 	public function getFirstName()
 	{
@@ -52,7 +52,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public function setFirstName($firstName)
 	{
 		$this->firstName = $firstName;
-		return $firstName;
+		return $this;
 	}
 	public function getLastName()
 	{
@@ -61,7 +61,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public function setLastName($lastName)
 	{
 		$this->lastName = $lastName;
-		return $lastName;
+		return $this;
 	}
 	/**
 	* @return  UserRole[]
@@ -76,7 +76,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public function setRoles($roles)
 	{
 		$this->roles = $roles;
-		return $roles;
+		return $this;
 	}
 	public function getAllAppsVisible()
 	{
@@ -85,7 +85,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public function setAllAppsVisible($allAppsVisible)
 	{
 		$this->allAppsVisible = $allAppsVisible;
-		return $allAppsVisible;
+		return $this;
 	}
 	public function getProvisioningAllowed()
 	{
@@ -94,7 +94,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public function setProvisioningAllowed($provisioningAllowed)
 	{
 		$this->provisioningAllowed = $provisioningAllowed;
-		return $provisioningAllowed;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class UserInvitationCreateRequest_Data_Relationships_VisibleApps_Data extends \C
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -121,7 +121,7 @@ class UserInvitationCreateRequest_Data_Relationships_VisibleApps_Data extends \C
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -145,7 +145,7 @@ class UserInvitationCreateRequest_Data_Relationships_VisibleApps extends \Cantie
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -169,7 +169,7 @@ class UserInvitationCreateRequest_Data_Relationships extends \Cantie\AppStoreCon
 	public function setVisibleApps($visibleApps)
 	{
 		$this->visibleApps = $visibleApps;
-		return $visibleApps;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class UserInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  UserInvitationCreateRequest_Data_Attributes
@@ -205,7 +205,7 @@ class UserInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  UserInvitationCreateRequest_Data_Relationships
@@ -220,7 +220,7 @@ class UserInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -244,7 +244,7 @@ class UserInvitationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

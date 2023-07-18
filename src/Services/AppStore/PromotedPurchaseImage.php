@@ -46,7 +46,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -55,7 +55,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getSourceFileChecksum()
 	{
@@ -64,7 +64,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	public function getAssetToken()
 	{
@@ -73,7 +73,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetToken($assetToken)
 	{
 		$this->assetToken = $assetToken;
-		return $assetToken;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -88,7 +88,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setImageAsset($imageAsset)
 	{
 		$this->imageAsset = $imageAsset;
-		return $imageAsset;
+		return $this;
 	}
 	public function getAssetType()
 	{
@@ -97,7 +97,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAssetType($assetType)
 	{
 		$this->assetType = $assetType;
-		return $assetType;
+		return $this;
 	}
 	/**
 	* @return  UploadOperation[]
@@ -112,7 +112,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUploadOperations($uploadOperations)
 	{
 		$this->uploadOperations = $uploadOperations;
-		return $uploadOperations;
+		return $this;
 	}
 	public function getState()
 	{
@@ -121,7 +121,7 @@ class PromotedPurchaseImage_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class PromotedPurchaseImage_Relationships_PromotedPurchase_Links extends \Cantie
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -148,7 +148,7 @@ class PromotedPurchaseImage_Relationships_PromotedPurchase_Links extends \Cantie
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -166,7 +166,7 @@ class PromotedPurchaseImage_Relationships_PromotedPurchase_Data extends \Cantie\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -175,7 +175,7 @@ class PromotedPurchaseImage_Relationships_PromotedPurchase_Data extends \Cantie\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -201,7 +201,7 @@ class PromotedPurchaseImage_Relationships_PromotedPurchase extends \Cantie\AppSt
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseImage_Relationships_PromotedPurchase_Data
@@ -216,7 +216,7 @@ class PromotedPurchaseImage_Relationships_PromotedPurchase extends \Cantie\AppSt
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -240,7 +240,7 @@ class PromotedPurchaseImage_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPromotedPurchase($promotedPurchase)
 	{
 		$this->promotedPurchase = $promotedPurchase;
-		return $promotedPurchase;
+		return $this;
 	}
 
 }
@@ -264,7 +264,7 @@ class PromotedPurchaseImage extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -273,7 +273,7 @@ class PromotedPurchaseImage extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseImage_Attributes
@@ -288,7 +288,7 @@ class PromotedPurchaseImage extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseImage_Relationships
@@ -303,7 +303,7 @@ class PromotedPurchaseImage extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -318,7 +318,7 @@ class PromotedPurchaseImage extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

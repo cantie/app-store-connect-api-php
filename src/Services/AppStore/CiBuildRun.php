@@ -43,7 +43,7 @@ class CiBuildRun_Attributes_SourceCommit extends \Cantie\AppStoreConnect\Model
 	public function setCommitSha($commitSha)
 	{
 		$this->commitSha = $commitSha;
-		return $commitSha;
+		return $this;
 	}
 	public function getMessage()
 	{
@@ -52,7 +52,7 @@ class CiBuildRun_Attributes_SourceCommit extends \Cantie\AppStoreConnect\Model
 	public function setMessage($message)
 	{
 		$this->message = $message;
-		return $message;
+		return $this;
 	}
 	/**
 	* @return  CiGitUser
@@ -67,7 +67,7 @@ class CiBuildRun_Attributes_SourceCommit extends \Cantie\AppStoreConnect\Model
 	public function setAuthor($author)
 	{
 		$this->author = $author;
-		return $author;
+		return $this;
 	}
 	/**
 	* @return  CiGitUser
@@ -82,7 +82,7 @@ class CiBuildRun_Attributes_SourceCommit extends \Cantie\AppStoreConnect\Model
 	public function setCommitter($committer)
 	{
 		$this->committer = $committer;
-		return $committer;
+		return $this;
 	}
 	public function getWebUrl()
 	{
@@ -91,7 +91,7 @@ class CiBuildRun_Attributes_SourceCommit extends \Cantie\AppStoreConnect\Model
 	public function setWebUrl($webUrl)
 	{
 		$this->webUrl = $webUrl;
-		return $webUrl;
+		return $this;
 	}
 
 }
@@ -114,7 +114,7 @@ class CiBuildRun_Attributes_DestinationCommit extends \Cantie\AppStoreConnect\Mo
 	public function setCommitSha($commitSha)
 	{
 		$this->commitSha = $commitSha;
-		return $commitSha;
+		return $this;
 	}
 	public function getMessage()
 	{
@@ -123,7 +123,7 @@ class CiBuildRun_Attributes_DestinationCommit extends \Cantie\AppStoreConnect\Mo
 	public function setMessage($message)
 	{
 		$this->message = $message;
-		return $message;
+		return $this;
 	}
 	/**
 	* @return  CiGitUser
@@ -138,7 +138,7 @@ class CiBuildRun_Attributes_DestinationCommit extends \Cantie\AppStoreConnect\Mo
 	public function setAuthor($author)
 	{
 		$this->author = $author;
-		return $author;
+		return $this;
 	}
 	/**
 	* @return  CiGitUser
@@ -153,7 +153,7 @@ class CiBuildRun_Attributes_DestinationCommit extends \Cantie\AppStoreConnect\Mo
 	public function setCommitter($committer)
 	{
 		$this->committer = $committer;
-		return $committer;
+		return $this;
 	}
 	public function getWebUrl()
 	{
@@ -162,7 +162,7 @@ class CiBuildRun_Attributes_DestinationCommit extends \Cantie\AppStoreConnect\Mo
 	public function setWebUrl($webUrl)
 	{
 		$this->webUrl = $webUrl;
-		return $webUrl;
+		return $this;
 	}
 
 }
@@ -195,7 +195,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setNumber($number)
 	{
 		$this->number = $number;
-		return $number;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -204,7 +204,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	public function getStartedDate()
 	{
@@ -213,7 +213,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStartedDate($startedDate)
 	{
 		$this->startedDate = $startedDate;
-		return $startedDate;
+		return $this;
 	}
 	public function getFinishedDate()
 	{
@@ -222,7 +222,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFinishedDate($finishedDate)
 	{
 		$this->finishedDate = $finishedDate;
-		return $finishedDate;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Attributes_SourceCommit
@@ -237,7 +237,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceCommit($sourceCommit)
 	{
 		$this->sourceCommit = $sourceCommit;
-		return $sourceCommit;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Attributes_DestinationCommit
@@ -252,7 +252,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDestinationCommit($destinationCommit)
 	{
 		$this->destinationCommit = $destinationCommit;
-		return $destinationCommit;
+		return $this;
 	}
 	public function getIsPullRequestBuild()
 	{
@@ -261,7 +261,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsPullRequestBuild($isPullRequestBuild)
 	{
 		$this->isPullRequestBuild = $isPullRequestBuild;
-		return $isPullRequestBuild;
+		return $this;
 	}
 	/**
 	* @return  CiIssueCounts
@@ -276,7 +276,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIssueCounts($issueCounts)
 	{
 		$this->issueCounts = $issueCounts;
-		return $issueCounts;
+		return $this;
 	}
 	/**
 	* @return  CiExecutionProgress
@@ -291,7 +291,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExecutionProgress($executionProgress)
 	{
 		$this->executionProgress = $executionProgress;
-		return $executionProgress;
+		return $this;
 	}
 	/**
 	* @return  CiCompletionStatus
@@ -306,7 +306,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCompletionStatus($completionStatus)
 	{
 		$this->completionStatus = $completionStatus;
-		return $completionStatus;
+		return $this;
 	}
 	public function getStartReason()
 	{
@@ -315,7 +315,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setStartReason($startReason)
 	{
 		$this->startReason = $startReason;
-		return $startReason;
+		return $this;
 	}
 	public function getCancelReason()
 	{
@@ -324,7 +324,7 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCancelReason($cancelReason)
 	{
 		$this->cancelReason = $cancelReason;
-		return $cancelReason;
+		return $this;
 	}
 
 }
@@ -342,7 +342,7 @@ class CiBuildRun_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Mode
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -351,7 +351,7 @@ class CiBuildRun_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Mode
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -369,7 +369,7 @@ class CiBuildRun_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -378,7 +378,7 @@ class CiBuildRun_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -406,7 +406,7 @@ class CiBuildRun_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -421,7 +421,7 @@ class CiBuildRun_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_Builds_Data[]
@@ -436,7 +436,7 @@ class CiBuildRun_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -454,7 +454,7 @@ class CiBuildRun_Relationships_Workflow_Links extends \Cantie\AppStoreConnect\Mo
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -463,7 +463,7 @@ class CiBuildRun_Relationships_Workflow_Links extends \Cantie\AppStoreConnect\Mo
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -481,7 +481,7 @@ class CiBuildRun_Relationships_Workflow_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -490,7 +490,7 @@ class CiBuildRun_Relationships_Workflow_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -516,7 +516,7 @@ class CiBuildRun_Relationships_Workflow extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_Workflow_Data
@@ -531,7 +531,7 @@ class CiBuildRun_Relationships_Workflow extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -549,7 +549,7 @@ class CiBuildRun_Relationships_Product_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -558,7 +558,7 @@ class CiBuildRun_Relationships_Product_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -576,7 +576,7 @@ class CiBuildRun_Relationships_Product_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -585,7 +585,7 @@ class CiBuildRun_Relationships_Product_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -611,7 +611,7 @@ class CiBuildRun_Relationships_Product extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_Product_Data
@@ -626,7 +626,7 @@ class CiBuildRun_Relationships_Product extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -644,7 +644,7 @@ class CiBuildRun_Relationships_SourceBranchOrTag_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -653,7 +653,7 @@ class CiBuildRun_Relationships_SourceBranchOrTag_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -671,7 +671,7 @@ class CiBuildRun_Relationships_SourceBranchOrTag_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -680,7 +680,7 @@ class CiBuildRun_Relationships_SourceBranchOrTag_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -706,7 +706,7 @@ class CiBuildRun_Relationships_SourceBranchOrTag extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_SourceBranchOrTag_Data
@@ -721,7 +721,7 @@ class CiBuildRun_Relationships_SourceBranchOrTag extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -739,7 +739,7 @@ class CiBuildRun_Relationships_DestinationBranch_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -748,7 +748,7 @@ class CiBuildRun_Relationships_DestinationBranch_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -766,7 +766,7 @@ class CiBuildRun_Relationships_DestinationBranch_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -775,7 +775,7 @@ class CiBuildRun_Relationships_DestinationBranch_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -801,7 +801,7 @@ class CiBuildRun_Relationships_DestinationBranch extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_DestinationBranch_Data
@@ -816,7 +816,7 @@ class CiBuildRun_Relationships_DestinationBranch extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -834,7 +834,7 @@ class CiBuildRun_Relationships_PullRequest_Links extends \Cantie\AppStoreConnect
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -843,7 +843,7 @@ class CiBuildRun_Relationships_PullRequest_Links extends \Cantie\AppStoreConnect
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -861,7 +861,7 @@ class CiBuildRun_Relationships_PullRequest_Data extends \Cantie\AppStoreConnect\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -870,7 +870,7 @@ class CiBuildRun_Relationships_PullRequest_Data extends \Cantie\AppStoreConnect\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -896,7 +896,7 @@ class CiBuildRun_Relationships_PullRequest extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_PullRequest_Data
@@ -911,7 +911,7 @@ class CiBuildRun_Relationships_PullRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -945,7 +945,7 @@ class CiBuildRun_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBuilds($builds)
 	{
 		$this->builds = $builds;
-		return $builds;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_Workflow
@@ -960,7 +960,7 @@ class CiBuildRun_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setWorkflow($workflow)
 	{
 		$this->workflow = $workflow;
-		return $workflow;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_Product
@@ -975,7 +975,7 @@ class CiBuildRun_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setProduct($product)
 	{
 		$this->product = $product;
-		return $product;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_SourceBranchOrTag
@@ -990,7 +990,7 @@ class CiBuildRun_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setSourceBranchOrTag($sourceBranchOrTag)
 	{
 		$this->sourceBranchOrTag = $sourceBranchOrTag;
-		return $sourceBranchOrTag;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_DestinationBranch
@@ -1005,7 +1005,7 @@ class CiBuildRun_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setDestinationBranch($destinationBranch)
 	{
 		$this->destinationBranch = $destinationBranch;
-		return $destinationBranch;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships_PullRequest
@@ -1020,7 +1020,7 @@ class CiBuildRun_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPullRequest($pullRequest)
 	{
 		$this->pullRequest = $pullRequest;
-		return $pullRequest;
+		return $this;
 	}
 
 }
@@ -1044,7 +1044,7 @@ class CiBuildRun extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -1053,7 +1053,7 @@ class CiBuildRun extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Attributes
@@ -1068,7 +1068,7 @@ class CiBuildRun extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRun_Relationships
@@ -1083,7 +1083,7 @@ class CiBuildRun extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -1098,7 +1098,7 @@ class CiBuildRun extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

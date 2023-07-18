@@ -38,7 +38,7 @@ class AppPricePointV2_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCustomerPrice($customerPrice)
 	{
 		$this->customerPrice = $customerPrice;
-		return $customerPrice;
+		return $this;
 	}
 	public function getProceeds()
 	{
@@ -47,7 +47,7 @@ class AppPricePointV2_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProceeds($proceeds)
 	{
 		$this->proceeds = $proceeds;
-		return $proceeds;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppPricePointV2_Relationships_App_Links extends \Cantie\AppStoreConnect\Mo
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -74,7 +74,7 @@ class AppPricePointV2_Relationships_App_Links extends \Cantie\AppStoreConnect\Mo
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class AppPricePointV2_Relationships_App_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class AppPricePointV2_Relationships_App_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -127,7 +127,7 @@ class AppPricePointV2_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Relationships_App_Data
@@ -142,7 +142,7 @@ class AppPricePointV2_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class AppPricePointV2_Relationships_PriceTier_Links extends \Cantie\AppStoreConn
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -169,7 +169,7 @@ class AppPricePointV2_Relationships_PriceTier_Links extends \Cantie\AppStoreConn
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class AppPricePointV2_Relationships_PriceTier_Data extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -196,7 +196,7 @@ class AppPricePointV2_Relationships_PriceTier_Data extends \Cantie\AppStoreConne
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -222,7 +222,7 @@ class AppPricePointV2_Relationships_PriceTier extends \Cantie\AppStoreConnect\Mo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Relationships_PriceTier_Data
@@ -237,7 +237,7 @@ class AppPricePointV2_Relationships_PriceTier extends \Cantie\AppStoreConnect\Mo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -255,7 +255,7 @@ class AppPricePointV2_Relationships_Territory_Links extends \Cantie\AppStoreConn
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -264,7 +264,7 @@ class AppPricePointV2_Relationships_Territory_Links extends \Cantie\AppStoreConn
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -282,7 +282,7 @@ class AppPricePointV2_Relationships_Territory_Data extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -291,7 +291,7 @@ class AppPricePointV2_Relationships_Territory_Data extends \Cantie\AppStoreConne
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -317,7 +317,7 @@ class AppPricePointV2_Relationships_Territory extends \Cantie\AppStoreConnect\Mo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Relationships_Territory_Data
@@ -332,7 +332,7 @@ class AppPricePointV2_Relationships_Territory extends \Cantie\AppStoreConnect\Mo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -360,7 +360,7 @@ class AppPricePointV2_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Relationships_PriceTier
@@ -375,7 +375,7 @@ class AppPricePointV2_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPriceTier($priceTier)
 	{
 		$this->priceTier = $priceTier;
-		return $priceTier;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Relationships_Territory
@@ -390,7 +390,7 @@ class AppPricePointV2_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 
 }
@@ -414,7 +414,7 @@ class AppPricePointV2 extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -423,7 +423,7 @@ class AppPricePointV2 extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Attributes
@@ -438,7 +438,7 @@ class AppPricePointV2 extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppPricePointV2_Relationships
@@ -453,7 +453,7 @@ class AppPricePointV2 extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -468,7 +468,7 @@ class AppPricePointV2 extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

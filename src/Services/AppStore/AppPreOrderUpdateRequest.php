@@ -37,7 +37,7 @@ class AppPreOrderUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 	public function setAppReleaseDate($appReleaseDate)
 	{
 		$this->appReleaseDate = $appReleaseDate;
-		return $appReleaseDate;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class AppPreOrderUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class AppPreOrderUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppPreOrderUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class AppPreOrderUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppPreOrderUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -46,7 +46,7 @@ class UserUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setRoles($roles)
 	{
 		$this->roles = $roles;
-		return $roles;
+		return $this;
 	}
 	public function getAllAppsVisible()
 	{
@@ -55,7 +55,7 @@ class UserUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAllAppsVisible($allAppsVisible)
 	{
 		$this->allAppsVisible = $allAppsVisible;
-		return $allAppsVisible;
+		return $this;
 	}
 	public function getProvisioningAllowed()
 	{
@@ -64,7 +64,7 @@ class UserUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProvisioningAllowed($provisioningAllowed)
 	{
 		$this->provisioningAllowed = $provisioningAllowed;
-		return $provisioningAllowed;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class UserUpdateRequest_Data_Relationships_VisibleApps_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class UserUpdateRequest_Data_Relationships_VisibleApps_Data extends \Cantie\AppS
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class UserUpdateRequest_Data_Relationships_VisibleApps extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class UserUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setVisibleApps($visibleApps)
 	{
 		$this->visibleApps = $visibleApps;
-		return $visibleApps;
+		return $this;
 	}
 
 }
@@ -161,7 +161,7 @@ class UserUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -170,7 +170,7 @@ class UserUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  UserUpdateRequest_Data_Attributes
@@ -185,7 +185,7 @@ class UserUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  UserUpdateRequest_Data_Relationships
@@ -200,7 +200,7 @@ class UserUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -224,7 +224,7 @@ class UserUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

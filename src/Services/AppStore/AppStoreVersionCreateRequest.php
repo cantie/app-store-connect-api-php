@@ -48,7 +48,7 @@ class AppStoreVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getVersionString()
 	{
@@ -57,7 +57,7 @@ class AppStoreVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setVersionString($versionString)
 	{
 		$this->versionString = $versionString;
-		return $versionString;
+		return $this;
 	}
 	public function getCopyright()
 	{
@@ -66,7 +66,7 @@ class AppStoreVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setCopyright($copyright)
 	{
 		$this->copyright = $copyright;
-		return $copyright;
+		return $this;
 	}
 	public function getReleaseType()
 	{
@@ -75,7 +75,7 @@ class AppStoreVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setReleaseType($releaseType)
 	{
 		$this->releaseType = $releaseType;
-		return $releaseType;
+		return $this;
 	}
 	public function getEarliestReleaseDate()
 	{
@@ -84,7 +84,7 @@ class AppStoreVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setEarliestReleaseDate($earliestReleaseDate)
 	{
 		$this->earliestReleaseDate = $earliestReleaseDate;
-		return $earliestReleaseDate;
+		return $this;
 	}
 
 }
@@ -102,7 +102,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -111,7 +111,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -135,7 +135,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_App extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_AppStoreVersionLocalizatio
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -162,7 +162,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_AppStoreVersionLocalizatio
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -186,7 +186,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_AppStoreVersionLocalizatio
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -204,7 +204,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_Build_Data extends \Cantie
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -213,7 +213,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_Build_Data extends \Cantie
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -237,7 +237,7 @@ class AppStoreVersionCreateRequest_Data_Relationships_Build extends \Cantie\AppS
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -265,7 +265,7 @@ class AppStoreVersionCreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionCreateRequest_Data_Relationships_AppStoreVersionLocalizations
@@ -280,7 +280,7 @@ class AppStoreVersionCreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setAppStoreVersionLocalizations($appStoreVersionLocalizations)
 	{
 		$this->appStoreVersionLocalizations = $appStoreVersionLocalizations;
-		return $appStoreVersionLocalizations;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionCreateRequest_Data_Relationships_Build
@@ -295,7 +295,7 @@ class AppStoreVersionCreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setBuild($build)
 	{
 		$this->build = $build;
-		return $build;
+		return $this;
 	}
 
 }
@@ -316,7 +316,7 @@ class AppStoreVersionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionCreateRequest_Data_Attributes
@@ -331,7 +331,7 @@ class AppStoreVersionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionCreateRequest_Data_Relationships
@@ -346,7 +346,7 @@ class AppStoreVersionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -370,7 +370,7 @@ class AppStoreVersionCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

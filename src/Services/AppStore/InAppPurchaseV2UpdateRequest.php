@@ -40,7 +40,7 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getReviewNote()
 	{
@@ -49,7 +49,7 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setReviewNote($reviewNote)
 	{
 		$this->reviewNote = $reviewNote;
-		return $reviewNote;
+		return $this;
 	}
 	public function getFamilySharable()
 	{
@@ -58,7 +58,7 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setFamilySharable($familySharable)
 	{
 		$this->familySharable = $familySharable;
-		return $familySharable;
+		return $this;
 	}
 	public function getAvailableInAllTerritories()
 	{
@@ -67,7 +67,7 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setAvailableInAllTerritories($availableInAllTerritories)
 	{
 		$this->availableInAllTerritories = $availableInAllTerritories;
-		return $availableInAllTerritories;
+		return $this;
 	}
 
 }
@@ -87,7 +87,7 @@ class InAppPurchaseV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -96,7 +96,7 @@ class InAppPurchaseV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseV2UpdateRequest_Data_Attributes
@@ -111,7 +111,7 @@ class InAppPurchaseV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -135,7 +135,7 @@ class InAppPurchaseV2UpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

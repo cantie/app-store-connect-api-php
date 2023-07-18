@@ -38,7 +38,7 @@ class BuildUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExpired($expired)
 	{
 		$this->expired = $expired;
-		return $expired;
+		return $this;
 	}
 	public function getUsesNonExemptEncryption()
 	{
@@ -47,7 +47,7 @@ class BuildUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUsesNonExemptEncryption($usesNonExemptEncryption)
 	{
 		$this->usesNonExemptEncryption = $usesNonExemptEncryption;
-		return $usesNonExemptEncryption;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration_Data extend
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration_Data extend
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration extends \Ca
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class BuildUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mode
 	public function setAppEncryptionDeclaration($appEncryptionDeclaration)
 	{
 		$this->appEncryptionDeclaration = $appEncryptionDeclaration;
-		return $appEncryptionDeclaration;
+		return $this;
 	}
 
 }
@@ -144,7 +144,7 @@ class BuildUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -153,7 +153,7 @@ class BuildUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BuildUpdateRequest_Data_Attributes
@@ -168,7 +168,7 @@ class BuildUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BuildUpdateRequest_Data_Relationships
@@ -183,7 +183,7 @@ class BuildUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -207,7 +207,7 @@ class BuildUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

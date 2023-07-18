@@ -38,7 +38,7 @@ class AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest_Data exte
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest_Data exte
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest extends \
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

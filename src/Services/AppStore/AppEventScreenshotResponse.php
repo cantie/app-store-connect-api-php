@@ -48,7 +48,7 @@ class AppEventScreenshotResponse extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalization[]
@@ -63,7 +63,7 @@ class AppEventScreenshotResponse extends \Cantie\AppStoreConnect\Model
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 	/**
 	* @return  DocumentLinks
@@ -78,7 +78,7 @@ class AppEventScreenshotResponse extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

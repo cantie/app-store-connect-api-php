@@ -38,7 +38,7 @@ class CiTagPatterns_Patterns extends \Cantie\AppStoreConnect\Model
 	public function setPattern($pattern)
 	{
 		$this->pattern = $pattern;
-		return $pattern;
+		return $this;
 	}
 	public function getIsPrefix()
 	{
@@ -47,7 +47,7 @@ class CiTagPatterns_Patterns extends \Cantie\AppStoreConnect\Model
 	public function setIsPrefix($isPrefix)
 	{
 		$this->isPrefix = $isPrefix;
-		return $isPrefix;
+		return $this;
 	}
 
 }
@@ -66,7 +66,7 @@ class CiTagPatterns extends \Cantie\AppStoreConnect\Model
 	public function setIsAllMatch($isAllMatch)
 	{
 		$this->isAllMatch = $isAllMatch;
-		return $isAllMatch;
+		return $this;
 	}
 	/**
 	* @return  CiTagPatterns_Patterns[]
@@ -81,7 +81,7 @@ class CiTagPatterns extends \Cantie\AppStoreConnect\Model
 	public function setPatterns($patterns)
 	{
 		$this->patterns = $patterns;
-		return $patterns;
+		return $this;
 	}
 
 }

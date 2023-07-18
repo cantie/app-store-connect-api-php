@@ -40,7 +40,7 @@ class AppPreviewCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -49,7 +49,7 @@ class AppPreviewCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 	public function getPreviewFrameTimeCode()
 	{
@@ -58,7 +58,7 @@ class AppPreviewCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setPreviewFrameTimeCode($previewFrameTimeCode)
 	{
 		$this->previewFrameTimeCode = $previewFrameTimeCode;
-		return $previewFrameTimeCode;
+		return $this;
 	}
 	public function getMimeType()
 	{
@@ -67,7 +67,7 @@ class AppPreviewCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setMimeType($mimeType)
 	{
 		$this->mimeType = $mimeType;
-		return $mimeType;
+		return $this;
 	}
 
 }
@@ -85,7 +85,7 @@ class AppPreviewCreateRequest_Data_Relationships_AppPreviewSet_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -94,7 +94,7 @@ class AppPreviewCreateRequest_Data_Relationships_AppPreviewSet_Data extends \Can
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -118,7 +118,7 @@ class AppPreviewCreateRequest_Data_Relationships_AppPreviewSet extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class AppPreviewCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setAppPreviewSet($appPreviewSet)
 	{
 		$this->appPreviewSet = $appPreviewSet;
-		return $appPreviewSet;
+		return $this;
 	}
 
 }
@@ -163,7 +163,7 @@ class AppPreviewCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewCreateRequest_Data_Attributes
@@ -178,7 +178,7 @@ class AppPreviewCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppPreviewCreateRequest_Data_Relationships
@@ -193,7 +193,7 @@ class AppPreviewCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -217,7 +217,7 @@ class AppPreviewCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

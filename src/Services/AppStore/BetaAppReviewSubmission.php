@@ -45,7 +45,7 @@ class BetaAppReviewSubmission_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBetaReviewState($betaReviewState)
 	{
 		$this->betaReviewState = $betaReviewState;
-		return $betaReviewState;
+		return $this;
 	}
 	public function getSubmittedDate()
 	{
@@ -54,7 +54,7 @@ class BetaAppReviewSubmission_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubmittedDate($submittedDate)
 	{
 		$this->submittedDate = $submittedDate;
-		return $submittedDate;
+		return $this;
 	}
 
 }
@@ -72,7 +72,7 @@ class BetaAppReviewSubmission_Relationships_Build_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -81,7 +81,7 @@ class BetaAppReviewSubmission_Relationships_Build_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -99,7 +99,7 @@ class BetaAppReviewSubmission_Relationships_Build_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -108,7 +108,7 @@ class BetaAppReviewSubmission_Relationships_Build_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -134,7 +134,7 @@ class BetaAppReviewSubmission_Relationships_Build extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  BetaAppReviewSubmission_Relationships_Build_Data
@@ -149,7 +149,7 @@ class BetaAppReviewSubmission_Relationships_Build extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class BetaAppReviewSubmission_Relationships extends \Cantie\AppStoreConnect\Mode
 	public function setBuild($build)
 	{
 		$this->build = $build;
-		return $build;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class BetaAppReviewSubmission extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -206,7 +206,7 @@ class BetaAppReviewSubmission extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppReviewSubmission_Attributes
@@ -221,7 +221,7 @@ class BetaAppReviewSubmission extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppReviewSubmission_Relationships
@@ -236,7 +236,7 @@ class BetaAppReviewSubmission extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -251,7 +251,7 @@ class BetaAppReviewSubmission extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

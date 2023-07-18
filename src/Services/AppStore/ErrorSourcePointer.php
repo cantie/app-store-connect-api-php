@@ -37,7 +37,7 @@ class ErrorSourcePointer extends \Cantie\AppStoreConnect\Model
 	public function setPointer($pointer)
 	{
 		$this->pointer = $pointer;
-		return $pointer;
+		return $this;
 	}
 
 }

@@ -40,7 +40,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Attributes extends \Cantie\A
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  Platform
@@ -55,7 +55,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Attributes extends \Cantie\A
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getTrafficProportion()
 	{
@@ -64,7 +64,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Attributes extends \Cantie\A
 	public function setTrafficProportion($trafficProportion)
 	{
 		$this->trafficProportion = $trafficProportion;
-		return $trafficProportion;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Relationships_App_Data exten
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Relationships_App_Data exten
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Relationships_App extends \C
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Relationships extends \Canti
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentV2CreateRequest_Data_Attributes
@@ -175,7 +175,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data extends \Cantie\AppStoreConn
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentV2CreateRequest_Data_Relationships
@@ -190,7 +190,7 @@ class AppStoreVersionExperimentV2CreateRequest_Data extends \Cantie\AppStoreConn
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -214,7 +214,7 @@ class AppStoreVersionExperimentV2CreateRequest extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

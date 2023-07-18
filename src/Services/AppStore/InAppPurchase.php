@@ -40,7 +40,7 @@ class InAppPurchase_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setReferenceName($referenceName)
 	{
 		$this->referenceName = $referenceName;
-		return $referenceName;
+		return $this;
 	}
 	public function getProductId()
 	{
@@ -49,7 +49,7 @@ class InAppPurchase_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProductId($productId)
 	{
 		$this->productId = $productId;
-		return $productId;
+		return $this;
 	}
 	public function getInAppPurchaseType()
 	{
@@ -58,7 +58,7 @@ class InAppPurchase_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setInAppPurchaseType($inAppPurchaseType)
 	{
 		$this->inAppPurchaseType = $inAppPurchaseType;
-		return $inAppPurchaseType;
+		return $this;
 	}
 	public function getState()
 	{
@@ -67,7 +67,7 @@ class InAppPurchase_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }
@@ -85,7 +85,7 @@ class InAppPurchase_Relationships_Apps_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -94,7 +94,7 @@ class InAppPurchase_Relationships_Apps_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class InAppPurchase_Relationships_Apps_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -121,7 +121,7 @@ class InAppPurchase_Relationships_Apps_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class InAppPurchase_Relationships_Apps extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -164,7 +164,7 @@ class InAppPurchase_Relationships_Apps extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchase_Relationships_Apps_Data[]
@@ -179,7 +179,7 @@ class InAppPurchase_Relationships_Apps extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -203,7 +203,7 @@ class InAppPurchase_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApps($apps)
 	{
 		$this->apps = $apps;
-		return $apps;
+		return $this;
 	}
 
 }
@@ -227,7 +227,7 @@ class InAppPurchase extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -236,7 +236,7 @@ class InAppPurchase extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchase_Attributes
@@ -251,7 +251,7 @@ class InAppPurchase extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchase_Relationships
@@ -266,7 +266,7 @@ class InAppPurchase extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -281,7 +281,7 @@ class InAppPurchase extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

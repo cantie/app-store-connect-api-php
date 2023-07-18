@@ -44,7 +44,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setContactFirstName($contactFirstName)
 	{
 		$this->contactFirstName = $contactFirstName;
-		return $contactFirstName;
+		return $this;
 	}
 	public function getContactLastName()
 	{
@@ -53,7 +53,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setContactLastName($contactLastName)
 	{
 		$this->contactLastName = $contactLastName;
-		return $contactLastName;
+		return $this;
 	}
 	public function getContactPhone()
 	{
@@ -62,7 +62,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setContactPhone($contactPhone)
 	{
 		$this->contactPhone = $contactPhone;
-		return $contactPhone;
+		return $this;
 	}
 	public function getContactEmail()
 	{
@@ -71,7 +71,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setContactEmail($contactEmail)
 	{
 		$this->contactEmail = $contactEmail;
-		return $contactEmail;
+		return $this;
 	}
 	public function getDemoAccountName()
 	{
@@ -80,7 +80,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setDemoAccountName($demoAccountName)
 	{
 		$this->demoAccountName = $demoAccountName;
-		return $demoAccountName;
+		return $this;
 	}
 	public function getDemoAccountPassword()
 	{
@@ -89,7 +89,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setDemoAccountPassword($demoAccountPassword)
 	{
 		$this->demoAccountPassword = $demoAccountPassword;
-		return $demoAccountPassword;
+		return $this;
 	}
 	public function getDemoAccountRequired()
 	{
@@ -98,7 +98,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setDemoAccountRequired($demoAccountRequired)
 	{
 		$this->demoAccountRequired = $demoAccountRequired;
-		return $demoAccountRequired;
+		return $this;
 	}
 	public function getNotes()
 	{
@@ -107,7 +107,7 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setNotes($notes)
 	{
 		$this->notes = $notes;
-		return $notes;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion_Data 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -134,7 +134,7 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion_Data 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -158,7 +158,7 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion exten
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -182,7 +182,7 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 
 }
@@ -203,7 +203,7 @@ class AppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetailCreateRequest_Data_Attributes
@@ -218,7 +218,7 @@ class AppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetailCreateRequest_Data_Relationships
@@ -233,7 +233,7 @@ class AppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -257,7 +257,7 @@ class AppStoreReviewDetailCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

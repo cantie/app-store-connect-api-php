@@ -39,7 +39,7 @@ class CiStartConditionFileMatcher extends \Cantie\AppStoreConnect\Model
 	public function setDirectory($directory)
 	{
 		$this->directory = $directory;
-		return $directory;
+		return $this;
 	}
 	public function getFileExtension()
 	{
@@ -48,7 +48,7 @@ class CiStartConditionFileMatcher extends \Cantie\AppStoreConnect\Model
 	public function setFileExtension($fileExtension)
 	{
 		$this->fileExtension = $fileExtension;
-		return $fileExtension;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -57,7 +57,7 @@ class CiStartConditionFileMatcher extends \Cantie\AppStoreConnect\Model
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 
 }

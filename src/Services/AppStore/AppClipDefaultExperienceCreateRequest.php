@@ -44,7 +44,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Attributes extends \Cantie\AppS
 	public function setAction($action)
 	{
 		$this->action = $action;
-		return $action;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip_Data exte
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -71,7 +71,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip_Data exte
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip extends \
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -113,7 +113,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppSto
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -122,7 +122,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppSto
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -146,7 +146,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -164,7 +164,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExp
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -173,7 +173,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExp
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExp
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -225,7 +225,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships extends \Cantie\A
 	public function setAppClip($appClip)
 	{
 		$this->appClip = $appClip;
-		return $appClip;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion
@@ -240,7 +240,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships extends \Cantie\A
 	public function setReleaseWithAppStoreVersion($releaseWithAppStoreVersion)
 	{
 		$this->releaseWithAppStoreVersion = $releaseWithAppStoreVersion;
-		return $releaseWithAppStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate
@@ -255,7 +255,7 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships extends \Cantie\A
 	public function setAppClipDefaultExperienceTemplate($appClipDefaultExperienceTemplate)
 	{
 		$this->appClipDefaultExperienceTemplate = $appClipDefaultExperienceTemplate;
-		return $appClipDefaultExperienceTemplate;
+		return $this;
 	}
 
 }
@@ -276,7 +276,7 @@ class AppClipDefaultExperienceCreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceCreateRequest_Data_Attributes
@@ -291,7 +291,7 @@ class AppClipDefaultExperienceCreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceCreateRequest_Data_Relationships
@@ -306,7 +306,7 @@ class AppClipDefaultExperienceCreateRequest_Data extends \Cantie\AppStoreConnect
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -330,7 +330,7 @@ class AppClipDefaultExperienceCreateRequest extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

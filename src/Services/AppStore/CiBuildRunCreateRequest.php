@@ -37,7 +37,7 @@ class CiBuildRunCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	public function setClean($clean)
 	{
 		$this->clean = $clean;
-		return $clean;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class CiBuildRunCreateRequest_Data_Relationships_BuildRun_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -64,7 +64,7 @@ class CiBuildRunCreateRequest_Data_Relationships_BuildRun_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -88,7 +88,7 @@ class CiBuildRunCreateRequest_Data_Relationships_BuildRun extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -106,7 +106,7 @@ class CiBuildRunCreateRequest_Data_Relationships_Workflow_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -115,7 +115,7 @@ class CiBuildRunCreateRequest_Data_Relationships_Workflow_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class CiBuildRunCreateRequest_Data_Relationships_Workflow extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -157,7 +157,7 @@ class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag_Data extends 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -166,7 +166,7 @@ class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag_Data extends 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag extends \Cant
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -208,7 +208,7 @@ class CiBuildRunCreateRequest_Data_Relationships_PullRequest_Data extends \Canti
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -217,7 +217,7 @@ class CiBuildRunCreateRequest_Data_Relationships_PullRequest_Data extends \Canti
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -241,7 +241,7 @@ class CiBuildRunCreateRequest_Data_Relationships_PullRequest extends \Cantie\App
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -271,7 +271,7 @@ class CiBuildRunCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setBuildRun($buildRun)
 	{
 		$this->buildRun = $buildRun;
-		return $buildRun;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRunCreateRequest_Data_Relationships_Workflow
@@ -286,7 +286,7 @@ class CiBuildRunCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setWorkflow($workflow)
 	{
 		$this->workflow = $workflow;
-		return $workflow;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag
@@ -301,7 +301,7 @@ class CiBuildRunCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setSourceBranchOrTag($sourceBranchOrTag)
 	{
 		$this->sourceBranchOrTag = $sourceBranchOrTag;
-		return $sourceBranchOrTag;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRunCreateRequest_Data_Relationships_PullRequest
@@ -316,7 +316,7 @@ class CiBuildRunCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	public function setPullRequest($pullRequest)
 	{
 		$this->pullRequest = $pullRequest;
-		return $pullRequest;
+		return $this;
 	}
 
 }
@@ -337,7 +337,7 @@ class CiBuildRunCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRunCreateRequest_Data_Attributes
@@ -352,7 +352,7 @@ class CiBuildRunCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiBuildRunCreateRequest_Data_Relationships
@@ -367,7 +367,7 @@ class CiBuildRunCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -391,7 +391,7 @@ class CiBuildRunCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

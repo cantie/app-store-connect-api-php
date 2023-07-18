@@ -41,7 +41,7 @@ class BuildIcon_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -56,7 +56,7 @@ class BuildIcon_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIconAsset($iconAsset)
 	{
 		$this->iconAsset = $iconAsset;
-		return $iconAsset;
+		return $this;
 	}
 	/**
 	* @return  IconAssetType
@@ -71,7 +71,7 @@ class BuildIcon_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIconType($iconType)
 	{
 		$this->iconType = $iconType;
-		return $iconType;
+		return $this;
 	}
 
 }
@@ -93,7 +93,7 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -102,7 +102,7 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BuildIcon_Attributes
@@ -117,7 +117,7 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -132,7 +132,7 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

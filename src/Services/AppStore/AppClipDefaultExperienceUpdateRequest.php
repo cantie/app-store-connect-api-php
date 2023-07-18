@@ -44,7 +44,7 @@ class AppClipDefaultExperienceUpdateRequest_Data_Attributes extends \Cantie\AppS
 	public function setAction($action)
 	{
 		$this->action = $action;
-		return $action;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppSto
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -71,7 +71,7 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppSto
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships extends \Cantie\A
 	public function setReleaseWithAppStoreVersion($releaseWithAppStoreVersion)
 	{
 		$this->releaseWithAppStoreVersion = $releaseWithAppStoreVersion;
-		return $releaseWithAppStoreVersion;
+		return $this;
 	}
 
 }
@@ -141,7 +141,7 @@ class AppClipDefaultExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -150,7 +150,7 @@ class AppClipDefaultExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceUpdateRequest_Data_Attributes
@@ -165,7 +165,7 @@ class AppClipDefaultExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceUpdateRequest_Data_Relationships
@@ -180,7 +180,7 @@ class AppClipDefaultExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -204,7 +204,7 @@ class AppClipDefaultExperienceUpdateRequest extends \Cantie\AppStoreConnect\Mode
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

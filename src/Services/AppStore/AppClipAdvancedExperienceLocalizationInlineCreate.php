@@ -46,7 +46,7 @@ class AppClipAdvancedExperienceLocalizationInlineCreate_Attributes extends \Cant
 	public function setLanguage($language)
 	{
 		$this->language = $language;
-		return $language;
+		return $this;
 	}
 	public function getTitle()
 	{
@@ -55,7 +55,7 @@ class AppClipAdvancedExperienceLocalizationInlineCreate_Attributes extends \Cant
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getSubtitle()
 	{
@@ -64,7 +64,7 @@ class AppClipAdvancedExperienceLocalizationInlineCreate_Attributes extends \Cant
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 
 }
@@ -84,7 +84,7 @@ class AppClipAdvancedExperienceLocalizationInlineCreate extends \Cantie\AppStore
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -93,7 +93,7 @@ class AppClipAdvancedExperienceLocalizationInlineCreate extends \Cantie\AppStore
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceLocalizationInlineCreate_Attributes
@@ -108,7 +108,7 @@ class AppClipAdvancedExperienceLocalizationInlineCreate extends \Cantie\AppStore
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }

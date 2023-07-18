@@ -38,7 +38,7 @@ class ReviewSubmissionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setSubmitted($submitted)
 	{
 		$this->submitted = $submitted;
-		return $submitted;
+		return $this;
 	}
 	public function getCanceled()
 	{
@@ -47,7 +47,7 @@ class ReviewSubmissionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setCanceled($canceled)
 	{
 		$this->canceled = $canceled;
-		return $canceled;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class ReviewSubmissionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class ReviewSubmissionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class ReviewSubmissionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class ReviewSubmissionUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

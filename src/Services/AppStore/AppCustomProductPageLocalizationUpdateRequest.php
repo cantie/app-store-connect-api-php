@@ -37,7 +37,7 @@ class AppCustomProductPageLocalizationUpdateRequest_Data_Attributes extends \Can
 	public function setPromotionalText($promotionalText)
 	{
 		$this->promotionalText = $promotionalText;
-		return $promotionalText;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class AppCustomProductPageLocalizationUpdateRequest_Data extends \Cantie\AppStor
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class AppCustomProductPageLocalizationUpdateRequest_Data extends \Cantie\AppStor
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageLocalizationUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class AppCustomProductPageLocalizationUpdateRequest_Data extends \Cantie\AppStor
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppCustomProductPageLocalizationUpdateRequest extends \Cantie\AppStoreConn
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

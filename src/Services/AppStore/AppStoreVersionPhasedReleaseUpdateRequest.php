@@ -44,7 +44,7 @@ class AppStoreVersionPhasedReleaseUpdateRequest_Data_Attributes extends \Cantie\
 	public function setPhasedReleaseState($phasedReleaseState)
 	{
 		$this->phasedReleaseState = $phasedReleaseState;
-		return $phasedReleaseState;
+		return $this;
 	}
 
 }
@@ -64,7 +64,7 @@ class AppStoreVersionPhasedReleaseUpdateRequest_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -73,7 +73,7 @@ class AppStoreVersionPhasedReleaseUpdateRequest_Data extends \Cantie\AppStoreCon
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionPhasedReleaseUpdateRequest_Data_Attributes
@@ -88,7 +88,7 @@ class AppStoreVersionPhasedReleaseUpdateRequest_Data extends \Cantie\AppStoreCon
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class AppStoreVersionPhasedReleaseUpdateRequest extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

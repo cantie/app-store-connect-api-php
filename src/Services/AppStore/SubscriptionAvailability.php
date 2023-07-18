@@ -37,7 +37,7 @@ class SubscriptionAvailability_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAvailableInNewTerritories($availableInNewTerritories)
 	{
 		$this->availableInNewTerritories = $availableInNewTerritories;
-		return $availableInNewTerritories;
+		return $this;
 	}
 
 }
@@ -55,7 +55,7 @@ class SubscriptionAvailability_Relationships_Subscription_Links extends \Cantie\
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -64,7 +64,7 @@ class SubscriptionAvailability_Relationships_Subscription_Links extends \Cantie\
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -82,7 +82,7 @@ class SubscriptionAvailability_Relationships_Subscription_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -91,7 +91,7 @@ class SubscriptionAvailability_Relationships_Subscription_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -117,7 +117,7 @@ class SubscriptionAvailability_Relationships_Subscription extends \Cantie\AppSto
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionAvailability_Relationships_Subscription_Data
@@ -132,7 +132,7 @@ class SubscriptionAvailability_Relationships_Subscription extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -150,7 +150,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories_Links extends 
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -159,7 +159,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories_Links extends 
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -177,7 +177,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -186,7 +186,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -214,7 +214,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories extends \Canti
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -229,7 +229,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories extends \Canti
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionAvailability_Relationships_AvailableTerritories_Data[]
@@ -244,7 +244,7 @@ class SubscriptionAvailability_Relationships_AvailableTerritories extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -270,7 +270,7 @@ class SubscriptionAvailability_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionAvailability_Relationships_AvailableTerritories
@@ -285,7 +285,7 @@ class SubscriptionAvailability_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setAvailableTerritories($availableTerritories)
 	{
 		$this->availableTerritories = $availableTerritories;
-		return $availableTerritories;
+		return $this;
 	}
 
 }
@@ -309,7 +309,7 @@ class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -318,7 +318,7 @@ class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionAvailability_Attributes
@@ -333,7 +333,7 @@ class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionAvailability_Relationships
@@ -348,7 +348,7 @@ class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -363,7 +363,7 @@ class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

@@ -37,7 +37,7 @@ class BetaAppClipInvocationLocalizationUpdateRequest_Data_Attributes extends \Ca
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class BetaAppClipInvocationLocalizationUpdateRequest_Data extends \Cantie\AppSto
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class BetaAppClipInvocationLocalizationUpdateRequest_Data extends \Cantie\AppSto
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocationLocalizationUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class BetaAppClipInvocationLocalizationUpdateRequest_Data extends \Cantie\AppSto
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class BetaAppClipInvocationLocalizationUpdateRequest extends \Cantie\AppStoreCon
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

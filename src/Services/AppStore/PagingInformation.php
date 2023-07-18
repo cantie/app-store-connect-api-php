@@ -38,7 +38,7 @@ class PagingInformation_Paging extends \Cantie\AppStoreConnect\Model
 	public function setTotal($total)
 	{
 		$this->total = $total;
-		return $total;
+		return $this;
 	}
 	public function getLimit()
 	{
@@ -47,7 +47,7 @@ class PagingInformation_Paging extends \Cantie\AppStoreConnect\Model
 	public function setLimit($limit)
 	{
 		$this->limit = $limit;
-		return $limit;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class PagingInformation extends \Cantie\AppStoreConnect\Model
 	public function setPaging($paging)
 	{
 		$this->paging = $paging;
-		return $paging;
+		return $this;
 	}
 
 }

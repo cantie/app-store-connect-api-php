@@ -38,7 +38,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Attributes extends \
 	public function setNumberOfCodes($numberOfCodes)
 	{
 		$this->numberOfCodes = $numberOfCodes;
-		return $numberOfCodes;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -47,7 +47,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Attributes extends \
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships extend
 	public function setOfferCode($offerCode)
 	{
 		$this->offerCode = $offerCode;
-		return $offerCode;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data extends \Cantie\AppS
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data extends \Cantie\AppS
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

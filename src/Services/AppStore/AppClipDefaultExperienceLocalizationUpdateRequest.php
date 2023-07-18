@@ -37,7 +37,7 @@ class AppClipDefaultExperienceLocalizationUpdateRequest_Data_Attributes extends 
 	public function setSubtitle($subtitle)
 	{
 		$this->subtitle = $subtitle;
-		return $subtitle;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class AppClipDefaultExperienceLocalizationUpdateRequest_Data extends \Cantie\App
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class AppClipDefaultExperienceLocalizationUpdateRequest_Data extends \Cantie\App
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipDefaultExperienceLocalizationUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class AppClipDefaultExperienceLocalizationUpdateRequest_Data extends \Cantie\App
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class AppClipDefaultExperienceLocalizationUpdateRequest extends \Cantie\AppStore
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

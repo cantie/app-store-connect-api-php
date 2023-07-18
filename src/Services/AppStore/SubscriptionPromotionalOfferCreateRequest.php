@@ -43,7 +43,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getOfferCode()
 	{
@@ -52,7 +52,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 	public function setOfferCode($offerCode)
 	{
 		$this->offerCode = $offerCode;
-		return $offerCode;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferDuration
@@ -67,7 +67,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 	public function setDuration($duration)
 	{
 		$this->duration = $duration;
-		return $duration;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferMode
@@ -82,7 +82,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 	public function setOfferMode($offerMode)
 	{
 		$this->offerMode = $offerMode;
-		return $offerMode;
+		return $this;
 	}
 	public function getNumberOfPeriods()
 	{
@@ -91,7 +91,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 	public function setNumberOfPeriods($numberOfPeriods)
 	{
 		$this->numberOfPeriods = $numberOfPeriods;
-		return $numberOfPeriods;
+		return $this;
 	}
 
 }
@@ -109,7 +109,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Subscription_
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -118,7 +118,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Subscription_
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Subscription 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Prices_Data e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -169,7 +169,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Prices_Data e
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -193,7 +193,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Prices extend
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -219,7 +219,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships extends \Cant
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferCreateRequest_Data_Relationships_Prices
@@ -234,7 +234,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Relationships extends \Cant
 	public function setPrices($prices)
 	{
 		$this->prices = $prices;
-		return $prices;
+		return $this;
 	}
 
 }
@@ -255,7 +255,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data extends \Cantie\AppStoreCon
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferCreateRequest_Data_Attributes
@@ -270,7 +270,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data extends \Cantie\AppStoreCon
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferCreateRequest_Data_Relationships
@@ -285,7 +285,7 @@ class SubscriptionPromotionalOfferCreateRequest_Data extends \Cantie\AppStoreCon
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -311,7 +311,7 @@ class SubscriptionPromotionalOfferCreateRequest extends \Cantie\AppStoreConnect\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferPriceInlineCreate[]
@@ -326,7 +326,7 @@ class SubscriptionPromotionalOfferCreateRequest extends \Cantie\AppStoreConnect\
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 
 }

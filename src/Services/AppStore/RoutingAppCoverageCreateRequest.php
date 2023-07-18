@@ -38,7 +38,7 @@ class RoutingAppCoverageCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setFileSize($fileSize)
 	{
 		$this->fileSize = $fileSize;
-		return $fileSize;
+		return $this;
 	}
 	public function getFileName()
 	{
@@ -47,7 +47,7 @@ class RoutingAppCoverageCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setFileName($fileName)
 	{
 		$this->fileName = $fileName;
-		return $fileName;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion_Data ex
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion_Data ex
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion extends
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class RoutingAppCoverageCreateRequest_Data_Relationships extends \Cantie\AppStor
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class RoutingAppCoverageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  RoutingAppCoverageCreateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class RoutingAppCoverageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  RoutingAppCoverageCreateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class RoutingAppCoverageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class RoutingAppCoverageCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

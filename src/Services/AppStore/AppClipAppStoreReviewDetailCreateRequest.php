@@ -44,7 +44,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\A
 	public function setInvocationUrls($invocationUrls)
 	{
 		$this->invocationUrls = $invocationUrls;
-		return $invocationUrls;
+		return $this;
 	}
 
 }
@@ -62,7 +62,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefault
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -71,7 +71,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefault
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefault
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships extends \Canti
 	public function setAppClipDefaultExperience($appClipDefaultExperience)
 	{
 		$this->appClipDefaultExperience = $appClipDefaultExperience;
-		return $appClipDefaultExperience;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppClipAppStoreReviewDetailCreateRequest_Data_Attributes
@@ -155,7 +155,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConn
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipAppStoreReviewDetailCreateRequest_Data_Relationships
@@ -170,7 +170,7 @@ class AppClipAppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConn
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -194,7 +194,7 @@ class AppClipAppStoreReviewDetailCreateRequest extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

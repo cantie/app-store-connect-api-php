@@ -43,7 +43,7 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	public function getStatus()
 	{
@@ -52,7 +52,7 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setStatus($status)
 	{
 		$this->status = $status;
-		return $status;
+		return $this;
 	}
 	public function getCode()
 	{
@@ -61,7 +61,7 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setCode($code)
 	{
 		$this->code = $code;
-		return $code;
+		return $this;
 	}
 	public function getTitle()
 	{
@@ -70,7 +70,7 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getDetail()
 	{
@@ -79,7 +79,7 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setDetail($detail)
 	{
 		$this->detail = $detail;
-		return $detail;
+		return $this;
 	}
 	public function getSource()
 	{
@@ -88,7 +88,7 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setSource($source)
 	{
 		$this->source = $source;
-		return $source;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class ErrorResponse extends \Cantie\AppStoreConnect\Model
 	public function setErrors($errors)
 	{
 		$this->errors = $errors;
-		return $errors;
+		return $this;
 	}
 
 }

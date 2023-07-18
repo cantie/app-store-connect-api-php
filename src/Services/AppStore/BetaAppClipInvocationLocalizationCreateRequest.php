@@ -38,7 +38,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Attributes extends \Ca
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -47,7 +47,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Attributes extends \Ca
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships extends 
 	public function setBetaAppClipInvocation($betaAppClipInvocation)
 	{
 		$this->betaAppClipInvocation = $betaAppClipInvocation;
-		return $betaAppClipInvocation;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data extends \Cantie\AppSto
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocationLocalizationCreateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data extends \Cantie\AppSto
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data extends \Cantie\AppSto
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class BetaAppClipInvocationLocalizationCreateRequest extends \Cantie\AppStoreCon
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

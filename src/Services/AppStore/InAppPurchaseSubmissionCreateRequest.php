@@ -38,7 +38,7 @@ class InAppPurchaseSubmissionCreateRequest_Data_Relationships_InAppPurchaseV2_Da
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class InAppPurchaseSubmissionCreateRequest_Data_Relationships_InAppPurchaseV2_Da
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class InAppPurchaseSubmissionCreateRequest_Data_Relationships_InAppPurchaseV2 ex
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class InAppPurchaseSubmissionCreateRequest_Data_Relationships extends \Cantie\Ap
 	public function setInAppPurchaseV2($inAppPurchaseV2)
 	{
 		$this->inAppPurchaseV2 = $inAppPurchaseV2;
-		return $inAppPurchaseV2;
+		return $this;
 	}
 
 }
@@ -114,7 +114,7 @@ class InAppPurchaseSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseSubmissionCreateRequest_Data_Relationships
@@ -129,7 +129,7 @@ class InAppPurchaseSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class InAppPurchaseSubmissionCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

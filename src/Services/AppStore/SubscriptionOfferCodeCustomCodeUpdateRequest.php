@@ -37,7 +37,7 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest_Data_Attributes extends \Cant
 	public function setActive($active)
 	{
 		$this->active = $active;
-		return $active;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest_Data extends \Cantie\AppStore
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest_Data extends \Cantie\AppStore
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeCustomCodeUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest_Data extends \Cantie\AppStore
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest extends \Cantie\AppStoreConne
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

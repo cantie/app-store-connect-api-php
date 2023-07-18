@@ -50,7 +50,7 @@ class AppPricesV2Response extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	public function getIncluded()
 	{
@@ -59,7 +59,7 @@ class AppPricesV2Response extends \Cantie\AppStoreConnect\Model
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 	/**
 	* @return  PagedDocumentLinks
@@ -74,7 +74,7 @@ class AppPricesV2Response extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -89,7 +89,7 @@ class AppPricesV2Response extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 
 }

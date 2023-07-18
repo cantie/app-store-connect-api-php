@@ -39,7 +39,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Attributes extends \Cant
 	public function setCustomCode($customCode)
 	{
 		$this->customCode = $customCode;
-		return $customCode;
+		return $this;
 	}
 	public function getNumberOfCodes()
 	{
@@ -48,7 +48,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Attributes extends \Cant
 	public function setNumberOfCodes($numberOfCodes)
 	{
 		$this->numberOfCodes = $numberOfCodes;
-		return $numberOfCodes;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -57,7 +57,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Attributes extends \Cant
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Relationships_OfferCode_
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -84,7 +84,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Relationships_OfferCode_
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -108,7 +108,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Relationships_OfferCode 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data_Relationships extends \C
 	public function setOfferCode($offerCode)
 	{
 		$this->offerCode = $offerCode;
-		return $offerCode;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data extends \Cantie\AppStore
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeCustomCodeCreateRequest_Data_Attributes
@@ -168,7 +168,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data extends \Cantie\AppStore
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferCodeCustomCodeCreateRequest_Data_Relationships
@@ -183,7 +183,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest_Data extends \Cantie\AppStore
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -207,7 +207,7 @@ class SubscriptionOfferCodeCustomCodeCreateRequest extends \Cantie\AppStoreConne
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

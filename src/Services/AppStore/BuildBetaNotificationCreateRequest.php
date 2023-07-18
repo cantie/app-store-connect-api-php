@@ -38,7 +38,7 @@ class BuildBetaNotificationCreateRequest_Data_Relationships_Build_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class BuildBetaNotificationCreateRequest_Data_Relationships_Build_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class BuildBetaNotificationCreateRequest_Data_Relationships_Build extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class BuildBetaNotificationCreateRequest_Data_Relationships extends \Cantie\AppS
 	public function setBuild($build)
 	{
 		$this->build = $build;
-		return $build;
+		return $this;
 	}
 
 }
@@ -114,7 +114,7 @@ class BuildBetaNotificationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BuildBetaNotificationCreateRequest_Data_Relationships
@@ -129,7 +129,7 @@ class BuildBetaNotificationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class BuildBetaNotificationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

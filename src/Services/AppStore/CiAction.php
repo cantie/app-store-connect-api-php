@@ -40,7 +40,7 @@ class CiAction_TestConfiguration extends \Cantie\AppStoreConnect\Model
 	public function setKind($kind)
 	{
 		$this->kind = $kind;
-		return $kind;
+		return $this;
 	}
 	public function getTestPlanName()
 	{
@@ -49,7 +49,7 @@ class CiAction_TestConfiguration extends \Cantie\AppStoreConnect\Model
 	public function setTestPlanName($testPlanName)
 	{
 		$this->testPlanName = $testPlanName;
-		return $testPlanName;
+		return $this;
 	}
 	/**
 	* @return  CiTestDestination[]
@@ -64,7 +64,7 @@ class CiAction_TestConfiguration extends \Cantie\AppStoreConnect\Model
 	public function setTestDestinations($testDestinations)
 	{
 		$this->testDestinations = $testDestinations;
-		return $testDestinations;
+		return $this;
 	}
 
 }
@@ -91,7 +91,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  CiActionType
@@ -106,7 +106,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setActionType($actionType)
 	{
 		$this->actionType = $actionType;
-		return $actionType;
+		return $this;
 	}
 	public function getDestination()
 	{
@@ -115,7 +115,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setDestination($destination)
 	{
 		$this->destination = $destination;
-		return $destination;
+		return $this;
 	}
 	/**
 	* @return  BuildAudienceType
@@ -130,7 +130,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setBuildDistributionAudience($buildDistributionAudience)
 	{
 		$this->buildDistributionAudience = $buildDistributionAudience;
-		return $buildDistributionAudience;
+		return $this;
 	}
 	/**
 	* @return  CiAction_TestConfiguration
@@ -145,7 +145,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setTestConfiguration($testConfiguration)
 	{
 		$this->testConfiguration = $testConfiguration;
-		return $testConfiguration;
+		return $this;
 	}
 	public function getScheme()
 	{
@@ -154,7 +154,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setScheme($scheme)
 	{
 		$this->scheme = $scheme;
-		return $scheme;
+		return $this;
 	}
 	public function getPlatform()
 	{
@@ -163,7 +163,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getIsRequiredToPass()
 	{
@@ -172,7 +172,7 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	public function setIsRequiredToPass($isRequiredToPass)
 	{
 		$this->isRequiredToPass = $isRequiredToPass;
-		return $isRequiredToPass;
+		return $this;
 	}
 
 }

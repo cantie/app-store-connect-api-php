@@ -43,7 +43,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Attributes extends \Cantie\AppSt
 	public function setStartDate($startDate)
 	{
 		$this->startDate = $startDate;
-		return $startDate;
+		return $this;
 	}
 	public function getEndDate()
 	{
@@ -52,7 +52,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Attributes extends \Cantie\AppSt
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
-		return $endDate;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferDuration
@@ -67,7 +67,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Attributes extends \Cantie\AppSt
 	public function setDuration($duration)
 	{
 		$this->duration = $duration;
-		return $duration;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferMode
@@ -82,7 +82,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Attributes extends \Cantie\AppSt
 	public function setOfferMode($offerMode)
 	{
 		$this->offerMode = $offerMode;
-		return $offerMode;
+		return $this;
 	}
 	public function getNumberOfPeriods()
 	{
@@ -91,7 +91,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Attributes extends \Cantie\AppSt
 	public function setNumberOfPeriods($numberOfPeriods)
 	{
 		$this->numberOfPeriods = $numberOfPeriods;
-		return $numberOfPeriods;
+		return $this;
 	}
 
 }
@@ -109,7 +109,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_Subscription_Data 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -118,7 +118,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_Subscription_Data 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_Subscription exten
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_Territory_Data ext
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -169,7 +169,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_Territory_Data ext
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -193,7 +193,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_Territory extends 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -211,7 +211,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_SubscriptionPriceP
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -220,7 +220,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_SubscriptionPriceP
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -244,7 +244,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships_SubscriptionPriceP
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -272,7 +272,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships extends \Cantie\Ap
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionIntroductoryOfferInlineCreate_Relationships_Territory
@@ -287,7 +287,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships extends \Cantie\Ap
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionIntroductoryOfferInlineCreate_Relationships_SubscriptionPricePoint
@@ -302,7 +302,7 @@ class SubscriptionIntroductoryOfferInlineCreate_Relationships extends \Cantie\Ap
 	public function setSubscriptionPricePoint($subscriptionPricePoint)
 	{
 		$this->subscriptionPricePoint = $subscriptionPricePoint;
-		return $subscriptionPricePoint;
+		return $this;
 	}
 
 }
@@ -324,7 +324,7 @@ class SubscriptionIntroductoryOfferInlineCreate extends \Cantie\AppStoreConnect\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -333,7 +333,7 @@ class SubscriptionIntroductoryOfferInlineCreate extends \Cantie\AppStoreConnect\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionIntroductoryOfferInlineCreate_Attributes
@@ -348,7 +348,7 @@ class SubscriptionIntroductoryOfferInlineCreate extends \Cantie\AppStoreConnect\
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionIntroductoryOfferInlineCreate_Relationships
@@ -363,7 +363,7 @@ class SubscriptionIntroductoryOfferInlineCreate extends \Cantie\AppStoreConnect\
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class AppCustomProductPageVersion_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	public function getState()
 	{
@@ -47,7 +47,7 @@ class AppCustomProductPageVersion_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPage_Links exten
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -74,7 +74,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPage_Links exten
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPage_Data extend
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPage_Data extend
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -127,7 +127,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPage extends \Ca
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersion_Relationships_AppCustomProductPage_Data
@@ -142,7 +142,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPage extends \Ca
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -169,7 +169,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -196,7 +196,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -224,7 +224,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -239,7 +239,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalizations_Data[]
@@ -254,7 +254,7 @@ class AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalization
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -280,7 +280,7 @@ class AppCustomProductPageVersion_Relationships extends \Cantie\AppStoreConnect\
 	public function setAppCustomProductPage($appCustomProductPage)
 	{
 		$this->appCustomProductPage = $appCustomProductPage;
-		return $appCustomProductPage;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersion_Relationships_AppCustomProductPageLocalizations
@@ -295,7 +295,7 @@ class AppCustomProductPageVersion_Relationships extends \Cantie\AppStoreConnect\
 	public function setAppCustomProductPageLocalizations($appCustomProductPageLocalizations)
 	{
 		$this->appCustomProductPageLocalizations = $appCustomProductPageLocalizations;
-		return $appCustomProductPageLocalizations;
+		return $this;
 	}
 
 }
@@ -319,7 +319,7 @@ class AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -328,7 +328,7 @@ class AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersion_Attributes
@@ -343,7 +343,7 @@ class AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppCustomProductPageVersion_Relationships
@@ -358,7 +358,7 @@ class AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -373,7 +373,7 @@ class AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

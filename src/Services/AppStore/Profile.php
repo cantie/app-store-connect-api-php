@@ -45,7 +45,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  BundleIdPlatform
@@ -60,7 +60,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getProfileType()
 	{
@@ -69,7 +69,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProfileType($profileType)
 	{
 		$this->profileType = $profileType;
-		return $profileType;
+		return $this;
 	}
 	public function getProfileState()
 	{
@@ -78,7 +78,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProfileState($profileState)
 	{
 		$this->profileState = $profileState;
-		return $profileState;
+		return $this;
 	}
 	public function getProfileContent()
 	{
@@ -87,7 +87,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProfileContent($profileContent)
 	{
 		$this->profileContent = $profileContent;
-		return $profileContent;
+		return $this;
 	}
 	public function getUuid()
 	{
@@ -96,7 +96,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setUuid($uuid)
 	{
 		$this->uuid = $uuid;
-		return $uuid;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -105,7 +105,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -114,7 +114,7 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class Profile_Relationships_BundleId_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -141,7 +141,7 @@ class Profile_Relationships_BundleId_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -159,7 +159,7 @@ class Profile_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -168,7 +168,7 @@ class Profile_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -194,7 +194,7 @@ class Profile_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  Profile_Relationships_BundleId_Data
@@ -209,7 +209,7 @@ class Profile_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -227,7 +227,7 @@ class Profile_Relationships_Devices_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -236,7 +236,7 @@ class Profile_Relationships_Devices_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -254,7 +254,7 @@ class Profile_Relationships_Devices_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -263,7 +263,7 @@ class Profile_Relationships_Devices_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -291,7 +291,7 @@ class Profile_Relationships_Devices extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -306,7 +306,7 @@ class Profile_Relationships_Devices extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Profile_Relationships_Devices_Data[]
@@ -321,7 +321,7 @@ class Profile_Relationships_Devices extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -339,7 +339,7 @@ class Profile_Relationships_Certificates_Links extends \Cantie\AppStoreConnect\M
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -348,7 +348,7 @@ class Profile_Relationships_Certificates_Links extends \Cantie\AppStoreConnect\M
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -366,7 +366,7 @@ class Profile_Relationships_Certificates_Data extends \Cantie\AppStoreConnect\Mo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -375,7 +375,7 @@ class Profile_Relationships_Certificates_Data extends \Cantie\AppStoreConnect\Mo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -403,7 +403,7 @@ class Profile_Relationships_Certificates extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -418,7 +418,7 @@ class Profile_Relationships_Certificates extends \Cantie\AppStoreConnect\Model
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  Profile_Relationships_Certificates_Data[]
@@ -433,7 +433,7 @@ class Profile_Relationships_Certificates extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -461,7 +461,7 @@ class Profile_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 	/**
 	* @return  Profile_Relationships_Devices
@@ -476,7 +476,7 @@ class Profile_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setDevices($devices)
 	{
 		$this->devices = $devices;
-		return $devices;
+		return $this;
 	}
 	/**
 	* @return  Profile_Relationships_Certificates
@@ -491,7 +491,7 @@ class Profile_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setCertificates($certificates)
 	{
 		$this->certificates = $certificates;
-		return $certificates;
+		return $this;
 	}
 
 }
@@ -515,7 +515,7 @@ class Profile extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -524,7 +524,7 @@ class Profile extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Profile_Attributes
@@ -539,7 +539,7 @@ class Profile extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  Profile_Relationships
@@ -554,7 +554,7 @@ class Profile extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -569,7 +569,7 @@ class Profile extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

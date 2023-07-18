@@ -44,7 +44,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactFirstName($contactFirstName)
 	{
 		$this->contactFirstName = $contactFirstName;
-		return $contactFirstName;
+		return $this;
 	}
 	public function getContactLastName()
 	{
@@ -53,7 +53,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactLastName($contactLastName)
 	{
 		$this->contactLastName = $contactLastName;
-		return $contactLastName;
+		return $this;
 	}
 	public function getContactPhone()
 	{
@@ -62,7 +62,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactPhone($contactPhone)
 	{
 		$this->contactPhone = $contactPhone;
-		return $contactPhone;
+		return $this;
 	}
 	public function getContactEmail()
 	{
@@ -71,7 +71,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContactEmail($contactEmail)
 	{
 		$this->contactEmail = $contactEmail;
-		return $contactEmail;
+		return $this;
 	}
 	public function getDemoAccountName()
 	{
@@ -80,7 +80,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDemoAccountName($demoAccountName)
 	{
 		$this->demoAccountName = $demoAccountName;
-		return $demoAccountName;
+		return $this;
 	}
 	public function getDemoAccountPassword()
 	{
@@ -89,7 +89,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDemoAccountPassword($demoAccountPassword)
 	{
 		$this->demoAccountPassword = $demoAccountPassword;
-		return $demoAccountPassword;
+		return $this;
 	}
 	public function getDemoAccountRequired()
 	{
@@ -98,7 +98,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDemoAccountRequired($demoAccountRequired)
 	{
 		$this->demoAccountRequired = $demoAccountRequired;
-		return $demoAccountRequired;
+		return $this;
 	}
 	public function getNotes()
 	{
@@ -107,7 +107,7 @@ class AppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setNotes($notes)
 	{
 		$this->notes = $notes;
-		return $notes;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class AppStoreReviewDetail_Relationships_AppStoreVersion_Links extends \Cantie\A
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -134,7 +134,7 @@ class AppStoreReviewDetail_Relationships_AppStoreVersion_Links extends \Cantie\A
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -152,7 +152,7 @@ class AppStoreReviewDetail_Relationships_AppStoreVersion_Data extends \Cantie\Ap
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -161,7 +161,7 @@ class AppStoreReviewDetail_Relationships_AppStoreVersion_Data extends \Cantie\Ap
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -187,7 +187,7 @@ class AppStoreReviewDetail_Relationships_AppStoreVersion extends \Cantie\AppStor
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetail_Relationships_AppStoreVersion_Data
@@ -202,7 +202,7 @@ class AppStoreReviewDetail_Relationships_AppStoreVersion extends \Cantie\AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -220,7 +220,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments_Links extends
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -229,7 +229,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments_Links extends
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -247,7 +247,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments_Data extends 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -256,7 +256,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments_Data extends 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -284,7 +284,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments extends \Cant
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -299,7 +299,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments extends \Cant
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetail_Relationships_AppStoreReviewAttachments_Data[]
@@ -314,7 +314,7 @@ class AppStoreReviewDetail_Relationships_AppStoreReviewAttachments extends \Cant
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -340,7 +340,7 @@ class AppStoreReviewDetail_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetail_Relationships_AppStoreReviewAttachments
@@ -355,7 +355,7 @@ class AppStoreReviewDetail_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreReviewAttachments($appStoreReviewAttachments)
 	{
 		$this->appStoreReviewAttachments = $appStoreReviewAttachments;
-		return $appStoreReviewAttachments;
+		return $this;
 	}
 
 }
@@ -379,7 +379,7 @@ class AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -388,7 +388,7 @@ class AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetail_Attributes
@@ -403,7 +403,7 @@ class AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppStoreReviewDetail_Relationships
@@ -418,7 +418,7 @@ class AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -433,7 +433,7 @@ class AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

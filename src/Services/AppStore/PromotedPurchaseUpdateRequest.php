@@ -38,7 +38,7 @@ class PromotedPurchaseUpdateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setVisibleForAllUsers($visibleForAllUsers)
 	{
 		$this->visibleForAllUsers = $visibleForAllUsers;
-		return $visibleForAllUsers;
+		return $this;
 	}
 	public function getEnabled()
 	{
@@ -47,7 +47,7 @@ class PromotedPurchaseUpdateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	public function setEnabled($enabled)
 	{
 		$this->enabled = $enabled;
-		return $enabled;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class PromotedPurchaseUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class PromotedPurchaseUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  PromotedPurchaseUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class PromotedPurchaseUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class PromotedPurchaseUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

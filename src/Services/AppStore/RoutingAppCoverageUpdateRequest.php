@@ -38,7 +38,7 @@ class RoutingAppCoverageUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setSourceFileChecksum($sourceFileChecksum)
 	{
 		$this->sourceFileChecksum = $sourceFileChecksum;
-		return $sourceFileChecksum;
+		return $this;
 	}
 	public function getUploaded()
 	{
@@ -47,7 +47,7 @@ class RoutingAppCoverageUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setUploaded($uploaded)
 	{
 		$this->uploaded = $uploaded;
-		return $uploaded;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class RoutingAppCoverageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class RoutingAppCoverageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  RoutingAppCoverageUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class RoutingAppCoverageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class RoutingAppCoverageUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

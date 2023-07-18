@@ -46,7 +46,7 @@ class BundleIdCapabilityUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setCapabilityType($capabilityType)
 	{
 		$this->capabilityType = $capabilityType;
-		return $capabilityType;
+		return $this;
 	}
 	/**
 	* @return  CapabilitySetting[]
@@ -61,7 +61,7 @@ class BundleIdCapabilityUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	public function setSettings($settings)
 	{
 		$this->settings = $settings;
-		return $settings;
+		return $this;
 	}
 
 }
@@ -81,7 +81,7 @@ class BundleIdCapabilityUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -90,7 +90,7 @@ class BundleIdCapabilityUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BundleIdCapabilityUpdateRequest_Data_Attributes
@@ -105,7 +105,7 @@ class BundleIdCapabilityUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -129,7 +129,7 @@ class BundleIdCapabilityUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

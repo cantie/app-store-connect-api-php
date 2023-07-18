@@ -39,7 +39,7 @@ class AppStoreVersionExperimentV2UpdateRequest_Data_Attributes extends \Cantie\A
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getTrafficProportion()
 	{
@@ -48,7 +48,7 @@ class AppStoreVersionExperimentV2UpdateRequest_Data_Attributes extends \Cantie\A
 	public function setTrafficProportion($trafficProportion)
 	{
 		$this->trafficProportion = $trafficProportion;
-		return $trafficProportion;
+		return $this;
 	}
 	public function getStarted()
 	{
@@ -57,7 +57,7 @@ class AppStoreVersionExperimentV2UpdateRequest_Data_Attributes extends \Cantie\A
 	public function setStarted($started)
 	{
 		$this->started = $started;
-		return $started;
+		return $this;
 	}
 
 }
@@ -77,7 +77,7 @@ class AppStoreVersionExperimentV2UpdateRequest_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -86,7 +86,7 @@ class AppStoreVersionExperimentV2UpdateRequest_Data extends \Cantie\AppStoreConn
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionExperimentV2UpdateRequest_Data_Attributes
@@ -101,7 +101,7 @@ class AppStoreVersionExperimentV2UpdateRequest_Data extends \Cantie\AppStoreConn
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class AppStoreVersionExperimentV2UpdateRequest extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

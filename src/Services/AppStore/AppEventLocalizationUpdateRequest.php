@@ -39,7 +39,7 @@ class AppEventLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getShortDescription()
 	{
@@ -48,7 +48,7 @@ class AppEventLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setShortDescription($shortDescription)
 	{
 		$this->shortDescription = $shortDescription;
-		return $shortDescription;
+		return $this;
 	}
 	public function getLongDescription()
 	{
@@ -57,7 +57,7 @@ class AppEventLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setLongDescription($longDescription)
 	{
 		$this->longDescription = $longDescription;
-		return $longDescription;
+		return $this;
 	}
 
 }
@@ -77,7 +77,7 @@ class AppEventLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -86,7 +86,7 @@ class AppEventLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEventLocalizationUpdateRequest_Data_Attributes
@@ -101,7 +101,7 @@ class AppEventLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -125,7 +125,7 @@ class AppEventLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

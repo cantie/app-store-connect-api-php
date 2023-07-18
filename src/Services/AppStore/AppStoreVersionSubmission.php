@@ -38,7 +38,7 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion_Links extends \Can
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -47,7 +47,7 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion_Links extends \Can
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -100,7 +100,7 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion extends \Cantie\Ap
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionSubmission_Relationships_AppStoreVersion_Data
@@ -115,7 +115,7 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class AppStoreVersionSubmission_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 
 }
@@ -161,7 +161,7 @@ class AppStoreVersionSubmission extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -170,7 +170,7 @@ class AppStoreVersionSubmission extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppStoreVersionSubmission_Relationships
@@ -185,7 +185,7 @@ class AppStoreVersionSubmission extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -200,7 +200,7 @@ class AppStoreVersionSubmission extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

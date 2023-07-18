@@ -38,7 +38,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission_Data
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission_Data
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission exte
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion_Data 
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion_Data 
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion exten
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageV
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -149,7 +149,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageV
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageV
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -191,7 +191,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -200,7 +200,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -224,7 +224,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -242,7 +242,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -251,7 +251,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -275,7 +275,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -293,7 +293,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -302,7 +302,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -326,7 +326,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -360,7 +360,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setReviewSubmission($reviewSubmission)
 	{
 		$this->reviewSubmission = $reviewSubmission;
-		return $reviewSubmission;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion
@@ -375,7 +375,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppStoreVersion($appStoreVersion)
 	{
 		$this->appStoreVersion = $appStoreVersion;
-		return $appStoreVersion;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion
@@ -390,7 +390,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppCustomProductPageVersion($appCustomProductPageVersion)
 	{
 		$this->appCustomProductPageVersion = $appCustomProductPageVersion;
-		return $appCustomProductPageVersion;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment
@@ -405,7 +405,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppStoreVersionExperiment($appStoreVersionExperiment)
 	{
 		$this->appStoreVersionExperiment = $appStoreVersionExperiment;
-		return $appStoreVersionExperiment;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2
@@ -420,7 +420,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppStoreVersionExperimentV2($appStoreVersionExperimentV2)
 	{
 		$this->appStoreVersionExperimentV2 = $appStoreVersionExperimentV2;
-		return $appStoreVersionExperimentV2;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent
@@ -435,7 +435,7 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setAppEvent($appEvent)
 	{
 		$this->appEvent = $appEvent;
-		return $appEvent;
+		return $this;
 	}
 
 }
@@ -454,7 +454,7 @@ class ReviewSubmissionItemCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  ReviewSubmissionItemCreateRequest_Data_Relationships
@@ -469,7 +469,7 @@ class ReviewSubmissionItemCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -493,7 +493,7 @@ class ReviewSubmissionItemCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

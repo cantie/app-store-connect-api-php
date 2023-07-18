@@ -43,7 +43,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getProductId()
 	{
@@ -52,7 +52,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setProductId($productId)
 	{
 		$this->productId = $productId;
-		return $productId;
+		return $this;
 	}
 	public function getFamilySharable()
 	{
@@ -61,7 +61,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setFamilySharable($familySharable)
 	{
 		$this->familySharable = $familySharable;
-		return $familySharable;
+		return $this;
 	}
 	public function getSubscriptionPeriod()
 	{
@@ -70,7 +70,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setSubscriptionPeriod($subscriptionPeriod)
 	{
 		$this->subscriptionPeriod = $subscriptionPeriod;
-		return $subscriptionPeriod;
+		return $this;
 	}
 	public function getReviewNote()
 	{
@@ -79,7 +79,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setReviewNote($reviewNote)
 	{
 		$this->reviewNote = $reviewNote;
-		return $reviewNote;
+		return $this;
 	}
 	public function getGroupLevel()
 	{
@@ -88,7 +88,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setGroupLevel($groupLevel)
 	{
 		$this->groupLevel = $groupLevel;
-		return $groupLevel;
+		return $this;
 	}
 	public function getAvailableInAllTerritories()
 	{
@@ -97,7 +97,7 @@ class SubscriptionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\
 	public function setAvailableInAllTerritories($availableInAllTerritories)
 	{
 		$this->availableInAllTerritories = $availableInAllTerritories;
-		return $availableInAllTerritories;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class SubscriptionCreateRequest_Data_Relationships_Group_Data extends \Cantie\Ap
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -124,7 +124,7 @@ class SubscriptionCreateRequest_Data_Relationships_Group_Data extends \Cantie\Ap
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -148,7 +148,7 @@ class SubscriptionCreateRequest_Data_Relationships_Group extends \Cantie\AppStor
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -172,7 +172,7 @@ class SubscriptionCreateRequest_Data_Relationships extends \Cantie\AppStoreConne
 	public function setGroup($group)
 	{
 		$this->group = $group;
-		return $group;
+		return $this;
 	}
 
 }
@@ -193,7 +193,7 @@ class SubscriptionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionCreateRequest_Data_Attributes
@@ -208,7 +208,7 @@ class SubscriptionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionCreateRequest_Data_Relationships
@@ -223,7 +223,7 @@ class SubscriptionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -247,7 +247,7 @@ class SubscriptionCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

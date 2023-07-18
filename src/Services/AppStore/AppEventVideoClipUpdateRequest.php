@@ -38,7 +38,7 @@ class AppEventVideoClipUpdateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setPreviewFrameTimeCode($previewFrameTimeCode)
 	{
 		$this->previewFrameTimeCode = $previewFrameTimeCode;
-		return $previewFrameTimeCode;
+		return $this;
 	}
 	public function getUploaded()
 	{
@@ -47,7 +47,7 @@ class AppEventVideoClipUpdateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public function setUploaded($uploaded)
 	{
 		$this->uploaded = $uploaded;
-		return $uploaded;
+		return $this;
 	}
 
 }
@@ -67,7 +67,7 @@ class AppEventVideoClipUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -76,7 +76,7 @@ class AppEventVideoClipUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppEventVideoClipUpdateRequest_Data_Attributes
@@ -91,7 +91,7 @@ class AppEventVideoClipUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -115,7 +115,7 @@ class AppEventVideoClipUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -41,7 +41,7 @@ class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	/**
 	* @return  BundleIdPlatform
@@ -56,7 +56,7 @@ class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getIdentifier()
 	{
@@ -65,7 +65,7 @@ class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setIdentifier($identifier)
 	{
 		$this->identifier = $identifier;
-		return $identifier;
+		return $this;
 	}
 	public function getSeedId()
 	{
@@ -74,7 +74,7 @@ class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	public function setSeedId($seedId)
 	{
 		$this->seedId = $seedId;
-		return $seedId;
+		return $this;
 	}
 
 }
@@ -93,7 +93,7 @@ class BundleIdCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BundleIdCreateRequest_Data_Attributes
@@ -108,7 +108,7 @@ class BundleIdCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -132,7 +132,7 @@ class BundleIdCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

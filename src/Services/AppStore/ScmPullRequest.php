@@ -47,7 +47,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setTitle($title)
 	{
 		$this->title = $title;
-		return $title;
+		return $this;
 	}
 	public function getNumber()
 	{
@@ -56,7 +56,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setNumber($number)
 	{
 		$this->number = $number;
-		return $number;
+		return $this;
 	}
 	public function getWebUrl()
 	{
@@ -65,7 +65,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setWebUrl($webUrl)
 	{
 		$this->webUrl = $webUrl;
-		return $webUrl;
+		return $this;
 	}
 	public function getSourceRepositoryOwner()
 	{
@@ -74,7 +74,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceRepositoryOwner($sourceRepositoryOwner)
 	{
 		$this->sourceRepositoryOwner = $sourceRepositoryOwner;
-		return $sourceRepositoryOwner;
+		return $this;
 	}
 	public function getSourceRepositoryName()
 	{
@@ -83,7 +83,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceRepositoryName($sourceRepositoryName)
 	{
 		$this->sourceRepositoryName = $sourceRepositoryName;
-		return $sourceRepositoryName;
+		return $this;
 	}
 	public function getSourceBranchName()
 	{
@@ -92,7 +92,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSourceBranchName($sourceBranchName)
 	{
 		$this->sourceBranchName = $sourceBranchName;
-		return $sourceBranchName;
+		return $this;
 	}
 	public function getDestinationRepositoryOwner()
 	{
@@ -101,7 +101,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDestinationRepositoryOwner($destinationRepositoryOwner)
 	{
 		$this->destinationRepositoryOwner = $destinationRepositoryOwner;
-		return $destinationRepositoryOwner;
+		return $this;
 	}
 	public function getDestinationRepositoryName()
 	{
@@ -110,7 +110,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDestinationRepositoryName($destinationRepositoryName)
 	{
 		$this->destinationRepositoryName = $destinationRepositoryName;
-		return $destinationRepositoryName;
+		return $this;
 	}
 	public function getDestinationBranchName()
 	{
@@ -119,7 +119,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setDestinationBranchName($destinationBranchName)
 	{
 		$this->destinationBranchName = $destinationBranchName;
-		return $destinationBranchName;
+		return $this;
 	}
 	public function getIsClosed()
 	{
@@ -128,7 +128,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsClosed($isClosed)
 	{
 		$this->isClosed = $isClosed;
-		return $isClosed;
+		return $this;
 	}
 	public function getIsCrossRepository()
 	{
@@ -137,7 +137,7 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsCrossRepository($isCrossRepository)
 	{
 		$this->isCrossRepository = $isCrossRepository;
-		return $isCrossRepository;
+		return $this;
 	}
 
 }
@@ -155,7 +155,7 @@ class ScmPullRequest_Relationships_Repository_Links extends \Cantie\AppStoreConn
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -164,7 +164,7 @@ class ScmPullRequest_Relationships_Repository_Links extends \Cantie\AppStoreConn
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -182,7 +182,7 @@ class ScmPullRequest_Relationships_Repository_Data extends \Cantie\AppStoreConne
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -191,7 +191,7 @@ class ScmPullRequest_Relationships_Repository_Data extends \Cantie\AppStoreConne
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -217,7 +217,7 @@ class ScmPullRequest_Relationships_Repository extends \Cantie\AppStoreConnect\Mo
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ScmPullRequest_Relationships_Repository_Data
@@ -232,7 +232,7 @@ class ScmPullRequest_Relationships_Repository extends \Cantie\AppStoreConnect\Mo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -256,7 +256,7 @@ class ScmPullRequest_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setRepository($repository)
 	{
 		$this->repository = $repository;
-		return $repository;
+		return $this;
 	}
 
 }
@@ -280,7 +280,7 @@ class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -289,7 +289,7 @@ class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  ScmPullRequest_Attributes
@@ -304,7 +304,7 @@ class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ScmPullRequest_Relationships
@@ -319,7 +319,7 @@ class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -334,7 +334,7 @@ class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

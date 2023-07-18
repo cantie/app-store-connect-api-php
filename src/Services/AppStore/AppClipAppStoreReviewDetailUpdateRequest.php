@@ -44,7 +44,7 @@ class AppClipAppStoreReviewDetailUpdateRequest_Data_Attributes extends \Cantie\A
 	public function setInvocationUrls($invocationUrls)
 	{
 		$this->invocationUrls = $invocationUrls;
-		return $invocationUrls;
+		return $this;
 	}
 
 }
@@ -64,7 +64,7 @@ class AppClipAppStoreReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -73,7 +73,7 @@ class AppClipAppStoreReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConn
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppClipAppStoreReviewDetailUpdateRequest_Data_Attributes
@@ -88,7 +88,7 @@ class AppClipAppStoreReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConn
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class AppClipAppStoreReviewDetailUpdateRequest extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

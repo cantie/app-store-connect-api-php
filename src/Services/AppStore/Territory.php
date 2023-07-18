@@ -37,7 +37,7 @@ class Territory_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCurrency($currency)
 	{
 		$this->currency = $currency;
-		return $currency;
+		return $this;
 	}
 
 }
@@ -59,7 +59,7 @@ class Territory extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -68,7 +68,7 @@ class Territory extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  Territory_Attributes
@@ -83,7 +83,7 @@ class Territory extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -98,7 +98,7 @@ class Territory extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

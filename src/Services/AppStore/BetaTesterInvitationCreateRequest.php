@@ -38,7 +38,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester_Data exten
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester_Data exten
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester extends \C
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_App_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_App_Data extends \Can
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_App extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -148,7 +148,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setBetaTester($betaTester)
 	{
 		$this->betaTester = $betaTester;
-		return $betaTester;
+		return $this;
 	}
 	/**
 	* @return  BetaTesterInvitationCreateRequest_Data_Relationships_App
@@ -163,7 +163,7 @@ class BetaTesterInvitationCreateRequest_Data_Relationships extends \Cantie\AppSt
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -182,7 +182,7 @@ class BetaTesterInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BetaTesterInvitationCreateRequest_Data_Relationships
@@ -197,7 +197,7 @@ class BetaTesterInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -221,7 +221,7 @@ class BetaTesterInvitationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -95,7 +95,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	public function setSandboxTesters($sandboxTesters)
 	{
 		$this->sandboxTesters = $sandboxTesters;
-		return $sandboxTesters;
+		return $this;
 	}
 
 }
@@ -114,7 +114,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships
@@ -129,7 +129,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data extends \Can
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

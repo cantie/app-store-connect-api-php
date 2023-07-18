@@ -38,7 +38,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory_Data
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory_Data
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory exte
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPr
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPr
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPr
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -148,7 +148,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships extends \Canti
 	public function setTerritory($territory)
 	{
 		$this->territory = $territory;
-		return $territory;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint
@@ -163,7 +163,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships extends \Canti
 	public function setSubscriptionPricePoint($subscriptionPricePoint)
 	{
 		$this->subscriptionPricePoint = $subscriptionPricePoint;
-		return $subscriptionPricePoint;
+		return $this;
 	}
 
 }
@@ -183,7 +183,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -192,7 +192,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate extends \Cantie\AppStoreConn
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferPriceInlineCreate_Relationships
@@ -207,7 +207,7 @@ class SubscriptionPromotionalOfferPriceInlineCreate extends \Cantie\AppStoreConn
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }

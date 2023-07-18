@@ -42,7 +42,7 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getPublicLinkEnabled()
 	{
@@ -51,7 +51,7 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPublicLinkEnabled($publicLinkEnabled)
 	{
 		$this->publicLinkEnabled = $publicLinkEnabled;
-		return $publicLinkEnabled;
+		return $this;
 	}
 	public function getPublicLinkLimitEnabled()
 	{
@@ -60,7 +60,7 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPublicLinkLimitEnabled($publicLinkLimitEnabled)
 	{
 		$this->publicLinkLimitEnabled = $publicLinkLimitEnabled;
-		return $publicLinkLimitEnabled;
+		return $this;
 	}
 	public function getPublicLinkLimit()
 	{
@@ -69,7 +69,7 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setPublicLinkLimit($publicLinkLimit)
 	{
 		$this->publicLinkLimit = $publicLinkLimit;
-		return $publicLinkLimit;
+		return $this;
 	}
 	public function getFeedbackEnabled()
 	{
@@ -78,7 +78,7 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setFeedbackEnabled($feedbackEnabled)
 	{
 		$this->feedbackEnabled = $feedbackEnabled;
-		return $feedbackEnabled;
+		return $this;
 	}
 	public function getIosBuildsAvailableForAppleSiliconMac()
 	{
@@ -87,7 +87,7 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setIosBuildsAvailableForAppleSiliconMac($iosBuildsAvailableForAppleSiliconMac)
 	{
 		$this->iosBuildsAvailableForAppleSiliconMac = $iosBuildsAvailableForAppleSiliconMac;
-		return $iosBuildsAvailableForAppleSiliconMac;
+		return $this;
 	}
 
 }
@@ -107,7 +107,7 @@ class BetaGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -116,7 +116,7 @@ class BetaGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaGroupUpdateRequest_Data_Attributes
@@ -131,7 +131,7 @@ class BetaGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -155,7 +155,7 @@ class BetaGroupUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

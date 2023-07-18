@@ -38,7 +38,7 @@ class ProfileCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getProfileType()
 	{
@@ -47,7 +47,7 @@ class ProfileCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProfileType($profileType)
 	{
 		$this->profileType = $profileType;
-		return $profileType;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class ProfileCreateRequest_Data_Relationships_BundleId_Data extends \Cantie\AppS
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class ProfileCreateRequest_Data_Relationships_BundleId_Data extends \Cantie\AppS
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class ProfileCreateRequest_Data_Relationships_BundleId extends \Cantie\AppStoreC
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class ProfileCreateRequest_Data_Relationships_Devices_Data extends \Cantie\AppSt
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -125,7 +125,7 @@ class ProfileCreateRequest_Data_Relationships_Devices_Data extends \Cantie\AppSt
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class ProfileCreateRequest_Data_Relationships_Devices extends \Cantie\AppStoreCo
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -167,7 +167,7 @@ class ProfileCreateRequest_Data_Relationships_Certificates_Data extends \Cantie\
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -176,7 +176,7 @@ class ProfileCreateRequest_Data_Relationships_Certificates_Data extends \Cantie\
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -200,7 +200,7 @@ class ProfileCreateRequest_Data_Relationships_Certificates extends \Cantie\AppSt
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -228,7 +228,7 @@ class ProfileCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 	/**
 	* @return  ProfileCreateRequest_Data_Relationships_Devices
@@ -243,7 +243,7 @@ class ProfileCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setDevices($devices)
 	{
 		$this->devices = $devices;
-		return $devices;
+		return $this;
 	}
 	/**
 	* @return  ProfileCreateRequest_Data_Relationships_Certificates
@@ -258,7 +258,7 @@ class ProfileCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setCertificates($certificates)
 	{
 		$this->certificates = $certificates;
-		return $certificates;
+		return $this;
 	}
 
 }
@@ -279,7 +279,7 @@ class ProfileCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  ProfileCreateRequest_Data_Attributes
@@ -294,7 +294,7 @@ class ProfileCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ProfileCreateRequest_Data_Relationships
@@ -309,7 +309,7 @@ class ProfileCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -333,7 +333,7 @@ class ProfileCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

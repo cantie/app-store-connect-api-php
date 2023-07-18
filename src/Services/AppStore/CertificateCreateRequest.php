@@ -39,7 +39,7 @@ class CertificateCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 	public function setCsrContent($csrContent)
 	{
 		$this->csrContent = $csrContent;
-		return $csrContent;
+		return $this;
 	}
 	/**
 	* @return  CertificateType
@@ -54,7 +54,7 @@ class CertificateCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 	public function setCertificateType($certificateType)
 	{
 		$this->certificateType = $certificateType;
-		return $certificateType;
+		return $this;
 	}
 
 }
@@ -73,7 +73,7 @@ class CertificateCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  CertificateCreateRequest_Data_Attributes
@@ -88,7 +88,7 @@ class CertificateCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class CertificateCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

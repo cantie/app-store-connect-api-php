@@ -38,7 +38,7 @@ class CiMacOsVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	public function getName()
 	{
@@ -47,7 +47,7 @@ class CiMacOsVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class CiMacOsVersion_Relationships_XcodeVersions_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -74,7 +74,7 @@ class CiMacOsVersion_Relationships_XcodeVersions_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class CiMacOsVersion_Relationships_XcodeVersions_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class CiMacOsVersion_Relationships_XcodeVersions_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -129,7 +129,7 @@ class CiMacOsVersion_Relationships_XcodeVersions extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -144,7 +144,7 @@ class CiMacOsVersion_Relationships_XcodeVersions extends \Cantie\AppStoreConnect
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  CiMacOsVersion_Relationships_XcodeVersions_Data[]
@@ -159,7 +159,7 @@ class CiMacOsVersion_Relationships_XcodeVersions extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -183,7 +183,7 @@ class CiMacOsVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setXcodeVersions($xcodeVersions)
 	{
 		$this->xcodeVersions = $xcodeVersions;
-		return $xcodeVersions;
+		return $this;
 	}
 
 }
@@ -207,7 +207,7 @@ class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -216,7 +216,7 @@ class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiMacOsVersion_Attributes
@@ -231,7 +231,7 @@ class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiMacOsVersion_Relationships
@@ -246,7 +246,7 @@ class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -261,7 +261,7 @@ class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

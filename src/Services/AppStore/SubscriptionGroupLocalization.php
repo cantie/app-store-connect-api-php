@@ -40,7 +40,7 @@ class SubscriptionGroupLocalization_Attributes extends \Cantie\AppStoreConnect\M
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getCustomAppName()
 	{
@@ -49,7 +49,7 @@ class SubscriptionGroupLocalization_Attributes extends \Cantie\AppStoreConnect\M
 	public function setCustomAppName($customAppName)
 	{
 		$this->customAppName = $customAppName;
-		return $customAppName;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -58,7 +58,7 @@ class SubscriptionGroupLocalization_Attributes extends \Cantie\AppStoreConnect\M
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 	public function getState()
 	{
@@ -67,7 +67,7 @@ class SubscriptionGroupLocalization_Attributes extends \Cantie\AppStoreConnect\M
 	public function setState($state)
 	{
 		$this->state = $state;
-		return $state;
+		return $this;
 	}
 
 }
@@ -85,7 +85,7 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Links extend
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -94,7 +94,7 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Links extend
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -121,7 +121,7 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -147,7 +147,7 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup extends \Can
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data
@@ -162,7 +162,7 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -186,7 +186,7 @@ class SubscriptionGroupLocalization_Relationships extends \Cantie\AppStoreConnec
 	public function setSubscriptionGroup($subscriptionGroup)
 	{
 		$this->subscriptionGroup = $subscriptionGroup;
-		return $subscriptionGroup;
+		return $this;
 	}
 
 }
@@ -210,7 +210,7 @@ class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -219,7 +219,7 @@ class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupLocalization_Attributes
@@ -234,7 +234,7 @@ class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionGroupLocalization_Relationships
@@ -249,7 +249,7 @@ class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -264,7 +264,7 @@ class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

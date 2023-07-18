@@ -39,7 +39,7 @@ class CiProduct_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getCreatedDate()
 	{
@@ -48,7 +48,7 @@ class CiProduct_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCreatedDate($createdDate)
 	{
 		$this->createdDate = $createdDate;
-		return $createdDate;
+		return $this;
 	}
 	public function getProductType()
 	{
@@ -57,7 +57,7 @@ class CiProduct_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProductType($productType)
 	{
 		$this->productType = $productType;
-		return $productType;
+		return $this;
 	}
 
 }
@@ -75,7 +75,7 @@ class CiProduct_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -84,7 +84,7 @@ class CiProduct_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -102,7 +102,7 @@ class CiProduct_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -111,7 +111,7 @@ class CiProduct_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -137,7 +137,7 @@ class CiProduct_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Relationships_App_Data
@@ -152,7 +152,7 @@ class CiProduct_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -170,7 +170,7 @@ class CiProduct_Relationships_BundleId_Links extends \Cantie\AppStoreConnect\Mod
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -179,7 +179,7 @@ class CiProduct_Relationships_BundleId_Links extends \Cantie\AppStoreConnect\Mod
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class CiProduct_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -206,7 +206,7 @@ class CiProduct_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -232,7 +232,7 @@ class CiProduct_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Relationships_BundleId_Data
@@ -247,7 +247,7 @@ class CiProduct_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -265,7 +265,7 @@ class CiProduct_Relationships_PrimaryRepositories_Links extends \Cantie\AppStore
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -274,7 +274,7 @@ class CiProduct_Relationships_PrimaryRepositories_Links extends \Cantie\AppStore
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -292,7 +292,7 @@ class CiProduct_Relationships_PrimaryRepositories_Data extends \Cantie\AppStoreC
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -301,7 +301,7 @@ class CiProduct_Relationships_PrimaryRepositories_Data extends \Cantie\AppStoreC
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -329,7 +329,7 @@ class CiProduct_Relationships_PrimaryRepositories extends \Cantie\AppStoreConnec
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -344,7 +344,7 @@ class CiProduct_Relationships_PrimaryRepositories extends \Cantie\AppStoreConnec
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Relationships_PrimaryRepositories_Data[]
@@ -359,7 +359,7 @@ class CiProduct_Relationships_PrimaryRepositories extends \Cantie\AppStoreConnec
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -387,7 +387,7 @@ class CiProduct_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Relationships_BundleId
@@ -402,7 +402,7 @@ class CiProduct_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Relationships_PrimaryRepositories
@@ -417,7 +417,7 @@ class CiProduct_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPrimaryRepositories($primaryRepositories)
 	{
 		$this->primaryRepositories = $primaryRepositories;
-		return $primaryRepositories;
+		return $this;
 	}
 
 }
@@ -441,7 +441,7 @@ class CiProduct extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -450,7 +450,7 @@ class CiProduct extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Attributes
@@ -465,7 +465,7 @@ class CiProduct extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  CiProduct_Relationships
@@ -480,7 +480,7 @@ class CiProduct extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -495,7 +495,7 @@ class CiProduct extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

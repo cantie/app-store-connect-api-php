@@ -46,7 +46,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setBundleId($bundleId)
 	{
 		$this->bundleId = $bundleId;
-		return $bundleId;
+		return $this;
 	}
 	public function getPrimaryLocale()
 	{
@@ -55,7 +55,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPrimaryLocale($primaryLocale)
 	{
 		$this->primaryLocale = $primaryLocale;
-		return $primaryLocale;
+		return $this;
 	}
 	public function getSubscriptionStatusUrl()
 	{
@@ -64,7 +64,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionStatusUrl($subscriptionStatusUrl)
 	{
 		$this->subscriptionStatusUrl = $subscriptionStatusUrl;
-		return $subscriptionStatusUrl;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionStatusUrlVersion
@@ -79,7 +79,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionStatusUrlVersion($subscriptionStatusUrlVersion)
 	{
 		$this->subscriptionStatusUrlVersion = $subscriptionStatusUrlVersion;
-		return $subscriptionStatusUrlVersion;
+		return $this;
 	}
 	public function getSubscriptionStatusUrlForSandbox()
 	{
@@ -88,7 +88,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionStatusUrlForSandbox($subscriptionStatusUrlForSandbox)
 	{
 		$this->subscriptionStatusUrlForSandbox = $subscriptionStatusUrlForSandbox;
-		return $subscriptionStatusUrlForSandbox;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionStatusUrlVersion
@@ -103,7 +103,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionStatusUrlVersionForSandbox($subscriptionStatusUrlVersionForSandbox)
 	{
 		$this->subscriptionStatusUrlVersionForSandbox = $subscriptionStatusUrlVersionForSandbox;
-		return $subscriptionStatusUrlVersionForSandbox;
+		return $this;
 	}
 	public function getAvailableInNewTerritories()
 	{
@@ -112,7 +112,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAvailableInNewTerritories($availableInNewTerritories)
 	{
 		$this->availableInNewTerritories = $availableInNewTerritories;
-		return $availableInNewTerritories;
+		return $this;
 	}
 	public function getContentRightsDeclaration()
 	{
@@ -121,7 +121,7 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContentRightsDeclaration($contentRightsDeclaration)
 	{
 		$this->contentRightsDeclaration = $contentRightsDeclaration;
-		return $contentRightsDeclaration;
+		return $this;
 	}
 
 }
@@ -139,7 +139,7 @@ class AppUpdateRequest_Data_Relationships_Prices_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -148,7 +148,7 @@ class AppUpdateRequest_Data_Relationships_Prices_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -172,7 +172,7 @@ class AppUpdateRequest_Data_Relationships_Prices extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class AppUpdateRequest_Data_Relationships_AvailableTerritories_Data extends \Can
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -199,7 +199,7 @@ class AppUpdateRequest_Data_Relationships_AvailableTerritories_Data extends \Can
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -223,7 +223,7 @@ class AppUpdateRequest_Data_Relationships_AvailableTerritories extends \Cantie\A
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -249,7 +249,7 @@ class AppUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPrices($prices)
 	{
 		$this->prices = $prices;
-		return $prices;
+		return $this;
 	}
 	/**
 	* @return  AppUpdateRequest_Data_Relationships_AvailableTerritories
@@ -264,7 +264,7 @@ class AppUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAvailableTerritories($availableTerritories)
 	{
 		$this->availableTerritories = $availableTerritories;
-		return $availableTerritories;
+		return $this;
 	}
 
 }
@@ -286,7 +286,7 @@ class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -295,7 +295,7 @@ class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppUpdateRequest_Data_Attributes
@@ -310,7 +310,7 @@ class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppUpdateRequest_Data_Relationships
@@ -325,7 +325,7 @@ class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -351,7 +351,7 @@ class AppUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  AppPriceInlineCreate[]
@@ -366,7 +366,7 @@ class AppUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 
 }

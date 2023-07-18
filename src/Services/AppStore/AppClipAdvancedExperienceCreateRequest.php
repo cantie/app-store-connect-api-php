@@ -50,7 +50,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setStreetAddress($streetAddress)
 	{
 		$this->streetAddress = $streetAddress;
-		return $streetAddress;
+		return $this;
 	}
 	public function getFloor()
 	{
@@ -59,7 +59,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setFloor($floor)
 	{
 		$this->floor = $floor;
-		return $floor;
+		return $this;
 	}
 	public function getNeighborhood()
 	{
@@ -68,7 +68,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setNeighborhood($neighborhood)
 	{
 		$this->neighborhood = $neighborhood;
-		return $neighborhood;
+		return $this;
 	}
 	public function getLocality()
 	{
@@ -77,7 +77,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setLocality($locality)
 	{
 		$this->locality = $locality;
-		return $locality;
+		return $this;
 	}
 	public function getStateProvince()
 	{
@@ -86,7 +86,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setStateProvince($stateProvince)
 	{
 		$this->stateProvince = $stateProvince;
-		return $stateProvince;
+		return $this;
 	}
 	public function getPostalCode()
 	{
@@ -95,7 +95,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setPostalCode($postalCode)
 	{
 		$this->postalCode = $postalCode;
-		return $postalCode;
+		return $this;
 	}
 	public function getCountryCode()
 	{
@@ -104,7 +104,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_S
 	public function setCountryCode($countryCode)
 	{
 		$this->countryCode = $countryCode;
-		return $countryCode;
+		return $this;
 	}
 
 }
@@ -123,7 +123,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress e
 	public function setFullAddress($fullAddress)
 	{
 		$this->fullAddress = $fullAddress;
-		return $fullAddress;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress_StructuredAddress
@@ -138,7 +138,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress e
 	public function setStructuredAddress($structuredAddress)
 	{
 		$this->structuredAddress = $structuredAddress;
-		return $structuredAddress;
+		return $this;
 	}
 
 }
@@ -156,7 +156,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_DisplayPoint_
 	public function setLatitude($latitude)
 	{
 		$this->latitude = $latitude;
-		return $latitude;
+		return $this;
 	}
 	public function getLongitude()
 	{
@@ -165,7 +165,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_DisplayPoint_
 	public function setLongitude($longitude)
 	{
 		$this->longitude = $longitude;
-		return $longitude;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_DisplayPoint 
 	public function setCoordinates($coordinates)
 	{
 		$this->coordinates = $coordinates;
-		return $coordinates;
+		return $this;
 	}
 	public function getSource()
 	{
@@ -199,7 +199,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_DisplayPoint 
 	public function setSource($source)
 	{
 		$this->source = $source;
-		return $source;
+		return $this;
 	}
 
 }
@@ -218,7 +218,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_PhoneNumber e
 	public function setNumber($number)
 	{
 		$this->number = $number;
-		return $number;
+		return $this;
 	}
 	public function getType()
 	{
@@ -227,7 +227,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_PhoneNumber e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getIntent()
 	{
@@ -236,7 +236,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_PhoneNumber e
 	public function setIntent($intent)
 	{
 		$this->intent = $intent;
-		return $intent;
+		return $this;
 	}
 
 }
@@ -266,7 +266,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setPlaceId($placeId)
 	{
 		$this->placeId = $placeId;
-		return $placeId;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -281,7 +281,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setNames($names)
 	{
 		$this->names = $names;
-		return $names;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_MainAddress
@@ -296,7 +296,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setMainAddress($mainAddress)
 	{
 		$this->mainAddress = $mainAddress;
-		return $mainAddress;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_DisplayPoint
@@ -311,7 +311,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setDisplayPoint($displayPoint)
 	{
 		$this->displayPoint = $displayPoint;
-		return $displayPoint;
+		return $this;
 	}
 	public function getMapAction()
 	{
@@ -320,7 +320,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setMapAction($mapAction)
 	{
 		$this->mapAction = $mapAction;
-		return $mapAction;
+		return $this;
 	}
 	public function getRelationship()
 	{
@@ -329,7 +329,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setRelationship($relationship)
 	{
 		$this->relationship = $relationship;
-		return $relationship;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place_PhoneNumber
@@ -344,7 +344,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setPhoneNumber($phoneNumber)
 	{
 		$this->phoneNumber = $phoneNumber;
-		return $phoneNumber;
+		return $this;
 	}
 	public function getHomePage()
 	{
@@ -353,7 +353,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setHomePage($homePage)
 	{
 		$this->homePage = $homePage;
-		return $homePage;
+		return $this;
 	}
 	/**
 	* @return  []
@@ -368,7 +368,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place extends \Cant
 	public function setCategories($categories)
 	{
 		$this->categories = $categories;
-		return $categories;
+		return $this;
 	}
 
 }
@@ -393,7 +393,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes extends \Cantie\App
 	public function setLink($link)
 	{
 		$this->link = $link;
-		return $link;
+		return $this;
 	}
 	/**
 	* @return  AppClipAction
@@ -408,7 +408,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes extends \Cantie\App
 	public function setAction($action)
 	{
 		$this->action = $action;
-		return $action;
+		return $this;
 	}
 	public function getIsPoweredBy()
 	{
@@ -417,7 +417,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes extends \Cantie\App
 	public function setIsPoweredBy($isPoweredBy)
 	{
 		$this->isPoweredBy = $isPoweredBy;
-		return $isPoweredBy;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Attributes_Place
@@ -432,7 +432,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes extends \Cantie\App
 	public function setPlace($place)
 	{
 		$this->place = $place;
-		return $place;
+		return $this;
 	}
 	public function getBusinessCategory()
 	{
@@ -441,7 +441,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes extends \Cantie\App
 	public function setBusinessCategory($businessCategory)
 	{
 		$this->businessCategory = $businessCategory;
-		return $businessCategory;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceLanguage
@@ -456,7 +456,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Attributes extends \Cantie\App
 	public function setDefaultLanguage($defaultLanguage)
 	{
 		$this->defaultLanguage = $defaultLanguage;
-		return $defaultLanguage;
+		return $this;
 	}
 
 }
@@ -474,7 +474,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_AppClip_Data ext
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -483,7 +483,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_AppClip_Data ext
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -507,7 +507,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_AppClip extends 
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -525,7 +525,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_HeaderImage_Data
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -534,7 +534,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_HeaderImage_Data
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -558,7 +558,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_HeaderImage exte
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -576,7 +576,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_Localizations_Da
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -585,7 +585,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_Localizations_Da
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -609,7 +609,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships_Localizations ex
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -637,7 +637,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships extends \Cantie\
 	public function setAppClip($appClip)
 	{
 		$this->appClip = $appClip;
-		return $appClip;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Relationships_HeaderImage
@@ -652,7 +652,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships extends \Cantie\
 	public function setHeaderImage($headerImage)
 	{
 		$this->headerImage = $headerImage;
-		return $headerImage;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Relationships_Localizations
@@ -667,7 +667,7 @@ class AppClipAdvancedExperienceCreateRequest_Data_Relationships extends \Cantie\
 	public function setLocalizations($localizations)
 	{
 		$this->localizations = $localizations;
-		return $localizations;
+		return $this;
 	}
 
 }
@@ -688,7 +688,7 @@ class AppClipAdvancedExperienceCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Attributes
@@ -703,7 +703,7 @@ class AppClipAdvancedExperienceCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceCreateRequest_Data_Relationships
@@ -718,7 +718,7 @@ class AppClipAdvancedExperienceCreateRequest_Data extends \Cantie\AppStoreConnec
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -744,7 +744,7 @@ class AppClipAdvancedExperienceCreateRequest extends \Cantie\AppStoreConnect\Mod
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 	/**
 	* @return  AppClipAdvancedExperienceLocalizationInlineCreate[]
@@ -759,7 +759,7 @@ class AppClipAdvancedExperienceCreateRequest extends \Cantie\AppStoreConnect\Mod
 	public function setIncluded($included)
 	{
 		$this->included = $included;
-		return $included;
+		return $this;
 	}
 
 }

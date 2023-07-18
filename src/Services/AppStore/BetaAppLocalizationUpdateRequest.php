@@ -41,7 +41,7 @@ class BetaAppLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setFeedbackEmail($feedbackEmail)
 	{
 		$this->feedbackEmail = $feedbackEmail;
-		return $feedbackEmail;
+		return $this;
 	}
 	public function getMarketingUrl()
 	{
@@ -50,7 +50,7 @@ class BetaAppLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setMarketingUrl($marketingUrl)
 	{
 		$this->marketingUrl = $marketingUrl;
-		return $marketingUrl;
+		return $this;
 	}
 	public function getPrivacyPolicyUrl()
 	{
@@ -59,7 +59,7 @@ class BetaAppLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setPrivacyPolicyUrl($privacyPolicyUrl)
 	{
 		$this->privacyPolicyUrl = $privacyPolicyUrl;
-		return $privacyPolicyUrl;
+		return $this;
 	}
 	public function getTvOsPrivacyPolicy()
 	{
@@ -68,7 +68,7 @@ class BetaAppLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setTvOsPrivacyPolicy($tvOsPrivacyPolicy)
 	{
 		$this->tvOsPrivacyPolicy = $tvOsPrivacyPolicy;
-		return $tvOsPrivacyPolicy;
+		return $this;
 	}
 	public function getDescription()
 	{
@@ -77,7 +77,7 @@ class BetaAppLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	public function setDescription($description)
 	{
 		$this->description = $description;
-		return $description;
+		return $this;
 	}
 
 }
@@ -97,7 +97,7 @@ class BetaAppLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -106,7 +106,7 @@ class BetaAppLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaAppLocalizationUpdateRequest_Data_Attributes
@@ -121,7 +121,7 @@ class BetaAppLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -145,7 +145,7 @@ class BetaAppLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

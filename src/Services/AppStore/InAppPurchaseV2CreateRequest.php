@@ -43,7 +43,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getProductId()
 	{
@@ -52,7 +52,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setProductId($productId)
 	{
 		$this->productId = $productId;
-		return $productId;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseType
@@ -67,7 +67,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setInAppPurchaseType($inAppPurchaseType)
 	{
 		$this->inAppPurchaseType = $inAppPurchaseType;
-		return $inAppPurchaseType;
+		return $this;
 	}
 	public function getReviewNote()
 	{
@@ -76,7 +76,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setReviewNote($reviewNote)
 	{
 		$this->reviewNote = $reviewNote;
-		return $reviewNote;
+		return $this;
 	}
 	public function getFamilySharable()
 	{
@@ -85,7 +85,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setFamilySharable($familySharable)
 	{
 		$this->familySharable = $familySharable;
-		return $familySharable;
+		return $this;
 	}
 	public function getAvailableInAllTerritories()
 	{
@@ -94,7 +94,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setAvailableInAllTerritories($availableInAllTerritories)
 	{
 		$this->availableInAllTerritories = $availableInAllTerritories;
-		return $availableInAllTerritories;
+		return $this;
 	}
 
 }
@@ -112,7 +112,7 @@ class InAppPurchaseV2CreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -121,7 +121,7 @@ class InAppPurchaseV2CreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -145,7 +145,7 @@ class InAppPurchaseV2CreateRequest_Data_Relationships_App extends \Cantie\AppSto
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -169,7 +169,7 @@ class InAppPurchaseV2CreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class InAppPurchaseV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseV2CreateRequest_Data_Attributes
@@ -205,7 +205,7 @@ class InAppPurchaseV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  InAppPurchaseV2CreateRequest_Data_Relationships
@@ -220,7 +220,7 @@ class InAppPurchaseV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -244,7 +244,7 @@ class InAppPurchaseV2CreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

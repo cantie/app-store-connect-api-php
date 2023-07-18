@@ -38,7 +38,7 @@ class AppPreOrder_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPreOrderAvailableDate($preOrderAvailableDate)
 	{
 		$this->preOrderAvailableDate = $preOrderAvailableDate;
-		return $preOrderAvailableDate;
+		return $this;
 	}
 	public function getAppReleaseDate()
 	{
@@ -47,7 +47,7 @@ class AppPreOrder_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAppReleaseDate($appReleaseDate)
 	{
 		$this->appReleaseDate = $appReleaseDate;
-		return $appReleaseDate;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class AppPreOrder_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -74,7 +74,7 @@ class AppPreOrder_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class AppPreOrder_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -101,7 +101,7 @@ class AppPreOrder_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -127,7 +127,7 @@ class AppPreOrder_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  AppPreOrder_Relationships_App_Data
@@ -142,7 +142,7 @@ class AppPreOrder_Relationships_App extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -166,7 +166,7 @@ class AppPreOrder_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -190,7 +190,7 @@ class AppPreOrder extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -199,7 +199,7 @@ class AppPreOrder extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppPreOrder_Attributes
@@ -214,7 +214,7 @@ class AppPreOrder extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  AppPreOrder_Relationships
@@ -229,7 +229,7 @@ class AppPreOrder extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -244,7 +244,7 @@ class AppPreOrder extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

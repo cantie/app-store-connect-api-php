@@ -37,7 +37,7 @@ class BetaLicenseAgreementUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setAgreementText($agreementText)
 	{
 		$this->agreementText = $agreementText;
-		return $agreementText;
+		return $this;
 	}
 
 }
@@ -57,7 +57,7 @@ class BetaLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -66,7 +66,7 @@ class BetaLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  BetaLicenseAgreementUpdateRequest_Data_Attributes
@@ -81,7 +81,7 @@ class BetaLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 
 }
@@ -105,7 +105,7 @@ class BetaLicenseAgreementUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

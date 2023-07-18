@@ -47,7 +47,7 @@ class GameCenterEnabledVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	public function getVersionString()
 	{
@@ -56,7 +56,7 @@ class GameCenterEnabledVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setVersionString($versionString)
 	{
 		$this->versionString = $versionString;
-		return $versionString;
+		return $this;
 	}
 	/**
 	* @return  ImageAsset
@@ -71,7 +71,7 @@ class GameCenterEnabledVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIconAsset($iconAsset)
 	{
 		$this->iconAsset = $iconAsset;
-		return $iconAsset;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions_Links extends \C
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -98,7 +98,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions_Links extends \C
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions_Data extends \Ca
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -125,7 +125,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions_Data extends \Ca
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -153,7 +153,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions extends \Cantie\
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -168,7 +168,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions extends \Cantie\
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  GameCenterEnabledVersion_Relationships_CompatibleVersions_Data[]
@@ -183,7 +183,7 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions extends \Cantie\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -201,7 +201,7 @@ class GameCenterEnabledVersion_Relationships_App_Links extends \Cantie\AppStoreC
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -210,7 +210,7 @@ class GameCenterEnabledVersion_Relationships_App_Links extends \Cantie\AppStoreC
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -228,7 +228,7 @@ class GameCenterEnabledVersion_Relationships_App_Data extends \Cantie\AppStoreCo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -237,7 +237,7 @@ class GameCenterEnabledVersion_Relationships_App_Data extends \Cantie\AppStoreCo
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -263,7 +263,7 @@ class GameCenterEnabledVersion_Relationships_App extends \Cantie\AppStoreConnect
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  GameCenterEnabledVersion_Relationships_App_Data
@@ -278,7 +278,7 @@ class GameCenterEnabledVersion_Relationships_App extends \Cantie\AppStoreConnect
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -304,7 +304,7 @@ class GameCenterEnabledVersion_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setCompatibleVersions($compatibleVersions)
 	{
 		$this->compatibleVersions = $compatibleVersions;
-		return $compatibleVersions;
+		return $this;
 	}
 	/**
 	* @return  GameCenterEnabledVersion_Relationships_App
@@ -319,7 +319,7 @@ class GameCenterEnabledVersion_Relationships extends \Cantie\AppStoreConnect\Mod
 	public function setApp($app)
 	{
 		$this->app = $app;
-		return $app;
+		return $this;
 	}
 
 }
@@ -343,7 +343,7 @@ class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -352,7 +352,7 @@ class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  GameCenterEnabledVersion_Attributes
@@ -367,7 +367,7 @@ class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  GameCenterEnabledVersion_Relationships
@@ -382,7 +382,7 @@ class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -397,7 +397,7 @@ class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

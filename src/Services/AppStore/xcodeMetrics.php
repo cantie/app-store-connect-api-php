@@ -46,7 +46,7 @@ class xcodeMetrics_Insights extends \Cantie\AppStoreConnect\Model
 	public function setTrendingUp($trendingUp)
 	{
 		$this->trendingUp = $trendingUp;
-		return $trendingUp;
+		return $this;
 	}
 	/**
 	* @return  MetricsInsight[]
@@ -61,7 +61,7 @@ class xcodeMetrics_Insights extends \Cantie\AppStoreConnect\Model
 	public function setRegressions($regressions)
 	{
 		$this->regressions = $regressions;
-		return $regressions;
+		return $this;
 	}
 
 }
@@ -80,7 +80,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys extends \Cantie
 	public function setGoalKey($goalKey)
 	{
 		$this->goalKey = $goalKey;
-		return $goalKey;
+		return $this;
 	}
 	public function getLowerBound()
 	{
@@ -89,7 +89,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys extends \Cantie
 	public function setLowerBound($lowerBound)
 	{
 		$this->lowerBound = $lowerBound;
-		return $lowerBound;
+		return $this;
 	}
 	public function getUpperBound()
 	{
@@ -98,7 +98,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys extends \Cantie
 	public function setUpperBound($upperBound)
 	{
 		$this->upperBound = $upperBound;
-		return $upperBound;
+		return $this;
 	}
 
 }
@@ -116,7 +116,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Unit extends \Cantie\App
 	public function setIdentifier($identifier)
 	{
 		$this->identifier = $identifier;
-		return $identifier;
+		return $this;
 	}
 	public function getDisplayName()
 	{
@@ -125,7 +125,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Unit extends \Cantie\App
 	public function setDisplayName($displayName)
 	{
 		$this->displayName = $displayName;
-		return $displayName;
+		return $this;
 	}
 
 }
@@ -144,7 +144,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria 
 	public function setPercentile($percentile)
 	{
 		$this->percentile = $percentile;
-		return $percentile;
+		return $this;
 	}
 	public function getDevice()
 	{
@@ -153,7 +153,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria 
 	public function setDevice($device)
 	{
 		$this->device = $device;
-		return $device;
+		return $this;
 	}
 	public function getDeviceMarketingName()
 	{
@@ -162,7 +162,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria 
 	public function setDeviceMarketingName($deviceMarketingName)
 	{
 		$this->deviceMarketingName = $deviceMarketingName;
-		return $deviceMarketingName;
+		return $this;
 	}
 
 }
@@ -180,7 +180,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_Percenta
 	public function setValue($value)
 	{
 		$this->value = $value;
-		return $value;
+		return $this;
 	}
 	public function getSubSystemLabel()
 	{
@@ -189,7 +189,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_Percenta
 	public function setSubSystemLabel($subSystemLabel)
 	{
 		$this->subSystemLabel = $subSystemLabel;
-		return $subSystemLabel;
+		return $this;
 	}
 
 }
@@ -211,7 +211,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends 
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	public function getValue()
 	{
@@ -220,7 +220,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends 
 	public function setValue($value)
 	{
 		$this->value = $value;
-		return $value;
+		return $this;
 	}
 	public function getErrorMargin()
 	{
@@ -229,7 +229,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends 
 	public function setErrorMargin($errorMargin)
 	{
 		$this->errorMargin = $errorMargin;
-		return $errorMargin;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_PercentageBreakdown
@@ -244,7 +244,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends 
 	public function setPercentageBreakdown($percentageBreakdown)
 	{
 		$this->percentageBreakdown = $percentageBreakdown;
-		return $percentageBreakdown;
+		return $this;
 	}
 	public function getGoal()
 	{
@@ -253,7 +253,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends 
 	public function setGoal($goal)
 	{
 		$this->goal = $goal;
-		return $goal;
+		return $this;
 	}
 
 }
@@ -279,7 +279,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets extends \Cantie
 	public function setFilterCriteria($filterCriteria)
 	{
 		$this->filterCriteria = $filterCriteria;
-		return $filterCriteria;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points[]
@@ -294,7 +294,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets extends \Cantie
 	public function setPoints($points)
 	{
 		$this->points = $points;
-		return $points;
+		return $this;
 	}
 
 }
@@ -317,7 +317,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics extends \Cantie\AppStore
 	public function setIdentifier($identifier)
 	{
 		$this->identifier = $identifier;
-		return $identifier;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys[]
@@ -332,7 +332,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics extends \Cantie\AppStore
 	public function setGoalKeys($goalKeys)
 	{
 		$this->goalKeys = $goalKeys;
-		return $goalKeys;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories_Metrics_Unit
@@ -347,7 +347,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics extends \Cantie\AppStore
 	public function setUnit($unit)
 	{
 		$this->unit = $unit;
-		return $unit;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets[]
@@ -362,7 +362,7 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics extends \Cantie\AppStore
 	public function setDatasets($datasets)
 	{
 		$this->datasets = $datasets;
-		return $datasets;
+		return $this;
 	}
 
 }
@@ -388,7 +388,7 @@ class xcodeMetrics_ProductData_MetricCategories extends \Cantie\AppStoreConnect\
 	public function setIdentifier($identifier)
 	{
 		$this->identifier = $identifier;
-		return $identifier;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories_Metrics[]
@@ -403,7 +403,7 @@ class xcodeMetrics_ProductData_MetricCategories extends \Cantie\AppStoreConnect\
 	public function setMetrics($metrics)
 	{
 		$this->metrics = $metrics;
-		return $metrics;
+		return $this;
 	}
 
 }
@@ -422,7 +422,7 @@ class xcodeMetrics_ProductData extends \Cantie\AppStoreConnect\Model
 	public function setPlatform($platform)
 	{
 		$this->platform = $platform;
-		return $platform;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData_MetricCategories[]
@@ -437,7 +437,7 @@ class xcodeMetrics_ProductData extends \Cantie\AppStoreConnect\Model
 	public function setMetricCategories($metricCategories)
 	{
 		$this->metricCategories = $metricCategories;
-		return $metricCategories;
+		return $this;
 	}
 
 }
@@ -458,7 +458,7 @@ class xcodeMetrics extends \Cantie\AppStoreConnect\Model
 	public function setVersion($version)
 	{
 		$this->version = $version;
-		return $version;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_Insights
@@ -473,7 +473,7 @@ class xcodeMetrics extends \Cantie\AppStoreConnect\Model
 	public function setInsights($insights)
 	{
 		$this->insights = $insights;
-		return $insights;
+		return $this;
 	}
 	/**
 	* @return  xcodeMetrics_ProductData[]
@@ -488,7 +488,7 @@ class xcodeMetrics extends \Cantie\AppStoreConnect\Model
 	public function setProductData($productData)
 	{
 		$this->productData = $productData;
-		return $productData;
+		return $this;
 	}
 
 }

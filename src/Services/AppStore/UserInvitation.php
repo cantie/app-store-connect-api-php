@@ -44,7 +44,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setEmail($email)
 	{
 		$this->email = $email;
-		return $email;
+		return $this;
 	}
 	public function getFirstName()
 	{
@@ -53,7 +53,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setFirstName($firstName)
 	{
 		$this->firstName = $firstName;
-		return $firstName;
+		return $this;
 	}
 	public function getLastName()
 	{
@@ -62,7 +62,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setLastName($lastName)
 	{
 		$this->lastName = $lastName;
-		return $lastName;
+		return $this;
 	}
 	public function getExpirationDate()
 	{
@@ -71,7 +71,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setExpirationDate($expirationDate)
 	{
 		$this->expirationDate = $expirationDate;
-		return $expirationDate;
+		return $this;
 	}
 	/**
 	* @return  UserRole[]
@@ -86,7 +86,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setRoles($roles)
 	{
 		$this->roles = $roles;
-		return $roles;
+		return $this;
 	}
 	public function getAllAppsVisible()
 	{
@@ -95,7 +95,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAllAppsVisible($allAppsVisible)
 	{
 		$this->allAppsVisible = $allAppsVisible;
-		return $allAppsVisible;
+		return $this;
 	}
 	public function getProvisioningAllowed()
 	{
@@ -104,7 +104,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProvisioningAllowed($provisioningAllowed)
 	{
 		$this->provisioningAllowed = $provisioningAllowed;
-		return $provisioningAllowed;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class UserInvitation_Relationships_VisibleApps_Links extends \Cantie\AppStoreCon
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -131,7 +131,7 @@ class UserInvitation_Relationships_VisibleApps_Links extends \Cantie\AppStoreCon
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -149,7 +149,7 @@ class UserInvitation_Relationships_VisibleApps_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -158,7 +158,7 @@ class UserInvitation_Relationships_VisibleApps_Data extends \Cantie\AppStoreConn
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -186,7 +186,7 @@ class UserInvitation_Relationships_VisibleApps extends \Cantie\AppStoreConnect\M
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  PagingInformation
@@ -201,7 +201,7 @@ class UserInvitation_Relationships_VisibleApps extends \Cantie\AppStoreConnect\M
 	public function setMeta($meta)
 	{
 		$this->meta = $meta;
-		return $meta;
+		return $this;
 	}
 	/**
 	* @return  UserInvitation_Relationships_VisibleApps_Data[]
@@ -216,7 +216,7 @@ class UserInvitation_Relationships_VisibleApps extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -240,7 +240,7 @@ class UserInvitation_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setVisibleApps($visibleApps)
 	{
 		$this->visibleApps = $visibleApps;
-		return $visibleApps;
+		return $this;
 	}
 
 }
@@ -264,7 +264,7 @@ class UserInvitation extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -273,7 +273,7 @@ class UserInvitation extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  UserInvitation_Attributes
@@ -288,7 +288,7 @@ class UserInvitation extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  UserInvitation_Relationships
@@ -303,7 +303,7 @@ class UserInvitation extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -318,7 +318,7 @@ class UserInvitation extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

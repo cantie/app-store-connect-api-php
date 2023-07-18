@@ -39,7 +39,7 @@ class CiFilesAndFoldersRule extends \Cantie\AppStoreConnect\Model
 	public function setMode($mode)
 	{
 		$this->mode = $mode;
-		return $mode;
+		return $this;
 	}
 	/**
 	* @return  CiStartConditionFileMatcher[]
@@ -54,7 +54,7 @@ class CiFilesAndFoldersRule extends \Cantie\AppStoreConnect\Model
 	public function setMatchers($matchers)
 	{
 		$this->matchers = $matchers;
-		return $matchers;
+		return $this;
 	}
 
 }

@@ -38,7 +38,7 @@ class BetaBuildLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStor
 	public function setWhatsNew($whatsNew)
 	{
 		$this->whatsNew = $whatsNew;
-		return $whatsNew;
+		return $this;
 	}
 	public function getLocale()
 	{
@@ -47,7 +47,7 @@ class BetaBuildLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStor
 	public function setLocale($locale)
 	{
 		$this->locale = $locale;
-		return $locale;
+		return $this;
 	}
 
 }
@@ -65,7 +65,7 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships_Build_Data extends \
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -74,7 +74,7 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships_Build_Data extends \
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -98,7 +98,7 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships_Build extends \Canti
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships extends \Cantie\AppS
 	public function setBuild($build)
 	{
 		$this->build = $build;
-		return $build;
+		return $this;
 	}
 
 }
@@ -143,7 +143,7 @@ class BetaBuildLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	/**
 	* @return  BetaBuildLocalizationCreateRequest_Data_Attributes
@@ -158,7 +158,7 @@ class BetaBuildLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  BetaBuildLocalizationCreateRequest_Data_Relationships
@@ -173,7 +173,7 @@ class BetaBuildLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -197,7 +197,7 @@ class BetaBuildLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

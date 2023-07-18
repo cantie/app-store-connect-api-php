@@ -38,7 +38,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimaryCategory_Data extends \Cant
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -47,7 +47,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimaryCategory_Data extends \Cant
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -71,7 +71,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimaryCategory extends \Cantie\Ap
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -89,7 +89,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -98,7 +98,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -122,7 +122,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -140,7 +140,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -149,7 +149,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -173,7 +173,7 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -191,7 +191,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory_Data extends \Ca
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -200,7 +200,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory_Data extends \Ca
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -224,7 +224,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory extends \Cantie\
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -242,7 +242,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne_Data exten
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -251,7 +251,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne_Data exten
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -275,7 +275,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne extends \C
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -293,7 +293,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo_Data exten
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -302,7 +302,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo_Data exten
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -326,7 +326,7 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo extends \C
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -360,7 +360,7 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setPrimaryCategory($primaryCategory)
 	{
 		$this->primaryCategory = $primaryCategory;
-		return $primaryCategory;
+		return $this;
 	}
 	/**
 	* @return  AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne
@@ -375,7 +375,7 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setPrimarySubcategoryOne($primarySubcategoryOne)
 	{
 		$this->primarySubcategoryOne = $primarySubcategoryOne;
-		return $primarySubcategoryOne;
+		return $this;
 	}
 	/**
 	* @return  AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo
@@ -390,7 +390,7 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setPrimarySubcategoryTwo($primarySubcategoryTwo)
 	{
 		$this->primarySubcategoryTwo = $primarySubcategoryTwo;
-		return $primarySubcategoryTwo;
+		return $this;
 	}
 	/**
 	* @return  AppInfoUpdateRequest_Data_Relationships_SecondaryCategory
@@ -405,7 +405,7 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setSecondaryCategory($secondaryCategory)
 	{
 		$this->secondaryCategory = $secondaryCategory;
-		return $secondaryCategory;
+		return $this;
 	}
 	/**
 	* @return  AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne
@@ -420,7 +420,7 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setSecondarySubcategoryOne($secondarySubcategoryOne)
 	{
 		$this->secondarySubcategoryOne = $secondarySubcategoryOne;
-		return $secondarySubcategoryOne;
+		return $this;
 	}
 	/**
 	* @return  AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo
@@ -435,7 +435,7 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	public function setSecondarySubcategoryTwo($secondarySubcategoryTwo)
 	{
 		$this->secondarySubcategoryTwo = $secondarySubcategoryTwo;
-		return $secondarySubcategoryTwo;
+		return $this;
 	}
 
 }
@@ -455,7 +455,7 @@ class AppInfoUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -464,7 +464,7 @@ class AppInfoUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  AppInfoUpdateRequest_Data_Relationships
@@ -479,7 +479,7 @@ class AppInfoUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
@@ -503,7 +503,7 @@ class AppInfoUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }

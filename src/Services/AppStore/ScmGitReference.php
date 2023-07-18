@@ -41,7 +41,7 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getCanonicalName()
 	{
@@ -50,7 +50,7 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCanonicalName($canonicalName)
 	{
 		$this->canonicalName = $canonicalName;
-		return $canonicalName;
+		return $this;
 	}
 	public function getIsDeleted()
 	{
@@ -59,7 +59,7 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setIsDeleted($isDeleted)
 	{
 		$this->isDeleted = $isDeleted;
-		return $isDeleted;
+		return $this;
 	}
 	/**
 	* @return  CiGitRefKind
@@ -74,7 +74,7 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setKind($kind)
 	{
 		$this->kind = $kind;
-		return $kind;
+		return $this;
 	}
 
 }
@@ -92,7 +92,7 @@ class ScmGitReference_Relationships_Repository_Links extends \Cantie\AppStoreCon
 	public function setSelf($self)
 	{
 		$this->self = $self;
-		return $self;
+		return $this;
 	}
 	public function getRelated()
 	{
@@ -101,7 +101,7 @@ class ScmGitReference_Relationships_Repository_Links extends \Cantie\AppStoreCon
 	public function setRelated($related)
 	{
 		$this->related = $related;
-		return $related;
+		return $this;
 	}
 
 }
@@ -119,7 +119,7 @@ class ScmGitReference_Relationships_Repository_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -128,7 +128,7 @@ class ScmGitReference_Relationships_Repository_Data extends \Cantie\AppStoreConn
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -154,7 +154,7 @@ class ScmGitReference_Relationships_Repository extends \Cantie\AppStoreConnect\M
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 	/**
 	* @return  ScmGitReference_Relationships_Repository_Data
@@ -169,7 +169,7 @@ class ScmGitReference_Relationships_Repository extends \Cantie\AppStoreConnect\M
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -193,7 +193,7 @@ class ScmGitReference_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setRepository($repository)
 	{
 		$this->repository = $repository;
-		return $repository;
+		return $this;
 	}
 
 }
@@ -217,7 +217,7 @@ class ScmGitReference extends \Cantie\AppStoreConnect\Model
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -226,7 +226,7 @@ class ScmGitReference extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  ScmGitReference_Attributes
@@ -241,7 +241,7 @@ class ScmGitReference extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  ScmGitReference_Relationships
@@ -256,7 +256,7 @@ class ScmGitReference extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 	/**
 	* @return  ResourceLinks
@@ -271,7 +271,7 @@ class ScmGitReference extends \Cantie\AppStoreConnect\Model
 	public function setLinks($links)
 	{
 		$this->links = $links;
-		return $links;
+		return $this;
 	}
 
 }

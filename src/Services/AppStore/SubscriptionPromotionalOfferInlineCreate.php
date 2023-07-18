@@ -43,7 +43,7 @@ class SubscriptionPromotionalOfferInlineCreate_Attributes extends \Cantie\AppSto
 	public function setName($name)
 	{
 		$this->name = $name;
-		return $name;
+		return $this;
 	}
 	public function getOfferCode()
 	{
@@ -52,7 +52,7 @@ class SubscriptionPromotionalOfferInlineCreate_Attributes extends \Cantie\AppSto
 	public function setOfferCode($offerCode)
 	{
 		$this->offerCode = $offerCode;
-		return $offerCode;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferDuration
@@ -67,7 +67,7 @@ class SubscriptionPromotionalOfferInlineCreate_Attributes extends \Cantie\AppSto
 	public function setDuration($duration)
 	{
 		$this->duration = $duration;
-		return $duration;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionOfferMode
@@ -82,7 +82,7 @@ class SubscriptionPromotionalOfferInlineCreate_Attributes extends \Cantie\AppSto
 	public function setOfferMode($offerMode)
 	{
 		$this->offerMode = $offerMode;
-		return $offerMode;
+		return $this;
 	}
 	public function getNumberOfPeriods()
 	{
@@ -91,7 +91,7 @@ class SubscriptionPromotionalOfferInlineCreate_Attributes extends \Cantie\AppSto
 	public function setNumberOfPeriods($numberOfPeriods)
 	{
 		$this->numberOfPeriods = $numberOfPeriods;
-		return $numberOfPeriods;
+		return $this;
 	}
 
 }
@@ -109,7 +109,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships_Subscription_Data e
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -118,7 +118,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships_Subscription_Data e
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -142,7 +142,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships_Subscription extend
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -160,7 +160,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships_Prices_Data extends
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -169,7 +169,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships_Prices_Data extends
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 
 }
@@ -193,7 +193,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships_Prices extends \Can
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $data;
+		return $this;
 	}
 
 }
@@ -219,7 +219,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships extends \Cantie\App
 	public function setSubscription($subscription)
 	{
 		$this->subscription = $subscription;
-		return $subscription;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferInlineCreate_Relationships_Prices
@@ -234,7 +234,7 @@ class SubscriptionPromotionalOfferInlineCreate_Relationships extends \Cantie\App
 	public function setPrices($prices)
 	{
 		$this->prices = $prices;
-		return $prices;
+		return $this;
 	}
 
 }
@@ -256,7 +256,7 @@ class SubscriptionPromotionalOfferInlineCreate extends \Cantie\AppStoreConnect\M
 	public function setType($type)
 	{
 		$this->type = $type;
-		return $type;
+		return $this;
 	}
 	public function getId()
 	{
@@ -265,7 +265,7 @@ class SubscriptionPromotionalOfferInlineCreate extends \Cantie\AppStoreConnect\M
 	public function setId($id)
 	{
 		$this->id = $id;
-		return $id;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferInlineCreate_Attributes
@@ -280,7 +280,7 @@ class SubscriptionPromotionalOfferInlineCreate extends \Cantie\AppStoreConnect\M
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $attributes;
+		return $this;
 	}
 	/**
 	* @return  SubscriptionPromotionalOfferInlineCreate_Relationships
@@ -295,7 +295,7 @@ class SubscriptionPromotionalOfferInlineCreate extends \Cantie\AppStoreConnect\M
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $relationships;
+		return $this;
 	}
 
 }
