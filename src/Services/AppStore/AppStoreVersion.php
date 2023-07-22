@@ -28,11 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppStoreVersion_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $versionString;
-	protected $appStoreStateType = AppStoreVersionState::class;
-	protected $appStoreStateDataType = '';
+	public $appStoreState; // 
 	public $copyright;
 	public $releaseType; // MANUAL, AFTER_APPROVAL, SCHEDULED
 	public $earliestReleaseDate;
@@ -40,14 +38,14 @@ class AppStoreVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public $createdDate;
 
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{
@@ -64,14 +62,14 @@ class AppStoreVersion_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  AppStoreVersionState
+	* @return  string
 	*/
 	public function getAppStoreState()
 	{
 		return $this->appStoreState;
 	}
 	/**
-	* @param  AppStoreVersionState
+	* @param  string
 	*/
 	public function setAppStoreState($appStoreState)
 	{

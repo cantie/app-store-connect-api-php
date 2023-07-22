@@ -28,7 +28,19 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class InAppPurchaseState extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $MISSING_METADATA = "MISSING_METADATA";
+	public static $WAITING_FOR_UPLOAD = "WAITING_FOR_UPLOAD";
+	public static $PROCESSING_CONTENT = "PROCESSING_CONTENT";
+	public static $READY_TO_SUBMIT = "READY_TO_SUBMIT";
+	public static $WAITING_FOR_REVIEW = "WAITING_FOR_REVIEW";
+	public static $IN_REVIEW = "IN_REVIEW";
+	public static $DEVELOPER_ACTION_NEEDED = "DEVELOPER_ACTION_NEEDED";
+	public static $PENDING_BINARY_APPROVAL = "PENDING_BINARY_APPROVAL";
+	public static $APPROVED = "APPROVED";
+	public static $DEVELOPER_REMOVED_FROM_SALE = "DEVELOPER_REMOVED_FROM_SALE";
+	public static $REMOVED_FROM_SALE = "REMOVED_FROM_SALE";
+	public static $REJECTED = "REJECTED";
 
 
 }

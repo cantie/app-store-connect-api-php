@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiExecutionProgress extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $PENDING = "PENDING";
+	public static $RUNNING = "RUNNING";
+	public static $COMPLETE = "COMPLETE";
 
 
 }

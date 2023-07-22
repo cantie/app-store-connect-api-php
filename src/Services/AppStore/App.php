@@ -34,11 +34,9 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 	public $primaryLocale;
 	public $isOrEverWasMadeForKids;
 	public $subscriptionStatusUrl;
-	protected $subscriptionStatusUrlVersionType = SubscriptionStatusUrlVersion::class;
-	protected $subscriptionStatusUrlVersionDataType = '';
+	public $subscriptionStatusUrlVersion; // 
 	public $subscriptionStatusUrlForSandbox;
-	protected $subscriptionStatusUrlVersionForSandboxType = SubscriptionStatusUrlVersion::class;
-	protected $subscriptionStatusUrlVersionForSandboxDataType = '';
+	public $subscriptionStatusUrlVersionForSandbox; // 
 	public $availableInNewTerritories;
 	public $contentRightsDeclaration; // DOES_NOT_USE_THIRD_PARTY_CONTENT, USES_THIRD_PARTY_CONTENT
 
@@ -97,14 +95,14 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  SubscriptionStatusUrlVersion
+	* @return  string
 	*/
 	public function getSubscriptionStatusUrlVersion()
 	{
 		return $this->subscriptionStatusUrlVersion;
 	}
 	/**
-	* @param  SubscriptionStatusUrlVersion
+	* @param  string
 	*/
 	public function setSubscriptionStatusUrlVersion($subscriptionStatusUrlVersion)
 	{
@@ -121,14 +119,14 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  SubscriptionStatusUrlVersion
+	* @return  string
 	*/
 	public function getSubscriptionStatusUrlVersionForSandbox()
 	{
 		return $this->subscriptionStatusUrlVersionForSandbox;
 	}
 	/**
-	* @param  SubscriptionStatusUrlVersion
+	* @param  string
 	*/
 	public function setSubscriptionStatusUrlVersionForSandbox($subscriptionStatusUrlVersionForSandbox)
 	{

@@ -28,20 +28,19 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppClipAdvancedExperienceLocalizationInlineCreate_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $languageType = AppClipAdvancedExperienceLanguage::class;
-	protected $languageDataType = '';
+	public $language; // 
 	public $title;
 	public $subtitle;
 
 	/**
-	* @return  AppClipAdvancedExperienceLanguage
+	* @return  string
 	*/
 	public function getLanguage()
 	{
 		return $this->language;
 	}
 	/**
-	* @param  AppClipAdvancedExperienceLanguage
+	* @param  string
 	*/
 	public function setLanguage($language)
 	{

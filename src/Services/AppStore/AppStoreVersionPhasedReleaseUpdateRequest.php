@@ -28,18 +28,17 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppStoreVersionPhasedReleaseUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $phasedReleaseStateType = PhasedReleaseState::class;
-	protected $phasedReleaseStateDataType = '';
+	public $phasedReleaseState; // 
 
 	/**
-	* @return  PhasedReleaseState
+	* @return  string
 	*/
 	public function getPhasedReleaseState()
 	{
 		return $this->phasedReleaseState;
 	}
 	/**
-	* @param  PhasedReleaseState
+	* @param  string
 	*/
 	public function setPhasedReleaseState($phasedReleaseState)
 	{

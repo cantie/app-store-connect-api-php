@@ -32,8 +32,7 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	public $deviceTypeIdentifier;
 	public $runtimeName;
 	public $runtimeIdentifier;
-	protected $kindType = CiTestDestinationKind::class;
-	protected $kindDataType = '';
+	public $kind; // 
 
 	public function getDeviceTypeName()
 	{
@@ -72,14 +71,14 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiTestDestinationKind
+	* @return  string
 	*/
 	public function getKind()
 	{
 		return $this->kind;
 	}
 	/**
-	* @param  CiTestDestinationKind
+	* @param  string
 	*/
 	public function setKind($kind)
 	{

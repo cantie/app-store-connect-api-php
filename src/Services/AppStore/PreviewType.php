@@ -28,7 +28,22 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class PreviewType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $IPHONE_67 = "IPHONE_67";
+	public static $IPHONE_61 = "IPHONE_61";
+	public static $IPHONE_65 = "IPHONE_65";
+	public static $IPHONE_58 = "IPHONE_58";
+	public static $IPHONE_55 = "IPHONE_55";
+	public static $IPHONE_47 = "IPHONE_47";
+	public static $IPHONE_40 = "IPHONE_40";
+	public static $IPHONE_35 = "IPHONE_35";
+	public static $IPAD_PRO_3GEN_129 = "IPAD_PRO_3GEN_129";
+	public static $IPAD_PRO_3GEN_11 = "IPAD_PRO_3GEN_11";
+	public static $IPAD_PRO_129 = "IPAD_PRO_129";
+	public static $IPAD_105 = "IPAD_105";
+	public static $IPAD_97 = "IPAD_97";
+	public static $DESKTOP = "DESKTOP";
+	public static $APPLE_TV = "APPLE_TV";
 
 
 }

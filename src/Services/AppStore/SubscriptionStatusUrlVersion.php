@@ -28,7 +28,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SubscriptionStatusUrlVersion extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $V1 = "V1";
+	public static $V2 = "V2";
+	public static $V1 = "v1";
+	public static $V2 = "v2";
 
 
 }

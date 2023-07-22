@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SubscriptionOfferMode extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $PAY_AS_YOU_GO = "PAY_AS_YOU_GO";
+	public static $PAY_UP_FRONT = "PAY_UP_FRONT";
+	public static $FREE_TRIAL = "FREE_TRIAL";
 
 
 }

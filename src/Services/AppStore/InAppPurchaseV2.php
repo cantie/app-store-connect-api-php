@@ -30,10 +30,8 @@ class InAppPurchaseV2_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
 	public $productId;
-	protected $inAppPurchaseTypeType = InAppPurchaseType::class;
-	protected $inAppPurchaseTypeDataType = '';
-	protected $stateType = InAppPurchaseState::class;
-	protected $stateDataType = '';
+	public $inAppPurchaseType; // 
+	public $state; // 
 	public $reviewNote;
 	public $familySharable;
 	public $contentHosting;
@@ -58,14 +56,14 @@ class InAppPurchaseV2_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  InAppPurchaseType
+	* @return  string
 	*/
 	public function getInAppPurchaseType()
 	{
 		return $this->inAppPurchaseType;
 	}
 	/**
-	* @param  InAppPurchaseType
+	* @param  string
 	*/
 	public function setInAppPurchaseType($inAppPurchaseType)
 	{
@@ -73,14 +71,14 @@ class InAppPurchaseV2_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  InAppPurchaseState
+	* @return  string
 	*/
 	public function getState()
 	{
 		return $this->state;
 	}
 	/**
-	* @param  InAppPurchaseState
+	* @param  string
 	*/
 	public function setState($state)
 	{

@@ -31,8 +31,7 @@ class SandboxTesterV2_Attributes extends \Cantie\AppStoreConnect\Model
 	public $firstName;
 	public $lastName;
 	public $acAccountName;
-	protected $territoryType = TerritoryCode::class;
-	protected $territoryDataType = '';
+	public $territory; // 
 	public $applePayCompatible;
 	public $interruptPurchases;
 	public $subscriptionRenewalRate; // MONTHLY_RENEWAL_EVERY_ONE_HOUR, MONTHLY_RENEWAL_EVERY_THIRTY_MINUTES, MONTHLY_RENEWAL_EVERY_FIFTEEN_MINUTES, MONTHLY_RENEWAL_EVERY_FIVE_MINUTES, MONTHLY_RENEWAL_EVERY_THREE_MINUTES
@@ -65,14 +64,14 @@ class SandboxTesterV2_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  TerritoryCode
+	* @return  string
 	*/
 	public function getTerritory()
 	{
 		return $this->territory;
 	}
 	/**
-	* @param  TerritoryCode
+	* @param  string
 	*/
 	public function setTerritory($territory)
 	{

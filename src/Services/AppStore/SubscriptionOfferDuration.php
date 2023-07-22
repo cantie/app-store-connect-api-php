@@ -28,7 +28,16 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SubscriptionOfferDuration extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $ONE_DAY = "ONE_DAY";
+	public static $THREE_DAYS = "THREE_DAYS";
+	public static $ONE_WEEK = "ONE_WEEK";
+	public static $TWO_WEEKS = "TWO_WEEKS";
+	public static $ONE_MONTH = "ONE_MONTH";
+	public static $TWO_MONTHS = "TWO_MONTHS";
+	public static $THREE_MONTHS = "THREE_MONTHS";
+	public static $SIX_MONTHS = "SIX_MONTHS";
+	public static $ONE_YEAR = "ONE_YEAR";
 
 
 }

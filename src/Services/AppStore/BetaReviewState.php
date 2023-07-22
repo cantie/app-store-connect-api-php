@@ -28,7 +28,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BetaReviewState extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $WAITING_FOR_REVIEW = "WAITING_FOR_REVIEW";
+	public static $IN_REVIEW = "IN_REVIEW";
+	public static $REJECTED = "REJECTED";
+	public static $APPROVED = "APPROVED";
 
 
 }

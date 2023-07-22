@@ -28,7 +28,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class PhasedReleaseState extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $INACTIVE = "INACTIVE";
+	public static $ACTIVE = "ACTIVE";
+	public static $PAUSED = "PAUSED";
+	public static $COMPLETE = "COMPLETE";
 
 
 }

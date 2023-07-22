@@ -28,19 +28,18 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BetaAppReviewSubmission_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $betaReviewStateType = BetaReviewState::class;
-	protected $betaReviewStateDataType = '';
+	public $betaReviewState; // 
 	public $submittedDate;
 
 	/**
-	* @return  BetaReviewState
+	* @return  string
 	*/
 	public function getBetaReviewState()
 	{
 		return $this->betaReviewState;
 	}
 	/**
-	* @param  BetaReviewState
+	* @param  string
 	*/
 	public function setBetaReviewState($betaReviewState)
 	{

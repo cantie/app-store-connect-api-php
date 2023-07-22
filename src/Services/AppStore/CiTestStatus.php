@@ -28,7 +28,12 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiTestStatus extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $SUCCESS = "SUCCESS";
+	public static $FAILURE = "FAILURE";
+	public static $MIXED = "MIXED";
+	public static $SKIPPED = "SKIPPED";
+	public static $EXPECTED_FAILURE = "EXPECTED_FAILURE";
 
 
 }

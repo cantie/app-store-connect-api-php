@@ -30,8 +30,7 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 {
 	public $optIn;
 	public $sandboxOptIn;
-	protected $durationType = SubscriptionGracePeriodDuration::class;
-	protected $durationDataType = '';
+	public $duration; // 
 	public $renewalType; // ALL_RENEWALS, PAID_TO_PAID_ONLY
 
 	public function getOptIn()
@@ -53,14 +52,14 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 		return $this;
 	}
 	/**
-	* @return  SubscriptionGracePeriodDuration
+	* @return  string
 	*/
 	public function getDuration()
 	{
 		return $this->duration;
 	}
 	/**
-	* @param  SubscriptionGracePeriodDuration
+	* @param  string
 	*/
 	public function setDuration($duration)
 	{

@@ -38,8 +38,7 @@ class AppEventVideoClip_Attributes extends \Cantie\AppStoreConnect\Model
 	protected $uploadOperationsDataType = 'array';
 	protected $assetDeliveryStateType = AppMediaAssetState::class;
 	protected $assetDeliveryStateDataType = '';
-	protected $appEventAssetTypeType = AppEventAssetType::class;
-	protected $appEventAssetTypeDataType = '';
+	public $appEventAssetType; // 
 
 	public function getFileSize()
 	{
@@ -123,14 +122,14 @@ class AppEventVideoClip_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  AppEventAssetType
+	* @return  string
 	*/
 	public function getAppEventAssetType()
 	{
 		return $this->appEventAssetType;
 	}
 	/**
-	* @param  AppEventAssetType
+	* @param  string
 	*/
 	public function setAppEventAssetType($appEventAssetType)
 	{

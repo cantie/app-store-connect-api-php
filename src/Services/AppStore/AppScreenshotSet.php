@@ -28,18 +28,17 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppScreenshotSet_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $screenshotDisplayTypeType = ScreenshotDisplayType::class;
-	protected $screenshotDisplayTypeDataType = '';
+	public $screenshotDisplayType; // 
 
 	/**
-	* @return  ScreenshotDisplayType
+	* @return  string
 	*/
 	public function getScreenshotDisplayType()
 	{
 		return $this->screenshotDisplayType;
 	}
 	/**
-	* @param  ScreenshotDisplayType
+	* @param  string
 	*/
 	public function setScreenshotDisplayType($screenshotDisplayType)
 	{

@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $platformType = BundleIdPlatform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $profileType; // IOS_APP_DEVELOPMENT, IOS_APP_STORE, IOS_APP_ADHOC, IOS_APP_INHOUSE, MAC_APP_DEVELOPMENT, MAC_APP_STORE, MAC_APP_DIRECT, TVOS_APP_DEVELOPMENT, TVOS_APP_STORE, TVOS_APP_ADHOC, TVOS_APP_INHOUSE, MAC_CATALYST_APP_DEVELOPMENT, MAC_CATALYST_APP_STORE, MAC_CATALYST_APP_DIRECT
 	public $profileState; // ACTIVE, INVALID
 	public $profileContent;
@@ -48,14 +47,14 @@ class Profile_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  BundleIdPlatform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  BundleIdPlatform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

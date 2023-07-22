@@ -28,20 +28,19 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BundleIdCapabilityUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $capabilityTypeType = CapabilityType::class;
-	protected $capabilityTypeDataType = '';
+	public $capabilityType; // 
 	protected $settingsType = CapabilitySetting::class;
 	protected $settingsDataType = 'array';
 
 	/**
-	* @return  CapabilityType
+	* @return  string
 	*/
 	public function getCapabilityType()
 	{
 		return $this->capabilityType;
 	}
 	/**
-	* @param  CapabilityType
+	* @param  string
 	*/
 	public function setCapabilityType($capabilityType)
 	{

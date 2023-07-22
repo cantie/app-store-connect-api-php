@@ -32,8 +32,7 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	public $firstName;
 	public $lastName;
 	public $expirationDate;
-	protected $rolesType = UserRole::class;
-	protected $rolesDataType = 'array';
+	public $roles; // 
 	public $allAppsVisible;
 	public $provisioningAllowed;
 
@@ -74,14 +73,14 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  UserRole[]
+	* @return  string[]
 	*/
 	public function getRoles()
 	{
 		return $this->roles;
 	}
 	/**
-	* @param  UserRole[]
+	* @param  string[]
 	*/
 	public function setRoles($roles)
 	{

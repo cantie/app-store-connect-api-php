@@ -30,10 +30,8 @@ class SubscriptionIntroductoryOffer_Attributes extends \Cantie\AppStoreConnect\M
 {
 	public $startDate;
 	public $endDate;
-	protected $durationType = SubscriptionOfferDuration::class;
-	protected $durationDataType = '';
-	protected $offerModeType = SubscriptionOfferMode::class;
-	protected $offerModeDataType = '';
+	public $duration; // 
+	public $offerMode; // 
 	public $numberOfPeriods;
 
 	public function getStartDate()
@@ -55,14 +53,14 @@ class SubscriptionIntroductoryOffer_Attributes extends \Cantie\AppStoreConnect\M
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferDuration
+	* @return  string
 	*/
 	public function getDuration()
 	{
 		return $this->duration;
 	}
 	/**
-	* @param  SubscriptionOfferDuration
+	* @param  string
 	*/
 	public function setDuration($duration)
 	{
@@ -70,14 +68,14 @@ class SubscriptionIntroductoryOffer_Attributes extends \Cantie\AppStoreConnect\M
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferMode
+	* @return  string
 	*/
 	public function getOfferMode()
 	{
 		return $this->offerMode;
 	}
 	/**
-	* @param  SubscriptionOfferMode
+	* @param  string
 	*/
 	public function setOfferMode($offerMode)
 	{

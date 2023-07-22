@@ -30,8 +30,7 @@ class SubscriptionGracePeriod_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $optIn;
 	public $sandboxOptIn;
-	protected $durationType = SubscriptionGracePeriodDuration::class;
-	protected $durationDataType = '';
+	public $duration; // 
 	public $renewalType; // ALL_RENEWALS, PAID_TO_PAID_ONLY
 
 	public function getOptIn()
@@ -53,14 +52,14 @@ class SubscriptionGracePeriod_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  SubscriptionGracePeriodDuration
+	* @return  string
 	*/
 	public function getDuration()
 	{
 		return $this->duration;
 	}
 	/**
-	* @param  SubscriptionGracePeriodDuration
+	* @param  string
 	*/
 	public function setDuration($duration)
 	{

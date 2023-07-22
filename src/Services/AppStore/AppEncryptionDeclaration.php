@@ -35,14 +35,12 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public $containsProprietaryCryptography;
 	public $containsThirdPartyCryptography;
 	public $availableOnFrenchStore;
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $uploadedDate;
 	public $documentUrl;
 	public $documentName;
 	public $documentType;
-	protected $appEncryptionDeclarationStateType = AppEncryptionDeclarationState::class;
-	protected $appEncryptionDeclarationStateDataType = '';
+	public $appEncryptionDeclarationState; // 
 	public $codeValue;
 
 	public function getAppDescription()
@@ -109,14 +107,14 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{
@@ -160,14 +158,14 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  AppEncryptionDeclarationState
+	* @return  string
 	*/
 	public function getAppEncryptionDeclarationState()
 	{
 		return $this->appEncryptionDeclarationState;
 	}
 	/**
-	* @param  AppEncryptionDeclarationState
+	* @param  string
 	*/
 	public function setAppEncryptionDeclarationState($appEncryptionDeclarationState)
 	{

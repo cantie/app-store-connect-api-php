@@ -28,25 +28,21 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $appStoreStateType = AppStoreVersionState::class;
-	protected $appStoreStateDataType = '';
-	protected $appStoreAgeRatingType = AppStoreAgeRating::class;
-	protected $appStoreAgeRatingDataType = '';
-	protected $brazilAgeRatingType = BrazilAgeRating::class;
-	protected $brazilAgeRatingDataType = '';
+	public $appStoreState; // 
+	public $appStoreAgeRating; // 
+	public $brazilAgeRating; // 
 	public $brazilAgeRatingV2; // SELF_RATED_L, SELF_RATED_TEN, SELF_RATED_TWELVE, SELF_RATED_FOURTEEN, SELF_RATED_SIXTEEN, SELF_RATED_EIGHTEEN, OFFICIAL_L, OFFICIAL_TEN, OFFICIAL_TWELVE, OFFICIAL_FOURTEEN, OFFICIAL_SIXTEEN, OFFICIAL_EIGHTEEN
-	protected $kidsAgeBandType = KidsAgeBand::class;
-	protected $kidsAgeBandDataType = '';
+	public $kidsAgeBand; // 
 
 	/**
-	* @return  AppStoreVersionState
+	* @return  string
 	*/
 	public function getAppStoreState()
 	{
 		return $this->appStoreState;
 	}
 	/**
-	* @param  AppStoreVersionState
+	* @param  string
 	*/
 	public function setAppStoreState($appStoreState)
 	{
@@ -54,14 +50,14 @@ class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  AppStoreAgeRating
+	* @return  string
 	*/
 	public function getAppStoreAgeRating()
 	{
 		return $this->appStoreAgeRating;
 	}
 	/**
-	* @param  AppStoreAgeRating
+	* @param  string
 	*/
 	public function setAppStoreAgeRating($appStoreAgeRating)
 	{
@@ -69,14 +65,14 @@ class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  BrazilAgeRating
+	* @return  string
 	*/
 	public function getBrazilAgeRating()
 	{
 		return $this->brazilAgeRating;
 	}
 	/**
-	* @param  BrazilAgeRating
+	* @param  string
 	*/
 	public function setBrazilAgeRating($brazilAgeRating)
 	{
@@ -93,14 +89,14 @@ class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  KidsAgeBand
+	* @return  string
 	*/
 	public function getKidsAgeBand()
 	{
 		return $this->kidsAgeBand;
 	}
 	/**
-	* @param  KidsAgeBand
+	* @param  string
 	*/
 	public function setKidsAgeBand($kidsAgeBand)
 	{

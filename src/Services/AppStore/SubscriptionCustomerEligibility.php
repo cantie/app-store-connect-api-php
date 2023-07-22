@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SubscriptionCustomerEligibility extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $NEW = "NEW";
+	public static $EXISTING = "EXISTING";
+	public static $EXPIRED = "EXPIRED";
 
 
 }

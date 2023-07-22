@@ -29,12 +29,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $certificateTypeType = CertificateType::class;
-	protected $certificateTypeDataType = '';
+	public $certificateType; // 
 	public $displayName;
 	public $serialNumber;
-	protected $platformType = BundleIdPlatform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $expirationDate;
 	public $certificateContent;
 
@@ -48,14 +46,14 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CertificateType
+	* @return  string
 	*/
 	public function getCertificateType()
 	{
 		return $this->certificateType;
 	}
 	/**
-	* @param  CertificateType
+	* @param  string
 	*/
 	public function setCertificateType($certificateType)
 	{
@@ -81,14 +79,14 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  BundleIdPlatform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  BundleIdPlatform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

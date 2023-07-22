@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiGitRefKind extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $BRANCH = "BRANCH";
+	public static $TAG = "TAG";
 
 
 }

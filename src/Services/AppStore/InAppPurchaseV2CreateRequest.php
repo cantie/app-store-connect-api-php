@@ -30,8 +30,7 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 {
 	public $name;
 	public $productId;
-	protected $inAppPurchaseTypeType = InAppPurchaseType::class;
-	protected $inAppPurchaseTypeDataType = '';
+	public $inAppPurchaseType; // 
 	public $reviewNote;
 	public $familySharable;
 	public $availableInAllTerritories;
@@ -55,14 +54,14 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 		return $this;
 	}
 	/**
-	* @return  InAppPurchaseType
+	* @return  string
 	*/
 	public function getInAppPurchaseType()
 	{
 		return $this->inAppPurchaseType;
 	}
 	/**
-	* @param  InAppPurchaseType
+	* @param  string
 	*/
 	public function setInAppPurchaseType($inAppPurchaseType)
 	{

@@ -31,8 +31,7 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 	public $name;
 	public $canonicalName;
 	public $isDeleted;
-	protected $kindType = CiGitRefKind::class;
-	protected $kindDataType = '';
+	public $kind; // 
 
 	public function getName()
 	{
@@ -62,14 +61,14 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiGitRefKind
+	* @return  string
 	*/
 	public function getKind()
 	{
 		return $this->kind;
 	}
 	/**
-	* @param  CiGitRefKind
+	* @param  string
 	*/
 	public function setKind($kind)
 	{

@@ -28,22 +28,21 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppStoreVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $versionString;
 	public $copyright;
 	public $releaseType; // MANUAL, AFTER_APPROVAL, SCHEDULED
 	public $earliestReleaseDate;
 
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

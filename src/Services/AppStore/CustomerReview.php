@@ -33,8 +33,7 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	public $body;
 	public $reviewerNickname;
 	public $createdDate;
-	protected $territoryType = TerritoryCode::class;
-	protected $territoryDataType = '';
+	public $territory; // 
 
 	public function getRating()
 	{
@@ -82,14 +81,14 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  TerritoryCode
+	* @return  string
 	*/
 	public function getTerritory()
 	{
 		return $this->territory;
 	}
 	/**
-	* @param  TerritoryCode
+	* @param  string
 	*/
 	public function setTerritory($territory)
 	{

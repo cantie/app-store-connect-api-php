@@ -28,7 +28,14 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class MetricCategory extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $HANG = "HANG";
+	public static $LAUNCH = "LAUNCH";
+	public static $MEMORY = "MEMORY";
+	public static $DISK = "DISK";
+	public static $BATTERY = "BATTERY";
+	public static $TERMINATION = "TERMINATION";
+	public static $ANIMATION = "ANIMATION";
 
 
 }

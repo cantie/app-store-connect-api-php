@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class csv extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
 
 
 }

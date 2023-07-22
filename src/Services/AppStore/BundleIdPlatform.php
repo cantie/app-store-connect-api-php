@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BundleIdPlatform extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $IOS = "IOS";
+	public static $MAC_OS = "MAC_OS";
 
 
 }

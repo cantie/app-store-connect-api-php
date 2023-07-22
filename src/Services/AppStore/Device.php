@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class Device_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $platformType = BundleIdPlatform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $udid;
 	public $deviceClass; // APPLE_WATCH, IPAD, IPHONE, IPOD, APPLE_TV, MAC
 	public $status; // ENABLED, DISABLED
@@ -47,14 +46,14 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  BundleIdPlatform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  BundleIdPlatform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

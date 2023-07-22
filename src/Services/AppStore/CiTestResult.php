@@ -31,8 +31,7 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	public $uuid;
 	public $deviceName;
 	public $osVersion;
-	protected $statusType = CiTestStatus::class;
-	protected $statusDataType = '';
+	public $status; // 
 	public $duration;
 
 	public function getUuid()
@@ -63,14 +62,14 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 		return $this;
 	}
 	/**
-	* @return  CiTestStatus
+	* @return  string
 	*/
 	public function getStatus()
 	{
 		return $this->status;
 	}
 	/**
-	* @param  CiTestStatus
+	* @param  string
 	*/
 	public function setStatus($status)
 	{
@@ -94,8 +93,7 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $className;
 	public $name;
-	protected $statusType = CiTestStatus::class;
-	protected $statusDataType = '';
+	public $status; // 
 	protected $fileSourceType = FileLocation::class;
 	protected $fileSourceDataType = '';
 	public $message;
@@ -121,14 +119,14 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiTestStatus
+	* @return  string
 	*/
 	public function getStatus()
 	{
 		return $this->status;
 	}
 	/**
-	* @param  CiTestStatus
+	* @param  string
 	*/
 	public function setStatus($status)
 	{

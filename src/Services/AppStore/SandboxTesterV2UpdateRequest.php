@@ -28,20 +28,19 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SandboxTesterV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $territoryType = TerritoryCode::class;
-	protected $territoryDataType = '';
+	public $territory; // 
 	public $interruptPurchases;
 	public $subscriptionRenewalRate; // MONTHLY_RENEWAL_EVERY_ONE_HOUR, MONTHLY_RENEWAL_EVERY_THIRTY_MINUTES, MONTHLY_RENEWAL_EVERY_FIFTEEN_MINUTES, MONTHLY_RENEWAL_EVERY_FIVE_MINUTES, MONTHLY_RENEWAL_EVERY_THREE_MINUTES
 
 	/**
-	* @return  TerritoryCode
+	* @return  string
 	*/
 	public function getTerritory()
 	{
 		return $this->territory;
 	}
 	/**
-	* @param  TerritoryCode
+	* @param  string
 	*/
 	public function setTerritory($territory)
 	{
