@@ -1,4 +1,7 @@
 # App Store Connect APIs Client Library for PHP
+![Packagist Downloads (custom server)](https://img.shields.io/packagist/dt/cantie/app-store-connect-api)
+![GitHub](https://img.shields.io/github/license/cantie/app-store-connect-api)
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/cantie/app-store-connect-api)
 
 This library enables the automation of actions you take in App Store Connect. Its client was modified from [Google API PHP Client](https://github.com/googleapis/google-api-php-client) and i just added some resources for App Store Connect APIs.
 
