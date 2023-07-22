@@ -59,8 +59,7 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 	public $deviceTypeIdentifier;
 	protected $availableRuntimesType = CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes::class;
 	protected $availableRuntimesDataType = 'array';
-	protected $kindType = CiTestDestinationKind::class;
-	protected $kindDataType = '';
+	public $kind; // 
 
 	public function getDeviceTypeName()
 	{
@@ -96,14 +95,14 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 		return $this;
 	}
 	/**
-	* @return  CiTestDestinationKind
+	* @return  string
 	*/
 	public function getKind()
 	{
 		return $this->kind;
 	}
 	/**
-	* @param  CiTestDestinationKind
+	* @param  string
 	*/
 	public function setKind($kind)
 	{

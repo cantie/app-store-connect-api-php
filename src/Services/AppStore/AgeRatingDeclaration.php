@@ -33,8 +33,7 @@ class AgeRatingDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	public $gamblingAndContests;
 	public $gambling;
 	public $gamblingSimulated; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
-	protected $kidsAgeBandType = KidsAgeBand::class;
-	protected $kidsAgeBandDataType = '';
+	public $kidsAgeBand; // 
 	public $medicalOrTreatmentInformation; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
 	public $profanityOrCrudeHumor; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
 	public $sexualContentGraphicAndNudity; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
@@ -93,14 +92,14 @@ class AgeRatingDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  KidsAgeBand
+	* @return  string
 	*/
 	public function getKidsAgeBand()
 	{
 		return $this->kidsAgeBand;
 	}
 	/**
-	* @param  KidsAgeBand
+	* @param  string
 	*/
 	public function setKidsAgeBand($kidsAgeBand)
 	{

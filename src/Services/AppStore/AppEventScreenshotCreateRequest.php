@@ -30,8 +30,7 @@ class AppEventScreenshotCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 {
 	public $fileSize;
 	public $fileName;
-	protected $appEventAssetTypeType = AppEventAssetType::class;
-	protected $appEventAssetTypeDataType = '';
+	public $appEventAssetType; // 
 
 	public function getFileSize()
 	{
@@ -52,14 +51,14 @@ class AppEventScreenshotCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 		return $this;
 	}
 	/**
-	* @return  AppEventAssetType
+	* @return  string
 	*/
 	public function getAppEventAssetType()
 	{
 		return $this->appEventAssetType;
 	}
 	/**
-	* @param  AppEventAssetType
+	* @param  string
 	*/
 	public function setAppEventAssetType($appEventAssetType)
 	{

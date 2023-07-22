@@ -28,18 +28,17 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppCategory_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $platformsType = Platform::class;
-	protected $platformsDataType = 'array';
+	public $platforms; // 
 
 	/**
-	* @return  Platform[]
+	* @return  string[]
 	*/
 	public function getPlatforms()
 	{
 		return $this->platforms;
 	}
 	/**
-	* @param  Platform[]
+	* @param  string[]
 	*/
 	public function setPlatforms($platforms)
 	{

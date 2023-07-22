@@ -28,7 +28,13 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class IconAssetType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $APP_STORE = "APP_STORE";
+	public static $MESSAGES_APP_STORE = "MESSAGES_APP_STORE";
+	public static $WATCH_APP_STORE = "WATCH_APP_STORE";
+	public static $TV_OS_HOME_SCREEN = "TV_OS_HOME_SCREEN";
+	public static $TV_OS_TOP_SHELF = "TV_OS_TOP_SHELF";
+	public static $ALTERNATE_EXPERIMENT = "ALTERNATE_EXPERIMENT";
 
 
 }

@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppClipAction extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $OPEN = "OPEN";
+	public static $VIEW = "VIEW";
+	public static $PLAY = "PLAY";
 
 
 }

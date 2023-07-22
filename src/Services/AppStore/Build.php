@@ -38,8 +38,7 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 	protected $iconAssetTokenType = ImageAsset::class;
 	protected $iconAssetTokenDataType = '';
 	public $processingState; // PROCESSING, FAILED, INVALID, VALID
-	protected $buildAudienceTypeType = BuildAudienceType::class;
-	protected $buildAudienceTypeDataType = '';
+	public $buildAudienceType; // 
 	public $usesNonExemptEncryption;
 
 	public function getVersion()
@@ -130,14 +129,14 @@ class Build_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  BuildAudienceType
+	* @return  string
 	*/
 	public function getBuildAudienceType()
 	{
 		return $this->buildAudienceType;
 	}
 	/**
-	* @param  BuildAudienceType
+	* @param  string
 	*/
 	public function setBuildAudienceType($buildAudienceType)
 	{

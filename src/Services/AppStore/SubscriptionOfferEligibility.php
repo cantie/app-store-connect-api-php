@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SubscriptionOfferEligibility extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $STACK_WITH_INTRO_OFFERS = "STACK_WITH_INTRO_OFFERS";
+	public static $REPLACE_INTRO_OFFERS = "REPLACE_INTRO_OFFERS";
 
 
 }

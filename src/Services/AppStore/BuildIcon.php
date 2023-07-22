@@ -31,8 +31,7 @@ class BuildIcon_Attributes extends \Cantie\AppStoreConnect\Model
 	public $name;
 	protected $iconAssetType = ImageAsset::class;
 	protected $iconAssetDataType = '';
-	protected $iconTypeType = IconAssetType::class;
-	protected $iconTypeDataType = '';
+	public $iconType; // 
 
 	public function getName()
 	{
@@ -59,14 +58,14 @@ class BuildIcon_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  IconAssetType
+	* @return  string
 	*/
 	public function getIconType()
 	{
 		return $this->iconType;
 	}
 	/**
-	* @param  IconAssetType
+	* @param  string
 	*/
 	public function setIconType($iconType)
 	{

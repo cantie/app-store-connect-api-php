@@ -29,14 +29,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class SubscriptionOfferCodeCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $customerEligibilitiesType = SubscriptionCustomerEligibility::class;
-	protected $customerEligibilitiesDataType = 'array';
-	protected $offerEligibilityType = SubscriptionOfferEligibility::class;
-	protected $offerEligibilityDataType = '';
-	protected $durationType = SubscriptionOfferDuration::class;
-	protected $durationDataType = '';
-	protected $offerModeType = SubscriptionOfferMode::class;
-	protected $offerModeDataType = '';
+	public $customerEligibilities; // 
+	public $offerEligibility; // 
+	public $duration; // 
+	public $offerMode; // 
 	public $numberOfPeriods;
 
 	public function getName()
@@ -49,14 +45,14 @@ class SubscriptionOfferCodeCreateRequest_Data_Attributes extends \Cantie\AppStor
 		return $this;
 	}
 	/**
-	* @return  SubscriptionCustomerEligibility[]
+	* @return  string[]
 	*/
 	public function getCustomerEligibilities()
 	{
 		return $this->customerEligibilities;
 	}
 	/**
-	* @param  SubscriptionCustomerEligibility[]
+	* @param  string[]
 	*/
 	public function setCustomerEligibilities($customerEligibilities)
 	{
@@ -64,14 +60,14 @@ class SubscriptionOfferCodeCreateRequest_Data_Attributes extends \Cantie\AppStor
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferEligibility
+	* @return  string
 	*/
 	public function getOfferEligibility()
 	{
 		return $this->offerEligibility;
 	}
 	/**
-	* @param  SubscriptionOfferEligibility
+	* @param  string
 	*/
 	public function setOfferEligibility($offerEligibility)
 	{
@@ -79,14 +75,14 @@ class SubscriptionOfferCodeCreateRequest_Data_Attributes extends \Cantie\AppStor
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferDuration
+	* @return  string
 	*/
 	public function getDuration()
 	{
 		return $this->duration;
 	}
 	/**
-	* @param  SubscriptionOfferDuration
+	* @param  string
 	*/
 	public function setDuration($duration)
 	{
@@ -94,14 +90,14 @@ class SubscriptionOfferCodeCreateRequest_Data_Attributes extends \Cantie\AppStor
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferMode
+	* @return  string
 	*/
 	public function getOfferMode()
 	{
 		return $this->offerMode;
 	}
 	/**
-	* @param  SubscriptionOfferMode
+	* @param  string
 	*/
 	public function setOfferMode($offerMode)
 	{

@@ -376,25 +376,23 @@ class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place::class,
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $actionType = AppClipAction::class;
-	protected $actionDataType = '';
+	public $action; // 
 	public $isPoweredBy;
 	protected $placeType = AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place::class;
 	protected $placeDataType = 'object';
 	public $businessCategory; // AUTOMOTIVE, BEAUTY, BIKES, BOOKS, CASINO, EDUCATION, EDUCATION_JAPAN, ENTERTAINMENT, EV_CHARGER, FINANCIAL_USD, FINANCIAL_CNY, FINANCIAL_GBP, FINANCIAL_JPY, FINANCIAL_EUR, FITNESS, FOOD_AND_DRINK, GAS, GROCERY, HEALTH_AND_MEDICAL, HOTEL_AND_TRAVEL, MUSIC, PARKING, PET_SERVICES, PROFESSIONAL_SERVICES, SHOPPING, TICKETING, TRANSIT
-	protected $defaultLanguageType = AppClipAdvancedExperienceLanguage::class;
-	protected $defaultLanguageDataType = '';
+	public $defaultLanguage; // 
 	public $removed;
 
 	/**
-	* @return  AppClipAction
+	* @return  string
 	*/
 	public function getAction()
 	{
 		return $this->action;
 	}
 	/**
-	* @param  AppClipAction
+	* @param  string
 	*/
 	public function setAction($action)
 	{
@@ -435,14 +433,14 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes extends \Cantie\App
 		return $this;
 	}
 	/**
-	* @return  AppClipAdvancedExperienceLanguage
+	* @return  string
 	*/
 	public function getDefaultLanguage()
 	{
 		return $this->defaultLanguage;
 	}
 	/**
-	* @param  AppClipAdvancedExperienceLanguage
+	* @param  string
 	*/
 	public function setDefaultLanguage($defaultLanguage)
 	{

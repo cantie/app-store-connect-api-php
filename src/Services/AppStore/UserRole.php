@@ -28,7 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class UserRole extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $ADMIN = "ADMIN";
+	public static $FINANCE = "FINANCE";
+	public static $ACCOUNT_HOLDER = "ACCOUNT_HOLDER";
+	public static $SALES = "SALES";
+	public static $MARKETING = "MARKETING";
+	public static $APP_MANAGER = "APP_MANAGER";
+	public static $DEVELOPER = "DEVELOPER";
+	public static $ACCESS_TO_REPORTS = "ACCESS_TO_REPORTS";
+	public static $CUSTOMER_SUPPORT = "CUSTOMER_SUPPORT";
+	public static $IMAGE_MANAGER = "IMAGE_MANAGER";
+	public static $CREATE_APPS = "CREATE_APPS";
+	public static $CLOUD_MANAGED_DEVELOPER_ID = "CLOUD_MANAGED_DEVELOPER_ID";
+	public static $CLOUD_MANAGED_APP_DISTRIBUTION = "CLOUD_MANAGED_APP_DISTRIBUTION";
 
 
 }

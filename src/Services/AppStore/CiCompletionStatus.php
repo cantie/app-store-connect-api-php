@@ -28,7 +28,12 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiCompletionStatus extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $SUCCEEDED = "SUCCEEDED";
+	public static $FAILED = "FAILED";
+	public static $ERRORED = "ERRORED";
+	public static $CANCELED = "CANCELED";
+	public static $SKIPPED = "SKIPPED";
 
 
 }

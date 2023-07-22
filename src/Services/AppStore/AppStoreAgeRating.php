@@ -28,7 +28,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppStoreAgeRating extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $FOUR_PLUS = "FOUR_PLUS";
+	public static $NINE_PLUS = "NINE_PLUS";
+	public static $TWELVE_PLUS = "TWELVE_PLUS";
+	public static $SEVENTEEN_PLUS = "SEVENTEEN_PLUS";
 
 
 }

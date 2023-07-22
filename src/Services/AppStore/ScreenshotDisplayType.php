@@ -28,7 +28,38 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class ScreenshotDisplayType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $APP_IPHONE_67 = "APP_IPHONE_67";
+	public static $APP_IPHONE_61 = "APP_IPHONE_61";
+	public static $APP_IPHONE_65 = "APP_IPHONE_65";
+	public static $APP_IPHONE_58 = "APP_IPHONE_58";
+	public static $APP_IPHONE_55 = "APP_IPHONE_55";
+	public static $APP_IPHONE_47 = "APP_IPHONE_47";
+	public static $APP_IPHONE_40 = "APP_IPHONE_40";
+	public static $APP_IPHONE_35 = "APP_IPHONE_35";
+	public static $APP_IPAD_PRO_3GEN_129 = "APP_IPAD_PRO_3GEN_129";
+	public static $APP_IPAD_PRO_3GEN_11 = "APP_IPAD_PRO_3GEN_11";
+	public static $APP_IPAD_PRO_129 = "APP_IPAD_PRO_129";
+	public static $APP_IPAD_105 = "APP_IPAD_105";
+	public static $APP_IPAD_97 = "APP_IPAD_97";
+	public static $APP_DESKTOP = "APP_DESKTOP";
+	public static $APP_WATCH_ULTRA = "APP_WATCH_ULTRA";
+	public static $APP_WATCH_SERIES_7 = "APP_WATCH_SERIES_7";
+	public static $APP_WATCH_SERIES_4 = "APP_WATCH_SERIES_4";
+	public static $APP_WATCH_SERIES_3 = "APP_WATCH_SERIES_3";
+	public static $APP_APPLE_TV = "APP_APPLE_TV";
+	public static $IMESSAGE_APP_IPHONE_67 = "IMESSAGE_APP_IPHONE_67";
+	public static $IMESSAGE_APP_IPHONE_61 = "IMESSAGE_APP_IPHONE_61";
+	public static $IMESSAGE_APP_IPHONE_65 = "IMESSAGE_APP_IPHONE_65";
+	public static $IMESSAGE_APP_IPHONE_58 = "IMESSAGE_APP_IPHONE_58";
+	public static $IMESSAGE_APP_IPHONE_55 = "IMESSAGE_APP_IPHONE_55";
+	public static $IMESSAGE_APP_IPHONE_47 = "IMESSAGE_APP_IPHONE_47";
+	public static $IMESSAGE_APP_IPHONE_40 = "IMESSAGE_APP_IPHONE_40";
+	public static $IMESSAGE_APP_IPAD_PRO_3GEN_129 = "IMESSAGE_APP_IPAD_PRO_3GEN_129";
+	public static $IMESSAGE_APP_IPAD_PRO_3GEN_11 = "IMESSAGE_APP_IPAD_PRO_3GEN_11";
+	public static $IMESSAGE_APP_IPAD_PRO_129 = "IMESSAGE_APP_IPAD_PRO_129";
+	public static $IMESSAGE_APP_IPAD_105 = "IMESSAGE_APP_IPAD_105";
+	public static $IMESSAGE_APP_IPAD_97 = "IMESSAGE_APP_IPAD_97";
 
 
 }

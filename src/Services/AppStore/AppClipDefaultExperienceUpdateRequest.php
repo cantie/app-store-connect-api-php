@@ -28,18 +28,17 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppClipDefaultExperienceUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $actionType = AppClipAction::class;
-	protected $actionDataType = '';
+	public $action; // 
 
 	/**
-	* @return  AppClipAction
+	* @return  string
 	*/
 	public function getAction()
 	{
 		return $this->action;
 	}
 	/**
-	* @param  AppClipAction
+	* @param  string
 	*/
 	public function setAction($action)
 	{

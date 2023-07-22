@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class KidsAgeBand extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $FIVE_AND_UNDER = "FIVE_AND_UNDER";
+	public static $SIX_TO_EIGHT = "SIX_TO_EIGHT";
+	public static $NINE_TO_ELEVEN = "NINE_TO_ELEVEN";
 
 
 }

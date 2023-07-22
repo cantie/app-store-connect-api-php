@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class SubscriptionGracePeriodDuration extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $THREE_DAYS = "THREE_DAYS";
+	public static $SIXTEEN_DAYS = "SIXTEEN_DAYS";
+	public static $TWENTY_EIGHT_DAYS = "TWENTY_EIGHT_DAYS";
 
 
 }

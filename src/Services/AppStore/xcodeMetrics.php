@@ -370,20 +370,19 @@ class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics::class, 'AppleServ
 
 class xcodeMetrics_ProductData_MetricCategories extends \Cantie\AppStoreConnect\Model
 {
-	protected $identifierType = MetricCategory::class;
-	protected $identifierDataType = '';
+	public $identifier; // 
 	protected $metricsType = xcodeMetrics_ProductData_MetricCategories_Metrics::class;
 	protected $metricsDataType = 'array';
 
 	/**
-	* @return  MetricCategory
+	* @return  string
 	*/
 	public function getIdentifier()
 	{
 		return $this->identifier;
 	}
 	/**
-	* @param  MetricCategory
+	* @param  string
 	*/
 	public function setIdentifier($identifier)
 	{

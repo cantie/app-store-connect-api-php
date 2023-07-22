@@ -95,8 +95,7 @@ class_alias(MetricsInsight_Populations::class, 'AppleService_AppStore_MetricsIns
 
 class MetricsInsight extends \Cantie\AppStoreConnect\Model
 {
-	protected $metricCategoryType = MetricCategory::class;
-	protected $metricCategoryDataType = '';
+	public $metricCategory; // 
 	public $latestVersion;
 	public $metric;
 	public $summaryString;
@@ -108,14 +107,14 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	protected $populationsDataType = 'array';
 
 	/**
-	* @return  MetricCategory
+	* @return  string
 	*/
 	public function getMetricCategory()
 	{
 		return $this->metricCategory;
 	}
 	/**
-	* @param  MetricCategory
+	* @param  string
 	*/
 	public function setMetricCategory($metricCategory)
 	{

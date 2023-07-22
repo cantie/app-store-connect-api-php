@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class InAppPurchaseType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $CONSUMABLE = "CONSUMABLE";
+	public static $NON_CONSUMABLE = "NON_CONSUMABLE";
+	public static $NON_RENEWING_SUBSCRIPTION = "NON_RENEWING_SUBSCRIPTION";
 
 
 }

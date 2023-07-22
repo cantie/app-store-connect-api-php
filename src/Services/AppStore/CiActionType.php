@@ -28,7 +28,11 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiActionType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $BUILD = "BUILD";
+	public static $ANALYZE = "ANALYZE";
+	public static $TEST = "TEST";
+	public static $ARCHIVE = "ARCHIVE";
 
 
 }

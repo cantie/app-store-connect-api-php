@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class gzip extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
 
 
 }

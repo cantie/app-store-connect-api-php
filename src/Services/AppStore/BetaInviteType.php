@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BetaInviteType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $EMAIL = "EMAIL";
+	public static $PUBLIC_LINK = "PUBLIC_LINK";
 
 
 }

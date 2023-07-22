@@ -29,10 +29,8 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class BuildBetaDetail_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $autoNotifyEnabled;
-	protected $internalBuildStateType = InternalBetaState::class;
-	protected $internalBuildStateDataType = '';
-	protected $externalBuildStateType = ExternalBetaState::class;
-	protected $externalBuildStateDataType = '';
+	public $internalBuildState; // 
+	public $externalBuildState; // 
 
 	public function getAutoNotifyEnabled()
 	{
@@ -44,14 +42,14 @@ class BuildBetaDetail_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  InternalBetaState
+	* @return  string
 	*/
 	public function getInternalBuildState()
 	{
 		return $this->internalBuildState;
 	}
 	/**
-	* @param  InternalBetaState
+	* @param  string
 	*/
 	public function setInternalBuildState($internalBuildState)
 	{
@@ -59,14 +57,14 @@ class BuildBetaDetail_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  ExternalBetaState
+	* @return  string
 	*/
 	public function getExternalBuildState()
 	{
 		return $this->externalBuildState;
 	}
 	/**
-	* @param  ExternalBetaState
+	* @param  string
 	*/
 	public function setExternalBuildState($externalBuildState)
 	{

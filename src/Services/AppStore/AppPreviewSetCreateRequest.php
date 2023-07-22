@@ -28,18 +28,17 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppPreviewSetCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $previewTypeType = PreviewType::class;
-	protected $previewTypeDataType = '';
+	public $previewType; // 
 
 	/**
-	* @return  PreviewType
+	* @return  string
 	*/
 	public function getPreviewType()
 	{
 		return $this->previewType;
 	}
 	/**
-	* @param  PreviewType
+	* @param  string
 	*/
 	public function setPreviewType($previewType)
 	{

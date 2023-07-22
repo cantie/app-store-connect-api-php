@@ -28,7 +28,13 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BrazilAgeRating extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $L = "L";
+	public static $TEN = "TEN";
+	public static $TWELVE = "TWELVE";
+	public static $FOURTEEN = "FOURTEEN";
+	public static $SIXTEEN = "SIXTEEN";
+	public static $EIGHTEEN = "EIGHTEEN";
 
 
 }

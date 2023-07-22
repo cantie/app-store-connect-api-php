@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppEventAssetType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $EVENT_CARD = "EVENT_CARD";
+	public static $EVENT_DETAILS_PAGE = "EVENT_DETAILS_PAGE";
 
 
 }

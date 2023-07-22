@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BuildBundle_Attributes_Entitlements extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
 
 
 }

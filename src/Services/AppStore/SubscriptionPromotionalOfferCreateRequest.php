@@ -30,10 +30,8 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 {
 	public $name;
 	public $offerCode;
-	protected $durationType = SubscriptionOfferDuration::class;
-	protected $durationDataType = '';
-	protected $offerModeType = SubscriptionOfferMode::class;
-	protected $offerModeDataType = '';
+	public $duration; // 
+	public $offerMode; // 
 	public $numberOfPeriods;
 
 	public function getName()
@@ -55,14 +53,14 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferDuration
+	* @return  string
 	*/
 	public function getDuration()
 	{
 		return $this->duration;
 	}
 	/**
-	* @param  SubscriptionOfferDuration
+	* @param  string
 	*/
 	public function setDuration($duration)
 	{
@@ -70,14 +68,14 @@ class SubscriptionPromotionalOfferCreateRequest_Data_Attributes extends \Cantie\
 		return $this;
 	}
 	/**
-	* @return  SubscriptionOfferMode
+	* @return  string
 	*/
 	public function getOfferMode()
 	{
 		return $this->offerMode;
 	}
 	/**
-	* @param  SubscriptionOfferMode
+	* @param  string
 	*/
 	public function setOfferMode($offerMode)
 	{

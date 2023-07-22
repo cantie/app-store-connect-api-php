@@ -28,20 +28,19 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class UserUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $rolesType = UserRole::class;
-	protected $rolesDataType = 'array';
+	public $roles; // 
 	public $allAppsVisible;
 	public $provisioningAllowed;
 
 	/**
-	* @return  UserRole[]
+	* @return  string[]
 	*/
 	public function getRoles()
 	{
 		return $this->roles;
 	}
 	/**
-	* @param  UserRole[]
+	* @param  string[]
 	*/
 	public function setRoles($roles)
 	{

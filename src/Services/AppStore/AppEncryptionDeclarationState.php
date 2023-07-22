@@ -28,7 +28,13 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppEncryptionDeclarationState extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $CREATED = "CREATED";
+	public static $IN_REVIEW = "IN_REVIEW";
+	public static $APPROVED = "APPROVED";
+	public static $REJECTED = "REJECTED";
+	public static $INVALID = "INVALID";
+	public static $EXPIRED = "EXPIRED";
 
 
 }

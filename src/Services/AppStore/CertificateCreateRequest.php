@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class CertificateCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $csrContent;
-	protected $certificateTypeType = CertificateType::class;
-	protected $certificateTypeDataType = '';
+	public $certificateType; // 
 
 	public function getCsrContent()
 	{
@@ -42,14 +41,14 @@ class CertificateCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 		return $this;
 	}
 	/**
-	* @return  CertificateType
+	* @return  string
 	*/
 	public function getCertificateType()
 	{
 		return $this->certificateType;
 	}
 	/**
-	* @param  CertificateType
+	* @param  string
 	*/
 	public function setCertificateType($certificateType)
 	{

@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiTestDestinationKind extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $SIMULATOR = "SIMULATOR";
+	public static $MAC = "MAC";
 
 
 }

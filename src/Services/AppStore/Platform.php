@@ -28,7 +28,10 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class Platform extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $IOS = "IOS";
+	public static $MAC_OS = "MAC_OS";
+	public static $TV_OS = "TV_OS";
 
 
 }

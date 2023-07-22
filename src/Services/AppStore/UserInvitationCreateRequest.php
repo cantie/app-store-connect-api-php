@@ -31,8 +31,7 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 	public $email;
 	public $firstName;
 	public $lastName;
-	protected $rolesType = UserRole::class;
-	protected $rolesDataType = 'array';
+	public $roles; // 
 	public $allAppsVisible;
 	public $provisioningAllowed;
 
@@ -64,14 +63,14 @@ class UserInvitationCreateRequest_Data_Attributes extends \Cantie\AppStoreConnec
 		return $this;
 	}
 	/**
-	* @return  UserRole[]
+	* @return  string[]
 	*/
 	public function getRoles()
 	{
 		return $this->roles;
 	}
 	/**
-	* @param  UserRole[]
+	* @param  string[]
 	*/
 	public function setRoles($roles)
 	{

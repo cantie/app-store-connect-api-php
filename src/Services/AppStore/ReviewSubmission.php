@@ -28,20 +28,19 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class ReviewSubmission_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $submittedDate;
 	public $state; // READY_FOR_REVIEW, WAITING_FOR_REVIEW, IN_REVIEW, UNRESOLVED_ISSUES, CANCELING, COMPLETING, COMPLETE
 
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

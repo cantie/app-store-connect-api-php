@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class AppStoreVersionExperimentV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $trafficProportion;
 
 	public function getName()
@@ -43,14 +42,14 @@ class AppStoreVersionExperimentV2CreateRequest_Data_Attributes extends \Cantie\A
 		return $this;
 	}
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

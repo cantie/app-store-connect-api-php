@@ -31,8 +31,7 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	public $fileSize;
 	public $fileName;
 	public $previewFrameTimeCode;
-	protected $appEventAssetTypeType = AppEventAssetType::class;
-	protected $appEventAssetTypeDataType = '';
+	public $appEventAssetType; // 
 
 	public function getFileSize()
 	{
@@ -62,14 +61,14 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 		return $this;
 	}
 	/**
-	* @return  AppEventAssetType
+	* @return  string
 	*/
 	public function getAppEventAssetType()
 	{
 		return $this->appEventAssetType;
 	}
 	/**
-	* @param  AppEventAssetType
+	* @param  string
 	*/
 	public function setAppEventAssetType($appEventAssetType)
 	{

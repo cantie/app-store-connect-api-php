@@ -181,10 +181,8 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 	public $isPullRequestBuild;
 	protected $issueCountsType = CiIssueCounts::class;
 	protected $issueCountsDataType = '';
-	protected $executionProgressType = CiExecutionProgress::class;
-	protected $executionProgressDataType = '';
-	protected $completionStatusType = CiCompletionStatus::class;
-	protected $completionStatusDataType = '';
+	public $executionProgress; // 
+	public $completionStatus; // 
 	public $startReason; // GIT_REF_CHANGE, MANUAL, MANUAL_REBUILD, PULL_REQUEST_OPEN, PULL_REQUEST_UPDATE, SCHEDULE
 	public $cancelReason; // AUTOMATICALLY_BY_NEWER_BUILD, MANUALLY_BY_USER
 
@@ -279,14 +277,14 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiExecutionProgress
+	* @return  string
 	*/
 	public function getExecutionProgress()
 	{
 		return $this->executionProgress;
 	}
 	/**
-	* @param  CiExecutionProgress
+	* @param  string
 	*/
 	public function setExecutionProgress($executionProgress)
 	{
@@ -294,14 +292,14 @@ class CiBuildRun_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiCompletionStatus
+	* @return  string
 	*/
 	public function getCompletionStatus()
 	{
 		return $this->completionStatus;
 	}
 	/**
-	* @param  CiCompletionStatus
+	* @param  string
 	*/
 	public function setCompletionStatus($completionStatus)
 	{

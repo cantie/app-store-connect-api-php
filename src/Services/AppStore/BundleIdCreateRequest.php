@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $platformType = BundleIdPlatform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $identifier;
 	public $seedId;
 
@@ -44,14 +43,14 @@ class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 		return $this;
 	}
 	/**
-	* @return  BundleIdPlatform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  BundleIdPlatform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

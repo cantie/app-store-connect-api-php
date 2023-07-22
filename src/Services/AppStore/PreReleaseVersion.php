@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class PreReleaseVersion_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $version;
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 
 	public function getVersion()
 	{
@@ -42,14 +41,14 @@ class PreReleaseVersion_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

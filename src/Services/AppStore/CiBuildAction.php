@@ -29,16 +29,13 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class CiBuildAction_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $actionTypeType = CiActionType::class;
-	protected $actionTypeDataType = '';
+	public $actionType; // 
 	public $startedDate;
 	public $finishedDate;
 	protected $issueCountsType = CiIssueCounts::class;
 	protected $issueCountsDataType = '';
-	protected $executionProgressType = CiExecutionProgress::class;
-	protected $executionProgressDataType = '';
-	protected $completionStatusType = CiCompletionStatus::class;
-	protected $completionStatusDataType = '';
+	public $executionProgress; // 
+	public $completionStatus; // 
 	public $isRequiredToPass;
 
 	public function getName()
@@ -51,14 +48,14 @@ class CiBuildAction_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiActionType
+	* @return  string
 	*/
 	public function getActionType()
 	{
 		return $this->actionType;
 	}
 	/**
-	* @param  CiActionType
+	* @param  string
 	*/
 	public function setActionType($actionType)
 	{
@@ -99,14 +96,14 @@ class CiBuildAction_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiExecutionProgress
+	* @return  string
 	*/
 	public function getExecutionProgress()
 	{
 		return $this->executionProgress;
 	}
 	/**
-	* @param  CiExecutionProgress
+	* @param  string
 	*/
 	public function setExecutionProgress($executionProgress)
 	{
@@ -114,14 +111,14 @@ class CiBuildAction_Attributes extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiCompletionStatus
+	* @return  string
 	*/
 	public function getCompletionStatus()
 	{
 		return $this->completionStatus;
 	}
 	/**
-	* @param  CiCompletionStatus
+	* @param  string
 	*/
 	public function setCompletionStatus($completionStatus)
 	{

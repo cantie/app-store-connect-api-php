@@ -29,8 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class AppStoreVersionExperimentV2_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 	public $trafficProportion;
 	public $state; // PREPARE_FOR_SUBMISSION, READY_FOR_REVIEW, WAITING_FOR_REVIEW, IN_REVIEW, ACCEPTED, APPROVED, REJECTED, COMPLETED, STOPPED
 	public $reviewRequired;
@@ -47,14 +46,14 @@ class AppStoreVersionExperimentV2_Attributes extends \Cantie\AppStoreConnect\Mod
 		return $this;
 	}
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

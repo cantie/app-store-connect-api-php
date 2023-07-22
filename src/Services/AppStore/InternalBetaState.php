@@ -28,7 +28,14 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class InternalBetaState extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $PROCESSING = "PROCESSING";
+	public static $PROCESSING_EXCEPTION = "PROCESSING_EXCEPTION";
+	public static $MISSING_EXPORT_COMPLIANCE = "MISSING_EXPORT_COMPLIANCE";
+	public static $READY_FOR_BETA_TESTING = "READY_FOR_BETA_TESTING";
+	public static $IN_BETA_TESTING = "IN_BETA_TESTING";
+	public static $EXPIRED = "EXPIRED";
+	public static $IN_EXPORT_COMPLIANCE_REVIEW = "IN_EXPORT_COMPLIANCE_REVIEW";
 
 
 }

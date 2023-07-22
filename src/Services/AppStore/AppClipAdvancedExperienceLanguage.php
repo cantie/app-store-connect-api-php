@@ -28,7 +28,39 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppClipAdvancedExperienceLanguage extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $AR = "AR";
+	public static $CA = "CA";
+	public static $CS = "CS";
+	public static $DA = "DA";
+	public static $DE = "DE";
+	public static $EL = "EL";
+	public static $EN = "EN";
+	public static $ES = "ES";
+	public static $FI = "FI";
+	public static $FR = "FR";
+	public static $HE = "HE";
+	public static $HI = "HI";
+	public static $HR = "HR";
+	public static $HU = "HU";
+	public static $ID = "ID";
+	public static $IT = "IT";
+	public static $JA = "JA";
+	public static $KO = "KO";
+	public static $MS = "MS";
+	public static $NL = "NL";
+	public static $NO = "NO";
+	public static $PL = "PL";
+	public static $PT = "PT";
+	public static $RO = "RO";
+	public static $RU = "RU";
+	public static $SK = "SK";
+	public static $SV = "SV";
+	public static $TH = "TH";
+	public static $TR = "TR";
+	public static $UK = "UK";
+	public static $VI = "VI";
+	public static $ZH = "ZH";
 
 
 }

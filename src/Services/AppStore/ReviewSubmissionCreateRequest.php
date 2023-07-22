@@ -28,18 +28,17 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class ReviewSubmissionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	protected $platformType = Platform::class;
-	protected $platformDataType = '';
+	public $platform; // 
 
 	/**
-	* @return  Platform
+	* @return  string
 	*/
 	public function getPlatform()
 	{
 		return $this->platform;
 	}
 	/**
-	* @param  Platform
+	* @param  string
 	*/
 	public function setPlatform($platform)
 	{

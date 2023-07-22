@@ -73,11 +73,9 @@ class_alias(CiAction_TestConfiguration::class, 'AppleService_AppStore_CiAction_T
 class CiAction extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
-	protected $actionTypeType = CiActionType::class;
-	protected $actionTypeDataType = '';
+	public $actionType; // 
 	public $destination; // ANY_IOS_DEVICE, ANY_IOS_SIMULATOR, ANY_TVOS_DEVICE, ANY_TVOS_SIMULATOR, ANY_WATCHOS_DEVICE, ANY_WATCHOS_SIMULATOR, ANY_MAC, ANY_MAC_CATALYST
-	protected $buildDistributionAudienceType = BuildAudienceType::class;
-	protected $buildDistributionAudienceDataType = '';
+	public $buildDistributionAudience; // 
 	protected $testConfigurationType = CiAction_TestConfiguration::class;
 	protected $testConfigurationDataType = 'object';
 	public $scheme;
@@ -94,14 +92,14 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  CiActionType
+	* @return  string
 	*/
 	public function getActionType()
 	{
 		return $this->actionType;
 	}
 	/**
-	* @param  CiActionType
+	* @param  string
 	*/
 	public function setActionType($actionType)
 	{
@@ -118,14 +116,14 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  BuildAudienceType
+	* @return  string
 	*/
 	public function getBuildDistributionAudience()
 	{
 		return $this->buildDistributionAudience;
 	}
 	/**
-	* @param  BuildAudienceType
+	* @param  string
 	*/
 	public function setBuildDistributionAudience($buildDistributionAudience)
 	{

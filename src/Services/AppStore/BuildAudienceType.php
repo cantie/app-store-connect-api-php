@@ -28,7 +28,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BuildAudienceType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $INTERNAL_ONLY = "INTERNAL_ONLY";
+	public static $APP_STORE_ELIGIBLE = "APP_STORE_ELIGIBLE";
 
 
 }

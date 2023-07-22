@@ -28,7 +28,18 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CertificateType extends \Cantie\AppStoreConnect\Model
 {
-	// TODO: no properties
+	// enum class
+	public static $IOS_DEVELOPMENT = "IOS_DEVELOPMENT";
+	public static $IOS_DISTRIBUTION = "IOS_DISTRIBUTION";
+	public static $MAC_APP_DISTRIBUTION = "MAC_APP_DISTRIBUTION";
+	public static $MAC_INSTALLER_DISTRIBUTION = "MAC_INSTALLER_DISTRIBUTION";
+	public static $MAC_APP_DEVELOPMENT = "MAC_APP_DEVELOPMENT";
+	public static $DEVELOPER_ID_KEXT = "DEVELOPER_ID_KEXT";
+	public static $DEVELOPER_ID_APPLICATION = "DEVELOPER_ID_APPLICATION";
+	public static $DEVELOPMENT = "DEVELOPMENT";
+	public static $DISTRIBUTION = "DISTRIBUTION";
+	public static $PASS_TYPE_ID = "PASS_TYPE_ID";
+	public static $PASS_TYPE_ID_WITH_NFC = "PASS_TYPE_ID_WITH_NFC";
 
 
 }
