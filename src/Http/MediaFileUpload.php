@@ -216,7 +216,7 @@ class MediaFileUpload
    */
   private function process()
   {
-    $this->transformToUploadUrl();
+    // $this->transformToUploadUrl();
     $request = $this->request;
 
     $postBody = '';
