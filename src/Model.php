@@ -120,11 +120,13 @@ class Model implements \ArrayAccess
                     }
                 } elseif ($dataType == 'array' || $dataType == 'map') {
                     $this->$key = [];
-                    foreach ($val as $itemKey => $itemVal) {
-                        if ($itemVal instanceof $keyType) {
-                            $this->{$key}[$itemKey] = $itemVal;
-                        } else {
-                            $this->{$key}[$itemKey] = new $keyType($itemVal);
+                    if ($val != null) {
+                        foreach ($val as $itemKey => $itemVal) {
+                            if ($itemVal instanceof $keyType) {
+                                $this->{$key}[$itemKey] = $itemVal;
+                            } else {
+                                $this->{$key}[$itemKey] = new $keyType($itemVal);
+                            }
                         }
                     }
                 } elseif ($dataType == '[*]') {
