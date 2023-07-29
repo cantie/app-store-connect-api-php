@@ -184,7 +184,7 @@ $appScreenshotUpdateRequest = new AppScreenshotUpdateRequest([
 ```
 
 ## Caching ##
-JWT token are cached for 10 minutes and only be created if doesn't existed or has been expired. JWT token is not between clients as defined in src/Client.php
+JWT token are cached for 10 minutes and only be created if doesn't existed or has been expired. JWT token is not shared between clients. Each client has its own token as defined in src/Client.php
 ```php
 public function generateToken()
 {
