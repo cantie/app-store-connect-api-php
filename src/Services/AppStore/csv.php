@@ -32,5 +32,4 @@ class csv extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(csv::class, 'AppleService_AppStore_csv');
 

@@ -97,7 +97,6 @@ class InAppPurchaseV2CreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(InAppPurchaseV2CreateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Attributes');
 
 class InAppPurchaseV2CreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -124,7 +123,6 @@ class InAppPurchaseV2CreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	}
 
 }
-class_alias(InAppPurchaseV2CreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships_App_Data');
 
 class InAppPurchaseV2CreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -148,7 +146,6 @@ class InAppPurchaseV2CreateRequest_Data_Relationships_App extends \Cantie\AppSto
 	}
 
 }
-class_alias(InAppPurchaseV2CreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships_App');
 
 class InAppPurchaseV2CreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -172,7 +169,6 @@ class InAppPurchaseV2CreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(InAppPurchaseV2CreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data_Relationships');
 
 class InAppPurchaseV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -223,7 +219,6 @@ class InAppPurchaseV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseV2CreateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest_Data');
 
 class InAppPurchaseV2CreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -247,5 +242,4 @@ class InAppPurchaseV2CreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseV2CreateRequest::class, 'AppleService_AppStore_InAppPurchaseV2CreateRequest');
 

@@ -51,7 +51,6 @@ class SubscriptionPricesLinkagesResponse_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(SubscriptionPricesLinkagesResponse_Data::class, 'AppleService_AppStore_SubscriptionPricesLinkagesResponse_Data');
 
 class SubscriptionPricesLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class SubscriptionPricesLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionPricesLinkagesResponse::class, 'AppleService_AppStore_SubscriptionPricesLinkagesResponse');
 

@@ -73,4 +73,3 @@ class AppClipAdvancedExperienceImages extends \Cantie\AppStoreConnect\Services\R
     }
 }
 
-class_alias(AppClipAdvancedExperienceImages::class, 'AppleService_AppStore_ResourceAppClipAdvancedExperienceImages');

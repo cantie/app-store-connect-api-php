@@ -136,7 +136,6 @@ class CiBuildAction_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildAction_Attributes::class, 'AppleService_AppStore_CiBuildAction_Attributes');
 
 class CiBuildAction_Relationships_BuildRun_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +162,6 @@ class CiBuildAction_Relationships_BuildRun_Links extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiBuildAction_Relationships_BuildRun_Links::class, 'AppleService_AppStore_CiBuildAction_Relationships_BuildRun_Links');
 
 class CiBuildAction_Relationships_BuildRun_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +188,6 @@ class CiBuildAction_Relationships_BuildRun_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(CiBuildAction_Relationships_BuildRun_Data::class, 'AppleService_AppStore_CiBuildAction_Relationships_BuildRun_Data');
 
 class CiBuildAction_Relationships_BuildRun extends \Cantie\AppStoreConnect\Model
 {
@@ -231,7 +228,6 @@ class CiBuildAction_Relationships_BuildRun extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildAction_Relationships_BuildRun::class, 'AppleService_AppStore_CiBuildAction_Relationships_BuildRun');
 
 class CiBuildAction_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -255,7 +251,6 @@ class CiBuildAction_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildAction_Relationships::class, 'AppleService_AppStore_CiBuildAction_Relationships');
 
 class CiBuildAction extends \Cantie\AppStoreConnect\Model
 {
@@ -333,5 +328,4 @@ class CiBuildAction extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildAction::class, 'AppleService_AppStore_CiBuildAction');
 

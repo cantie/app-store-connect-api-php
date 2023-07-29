@@ -93,5 +93,4 @@ class AppPricesV2Response extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPricesV2Response::class, 'AppleService_AppStore_AppPricesV2Response');
 

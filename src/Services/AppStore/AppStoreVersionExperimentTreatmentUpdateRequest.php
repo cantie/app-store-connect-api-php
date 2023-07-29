@@ -51,7 +51,6 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data_Attributes extends \C
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentUpdateRequest_Data_Attributes');
 
 class AppStoreVersionExperimentTreatmentUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppStoreVersionExperimentTreatmentUpdateRequest_Data extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentUpdateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentUpdateRequest_Data');
 
 class AppStoreVersionExperimentTreatmentUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppStoreVersionExperimentTreatmentUpdateRequest extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentUpdateRequest::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentUpdateRequest');
 

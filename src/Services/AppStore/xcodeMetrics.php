@@ -65,7 +65,6 @@ class xcodeMetrics_Insights extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(xcodeMetrics_Insights::class, 'AppleService_AppStore_xcodeMetrics_Insights');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +101,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys extends \Cantie
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics_GoalKeys');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics_Unit extends \Cantie\AppStoreConnect\Model
 {
@@ -129,7 +127,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Unit extends \Cantie\App
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics_Unit::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics_Unit');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria 
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_FilterCriteria');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_PercentageBreakdown extends \Cantie\AppStoreConnect\Model
 {
@@ -193,7 +189,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_Percenta
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_PercentageBreakdown::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points_PercentageBreakdown');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends \Cantie\AppStoreConnect\Model
 {
@@ -257,7 +252,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points extends 
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets_Points');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets extends \Cantie\AppStoreConnect\Model
 {
@@ -298,7 +292,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets extends \Cantie
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics_Datasets');
 
 class xcodeMetrics_ProductData_MetricCategories_Metrics extends \Cantie\AppStoreConnect\Model
 {
@@ -366,7 +359,6 @@ class xcodeMetrics_ProductData_MetricCategories_Metrics extends \Cantie\AppStore
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories_Metrics::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories_Metrics');
 
 class xcodeMetrics_ProductData_MetricCategories extends \Cantie\AppStoreConnect\Model
 {
@@ -406,7 +398,6 @@ class xcodeMetrics_ProductData_MetricCategories extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(xcodeMetrics_ProductData_MetricCategories::class, 'AppleService_AppStore_xcodeMetrics_ProductData_MetricCategories');
 
 class xcodeMetrics_ProductData extends \Cantie\AppStoreConnect\Model
 {
@@ -440,7 +431,6 @@ class xcodeMetrics_ProductData extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(xcodeMetrics_ProductData::class, 'AppleService_AppStore_xcodeMetrics_ProductData');
 
 class xcodeMetrics extends \Cantie\AppStoreConnect\Model
 {
@@ -491,5 +481,4 @@ class xcodeMetrics extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(xcodeMetrics::class, 'AppleService_AppStore_xcodeMetrics');
 

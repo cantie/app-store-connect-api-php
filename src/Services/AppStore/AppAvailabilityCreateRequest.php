@@ -41,7 +41,6 @@ class AppAvailabilityCreateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data_Attributes');
 
 class AppAvailabilityCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class AppAvailabilityCreateRequest_Data_Relationships_App_Data extends \Cantie\A
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data_Relationships_App_Data');
 
 class AppAvailabilityCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class AppAvailabilityCreateRequest_Data_Relationships_App extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data_Relationships_App');
 
 class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +116,6 @@ class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data 
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data');
 
 class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -143,7 +139,6 @@ class AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories exten
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data_Relationships_AvailableTerritories');
 
 class AppAvailabilityCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -184,7 +179,6 @@ class AppAvailabilityCreateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data_Relationships');
 
 class AppAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -235,7 +229,6 @@ class AppAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest_Data::class, 'AppleService_AppStore_AppAvailabilityCreateRequest_Data');
 
 class AppAvailabilityCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -259,5 +252,4 @@ class AppAvailabilityCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailabilityCreateRequest::class, 'AppleService_AppStore_AppAvailabilityCreateRequest');
 

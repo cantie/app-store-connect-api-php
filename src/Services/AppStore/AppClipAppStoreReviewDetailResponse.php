@@ -82,5 +82,4 @@ class AppClipAppStoreReviewDetailResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailResponse::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailResponse');
 

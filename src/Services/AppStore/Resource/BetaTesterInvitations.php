@@ -51,4 +51,3 @@ class BetaTesterInvitations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BetaTesterInvitations::class, 'AppleService_AppStore_ResourceBetaTesterInvitations');

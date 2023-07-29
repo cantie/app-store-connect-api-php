@@ -99,5 +99,4 @@ class InAppPurchasePricePointsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchasePricePointsResponse::class, 'AppleService_AppStore_InAppPurchasePricePointsResponse');
 

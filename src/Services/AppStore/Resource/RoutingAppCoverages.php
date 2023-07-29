@@ -82,4 +82,3 @@ class RoutingAppCoverages extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(RoutingAppCoverages::class, 'AppleService_AppStore_ResourceRoutingAppCoverages');

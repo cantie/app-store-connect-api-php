@@ -73,4 +73,3 @@ class SubscriptionOfferCodeCustomCodes extends \Cantie\AppStoreConnect\Services\
     }
 }
 
-class_alias(SubscriptionOfferCodeCustomCodes::class, 'AppleService_AppStore_ResourceSubscriptionOfferCodeCustomCodes');

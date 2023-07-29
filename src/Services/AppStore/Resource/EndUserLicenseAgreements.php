@@ -94,4 +94,3 @@ class EndUserLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(EndUserLicenseAgreements::class, 'AppleService_AppStore_ResourceEndUserLicenseAgreements');

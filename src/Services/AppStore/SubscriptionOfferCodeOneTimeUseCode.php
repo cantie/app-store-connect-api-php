@@ -71,7 +71,6 @@ class SubscriptionOfferCodeOneTimeUseCode_Attributes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCode_Attributes::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCode_Attributes');
 
 class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +97,6 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Links extends 
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Links::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Links');
 
 class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +123,6 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data extends \
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode_Data');
 
 class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode extends \Canti
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCode_Relationships_OfferCode');
 
 class SubscriptionOfferCodeOneTimeUseCode_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +186,6 @@ class SubscriptionOfferCodeOneTimeUseCode_Relationships extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCode_Relationships::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCode_Relationships');
 
 class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 {
@@ -268,5 +263,4 @@ class SubscriptionOfferCodeOneTimeUseCode extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCode::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCode');
 

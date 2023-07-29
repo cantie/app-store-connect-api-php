@@ -34,5 +34,4 @@ class BundleIdPlatform extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(BundleIdPlatform::class, 'AppleService_AppStore_BundleIdPlatform');
 

@@ -76,5 +76,4 @@ class AppClipResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipResponse::class, 'AppleService_AppStore_AppClipResponse');
 

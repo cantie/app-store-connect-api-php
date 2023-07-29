@@ -99,5 +99,4 @@ class SubscriptionGroupLocalizationsResponse extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationsResponse::class, 'AppleService_AppStore_SubscriptionGroupLocalizationsResponse');
 

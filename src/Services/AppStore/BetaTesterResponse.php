@@ -76,5 +76,4 @@ class BetaTesterResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaTesterResponse::class, 'AppleService_AppStore_BetaTesterResponse');
 

@@ -82,5 +82,4 @@ class SubscriptionAppStoreReviewScreenshotResponse extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotResponse::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotResponse');
 

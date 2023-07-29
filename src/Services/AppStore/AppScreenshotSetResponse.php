@@ -76,5 +76,4 @@ class AppScreenshotSetResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshotSetResponse::class, 'AppleService_AppStore_AppScreenshotSetResponse');
 

@@ -91,5 +91,4 @@ class CapabilityOption extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CapabilityOption::class, 'AppleService_AppStore_CapabilityOption');
 

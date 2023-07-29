@@ -51,7 +51,6 @@ class ProfileCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Attributes::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Attributes');
 
 class ProfileCreateRequest_Data_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class ProfileCreateRequest_Data_Relationships_BundleId_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships_BundleId_Data::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships_BundleId_Data');
 
 class ProfileCreateRequest_Data_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class ProfileCreateRequest_Data_Relationships_BundleId extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships_BundleId::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships_BundleId');
 
 class ProfileCreateRequest_Data_Relationships_Devices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -129,7 +126,6 @@ class ProfileCreateRequest_Data_Relationships_Devices_Data extends \Cantie\AppSt
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships_Devices_Data::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships_Devices_Data');
 
 class ProfileCreateRequest_Data_Relationships_Devices extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class ProfileCreateRequest_Data_Relationships_Devices extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships_Devices::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships_Devices');
 
 class ProfileCreateRequest_Data_Relationships_Certificates_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -180,7 +175,6 @@ class ProfileCreateRequest_Data_Relationships_Certificates_Data extends \Cantie\
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships_Certificates_Data::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships_Certificates_Data');
 
 class ProfileCreateRequest_Data_Relationships_Certificates extends \Cantie\AppStoreConnect\Model
 {
@@ -204,7 +198,6 @@ class ProfileCreateRequest_Data_Relationships_Certificates extends \Cantie\AppSt
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships_Certificates::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships_Certificates');
 
 class ProfileCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -262,7 +255,6 @@ class ProfileCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(ProfileCreateRequest_Data_Relationships::class, 'AppleService_AppStore_ProfileCreateRequest_Data_Relationships');
 
 class ProfileCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -313,7 +305,6 @@ class ProfileCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ProfileCreateRequest_Data::class, 'AppleService_AppStore_ProfileCreateRequest_Data');
 
 class ProfileCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -337,5 +328,4 @@ class ProfileCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ProfileCreateRequest::class, 'AppleService_AppStore_ProfileCreateRequest');
 

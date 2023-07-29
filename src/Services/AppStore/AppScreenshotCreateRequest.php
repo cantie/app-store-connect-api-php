@@ -51,7 +51,6 @@ class AppScreenshotCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppScreenshotCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppScreenshotCreateRequest_Data_Attributes');
 
 class AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet_Data extend
 	}
 
 }
-class_alias(AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet_Data::class, 'AppleService_AppStore_AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet_Data');
 
 class AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet extends \Ca
 	}
 
 }
-class_alias(AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet::class, 'AppleService_AppStore_AppScreenshotCreateRequest_Data_Relationships_AppScreenshotSet');
 
 class AppScreenshotCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppScreenshotCreateRequest_Data_Relationships extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppScreenshotCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppScreenshotCreateRequest_Data_Relationships');
 
 class AppScreenshotCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppScreenshotCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshotCreateRequest_Data::class, 'AppleService_AppStore_AppScreenshotCreateRequest_Data');
 
 class AppScreenshotCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppScreenshotCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshotCreateRequest::class, 'AppleService_AppStore_AppScreenshotCreateRequest');
 

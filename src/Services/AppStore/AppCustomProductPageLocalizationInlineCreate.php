@@ -51,7 +51,6 @@ class AppCustomProductPageLocalizationInlineCreate_Attributes extends \Cantie\Ap
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationInlineCreate_Attributes::class, 'AppleService_AppStore_AppCustomProductPageLocalizationInlineCreate_Attributes');
 
 class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProductPageVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProduc
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProductPageVersion_Data::class, 'AppleService_AppStore_AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProductPageVersion_Data');
 
 class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProduc
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProductPageVersion::class, 'AppleService_AppStore_AppCustomProductPageLocalizationInlineCreate_Relationships_AppCustomProductPageVersion');
 
 class AppCustomProductPageLocalizationInlineCreate_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppCustomProductPageLocalizationInlineCreate_Relationships extends \Cantie
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationInlineCreate_Relationships::class, 'AppleService_AppStore_AppCustomProductPageLocalizationInlineCreate_Relationships');
 
 class AppCustomProductPageLocalizationInlineCreate extends \Cantie\AppStoreConnect\Model
 {
@@ -187,5 +183,4 @@ class AppCustomProductPageLocalizationInlineCreate extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationInlineCreate::class, 'AppleService_AppStore_AppCustomProductPageLocalizationInlineCreate');
 

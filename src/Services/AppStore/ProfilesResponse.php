@@ -93,5 +93,4 @@ class ProfilesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ProfilesResponse::class, 'AppleService_AppStore_ProfilesResponse');
 

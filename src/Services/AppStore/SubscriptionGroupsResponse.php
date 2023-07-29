@@ -93,5 +93,4 @@ class SubscriptionGroupsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupsResponse::class, 'AppleService_AppStore_SubscriptionGroupsResponse');
 

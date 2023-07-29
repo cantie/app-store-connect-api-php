@@ -99,5 +99,4 @@ class AppEventsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventsResponse::class, 'AppleService_AppStore_AppEventsResponse');
 

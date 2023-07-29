@@ -82,5 +82,4 @@ class RoutingAppCoverageResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverageResponse::class, 'AppleService_AppStore_RoutingAppCoverageResponse');
 

@@ -82,5 +82,4 @@ class CiMacOsVersionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiMacOsVersionResponse::class, 'AppleService_AppStore_CiMacOsVersionResponse');
 

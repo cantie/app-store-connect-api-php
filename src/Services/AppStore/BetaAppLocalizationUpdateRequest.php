@@ -81,7 +81,6 @@ class BetaAppLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(BetaAppLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaAppLocalizationUpdateRequest_Data_Attributes');
 
 class BetaAppLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +124,6 @@ class BetaAppLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BetaAppLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_BetaAppLocalizationUpdateRequest_Data');
 
 class BetaAppLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -149,5 +147,4 @@ class BetaAppLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppLocalizationUpdateRequest::class, 'AppleService_AppStore_BetaAppLocalizationUpdateRequest');
 

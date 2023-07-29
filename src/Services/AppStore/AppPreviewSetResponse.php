@@ -76,5 +76,4 @@ class AppPreviewSetResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreviewSetResponse::class, 'AppleService_AppStore_AppPreviewSetResponse');
 

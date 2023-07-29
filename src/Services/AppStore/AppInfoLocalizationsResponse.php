@@ -99,5 +99,4 @@ class AppInfoLocalizationsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoLocalizationsResponse::class, 'AppleService_AppStore_AppInfoLocalizationsResponse');
 

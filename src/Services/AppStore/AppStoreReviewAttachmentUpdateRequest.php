@@ -51,7 +51,6 @@ class AppStoreReviewAttachmentUpdateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(AppStoreReviewAttachmentUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreReviewAttachmentUpdateRequest_Data_Attributes');
 
 class AppStoreReviewAttachmentUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppStoreReviewAttachmentUpdateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppStoreReviewAttachmentUpdateRequest_Data::class, 'AppleService_AppStore_AppStoreReviewAttachmentUpdateRequest_Data');
 
 class AppStoreReviewAttachmentUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppStoreReviewAttachmentUpdateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppStoreReviewAttachmentUpdateRequest::class, 'AppleService_AppStore_AppStoreReviewAttachmentUpdateRequest');
 

@@ -99,5 +99,4 @@ class SubscriptionOfferCodeOneTimeUseCodesResponse extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodesResponse::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodesResponse');
 

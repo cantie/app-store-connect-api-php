@@ -51,4 +51,3 @@ class Territories extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Territories::class, 'AppleService_AppStore_ResourceTerritories');

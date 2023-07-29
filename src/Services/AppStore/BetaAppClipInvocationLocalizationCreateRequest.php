@@ -51,7 +51,6 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Attributes extends \Ca
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationCreateRequest_Data_Attributes');
 
 class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppClipInvocation_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppC
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppClipInvocation_Data::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppClipInvocation_Data');
 
 class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppC
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppClipInvocation::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships_BetaAppClipInvocation');
 
 class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships extends 
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationCreateRequest_Data_Relationships');
 
 class BetaAppClipInvocationLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class BetaAppClipInvocationLocalizationCreateRequest_Data extends \Cantie\AppSto
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationCreateRequest_Data::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationCreateRequest_Data');
 
 class BetaAppClipInvocationLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class BetaAppClipInvocationLocalizationCreateRequest extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationCreateRequest::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationCreateRequest');
 

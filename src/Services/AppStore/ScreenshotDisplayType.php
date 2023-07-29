@@ -63,5 +63,4 @@ class ScreenshotDisplayType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(ScreenshotDisplayType::class, 'AppleService_AppStore_ScreenshotDisplayType');
 

@@ -236,4 +236,3 @@ class Subscriptions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Subscriptions::class, 'AppleService_AppStore_ResourceSubscriptions');

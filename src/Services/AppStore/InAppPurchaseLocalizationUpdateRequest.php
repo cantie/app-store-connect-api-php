@@ -51,7 +51,6 @@ class InAppPurchaseLocalizationUpdateRequest_Data_Attributes extends \Cantie\App
 	}
 
 }
-class_alias(InAppPurchaseLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest_Data_Attributes');
 
 class InAppPurchaseLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class InAppPurchaseLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(InAppPurchaseLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest_Data');
 
 class InAppPurchaseLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class InAppPurchaseLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(InAppPurchaseLocalizationUpdateRequest::class, 'AppleService_AppStore_InAppPurchaseLocalizationUpdateRequest');
 

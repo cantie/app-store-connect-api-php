@@ -51,7 +51,6 @@ class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage
 	}
 
 }
-class_alias(AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage_Data::class, 'AppleService_AppStore_AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage_Data');
 
 class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage
 	}
 
 }
-class_alias(AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage::class, 'AppleService_AppStore_AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage');
 
 class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPageLocalizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage
 	}
 
 }
-class_alias(AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPageLocalizations_Data::class, 'AppleService_AppStore_AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPageLocalizations_Data');
 
 class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPageLocalizations extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPage
 	}
 
 }
-class_alias(AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPageLocalizations::class, 'AppleService_AppStore_AppCustomProductPageVersionInlineCreate_Relationships_AppCustomProductPageLocalizations');
 
 class AppCustomProductPageVersionInlineCreate_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class AppCustomProductPageVersionInlineCreate_Relationships extends \Cantie\AppS
 	}
 
 }
-class_alias(AppCustomProductPageVersionInlineCreate_Relationships::class, 'AppleService_AppStore_AppCustomProductPageVersionInlineCreate_Relationships');
 
 class AppCustomProductPageVersionInlineCreate extends \Cantie\AppStoreConnect\Model
 {
@@ -211,5 +206,4 @@ class AppCustomProductPageVersionInlineCreate extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppCustomProductPageVersionInlineCreate::class, 'AppleService_AppStore_AppCustomProductPageVersionInlineCreate');
 

@@ -51,7 +51,6 @@ class InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes extends
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data_Attributes');
 
 class InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest_Data');
 
 class InAppPurchaseAppStoreReviewScreenshotUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class InAppPurchaseAppStoreReviewScreenshotUpdateRequest extends \Cantie\AppStor
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotUpdateRequest::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotUpdateRequest');
 

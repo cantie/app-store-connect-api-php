@@ -61,7 +61,6 @@ class AppEventLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppEventLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventLocalizationUpdateRequest_Data_Attributes');
 
 class AppEventLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +104,6 @@ class AppEventLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppEventLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_AppEventLocalizationUpdateRequest_Data');
 
 class AppEventLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -129,5 +127,4 @@ class AppEventLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventLocalizationUpdateRequest::class, 'AppleService_AppStore_AppEventLocalizationUpdateRequest');
 

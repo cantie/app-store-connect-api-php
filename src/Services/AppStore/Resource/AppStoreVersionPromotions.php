@@ -51,4 +51,3 @@ class AppStoreVersionPromotions extends \Cantie\AppStoreConnect\Services\Resourc
     }
 }
 
-class_alias(AppStoreVersionPromotions::class, 'AppleService_AppStore_ResourceAppStoreVersionPromotions');

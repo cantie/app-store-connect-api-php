@@ -99,5 +99,4 @@ class BetaAppClipInvocationsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppClipInvocationsResponse::class, 'AppleService_AppStore_BetaAppClipInvocationsResponse');
 

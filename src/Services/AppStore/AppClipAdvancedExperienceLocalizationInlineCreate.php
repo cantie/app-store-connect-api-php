@@ -67,7 +67,6 @@ class AppClipAdvancedExperienceLocalizationInlineCreate_Attributes extends \Cant
 	}
 
 }
-class_alias(AppClipAdvancedExperienceLocalizationInlineCreate_Attributes::class, 'AppleService_AppStore_AppClipAdvancedExperienceLocalizationInlineCreate_Attributes');
 
 class AppClipAdvancedExperienceLocalizationInlineCreate extends \Cantie\AppStoreConnect\Model
 {
@@ -111,5 +110,4 @@ class AppClipAdvancedExperienceLocalizationInlineCreate extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppClipAdvancedExperienceLocalizationInlineCreate::class, 'AppleService_AppStore_AppClipAdvancedExperienceLocalizationInlineCreate');
 

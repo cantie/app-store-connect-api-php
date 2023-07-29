@@ -51,7 +51,6 @@ class PromotedPurchaseCreateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Attributes::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Attributes');
 
 class PromotedPurchaseCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships_App_Data extends \Cantie\
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships_App_Data');
 
 class PromotedPurchaseCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships_App extends \Cantie\AppSt
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships_App');
 
 class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -129,7 +126,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2_Data exte
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2_Data');
 
 class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2 extends \
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships_InAppPurchaseV2');
 
 class PromotedPurchaseCreateRequest_Data_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -180,7 +175,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships_Subscription_Data extends
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships_Subscription_Data::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships_Subscription_Data');
 
 class PromotedPurchaseCreateRequest_Data_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -204,7 +198,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships_Subscription extends \Can
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships_Subscription::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships_Subscription');
 
 class PromotedPurchaseCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -262,7 +255,6 @@ class PromotedPurchaseCreateRequest_Data_Relationships extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data_Relationships::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data_Relationships');
 
 class PromotedPurchaseCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -313,7 +305,6 @@ class PromotedPurchaseCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest_Data::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest_Data');
 
 class PromotedPurchaseCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -337,5 +328,4 @@ class PromotedPurchaseCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseCreateRequest::class, 'AppleService_AppStore_PromotedPurchaseCreateRequest');
 

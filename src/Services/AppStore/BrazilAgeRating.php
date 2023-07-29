@@ -38,5 +38,4 @@ class BrazilAgeRating extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(BrazilAgeRating::class, 'AppleService_AppStore_BrazilAgeRating');
 

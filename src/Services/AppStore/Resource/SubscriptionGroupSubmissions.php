@@ -51,4 +51,3 @@ class SubscriptionGroupSubmissions extends \Cantie\AppStoreConnect\Services\Reso
     }
 }
 
-class_alias(SubscriptionGroupSubmissions::class, 'AppleService_AppStore_ResourceSubscriptionGroupSubmissions');

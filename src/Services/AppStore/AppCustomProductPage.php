@@ -61,7 +61,6 @@ class AppCustomProductPage_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCustomProductPage_Attributes::class, 'AppleService_AppStore_AppCustomProductPage_Attributes');
 
 class AppCustomProductPage_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class AppCustomProductPage_Relationships_App_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships_App_Links::class, 'AppleService_AppStore_AppCustomProductPage_Relationships_App_Links');
 
 class AppCustomProductPage_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -115,7 +113,6 @@ class AppCustomProductPage_Relationships_App_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships_App_Data::class, 'AppleService_AppStore_AppCustomProductPage_Relationships_App_Data');
 
 class AppCustomProductPage_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -156,7 +153,6 @@ class AppCustomProductPage_Relationships_App extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships_App::class, 'AppleService_AppStore_AppCustomProductPage_Relationships_App');
 
 class AppCustomProductPage_Relationships_AppCustomProductPageVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -183,7 +179,6 @@ class AppCustomProductPage_Relationships_AppCustomProductPageVersions_Links exte
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships_AppCustomProductPageVersions_Links::class, 'AppleService_AppStore_AppCustomProductPage_Relationships_AppCustomProductPageVersions_Links');
 
 class AppCustomProductPage_Relationships_AppCustomProductPageVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -210,7 +205,6 @@ class AppCustomProductPage_Relationships_AppCustomProductPageVersions_Data exten
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships_AppCustomProductPageVersions_Data::class, 'AppleService_AppStore_AppCustomProductPage_Relationships_AppCustomProductPageVersions_Data');
 
 class AppCustomProductPage_Relationships_AppCustomProductPageVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -268,7 +262,6 @@ class AppCustomProductPage_Relationships_AppCustomProductPageVersions extends \C
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships_AppCustomProductPageVersions::class, 'AppleService_AppStore_AppCustomProductPage_Relationships_AppCustomProductPageVersions');
 
 class AppCustomProductPage_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -309,7 +302,6 @@ class AppCustomProductPage_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCustomProductPage_Relationships::class, 'AppleService_AppStore_AppCustomProductPage_Relationships');
 
 class AppCustomProductPage extends \Cantie\AppStoreConnect\Model
 {
@@ -387,5 +379,4 @@ class AppCustomProductPage extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCustomProductPage::class, 'AppleService_AppStore_AppCustomProductPage');
 

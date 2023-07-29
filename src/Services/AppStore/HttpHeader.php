@@ -51,5 +51,4 @@ class HttpHeader extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(HttpHeader::class, 'AppleService_AppStore_HttpHeader');
 

@@ -38,5 +38,4 @@ class IconAssetType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(IconAssetType::class, 'AppleService_AppStore_IconAssetType');
 

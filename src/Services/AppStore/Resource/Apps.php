@@ -468,4 +468,3 @@ class Apps extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Apps::class, 'AppleService_AppStore_ResourceApps');

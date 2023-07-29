@@ -41,7 +41,6 @@ class BetaAppClipInvocation_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppClipInvocation_Attributes::class, 'AppleService_AppStore_BetaAppClipInvocation_Attributes');
 
 class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Lin
 	}
 
 }
-class_alias(BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Links::class, 'AppleService_AppStore_BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Links');
 
 class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Dat
 	}
 
 }
-class_alias(BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Data::class, 'AppleService_AppStore_BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations_Data');
 
 class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +150,6 @@ class BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations ext
 	}
 
 }
-class_alias(BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations::class, 'AppleService_AppStore_BetaAppClipInvocation_Relationships_BetaAppClipInvocationLocalizations');
 
 class BetaAppClipInvocation_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class BetaAppClipInvocation_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppClipInvocation_Relationships::class, 'AppleService_AppStore_BetaAppClipInvocation_Relationships');
 
 class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 {
@@ -255,5 +250,4 @@ class BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppClipInvocation::class, 'AppleService_AppStore_BetaAppClipInvocation');
 

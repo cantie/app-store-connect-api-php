@@ -41,7 +41,6 @@ class CustomerReviewResponseV1CreateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(CustomerReviewResponseV1CreateRequest_Data_Attributes::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Attributes');
 
 class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data exten
 	}
 
 }
-class_alias(CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Relationships_Review_Data');
 
 class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships_Review extends \C
 	}
 
 }
-class_alias(CustomerReviewResponseV1CreateRequest_Data_Relationships_Review::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Relationships_Review');
 
 class CustomerReviewResponseV1CreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -116,7 +113,6 @@ class CustomerReviewResponseV1CreateRequest_Data_Relationships extends \Cantie\A
 	}
 
 }
-class_alias(CustomerReviewResponseV1CreateRequest_Data_Relationships::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data_Relationships');
 
 class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class CustomerReviewResponseV1CreateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CustomerReviewResponseV1CreateRequest_Data::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest_Data');
 
 class CustomerReviewResponseV1CreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -191,5 +186,4 @@ class CustomerReviewResponseV1CreateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(CustomerReviewResponseV1CreateRequest::class, 'AppleService_AppStore_CustomerReviewResponseV1CreateRequest');
 

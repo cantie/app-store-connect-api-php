@@ -92,7 +92,6 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ErrorResponse_Errors::class, 'AppleService_AppStore_ErrorResponse_Errors');
 
 class ErrorResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -116,5 +115,4 @@ class ErrorResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ErrorResponse::class, 'AppleService_AppStore_ErrorResponse');
 

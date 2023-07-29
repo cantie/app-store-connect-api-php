@@ -57,7 +57,6 @@ class PreReleaseVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PreReleaseVersion_Attributes::class, 'AppleService_AppStore_PreReleaseVersion_Attributes');
 
 class PreReleaseVersion_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -84,7 +83,6 @@ class PreReleaseVersion_Relationships_Builds_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships_Builds_Links::class, 'AppleService_AppStore_PreReleaseVersion_Relationships_Builds_Links');
 
 class PreReleaseVersion_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -111,7 +109,6 @@ class PreReleaseVersion_Relationships_Builds_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships_Builds_Data::class, 'AppleService_AppStore_PreReleaseVersion_Relationships_Builds_Data');
 
 class PreReleaseVersion_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 {
@@ -169,7 +166,6 @@ class PreReleaseVersion_Relationships_Builds extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships_Builds::class, 'AppleService_AppStore_PreReleaseVersion_Relationships_Builds');
 
 class PreReleaseVersion_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -196,7 +192,6 @@ class PreReleaseVersion_Relationships_App_Links extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships_App_Links::class, 'AppleService_AppStore_PreReleaseVersion_Relationships_App_Links');
 
 class PreReleaseVersion_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -223,7 +218,6 @@ class PreReleaseVersion_Relationships_App_Data extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships_App_Data::class, 'AppleService_AppStore_PreReleaseVersion_Relationships_App_Data');
 
 class PreReleaseVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -264,7 +258,6 @@ class PreReleaseVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships_App::class, 'AppleService_AppStore_PreReleaseVersion_Relationships_App');
 
 class PreReleaseVersion_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -305,7 +298,6 @@ class PreReleaseVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PreReleaseVersion_Relationships::class, 'AppleService_AppStore_PreReleaseVersion_Relationships');
 
 class PreReleaseVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -383,5 +375,4 @@ class PreReleaseVersion extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PreReleaseVersion::class, 'AppleService_AppStore_PreReleaseVersion');
 

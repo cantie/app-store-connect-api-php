@@ -41,7 +41,6 @@ class SubscriptionGroup_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroup_Attributes::class, 'AppleService_AppStore_SubscriptionGroup_Attributes');
 
 class SubscriptionGroup_Relationships_Subscriptions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class SubscriptionGroup_Relationships_Subscriptions_Links extends \Cantie\AppSto
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships_Subscriptions_Links::class, 'AppleService_AppStore_SubscriptionGroup_Relationships_Subscriptions_Links');
 
 class SubscriptionGroup_Relationships_Subscriptions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class SubscriptionGroup_Relationships_Subscriptions_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships_Subscriptions_Data::class, 'AppleService_AppStore_SubscriptionGroup_Relationships_Subscriptions_Data');
 
 class SubscriptionGroup_Relationships_Subscriptions extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +150,6 @@ class SubscriptionGroup_Relationships_Subscriptions extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships_Subscriptions::class, 'AppleService_AppStore_SubscriptionGroup_Relationships_Subscriptions');
 
 class SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -180,7 +176,6 @@ class SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Links exten
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Links::class, 'AppleService_AppStore_SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Links');
 
 class SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -207,7 +202,6 @@ class SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Data extend
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Data::class, 'AppleService_AppStore_SubscriptionGroup_Relationships_SubscriptionGroupLocalizations_Data');
 
 class SubscriptionGroup_Relationships_SubscriptionGroupLocalizations extends \Cantie\AppStoreConnect\Model
 {
@@ -265,7 +259,6 @@ class SubscriptionGroup_Relationships_SubscriptionGroupLocalizations extends \Ca
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships_SubscriptionGroupLocalizations::class, 'AppleService_AppStore_SubscriptionGroup_Relationships_SubscriptionGroupLocalizations');
 
 class SubscriptionGroup_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -306,7 +299,6 @@ class SubscriptionGroup_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroup_Relationships::class, 'AppleService_AppStore_SubscriptionGroup_Relationships');
 
 class SubscriptionGroup extends \Cantie\AppStoreConnect\Model
 {
@@ -384,5 +376,4 @@ class SubscriptionGroup extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroup::class, 'AppleService_AppStore_SubscriptionGroup');
 

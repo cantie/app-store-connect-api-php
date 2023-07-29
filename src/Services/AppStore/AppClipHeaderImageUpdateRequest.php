@@ -51,7 +51,6 @@ class AppClipHeaderImageUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppClipHeaderImageUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipHeaderImageUpdateRequest_Data_Attributes');
 
 class AppClipHeaderImageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppClipHeaderImageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImageUpdateRequest_Data::class, 'AppleService_AppStore_AppClipHeaderImageUpdateRequest_Data');
 
 class AppClipHeaderImageUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppClipHeaderImageUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImageUpdateRequest::class, 'AppleService_AppStore_AppClipHeaderImageUpdateRequest');
 

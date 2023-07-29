@@ -106,4 +106,3 @@ class AppStoreVersionLocalizations extends \Cantie\AppStoreConnect\Services\Reso
     }
 }
 
-class_alias(AppStoreVersionLocalizations::class, 'AppleService_AppStore_ResourceAppStoreVersionLocalizations');

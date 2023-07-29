@@ -52,4 +52,3 @@ class InAppPurchaseContents extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(InAppPurchaseContents::class, 'AppleService_AppStore_ResourceInAppPurchaseContents');

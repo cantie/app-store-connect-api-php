@@ -76,5 +76,4 @@ class BuildResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildResponse::class, 'AppleService_AppStore_BuildResponse');
 

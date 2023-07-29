@@ -82,5 +82,4 @@ class ScmGitReferenceResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmGitReferenceResponse::class, 'AppleService_AppStore_ScmGitReferenceResponse');
 

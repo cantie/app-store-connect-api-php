@@ -36,5 +36,4 @@ class PhasedReleaseState extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(PhasedReleaseState::class, 'AppleService_AppStore_PhasedReleaseState');
 

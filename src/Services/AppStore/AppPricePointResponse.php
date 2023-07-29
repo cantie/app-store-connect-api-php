@@ -76,5 +76,4 @@ class AppPricePointResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPricePointResponse::class, 'AppleService_AppStore_AppPricePointResponse');
 

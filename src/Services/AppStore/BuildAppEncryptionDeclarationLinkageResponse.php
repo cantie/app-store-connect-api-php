@@ -51,7 +51,6 @@ class BuildAppEncryptionDeclarationLinkageResponse_Data extends \Cantie\AppStore
 	}
 
 }
-class_alias(BuildAppEncryptionDeclarationLinkageResponse_Data::class, 'AppleService_AppStore_BuildAppEncryptionDeclarationLinkageResponse_Data');
 
 class BuildAppEncryptionDeclarationLinkageResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -92,5 +91,4 @@ class BuildAppEncryptionDeclarationLinkageResponse extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(BuildAppEncryptionDeclarationLinkageResponse::class, 'AppleService_AppStore_BuildAppEncryptionDeclarationLinkageResponse');
 

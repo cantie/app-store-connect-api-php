@@ -64,4 +64,3 @@ class CustomerReviews extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CustomerReviews::class, 'AppleService_AppStore_ResourceCustomerReviews');

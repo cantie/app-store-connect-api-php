@@ -51,7 +51,6 @@ class RoutingAppCoverageCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(RoutingAppCoverageCreateRequest_Data_Attributes::class, 'AppleService_AppStore_RoutingAppCoverageCreateRequest_Data_Attributes');
 
 class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion_Data ex
 	}
 
 }
-class_alias(RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion extends
 	}
 
 }
-class_alias(RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_RoutingAppCoverageCreateRequest_Data_Relationships_AppStoreVersion');
 
 class RoutingAppCoverageCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class RoutingAppCoverageCreateRequest_Data_Relationships extends \Cantie\AppStor
 	}
 
 }
-class_alias(RoutingAppCoverageCreateRequest_Data_Relationships::class, 'AppleService_AppStore_RoutingAppCoverageCreateRequest_Data_Relationships');
 
 class RoutingAppCoverageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class RoutingAppCoverageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverageCreateRequest_Data::class, 'AppleService_AppStore_RoutingAppCoverageCreateRequest_Data');
 
 class RoutingAppCoverageCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class RoutingAppCoverageCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverageCreateRequest::class, 'AppleService_AppStore_RoutingAppCoverageCreateRequest');
 

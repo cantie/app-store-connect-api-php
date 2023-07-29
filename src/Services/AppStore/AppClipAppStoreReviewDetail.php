@@ -48,7 +48,6 @@ class AppClipAppStoreReviewDetail_Attributes extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetail_Attributes::class, 'AppleService_AppStore_AppClipAppStoreReviewDetail_Attributes');
 
 class AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Links e
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Links::class, 'AppleService_AppStore_AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Links');
 
 class AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Data ex
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Data::class, 'AppleService_AppStore_AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience_Data');
 
 class AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience extends \Cantie\AppStoreConnect\Model
 {
@@ -143,7 +140,6 @@ class AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience extends
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience::class, 'AppleService_AppStore_AppClipAppStoreReviewDetail_Relationships_AppClipDefaultExperience');
 
 class AppClipAppStoreReviewDetail_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class AppClipAppStoreReviewDetail_Relationships extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetail_Relationships::class, 'AppleService_AppStore_AppClipAppStoreReviewDetail_Relationships');
 
 class AppClipAppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 {
@@ -245,5 +240,4 @@ class AppClipAppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetail::class, 'AppleService_AppStore_AppClipAppStoreReviewDetail');
 

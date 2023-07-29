@@ -51,7 +51,6 @@ class ReviewSubmissionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(ReviewSubmissionUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_ReviewSubmissionUpdateRequest_Data_Attributes');
 
 class ReviewSubmissionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class ReviewSubmissionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionUpdateRequest_Data::class, 'AppleService_AppStore_ReviewSubmissionUpdateRequest_Data');
 
 class ReviewSubmissionUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class ReviewSubmissionUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionUpdateRequest::class, 'AppleService_AppStore_ReviewSubmissionUpdateRequest');
 

@@ -74,4 +74,3 @@ class InAppPurchaseAvailabilities extends \Cantie\AppStoreConnect\Services\Resou
     }
 }
 
-class_alias(InAppPurchaseAvailabilities::class, 'AppleService_AppStore_ResourceInAppPurchaseAvailabilities');

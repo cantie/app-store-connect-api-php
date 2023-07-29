@@ -58,7 +58,6 @@ class ScmProvider_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmProvider_Attributes::class, 'AppleService_AppStore_ScmProvider_Attributes');
 
 class ScmProvider extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +118,4 @@ class ScmProvider extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmProvider::class, 'AppleService_AppStore_ScmProvider');
 

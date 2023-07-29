@@ -131,4 +131,3 @@ class CiProducts extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiProducts::class, 'AppleService_AppStore_ResourceCiProducts');

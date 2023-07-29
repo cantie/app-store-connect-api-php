@@ -73,4 +73,3 @@ class AppClipAppStoreReviewDetails extends \Cantie\AppStoreConnect\Services\Reso
     }
 }
 
-class_alias(AppClipAppStoreReviewDetails::class, 'AppleService_AppStore_ResourceAppClipAppStoreReviewDetails');

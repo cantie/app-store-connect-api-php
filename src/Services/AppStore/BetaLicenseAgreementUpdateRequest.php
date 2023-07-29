@@ -41,7 +41,6 @@ class BetaLicenseAgreementUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	}
 
 }
-class_alias(BetaLicenseAgreementUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaLicenseAgreementUpdateRequest_Data_Attributes');
 
 class BetaLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class BetaLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(BetaLicenseAgreementUpdateRequest_Data::class, 'AppleService_AppStore_BetaLicenseAgreementUpdateRequest_Data');
 
 class BetaLicenseAgreementUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class BetaLicenseAgreementUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaLicenseAgreementUpdateRequest::class, 'AppleService_AppStore_BetaLicenseAgreementUpdateRequest');
 

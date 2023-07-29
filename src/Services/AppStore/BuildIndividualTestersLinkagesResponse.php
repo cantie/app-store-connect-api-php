@@ -51,7 +51,6 @@ class BuildIndividualTestersLinkagesResponse_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(BuildIndividualTestersLinkagesResponse_Data::class, 'AppleService_AppStore_BuildIndividualTestersLinkagesResponse_Data');
 
 class BuildIndividualTestersLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class BuildIndividualTestersLinkagesResponse extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(BuildIndividualTestersLinkagesResponse::class, 'AppleService_AppStore_BuildIndividualTestersLinkagesResponse');
 

@@ -51,7 +51,6 @@ class AppEventVideoClipUpdateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppEventVideoClipUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventVideoClipUpdateRequest_Data_Attributes');
 
 class AppEventVideoClipUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppEventVideoClipUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClipUpdateRequest_Data::class, 'AppleService_AppStore_AppEventVideoClipUpdateRequest_Data');
 
 class AppEventVideoClipUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppEventVideoClipUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClipUpdateRequest::class, 'AppleService_AppStore_AppEventVideoClipUpdateRequest');
 

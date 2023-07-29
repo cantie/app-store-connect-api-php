@@ -99,5 +99,4 @@ class PromotedPurchaseImagesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseImagesResponse::class, 'AppleService_AppStore_PromotedPurchaseImagesResponse');
 

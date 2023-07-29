@@ -77,7 +77,6 @@ class SubscriptionGracePeriodUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	}
 
 }
-class_alias(SubscriptionGracePeriodUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionGracePeriodUpdateRequest_Data_Attributes');
 
 class SubscriptionGracePeriodUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -121,7 +120,6 @@ class SubscriptionGracePeriodUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(SubscriptionGracePeriodUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionGracePeriodUpdateRequest_Data');
 
 class SubscriptionGracePeriodUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -145,5 +143,4 @@ class SubscriptionGracePeriodUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGracePeriodUpdateRequest::class, 'AppleService_AppStore_SubscriptionGracePeriodUpdateRequest');
 

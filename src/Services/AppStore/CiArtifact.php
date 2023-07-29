@@ -71,7 +71,6 @@ class CiArtifact_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiArtifact_Attributes::class, 'AppleService_AppStore_CiArtifact_Attributes');
 
 class CiArtifact extends \Cantie\AppStoreConnect\Model
 {
@@ -132,5 +131,4 @@ class CiArtifact extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiArtifact::class, 'AppleService_AppStore_CiArtifact');
 

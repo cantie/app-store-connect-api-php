@@ -41,7 +41,6 @@ class Territory_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Territory_Attributes::class, 'AppleService_AppStore_Territory_Attributes');
 
 class Territory extends \Cantie\AppStoreConnect\Model
 {
@@ -102,5 +101,4 @@ class Territory extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Territory::class, 'AppleService_AppStore_Territory');
 

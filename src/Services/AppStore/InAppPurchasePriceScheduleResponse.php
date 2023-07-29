@@ -76,5 +76,4 @@ class InAppPurchasePriceScheduleResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleResponse::class, 'AppleService_AppStore_InAppPurchasePriceScheduleResponse');
 

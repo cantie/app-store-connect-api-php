@@ -101,7 +101,6 @@ class AppStoreVersionLocalizationCreateRequest_Data_Attributes extends \Cantie\A
 	}
 
 }
-class_alias(AppStoreVersionLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionLocalizationCreateRequest_Data_Attributes');
 
 class AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -128,7 +127,6 @@ class AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersio
 	}
 
 }
-class_alias(AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -152,7 +150,6 @@ class AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersio
 	}
 
 }
-class_alias(AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionLocalizationCreateRequest_Data_Relationships_AppStoreVersion');
 
 class AppStoreVersionLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -176,7 +173,6 @@ class AppStoreVersionLocalizationCreateRequest_Data_Relationships extends \Canti
 	}
 
 }
-class_alias(AppStoreVersionLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionLocalizationCreateRequest_Data_Relationships');
 
 class AppStoreVersionLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +223,6 @@ class AppStoreVersionLocalizationCreateRequest_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppStoreVersionLocalizationCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionLocalizationCreateRequest_Data');
 
 class AppStoreVersionLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -251,5 +246,4 @@ class AppStoreVersionLocalizationCreateRequest extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppStoreVersionLocalizationCreateRequest::class, 'AppleService_AppStore_AppStoreVersionLocalizationCreateRequest');
 

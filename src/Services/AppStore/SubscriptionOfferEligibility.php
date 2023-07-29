@@ -34,5 +34,4 @@ class SubscriptionOfferEligibility extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(SubscriptionOfferEligibility::class, 'AppleService_AppStore_SubscriptionOfferEligibility');
 

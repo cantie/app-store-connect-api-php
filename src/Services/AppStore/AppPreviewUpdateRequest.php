@@ -61,7 +61,6 @@ class AppPreviewUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppPreviewUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppPreviewUpdateRequest_Data_Attributes');
 
 class AppPreviewUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +104,6 @@ class AppPreviewUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreviewUpdateRequest_Data::class, 'AppleService_AppStore_AppPreviewUpdateRequest_Data');
 
 class AppPreviewUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -129,5 +127,4 @@ class AppPreviewUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreviewUpdateRequest::class, 'AppleService_AppStore_AppPreviewUpdateRequest');
 

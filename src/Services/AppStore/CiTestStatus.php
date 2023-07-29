@@ -37,5 +37,4 @@ class CiTestStatus extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CiTestStatus::class, 'AppleService_AppStore_CiTestStatus');
 

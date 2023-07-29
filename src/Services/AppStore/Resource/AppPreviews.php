@@ -82,4 +82,3 @@ class AppPreviews extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppPreviews::class, 'AppleService_AppStore_ResourceAppPreviews');

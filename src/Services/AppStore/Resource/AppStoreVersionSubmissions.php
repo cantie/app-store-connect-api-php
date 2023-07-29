@@ -60,4 +60,3 @@ class AppStoreVersionSubmissions extends \Cantie\AppStoreConnect\Services\Resour
     }
 }
 
-class_alias(AppStoreVersionSubmissions::class, 'AppleService_AppStore_ResourceAppStoreVersionSubmissions');

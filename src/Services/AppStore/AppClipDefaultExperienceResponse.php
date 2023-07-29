@@ -76,5 +76,4 @@ class AppClipDefaultExperienceResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipDefaultExperienceResponse::class, 'AppleService_AppStore_AppClipDefaultExperienceResponse');
 

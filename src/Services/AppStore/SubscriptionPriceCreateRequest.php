@@ -51,7 +51,6 @@ class SubscriptionPriceCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Attributes');
 
 class SubscriptionPriceCreateRequest_Data_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Subscription_Data extend
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships_Subscription_Data');
 
 class SubscriptionPriceCreateRequest_Data_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Subscription extends \Ca
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships_Subscription');
 
 class SubscriptionPriceCreateRequest_Data_Relationships_Territory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -129,7 +126,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Territory_Data extends \
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships_Territory_Data::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships_Territory_Data');
 
 class SubscriptionPriceCreateRequest_Data_Relationships_Territory extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships_Territory extends \Canti
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships_Territory::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships_Territory');
 
 class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -180,7 +175,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint_D
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint_Data::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint_Data');
 
 class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 {
@@ -204,7 +198,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint e
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships_SubscriptionPricePoint');
 
 class SubscriptionPriceCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -262,7 +255,6 @@ class SubscriptionPriceCreateRequest_Data_Relationships extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data_Relationships::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data_Relationships');
 
 class SubscriptionPriceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -313,7 +305,6 @@ class SubscriptionPriceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest_Data::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest_Data');
 
 class SubscriptionPriceCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -337,5 +328,4 @@ class SubscriptionPriceCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionPriceCreateRequest::class, 'AppleService_AppStore_SubscriptionPriceCreateRequest');
 

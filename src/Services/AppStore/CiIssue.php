@@ -78,7 +78,6 @@ class CiIssue_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiIssue_Attributes::class, 'AppleService_AppStore_CiIssue_Attributes');
 
 class CiIssue extends \Cantie\AppStoreConnect\Model
 {
@@ -139,5 +138,4 @@ class CiIssue extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiIssue::class, 'AppleService_AppStore_CiIssue');
 

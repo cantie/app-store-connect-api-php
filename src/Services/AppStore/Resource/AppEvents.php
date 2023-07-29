@@ -94,4 +94,3 @@ class AppEvents extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppEvents::class, 'AppleService_AppStore_ResourceAppEvents');

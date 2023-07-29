@@ -51,7 +51,6 @@ class AppScreenshotSetAppScreenshotsLinkagesResponse_Data extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppScreenshotSetAppScreenshotsLinkagesResponse_Data::class, 'AppleService_AppStore_AppScreenshotSetAppScreenshotsLinkagesResponse_Data');
 
 class AppScreenshotSetAppScreenshotsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class AppScreenshotSetAppScreenshotsLinkagesResponse extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppScreenshotSetAppScreenshotsLinkagesResponse::class, 'AppleService_AppStore_AppScreenshotSetAppScreenshotsLinkagesResponse');
 

@@ -92,5 +92,4 @@ class CiPullRequestStartCondition extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiPullRequestStartCondition::class, 'AppleService_AppStore_CiPullRequestStartCondition');
 

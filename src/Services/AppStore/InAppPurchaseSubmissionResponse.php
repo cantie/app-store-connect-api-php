@@ -82,5 +82,4 @@ class InAppPurchaseSubmissionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseSubmissionResponse::class, 'AppleService_AppStore_InAppPurchaseSubmissionResponse');
 

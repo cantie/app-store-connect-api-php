@@ -85,4 +85,3 @@ class BetaAppReviewSubmissions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BetaAppReviewSubmissions::class, 'AppleService_AppStore_ResourceBetaAppReviewSubmissions');

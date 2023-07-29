@@ -82,5 +82,4 @@ class DevicesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DevicesResponse::class, 'AppleService_AppStore_DevicesResponse');
 

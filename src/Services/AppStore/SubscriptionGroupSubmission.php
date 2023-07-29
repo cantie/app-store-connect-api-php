@@ -68,5 +68,4 @@ class SubscriptionGroupSubmission extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupSubmission::class, 'AppleService_AppStore_SubscriptionGroupSubmission');
 

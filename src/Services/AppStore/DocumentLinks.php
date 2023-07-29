@@ -41,5 +41,4 @@ class DocumentLinks extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DocumentLinks::class, 'AppleService_AppStore_DocumentLinks');
 

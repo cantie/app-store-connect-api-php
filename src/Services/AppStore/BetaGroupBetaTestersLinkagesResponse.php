@@ -51,7 +51,6 @@ class BetaGroupBetaTestersLinkagesResponse_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(BetaGroupBetaTestersLinkagesResponse_Data::class, 'AppleService_AppStore_BetaGroupBetaTestersLinkagesResponse_Data');
 
 class BetaGroupBetaTestersLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class BetaGroupBetaTestersLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroupBetaTestersLinkagesResponse::class, 'AppleService_AppStore_BetaGroupBetaTestersLinkagesResponse');
 

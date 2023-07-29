@@ -52,4 +52,3 @@ class CiArtifacts extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiArtifacts::class, 'AppleService_AppStore_ResourceCiArtifacts');

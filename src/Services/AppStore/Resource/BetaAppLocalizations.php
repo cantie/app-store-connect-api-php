@@ -105,4 +105,3 @@ class BetaAppLocalizations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BetaAppLocalizations::class, 'AppleService_AppStore_ResourceBetaAppLocalizations');

@@ -71,4 +71,3 @@ class BundleIdCapabilities extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BundleIdCapabilities::class, 'AppleService_AppStore_ResourceBundleIdCapabilities');

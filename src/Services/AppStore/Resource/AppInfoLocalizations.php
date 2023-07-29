@@ -82,4 +82,3 @@ class AppInfoLocalizations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppInfoLocalizations::class, 'AppleService_AppStore_ResourceAppInfoLocalizations');

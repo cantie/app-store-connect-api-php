@@ -118,5 +118,4 @@ class CapabilitySetting extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CapabilitySetting::class, 'AppleService_AppStore_CapabilitySetting');
 

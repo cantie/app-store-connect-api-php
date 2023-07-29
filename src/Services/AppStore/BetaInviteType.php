@@ -34,5 +34,4 @@ class BetaInviteType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(BetaInviteType::class, 'AppleService_AppStore_BetaInviteType');
 

@@ -108,7 +108,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress_S
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress_StructuredAddress::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress_StructuredAddress');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress extends \Cantie\AppStoreConnect\Model
 {
@@ -142,7 +141,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress e
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_MainAddress');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint_Coordinates extends \Cantie\AppStoreConnect\Model
 {
@@ -169,7 +167,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint_
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint_Coordinates::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint_Coordinates');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint extends \Cantie\AppStoreConnect\Model
 {
@@ -203,7 +200,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint 
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_DisplayPoint');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_PhoneNumber extends \Cantie\AppStoreConnect\Model
 {
@@ -240,7 +236,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_PhoneNumber e
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_PhoneNumber::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place_PhoneNumber');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place extends \Cantie\AppStoreConnect\Model
 {
@@ -372,7 +367,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place extends \Cant
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes_Place');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -458,7 +452,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Attributes extends \Cantie\App
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Attributes');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -485,7 +478,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip_Data ext
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip_Data::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip_Data');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip extends \Cantie\AppStoreConnect\Model
 {
@@ -509,7 +501,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip extends 
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships_AppClip');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -536,7 +527,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage_Data
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage_Data::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage_Data');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage extends \Cantie\AppStoreConnect\Model
 {
@@ -560,7 +550,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage exte
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships_HeaderImage');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -587,7 +576,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations_Da
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations_Data::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations_Data');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations extends \Cantie\AppStoreConnect\Model
 {
@@ -611,7 +599,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations ex
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships_Localizations');
 
 class AppClipAdvancedExperienceUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -669,7 +656,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data_Relationships extends \Cantie\
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data_Relationships');
 
 class AppClipAdvancedExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -730,7 +716,6 @@ class AppClipAdvancedExperienceUpdateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest_Data::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest_Data');
 
 class AppClipAdvancedExperienceUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -771,5 +756,4 @@ class AppClipAdvancedExperienceUpdateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppClipAdvancedExperienceUpdateRequest::class, 'AppleService_AppStore_AppClipAdvancedExperienceUpdateRequest');
 

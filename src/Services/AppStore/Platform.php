@@ -35,5 +35,4 @@ class Platform extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(Platform::class, 'AppleService_AppStore_Platform');
 

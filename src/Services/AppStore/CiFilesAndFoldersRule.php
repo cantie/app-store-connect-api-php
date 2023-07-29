@@ -58,5 +58,4 @@ class CiFilesAndFoldersRule extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiFilesAndFoldersRule::class, 'AppleService_AppStore_CiFilesAndFoldersRule');
 

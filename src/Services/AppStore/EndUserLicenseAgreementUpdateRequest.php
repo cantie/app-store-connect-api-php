@@ -41,7 +41,6 @@ class EndUserLicenseAgreementUpdateRequest_Data_Attributes extends \Cantie\AppSt
 	}
 
 }
-class_alias(EndUserLicenseAgreementUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_EndUserLicenseAgreementUpdateRequest_Data_Attributes');
 
 class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories_Data e
 	}
 
 }
-class_alias(EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories_Data::class, 'AppleService_AppStore_EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories_Data');
 
 class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories extend
 	}
 
 }
-class_alias(EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories::class, 'AppleService_AppStore_EndUserLicenseAgreementUpdateRequest_Data_Relationships_Territories');
 
 class EndUserLicenseAgreementUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -116,7 +113,6 @@ class EndUserLicenseAgreementUpdateRequest_Data_Relationships extends \Cantie\Ap
 	}
 
 }
-class_alias(EndUserLicenseAgreementUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_EndUserLicenseAgreementUpdateRequest_Data_Relationships');
 
 class EndUserLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class EndUserLicenseAgreementUpdateRequest_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(EndUserLicenseAgreementUpdateRequest_Data::class, 'AppleService_AppStore_EndUserLicenseAgreementUpdateRequest_Data');
 
 class EndUserLicenseAgreementUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class EndUserLicenseAgreementUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(EndUserLicenseAgreementUpdateRequest::class, 'AppleService_AppStore_EndUserLicenseAgreementUpdateRequest');
 

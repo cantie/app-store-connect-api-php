@@ -61,5 +61,4 @@ class ImageAsset extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ImageAsset::class, 'AppleService_AppStore_ImageAsset');
 

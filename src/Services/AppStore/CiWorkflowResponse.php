@@ -76,5 +76,4 @@ class CiWorkflowResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiWorkflowResponse::class, 'AppleService_AppStore_CiWorkflowResponse');
 

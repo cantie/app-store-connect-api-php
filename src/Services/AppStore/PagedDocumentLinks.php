@@ -61,5 +61,4 @@ class PagedDocumentLinks extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PagedDocumentLinks::class, 'AppleService_AppStore_PagedDocumentLinks');
 

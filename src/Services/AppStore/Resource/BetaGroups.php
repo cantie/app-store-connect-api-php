@@ -195,4 +195,3 @@ class BetaGroups extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BetaGroups::class, 'AppleService_AppStore_ResourceBetaGroups');

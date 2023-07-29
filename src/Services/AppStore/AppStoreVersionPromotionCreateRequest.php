@@ -51,7 +51,6 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion_D
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion e
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersion');
 
 class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionEx
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment_Data::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment_Data');
 
 class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionEx
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment');
 
 class AppStoreVersionPromotionCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class AppStoreVersionPromotionCreateRequest_Data_Relationships extends \Cantie\A
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest_Data_Relationships');
 
 class AppStoreVersionPromotionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -201,7 +196,6 @@ class AppStoreVersionPromotionCreateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest_Data');
 
 class AppStoreVersionPromotionCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -225,5 +219,4 @@ class AppStoreVersionPromotionCreateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppStoreVersionPromotionCreateRequest::class, 'AppleService_AppStore_AppStoreVersionPromotionCreateRequest');
 

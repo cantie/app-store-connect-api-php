@@ -41,7 +41,6 @@ class EndUserLicenseAgreementCreateRequest_Data_Attributes extends \Cantie\AppSt
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data_Attributes::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data_Attributes');
 
 class EndUserLicenseAgreementCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class EndUserLicenseAgreementCreateRequest_Data_Relationships_App_Data extends \
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data_Relationships_App_Data');
 
 class EndUserLicenseAgreementCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class EndUserLicenseAgreementCreateRequest_Data_Relationships_App extends \Canti
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data_Relationships_App');
 
 class EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +116,6 @@ class EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories_Data e
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories_Data::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories_Data');
 
 class EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories extends \Cantie\AppStoreConnect\Model
 {
@@ -143,7 +139,6 @@ class EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories extend
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data_Relationships_Territories');
 
 class EndUserLicenseAgreementCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -184,7 +179,6 @@ class EndUserLicenseAgreementCreateRequest_Data_Relationships extends \Cantie\Ap
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data_Relationships::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data_Relationships');
 
 class EndUserLicenseAgreementCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -235,7 +229,6 @@ class EndUserLicenseAgreementCreateRequest_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest_Data::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest_Data');
 
 class EndUserLicenseAgreementCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -259,5 +252,4 @@ class EndUserLicenseAgreementCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(EndUserLicenseAgreementCreateRequest::class, 'AppleService_AppStore_EndUserLicenseAgreementCreateRequest');
 

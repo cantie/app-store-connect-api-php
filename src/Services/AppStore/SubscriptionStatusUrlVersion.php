@@ -36,5 +36,4 @@ class SubscriptionStatusUrlVersion extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(SubscriptionStatusUrlVersion::class, 'AppleService_AppStore_SubscriptionStatusUrlVersion');
 

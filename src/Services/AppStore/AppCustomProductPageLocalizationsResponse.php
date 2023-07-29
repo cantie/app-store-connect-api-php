@@ -93,5 +93,4 @@ class AppCustomProductPageLocalizationsResponse extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationsResponse::class, 'AppleService_AppStore_AppCustomProductPageLocalizationsResponse');
 

@@ -132,7 +132,6 @@ class AppScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshot_Attributes::class, 'AppleService_AppStore_AppScreenshot_Attributes');
 
 class AppScreenshot_Relationships_AppScreenshotSet_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -159,7 +158,6 @@ class AppScreenshot_Relationships_AppScreenshotSet_Links extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppScreenshot_Relationships_AppScreenshotSet_Links::class, 'AppleService_AppStore_AppScreenshot_Relationships_AppScreenshotSet_Links');
 
 class AppScreenshot_Relationships_AppScreenshotSet_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +184,6 @@ class AppScreenshot_Relationships_AppScreenshotSet_Data extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppScreenshot_Relationships_AppScreenshotSet_Data::class, 'AppleService_AppStore_AppScreenshot_Relationships_AppScreenshotSet_Data');
 
 class AppScreenshot_Relationships_AppScreenshotSet extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +224,6 @@ class AppScreenshot_Relationships_AppScreenshotSet extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppScreenshot_Relationships_AppScreenshotSet::class, 'AppleService_AppStore_AppScreenshot_Relationships_AppScreenshotSet');
 
 class AppScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -251,7 +247,6 @@ class AppScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshot_Relationships::class, 'AppleService_AppStore_AppScreenshot_Relationships');
 
 class AppScreenshot extends \Cantie\AppStoreConnect\Model
 {
@@ -329,5 +324,4 @@ class AppScreenshot extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshot::class, 'AppleService_AppStore_AppScreenshot');
 

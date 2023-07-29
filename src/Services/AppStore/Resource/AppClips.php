@@ -76,4 +76,3 @@ class AppClips extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppClips::class, 'AppleService_AppStore_ResourceAppClips');

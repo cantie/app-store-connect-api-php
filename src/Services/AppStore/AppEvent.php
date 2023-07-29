@@ -78,7 +78,6 @@ class AppEvent_Attributes_TerritorySchedules extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppEvent_Attributes_TerritorySchedules::class, 'AppleService_AppStore_AppEvent_Attributes_TerritorySchedules');
 
 class AppEvent_Attributes_ArchivedTerritorySchedules extends \Cantie\AppStoreConnect\Model
 {
@@ -132,7 +131,6 @@ class AppEvent_Attributes_ArchivedTerritorySchedules extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppEvent_Attributes_ArchivedTerritorySchedules::class, 'AppleService_AppStore_AppEvent_Attributes_ArchivedTerritorySchedules');
 
 class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -253,7 +251,6 @@ class AppEvent_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEvent_Attributes::class, 'AppleService_AppStore_AppEvent_Attributes');
 
 class AppEvent_Relationships_Localizations_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -280,7 +277,6 @@ class AppEvent_Relationships_Localizations_Links extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppEvent_Relationships_Localizations_Links::class, 'AppleService_AppStore_AppEvent_Relationships_Localizations_Links');
 
 class AppEvent_Relationships_Localizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -307,7 +303,6 @@ class AppEvent_Relationships_Localizations_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppEvent_Relationships_Localizations_Data::class, 'AppleService_AppStore_AppEvent_Relationships_Localizations_Data');
 
 class AppEvent_Relationships_Localizations extends \Cantie\AppStoreConnect\Model
 {
@@ -365,7 +360,6 @@ class AppEvent_Relationships_Localizations extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEvent_Relationships_Localizations::class, 'AppleService_AppStore_AppEvent_Relationships_Localizations');
 
 class AppEvent_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -389,7 +383,6 @@ class AppEvent_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEvent_Relationships::class, 'AppleService_AppStore_AppEvent_Relationships');
 
 class AppEvent extends \Cantie\AppStoreConnect\Model
 {
@@ -467,5 +460,4 @@ class AppEvent extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEvent::class, 'AppleService_AppStore_AppEvent');
 

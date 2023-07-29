@@ -91,7 +91,6 @@ class BetaAppLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(BetaAppLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaAppLocalizationCreateRequest_Data_Attributes');
 
 class BetaAppLocalizationCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -118,7 +117,6 @@ class BetaAppLocalizationCreateRequest_Data_Relationships_App_Data extends \Cant
 	}
 
 }
-class_alias(BetaAppLocalizationCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_BetaAppLocalizationCreateRequest_Data_Relationships_App_Data');
 
 class BetaAppLocalizationCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -142,7 +140,6 @@ class BetaAppLocalizationCreateRequest_Data_Relationships_App extends \Cantie\Ap
 	}
 
 }
-class_alias(BetaAppLocalizationCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_BetaAppLocalizationCreateRequest_Data_Relationships_App');
 
 class BetaAppLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class BetaAppLocalizationCreateRequest_Data_Relationships extends \Cantie\AppSto
 	}
 
 }
-class_alias(BetaAppLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BetaAppLocalizationCreateRequest_Data_Relationships');
 
 class BetaAppLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -217,7 +213,6 @@ class BetaAppLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BetaAppLocalizationCreateRequest_Data::class, 'AppleService_AppStore_BetaAppLocalizationCreateRequest_Data');
 
 class BetaAppLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -241,5 +236,4 @@ class BetaAppLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppLocalizationCreateRequest::class, 'AppleService_AppStore_BetaAppLocalizationCreateRequest');
 

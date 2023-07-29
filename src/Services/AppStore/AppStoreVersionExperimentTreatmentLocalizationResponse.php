@@ -76,5 +76,4 @@ class AppStoreVersionExperimentTreatmentLocalizationResponse extends \Cantie\App
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationResponse::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationResponse');
 

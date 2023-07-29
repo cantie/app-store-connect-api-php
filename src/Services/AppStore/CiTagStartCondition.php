@@ -75,5 +75,4 @@ class CiTagStartCondition extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTagStartCondition::class, 'AppleService_AppStore_CiTagStartCondition');
 

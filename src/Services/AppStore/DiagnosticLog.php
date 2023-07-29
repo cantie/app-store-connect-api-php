@@ -68,5 +68,4 @@ class DiagnosticLog extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DiagnosticLog::class, 'AppleService_AppStore_DiagnosticLog');
 

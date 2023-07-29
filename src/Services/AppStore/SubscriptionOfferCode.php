@@ -135,7 +135,6 @@ class SubscriptionOfferCode_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionOfferCode_Attributes::class, 'AppleService_AppStore_SubscriptionOfferCode_Attributes');
 
 class SubscriptionOfferCode_Relationships_Subscription_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -162,7 +161,6 @@ class SubscriptionOfferCode_Relationships_Subscription_Links extends \Cantie\App
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_Subscription_Links::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_Subscription_Links');
 
 class SubscriptionOfferCode_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -189,7 +187,6 @@ class SubscriptionOfferCode_Relationships_Subscription_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_Subscription_Data');
 
 class SubscriptionOfferCode_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -230,7 +227,6 @@ class SubscriptionOfferCode_Relationships_Subscription extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_Subscription');
 
 class SubscriptionOfferCode_Relationships_OneTimeUseCodes_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -257,7 +253,6 @@ class SubscriptionOfferCode_Relationships_OneTimeUseCodes_Links extends \Cantie\
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_OneTimeUseCodes_Links::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_OneTimeUseCodes_Links');
 
 class SubscriptionOfferCode_Relationships_OneTimeUseCodes_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -284,7 +279,6 @@ class SubscriptionOfferCode_Relationships_OneTimeUseCodes_Data extends \Cantie\A
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_OneTimeUseCodes_Data::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_OneTimeUseCodes_Data');
 
 class SubscriptionOfferCode_Relationships_OneTimeUseCodes extends \Cantie\AppStoreConnect\Model
 {
@@ -342,7 +336,6 @@ class SubscriptionOfferCode_Relationships_OneTimeUseCodes extends \Cantie\AppSto
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_OneTimeUseCodes::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_OneTimeUseCodes');
 
 class SubscriptionOfferCode_Relationships_CustomCodes_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -369,7 +362,6 @@ class SubscriptionOfferCode_Relationships_CustomCodes_Links extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_CustomCodes_Links::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_CustomCodes_Links');
 
 class SubscriptionOfferCode_Relationships_CustomCodes_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -396,7 +388,6 @@ class SubscriptionOfferCode_Relationships_CustomCodes_Data extends \Cantie\AppSt
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_CustomCodes_Data::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_CustomCodes_Data');
 
 class SubscriptionOfferCode_Relationships_CustomCodes extends \Cantie\AppStoreConnect\Model
 {
@@ -454,7 +445,6 @@ class SubscriptionOfferCode_Relationships_CustomCodes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_CustomCodes::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_CustomCodes');
 
 class SubscriptionOfferCode_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -481,7 +471,6 @@ class SubscriptionOfferCode_Relationships_Prices_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_Prices_Links::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_Prices_Links');
 
 class SubscriptionOfferCode_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -508,7 +497,6 @@ class SubscriptionOfferCode_Relationships_Prices_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_Prices_Data::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_Prices_Data');
 
 class SubscriptionOfferCode_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 {
@@ -566,7 +554,6 @@ class SubscriptionOfferCode_Relationships_Prices extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships_Prices::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships_Prices');
 
 class SubscriptionOfferCode_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -641,7 +628,6 @@ class SubscriptionOfferCode_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionOfferCode_Relationships::class, 'AppleService_AppStore_SubscriptionOfferCode_Relationships');
 
 class SubscriptionOfferCode extends \Cantie\AppStoreConnect\Model
 {
@@ -719,5 +705,4 @@ class SubscriptionOfferCode extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionOfferCode::class, 'AppleService_AppStore_SubscriptionOfferCode');
 

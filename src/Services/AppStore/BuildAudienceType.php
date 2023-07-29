@@ -34,5 +34,4 @@ class BuildAudienceType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(BuildAudienceType::class, 'AppleService_AppStore_BuildAudienceType');
 

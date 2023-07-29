@@ -86,4 +86,3 @@ class BetaLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BetaLicenseAgreements::class, 'AppleService_AppStore_ResourceBetaLicenseAgreements');

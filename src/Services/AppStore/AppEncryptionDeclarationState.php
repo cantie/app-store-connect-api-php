@@ -38,5 +38,4 @@ class AppEncryptionDeclarationState extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(AppEncryptionDeclarationState::class, 'AppleService_AppStore_AppEncryptionDeclarationState');
 

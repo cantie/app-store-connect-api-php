@@ -74,4 +74,3 @@ class AppAvailabilities extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppAvailabilities::class, 'AppleService_AppStore_ResourceAppAvailabilities');

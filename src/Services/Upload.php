@@ -71,4 +71,3 @@ class Upload extends \Cantie\AppStoreConnect\Service
 
 }
 
-// class_alias(AppStore::class, 'AppleService_AppStore');

@@ -107,7 +107,6 @@ class Device_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Device_Attributes::class, 'AppleService_AppStore_Device_Attributes');
 
 class Device extends \Cantie\AppStoreConnect\Model
 {
@@ -168,5 +167,4 @@ class Device extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Device::class, 'AppleService_AppStore_Device');
 

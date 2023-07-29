@@ -41,7 +41,6 @@ class AppClip_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClip_Attributes::class, 'AppleService_AppStore_AppClip_Attributes');
 
 class AppClip_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class AppClip_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClip_Relationships_App_Links::class, 'AppleService_AppStore_AppClip_Relationships_App_Links');
 
 class AppClip_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class AppClip_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClip_Relationships_App_Data::class, 'AppleService_AppStore_AppClip_Relationships_App_Data');
 
 class AppClip_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class AppClip_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClip_Relationships_App::class, 'AppleService_AppStore_AppClip_Relationships_App');
 
 class AppClip_Relationships_AppClipDefaultExperiences_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +159,6 @@ class AppClip_Relationships_AppClipDefaultExperiences_Links extends \Cantie\AppS
 	}
 
 }
-class_alias(AppClip_Relationships_AppClipDefaultExperiences_Links::class, 'AppleService_AppStore_AppClip_Relationships_AppClipDefaultExperiences_Links');
 
 class AppClip_Relationships_AppClipDefaultExperiences_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +185,6 @@ class AppClip_Relationships_AppClipDefaultExperiences_Data extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppClip_Relationships_AppClipDefaultExperiences_Data::class, 'AppleService_AppStore_AppClip_Relationships_AppClipDefaultExperiences_Data');
 
 class AppClip_Relationships_AppClipDefaultExperiences extends \Cantie\AppStoreConnect\Model
 {
@@ -248,7 +242,6 @@ class AppClip_Relationships_AppClipDefaultExperiences extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppClip_Relationships_AppClipDefaultExperiences::class, 'AppleService_AppStore_AppClip_Relationships_AppClipDefaultExperiences');
 
 class AppClip_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -289,7 +282,6 @@ class AppClip_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClip_Relationships::class, 'AppleService_AppStore_AppClip_Relationships');
 
 class AppClip extends \Cantie\AppStoreConnect\Model
 {
@@ -367,5 +359,4 @@ class AppClip extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClip::class, 'AppleService_AppStore_AppClip');
 

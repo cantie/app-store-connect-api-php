@@ -61,7 +61,6 @@ class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DiagnosticSignature_Attributes::class, 'AppleService_AppStore_DiagnosticSignature_Attributes');
 
 class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 {
@@ -122,5 +121,4 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DiagnosticSignature::class, 'AppleService_AppStore_DiagnosticSignature');
 

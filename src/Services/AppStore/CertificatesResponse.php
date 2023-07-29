@@ -82,5 +82,4 @@ class CertificatesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CertificatesResponse::class, 'AppleService_AppStore_CertificatesResponse');
 

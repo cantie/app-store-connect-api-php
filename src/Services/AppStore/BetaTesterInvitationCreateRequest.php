@@ -51,7 +51,6 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester_Data exten
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester_Data::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester_Data');
 
 class BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester extends \C
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest_Data_Relationships_BetaTester');
 
 class BetaTesterInvitationCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_App_Data extends \Can
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest_Data_Relationships_App_Data');
 
 class BetaTesterInvitationCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class BetaTesterInvitationCreateRequest_Data_Relationships_App extends \Cantie\A
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest_Data_Relationships_App');
 
 class BetaTesterInvitationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class BetaTesterInvitationCreateRequest_Data_Relationships extends \Cantie\AppSt
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest_Data_Relationships');
 
 class BetaTesterInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -201,7 +196,6 @@ class BetaTesterInvitationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest_Data::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest_Data');
 
 class BetaTesterInvitationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -225,5 +219,4 @@ class BetaTesterInvitationCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaTesterInvitationCreateRequest::class, 'AppleService_AppStore_BetaTesterInvitationCreateRequest');
 

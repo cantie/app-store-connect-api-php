@@ -51,7 +51,6 @@ class CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes extends \Cant
 	}
 
 }
-class_alias(CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes::class, 'AppleService_AppStore_CiXcodeVersion_Attributes_TestDestinations_AvailableRuntimes');
 
 class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect\Model
 {
@@ -111,7 +110,6 @@ class CiXcodeVersion_Attributes_TestDestinations extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiXcodeVersion_Attributes_TestDestinations::class, 'AppleService_AppStore_CiXcodeVersion_Attributes_TestDestinations');
 
 class CiXcodeVersion_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -155,7 +153,6 @@ class CiXcodeVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiXcodeVersion_Attributes::class, 'AppleService_AppStore_CiXcodeVersion_Attributes');
 
 class CiXcodeVersion_Relationships_MacOsVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -182,7 +179,6 @@ class CiXcodeVersion_Relationships_MacOsVersions_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(CiXcodeVersion_Relationships_MacOsVersions_Links::class, 'AppleService_AppStore_CiXcodeVersion_Relationships_MacOsVersions_Links');
 
 class CiXcodeVersion_Relationships_MacOsVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -209,7 +205,6 @@ class CiXcodeVersion_Relationships_MacOsVersions_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(CiXcodeVersion_Relationships_MacOsVersions_Data::class, 'AppleService_AppStore_CiXcodeVersion_Relationships_MacOsVersions_Data');
 
 class CiXcodeVersion_Relationships_MacOsVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -267,7 +262,6 @@ class CiXcodeVersion_Relationships_MacOsVersions extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiXcodeVersion_Relationships_MacOsVersions::class, 'AppleService_AppStore_CiXcodeVersion_Relationships_MacOsVersions');
 
 class CiXcodeVersion_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -291,7 +285,6 @@ class CiXcodeVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiXcodeVersion_Relationships::class, 'AppleService_AppStore_CiXcodeVersion_Relationships');
 
 class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -369,5 +362,4 @@ class CiXcodeVersion extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiXcodeVersion::class, 'AppleService_AppStore_CiXcodeVersion');
 

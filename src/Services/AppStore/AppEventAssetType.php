@@ -34,5 +34,4 @@ class AppEventAssetType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(AppEventAssetType::class, 'AppleService_AppStore_AppEventAssetType');
 

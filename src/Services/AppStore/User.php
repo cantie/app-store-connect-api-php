@@ -97,7 +97,6 @@ class User_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(User_Attributes::class, 'AppleService_AppStore_User_Attributes');
 
 class User_Relationships_VisibleApps_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -124,7 +123,6 @@ class User_Relationships_VisibleApps_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(User_Relationships_VisibleApps_Links::class, 'AppleService_AppStore_User_Relationships_VisibleApps_Links');
 
 class User_Relationships_VisibleApps_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -151,7 +149,6 @@ class User_Relationships_VisibleApps_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(User_Relationships_VisibleApps_Data::class, 'AppleService_AppStore_User_Relationships_VisibleApps_Data');
 
 class User_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 {
@@ -209,7 +206,6 @@ class User_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(User_Relationships_VisibleApps::class, 'AppleService_AppStore_User_Relationships_VisibleApps');
 
 class User_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -233,7 +229,6 @@ class User_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(User_Relationships::class, 'AppleService_AppStore_User_Relationships');
 
 class User extends \Cantie\AppStoreConnect\Model
 {
@@ -311,5 +306,4 @@ class User extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(User::class, 'AppleService_AppStore_User');
 

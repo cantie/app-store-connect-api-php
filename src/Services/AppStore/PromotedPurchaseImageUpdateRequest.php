@@ -51,7 +51,6 @@ class PromotedPurchaseImageUpdateRequest_Data_Attributes extends \Cantie\AppStor
 	}
 
 }
-class_alias(PromotedPurchaseImageUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_PromotedPurchaseImageUpdateRequest_Data_Attributes');
 
 class PromotedPurchaseImageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class PromotedPurchaseImageUpdateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(PromotedPurchaseImageUpdateRequest_Data::class, 'AppleService_AppStore_PromotedPurchaseImageUpdateRequest_Data');
 
 class PromotedPurchaseImageUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class PromotedPurchaseImageUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseImageUpdateRequest::class, 'AppleService_AppStore_PromotedPurchaseImageUpdateRequest');
 

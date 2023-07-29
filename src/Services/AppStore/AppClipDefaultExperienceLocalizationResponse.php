@@ -76,5 +76,4 @@ class AppClipDefaultExperienceLocalizationResponse extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationResponse::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationResponse');
 

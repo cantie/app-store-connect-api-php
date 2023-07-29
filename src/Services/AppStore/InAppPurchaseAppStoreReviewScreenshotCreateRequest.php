@@ -51,7 +51,6 @@ class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Attributes extends
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Attributes');
 
 class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAp
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAp
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships_InAppPurchaseV2');
 
 class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships exte
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data_Relationships');
 
 class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotCreateRequest_Data');
 
 class InAppPurchaseAppStoreReviewScreenshotCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class InAppPurchaseAppStoreReviewScreenshotCreateRequest extends \Cantie\AppStor
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotCreateRequest::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotCreateRequest');
 

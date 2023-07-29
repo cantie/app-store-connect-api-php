@@ -82,5 +82,4 @@ class AppStoreReviewAttachmentResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreReviewAttachmentResponse::class, 'AppleService_AppStore_AppStoreReviewAttachmentResponse');
 

@@ -138,7 +138,6 @@ class AppEventVideoClip_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClip_Attributes::class, 'AppleService_AppStore_AppEventVideoClip_Attributes');
 
 class AppEventVideoClip_Relationships_AppEventLocalization_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -165,7 +164,6 @@ class AppEventVideoClip_Relationships_AppEventLocalization_Links extends \Cantie
 	}
 
 }
-class_alias(AppEventVideoClip_Relationships_AppEventLocalization_Links::class, 'AppleService_AppStore_AppEventVideoClip_Relationships_AppEventLocalization_Links');
 
 class AppEventVideoClip_Relationships_AppEventLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -192,7 +190,6 @@ class AppEventVideoClip_Relationships_AppEventLocalization_Data extends \Cantie\
 	}
 
 }
-class_alias(AppEventVideoClip_Relationships_AppEventLocalization_Data::class, 'AppleService_AppStore_AppEventVideoClip_Relationships_AppEventLocalization_Data');
 
 class AppEventVideoClip_Relationships_AppEventLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -233,7 +230,6 @@ class AppEventVideoClip_Relationships_AppEventLocalization extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppEventVideoClip_Relationships_AppEventLocalization::class, 'AppleService_AppStore_AppEventVideoClip_Relationships_AppEventLocalization');
 
 class AppEventVideoClip_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -257,7 +253,6 @@ class AppEventVideoClip_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClip_Relationships::class, 'AppleService_AppStore_AppEventVideoClip_Relationships');
 
 class AppEventVideoClip extends \Cantie\AppStoreConnect\Model
 {
@@ -335,5 +330,4 @@ class AppEventVideoClip extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClip::class, 'AppleService_AppStore_AppEventVideoClip');
 

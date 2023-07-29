@@ -118,4 +118,3 @@ class Profiles extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Profiles::class, 'AppleService_AppStore_ResourceProfiles');

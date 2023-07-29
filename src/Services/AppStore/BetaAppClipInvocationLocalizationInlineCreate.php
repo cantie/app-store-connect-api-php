@@ -51,7 +51,6 @@ class BetaAppClipInvocationLocalizationInlineCreate_Attributes extends \Cantie\A
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationInlineCreate_Attributes::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationInlineCreate_Attributes');
 
 class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInvocation_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInv
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInvocation_Data::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInvocation_Data');
 
 class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInvocation extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInv
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInvocation::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationInlineCreate_Relationships_BetaAppClipInvocation');
 
 class BetaAppClipInvocationLocalizationInlineCreate_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class BetaAppClipInvocationLocalizationInlineCreate_Relationships extends \Canti
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationInlineCreate_Relationships::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationInlineCreate_Relationships');
 
 class BetaAppClipInvocationLocalizationInlineCreate extends \Cantie\AppStoreConnect\Model
 {
@@ -187,5 +183,4 @@ class BetaAppClipInvocationLocalizationInlineCreate extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationInlineCreate::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationInlineCreate');
 

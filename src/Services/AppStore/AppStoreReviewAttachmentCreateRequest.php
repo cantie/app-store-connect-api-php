@@ -51,7 +51,6 @@ class AppStoreReviewAttachmentCreateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(AppStoreReviewAttachmentCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreReviewAttachmentCreateRequest_Data_Attributes');
 
 class AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDetail_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDet
 	}
 
 }
-class_alias(AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDetail_Data::class, 'AppleService_AppStore_AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDetail_Data');
 
 class AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDet
 	}
 
 }
-class_alias(AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDetail::class, 'AppleService_AppStore_AppStoreReviewAttachmentCreateRequest_Data_Relationships_AppStoreReviewDetail');
 
 class AppStoreReviewAttachmentCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppStoreReviewAttachmentCreateRequest_Data_Relationships extends \Cantie\A
 	}
 
 }
-class_alias(AppStoreReviewAttachmentCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreReviewAttachmentCreateRequest_Data_Relationships');
 
 class AppStoreReviewAttachmentCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppStoreReviewAttachmentCreateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppStoreReviewAttachmentCreateRequest_Data::class, 'AppleService_AppStore_AppStoreReviewAttachmentCreateRequest_Data');
 
 class AppStoreReviewAttachmentCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppStoreReviewAttachmentCreateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppStoreReviewAttachmentCreateRequest::class, 'AppleService_AppStore_AppStoreReviewAttachmentCreateRequest');
 

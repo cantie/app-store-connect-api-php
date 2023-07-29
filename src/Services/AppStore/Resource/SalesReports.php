@@ -51,4 +51,3 @@ class SalesReports extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(SalesReports::class, 'AppleService_AppStore_ResourceSalesReports');

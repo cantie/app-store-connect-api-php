@@ -51,7 +51,6 @@ class SubscriptionAppStoreReviewScreenshotUpdateRequest_Data_Attributes extends 
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotUpdateRequest_Data_Attributes');
 
 class SubscriptionAppStoreReviewScreenshotUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class SubscriptionAppStoreReviewScreenshotUpdateRequest_Data extends \Cantie\App
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotUpdateRequest_Data');
 
 class SubscriptionAppStoreReviewScreenshotUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class SubscriptionAppStoreReviewScreenshotUpdateRequest extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotUpdateRequest::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotUpdateRequest');
 

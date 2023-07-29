@@ -71,7 +71,6 @@ class AppEventLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppEventLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventLocalizationCreateRequest_Data_Attributes');
 
 class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +97,6 @@ class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent_Data extends
 	}
 
 }
-class_alias(AppEventLocalizationCreateRequest_Data_Relationships_AppEvent_Data::class, 'AppleService_AppStore_AppEventLocalizationCreateRequest_Data_Relationships_AppEvent_Data');
 
 class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent extends \Cantie\AppStoreConnect\Model
 {
@@ -122,7 +120,6 @@ class AppEventLocalizationCreateRequest_Data_Relationships_AppEvent extends \Can
 	}
 
 }
-class_alias(AppEventLocalizationCreateRequest_Data_Relationships_AppEvent::class, 'AppleService_AppStore_AppEventLocalizationCreateRequest_Data_Relationships_AppEvent');
 
 class AppEventLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -146,7 +143,6 @@ class AppEventLocalizationCreateRequest_Data_Relationships extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppEventLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppEventLocalizationCreateRequest_Data_Relationships');
 
 class AppEventLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -197,7 +193,6 @@ class AppEventLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppEventLocalizationCreateRequest_Data::class, 'AppleService_AppStore_AppEventLocalizationCreateRequest_Data');
 
 class AppEventLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -221,5 +216,4 @@ class AppEventLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventLocalizationCreateRequest::class, 'AppleService_AppStore_AppEventLocalizationCreateRequest');
 

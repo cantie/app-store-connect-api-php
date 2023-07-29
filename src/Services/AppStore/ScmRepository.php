@@ -81,7 +81,6 @@ class ScmRepository_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmRepository_Attributes::class, 'AppleService_AppStore_ScmRepository_Attributes');
 
 class ScmRepository_Relationships_ScmProvider_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -108,7 +107,6 @@ class ScmRepository_Relationships_ScmProvider_Links extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(ScmRepository_Relationships_ScmProvider_Links::class, 'AppleService_AppStore_ScmRepository_Relationships_ScmProvider_Links');
 
 class ScmRepository_Relationships_ScmProvider_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -135,7 +133,6 @@ class ScmRepository_Relationships_ScmProvider_Data extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(ScmRepository_Relationships_ScmProvider_Data::class, 'AppleService_AppStore_ScmRepository_Relationships_ScmProvider_Data');
 
 class ScmRepository_Relationships_ScmProvider extends \Cantie\AppStoreConnect\Model
 {
@@ -176,7 +173,6 @@ class ScmRepository_Relationships_ScmProvider extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(ScmRepository_Relationships_ScmProvider::class, 'AppleService_AppStore_ScmRepository_Relationships_ScmProvider');
 
 class ScmRepository_Relationships_DefaultBranch_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -203,7 +199,6 @@ class ScmRepository_Relationships_DefaultBranch_Links extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(ScmRepository_Relationships_DefaultBranch_Links::class, 'AppleService_AppStore_ScmRepository_Relationships_DefaultBranch_Links');
 
 class ScmRepository_Relationships_DefaultBranch_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -230,7 +225,6 @@ class ScmRepository_Relationships_DefaultBranch_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(ScmRepository_Relationships_DefaultBranch_Data::class, 'AppleService_AppStore_ScmRepository_Relationships_DefaultBranch_Data');
 
 class ScmRepository_Relationships_DefaultBranch extends \Cantie\AppStoreConnect\Model
 {
@@ -271,7 +265,6 @@ class ScmRepository_Relationships_DefaultBranch extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(ScmRepository_Relationships_DefaultBranch::class, 'AppleService_AppStore_ScmRepository_Relationships_DefaultBranch');
 
 class ScmRepository_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -312,7 +305,6 @@ class ScmRepository_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmRepository_Relationships::class, 'AppleService_AppStore_ScmRepository_Relationships');
 
 class ScmRepository extends \Cantie\AppStoreConnect\Model
 {
@@ -390,5 +382,4 @@ class ScmRepository extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmRepository::class, 'AppleService_AppStore_ScmRepository');
 

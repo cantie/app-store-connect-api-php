@@ -82,5 +82,4 @@ class AppClipHeaderImageResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImageResponse::class, 'AppleService_AppStore_AppClipHeaderImageResponse');
 

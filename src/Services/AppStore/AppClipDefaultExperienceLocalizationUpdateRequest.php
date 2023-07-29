@@ -41,7 +41,6 @@ class AppClipDefaultExperienceLocalizationUpdateRequest_Data_Attributes extends 
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationUpdateRequest_Data_Attributes');
 
 class AppClipDefaultExperienceLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class AppClipDefaultExperienceLocalizationUpdateRequest_Data extends \Cantie\App
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationUpdateRequest_Data');
 
 class AppClipDefaultExperienceLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class AppClipDefaultExperienceLocalizationUpdateRequest extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationUpdateRequest::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationUpdateRequest');
 

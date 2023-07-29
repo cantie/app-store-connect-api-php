@@ -111,7 +111,6 @@ class BetaAppReviewDetail_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppReviewDetail_Attributes::class, 'AppleService_AppStore_BetaAppReviewDetail_Attributes');
 
 class BetaAppReviewDetail_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -138,7 +137,6 @@ class BetaAppReviewDetail_Relationships_App_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(BetaAppReviewDetail_Relationships_App_Links::class, 'AppleService_AppStore_BetaAppReviewDetail_Relationships_App_Links');
 
 class BetaAppReviewDetail_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -165,7 +163,6 @@ class BetaAppReviewDetail_Relationships_App_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(BetaAppReviewDetail_Relationships_App_Data::class, 'AppleService_AppStore_BetaAppReviewDetail_Relationships_App_Data');
 
 class BetaAppReviewDetail_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -206,7 +203,6 @@ class BetaAppReviewDetail_Relationships_App extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BetaAppReviewDetail_Relationships_App::class, 'AppleService_AppStore_BetaAppReviewDetail_Relationships_App');
 
 class BetaAppReviewDetail_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -230,7 +226,6 @@ class BetaAppReviewDetail_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppReviewDetail_Relationships::class, 'AppleService_AppStore_BetaAppReviewDetail_Relationships');
 
 class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 {
@@ -308,5 +303,4 @@ class BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppReviewDetail::class, 'AppleService_AppStore_BetaAppReviewDetail');
 

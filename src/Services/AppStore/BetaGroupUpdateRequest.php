@@ -91,7 +91,6 @@ class BetaGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(BetaGroupUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaGroupUpdateRequest_Data_Attributes');
 
 class BetaGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -135,7 +134,6 @@ class BetaGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroupUpdateRequest_Data::class, 'AppleService_AppStore_BetaGroupUpdateRequest_Data');
 
 class BetaGroupUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -159,5 +157,4 @@ class BetaGroupUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroupUpdateRequest::class, 'AppleService_AppStore_BetaGroupUpdateRequest');
 

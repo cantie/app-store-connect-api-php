@@ -93,5 +93,4 @@ class GameCenterEnabledVersionsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(GameCenterEnabledVersionsResponse::class, 'AppleService_AppStore_GameCenterEnabledVersionsResponse');
 

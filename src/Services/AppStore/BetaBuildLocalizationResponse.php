@@ -82,5 +82,4 @@ class BetaBuildLocalizationResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaBuildLocalizationResponse::class, 'AppleService_AppStore_BetaBuildLocalizationResponse');
 

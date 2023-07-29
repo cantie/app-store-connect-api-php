@@ -100,4 +100,3 @@ class CiBuildActions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiBuildActions::class, 'AppleService_AppStore_ResourceCiBuildActions');

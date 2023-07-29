@@ -51,7 +51,6 @@ class BuildIndividualTestersLinkagesRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(BuildIndividualTestersLinkagesRequest_Data::class, 'AppleService_AppStore_BuildIndividualTestersLinkagesRequest_Data');
 
 class BuildIndividualTestersLinkagesRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -75,5 +74,4 @@ class BuildIndividualTestersLinkagesRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BuildIndividualTestersLinkagesRequest::class, 'AppleService_AppStore_BuildIndividualTestersLinkagesRequest');
 

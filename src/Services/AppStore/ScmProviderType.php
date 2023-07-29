@@ -61,5 +61,4 @@ class ScmProviderType extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmProviderType::class, 'AppleService_AppStore_ScmProviderType');
 

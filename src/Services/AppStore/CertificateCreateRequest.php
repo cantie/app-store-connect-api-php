@@ -57,7 +57,6 @@ class CertificateCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(CertificateCreateRequest_Data_Attributes::class, 'AppleService_AppStore_CertificateCreateRequest_Data_Attributes');
 
 class CertificateCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -91,7 +90,6 @@ class CertificateCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CertificateCreateRequest_Data::class, 'AppleService_AppStore_CertificateCreateRequest_Data');
 
 class CertificateCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -115,5 +113,4 @@ class CertificateCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CertificateCreateRequest::class, 'AppleService_AppStore_CertificateCreateRequest');
 

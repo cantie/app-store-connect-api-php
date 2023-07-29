@@ -71,7 +71,6 @@ class BuildBundleFileSize_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBundleFileSize_Attributes::class, 'AppleService_AppStore_BuildBundleFileSize_Attributes');
 
 class BuildBundleFileSize extends \Cantie\AppStoreConnect\Model
 {
@@ -132,5 +131,4 @@ class BuildBundleFileSize extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBundleFileSize::class, 'AppleService_AppStore_BuildBundleFileSize');
 

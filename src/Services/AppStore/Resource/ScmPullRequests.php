@@ -52,4 +52,3 @@ class ScmPullRequests extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(ScmPullRequests::class, 'AppleService_AppStore_ResourceScmPullRequests');

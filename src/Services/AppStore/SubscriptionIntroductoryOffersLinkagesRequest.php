@@ -51,7 +51,6 @@ class SubscriptionIntroductoryOffersLinkagesRequest_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(SubscriptionIntroductoryOffersLinkagesRequest_Data::class, 'AppleService_AppStore_SubscriptionIntroductoryOffersLinkagesRequest_Data');
 
 class SubscriptionIntroductoryOffersLinkagesRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -75,5 +74,4 @@ class SubscriptionIntroductoryOffersLinkagesRequest extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(SubscriptionIntroductoryOffersLinkagesRequest::class, 'AppleService_AppStore_SubscriptionIntroductoryOffersLinkagesRequest');
 

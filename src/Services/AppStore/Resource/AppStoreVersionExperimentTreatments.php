@@ -94,4 +94,3 @@ class AppStoreVersionExperimentTreatments extends \Cantie\AppStoreConnect\Servic
     }
 }
 
-class_alias(AppStoreVersionExperimentTreatments::class, 'AppleService_AppStore_ResourceAppStoreVersionExperimentTreatments');

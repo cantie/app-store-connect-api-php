@@ -47,7 +47,6 @@ class AppStoreVersionPhasedReleaseUpdateRequest_Data_Attributes extends \Cantie\
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseUpdateRequest_Data_Attributes');
 
 class AppStoreVersionPhasedReleaseUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -91,7 +90,6 @@ class AppStoreVersionPhasedReleaseUpdateRequest_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseUpdateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseUpdateRequest_Data');
 
 class AppStoreVersionPhasedReleaseUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -115,5 +113,4 @@ class AppStoreVersionPhasedReleaseUpdateRequest extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseUpdateRequest::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseUpdateRequest');
 

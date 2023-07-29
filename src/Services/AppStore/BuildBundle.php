@@ -32,7 +32,6 @@ class BuildBundle_Attributes_Entitlements extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(BuildBundle_Attributes_Entitlements::class, 'AppleService_AppStore_BuildBundle_Attributes_Entitlements');
 
 class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -244,7 +243,6 @@ class BuildBundle_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBundle_Attributes::class, 'AppleService_AppStore_BuildBundle_Attributes');
 
 class BuildBundle_Relationships_AppClipDomainCacheStatus_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -271,7 +269,6 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus_Links extends \Cantie\A
 	}
 
 }
-class_alias(BuildBundle_Relationships_AppClipDomainCacheStatus_Links::class, 'AppleService_AppStore_BuildBundle_Relationships_AppClipDomainCacheStatus_Links');
 
 class BuildBundle_Relationships_AppClipDomainCacheStatus_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -298,7 +295,6 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(BuildBundle_Relationships_AppClipDomainCacheStatus_Data::class, 'AppleService_AppStore_BuildBundle_Relationships_AppClipDomainCacheStatus_Data');
 
 class BuildBundle_Relationships_AppClipDomainCacheStatus extends \Cantie\AppStoreConnect\Model
 {
@@ -339,7 +335,6 @@ class BuildBundle_Relationships_AppClipDomainCacheStatus extends \Cantie\AppStor
 	}
 
 }
-class_alias(BuildBundle_Relationships_AppClipDomainCacheStatus::class, 'AppleService_AppStore_BuildBundle_Relationships_AppClipDomainCacheStatus');
 
 class BuildBundle_Relationships_AppClipDomainDebugStatus_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -366,7 +361,6 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus_Links extends \Cantie\A
 	}
 
 }
-class_alias(BuildBundle_Relationships_AppClipDomainDebugStatus_Links::class, 'AppleService_AppStore_BuildBundle_Relationships_AppClipDomainDebugStatus_Links');
 
 class BuildBundle_Relationships_AppClipDomainDebugStatus_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -393,7 +387,6 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(BuildBundle_Relationships_AppClipDomainDebugStatus_Data::class, 'AppleService_AppStore_BuildBundle_Relationships_AppClipDomainDebugStatus_Data');
 
 class BuildBundle_Relationships_AppClipDomainDebugStatus extends \Cantie\AppStoreConnect\Model
 {
@@ -434,7 +427,6 @@ class BuildBundle_Relationships_AppClipDomainDebugStatus extends \Cantie\AppStor
 	}
 
 }
-class_alias(BuildBundle_Relationships_AppClipDomainDebugStatus::class, 'AppleService_AppStore_BuildBundle_Relationships_AppClipDomainDebugStatus');
 
 class BuildBundle_Relationships_BetaAppClipInvocations_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -461,7 +453,6 @@ class BuildBundle_Relationships_BetaAppClipInvocations_Links extends \Cantie\App
 	}
 
 }
-class_alias(BuildBundle_Relationships_BetaAppClipInvocations_Links::class, 'AppleService_AppStore_BuildBundle_Relationships_BetaAppClipInvocations_Links');
 
 class BuildBundle_Relationships_BetaAppClipInvocations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -488,7 +479,6 @@ class BuildBundle_Relationships_BetaAppClipInvocations_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(BuildBundle_Relationships_BetaAppClipInvocations_Data::class, 'AppleService_AppStore_BuildBundle_Relationships_BetaAppClipInvocations_Data');
 
 class BuildBundle_Relationships_BetaAppClipInvocations extends \Cantie\AppStoreConnect\Model
 {
@@ -546,7 +536,6 @@ class BuildBundle_Relationships_BetaAppClipInvocations extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(BuildBundle_Relationships_BetaAppClipInvocations::class, 'AppleService_AppStore_BuildBundle_Relationships_BetaAppClipInvocations');
 
 class BuildBundle_Relationships_BuildBundleFileSizes_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -573,7 +562,6 @@ class BuildBundle_Relationships_BuildBundleFileSizes_Links extends \Cantie\AppSt
 	}
 
 }
-class_alias(BuildBundle_Relationships_BuildBundleFileSizes_Links::class, 'AppleService_AppStore_BuildBundle_Relationships_BuildBundleFileSizes_Links');
 
 class BuildBundle_Relationships_BuildBundleFileSizes_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -600,7 +588,6 @@ class BuildBundle_Relationships_BuildBundleFileSizes_Data extends \Cantie\AppSto
 	}
 
 }
-class_alias(BuildBundle_Relationships_BuildBundleFileSizes_Data::class, 'AppleService_AppStore_BuildBundle_Relationships_BuildBundleFileSizes_Data');
 
 class BuildBundle_Relationships_BuildBundleFileSizes extends \Cantie\AppStoreConnect\Model
 {
@@ -658,7 +645,6 @@ class BuildBundle_Relationships_BuildBundleFileSizes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(BuildBundle_Relationships_BuildBundleFileSizes::class, 'AppleService_AppStore_BuildBundle_Relationships_BuildBundleFileSizes');
 
 class BuildBundle_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -733,7 +719,6 @@ class BuildBundle_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBundle_Relationships::class, 'AppleService_AppStore_BuildBundle_Relationships');
 
 class BuildBundle extends \Cantie\AppStoreConnect\Model
 {
@@ -811,5 +796,4 @@ class BuildBundle extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBundle::class, 'AppleService_AppStore_BuildBundle');
 

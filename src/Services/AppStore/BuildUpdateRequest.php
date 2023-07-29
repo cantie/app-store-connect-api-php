@@ -51,7 +51,6 @@ class BuildUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BuildUpdateRequest_Data_Attributes');
 
 class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration_Data extend
 	}
 
 }
-class_alias(BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration_Data::class, 'AppleService_AppStore_BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration_Data');
 
 class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration extends \Ca
 	}
 
 }
-class_alias(BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration::class, 'AppleService_AppStore_BuildUpdateRequest_Data_Relationships_AppEncryptionDeclaration');
 
 class BuildUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class BuildUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BuildUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_BuildUpdateRequest_Data_Relationships');
 
 class BuildUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -187,7 +183,6 @@ class BuildUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildUpdateRequest_Data::class, 'AppleService_AppStore_BuildUpdateRequest_Data');
 
 class BuildUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -211,5 +206,4 @@ class BuildUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildUpdateRequest::class, 'AppleService_AppStore_BuildUpdateRequest');
 

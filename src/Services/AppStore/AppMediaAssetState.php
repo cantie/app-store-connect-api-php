@@ -75,5 +75,4 @@ class AppMediaAssetState extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppMediaAssetState::class, 'AppleService_AppStore_AppMediaAssetState');
 

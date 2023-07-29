@@ -82,5 +82,4 @@ class UserInvitationResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserInvitationResponse::class, 'AppleService_AppStore_UserInvitationResponse');
 

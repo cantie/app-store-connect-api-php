@@ -41,7 +41,6 @@ class SubscriptionOfferCodeUpdateRequest_Data_Attributes extends \Cantie\AppStor
 	}
 
 }
-class_alias(SubscriptionOfferCodeUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionOfferCodeUpdateRequest_Data_Attributes');
 
 class SubscriptionOfferCodeUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class SubscriptionOfferCodeUpdateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(SubscriptionOfferCodeUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionOfferCodeUpdateRequest_Data');
 
 class SubscriptionOfferCodeUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class SubscriptionOfferCodeUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionOfferCodeUpdateRequest::class, 'AppleService_AppStore_SubscriptionOfferCodeUpdateRequest');
 

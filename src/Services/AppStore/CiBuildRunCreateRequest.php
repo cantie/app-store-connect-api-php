@@ -41,7 +41,6 @@ class CiBuildRunCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Attributes::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Attributes');
 
 class CiBuildRunCreateRequest_Data_Relationships_BuildRun_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class CiBuildRunCreateRequest_Data_Relationships_BuildRun_Data extends \Cantie\A
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_BuildRun_Data::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_BuildRun_Data');
 
 class CiBuildRunCreateRequest_Data_Relationships_BuildRun extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class CiBuildRunCreateRequest_Data_Relationships_BuildRun extends \Cantie\AppSto
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_BuildRun::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_BuildRun');
 
 class CiBuildRunCreateRequest_Data_Relationships_Workflow_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +116,6 @@ class CiBuildRunCreateRequest_Data_Relationships_Workflow_Data extends \Cantie\A
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_Workflow_Data::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_Workflow_Data');
 
 class CiBuildRunCreateRequest_Data_Relationships_Workflow extends \Cantie\AppStoreConnect\Model
 {
@@ -143,7 +139,6 @@ class CiBuildRunCreateRequest_Data_Relationships_Workflow extends \Cantie\AppSto
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_Workflow::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_Workflow');
 
 class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -170,7 +165,6 @@ class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag_Data extends 
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag_Data::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag_Data');
 
 class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag extends \Cantie\AppStoreConnect\Model
 {
@@ -194,7 +188,6 @@ class CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag extends \Cant
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_SourceBranchOrTag');
 
 class CiBuildRunCreateRequest_Data_Relationships_PullRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -221,7 +214,6 @@ class CiBuildRunCreateRequest_Data_Relationships_PullRequest_Data extends \Canti
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_PullRequest_Data::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_PullRequest_Data');
 
 class CiBuildRunCreateRequest_Data_Relationships_PullRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -245,7 +237,6 @@ class CiBuildRunCreateRequest_Data_Relationships_PullRequest extends \Cantie\App
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships_PullRequest::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships_PullRequest');
 
 class CiBuildRunCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -320,7 +311,6 @@ class CiBuildRunCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data_Relationships::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data_Relationships');
 
 class CiBuildRunCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -371,7 +361,6 @@ class CiBuildRunCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildRunCreateRequest_Data::class, 'AppleService_AppStore_CiBuildRunCreateRequest_Data');
 
 class CiBuildRunCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -395,5 +384,4 @@ class CiBuildRunCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildRunCreateRequest::class, 'AppleService_AppStore_CiBuildRunCreateRequest');
 

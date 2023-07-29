@@ -87,4 +87,3 @@ class PreReleaseVersions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(PreReleaseVersions::class, 'AppleService_AppStore_ResourcePreReleaseVersions');

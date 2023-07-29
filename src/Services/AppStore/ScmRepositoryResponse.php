@@ -76,5 +76,4 @@ class ScmRepositoryResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmRepositoryResponse::class, 'AppleService_AppStore_ScmRepositoryResponse');
 

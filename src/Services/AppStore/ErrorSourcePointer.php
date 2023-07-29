@@ -41,5 +41,4 @@ class ErrorSourcePointer extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ErrorSourcePointer::class, 'AppleService_AppStore_ErrorSourcePointer');
 

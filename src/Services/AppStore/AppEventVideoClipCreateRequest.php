@@ -77,7 +77,6 @@ class AppEventVideoClipCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppEventVideoClipCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventVideoClipCreateRequest_Data_Attributes');
 
 class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -104,7 +103,6 @@ class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization_Dat
 	}
 
 }
-class_alias(AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization_Data::class, 'AppleService_AppStore_AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization_Data');
 
 class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -128,7 +126,6 @@ class AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization ext
 	}
 
 }
-class_alias(AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization::class, 'AppleService_AppStore_AppEventVideoClipCreateRequest_Data_Relationships_AppEventLocalization');
 
 class AppEventVideoClipCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -152,7 +149,6 @@ class AppEventVideoClipCreateRequest_Data_Relationships extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppEventVideoClipCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppEventVideoClipCreateRequest_Data_Relationships');
 
 class AppEventVideoClipCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -203,7 +199,6 @@ class AppEventVideoClipCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClipCreateRequest_Data::class, 'AppleService_AppStore_AppEventVideoClipCreateRequest_Data');
 
 class AppEventVideoClipCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -227,5 +222,4 @@ class AppEventVideoClipCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClipCreateRequest::class, 'AppleService_AppStore_AppEventVideoClipCreateRequest');
 

@@ -88,5 +88,4 @@ class UploadOperation extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UploadOperation::class, 'AppleService_AppStore_UploadOperation');
 

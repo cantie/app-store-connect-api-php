@@ -82,4 +82,3 @@ class AppPreOrders extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppPreOrders::class, 'AppleService_AppStore_ResourceAppPreOrders');

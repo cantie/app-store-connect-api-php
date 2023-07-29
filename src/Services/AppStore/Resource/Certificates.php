@@ -82,4 +82,3 @@ class Certificates extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Certificates::class, 'AppleService_AppStore_ResourceCertificates');

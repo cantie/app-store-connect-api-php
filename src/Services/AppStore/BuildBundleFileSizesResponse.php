@@ -82,5 +82,4 @@ class BuildBundleFileSizesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBundleFileSizesResponse::class, 'AppleService_AppStore_BuildBundleFileSizesResponse');
 

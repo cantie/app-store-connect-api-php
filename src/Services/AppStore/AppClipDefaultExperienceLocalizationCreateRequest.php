@@ -51,7 +51,6 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Attributes extends 
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationCreateRequest_Data_Attributes');
 
 class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppClipDefaultExperience_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppCl
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppClipDefaultExperience_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppClipDefaultExperience_Data');
 
 class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppClipDefaultExperience extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppCl
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppClipDefaultExperience::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships_AppClipDefaultExperience');
 
 class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships exten
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationCreateRequest_Data_Relationships');
 
 class AppClipDefaultExperienceLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppClipDefaultExperienceLocalizationCreateRequest_Data extends \Cantie\App
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationCreateRequest_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationCreateRequest_Data');
 
 class AppClipDefaultExperienceLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppClipDefaultExperienceLocalizationCreateRequest extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppClipDefaultExperienceLocalizationCreateRequest::class, 'AppleService_AppStore_AppClipDefaultExperienceLocalizationCreateRequest');
 

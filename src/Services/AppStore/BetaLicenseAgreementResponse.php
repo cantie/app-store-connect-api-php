@@ -82,5 +82,4 @@ class BetaLicenseAgreementResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaLicenseAgreementResponse::class, 'AppleService_AppStore_BetaLicenseAgreementResponse');
 

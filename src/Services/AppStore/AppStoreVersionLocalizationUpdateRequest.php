@@ -91,7 +91,6 @@ class AppStoreVersionLocalizationUpdateRequest_Data_Attributes extends \Cantie\A
 	}
 
 }
-class_alias(AppStoreVersionLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionLocalizationUpdateRequest_Data_Attributes');
 
 class AppStoreVersionLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -135,7 +134,6 @@ class AppStoreVersionLocalizationUpdateRequest_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppStoreVersionLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionLocalizationUpdateRequest_Data');
 
 class AppStoreVersionLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -159,5 +157,4 @@ class AppStoreVersionLocalizationUpdateRequest extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppStoreVersionLocalizationUpdateRequest::class, 'AppleService_AppStore_AppStoreVersionLocalizationUpdateRequest');
 

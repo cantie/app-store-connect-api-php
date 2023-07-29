@@ -77,7 +77,6 @@ class SubscriptionGracePeriod_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGracePeriod_Attributes::class, 'AppleService_AppStore_SubscriptionGracePeriod_Attributes');
 
 class SubscriptionGracePeriod extends \Cantie\AppStoreConnect\Model
 {
@@ -138,5 +137,4 @@ class SubscriptionGracePeriod extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGracePeriod::class, 'AppleService_AppStore_SubscriptionGracePeriod');
 

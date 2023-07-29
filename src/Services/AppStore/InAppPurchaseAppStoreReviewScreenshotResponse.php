@@ -82,5 +82,4 @@ class InAppPurchaseAppStoreReviewScreenshotResponse extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshotResponse::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshotResponse');
 

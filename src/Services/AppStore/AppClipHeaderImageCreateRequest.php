@@ -51,7 +51,6 @@ class AppClipHeaderImageCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppClipHeaderImageCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipHeaderImageCreateRequest_Data_Attributes');
 
 class AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienceLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienc
 	}
 
 }
-class_alias(AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienceLocalization_Data::class, 'AppleService_AppStore_AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienceLocalization_Data');
 
 class AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienc
 	}
 
 }
-class_alias(AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienceLocalization::class, 'AppleService_AppStore_AppClipHeaderImageCreateRequest_Data_Relationships_AppClipDefaultExperienceLocalization');
 
 class AppClipHeaderImageCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppClipHeaderImageCreateRequest_Data_Relationships extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppClipHeaderImageCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppClipHeaderImageCreateRequest_Data_Relationships');
 
 class AppClipHeaderImageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppClipHeaderImageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImageCreateRequest_Data::class, 'AppleService_AppStore_AppClipHeaderImageCreateRequest_Data');
 
 class AppClipHeaderImageCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppClipHeaderImageCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImageCreateRequest::class, 'AppleService_AppStore_AppClipHeaderImageCreateRequest');
 

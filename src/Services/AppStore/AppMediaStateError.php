@@ -51,5 +51,4 @@ class AppMediaStateError extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppMediaStateError::class, 'AppleService_AppStore_AppMediaStateError');
 

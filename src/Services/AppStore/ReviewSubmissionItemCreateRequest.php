@@ -51,7 +51,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission_Data
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission_Data');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission exte
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_ReviewSubmission');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion_Data 
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion exten
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersion');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageV
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion_Data');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +172,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageV
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppCustomProductPageVersion');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -204,7 +198,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment_Data');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 {
@@ -228,7 +221,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperiment');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -255,7 +247,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2_Data');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -279,7 +270,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperi
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppStoreVersionExperimentV2');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -306,7 +296,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent_Data extends
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent_Data');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent extends \Cantie\AppStoreConnect\Model
 {
@@ -330,7 +319,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent extends \Can
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships_AppEvent');
 
 class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -439,7 +427,6 @@ class ReviewSubmissionItemCreateRequest_Data_Relationships extends \Cantie\AppSt
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data_Relationships::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data_Relationships');
 
 class ReviewSubmissionItemCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -473,7 +460,6 @@ class ReviewSubmissionItemCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest_Data::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest_Data');
 
 class ReviewSubmissionItemCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -497,5 +483,4 @@ class ReviewSubmissionItemCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionItemCreateRequest::class, 'AppleService_AppStore_ReviewSubmissionItemCreateRequest');
 

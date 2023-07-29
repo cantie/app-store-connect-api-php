@@ -91,7 +91,6 @@ class BetaAppLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppLocalization_Attributes::class, 'AppleService_AppStore_BetaAppLocalization_Attributes');
 
 class BetaAppLocalization_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -118,7 +117,6 @@ class BetaAppLocalization_Relationships_App_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(BetaAppLocalization_Relationships_App_Links::class, 'AppleService_AppStore_BetaAppLocalization_Relationships_App_Links');
 
 class BetaAppLocalization_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -145,7 +143,6 @@ class BetaAppLocalization_Relationships_App_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(BetaAppLocalization_Relationships_App_Data::class, 'AppleService_AppStore_BetaAppLocalization_Relationships_App_Data');
 
 class BetaAppLocalization_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +183,6 @@ class BetaAppLocalization_Relationships_App extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BetaAppLocalization_Relationships_App::class, 'AppleService_AppStore_BetaAppLocalization_Relationships_App');
 
 class BetaAppLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -210,7 +206,6 @@ class BetaAppLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppLocalization_Relationships::class, 'AppleService_AppStore_BetaAppLocalization_Relationships');
 
 class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -288,5 +283,4 @@ class BetaAppLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppLocalization::class, 'AppleService_AppStore_BetaAppLocalization');
 

@@ -64,7 +64,6 @@ class BundleIdCapabilityUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(BundleIdCapabilityUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BundleIdCapabilityUpdateRequest_Data_Attributes');
 
 class BundleIdCapabilityUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -108,7 +107,6 @@ class BundleIdCapabilityUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdCapabilityUpdateRequest_Data::class, 'AppleService_AppStore_BundleIdCapabilityUpdateRequest_Data');
 
 class BundleIdCapabilityUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -132,5 +130,4 @@ class BundleIdCapabilityUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdCapabilityUpdateRequest::class, 'AppleService_AppStore_BundleIdCapabilityUpdateRequest');
 

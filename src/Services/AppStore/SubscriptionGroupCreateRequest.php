@@ -41,7 +41,6 @@ class SubscriptionGroupCreateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(SubscriptionGroupCreateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionGroupCreateRequest_Data_Attributes');
 
 class SubscriptionGroupCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class SubscriptionGroupCreateRequest_Data_Relationships_App_Data extends \Cantie
 	}
 
 }
-class_alias(SubscriptionGroupCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_SubscriptionGroupCreateRequest_Data_Relationships_App_Data');
 
 class SubscriptionGroupCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class SubscriptionGroupCreateRequest_Data_Relationships_App extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionGroupCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_SubscriptionGroupCreateRequest_Data_Relationships_App');
 
 class SubscriptionGroupCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -116,7 +113,6 @@ class SubscriptionGroupCreateRequest_Data_Relationships extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionGroupCreateRequest_Data_Relationships::class, 'AppleService_AppStore_SubscriptionGroupCreateRequest_Data_Relationships');
 
 class SubscriptionGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class SubscriptionGroupCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupCreateRequest_Data::class, 'AppleService_AppStore_SubscriptionGroupCreateRequest_Data');
 
 class SubscriptionGroupCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -191,5 +186,4 @@ class SubscriptionGroupCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupCreateRequest::class, 'AppleService_AppStore_SubscriptionGroupCreateRequest');
 

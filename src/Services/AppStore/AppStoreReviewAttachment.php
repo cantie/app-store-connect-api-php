@@ -95,7 +95,6 @@ class AppStoreReviewAttachment_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreReviewAttachment_Attributes::class, 'AppleService_AppStore_AppStoreReviewAttachment_Attributes');
 
 class AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -122,7 +121,6 @@ class AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Links extends 
 	}
 
 }
-class_alias(AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Links::class, 'AppleService_AppStore_AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Links');
 
 class AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -149,7 +147,6 @@ class AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Data extends \
 	}
 
 }
-class_alias(AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Data::class, 'AppleService_AppStore_AppStoreReviewAttachment_Relationships_AppStoreReviewDetail_Data');
 
 class AppStoreReviewAttachment_Relationships_AppStoreReviewDetail extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +187,6 @@ class AppStoreReviewAttachment_Relationships_AppStoreReviewDetail extends \Canti
 	}
 
 }
-class_alias(AppStoreReviewAttachment_Relationships_AppStoreReviewDetail::class, 'AppleService_AppStore_AppStoreReviewAttachment_Relationships_AppStoreReviewDetail');
 
 class AppStoreReviewAttachment_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -214,7 +210,6 @@ class AppStoreReviewAttachment_Relationships extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreReviewAttachment_Relationships::class, 'AppleService_AppStore_AppStoreReviewAttachment_Relationships');
 
 class AppStoreReviewAttachment extends \Cantie\AppStoreConnect\Model
 {
@@ -292,5 +287,4 @@ class AppStoreReviewAttachment extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreReviewAttachment::class, 'AppleService_AppStore_AppStoreReviewAttachment');
 

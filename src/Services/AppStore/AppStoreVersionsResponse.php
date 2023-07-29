@@ -93,5 +93,4 @@ class AppStoreVersionsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionsResponse::class, 'AppleService_AppStore_AppStoreVersionsResponse');
 

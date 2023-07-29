@@ -61,5 +61,4 @@ class CiStartConditionFileMatcher extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiStartConditionFileMatcher::class, 'AppleService_AppStore_CiStartConditionFileMatcher');
 

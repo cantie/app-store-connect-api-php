@@ -264,5 +264,4 @@ class TerritoryCode extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(TerritoryCode::class, 'AppleService_AppStore_TerritoryCode');
 

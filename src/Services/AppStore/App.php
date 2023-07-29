@@ -153,7 +153,6 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Attributes::class, 'AppleService_AppStore_App_Attributes');
 
 class App_Relationships_CiProduct_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -180,7 +179,6 @@ class App_Relationships_CiProduct_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_CiProduct_Links::class, 'AppleService_AppStore_App_Relationships_CiProduct_Links');
 
 class App_Relationships_CiProduct_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -207,7 +205,6 @@ class App_Relationships_CiProduct_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_CiProduct_Data::class, 'AppleService_AppStore_App_Relationships_CiProduct_Data');
 
 class App_Relationships_CiProduct extends \Cantie\AppStoreConnect\Model
 {
@@ -248,7 +245,6 @@ class App_Relationships_CiProduct extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_CiProduct::class, 'AppleService_AppStore_App_Relationships_CiProduct');
 
 class App_Relationships_BetaGroups_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -275,7 +271,6 @@ class App_Relationships_BetaGroups_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_BetaGroups_Links::class, 'AppleService_AppStore_App_Relationships_BetaGroups_Links');
 
 class App_Relationships_BetaGroups_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -302,7 +297,6 @@ class App_Relationships_BetaGroups_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_BetaGroups_Data::class, 'AppleService_AppStore_App_Relationships_BetaGroups_Data');
 
 class App_Relationships_BetaGroups extends \Cantie\AppStoreConnect\Model
 {
@@ -360,7 +354,6 @@ class App_Relationships_BetaGroups extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_BetaGroups::class, 'AppleService_AppStore_App_Relationships_BetaGroups');
 
 class App_Relationships_AppStoreVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -387,7 +380,6 @@ class App_Relationships_AppStoreVersions_Links extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(App_Relationships_AppStoreVersions_Links::class, 'AppleService_AppStore_App_Relationships_AppStoreVersions_Links');
 
 class App_Relationships_AppStoreVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -414,7 +406,6 @@ class App_Relationships_AppStoreVersions_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(App_Relationships_AppStoreVersions_Data::class, 'AppleService_AppStore_App_Relationships_AppStoreVersions_Data');
 
 class App_Relationships_AppStoreVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -472,7 +463,6 @@ class App_Relationships_AppStoreVersions extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppStoreVersions::class, 'AppleService_AppStore_App_Relationships_AppStoreVersions');
 
 class App_Relationships_PreReleaseVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -499,7 +489,6 @@ class App_Relationships_PreReleaseVersions_Links extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(App_Relationships_PreReleaseVersions_Links::class, 'AppleService_AppStore_App_Relationships_PreReleaseVersions_Links');
 
 class App_Relationships_PreReleaseVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -526,7 +515,6 @@ class App_Relationships_PreReleaseVersions_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(App_Relationships_PreReleaseVersions_Data::class, 'AppleService_AppStore_App_Relationships_PreReleaseVersions_Data');
 
 class App_Relationships_PreReleaseVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -584,7 +572,6 @@ class App_Relationships_PreReleaseVersions extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_PreReleaseVersions::class, 'AppleService_AppStore_App_Relationships_PreReleaseVersions');
 
 class App_Relationships_BetaAppLocalizations_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -611,7 +598,6 @@ class App_Relationships_BetaAppLocalizations_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(App_Relationships_BetaAppLocalizations_Links::class, 'AppleService_AppStore_App_Relationships_BetaAppLocalizations_Links');
 
 class App_Relationships_BetaAppLocalizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -638,7 +624,6 @@ class App_Relationships_BetaAppLocalizations_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(App_Relationships_BetaAppLocalizations_Data::class, 'AppleService_AppStore_App_Relationships_BetaAppLocalizations_Data');
 
 class App_Relationships_BetaAppLocalizations extends \Cantie\AppStoreConnect\Model
 {
@@ -696,7 +681,6 @@ class App_Relationships_BetaAppLocalizations extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(App_Relationships_BetaAppLocalizations::class, 'AppleService_AppStore_App_Relationships_BetaAppLocalizations');
 
 class App_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -723,7 +707,6 @@ class App_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_Builds_Links::class, 'AppleService_AppStore_App_Relationships_Builds_Links');
 
 class App_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -750,7 +733,6 @@ class App_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_Builds_Data::class, 'AppleService_AppStore_App_Relationships_Builds_Data');
 
 class App_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 {
@@ -808,7 +790,6 @@ class App_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_Builds::class, 'AppleService_AppStore_App_Relationships_Builds');
 
 class App_Relationships_BetaLicenseAgreement_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -835,7 +816,6 @@ class App_Relationships_BetaLicenseAgreement_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(App_Relationships_BetaLicenseAgreement_Links::class, 'AppleService_AppStore_App_Relationships_BetaLicenseAgreement_Links');
 
 class App_Relationships_BetaLicenseAgreement_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -862,7 +842,6 @@ class App_Relationships_BetaLicenseAgreement_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(App_Relationships_BetaLicenseAgreement_Data::class, 'AppleService_AppStore_App_Relationships_BetaLicenseAgreement_Data');
 
 class App_Relationships_BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 {
@@ -903,7 +882,6 @@ class App_Relationships_BetaLicenseAgreement extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(App_Relationships_BetaLicenseAgreement::class, 'AppleService_AppStore_App_Relationships_BetaLicenseAgreement');
 
 class App_Relationships_BetaAppReviewDetail_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -930,7 +908,6 @@ class App_Relationships_BetaAppReviewDetail_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(App_Relationships_BetaAppReviewDetail_Links::class, 'AppleService_AppStore_App_Relationships_BetaAppReviewDetail_Links');
 
 class App_Relationships_BetaAppReviewDetail_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -957,7 +934,6 @@ class App_Relationships_BetaAppReviewDetail_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(App_Relationships_BetaAppReviewDetail_Data::class, 'AppleService_AppStore_App_Relationships_BetaAppReviewDetail_Data');
 
 class App_Relationships_BetaAppReviewDetail extends \Cantie\AppStoreConnect\Model
 {
@@ -998,7 +974,6 @@ class App_Relationships_BetaAppReviewDetail extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(App_Relationships_BetaAppReviewDetail::class, 'AppleService_AppStore_App_Relationships_BetaAppReviewDetail');
 
 class App_Relationships_AppInfos_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1025,7 +1000,6 @@ class App_Relationships_AppInfos_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppInfos_Links::class, 'AppleService_AppStore_App_Relationships_AppInfos_Links');
 
 class App_Relationships_AppInfos_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1052,7 +1026,6 @@ class App_Relationships_AppInfos_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppInfos_Data::class, 'AppleService_AppStore_App_Relationships_AppInfos_Data');
 
 class App_Relationships_AppInfos extends \Cantie\AppStoreConnect\Model
 {
@@ -1110,7 +1083,6 @@ class App_Relationships_AppInfos extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppInfos::class, 'AppleService_AppStore_App_Relationships_AppInfos');
 
 class App_Relationships_AppClips_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1137,7 +1109,6 @@ class App_Relationships_AppClips_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppClips_Links::class, 'AppleService_AppStore_App_Relationships_AppClips_Links');
 
 class App_Relationships_AppClips_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1164,7 +1135,6 @@ class App_Relationships_AppClips_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppClips_Data::class, 'AppleService_AppStore_App_Relationships_AppClips_Data');
 
 class App_Relationships_AppClips extends \Cantie\AppStoreConnect\Model
 {
@@ -1222,7 +1192,6 @@ class App_Relationships_AppClips extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppClips::class, 'AppleService_AppStore_App_Relationships_AppClips');
 
 class App_Relationships_EndUserLicenseAgreement_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1249,7 +1218,6 @@ class App_Relationships_EndUserLicenseAgreement_Links extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(App_Relationships_EndUserLicenseAgreement_Links::class, 'AppleService_AppStore_App_Relationships_EndUserLicenseAgreement_Links');
 
 class App_Relationships_EndUserLicenseAgreement_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1276,7 +1244,6 @@ class App_Relationships_EndUserLicenseAgreement_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(App_Relationships_EndUserLicenseAgreement_Data::class, 'AppleService_AppStore_App_Relationships_EndUserLicenseAgreement_Data');
 
 class App_Relationships_EndUserLicenseAgreement extends \Cantie\AppStoreConnect\Model
 {
@@ -1317,7 +1284,6 @@ class App_Relationships_EndUserLicenseAgreement extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(App_Relationships_EndUserLicenseAgreement::class, 'AppleService_AppStore_App_Relationships_EndUserLicenseAgreement');
 
 class App_Relationships_PreOrder_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1344,7 +1310,6 @@ class App_Relationships_PreOrder_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_PreOrder_Links::class, 'AppleService_AppStore_App_Relationships_PreOrder_Links');
 
 class App_Relationships_PreOrder_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1371,7 +1336,6 @@ class App_Relationships_PreOrder_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_PreOrder_Data::class, 'AppleService_AppStore_App_Relationships_PreOrder_Data');
 
 class App_Relationships_PreOrder extends \Cantie\AppStoreConnect\Model
 {
@@ -1412,7 +1376,6 @@ class App_Relationships_PreOrder extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_PreOrder::class, 'AppleService_AppStore_App_Relationships_PreOrder');
 
 class App_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1439,7 +1402,6 @@ class App_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_Prices_Links::class, 'AppleService_AppStore_App_Relationships_Prices_Links');
 
 class App_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1466,7 +1428,6 @@ class App_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_Prices_Data::class, 'AppleService_AppStore_App_Relationships_Prices_Data');
 
 class App_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 {
@@ -1524,7 +1485,6 @@ class App_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_Prices::class, 'AppleService_AppStore_App_Relationships_Prices');
 
 class App_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1551,7 +1511,6 @@ class App_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(App_Relationships_AvailableTerritories_Links::class, 'AppleService_AppStore_App_Relationships_AvailableTerritories_Links');
 
 class App_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1578,7 +1537,6 @@ class App_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(App_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_App_Relationships_AvailableTerritories_Data');
 
 class App_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -1636,7 +1594,6 @@ class App_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(App_Relationships_AvailableTerritories::class, 'AppleService_AppStore_App_Relationships_AvailableTerritories');
 
 class App_Relationships_InAppPurchases_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1663,7 +1620,6 @@ class App_Relationships_InAppPurchases_Links extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(App_Relationships_InAppPurchases_Links::class, 'AppleService_AppStore_App_Relationships_InAppPurchases_Links');
 
 class App_Relationships_InAppPurchases_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1690,7 +1646,6 @@ class App_Relationships_InAppPurchases_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(App_Relationships_InAppPurchases_Data::class, 'AppleService_AppStore_App_Relationships_InAppPurchases_Data');
 
 class App_Relationships_InAppPurchases extends \Cantie\AppStoreConnect\Model
 {
@@ -1748,7 +1703,6 @@ class App_Relationships_InAppPurchases extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_InAppPurchases::class, 'AppleService_AppStore_App_Relationships_InAppPurchases');
 
 class App_Relationships_SubscriptionGroups_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1775,7 +1729,6 @@ class App_Relationships_SubscriptionGroups_Links extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(App_Relationships_SubscriptionGroups_Links::class, 'AppleService_AppStore_App_Relationships_SubscriptionGroups_Links');
 
 class App_Relationships_SubscriptionGroups_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1802,7 +1755,6 @@ class App_Relationships_SubscriptionGroups_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(App_Relationships_SubscriptionGroups_Data::class, 'AppleService_AppStore_App_Relationships_SubscriptionGroups_Data');
 
 class App_Relationships_SubscriptionGroups extends \Cantie\AppStoreConnect\Model
 {
@@ -1860,7 +1812,6 @@ class App_Relationships_SubscriptionGroups extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_SubscriptionGroups::class, 'AppleService_AppStore_App_Relationships_SubscriptionGroups');
 
 class App_Relationships_GameCenterEnabledVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1887,7 +1838,6 @@ class App_Relationships_GameCenterEnabledVersions_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(App_Relationships_GameCenterEnabledVersions_Links::class, 'AppleService_AppStore_App_Relationships_GameCenterEnabledVersions_Links');
 
 class App_Relationships_GameCenterEnabledVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -1914,7 +1864,6 @@ class App_Relationships_GameCenterEnabledVersions_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(App_Relationships_GameCenterEnabledVersions_Data::class, 'AppleService_AppStore_App_Relationships_GameCenterEnabledVersions_Data');
 
 class App_Relationships_GameCenterEnabledVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -1972,7 +1921,6 @@ class App_Relationships_GameCenterEnabledVersions extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(App_Relationships_GameCenterEnabledVersions::class, 'AppleService_AppStore_App_Relationships_GameCenterEnabledVersions');
 
 class App_Relationships_AppCustomProductPages_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -1999,7 +1947,6 @@ class App_Relationships_AppCustomProductPages_Links extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(App_Relationships_AppCustomProductPages_Links::class, 'AppleService_AppStore_App_Relationships_AppCustomProductPages_Links');
 
 class App_Relationships_AppCustomProductPages_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2026,7 +1973,6 @@ class App_Relationships_AppCustomProductPages_Data extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(App_Relationships_AppCustomProductPages_Data::class, 'AppleService_AppStore_App_Relationships_AppCustomProductPages_Data');
 
 class App_Relationships_AppCustomProductPages extends \Cantie\AppStoreConnect\Model
 {
@@ -2084,7 +2030,6 @@ class App_Relationships_AppCustomProductPages extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(App_Relationships_AppCustomProductPages::class, 'AppleService_AppStore_App_Relationships_AppCustomProductPages');
 
 class App_Relationships_InAppPurchasesV2_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -2111,7 +2056,6 @@ class App_Relationships_InAppPurchasesV2_Links extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(App_Relationships_InAppPurchasesV2_Links::class, 'AppleService_AppStore_App_Relationships_InAppPurchasesV2_Links');
 
 class App_Relationships_InAppPurchasesV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2138,7 +2082,6 @@ class App_Relationships_InAppPurchasesV2_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(App_Relationships_InAppPurchasesV2_Data::class, 'AppleService_AppStore_App_Relationships_InAppPurchasesV2_Data');
 
 class App_Relationships_InAppPurchasesV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -2196,7 +2139,6 @@ class App_Relationships_InAppPurchasesV2 extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_InAppPurchasesV2::class, 'AppleService_AppStore_App_Relationships_InAppPurchasesV2');
 
 class App_Relationships_PromotedPurchases_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -2223,7 +2165,6 @@ class App_Relationships_PromotedPurchases_Links extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(App_Relationships_PromotedPurchases_Links::class, 'AppleService_AppStore_App_Relationships_PromotedPurchases_Links');
 
 class App_Relationships_PromotedPurchases_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2250,7 +2191,6 @@ class App_Relationships_PromotedPurchases_Data extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(App_Relationships_PromotedPurchases_Data::class, 'AppleService_AppStore_App_Relationships_PromotedPurchases_Data');
 
 class App_Relationships_PromotedPurchases extends \Cantie\AppStoreConnect\Model
 {
@@ -2308,7 +2248,6 @@ class App_Relationships_PromotedPurchases extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_PromotedPurchases::class, 'AppleService_AppStore_App_Relationships_PromotedPurchases');
 
 class App_Relationships_AppEvents_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -2335,7 +2274,6 @@ class App_Relationships_AppEvents_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppEvents_Links::class, 'AppleService_AppStore_App_Relationships_AppEvents_Links');
 
 class App_Relationships_AppEvents_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2362,7 +2300,6 @@ class App_Relationships_AppEvents_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppEvents_Data::class, 'AppleService_AppStore_App_Relationships_AppEvents_Data');
 
 class App_Relationships_AppEvents extends \Cantie\AppStoreConnect\Model
 {
@@ -2420,7 +2357,6 @@ class App_Relationships_AppEvents extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_AppEvents::class, 'AppleService_AppStore_App_Relationships_AppEvents');
 
 class App_Relationships_ReviewSubmissions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -2447,7 +2383,6 @@ class App_Relationships_ReviewSubmissions_Links extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(App_Relationships_ReviewSubmissions_Links::class, 'AppleService_AppStore_App_Relationships_ReviewSubmissions_Links');
 
 class App_Relationships_ReviewSubmissions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2474,7 +2409,6 @@ class App_Relationships_ReviewSubmissions_Data extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(App_Relationships_ReviewSubmissions_Data::class, 'AppleService_AppStore_App_Relationships_ReviewSubmissions_Data');
 
 class App_Relationships_ReviewSubmissions extends \Cantie\AppStoreConnect\Model
 {
@@ -2532,7 +2466,6 @@ class App_Relationships_ReviewSubmissions extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships_ReviewSubmissions::class, 'AppleService_AppStore_App_Relationships_ReviewSubmissions');
 
 class App_Relationships_SubscriptionGracePeriod_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -2559,7 +2492,6 @@ class App_Relationships_SubscriptionGracePeriod_Links extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(App_Relationships_SubscriptionGracePeriod_Links::class, 'AppleService_AppStore_App_Relationships_SubscriptionGracePeriod_Links');
 
 class App_Relationships_SubscriptionGracePeriod_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2586,7 +2518,6 @@ class App_Relationships_SubscriptionGracePeriod_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(App_Relationships_SubscriptionGracePeriod_Data::class, 'AppleService_AppStore_App_Relationships_SubscriptionGracePeriod_Data');
 
 class App_Relationships_SubscriptionGracePeriod extends \Cantie\AppStoreConnect\Model
 {
@@ -2627,7 +2558,6 @@ class App_Relationships_SubscriptionGracePeriod extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(App_Relationships_SubscriptionGracePeriod::class, 'AppleService_AppStore_App_Relationships_SubscriptionGracePeriod');
 
 class App_Relationships_AppStoreVersionExperimentsV2_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -2654,7 +2584,6 @@ class App_Relationships_AppStoreVersionExperimentsV2_Links extends \Cantie\AppSt
 	}
 
 }
-class_alias(App_Relationships_AppStoreVersionExperimentsV2_Links::class, 'AppleService_AppStore_App_Relationships_AppStoreVersionExperimentsV2_Links');
 
 class App_Relationships_AppStoreVersionExperimentsV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -2681,7 +2610,6 @@ class App_Relationships_AppStoreVersionExperimentsV2_Data extends \Cantie\AppSto
 	}
 
 }
-class_alias(App_Relationships_AppStoreVersionExperimentsV2_Data::class, 'AppleService_AppStore_App_Relationships_AppStoreVersionExperimentsV2_Data');
 
 class App_Relationships_AppStoreVersionExperimentsV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -2739,7 +2667,6 @@ class App_Relationships_AppStoreVersionExperimentsV2 extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(App_Relationships_AppStoreVersionExperimentsV2::class, 'AppleService_AppStore_App_Relationships_AppStoreVersionExperimentsV2');
 
 class App_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -3154,7 +3081,6 @@ class App_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App_Relationships::class, 'AppleService_AppStore_App_Relationships');
 
 class App extends \Cantie\AppStoreConnect\Model
 {
@@ -3232,5 +3158,4 @@ class App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(App::class, 'AppleService_AppStore_App');
 

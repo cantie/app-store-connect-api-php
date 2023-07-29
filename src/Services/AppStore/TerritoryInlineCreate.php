@@ -51,5 +51,4 @@ class TerritoryInlineCreate extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(TerritoryInlineCreate::class, 'AppleService_AppStore_TerritoryInlineCreate');
 

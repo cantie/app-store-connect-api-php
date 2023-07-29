@@ -138,4 +138,3 @@ class Users extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Users::class, 'AppleService_AppStore_ResourceUsers');

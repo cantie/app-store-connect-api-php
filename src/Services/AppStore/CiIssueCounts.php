@@ -71,5 +71,4 @@ class CiIssueCounts extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiIssueCounts::class, 'AppleService_AppStore_CiIssueCounts');
 

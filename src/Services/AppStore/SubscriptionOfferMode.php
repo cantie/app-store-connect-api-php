@@ -35,5 +35,4 @@ class SubscriptionOfferMode extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(SubscriptionOfferMode::class, 'AppleService_AppStore_SubscriptionOfferMode');
 

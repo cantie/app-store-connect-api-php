@@ -105,7 +105,6 @@ class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfo_Attributes::class, 'AppleService_AppStore_AppInfo_Attributes');
 
 class AppInfo_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -132,7 +131,6 @@ class AppInfo_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfo_Relationships_App_Links::class, 'AppleService_AppStore_AppInfo_Relationships_App_Links');
 
 class AppInfo_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -159,7 +157,6 @@ class AppInfo_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfo_Relationships_App_Data::class, 'AppleService_AppStore_AppInfo_Relationships_App_Data');
 
 class AppInfo_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -200,7 +197,6 @@ class AppInfo_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfo_Relationships_App::class, 'AppleService_AppStore_AppInfo_Relationships_App');
 
 class AppInfo_Relationships_AgeRatingDeclaration_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +223,6 @@ class AppInfo_Relationships_AgeRatingDeclaration_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppInfo_Relationships_AgeRatingDeclaration_Links::class, 'AppleService_AppStore_AppInfo_Relationships_AgeRatingDeclaration_Links');
 
 class AppInfo_Relationships_AgeRatingDeclaration_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -254,7 +249,6 @@ class AppInfo_Relationships_AgeRatingDeclaration_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppInfo_Relationships_AgeRatingDeclaration_Data::class, 'AppleService_AppStore_AppInfo_Relationships_AgeRatingDeclaration_Data');
 
 class AppInfo_Relationships_AgeRatingDeclaration extends \Cantie\AppStoreConnect\Model
 {
@@ -295,7 +289,6 @@ class AppInfo_Relationships_AgeRatingDeclaration extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppInfo_Relationships_AgeRatingDeclaration::class, 'AppleService_AppStore_AppInfo_Relationships_AgeRatingDeclaration');
 
 class AppInfo_Relationships_AppInfoLocalizations_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -322,7 +315,6 @@ class AppInfo_Relationships_AppInfoLocalizations_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppInfo_Relationships_AppInfoLocalizations_Links::class, 'AppleService_AppStore_AppInfo_Relationships_AppInfoLocalizations_Links');
 
 class AppInfo_Relationships_AppInfoLocalizations_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -349,7 +341,6 @@ class AppInfo_Relationships_AppInfoLocalizations_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppInfo_Relationships_AppInfoLocalizations_Data::class, 'AppleService_AppStore_AppInfo_Relationships_AppInfoLocalizations_Data');
 
 class AppInfo_Relationships_AppInfoLocalizations extends \Cantie\AppStoreConnect\Model
 {
@@ -407,7 +398,6 @@ class AppInfo_Relationships_AppInfoLocalizations extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppInfo_Relationships_AppInfoLocalizations::class, 'AppleService_AppStore_AppInfo_Relationships_AppInfoLocalizations');
 
 class AppInfo_Relationships_PrimaryCategory_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -434,7 +424,6 @@ class AppInfo_Relationships_PrimaryCategory_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimaryCategory_Links::class, 'AppleService_AppStore_AppInfo_Relationships_PrimaryCategory_Links');
 
 class AppInfo_Relationships_PrimaryCategory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -461,7 +450,6 @@ class AppInfo_Relationships_PrimaryCategory_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimaryCategory_Data::class, 'AppleService_AppStore_AppInfo_Relationships_PrimaryCategory_Data');
 
 class AppInfo_Relationships_PrimaryCategory extends \Cantie\AppStoreConnect\Model
 {
@@ -502,7 +490,6 @@ class AppInfo_Relationships_PrimaryCategory extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimaryCategory::class, 'AppleService_AppStore_AppInfo_Relationships_PrimaryCategory');
 
 class AppInfo_Relationships_PrimarySubcategoryOne_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -529,7 +516,6 @@ class AppInfo_Relationships_PrimarySubcategoryOne_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimarySubcategoryOne_Links::class, 'AppleService_AppStore_AppInfo_Relationships_PrimarySubcategoryOne_Links');
 
 class AppInfo_Relationships_PrimarySubcategoryOne_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -556,7 +542,6 @@ class AppInfo_Relationships_PrimarySubcategoryOne_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimarySubcategoryOne_Data::class, 'AppleService_AppStore_AppInfo_Relationships_PrimarySubcategoryOne_Data');
 
 class AppInfo_Relationships_PrimarySubcategoryOne extends \Cantie\AppStoreConnect\Model
 {
@@ -597,7 +582,6 @@ class AppInfo_Relationships_PrimarySubcategoryOne extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimarySubcategoryOne::class, 'AppleService_AppStore_AppInfo_Relationships_PrimarySubcategoryOne');
 
 class AppInfo_Relationships_PrimarySubcategoryTwo_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -624,7 +608,6 @@ class AppInfo_Relationships_PrimarySubcategoryTwo_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimarySubcategoryTwo_Links::class, 'AppleService_AppStore_AppInfo_Relationships_PrimarySubcategoryTwo_Links');
 
 class AppInfo_Relationships_PrimarySubcategoryTwo_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -651,7 +634,6 @@ class AppInfo_Relationships_PrimarySubcategoryTwo_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimarySubcategoryTwo_Data::class, 'AppleService_AppStore_AppInfo_Relationships_PrimarySubcategoryTwo_Data');
 
 class AppInfo_Relationships_PrimarySubcategoryTwo extends \Cantie\AppStoreConnect\Model
 {
@@ -692,7 +674,6 @@ class AppInfo_Relationships_PrimarySubcategoryTwo extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppInfo_Relationships_PrimarySubcategoryTwo::class, 'AppleService_AppStore_AppInfo_Relationships_PrimarySubcategoryTwo');
 
 class AppInfo_Relationships_SecondaryCategory_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -719,7 +700,6 @@ class AppInfo_Relationships_SecondaryCategory_Links extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondaryCategory_Links::class, 'AppleService_AppStore_AppInfo_Relationships_SecondaryCategory_Links');
 
 class AppInfo_Relationships_SecondaryCategory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -746,7 +726,6 @@ class AppInfo_Relationships_SecondaryCategory_Data extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondaryCategory_Data::class, 'AppleService_AppStore_AppInfo_Relationships_SecondaryCategory_Data');
 
 class AppInfo_Relationships_SecondaryCategory extends \Cantie\AppStoreConnect\Model
 {
@@ -787,7 +766,6 @@ class AppInfo_Relationships_SecondaryCategory extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondaryCategory::class, 'AppleService_AppStore_AppInfo_Relationships_SecondaryCategory');
 
 class AppInfo_Relationships_SecondarySubcategoryOne_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -814,7 +792,6 @@ class AppInfo_Relationships_SecondarySubcategoryOne_Links extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondarySubcategoryOne_Links::class, 'AppleService_AppStore_AppInfo_Relationships_SecondarySubcategoryOne_Links');
 
 class AppInfo_Relationships_SecondarySubcategoryOne_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -841,7 +818,6 @@ class AppInfo_Relationships_SecondarySubcategoryOne_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondarySubcategoryOne_Data::class, 'AppleService_AppStore_AppInfo_Relationships_SecondarySubcategoryOne_Data');
 
 class AppInfo_Relationships_SecondarySubcategoryOne extends \Cantie\AppStoreConnect\Model
 {
@@ -882,7 +858,6 @@ class AppInfo_Relationships_SecondarySubcategoryOne extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondarySubcategoryOne::class, 'AppleService_AppStore_AppInfo_Relationships_SecondarySubcategoryOne');
 
 class AppInfo_Relationships_SecondarySubcategoryTwo_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -909,7 +884,6 @@ class AppInfo_Relationships_SecondarySubcategoryTwo_Links extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondarySubcategoryTwo_Links::class, 'AppleService_AppStore_AppInfo_Relationships_SecondarySubcategoryTwo_Links');
 
 class AppInfo_Relationships_SecondarySubcategoryTwo_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -936,7 +910,6 @@ class AppInfo_Relationships_SecondarySubcategoryTwo_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondarySubcategoryTwo_Data::class, 'AppleService_AppStore_AppInfo_Relationships_SecondarySubcategoryTwo_Data');
 
 class AppInfo_Relationships_SecondarySubcategoryTwo extends \Cantie\AppStoreConnect\Model
 {
@@ -977,7 +950,6 @@ class AppInfo_Relationships_SecondarySubcategoryTwo extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppInfo_Relationships_SecondarySubcategoryTwo::class, 'AppleService_AppStore_AppInfo_Relationships_SecondarySubcategoryTwo');
 
 class AppInfo_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -1137,7 +1109,6 @@ class AppInfo_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfo_Relationships::class, 'AppleService_AppStore_AppInfo_Relationships');
 
 class AppInfo extends \Cantie\AppStoreConnect\Model
 {
@@ -1215,5 +1186,4 @@ class AppInfo extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfo::class, 'AppleService_AppStore_AppInfo');
 

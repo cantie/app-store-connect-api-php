@@ -99,5 +99,4 @@ class BetaAppReviewSubmissionsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppReviewSubmissionsResponse::class, 'AppleService_AppStore_BetaAppReviewSubmissionsResponse');
 

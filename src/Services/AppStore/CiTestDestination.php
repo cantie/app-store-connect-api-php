@@ -87,5 +87,4 @@ class CiTestDestination extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTestDestination::class, 'AppleService_AppStore_CiTestDestination');
 

@@ -74,4 +74,3 @@ class SubscriptionAvailabilities extends \Cantie\AppStoreConnect\Services\Resour
     }
 }
 
-class_alias(SubscriptionAvailabilities::class, 'AppleService_AppStore_ResourceSubscriptionAvailabilities');

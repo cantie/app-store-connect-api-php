@@ -34,5 +34,4 @@ class CiGitRefKind extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CiGitRefKind::class, 'AppleService_AppStore_CiGitRefKind');
 

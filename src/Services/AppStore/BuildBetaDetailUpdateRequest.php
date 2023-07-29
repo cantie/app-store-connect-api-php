@@ -41,7 +41,6 @@ class BuildBetaDetailUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(BuildBetaDetailUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BuildBetaDetailUpdateRequest_Data_Attributes');
 
 class BuildBetaDetailUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class BuildBetaDetailUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBetaDetailUpdateRequest_Data::class, 'AppleService_AppStore_BuildBetaDetailUpdateRequest_Data');
 
 class BuildBetaDetailUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class BuildBetaDetailUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBetaDetailUpdateRequest::class, 'AppleService_AppStore_BuildBetaDetailUpdateRequest');
 

@@ -65,5 +65,4 @@ class AppClipDomainStatusResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipDomainStatusResponse::class, 'AppleService_AppStore_AppClipDomainStatusResponse');
 

@@ -93,5 +93,4 @@ class CiBuildRunsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBuildRunsResponse::class, 'AppleService_AppStore_CiBuildRunsResponse');
 

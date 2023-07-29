@@ -168,5 +168,4 @@ class DiagnosticLogCallStackNode extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DiagnosticLogCallStackNode::class, 'AppleService_AppStore_DiagnosticLogCallStackNode');
 

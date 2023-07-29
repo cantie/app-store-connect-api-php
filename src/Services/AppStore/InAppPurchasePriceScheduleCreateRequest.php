@@ -51,7 +51,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_D
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase_Data');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase e
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_InAppPurchase');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_D
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory_Data');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory e
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_BaseTerritory');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Da
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices_Data');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +172,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices ex
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships_ManualPrices');
 
 class InAppPurchasePriceScheduleCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -235,7 +229,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data_Relationships extends \Cantie
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data_Relationships');
 
 class InAppPurchasePriceScheduleCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -269,7 +262,6 @@ class InAppPurchasePriceScheduleCreateRequest_Data extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest_Data::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest_Data');
 
 class InAppPurchasePriceScheduleCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -304,5 +296,4 @@ class InAppPurchasePriceScheduleCreateRequest extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(InAppPurchasePriceScheduleCreateRequest::class, 'AppleService_AppStore_InAppPurchasePriceScheduleCreateRequest');
 

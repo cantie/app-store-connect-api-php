@@ -51,7 +51,6 @@ class CiTagPatterns_Patterns extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTagPatterns_Patterns::class, 'AppleService_AppStore_CiTagPatterns_Patterns');
 
 class CiTagPatterns extends \Cantie\AppStoreConnect\Model
 {
@@ -85,5 +84,4 @@ class CiTagPatterns extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTagPatterns::class, 'AppleService_AppStore_CiTagPatterns');
 

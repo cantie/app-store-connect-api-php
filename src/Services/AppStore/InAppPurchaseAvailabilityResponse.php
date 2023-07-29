@@ -82,5 +82,4 @@ class InAppPurchaseAvailabilityResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityResponse::class, 'AppleService_AppStore_InAppPurchaseAvailabilityResponse');
 

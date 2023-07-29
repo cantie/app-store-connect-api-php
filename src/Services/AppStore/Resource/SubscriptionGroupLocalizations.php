@@ -82,4 +82,3 @@ class SubscriptionGroupLocalizations extends \Cantie\AppStoreConnect\Services\Re
     }
 }
 
-class_alias(SubscriptionGroupLocalizations::class, 'AppleService_AppStore_ResourceSubscriptionGroupLocalizations');

@@ -47,7 +47,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Attributes');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -74,7 +73,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip_Data exte
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip_Data');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +96,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip extends \
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClip');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +122,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppSto
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion_Data');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -149,7 +145,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppSto
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships_ReleaseWithAppStoreVersion');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -176,7 +171,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExp
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate_Data');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate extends \Cantie\AppStoreConnect\Model
 {
@@ -200,7 +194,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExp
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships_AppClipDefaultExperienceTemplate');
 
 class AppClipDefaultExperienceCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -258,7 +251,6 @@ class AppClipDefaultExperienceCreateRequest_Data_Relationships extends \Cantie\A
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data_Relationships');
 
 class AppClipDefaultExperienceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -309,7 +301,6 @@ class AppClipDefaultExperienceCreateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest_Data');
 
 class AppClipDefaultExperienceCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -333,5 +324,4 @@ class AppClipDefaultExperienceCreateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppClipDefaultExperienceCreateRequest::class, 'AppleService_AppStore_AppClipDefaultExperienceCreateRequest');
 

@@ -142,7 +142,6 @@ class AppPreview_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreview_Attributes::class, 'AppleService_AppStore_AppPreview_Attributes');
 
 class AppPreview_Relationships_AppPreviewSet_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -169,7 +168,6 @@ class AppPreview_Relationships_AppPreviewSet_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppPreview_Relationships_AppPreviewSet_Links::class, 'AppleService_AppStore_AppPreview_Relationships_AppPreviewSet_Links');
 
 class AppPreview_Relationships_AppPreviewSet_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -196,7 +194,6 @@ class AppPreview_Relationships_AppPreviewSet_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppPreview_Relationships_AppPreviewSet_Data::class, 'AppleService_AppStore_AppPreview_Relationships_AppPreviewSet_Data');
 
 class AppPreview_Relationships_AppPreviewSet extends \Cantie\AppStoreConnect\Model
 {
@@ -237,7 +234,6 @@ class AppPreview_Relationships_AppPreviewSet extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppPreview_Relationships_AppPreviewSet::class, 'AppleService_AppStore_AppPreview_Relationships_AppPreviewSet');
 
 class AppPreview_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -261,7 +257,6 @@ class AppPreview_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreview_Relationships::class, 'AppleService_AppStore_AppPreview_Relationships');
 
 class AppPreview extends \Cantie\AppStoreConnect\Model
 {
@@ -339,5 +334,4 @@ class AppPreview extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreview::class, 'AppleService_AppStore_AppPreview');
 

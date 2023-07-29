@@ -132,7 +132,6 @@ class InAppPurchaseAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Attributes::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Attributes');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -159,7 +158,6 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links 
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Links');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +184,6 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data e
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +224,6 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2 extend
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships_InAppPurchaseV2');
 
 class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -251,7 +247,6 @@ class InAppPurchaseAppStoreReviewScreenshot_Relationships extends \Cantie\AppSto
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshot_Relationships::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot_Relationships');
 
 class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Model
 {
@@ -329,5 +324,4 @@ class InAppPurchaseAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(InAppPurchaseAppStoreReviewScreenshot::class, 'AppleService_AppStore_InAppPurchaseAppStoreReviewScreenshot');
 

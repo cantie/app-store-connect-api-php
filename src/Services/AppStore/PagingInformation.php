@@ -51,7 +51,6 @@ class PagingInformation_Paging extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PagingInformation_Paging::class, 'AppleService_AppStore_PagingInformation_Paging');
 
 class PagingInformation extends \Cantie\AppStoreConnect\Model
 {
@@ -75,5 +74,4 @@ class PagingInformation extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PagingInformation::class, 'AppleService_AppStore_PagingInformation');
 

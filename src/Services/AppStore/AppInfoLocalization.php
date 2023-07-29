@@ -91,7 +91,6 @@ class AppInfoLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoLocalization_Attributes::class, 'AppleService_AppStore_AppInfoLocalization_Attributes');
 
 class AppInfoLocalization_Relationships_AppInfo_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -118,7 +117,6 @@ class AppInfoLocalization_Relationships_AppInfo_Links extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppInfoLocalization_Relationships_AppInfo_Links::class, 'AppleService_AppStore_AppInfoLocalization_Relationships_AppInfo_Links');
 
 class AppInfoLocalization_Relationships_AppInfo_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -145,7 +143,6 @@ class AppInfoLocalization_Relationships_AppInfo_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppInfoLocalization_Relationships_AppInfo_Data::class, 'AppleService_AppStore_AppInfoLocalization_Relationships_AppInfo_Data');
 
 class AppInfoLocalization_Relationships_AppInfo extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +183,6 @@ class AppInfoLocalization_Relationships_AppInfo extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppInfoLocalization_Relationships_AppInfo::class, 'AppleService_AppStore_AppInfoLocalization_Relationships_AppInfo');
 
 class AppInfoLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -210,7 +206,6 @@ class AppInfoLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoLocalization_Relationships::class, 'AppleService_AppStore_AppInfoLocalization_Relationships');
 
 class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -288,5 +283,4 @@ class AppInfoLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoLocalization::class, 'AppleService_AppStore_AppInfoLocalization');
 

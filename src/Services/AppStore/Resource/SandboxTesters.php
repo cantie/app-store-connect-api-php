@@ -63,4 +63,3 @@ class SandboxTesters extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(SandboxTesters::class, 'AppleService_AppStore_ResourceSandboxTesters');

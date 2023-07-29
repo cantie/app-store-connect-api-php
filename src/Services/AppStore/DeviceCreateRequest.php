@@ -67,7 +67,6 @@ class DeviceCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DeviceCreateRequest_Data_Attributes::class, 'AppleService_AppStore_DeviceCreateRequest_Data_Attributes');
 
 class DeviceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -101,7 +100,6 @@ class DeviceCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DeviceCreateRequest_Data::class, 'AppleService_AppStore_DeviceCreateRequest_Data');
 
 class DeviceCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -125,5 +123,4 @@ class DeviceCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DeviceCreateRequest::class, 'AppleService_AppStore_DeviceCreateRequest');
 

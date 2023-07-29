@@ -61,7 +61,6 @@ class InAppPurchaseLocalizationCreateRequest_Data_Attributes extends \Cantie\App
 	}
 
 }
-class_alias(InAppPurchaseLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseLocalizationCreateRequest_Data_Attributes');
 
 class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2_
 	}
 
 }
-class_alias(InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -112,7 +110,6 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2 
 	}
 
 }
-class_alias(InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchaseLocalizationCreateRequest_Data_Relationships_InAppPurchaseV2');
 
 class InAppPurchaseLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class InAppPurchaseLocalizationCreateRequest_Data_Relationships extends \Cantie\
 	}
 
 }
-class_alias(InAppPurchaseLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchaseLocalizationCreateRequest_Data_Relationships');
 
 class InAppPurchaseLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -187,7 +183,6 @@ class InAppPurchaseLocalizationCreateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(InAppPurchaseLocalizationCreateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseLocalizationCreateRequest_Data');
 
 class InAppPurchaseLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -211,5 +206,4 @@ class InAppPurchaseLocalizationCreateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(InAppPurchaseLocalizationCreateRequest::class, 'AppleService_AppStore_InAppPurchaseLocalizationCreateRequest');
 

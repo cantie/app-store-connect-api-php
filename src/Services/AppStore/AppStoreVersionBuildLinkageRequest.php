@@ -51,7 +51,6 @@ class AppStoreVersionBuildLinkageRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppStoreVersionBuildLinkageRequest_Data::class, 'AppleService_AppStore_AppStoreVersionBuildLinkageRequest_Data');
 
 class AppStoreVersionBuildLinkageRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -75,5 +74,4 @@ class AppStoreVersionBuildLinkageRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionBuildLinkageRequest::class, 'AppleService_AppStore_AppStoreVersionBuildLinkageRequest');
 

@@ -47,7 +47,6 @@ class AppClipDefaultExperienceUpdateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(AppClipDefaultExperienceUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipDefaultExperienceUpdateRequest_Data_Attributes');
 
 class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -74,7 +73,6 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppSto
 	}
 
 }
-class_alias(AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppStoreVersion_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppStoreVersion_Data');
 
 class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +96,6 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppSto
 	}
 
 }
-class_alias(AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppStoreVersion::class, 'AppleService_AppStore_AppClipDefaultExperienceUpdateRequest_Data_Relationships_ReleaseWithAppStoreVersion');
 
 class AppClipDefaultExperienceUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -122,7 +119,6 @@ class AppClipDefaultExperienceUpdateRequest_Data_Relationships extends \Cantie\A
 	}
 
 }
-class_alias(AppClipDefaultExperienceUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_AppClipDefaultExperienceUpdateRequest_Data_Relationships');
 
 class AppClipDefaultExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -183,7 +179,6 @@ class AppClipDefaultExperienceUpdateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppClipDefaultExperienceUpdateRequest_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceUpdateRequest_Data');
 
 class AppClipDefaultExperienceUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -207,5 +202,4 @@ class AppClipDefaultExperienceUpdateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppClipDefaultExperienceUpdateRequest::class, 'AppleService_AppStore_AppClipDefaultExperienceUpdateRequest');
 

@@ -99,5 +99,4 @@ class BuildBetaDetailsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBetaDetailsResponse::class, 'AppleService_AppStore_BuildBetaDetailsResponse');
 

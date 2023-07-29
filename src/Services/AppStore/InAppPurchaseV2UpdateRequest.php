@@ -71,7 +71,6 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(InAppPurchaseV2UpdateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseV2UpdateRequest_Data_Attributes');
 
 class InAppPurchaseV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -115,7 +114,6 @@ class InAppPurchaseV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseV2UpdateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseV2UpdateRequest_Data');
 
 class InAppPurchaseV2UpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -139,5 +137,4 @@ class InAppPurchaseV2UpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseV2UpdateRequest::class, 'AppleService_AppStore_InAppPurchaseV2UpdateRequest');
 

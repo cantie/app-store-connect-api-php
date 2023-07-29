@@ -113,7 +113,6 @@ class Certificate_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Certificate_Attributes::class, 'AppleService_AppStore_Certificate_Attributes');
 
 class Certificate extends \Cantie\AppStoreConnect\Model
 {
@@ -174,5 +173,4 @@ class Certificate extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Certificate::class, 'AppleService_AppStore_Certificate');
 

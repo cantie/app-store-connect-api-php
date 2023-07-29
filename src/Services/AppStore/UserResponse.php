@@ -82,5 +82,4 @@ class UserResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserResponse::class, 'AppleService_AppStore_UserResponse');
 

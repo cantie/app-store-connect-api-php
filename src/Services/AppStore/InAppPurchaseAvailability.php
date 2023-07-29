@@ -41,7 +41,6 @@ class InAppPurchaseAvailability_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseAvailability_Attributes::class, 'AppleService_AppStore_InAppPurchaseAvailability_Attributes');
 
 class InAppPurchaseAvailability_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories_Links extends
 	}
 
 }
-class_alias(InAppPurchaseAvailability_Relationships_AvailableTerritories_Links::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships_AvailableTerritories_Links');
 
 class InAppPurchaseAvailability_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories_Data extends 
 	}
 
 }
-class_alias(InAppPurchaseAvailability_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships_AvailableTerritories_Data');
 
 class InAppPurchaseAvailability_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +150,6 @@ class InAppPurchaseAvailability_Relationships_AvailableTerritories extends \Cant
 	}
 
 }
-class_alias(InAppPurchaseAvailability_Relationships_AvailableTerritories::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships_AvailableTerritories');
 
 class InAppPurchaseAvailability_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class InAppPurchaseAvailability_Relationships extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(InAppPurchaseAvailability_Relationships::class, 'AppleService_AppStore_InAppPurchaseAvailability_Relationships');
 
 class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 {
@@ -255,5 +250,4 @@ class InAppPurchaseAvailability extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseAvailability::class, 'AppleService_AppStore_InAppPurchaseAvailability');
 

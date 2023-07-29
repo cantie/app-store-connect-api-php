@@ -62,4 +62,3 @@ class UploadAssets extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(UploadAssets::class, 'AppleService_AppStore_UploadAssets');

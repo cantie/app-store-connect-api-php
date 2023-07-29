@@ -41,7 +41,6 @@ class SubscriptionGroupUpdateRequest_Data_Attributes extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(SubscriptionGroupUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionGroupUpdateRequest_Data_Attributes');
 
 class SubscriptionGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class SubscriptionGroupUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionGroupUpdateRequest_Data');
 
 class SubscriptionGroupUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class SubscriptionGroupUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupUpdateRequest::class, 'AppleService_AppStore_SubscriptionGroupUpdateRequest');
 

@@ -51,7 +51,6 @@ class SubscriptionGroupLocalizationUpdateRequest_Data_Attributes extends \Cantie
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionGroupLocalizationUpdateRequest_Data_Attributes');
 
 class SubscriptionGroupLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class SubscriptionGroupLocalizationUpdateRequest_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionGroupLocalizationUpdateRequest_Data');
 
 class SubscriptionGroupLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class SubscriptionGroupLocalizationUpdateRequest extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationUpdateRequest::class, 'AppleService_AppStore_SubscriptionGroupLocalizationUpdateRequest');
 

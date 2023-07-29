@@ -39,5 +39,4 @@ class InternalBetaState extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(InternalBetaState::class, 'AppleService_AppStore_InternalBetaState');
 

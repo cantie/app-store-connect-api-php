@@ -75,5 +75,4 @@ class CiBranchStartCondition extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBranchStartCondition::class, 'AppleService_AppStore_CiBranchStartCondition');
 

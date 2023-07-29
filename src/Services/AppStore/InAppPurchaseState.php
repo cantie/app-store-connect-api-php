@@ -44,5 +44,4 @@ class InAppPurchaseState extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(InAppPurchaseState::class, 'AppleService_AppStore_InAppPurchaseState');
 

@@ -86,4 +86,3 @@ class BuildBetaDetails extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BuildBetaDetails::class, 'AppleService_AppStore_ResourceBuildBetaDetails');

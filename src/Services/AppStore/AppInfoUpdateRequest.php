@@ -51,7 +51,6 @@ class AppInfoUpdateRequest_Data_Relationships_PrimaryCategory_Data extends \Cant
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_PrimaryCategory_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_PrimaryCategory_Data');
 
 class AppInfoUpdateRequest_Data_Relationships_PrimaryCategory extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class AppInfoUpdateRequest_Data_Relationships_PrimaryCategory extends \Cantie\Ap
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_PrimaryCategory::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_PrimaryCategory');
 
 class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne_Data extends
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne_Data');
 
 class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne extends \Can
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryOne');
 
 class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo_Data extends
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo_Data');
 
 class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +172,6 @@ class AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo extends \Can
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_PrimarySubcategoryTwo');
 
 class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -204,7 +198,6 @@ class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory_Data extends \Ca
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_SecondaryCategory_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_SecondaryCategory_Data');
 
 class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory extends \Cantie\AppStoreConnect\Model
 {
@@ -228,7 +221,6 @@ class AppInfoUpdateRequest_Data_Relationships_SecondaryCategory extends \Cantie\
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_SecondaryCategory::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_SecondaryCategory');
 
 class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -255,7 +247,6 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne_Data exten
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne_Data');
 
 class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne extends \Cantie\AppStoreConnect\Model
 {
@@ -279,7 +270,6 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne extends \C
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryOne');
 
 class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -306,7 +296,6 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo_Data exten
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo_Data');
 
 class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo extends \Cantie\AppStoreConnect\Model
 {
@@ -330,7 +319,6 @@ class AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo extends \C
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships_SecondarySubcategoryTwo');
 
 class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -439,7 +427,6 @@ class AppInfoUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data_Relationships');
 
 class AppInfoUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -483,7 +470,6 @@ class AppInfoUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoUpdateRequest_Data::class, 'AppleService_AppStore_AppInfoUpdateRequest_Data');
 
 class AppInfoUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -507,5 +493,4 @@ class AppInfoUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoUpdateRequest::class, 'AppleService_AppStore_AppInfoUpdateRequest');
 

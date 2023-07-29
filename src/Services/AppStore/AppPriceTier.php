@@ -51,7 +51,6 @@ class AppPriceTier_Relationships_PricePoints_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppPriceTier_Relationships_PricePoints_Links::class, 'AppleService_AppStore_AppPriceTier_Relationships_PricePoints_Links');
 
 class AppPriceTier_Relationships_PricePoints_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppPriceTier_Relationships_PricePoints_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppPriceTier_Relationships_PricePoints_Data::class, 'AppleService_AppStore_AppPriceTier_Relationships_PricePoints_Data');
 
 class AppPriceTier_Relationships_PricePoints extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +134,6 @@ class AppPriceTier_Relationships_PricePoints extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppPriceTier_Relationships_PricePoints::class, 'AppleService_AppStore_AppPriceTier_Relationships_PricePoints');
 
 class AppPriceTier_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -160,7 +157,6 @@ class AppPriceTier_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceTier_Relationships::class, 'AppleService_AppStore_AppPriceTier_Relationships');
 
 class AppPriceTier extends \Cantie\AppStoreConnect\Model
 {
@@ -221,5 +217,4 @@ class AppPriceTier extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceTier::class, 'AppleService_AppStore_AppPriceTier');
 

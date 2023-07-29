@@ -68,7 +68,6 @@ class CiAction_TestConfiguration extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiAction_TestConfiguration::class, 'AppleService_AppStore_CiAction_TestConfiguration');
 
 class CiAction extends \Cantie\AppStoreConnect\Model
 {
@@ -174,5 +173,4 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiAction::class, 'AppleService_AppStore_CiAction');
 

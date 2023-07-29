@@ -76,5 +76,4 @@ class AppInfoResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoResponse::class, 'AppleService_AppStore_AppInfoResponse');
 

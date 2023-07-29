@@ -81,7 +81,6 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data_Attributes');
 
 class AppStoreVersionUpdateRequest_Data_Relationships_Build_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -108,7 +107,6 @@ class AppStoreVersionUpdateRequest_Data_Relationships_Build_Data extends \Cantie
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data_Relationships_Build_Data::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data_Relationships_Build_Data');
 
 class AppStoreVersionUpdateRequest_Data_Relationships_Build extends \Cantie\AppStoreConnect\Model
 {
@@ -132,7 +130,6 @@ class AppStoreVersionUpdateRequest_Data_Relationships_Build extends \Cantie\AppS
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data_Relationships_Build::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data_Relationships_Build');
 
 class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -159,7 +156,6 @@ class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience_D
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience_Data::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience_Data');
 
 class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience extends \Cantie\AppStoreConnect\Model
 {
@@ -183,7 +179,6 @@ class AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience e
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data_Relationships_AppClipDefaultExperience');
 
 class AppStoreVersionUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -224,7 +219,6 @@ class AppStoreVersionUpdateRequest_Data_Relationships extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data_Relationships');
 
 class AppStoreVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -285,7 +279,6 @@ class AppStoreVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest_Data');
 
 class AppStoreVersionUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -309,5 +302,4 @@ class AppStoreVersionUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionUpdateRequest::class, 'AppleService_AppStore_AppStoreVersionUpdateRequest');
 

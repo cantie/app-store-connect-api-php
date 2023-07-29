@@ -51,7 +51,6 @@ class GameCenterEnabledVersionCompatibleVersionsLinkagesResponse_Data extends \C
 	}
 
 }
-class_alias(GameCenterEnabledVersionCompatibleVersionsLinkagesResponse_Data::class, 'AppleService_AppStore_GameCenterEnabledVersionCompatibleVersionsLinkagesResponse_Data');
 
 class GameCenterEnabledVersionCompatibleVersionsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class GameCenterEnabledVersionCompatibleVersionsLinkagesResponse extends \Cantie
 	}
 
 }
-class_alias(GameCenterEnabledVersionCompatibleVersionsLinkagesResponse::class, 'AppleService_AppStore_GameCenterEnabledVersionCompatibleVersionsLinkagesResponse');
 

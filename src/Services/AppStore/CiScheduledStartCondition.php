@@ -88,7 +88,6 @@ class CiScheduledStartCondition_Schedule extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiScheduledStartCondition_Schedule::class, 'AppleService_AppStore_CiScheduledStartCondition_Schedule');
 
 class CiScheduledStartCondition extends \Cantie\AppStoreConnect\Model
 {
@@ -129,5 +128,4 @@ class CiScheduledStartCondition extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiScheduledStartCondition::class, 'AppleService_AppStore_CiScheduledStartCondition');
 

@@ -51,7 +51,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Attributes extends \C
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data_Attributes');
 
 class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperiment_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperiment_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperiment_Data');
 
 class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperiment::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperiment');
 
 class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -129,7 +126,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2_Data');
 
 class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStor
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships_AppStoreVersionExperimentV2');
 
 class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -194,7 +189,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships extends
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data_Relationships');
 
 class AppStoreVersionExperimentTreatmentCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -245,7 +239,6 @@ class AppStoreVersionExperimentTreatmentCreateRequest_Data extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest_Data');
 
 class AppStoreVersionExperimentTreatmentCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -269,5 +262,4 @@ class AppStoreVersionExperimentTreatmentCreateRequest extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentCreateRequest::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentCreateRequest');
 

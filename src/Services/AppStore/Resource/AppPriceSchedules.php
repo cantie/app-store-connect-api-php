@@ -97,4 +97,3 @@ class AppPriceSchedules extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppPriceSchedules::class, 'AppleService_AppStore_ResourceAppPriceSchedules');

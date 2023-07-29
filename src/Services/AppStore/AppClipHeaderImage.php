@@ -112,7 +112,6 @@ class AppClipHeaderImage_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImage_Attributes::class, 'AppleService_AppStore_AppClipHeaderImage_Attributes');
 
 class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -139,7 +138,6 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Link
 	}
 
 }
-class_alias(AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Links::class, 'AppleService_AppStore_AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Links');
 
 class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +164,6 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data
 	}
 
 }
-class_alias(AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data::class, 'AppleService_AppStore_AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization_Data');
 
 class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -207,7 +204,6 @@ class AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization exte
 	}
 
 }
-class_alias(AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization::class, 'AppleService_AppStore_AppClipHeaderImage_Relationships_AppClipDefaultExperienceLocalization');
 
 class AppClipHeaderImage_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -231,7 +227,6 @@ class AppClipHeaderImage_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImage_Relationships::class, 'AppleService_AppStore_AppClipHeaderImage_Relationships');
 
 class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 {
@@ -309,5 +304,4 @@ class AppClipHeaderImage extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipHeaderImage::class, 'AppleService_AppStore_AppClipHeaderImage');
 
