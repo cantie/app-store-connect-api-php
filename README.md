@@ -20,6 +20,9 @@ composer require cantie/app-store-connect-api
 
 ## Basic Example ##
 ```php
+use AppleClient;
+use AppleService_AppStore;
+use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewResponseV1CreateRequest;
 
 $client = new AppleClient();
 $client->setApiKey("PATH_TO_API_KEY");
@@ -65,11 +68,50 @@ foreach ($results->getData() as $app) {
 }
 ```
 
-## Upload assets to App Store Connect ##
+## Create new client ##
 ```php
-// In this example we will upload one screenshot file to app screenshot set
-// Firstly, we get app screenshot set step by step, we can reducde steps by include[] parameters in query
-$appId = $app>getId(); // $app from previous example
+use AppleClient;
+
+$client = new AppleClient();
+$client->setApiKey("PATH_TO_API_KEY");
+$client->setIssuerId($issuerId);
+$client->setKeyIdentifier($keyIdentifier);
+// Optional: create new JWT token. If skip this step, token are auto generated when first request are sent
+$client->generateToken();
+```
+
+## Making a request ##
+For almost all request except upload service, we use AppStore service to handle
+```php
+use AppleService_AppStore;
+// All resources and their methods parameters are listed in src/Service/AppStore.php
+$appstore = new AppleService_AppStore($client);
+// Make request, for example we call request for an Apps's resources
+$appstore->apps->listAppsAppStoreVersions($APP_ID_HERE, $OPTIONAL_PARAMS);
+```
+For detail, you can view in src/Services/AppStore/Resource/*
+
+## Aliases ##
+Basic classes are aliased for convenient use, see more at src/aliases.php
+
+```php
+$classMap = [
+    'Cantie\\AppStoreConnect\\Client' => 'AppleClient',
+    'Cantie\\AppStoreConnect\\Service' => 'AppleService',
+    'Cantie\\AppStoreConnect\\Services\\AppStore' => 'AppleService_AppStore',
+    'Cantie\\AppStoreConnect\\Services\\Upload' => 'AppleService_Upload'
+];
+```
+
+## Upload assets to App Store Connect ##
+In this example we will upload one screenshot file to app screenshot set
+```php
+// Firstly, we get app screenshot set step by step, we can reduce steps by include[] parameters in query
+use AppleService_Upload;
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotUpdateRequest;
+
+$appId = $app->getId(); // $app from previous example
 $appStoreVersions = $appstore->apps->listAppsAppStoreVersions($appId);
 // Get first app store version id;
 $appStoreVersionId = $appStoreVersions->getData()[0]->getId();
@@ -125,3 +167,32 @@ $appScreenshotUpdateRequest = new AppScreenshotUpdateRequest([
 $ret = $appstore->appScreenshots->updateAppScreenshots($appScreenshotId, $appScreenshotUpdateRequest); 
 ```
 
+## Initialize classes ##
+All object classes are extended from Model.php can be initialized by an array of attribute names and values, as previous example:
+```php
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotUpdateRequest;
+$appScreenshotUpdateRequest = new AppScreenshotUpdateRequest([
+    'data' => [
+        'type' => 'appScreenshots',
+        'id' => $appScreenshotId,
+        'attributes' => [
+            'sourceFileChecksum' => md5_file($filePath),
+            'uploaded' => true
+        ]
+    ]
+]);
+```
+
+## Caching ##
+JWT token are cached for 10 minutes and only be created if doesn't existed or has been expired. JWT token is not between clients as defined in src/Client.php
+```php
+public function generateToken()
+{
+    $tokenGenerator = new Generate($this->getApiKey(), $this->getKeyIdentifier(), $this->getIssuerId());
+    $jwtToken = $tokenGenerator->generateToken();
+    // cache for 10 minutes
+    $this->jwtToken = $jwtToken;
+    $this->jwtTokenExpTime = Carbon::now()->addMinutes(10)->timestamp;
+    return $jwtToken;
+}
+```
