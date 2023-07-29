@@ -82,4 +82,3 @@ class BetaAppClipInvocations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BetaAppClipInvocations::class, 'AppleService_AppStore_ResourceBetaAppClipInvocations');

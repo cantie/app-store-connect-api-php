@@ -45,5 +45,4 @@ class UserRole extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(UserRole::class, 'AppleService_AppStore_UserRole');
 

@@ -51,7 +51,6 @@ class AppStoreVersionExperimentCreateRequest_Data_Attributes extends \Cantie\App
 	}
 
 }
-class_alias(AppStoreVersionExperimentCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionExperimentCreateRequest_Data_Attributes');
 
 class AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion_
 	}
 
 }
-class_alias(AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion 
 	}
 
 }
-class_alias(AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionExperimentCreateRequest_Data_Relationships_AppStoreVersion');
 
 class AppStoreVersionExperimentCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppStoreVersionExperimentCreateRequest_Data_Relationships extends \Cantie\
 	}
 
 }
-class_alias(AppStoreVersionExperimentCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionExperimentCreateRequest_Data_Relationships');
 
 class AppStoreVersionExperimentCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppStoreVersionExperimentCreateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppStoreVersionExperimentCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentCreateRequest_Data');
 
 class AppStoreVersionExperimentCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppStoreVersionExperimentCreateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreVersionExperimentCreateRequest::class, 'AppleService_AppStore_AppStoreVersionExperimentCreateRequest');
 

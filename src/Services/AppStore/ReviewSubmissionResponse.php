@@ -76,5 +76,4 @@ class ReviewSubmissionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionResponse::class, 'AppleService_AppStore_ReviewSubmissionResponse');
 

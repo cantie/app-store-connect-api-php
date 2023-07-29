@@ -51,5 +51,4 @@ class SubscriptionPricePointInlineCreate extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionPricePointInlineCreate::class, 'AppleService_AppStore_SubscriptionPricePointInlineCreate');
 

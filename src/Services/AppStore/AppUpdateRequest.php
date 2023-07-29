@@ -123,7 +123,6 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppUpdateRequest_Data_Attributes');
 
 class AppUpdateRequest_Data_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -150,7 +149,6 @@ class AppUpdateRequest_Data_Relationships_Prices_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppUpdateRequest_Data_Relationships_Prices_Data::class, 'AppleService_AppStore_AppUpdateRequest_Data_Relationships_Prices_Data');
 
 class AppUpdateRequest_Data_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 {
@@ -174,7 +172,6 @@ class AppUpdateRequest_Data_Relationships_Prices extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppUpdateRequest_Data_Relationships_Prices::class, 'AppleService_AppStore_AppUpdateRequest_Data_Relationships_Prices');
 
 class AppUpdateRequest_Data_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -201,7 +198,6 @@ class AppUpdateRequest_Data_Relationships_AvailableTerritories_Data extends \Can
 	}
 
 }
-class_alias(AppUpdateRequest_Data_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_AppUpdateRequest_Data_Relationships_AvailableTerritories_Data');
 
 class AppUpdateRequest_Data_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -225,7 +221,6 @@ class AppUpdateRequest_Data_Relationships_AvailableTerritories extends \Cantie\A
 	}
 
 }
-class_alias(AppUpdateRequest_Data_Relationships_AvailableTerritories::class, 'AppleService_AppStore_AppUpdateRequest_Data_Relationships_AvailableTerritories');
 
 class AppUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -266,7 +261,6 @@ class AppUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_AppUpdateRequest_Data_Relationships');
 
 class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -327,7 +321,6 @@ class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppUpdateRequest_Data::class, 'AppleService_AppStore_AppUpdateRequest_Data');
 
 class AppUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -368,5 +361,4 @@ class AppUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppUpdateRequest::class, 'AppleService_AppStore_AppUpdateRequest');
 

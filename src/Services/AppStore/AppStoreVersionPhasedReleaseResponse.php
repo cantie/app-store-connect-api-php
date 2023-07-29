@@ -65,5 +65,4 @@ class AppStoreVersionPhasedReleaseResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseResponse::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseResponse');
 

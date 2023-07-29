@@ -77,7 +77,6 @@ class AppStoreVersionPhasedRelease_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppStoreVersionPhasedRelease_Attributes::class, 'AppleService_AppStore_AppStoreVersionPhasedRelease_Attributes');
 
 class AppStoreVersionPhasedRelease extends \Cantie\AppStoreConnect\Model
 {
@@ -138,5 +137,4 @@ class AppStoreVersionPhasedRelease extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionPhasedRelease::class, 'AppleService_AppStore_AppStoreVersionPhasedRelease');
 

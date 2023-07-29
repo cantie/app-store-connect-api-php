@@ -47,7 +47,6 @@ class AppCategory_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCategory_Attributes::class, 'AppleService_AppStore_AppCategory_Attributes');
 
 class AppCategory_Relationships_Subcategories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -74,7 +73,6 @@ class AppCategory_Relationships_Subcategories_Links extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppCategory_Relationships_Subcategories_Links::class, 'AppleService_AppStore_AppCategory_Relationships_Subcategories_Links');
 
 class AppCategory_Relationships_Subcategories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -101,7 +99,6 @@ class AppCategory_Relationships_Subcategories_Data extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppCategory_Relationships_Subcategories_Data::class, 'AppleService_AppStore_AppCategory_Relationships_Subcategories_Data');
 
 class AppCategory_Relationships_Subcategories extends \Cantie\AppStoreConnect\Model
 {
@@ -159,7 +156,6 @@ class AppCategory_Relationships_Subcategories extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppCategory_Relationships_Subcategories::class, 'AppleService_AppStore_AppCategory_Relationships_Subcategories');
 
 class AppCategory_Relationships_Parent_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +182,6 @@ class AppCategory_Relationships_Parent_Links extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppCategory_Relationships_Parent_Links::class, 'AppleService_AppStore_AppCategory_Relationships_Parent_Links');
 
 class AppCategory_Relationships_Parent_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -213,7 +208,6 @@ class AppCategory_Relationships_Parent_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppCategory_Relationships_Parent_Data::class, 'AppleService_AppStore_AppCategory_Relationships_Parent_Data');
 
 class AppCategory_Relationships_Parent extends \Cantie\AppStoreConnect\Model
 {
@@ -254,7 +248,6 @@ class AppCategory_Relationships_Parent extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCategory_Relationships_Parent::class, 'AppleService_AppStore_AppCategory_Relationships_Parent');
 
 class AppCategory_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -295,7 +288,6 @@ class AppCategory_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCategory_Relationships::class, 'AppleService_AppStore_AppCategory_Relationships');
 
 class AppCategory extends \Cantie\AppStoreConnect\Model
 {
@@ -373,5 +365,4 @@ class AppCategory extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCategory::class, 'AppleService_AppStore_AppCategory');
 

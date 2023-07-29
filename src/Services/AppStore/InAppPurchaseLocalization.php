@@ -71,7 +71,6 @@ class InAppPurchaseLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseLocalization_Attributes::class, 'AppleService_AppStore_InAppPurchaseLocalization_Attributes');
 
 class InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +97,6 @@ class InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Links extends \Can
 	}
 
 }
-class_alias(InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Links::class, 'AppleService_AppStore_InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Links');
 
 class InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +123,6 @@ class InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Data extends \Cant
 	}
 
 }
-class_alias(InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchaseLocalization_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchaseLocalization_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class InAppPurchaseLocalization_Relationships_InAppPurchaseV2 extends \Cantie\Ap
 	}
 
 }
-class_alias(InAppPurchaseLocalization_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchaseLocalization_Relationships_InAppPurchaseV2');
 
 class InAppPurchaseLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +186,6 @@ class InAppPurchaseLocalization_Relationships extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(InAppPurchaseLocalization_Relationships::class, 'AppleService_AppStore_InAppPurchaseLocalization_Relationships');
 
 class InAppPurchaseLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -268,5 +263,4 @@ class InAppPurchaseLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseLocalization::class, 'AppleService_AppStore_InAppPurchaseLocalization');
 

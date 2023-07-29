@@ -51,5 +51,4 @@ class FileLocation extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(FileLocation::class, 'AppleService_AppStore_FileLocation');
 

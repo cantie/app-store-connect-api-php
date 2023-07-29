@@ -36,5 +36,4 @@ class AppStoreAgeRating extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(AppStoreAgeRating::class, 'AppleService_AppStore_AppStoreAgeRating');
 

@@ -51,7 +51,6 @@ class BetaBuildLocalizationCreateRequest_Data_Attributes extends \Cantie\AppStor
 	}
 
 }
-class_alias(BetaBuildLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaBuildLocalizationCreateRequest_Data_Attributes');
 
 class BetaBuildLocalizationCreateRequest_Data_Relationships_Build_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships_Build_Data extends \
 	}
 
 }
-class_alias(BetaBuildLocalizationCreateRequest_Data_Relationships_Build_Data::class, 'AppleService_AppStore_BetaBuildLocalizationCreateRequest_Data_Relationships_Build_Data');
 
 class BetaBuildLocalizationCreateRequest_Data_Relationships_Build extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships_Build extends \Canti
 	}
 
 }
-class_alias(BetaBuildLocalizationCreateRequest_Data_Relationships_Build::class, 'AppleService_AppStore_BetaBuildLocalizationCreateRequest_Data_Relationships_Build');
 
 class BetaBuildLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class BetaBuildLocalizationCreateRequest_Data_Relationships extends \Cantie\AppS
 	}
 
 }
-class_alias(BetaBuildLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BetaBuildLocalizationCreateRequest_Data_Relationships');
 
 class BetaBuildLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class BetaBuildLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(BetaBuildLocalizationCreateRequest_Data::class, 'AppleService_AppStore_BetaBuildLocalizationCreateRequest_Data');
 
 class BetaBuildLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class BetaBuildLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaBuildLocalizationCreateRequest::class, 'AppleService_AppStore_BetaBuildLocalizationCreateRequest');
 

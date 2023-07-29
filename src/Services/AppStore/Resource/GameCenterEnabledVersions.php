@@ -95,4 +95,3 @@ class GameCenterEnabledVersions extends \Cantie\AppStoreConnect\Services\Resourc
     }
 }
 
-class_alias(GameCenterEnabledVersions::class, 'AppleService_AppStore_ResourceGameCenterEnabledVersions');

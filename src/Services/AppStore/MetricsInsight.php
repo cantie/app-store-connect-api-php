@@ -91,7 +91,6 @@ class MetricsInsight_Populations extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(MetricsInsight_Populations::class, 'AppleService_AppStore_MetricsInsight_Populations');
 
 class MetricsInsight extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +200,4 @@ class MetricsInsight extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(MetricsInsight::class, 'AppleService_AppStore_MetricsInsight');
 

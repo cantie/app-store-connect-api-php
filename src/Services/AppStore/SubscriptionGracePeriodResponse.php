@@ -65,5 +65,4 @@ class SubscriptionGracePeriodResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGracePeriodResponse::class, 'AppleService_AppStore_SubscriptionGracePeriodResponse');
 

@@ -77,7 +77,6 @@ class ScmGitReference_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmGitReference_Attributes::class, 'AppleService_AppStore_ScmGitReference_Attributes');
 
 class ScmGitReference_Relationships_Repository_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -104,7 +103,6 @@ class ScmGitReference_Relationships_Repository_Links extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(ScmGitReference_Relationships_Repository_Links::class, 'AppleService_AppStore_ScmGitReference_Relationships_Repository_Links');
 
 class ScmGitReference_Relationships_Repository_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -131,7 +129,6 @@ class ScmGitReference_Relationships_Repository_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(ScmGitReference_Relationships_Repository_Data::class, 'AppleService_AppStore_ScmGitReference_Relationships_Repository_Data');
 
 class ScmGitReference_Relationships_Repository extends \Cantie\AppStoreConnect\Model
 {
@@ -172,7 +169,6 @@ class ScmGitReference_Relationships_Repository extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(ScmGitReference_Relationships_Repository::class, 'AppleService_AppStore_ScmGitReference_Relationships_Repository');
 
 class ScmGitReference_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -196,7 +192,6 @@ class ScmGitReference_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmGitReference_Relationships::class, 'AppleService_AppStore_ScmGitReference_Relationships');
 
 class ScmGitReference extends \Cantie\AppStoreConnect\Model
 {
@@ -274,5 +269,4 @@ class ScmGitReference extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmGitReference::class, 'AppleService_AppStore_ScmGitReference');
 

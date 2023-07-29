@@ -99,5 +99,4 @@ class SubscriptionOfferCodeCustomCodesResponse extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(SubscriptionOfferCodeCustomCodesResponse::class, 'AppleService_AppStore_SubscriptionOfferCodeCustomCodesResponse');
 

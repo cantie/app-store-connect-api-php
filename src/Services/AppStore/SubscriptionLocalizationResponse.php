@@ -82,5 +82,4 @@ class SubscriptionLocalizationResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionLocalizationResponse::class, 'AppleService_AppStore_SubscriptionLocalizationResponse');
 

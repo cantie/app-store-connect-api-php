@@ -51,7 +51,6 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion_
 	}
 
 }
-class_alias(AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion 
 	}
 
 }
-class_alias(AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionSubmissionCreateRequest_Data_Relationships_AppStoreVersion');
 
 class AppStoreVersionSubmissionCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -99,7 +97,6 @@ class AppStoreVersionSubmissionCreateRequest_Data_Relationships extends \Cantie\
 	}
 
 }
-class_alias(AppStoreVersionSubmissionCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionSubmissionCreateRequest_Data_Relationships');
 
 class AppStoreVersionSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -133,7 +130,6 @@ class AppStoreVersionSubmissionCreateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppStoreVersionSubmissionCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionSubmissionCreateRequest_Data');
 
 class AppStoreVersionSubmissionCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -157,5 +153,4 @@ class AppStoreVersionSubmissionCreateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreVersionSubmissionCreateRequest::class, 'AppleService_AppStore_AppStoreVersionSubmissionCreateRequest');
 

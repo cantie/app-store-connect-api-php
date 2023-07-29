@@ -52,4 +52,3 @@ class AppPrices extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppPrices::class, 'AppleService_AppStore_ResourceAppPrices');

@@ -41,7 +41,6 @@ class AppAvailability_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailability_Attributes::class, 'AppleService_AppStore_AppAvailability_Attributes');
 
 class AppAvailability_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class AppAvailability_Relationships_App_Links extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppAvailability_Relationships_App_Links::class, 'AppleService_AppStore_AppAvailability_Relationships_App_Links');
 
 class AppAvailability_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class AppAvailability_Relationships_App_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppAvailability_Relationships_App_Data::class, 'AppleService_AppStore_AppAvailability_Relationships_App_Data');
 
 class AppAvailability_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class AppAvailability_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailability_Relationships_App::class, 'AppleService_AppStore_AppAvailability_Relationships_App');
 
 class AppAvailability_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +159,6 @@ class AppAvailability_Relationships_AvailableTerritories_Links extends \Cantie\A
 	}
 
 }
-class_alias(AppAvailability_Relationships_AvailableTerritories_Links::class, 'AppleService_AppStore_AppAvailability_Relationships_AvailableTerritories_Links');
 
 class AppAvailability_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +185,6 @@ class AppAvailability_Relationships_AvailableTerritories_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(AppAvailability_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_AppAvailability_Relationships_AvailableTerritories_Data');
 
 class AppAvailability_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -248,7 +242,6 @@ class AppAvailability_Relationships_AvailableTerritories extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppAvailability_Relationships_AvailableTerritories::class, 'AppleService_AppStore_AppAvailability_Relationships_AvailableTerritories');
 
 class AppAvailability_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -289,7 +282,6 @@ class AppAvailability_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailability_Relationships::class, 'AppleService_AppStore_AppAvailability_Relationships');
 
 class AppAvailability extends \Cantie\AppStoreConnect\Model
 {
@@ -367,5 +359,4 @@ class AppAvailability extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailability::class, 'AppleService_AppStore_AppAvailability');
 

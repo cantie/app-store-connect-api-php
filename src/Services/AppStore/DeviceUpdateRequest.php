@@ -51,7 +51,6 @@ class DeviceUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DeviceUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_DeviceUpdateRequest_Data_Attributes');
 
 class DeviceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class DeviceUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DeviceUpdateRequest_Data::class, 'AppleService_AppStore_DeviceUpdateRequest_Data');
 
 class DeviceUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class DeviceUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DeviceUpdateRequest::class, 'AppleService_AppStore_DeviceUpdateRequest');
 

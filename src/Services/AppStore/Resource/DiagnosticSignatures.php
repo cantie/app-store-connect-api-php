@@ -52,4 +52,3 @@ class DiagnosticSignatures extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(DiagnosticSignatures::class, 'AppleService_AppStore_ResourceDiagnosticSignatures');

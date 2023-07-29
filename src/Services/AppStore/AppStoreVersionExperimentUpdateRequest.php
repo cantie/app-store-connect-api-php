@@ -61,7 +61,6 @@ class AppStoreVersionExperimentUpdateRequest_Data_Attributes extends \Cantie\App
 	}
 
 }
-class_alias(AppStoreVersionExperimentUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionExperimentUpdateRequest_Data_Attributes');
 
 class AppStoreVersionExperimentUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +104,6 @@ class AppStoreVersionExperimentUpdateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppStoreVersionExperimentUpdateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentUpdateRequest_Data');
 
 class AppStoreVersionExperimentUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -129,5 +127,4 @@ class AppStoreVersionExperimentUpdateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreVersionExperimentUpdateRequest::class, 'AppleService_AppStore_AppStoreVersionExperimentUpdateRequest');
 

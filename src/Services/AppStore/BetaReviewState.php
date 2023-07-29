@@ -36,5 +36,4 @@ class BetaReviewState extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(BetaReviewState::class, 'AppleService_AppStore_BetaReviewState');
 

@@ -76,5 +76,4 @@ class AppPriceScheduleResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceScheduleResponse::class, 'AppleService_AppStore_AppPriceScheduleResponse');
 

@@ -71,7 +71,6 @@ class SubscriptionGroupLocalization_Attributes extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(SubscriptionGroupLocalization_Attributes::class, 'AppleService_AppStore_SubscriptionGroupLocalization_Attributes');
 
 class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +97,6 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Links extend
 	}
 
 }
-class_alias(SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Links::class, 'AppleService_AppStore_SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Links');
 
 class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +123,6 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data extends
 	}
 
 }
-class_alias(SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data::class, 'AppleService_AppStore_SubscriptionGroupLocalization_Relationships_SubscriptionGroup_Data');
 
 class SubscriptionGroupLocalization_Relationships_SubscriptionGroup extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class SubscriptionGroupLocalization_Relationships_SubscriptionGroup extends \Can
 	}
 
 }
-class_alias(SubscriptionGroupLocalization_Relationships_SubscriptionGroup::class, 'AppleService_AppStore_SubscriptionGroupLocalization_Relationships_SubscriptionGroup');
 
 class SubscriptionGroupLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +186,6 @@ class SubscriptionGroupLocalization_Relationships extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(SubscriptionGroupLocalization_Relationships::class, 'AppleService_AppStore_SubscriptionGroupLocalization_Relationships');
 
 class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -268,5 +263,4 @@ class SubscriptionGroupLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionGroupLocalization::class, 'AppleService_AppStore_SubscriptionGroupLocalization');
 

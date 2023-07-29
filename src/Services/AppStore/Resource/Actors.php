@@ -63,4 +63,3 @@ class Actors extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Actors::class, 'AppleService_AppStore_ResourceActors');

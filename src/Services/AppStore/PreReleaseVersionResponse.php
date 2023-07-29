@@ -76,5 +76,4 @@ class PreReleaseVersionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PreReleaseVersionResponse::class, 'AppleService_AppStore_PreReleaseVersionResponse');
 

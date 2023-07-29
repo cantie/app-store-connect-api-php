@@ -48,7 +48,6 @@ class AppClipAppStoreReviewDetailUpdateRequest_Data_Attributes extends \Cantie\A
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailUpdateRequest_Data_Attributes');
 
 class AppClipAppStoreReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +91,6 @@ class AppClipAppStoreReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailUpdateRequest_Data::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailUpdateRequest_Data');
 
 class AppClipAppStoreReviewDetailUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -116,5 +114,4 @@ class AppClipAppStoreReviewDetailUpdateRequest extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailUpdateRequest::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailUpdateRequest');
 

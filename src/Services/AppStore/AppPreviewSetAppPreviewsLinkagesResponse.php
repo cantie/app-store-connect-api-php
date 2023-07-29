@@ -51,7 +51,6 @@ class AppPreviewSetAppPreviewsLinkagesResponse_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppPreviewSetAppPreviewsLinkagesResponse_Data::class, 'AppleService_AppStore_AppPreviewSetAppPreviewsLinkagesResponse_Data');
 
 class AppPreviewSetAppPreviewsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class AppPreviewSetAppPreviewsLinkagesResponse extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppPreviewSetAppPreviewsLinkagesResponse::class, 'AppleService_AppStore_AppPreviewSetAppPreviewsLinkagesResponse');
 

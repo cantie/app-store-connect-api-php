@@ -76,5 +76,4 @@ class PromotedPurchaseResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseResponse::class, 'AppleService_AppStore_PromotedPurchaseResponse');
 

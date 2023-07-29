@@ -51,7 +51,6 @@ class AppStoreVersionAppClipDefaultExperienceLinkageRequest_Data extends \Cantie
 	}
 
 }
-class_alias(AppStoreVersionAppClipDefaultExperienceLinkageRequest_Data::class, 'AppleService_AppStore_AppStoreVersionAppClipDefaultExperienceLinkageRequest_Data');
 
 class AppStoreVersionAppClipDefaultExperienceLinkageRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -75,5 +74,4 @@ class AppStoreVersionAppClipDefaultExperienceLinkageRequest extends \Cantie\AppS
 	}
 
 }
-class_alias(AppStoreVersionAppClipDefaultExperienceLinkageRequest::class, 'AppleService_AppStore_AppStoreVersionAppClipDefaultExperienceLinkageRequest');
 

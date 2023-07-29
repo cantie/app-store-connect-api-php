@@ -207,7 +207,6 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	}
 
 }
-class_alias(AgeRatingDeclarationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AgeRatingDeclarationUpdateRequest_Data_Attributes');
 
 class AgeRatingDeclarationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -251,7 +250,6 @@ class AgeRatingDeclarationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AgeRatingDeclarationUpdateRequest_Data::class, 'AppleService_AppStore_AgeRatingDeclarationUpdateRequest_Data');
 
 class AgeRatingDeclarationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -275,5 +273,4 @@ class AgeRatingDeclarationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AgeRatingDeclarationUpdateRequest::class, 'AppleService_AppStore_AgeRatingDeclarationUpdateRequest');
 

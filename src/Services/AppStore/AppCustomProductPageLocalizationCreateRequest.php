@@ -51,7 +51,6 @@ class AppCustomProductPageLocalizationCreateRequest_Data_Attributes extends \Can
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppCustomProductPageLocalizationCreateRequest_Data_Attributes');
 
 class AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustomProductPageVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustom
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustomProductPageVersion_Data::class, 'AppleService_AppStore_AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustomProductPageVersion_Data');
 
 class AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustom
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustomProductPageVersion::class, 'AppleService_AppStore_AppCustomProductPageLocalizationCreateRequest_Data_Relationships_AppCustomProductPageVersion');
 
 class AppCustomProductPageLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppCustomProductPageLocalizationCreateRequest_Data_Relationships extends \
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppCustomProductPageLocalizationCreateRequest_Data_Relationships');
 
 class AppCustomProductPageLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppCustomProductPageLocalizationCreateRequest_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationCreateRequest_Data::class, 'AppleService_AppStore_AppCustomProductPageLocalizationCreateRequest_Data');
 
 class AppCustomProductPageLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppCustomProductPageLocalizationCreateRequest extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationCreateRequest::class, 'AppleService_AppStore_AppCustomProductPageLocalizationCreateRequest');
 

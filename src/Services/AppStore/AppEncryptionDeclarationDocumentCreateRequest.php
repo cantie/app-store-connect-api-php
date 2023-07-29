@@ -51,7 +51,6 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Attributes extends \Can
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentCreateRequest_Data_Attributes');
 
 class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryptionDeclaration_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryp
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryptionDeclaration_Data::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryptionDeclaration_Data');
 
 class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryp
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryptionDeclaration::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships_AppEncryptionDeclaration');
 
 class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships extends \
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentCreateRequest_Data_Relationships');
 
 class AppEncryptionDeclarationDocumentCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class AppEncryptionDeclarationDocumentCreateRequest_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentCreateRequest_Data::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentCreateRequest_Data');
 
 class AppEncryptionDeclarationDocumentCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class AppEncryptionDeclarationDocumentCreateRequest extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentCreateRequest::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentCreateRequest');
 

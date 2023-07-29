@@ -61,7 +61,6 @@ class diagnosticLogs_ProductData_DiagnosticInsights extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(diagnosticLogs_ProductData_DiagnosticInsights::class, 'AppleService_AppStore_diagnosticLogs_ProductData_DiagnosticInsights');
 
 class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree_CallStacks extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree_CallStacks extends
 	}
 
 }
-class_alias(diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree_CallStacks::class, 'AppleService_AppStore_diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree_CallStacks');
 
 class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +117,6 @@ class diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree extends \Cantie\Ap
 	}
 
 }
-class_alias(diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree::class, 'AppleService_AppStore_diagnosticLogs_ProductData_DiagnosticLogs_CallStackTree');
 
 class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cantie\AppStoreConnect\Model
 {
@@ -216,7 +213,6 @@ class diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData extends \Cant
 	}
 
 }
-class_alias(diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData::class, 'AppleService_AppStore_diagnosticLogs_ProductData_DiagnosticLogs_DiagnosticMetaData');
 
 class diagnosticLogs_ProductData_DiagnosticLogs extends \Cantie\AppStoreConnect\Model
 {
@@ -257,7 +253,6 @@ class diagnosticLogs_ProductData_DiagnosticLogs extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(diagnosticLogs_ProductData_DiagnosticLogs::class, 'AppleService_AppStore_diagnosticLogs_ProductData_DiagnosticLogs');
 
 class diagnosticLogs_ProductData extends \Cantie\AppStoreConnect\Model
 {
@@ -308,7 +303,6 @@ class diagnosticLogs_ProductData extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(diagnosticLogs_ProductData::class, 'AppleService_AppStore_diagnosticLogs_ProductData');
 
 class diagnosticLogs extends \Cantie\AppStoreConnect\Model
 {
@@ -342,5 +336,4 @@ class diagnosticLogs extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(diagnosticLogs::class, 'AppleService_AppStore_diagnosticLogs');
 

@@ -39,5 +39,4 @@ class MetricCategory extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(MetricCategory::class, 'AppleService_AppStore_MetricCategory');
 

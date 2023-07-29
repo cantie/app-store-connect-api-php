@@ -82,5 +82,4 @@ class ScmPullRequestResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmPullRequestResponse::class, 'AppleService_AppStore_ScmPullRequestResponse');
 

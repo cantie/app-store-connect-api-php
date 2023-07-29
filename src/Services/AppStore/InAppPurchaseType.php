@@ -35,5 +35,4 @@ class InAppPurchaseType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(InAppPurchaseType::class, 'AppleService_AppStore_InAppPurchaseType');
 

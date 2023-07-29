@@ -52,4 +52,3 @@ class AgeRatingDeclarations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AgeRatingDeclarations::class, 'AppleService_AppStore_ResourceAgeRatingDeclarations');

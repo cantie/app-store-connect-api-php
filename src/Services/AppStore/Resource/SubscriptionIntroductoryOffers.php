@@ -71,4 +71,3 @@ class SubscriptionIntroductoryOffers extends \Cantie\AppStoreConnect\Services\Re
     }
 }
 
-class_alias(SubscriptionIntroductoryOffers::class, 'AppleService_AppStore_ResourceSubscriptionIntroductoryOffers');

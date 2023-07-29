@@ -176,7 +176,6 @@ class CiWorkflowUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data_Attributes');
 
 class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -203,7 +202,6 @@ class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion_Data extends \Cant
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion_Data::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion_Data');
 
 class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +225,6 @@ class CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion extends \Cantie\Ap
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data_Relationships_XcodeVersion');
 
 class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -254,7 +251,6 @@ class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion_Data extends \Cant
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion_Data::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion_Data');
 
 class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -278,7 +274,6 @@ class CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion extends \Cantie\Ap
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data_Relationships_MacOsVersion');
 
 class CiWorkflowUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -319,7 +314,6 @@ class CiWorkflowUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data_Relationships');
 
 class CiWorkflowUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -380,7 +374,6 @@ class CiWorkflowUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest_Data::class, 'AppleService_AppStore_CiWorkflowUpdateRequest_Data');
 
 class CiWorkflowUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -404,5 +397,4 @@ class CiWorkflowUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiWorkflowUpdateRequest::class, 'AppleService_AppStore_CiWorkflowUpdateRequest');
 

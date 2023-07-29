@@ -65,5 +65,4 @@ class AppStoreVersionReleaseRequestResponse extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppStoreVersionReleaseRequestResponse::class, 'AppleService_AppStore_AppStoreVersionReleaseRequestResponse');
 

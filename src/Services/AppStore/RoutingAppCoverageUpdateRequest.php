@@ -51,7 +51,6 @@ class RoutingAppCoverageUpdateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(RoutingAppCoverageUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_RoutingAppCoverageUpdateRequest_Data_Attributes');
 
 class RoutingAppCoverageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class RoutingAppCoverageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverageUpdateRequest_Data::class, 'AppleService_AppStore_RoutingAppCoverageUpdateRequest_Data');
 
 class RoutingAppCoverageUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class RoutingAppCoverageUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverageUpdateRequest::class, 'AppleService_AppStore_RoutingAppCoverageUpdateRequest');
 

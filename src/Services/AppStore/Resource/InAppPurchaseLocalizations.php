@@ -82,4 +82,3 @@ class InAppPurchaseLocalizations extends \Cantie\AppStoreConnect\Services\Resour
     }
 }
 
-class_alias(InAppPurchaseLocalizations::class, 'AppleService_AppStore_ResourceInAppPurchaseLocalizations');

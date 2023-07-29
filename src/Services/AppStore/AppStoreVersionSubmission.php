@@ -51,7 +51,6 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion_Links extends \Can
 	}
 
 }
-class_alias(AppStoreVersionSubmission_Relationships_AppStoreVersion_Links::class, 'AppleService_AppStore_AppStoreVersionSubmission_Relationships_AppStoreVersion_Links');
 
 class AppStoreVersionSubmission_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion_Data extends \Cant
 	}
 
 }
-class_alias(AppStoreVersionSubmission_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionSubmission_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionSubmission_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +117,6 @@ class AppStoreVersionSubmission_Relationships_AppStoreVersion extends \Cantie\Ap
 	}
 
 }
-class_alias(AppStoreVersionSubmission_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionSubmission_Relationships_AppStoreVersion');
 
 class AppStoreVersionSubmission_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -143,7 +140,6 @@ class AppStoreVersionSubmission_Relationships extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppStoreVersionSubmission_Relationships::class, 'AppleService_AppStore_AppStoreVersionSubmission_Relationships');
 
 class AppStoreVersionSubmission extends \Cantie\AppStoreConnect\Model
 {
@@ -204,5 +200,4 @@ class AppStoreVersionSubmission extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionSubmission::class, 'AppleService_AppStore_AppStoreVersionSubmission');
 

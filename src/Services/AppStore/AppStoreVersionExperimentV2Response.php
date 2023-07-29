@@ -76,5 +76,4 @@ class AppStoreVersionExperimentV2Response extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2Response::class, 'AppleService_AppStore_AppStoreVersionExperimentV2Response');
 

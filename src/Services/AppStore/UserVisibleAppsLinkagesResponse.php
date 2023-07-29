@@ -51,7 +51,6 @@ class UserVisibleAppsLinkagesResponse_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserVisibleAppsLinkagesResponse_Data::class, 'AppleService_AppStore_UserVisibleAppsLinkagesResponse_Data');
 
 class UserVisibleAppsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class UserVisibleAppsLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserVisibleAppsLinkagesResponse::class, 'AppleService_AppStore_UserVisibleAppsLinkagesResponse');
 

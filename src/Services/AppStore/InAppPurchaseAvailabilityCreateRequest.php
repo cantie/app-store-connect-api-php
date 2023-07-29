@@ -41,7 +41,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Attributes extends \Cantie\App
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data_Attributes::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data_Attributes');
 
 class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase_Da
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase_Data::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase_Data');
 
 class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase ex
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data_Relationships_InAppPurchase');
 
 class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +116,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerrito
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories_Data');
 
 class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -143,7 +139,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerrito
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data_Relationships_AvailableTerritories');
 
 class InAppPurchaseAvailabilityCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -184,7 +179,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data_Relationships extends \Cantie\
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data_Relationships::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data_Relationships');
 
 class InAppPurchaseAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -235,7 +229,6 @@ class InAppPurchaseAvailabilityCreateRequest_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest_Data::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest_Data');
 
 class InAppPurchaseAvailabilityCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -259,5 +252,4 @@ class InAppPurchaseAvailabilityCreateRequest extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(InAppPurchaseAvailabilityCreateRequest::class, 'AppleService_AppStore_InAppPurchaseAvailabilityCreateRequest');
 

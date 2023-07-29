@@ -93,5 +93,4 @@ class CiProductsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProductsResponse::class, 'AppleService_AppStore_CiProductsResponse');
 

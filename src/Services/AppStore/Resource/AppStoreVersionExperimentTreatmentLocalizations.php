@@ -95,4 +95,3 @@ class AppStoreVersionExperimentTreatmentLocalizations extends \Cantie\AppStoreCo
     }
 }
 
-class_alias(AppStoreVersionExperimentTreatmentLocalizations::class, 'AppleService_AppStore_ResourceAppStoreVersionExperimentTreatmentLocalizations');

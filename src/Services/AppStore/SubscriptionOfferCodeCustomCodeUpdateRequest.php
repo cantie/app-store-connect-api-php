@@ -41,7 +41,6 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest_Data_Attributes extends \Cant
 	}
 
 }
-class_alias(SubscriptionOfferCodeCustomCodeUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionOfferCodeCustomCodeUpdateRequest_Data_Attributes');
 
 class SubscriptionOfferCodeCustomCodeUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest_Data extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionOfferCodeCustomCodeUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionOfferCodeCustomCodeUpdateRequest_Data');
 
 class SubscriptionOfferCodeCustomCodeUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class SubscriptionOfferCodeCustomCodeUpdateRequest extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(SubscriptionOfferCodeCustomCodeUpdateRequest::class, 'AppleService_AppStore_SubscriptionOfferCodeCustomCodeUpdateRequest');
 

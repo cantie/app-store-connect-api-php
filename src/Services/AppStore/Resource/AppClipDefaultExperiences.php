@@ -139,4 +139,3 @@ class AppClipDefaultExperiences extends \Cantie\AppStoreConnect\Services\Resourc
     }
 }
 
-class_alias(AppClipDefaultExperiences::class, 'AppleService_AppStore_ResourceAppClipDefaultExperiences');

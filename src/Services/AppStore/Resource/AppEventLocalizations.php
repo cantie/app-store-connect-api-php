@@ -106,4 +106,3 @@ class AppEventLocalizations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppEventLocalizations::class, 'AppleService_AppStore_ResourceAppEventLocalizations');

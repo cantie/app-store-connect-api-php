@@ -67,7 +67,6 @@ class UserUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_UserUpdateRequest_Data_Attributes');
 
 class UserUpdateRequest_Data_Relationships_VisibleApps_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -94,7 +93,6 @@ class UserUpdateRequest_Data_Relationships_VisibleApps_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(UserUpdateRequest_Data_Relationships_VisibleApps_Data::class, 'AppleService_AppStore_UserUpdateRequest_Data_Relationships_VisibleApps_Data');
 
 class UserUpdateRequest_Data_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 {
@@ -118,7 +116,6 @@ class UserUpdateRequest_Data_Relationships_VisibleApps extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(UserUpdateRequest_Data_Relationships_VisibleApps::class, 'AppleService_AppStore_UserUpdateRequest_Data_Relationships_VisibleApps');
 
 class UserUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -142,7 +139,6 @@ class UserUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserUpdateRequest_Data_Relationships::class, 'AppleService_AppStore_UserUpdateRequest_Data_Relationships');
 
 class UserUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -203,7 +199,6 @@ class UserUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserUpdateRequest_Data::class, 'AppleService_AppStore_UserUpdateRequest_Data');
 
 class UserUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -227,5 +222,4 @@ class UserUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserUpdateRequest::class, 'AppleService_AppStore_UserUpdateRequest');
 

@@ -82,5 +82,4 @@ class SandboxTestersV2Response extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SandboxTestersV2Response::class, 'AppleService_AppStore_SandboxTestersV2Response');
 

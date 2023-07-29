@@ -81,7 +81,6 @@ class AppInfoLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppInfoLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppInfoLocalizationUpdateRequest_Data_Attributes');
 
 class AppInfoLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +124,6 @@ class AppInfoLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppInfoLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_AppInfoLocalizationUpdateRequest_Data');
 
 class AppInfoLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -149,5 +147,4 @@ class AppInfoLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppInfoLocalizationUpdateRequest::class, 'AppleService_AppStore_AppInfoLocalizationUpdateRequest');
 

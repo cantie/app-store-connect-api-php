@@ -78,7 +78,6 @@ class AppEventCreateRequest_Data_Attributes_TerritorySchedules extends \Cantie\A
 	}
 
 }
-class_alias(AppEventCreateRequest_Data_Attributes_TerritorySchedules::class, 'AppleService_AppStore_AppEventCreateRequest_Data_Attributes_TerritorySchedules');
 
 class AppEventCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -172,7 +171,6 @@ class AppEventCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppEventCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventCreateRequest_Data_Attributes');
 
 class AppEventCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -199,7 +197,6 @@ class AppEventCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppEventCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_AppEventCreateRequest_Data_Relationships_App_Data');
 
 class AppEventCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -223,7 +220,6 @@ class AppEventCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppEventCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_AppEventCreateRequest_Data_Relationships_App');
 
 class AppEventCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -247,7 +243,6 @@ class AppEventCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppEventCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppEventCreateRequest_Data_Relationships');
 
 class AppEventCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -298,7 +293,6 @@ class AppEventCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventCreateRequest_Data::class, 'AppleService_AppStore_AppEventCreateRequest_Data');
 
 class AppEventCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -322,5 +316,4 @@ class AppEventCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventCreateRequest::class, 'AppleService_AppStore_AppEventCreateRequest');
 

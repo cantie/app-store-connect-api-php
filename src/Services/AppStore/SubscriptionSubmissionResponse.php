@@ -82,5 +82,4 @@ class SubscriptionSubmissionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionSubmissionResponse::class, 'AppleService_AppStore_SubscriptionSubmissionResponse');
 

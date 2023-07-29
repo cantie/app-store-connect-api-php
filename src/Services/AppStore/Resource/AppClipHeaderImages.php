@@ -82,4 +82,3 @@ class AppClipHeaderImages extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppClipHeaderImages::class, 'AppleService_AppStore_ResourceAppClipHeaderImages');

@@ -51,7 +51,6 @@ class AppStoreVersionBuildLinkageResponse_Data extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppStoreVersionBuildLinkageResponse_Data::class, 'AppleService_AppStore_AppStoreVersionBuildLinkageResponse_Data');
 
 class AppStoreVersionBuildLinkageResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -92,5 +91,4 @@ class AppStoreVersionBuildLinkageResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionBuildLinkageResponse::class, 'AppleService_AppStore_AppStoreVersionBuildLinkageResponse');
 

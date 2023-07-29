@@ -183,7 +183,6 @@ class AppEncryptionDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Attributes::class, 'AppleService_AppStore_AppEncryptionDeclaration_Attributes');
 
 class AppEncryptionDeclaration_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -210,7 +209,6 @@ class AppEncryptionDeclaration_Relationships_App_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_App_Links::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_App_Links');
 
 class AppEncryptionDeclaration_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -237,7 +235,6 @@ class AppEncryptionDeclaration_Relationships_App_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_App_Data::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_App_Data');
 
 class AppEncryptionDeclaration_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -278,7 +275,6 @@ class AppEncryptionDeclaration_Relationships_App extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_App::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_App');
 
 class AppEncryptionDeclaration_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -305,7 +301,6 @@ class AppEncryptionDeclaration_Relationships_Builds_Links extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_Builds_Links::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_Builds_Links');
 
 class AppEncryptionDeclaration_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -332,7 +327,6 @@ class AppEncryptionDeclaration_Relationships_Builds_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_Builds_Data::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_Builds_Data');
 
 class AppEncryptionDeclaration_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 {
@@ -390,7 +384,6 @@ class AppEncryptionDeclaration_Relationships_Builds extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_Builds::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_Builds');
 
 class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -417,7 +410,6 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Li
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Links::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Links');
 
 class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -444,7 +436,6 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Da
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Data::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument_Data');
 
 class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 {
@@ -485,7 +476,6 @@ class AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument ex
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships_AppEncryptionDeclarationDocument');
 
 class AppEncryptionDeclaration_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -543,7 +533,6 @@ class AppEncryptionDeclaration_Relationships extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppEncryptionDeclaration_Relationships::class, 'AppleService_AppStore_AppEncryptionDeclaration_Relationships');
 
 class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 {
@@ -621,5 +610,4 @@ class AppEncryptionDeclaration extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEncryptionDeclaration::class, 'AppleService_AppStore_AppEncryptionDeclaration');
 

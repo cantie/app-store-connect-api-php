@@ -83,4 +83,3 @@ class SubscriptionOfferCodeOneTimeUseCodes extends \Cantie\AppStoreConnect\Servi
     }
 }
 
-class_alias(SubscriptionOfferCodeOneTimeUseCodes::class, 'AppleService_AppStore_ResourceSubscriptionOfferCodeOneTimeUseCodes');

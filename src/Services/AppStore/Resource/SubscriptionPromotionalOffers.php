@@ -94,4 +94,3 @@ class SubscriptionPromotionalOffers extends \Cantie\AppStoreConnect\Services\Res
     }
 }
 
-class_alias(SubscriptionPromotionalOffers::class, 'AppleService_AppStore_ResourceSubscriptionPromotionalOffers');

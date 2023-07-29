@@ -82,5 +82,4 @@ class TerritoriesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(TerritoriesResponse::class, 'AppleService_AppStore_TerritoriesResponse');
 

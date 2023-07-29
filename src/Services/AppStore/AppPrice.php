@@ -51,7 +51,6 @@ class AppPrice_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPrice_Relationships_App_Links::class, 'AppleService_AppStore_AppPrice_Relationships_App_Links');
 
 class AppPrice_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppPrice_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPrice_Relationships_App_Data::class, 'AppleService_AppStore_AppPrice_Relationships_App_Data');
 
 class AppPrice_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +117,6 @@ class AppPrice_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPrice_Relationships_App::class, 'AppleService_AppStore_AppPrice_Relationships_App');
 
 class AppPrice_Relationships_PriceTier_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -146,7 +143,6 @@ class AppPrice_Relationships_PriceTier_Links extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppPrice_Relationships_PriceTier_Links::class, 'AppleService_AppStore_AppPrice_Relationships_PriceTier_Links');
 
 class AppPrice_Relationships_PriceTier_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -173,7 +169,6 @@ class AppPrice_Relationships_PriceTier_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppPrice_Relationships_PriceTier_Data::class, 'AppleService_AppStore_AppPrice_Relationships_PriceTier_Data');
 
 class AppPrice_Relationships_PriceTier extends \Cantie\AppStoreConnect\Model
 {
@@ -214,7 +209,6 @@ class AppPrice_Relationships_PriceTier extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPrice_Relationships_PriceTier::class, 'AppleService_AppStore_AppPrice_Relationships_PriceTier');
 
 class AppPrice_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -255,7 +249,6 @@ class AppPrice_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPrice_Relationships::class, 'AppleService_AppStore_AppPrice_Relationships');
 
 class AppPrice extends \Cantie\AppStoreConnect\Model
 {
@@ -316,5 +309,4 @@ class AppPrice extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPrice::class, 'AppleService_AppStore_AppPrice');
 

@@ -52,4 +52,3 @@ class CiIssues extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiIssues::class, 'AppleService_AppStore_ResourceCiIssues');

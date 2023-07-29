@@ -67,7 +67,6 @@ class AppEventScreenshotCreateRequest_Data_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppEventScreenshotCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventScreenshotCreateRequest_Data_Attributes');
 
 class AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -94,7 +93,6 @@ class AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization_Da
 	}
 
 }
-class_alias(AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization_Data::class, 'AppleService_AppStore_AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization_Data');
 
 class AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -118,7 +116,6 @@ class AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization ex
 	}
 
 }
-class_alias(AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization::class, 'AppleService_AppStore_AppEventScreenshotCreateRequest_Data_Relationships_AppEventLocalization');
 
 class AppEventScreenshotCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -142,7 +139,6 @@ class AppEventScreenshotCreateRequest_Data_Relationships extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppEventScreenshotCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppEventScreenshotCreateRequest_Data_Relationships');
 
 class AppEventScreenshotCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -193,7 +189,6 @@ class AppEventScreenshotCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventScreenshotCreateRequest_Data::class, 'AppleService_AppStore_AppEventScreenshotCreateRequest_Data');
 
 class AppEventScreenshotCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -217,5 +212,4 @@ class AppEventScreenshotCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventScreenshotCreateRequest::class, 'AppleService_AppStore_AppEventScreenshotCreateRequest');
 

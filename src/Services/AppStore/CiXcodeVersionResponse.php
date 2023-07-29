@@ -82,5 +82,4 @@ class CiXcodeVersionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiXcodeVersionResponse::class, 'AppleService_AppStore_CiXcodeVersionResponse');
 

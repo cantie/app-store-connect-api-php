@@ -36,5 +36,4 @@ class CiActionType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CiActionType::class, 'AppleService_AppStore_CiActionType');
 

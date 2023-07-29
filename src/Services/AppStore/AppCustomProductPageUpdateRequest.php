@@ -51,7 +51,6 @@ class AppCustomProductPageUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppCustomProductPageUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppCustomProductPageUpdateRequest_Data_Attributes');
 
 class AppCustomProductPageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppCustomProductPageUpdateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppCustomProductPageUpdateRequest_Data::class, 'AppleService_AppStore_AppCustomProductPageUpdateRequest_Data');
 
 class AppCustomProductPageUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppCustomProductPageUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCustomProductPageUpdateRequest::class, 'AppleService_AppStore_AppCustomProductPageUpdateRequest');
 

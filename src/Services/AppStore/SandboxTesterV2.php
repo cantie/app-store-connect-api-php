@@ -107,7 +107,6 @@ class SandboxTesterV2_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SandboxTesterV2_Attributes::class, 'AppleService_AppStore_SandboxTesterV2_Attributes');
 
 class SandboxTesterV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -168,5 +167,4 @@ class SandboxTesterV2 extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SandboxTesterV2::class, 'AppleService_AppStore_SandboxTesterV2');
 

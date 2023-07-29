@@ -82,5 +82,4 @@ class ActorsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ActorsResponse::class, 'AppleService_AppStore_ActorsResponse');
 

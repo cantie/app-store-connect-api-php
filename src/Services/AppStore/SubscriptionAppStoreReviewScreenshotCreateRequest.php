@@ -51,7 +51,6 @@ class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Attributes extends 
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Attributes');
 
 class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subsc
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subscription_Data');
 
 class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subsc
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships_Subscription');
 
 class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships exten
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotCreateRequest_Data_Relationships');
 
 class SubscriptionAppStoreReviewScreenshotCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class SubscriptionAppStoreReviewScreenshotCreateRequest_Data extends \Cantie\App
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotCreateRequest_Data::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotCreateRequest_Data');
 
 class SubscriptionAppStoreReviewScreenshotCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class SubscriptionAppStoreReviewScreenshotCreateRequest extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshotCreateRequest::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshotCreateRequest');
 

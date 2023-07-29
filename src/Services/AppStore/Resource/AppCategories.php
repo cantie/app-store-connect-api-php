@@ -85,4 +85,3 @@ class AppCategories extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppCategories::class, 'AppleService_AppStore_ResourceAppCategories');

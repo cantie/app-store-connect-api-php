@@ -77,7 +77,6 @@ class BundleId_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Attributes::class, 'AppleService_AppStore_BundleId_Attributes');
 
 class BundleId_Relationships_Profiles_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -104,7 +103,6 @@ class BundleId_Relationships_Profiles_Links extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BundleId_Relationships_Profiles_Links::class, 'AppleService_AppStore_BundleId_Relationships_Profiles_Links');
 
 class BundleId_Relationships_Profiles_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -131,7 +129,6 @@ class BundleId_Relationships_Profiles_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Relationships_Profiles_Data::class, 'AppleService_AppStore_BundleId_Relationships_Profiles_Data');
 
 class BundleId_Relationships_Profiles extends \Cantie\AppStoreConnect\Model
 {
@@ -189,7 +186,6 @@ class BundleId_Relationships_Profiles extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Relationships_Profiles::class, 'AppleService_AppStore_BundleId_Relationships_Profiles');
 
 class BundleId_Relationships_BundleIdCapabilities_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -216,7 +212,6 @@ class BundleId_Relationships_BundleIdCapabilities_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(BundleId_Relationships_BundleIdCapabilities_Links::class, 'AppleService_AppStore_BundleId_Relationships_BundleIdCapabilities_Links');
 
 class BundleId_Relationships_BundleIdCapabilities_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -243,7 +238,6 @@ class BundleId_Relationships_BundleIdCapabilities_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(BundleId_Relationships_BundleIdCapabilities_Data::class, 'AppleService_AppStore_BundleId_Relationships_BundleIdCapabilities_Data');
 
 class BundleId_Relationships_BundleIdCapabilities extends \Cantie\AppStoreConnect\Model
 {
@@ -301,7 +295,6 @@ class BundleId_Relationships_BundleIdCapabilities extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(BundleId_Relationships_BundleIdCapabilities::class, 'AppleService_AppStore_BundleId_Relationships_BundleIdCapabilities');
 
 class BundleId_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -328,7 +321,6 @@ class BundleId_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Relationships_App_Links::class, 'AppleService_AppStore_BundleId_Relationships_App_Links');
 
 class BundleId_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -355,7 +347,6 @@ class BundleId_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Relationships_App_Data::class, 'AppleService_AppStore_BundleId_Relationships_App_Data');
 
 class BundleId_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -396,7 +387,6 @@ class BundleId_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Relationships_App::class, 'AppleService_AppStore_BundleId_Relationships_App');
 
 class BundleId_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -454,7 +444,6 @@ class BundleId_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId_Relationships::class, 'AppleService_AppStore_BundleId_Relationships');
 
 class BundleId extends \Cantie\AppStoreConnect\Model
 {
@@ -532,5 +521,4 @@ class BundleId extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleId::class, 'AppleService_AppStore_BundleId');
 

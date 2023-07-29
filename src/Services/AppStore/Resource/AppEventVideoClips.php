@@ -82,4 +82,3 @@ class AppEventVideoClips extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppEventVideoClips::class, 'AppleService_AppStore_ResourceAppEventVideoClips');

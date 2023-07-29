@@ -281,4 +281,3 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Builds::class, 'AppleService_AppStore_ResourceBuilds');

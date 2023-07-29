@@ -93,5 +93,4 @@ class AppPricePointsV3Response extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPricePointsV3Response::class, 'AppleService_AppStore_AppPricePointsV3Response');
 

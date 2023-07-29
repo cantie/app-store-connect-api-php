@@ -82,5 +82,4 @@ class CiArtifactsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiArtifactsResponse::class, 'AppleService_AppStore_CiArtifactsResponse');
 

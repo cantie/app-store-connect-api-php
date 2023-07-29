@@ -51,7 +51,6 @@ class AppScreenshotUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppScreenshotUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppScreenshotUpdateRequest_Data_Attributes');
 
 class AppScreenshotUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppScreenshotUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshotUpdateRequest_Data::class, 'AppleService_AppStore_AppScreenshotUpdateRequest_Data');
 
 class AppScreenshotUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppScreenshotUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppScreenshotUpdateRequest::class, 'AppleService_AppStore_AppScreenshotUpdateRequest');
 

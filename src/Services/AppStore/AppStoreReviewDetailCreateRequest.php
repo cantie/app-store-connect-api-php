@@ -111,7 +111,6 @@ class AppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppStoreReviewDetailCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreReviewDetailCreateRequest_Data_Attributes');
 
 class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -138,7 +137,6 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion_Data 
 	}
 
 }
-class_alias(AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -162,7 +160,6 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion exten
 	}
 
 }
-class_alias(AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreReviewDetailCreateRequest_Data_Relationships_AppStoreVersion');
 
 class AppStoreReviewDetailCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +183,6 @@ class AppStoreReviewDetailCreateRequest_Data_Relationships extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppStoreReviewDetailCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreReviewDetailCreateRequest_Data_Relationships');
 
 class AppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -237,7 +233,6 @@ class AppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreReviewDetailCreateRequest_Data::class, 'AppleService_AppStore_AppStoreReviewDetailCreateRequest_Data');
 
 class AppStoreReviewDetailCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -261,5 +256,4 @@ class AppStoreReviewDetailCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreReviewDetailCreateRequest::class, 'AppleService_AppStore_AppStoreReviewDetailCreateRequest');
 

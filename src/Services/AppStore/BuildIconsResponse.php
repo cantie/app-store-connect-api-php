@@ -82,5 +82,4 @@ class BuildIconsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildIconsResponse::class, 'AppleService_AppStore_BuildIconsResponse');
 

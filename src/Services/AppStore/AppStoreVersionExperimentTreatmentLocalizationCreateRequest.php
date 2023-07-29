@@ -41,7 +41,6 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Attribute
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Attributes');
 
 class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment_Data');
 
 class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatment');
 
 class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -116,7 +113,6 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relations
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data_Relationships');
 
 class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data extends \
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationCreateRequest_Data');
 
 class AppStoreVersionExperimentTreatmentLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -191,5 +186,4 @@ class AppStoreVersionExperimentTreatmentLocalizationCreateRequest extends \Canti
 	}
 
 }
-class_alias(AppStoreVersionExperimentTreatmentLocalizationCreateRequest::class, 'AppleService_AppStore_AppStoreVersionExperimentTreatmentLocalizationCreateRequest');
 

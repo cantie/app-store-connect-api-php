@@ -207,7 +207,6 @@ class AgeRatingDeclaration_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AgeRatingDeclaration_Attributes::class, 'AppleService_AppStore_AgeRatingDeclaration_Attributes');
 
 class AgeRatingDeclaration extends \Cantie\AppStoreConnect\Model
 {
@@ -268,5 +267,4 @@ class AgeRatingDeclaration extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AgeRatingDeclaration::class, 'AppleService_AppStore_AgeRatingDeclaration');
 

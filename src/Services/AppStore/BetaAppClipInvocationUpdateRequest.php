@@ -41,7 +41,6 @@ class BetaAppClipInvocationUpdateRequest_Data_Attributes extends \Cantie\AppStor
 	}
 
 }
-class_alias(BetaAppClipInvocationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaAppClipInvocationUpdateRequest_Data_Attributes');
 
 class BetaAppClipInvocationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class BetaAppClipInvocationUpdateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(BetaAppClipInvocationUpdateRequest_Data::class, 'AppleService_AppStore_BetaAppClipInvocationUpdateRequest_Data');
 
 class BetaAppClipInvocationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class BetaAppClipInvocationUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppClipInvocationUpdateRequest::class, 'AppleService_AppStore_BetaAppClipInvocationUpdateRequest');
 

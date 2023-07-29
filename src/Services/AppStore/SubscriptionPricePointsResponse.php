@@ -99,5 +99,4 @@ class SubscriptionPricePointsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionPricePointsResponse::class, 'AppleService_AppStore_SubscriptionPricePointsResponse');
 

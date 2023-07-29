@@ -107,7 +107,6 @@ class AppStoreVersionExperimentV2_Attributes extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Attributes::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Attributes');
 
 class AppStoreVersionExperimentV2_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -134,7 +133,6 @@ class AppStoreVersionExperimentV2_Relationships_App_Links extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_App_Links::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_App_Links');
 
 class AppStoreVersionExperimentV2_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -161,7 +159,6 @@ class AppStoreVersionExperimentV2_Relationships_App_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_App_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_App_Data');
 
 class AppStoreVersionExperimentV2_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -202,7 +199,6 @@ class AppStoreVersionExperimentV2_Relationships_App extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_App::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_App');
 
 class AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -229,7 +225,6 @@ class AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Links exten
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Links::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Links');
 
 class AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -256,7 +251,6 @@ class AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Data extend
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_LatestControlVersion_Data');
 
 class AppStoreVersionExperimentV2_Relationships_LatestControlVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -297,7 +291,6 @@ class AppStoreVersionExperimentV2_Relationships_LatestControlVersion extends \Ca
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_LatestControlVersion::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_LatestControlVersion');
 
 class AppStoreVersionExperimentV2_Relationships_ControlVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -324,7 +317,6 @@ class AppStoreVersionExperimentV2_Relationships_ControlVersions_Links extends \C
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_ControlVersions_Links::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_ControlVersions_Links');
 
 class AppStoreVersionExperimentV2_Relationships_ControlVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -351,7 +343,6 @@ class AppStoreVersionExperimentV2_Relationships_ControlVersions_Data extends \Ca
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_ControlVersions_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_ControlVersions_Data');
 
 class AppStoreVersionExperimentV2_Relationships_ControlVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -409,7 +400,6 @@ class AppStoreVersionExperimentV2_Relationships_ControlVersions extends \Cantie\
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_ControlVersions::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_ControlVersions');
 
 class AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -436,7 +426,6 @@ class AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatme
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments_Links::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments_Links');
 
 class AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -463,7 +452,6 @@ class AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatme
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments_Data::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments_Data');
 
 class AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments extends \Cantie\AppStoreConnect\Model
 {
@@ -521,7 +509,6 @@ class AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatme
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships_AppStoreVersionExperimentTreatments');
 
 class AppStoreVersionExperimentV2_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -596,7 +583,6 @@ class AppStoreVersionExperimentV2_Relationships extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2_Relationships::class, 'AppleService_AppStore_AppStoreVersionExperimentV2_Relationships');
 
 class AppStoreVersionExperimentV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -674,5 +660,4 @@ class AppStoreVersionExperimentV2 extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionExperimentV2::class, 'AppleService_AppStore_AppStoreVersionExperimentV2');
 

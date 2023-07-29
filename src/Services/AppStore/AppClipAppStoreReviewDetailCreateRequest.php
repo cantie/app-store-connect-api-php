@@ -48,7 +48,6 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Attributes extends \Cantie\A
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailCreateRequest_Data_Attributes');
 
 class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefaultExperience_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefault
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefaultExperience_Data::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefaultExperience_Data');
 
 class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefaultExperience extends \Cantie\AppStoreConnect\Model
 {
@@ -99,7 +97,6 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefault
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefaultExperience::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailCreateRequest_Data_Relationships_AppClipDefaultExperience');
 
 class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -123,7 +120,6 @@ class AppClipAppStoreReviewDetailCreateRequest_Data_Relationships extends \Canti
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailCreateRequest_Data_Relationships');
 
 class AppClipAppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -174,7 +170,6 @@ class AppClipAppStoreReviewDetailCreateRequest_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailCreateRequest_Data::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailCreateRequest_Data');
 
 class AppClipAppStoreReviewDetailCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -198,5 +193,4 @@ class AppClipAppStoreReviewDetailCreateRequest extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppClipAppStoreReviewDetailCreateRequest::class, 'AppleService_AppStore_AppClipAppStoreReviewDetailCreateRequest');
 

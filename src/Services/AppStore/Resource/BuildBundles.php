@@ -87,4 +87,3 @@ class BuildBundles extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BuildBundles::class, 'AppleService_AppStore_ResourceBuildBundles');

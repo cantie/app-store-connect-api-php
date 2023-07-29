@@ -37,5 +37,4 @@ class CiCompletionStatus extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CiCompletionStatus::class, 'AppleService_AppStore_CiCompletionStatus');
 

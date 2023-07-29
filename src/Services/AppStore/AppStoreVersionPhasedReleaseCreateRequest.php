@@ -47,7 +47,6 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Attributes extends \Cantie\
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseCreateRequest_Data_Attributes');
 
 class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -74,7 +73,6 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersi
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +96,6 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersi
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships_AppStoreVersion');
 
 class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -122,7 +119,6 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships extends \Cant
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseCreateRequest_Data_Relationships');
 
 class AppStoreVersionPhasedReleaseCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -173,7 +169,6 @@ class AppStoreVersionPhasedReleaseCreateRequest_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseCreateRequest_Data::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseCreateRequest_Data');
 
 class AppStoreVersionPhasedReleaseCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -197,5 +192,4 @@ class AppStoreVersionPhasedReleaseCreateRequest extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppStoreVersionPhasedReleaseCreateRequest::class, 'AppleService_AppStore_AppStoreVersionPhasedReleaseCreateRequest');
 

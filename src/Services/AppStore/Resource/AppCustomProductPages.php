@@ -94,4 +94,3 @@ class AppCustomProductPages extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppCustomProductPages::class, 'AppleService_AppStore_ResourceAppCustomProductPages');

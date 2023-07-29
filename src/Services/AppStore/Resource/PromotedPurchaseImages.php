@@ -82,4 +82,3 @@ class PromotedPurchaseImages extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(PromotedPurchaseImages::class, 'AppleService_AppStore_ResourcePromotedPurchaseImages');

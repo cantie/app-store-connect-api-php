@@ -51,5 +51,4 @@ class AppPriceV2InlineCreate extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceV2InlineCreate::class, 'AppleService_AppStore_AppPriceV2InlineCreate');
 

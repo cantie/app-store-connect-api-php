@@ -41,7 +41,6 @@ class AppCustomProductPageLocalizationUpdateRequest_Data_Attributes extends \Can
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppCustomProductPageLocalizationUpdateRequest_Data_Attributes');
 
 class AppCustomProductPageLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class AppCustomProductPageLocalizationUpdateRequest_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_AppCustomProductPageLocalizationUpdateRequest_Data');
 
 class AppCustomProductPageLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class AppCustomProductPageLocalizationUpdateRequest extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppCustomProductPageLocalizationUpdateRequest::class, 'AppleService_AppStore_AppCustomProductPageLocalizationUpdateRequest');
 

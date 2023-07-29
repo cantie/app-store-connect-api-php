@@ -82,4 +82,3 @@ class AppStoreReviewAttachments extends \Cantie\AppStoreConnect\Services\Resourc
     }
 }
 
-class_alias(AppStoreReviewAttachments::class, 'AppleService_AppStore_ResourceAppStoreReviewAttachments');

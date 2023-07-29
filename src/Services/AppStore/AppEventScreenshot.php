@@ -128,7 +128,6 @@ class AppEventScreenshot_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventScreenshot_Attributes::class, 'AppleService_AppStore_AppEventScreenshot_Attributes');
 
 class AppEventScreenshot_Relationships_AppEventLocalization_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -155,7 +154,6 @@ class AppEventScreenshot_Relationships_AppEventLocalization_Links extends \Canti
 	}
 
 }
-class_alias(AppEventScreenshot_Relationships_AppEventLocalization_Links::class, 'AppleService_AppStore_AppEventScreenshot_Relationships_AppEventLocalization_Links');
 
 class AppEventScreenshot_Relationships_AppEventLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -182,7 +180,6 @@ class AppEventScreenshot_Relationships_AppEventLocalization_Data extends \Cantie
 	}
 
 }
-class_alias(AppEventScreenshot_Relationships_AppEventLocalization_Data::class, 'AppleService_AppStore_AppEventScreenshot_Relationships_AppEventLocalization_Data');
 
 class AppEventScreenshot_Relationships_AppEventLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -223,7 +220,6 @@ class AppEventScreenshot_Relationships_AppEventLocalization extends \Cantie\AppS
 	}
 
 }
-class_alias(AppEventScreenshot_Relationships_AppEventLocalization::class, 'AppleService_AppStore_AppEventScreenshot_Relationships_AppEventLocalization');
 
 class AppEventScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -247,7 +243,6 @@ class AppEventScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventScreenshot_Relationships::class, 'AppleService_AppStore_AppEventScreenshot_Relationships');
 
 class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 {
@@ -325,5 +320,4 @@ class AppEventScreenshot extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventScreenshot::class, 'AppleService_AppStore_AppEventScreenshot');
 

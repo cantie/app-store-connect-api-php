@@ -60,5 +60,4 @@ class CapabilityType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CapabilityType::class, 'AppleService_AppStore_CapabilityType');
 

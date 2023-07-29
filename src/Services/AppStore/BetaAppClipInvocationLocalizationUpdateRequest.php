@@ -41,7 +41,6 @@ class BetaAppClipInvocationLocalizationUpdateRequest_Data_Attributes extends \Ca
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationUpdateRequest_Data_Attributes');
 
 class BetaAppClipInvocationLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class BetaAppClipInvocationLocalizationUpdateRequest_Data extends \Cantie\AppSto
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationUpdateRequest_Data');
 
 class BetaAppClipInvocationLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class BetaAppClipInvocationLocalizationUpdateRequest extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalizationUpdateRequest::class, 'AppleService_AppStore_BetaAppClipInvocationLocalizationUpdateRequest');
 

@@ -41,7 +41,6 @@ class EndUserLicenseAgreement_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Attributes::class, 'AppleService_AppStore_EndUserLicenseAgreement_Attributes');
 
 class EndUserLicenseAgreement_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class EndUserLicenseAgreement_Relationships_App_Links extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships_App_Links::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships_App_Links');
 
 class EndUserLicenseAgreement_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class EndUserLicenseAgreement_Relationships_App_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships_App_Data::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships_App_Data');
 
 class EndUserLicenseAgreement_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class EndUserLicenseAgreement_Relationships_App extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships_App::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships_App');
 
 class EndUserLicenseAgreement_Relationships_Territories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +159,6 @@ class EndUserLicenseAgreement_Relationships_Territories_Links extends \Cantie\Ap
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships_Territories_Links::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships_Territories_Links');
 
 class EndUserLicenseAgreement_Relationships_Territories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +185,6 @@ class EndUserLicenseAgreement_Relationships_Territories_Data extends \Cantie\App
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships_Territories_Data::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships_Territories_Data');
 
 class EndUserLicenseAgreement_Relationships_Territories extends \Cantie\AppStoreConnect\Model
 {
@@ -248,7 +242,6 @@ class EndUserLicenseAgreement_Relationships_Territories extends \Cantie\AppStore
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships_Territories::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships_Territories');
 
 class EndUserLicenseAgreement_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -289,7 +282,6 @@ class EndUserLicenseAgreement_Relationships extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(EndUserLicenseAgreement_Relationships::class, 'AppleService_AppStore_EndUserLicenseAgreement_Relationships');
 
 class EndUserLicenseAgreement extends \Cantie\AppStoreConnect\Model
 {
@@ -367,5 +359,4 @@ class EndUserLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(EndUserLicenseAgreement::class, 'AppleService_AppStore_EndUserLicenseAgreement');
 

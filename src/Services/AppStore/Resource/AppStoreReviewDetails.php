@@ -85,4 +85,3 @@ class AppStoreReviewDetails extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppStoreReviewDetails::class, 'AppleService_AppStore_ResourceAppStoreReviewDetails');

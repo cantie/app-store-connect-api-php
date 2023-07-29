@@ -51,7 +51,6 @@ class PromotedPurchaseUpdateRequest_Data_Attributes extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(PromotedPurchaseUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_PromotedPurchaseUpdateRequest_Data_Attributes');
 
 class PromotedPurchaseUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class PromotedPurchaseUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseUpdateRequest_Data::class, 'AppleService_AppStore_PromotedPurchaseUpdateRequest_Data');
 
 class PromotedPurchaseUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class PromotedPurchaseUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseUpdateRequest::class, 'AppleService_AppStore_PromotedPurchaseUpdateRequest');
 

@@ -51,7 +51,6 @@ class AppPriceSchedule_Relationships_App_Links extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_App_Links::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_App_Links');
 
 class AppPriceSchedule_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppPriceSchedule_Relationships_App_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_App_Data::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_App_Data');
 
 class AppPriceSchedule_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -119,7 +117,6 @@ class AppPriceSchedule_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_App::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_App');
 
 class AppPriceSchedule_Relationships_BaseTerritory_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -146,7 +143,6 @@ class AppPriceSchedule_Relationships_BaseTerritory_Links extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_BaseTerritory_Links::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_BaseTerritory_Links');
 
 class AppPriceSchedule_Relationships_BaseTerritory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -173,7 +169,6 @@ class AppPriceSchedule_Relationships_BaseTerritory_Data extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_BaseTerritory_Data::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_BaseTerritory_Data');
 
 class AppPriceSchedule_Relationships_BaseTerritory extends \Cantie\AppStoreConnect\Model
 {
@@ -214,7 +209,6 @@ class AppPriceSchedule_Relationships_BaseTerritory extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_BaseTerritory::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_BaseTerritory');
 
 class AppPriceSchedule_Relationships_ManualPrices_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -241,7 +235,6 @@ class AppPriceSchedule_Relationships_ManualPrices_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_ManualPrices_Links::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_ManualPrices_Links');
 
 class AppPriceSchedule_Relationships_ManualPrices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -268,7 +261,6 @@ class AppPriceSchedule_Relationships_ManualPrices_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_ManualPrices_Data::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_ManualPrices_Data');
 
 class AppPriceSchedule_Relationships_ManualPrices extends \Cantie\AppStoreConnect\Model
 {
@@ -326,7 +318,6 @@ class AppPriceSchedule_Relationships_ManualPrices extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_ManualPrices::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_ManualPrices');
 
 class AppPriceSchedule_Relationships_AutomaticPrices_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -353,7 +344,6 @@ class AppPriceSchedule_Relationships_AutomaticPrices_Links extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_AutomaticPrices_Links::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_AutomaticPrices_Links');
 
 class AppPriceSchedule_Relationships_AutomaticPrices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -380,7 +370,6 @@ class AppPriceSchedule_Relationships_AutomaticPrices_Data extends \Cantie\AppSto
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_AutomaticPrices_Data::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_AutomaticPrices_Data');
 
 class AppPriceSchedule_Relationships_AutomaticPrices extends \Cantie\AppStoreConnect\Model
 {
@@ -438,7 +427,6 @@ class AppPriceSchedule_Relationships_AutomaticPrices extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships_AutomaticPrices::class, 'AppleService_AppStore_AppPriceSchedule_Relationships_AutomaticPrices');
 
 class AppPriceSchedule_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -513,7 +501,6 @@ class AppPriceSchedule_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceSchedule_Relationships::class, 'AppleService_AppStore_AppPriceSchedule_Relationships');
 
 class AppPriceSchedule extends \Cantie\AppStoreConnect\Model
 {
@@ -574,5 +561,4 @@ class AppPriceSchedule extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPriceSchedule::class, 'AppleService_AppStore_AppPriceSchedule');
 

@@ -76,5 +76,4 @@ class AppEncryptionDeclarationResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEncryptionDeclarationResponse::class, 'AppleService_AppStore_AppEncryptionDeclarationResponse');
 

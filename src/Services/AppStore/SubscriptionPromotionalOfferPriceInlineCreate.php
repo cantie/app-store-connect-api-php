@@ -51,7 +51,6 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory_Data
 	}
 
 }
-class_alias(SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory_Data::class, 'AppleService_AppStore_SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory_Data');
 
 class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory exte
 	}
 
 }
-class_alias(SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory::class, 'AppleService_AppStore_SubscriptionPromotionalOfferPriceInlineCreate_Relationships_Territory');
 
 class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPr
 	}
 
 }
-class_alias(SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint_Data::class, 'AppleService_AppStore_SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint_Data');
 
 class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPr
 	}
 
 }
-class_alias(SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint::class, 'AppleService_AppStore_SubscriptionPromotionalOfferPriceInlineCreate_Relationships_SubscriptionPricePoint');
 
 class SubscriptionPromotionalOfferPriceInlineCreate_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class SubscriptionPromotionalOfferPriceInlineCreate_Relationships extends \Canti
 	}
 
 }
-class_alias(SubscriptionPromotionalOfferPriceInlineCreate_Relationships::class, 'AppleService_AppStore_SubscriptionPromotionalOfferPriceInlineCreate_Relationships');
 
 class SubscriptionPromotionalOfferPriceInlineCreate extends \Cantie\AppStoreConnect\Model
 {
@@ -211,5 +206,4 @@ class SubscriptionPromotionalOfferPriceInlineCreate extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(SubscriptionPromotionalOfferPriceInlineCreate::class, 'AppleService_AppStore_SubscriptionPromotionalOfferPriceInlineCreate');
 

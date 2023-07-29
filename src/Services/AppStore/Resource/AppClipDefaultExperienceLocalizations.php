@@ -94,4 +94,3 @@ class AppClipDefaultExperienceLocalizations extends \Cantie\AppStoreConnect\Serv
     }
 }
 
-class_alias(AppClipDefaultExperienceLocalizations::class, 'AppleService_AppStore_ResourceAppClipDefaultExperienceLocalizations');

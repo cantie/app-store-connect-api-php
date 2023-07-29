@@ -68,5 +68,4 @@ class SandboxTestersClearPurchaseHistoryRequestV2 extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(SandboxTestersClearPurchaseHistoryRequestV2::class, 'AppleService_AppStore_SandboxTestersClearPurchaseHistoryRequestV2');
 

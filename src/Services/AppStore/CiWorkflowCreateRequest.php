@@ -176,7 +176,6 @@ class CiWorkflowCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Attributes::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Attributes');
 
 class CiWorkflowCreateRequest_Data_Relationships_Product_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -203,7 +202,6 @@ class CiWorkflowCreateRequest_Data_Relationships_Product_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_Product_Data::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_Product_Data');
 
 class CiWorkflowCreateRequest_Data_Relationships_Product extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +225,6 @@ class CiWorkflowCreateRequest_Data_Relationships_Product extends \Cantie\AppStor
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_Product::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_Product');
 
 class CiWorkflowCreateRequest_Data_Relationships_Repository_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -254,7 +251,6 @@ class CiWorkflowCreateRequest_Data_Relationships_Repository_Data extends \Cantie
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_Repository_Data::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_Repository_Data');
 
 class CiWorkflowCreateRequest_Data_Relationships_Repository extends \Cantie\AppStoreConnect\Model
 {
@@ -278,7 +274,6 @@ class CiWorkflowCreateRequest_Data_Relationships_Repository extends \Cantie\AppS
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_Repository::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_Repository');
 
 class CiWorkflowCreateRequest_Data_Relationships_XcodeVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -305,7 +300,6 @@ class CiWorkflowCreateRequest_Data_Relationships_XcodeVersion_Data extends \Cant
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_XcodeVersion_Data::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_XcodeVersion_Data');
 
 class CiWorkflowCreateRequest_Data_Relationships_XcodeVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -329,7 +323,6 @@ class CiWorkflowCreateRequest_Data_Relationships_XcodeVersion extends \Cantie\Ap
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_XcodeVersion::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_XcodeVersion');
 
 class CiWorkflowCreateRequest_Data_Relationships_MacOsVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -356,7 +349,6 @@ class CiWorkflowCreateRequest_Data_Relationships_MacOsVersion_Data extends \Cant
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_MacOsVersion_Data::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_MacOsVersion_Data');
 
 class CiWorkflowCreateRequest_Data_Relationships_MacOsVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -380,7 +372,6 @@ class CiWorkflowCreateRequest_Data_Relationships_MacOsVersion extends \Cantie\Ap
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships_MacOsVersion::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships_MacOsVersion');
 
 class CiWorkflowCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -455,7 +446,6 @@ class CiWorkflowCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data_Relationships::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data_Relationships');
 
 class CiWorkflowCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -506,7 +496,6 @@ class CiWorkflowCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiWorkflowCreateRequest_Data::class, 'AppleService_AppStore_CiWorkflowCreateRequest_Data');
 
 class CiWorkflowCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -530,5 +519,4 @@ class CiWorkflowCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiWorkflowCreateRequest::class, 'AppleService_AppStore_CiWorkflowCreateRequest');
 

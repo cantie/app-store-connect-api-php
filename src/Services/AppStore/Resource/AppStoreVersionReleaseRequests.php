@@ -51,4 +51,3 @@ class AppStoreVersionReleaseRequests extends \Cantie\AppStoreConnect\Services\Re
     }
 }
 
-class_alias(AppStoreVersionReleaseRequests::class, 'AppleService_AppStore_ResourceAppStoreVersionReleaseRequests');

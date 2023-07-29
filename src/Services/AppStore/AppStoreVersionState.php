@@ -51,5 +51,4 @@ class AppStoreVersionState extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(AppStoreVersionState::class, 'AppleService_AppStore_AppStoreVersionState');
 

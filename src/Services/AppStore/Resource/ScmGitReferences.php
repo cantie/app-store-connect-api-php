@@ -52,4 +52,3 @@ class ScmGitReferences extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(ScmGitReferences::class, 'AppleService_AppStore_ResourceScmGitReferences');

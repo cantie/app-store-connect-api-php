@@ -82,5 +82,4 @@ class AppStoreVersionSubmissionResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionSubmissionResponse::class, 'AppleService_AppStore_AppStoreVersionSubmissionResponse');
 

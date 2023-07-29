@@ -71,7 +71,6 @@ class AppEventLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventLocalization_Attributes::class, 'AppleService_AppStore_AppEventLocalization_Attributes');
 
 class AppEventLocalization_Relationships_AppEvent_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +97,6 @@ class AppEventLocalization_Relationships_AppEvent_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEvent_Links::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEvent_Links');
 
 class AppEventLocalization_Relationships_AppEvent_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +123,6 @@ class AppEventLocalization_Relationships_AppEvent_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEvent_Data::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEvent_Data');
 
 class AppEventLocalization_Relationships_AppEvent extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class AppEventLocalization_Relationships_AppEvent extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEvent::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEvent');
 
 class AppEventLocalization_Relationships_AppEventScreenshots_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -193,7 +189,6 @@ class AppEventLocalization_Relationships_AppEventScreenshots_Links extends \Cant
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEventScreenshots_Links::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEventScreenshots_Links');
 
 class AppEventLocalization_Relationships_AppEventScreenshots_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -220,7 +215,6 @@ class AppEventLocalization_Relationships_AppEventScreenshots_Data extends \Canti
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEventScreenshots_Data::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEventScreenshots_Data');
 
 class AppEventLocalization_Relationships_AppEventScreenshots extends \Cantie\AppStoreConnect\Model
 {
@@ -278,7 +272,6 @@ class AppEventLocalization_Relationships_AppEventScreenshots extends \Cantie\App
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEventScreenshots::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEventScreenshots');
 
 class AppEventLocalization_Relationships_AppEventVideoClips_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -305,7 +298,6 @@ class AppEventLocalization_Relationships_AppEventVideoClips_Links extends \Canti
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEventVideoClips_Links::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEventVideoClips_Links');
 
 class AppEventLocalization_Relationships_AppEventVideoClips_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -332,7 +324,6 @@ class AppEventLocalization_Relationships_AppEventVideoClips_Data extends \Cantie
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEventVideoClips_Data::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEventVideoClips_Data');
 
 class AppEventLocalization_Relationships_AppEventVideoClips extends \Cantie\AppStoreConnect\Model
 {
@@ -390,7 +381,6 @@ class AppEventLocalization_Relationships_AppEventVideoClips extends \Cantie\AppS
 	}
 
 }
-class_alias(AppEventLocalization_Relationships_AppEventVideoClips::class, 'AppleService_AppStore_AppEventLocalization_Relationships_AppEventVideoClips');
 
 class AppEventLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -448,7 +438,6 @@ class AppEventLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventLocalization_Relationships::class, 'AppleService_AppStore_AppEventLocalization_Relationships');
 
 class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -526,5 +515,4 @@ class AppEventLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventLocalization::class, 'AppleService_AppStore_AppEventLocalization');
 

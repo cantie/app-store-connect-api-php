@@ -71,7 +71,6 @@ class InAppPurchaseContent_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseContent_Attributes::class, 'AppleService_AppStore_InAppPurchaseContent_Attributes');
 
 class InAppPurchaseContent_Relationships_InAppPurchaseV2_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +97,6 @@ class InAppPurchaseContent_Relationships_InAppPurchaseV2_Links extends \Cantie\A
 	}
 
 }
-class_alias(InAppPurchaseContent_Relationships_InAppPurchaseV2_Links::class, 'AppleService_AppStore_InAppPurchaseContent_Relationships_InAppPurchaseV2_Links');
 
 class InAppPurchaseContent_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +123,6 @@ class InAppPurchaseContent_Relationships_InAppPurchaseV2_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(InAppPurchaseContent_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchaseContent_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchaseContent_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -166,7 +163,6 @@ class InAppPurchaseContent_Relationships_InAppPurchaseV2 extends \Cantie\AppStor
 	}
 
 }
-class_alias(InAppPurchaseContent_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchaseContent_Relationships_InAppPurchaseV2');
 
 class InAppPurchaseContent_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +186,6 @@ class InAppPurchaseContent_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseContent_Relationships::class, 'AppleService_AppStore_InAppPurchaseContent_Relationships');
 
 class InAppPurchaseContent extends \Cantie\AppStoreConnect\Model
 {
@@ -268,5 +263,4 @@ class InAppPurchaseContent extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchaseContent::class, 'AppleService_AppStore_InAppPurchaseContent');
 

@@ -74,7 +74,6 @@ class GameCenterEnabledVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Attributes::class, 'AppleService_AppStore_GameCenterEnabledVersion_Attributes');
 
 class GameCenterEnabledVersion_Relationships_CompatibleVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -101,7 +100,6 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions_Links extends \C
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships_CompatibleVersions_Links::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships_CompatibleVersions_Links');
 
 class GameCenterEnabledVersion_Relationships_CompatibleVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -128,7 +126,6 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions_Data extends \Ca
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships_CompatibleVersions_Data::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships_CompatibleVersions_Data');
 
 class GameCenterEnabledVersion_Relationships_CompatibleVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +183,6 @@ class GameCenterEnabledVersion_Relationships_CompatibleVersions extends \Cantie\
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships_CompatibleVersions::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships_CompatibleVersions');
 
 class GameCenterEnabledVersion_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -213,7 +209,6 @@ class GameCenterEnabledVersion_Relationships_App_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships_App_Links::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships_App_Links');
 
 class GameCenterEnabledVersion_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -240,7 +235,6 @@ class GameCenterEnabledVersion_Relationships_App_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships_App_Data::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships_App_Data');
 
 class GameCenterEnabledVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -281,7 +275,6 @@ class GameCenterEnabledVersion_Relationships_App extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships_App::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships_App');
 
 class GameCenterEnabledVersion_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -322,7 +315,6 @@ class GameCenterEnabledVersion_Relationships extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(GameCenterEnabledVersion_Relationships::class, 'AppleService_AppStore_GameCenterEnabledVersion_Relationships');
 
 class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -400,5 +392,4 @@ class GameCenterEnabledVersion extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(GameCenterEnabledVersion::class, 'AppleService_AppStore_GameCenterEnabledVersion');
 

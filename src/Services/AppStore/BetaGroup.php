@@ -141,7 +141,6 @@ class BetaGroup_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Attributes::class, 'AppleService_AppStore_BetaGroup_Attributes');
 
 class BetaGroup_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -168,7 +167,6 @@ class BetaGroup_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_App_Links::class, 'AppleService_AppStore_BetaGroup_Relationships_App_Links');
 
 class BetaGroup_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -195,7 +193,6 @@ class BetaGroup_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_App_Data::class, 'AppleService_AppStore_BetaGroup_Relationships_App_Data');
 
 class BetaGroup_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -236,7 +233,6 @@ class BetaGroup_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_App::class, 'AppleService_AppStore_BetaGroup_Relationships_App');
 
 class BetaGroup_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -263,7 +259,6 @@ class BetaGroup_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_Builds_Links::class, 'AppleService_AppStore_BetaGroup_Relationships_Builds_Links');
 
 class BetaGroup_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -290,7 +285,6 @@ class BetaGroup_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_Builds_Data::class, 'AppleService_AppStore_BetaGroup_Relationships_Builds_Data');
 
 class BetaGroup_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 {
@@ -348,7 +342,6 @@ class BetaGroup_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_Builds::class, 'AppleService_AppStore_BetaGroup_Relationships_Builds');
 
 class BetaGroup_Relationships_BetaTesters_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -375,7 +368,6 @@ class BetaGroup_Relationships_BetaTesters_Links extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(BetaGroup_Relationships_BetaTesters_Links::class, 'AppleService_AppStore_BetaGroup_Relationships_BetaTesters_Links');
 
 class BetaGroup_Relationships_BetaTesters_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -402,7 +394,6 @@ class BetaGroup_Relationships_BetaTesters_Data extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(BetaGroup_Relationships_BetaTesters_Data::class, 'AppleService_AppStore_BetaGroup_Relationships_BetaTesters_Data');
 
 class BetaGroup_Relationships_BetaTesters extends \Cantie\AppStoreConnect\Model
 {
@@ -460,7 +451,6 @@ class BetaGroup_Relationships_BetaTesters extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships_BetaTesters::class, 'AppleService_AppStore_BetaGroup_Relationships_BetaTesters');
 
 class BetaGroup_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -518,7 +508,6 @@ class BetaGroup_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup_Relationships::class, 'AppleService_AppStore_BetaGroup_Relationships');
 
 class BetaGroup extends \Cantie\AppStoreConnect\Model
 {
@@ -596,5 +585,4 @@ class BetaGroup extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaGroup::class, 'AppleService_AppStore_BetaGroup');
 

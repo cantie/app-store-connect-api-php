@@ -75,4 +75,3 @@ class CiXcodeVersions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiXcodeVersions::class, 'AppleService_AppStore_ResourceCiXcodeVersions');

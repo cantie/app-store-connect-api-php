@@ -61,7 +61,6 @@ class PerfPowerMetric_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PerfPowerMetric_Attributes::class, 'AppleService_AppStore_PerfPowerMetric_Attributes');
 
 class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 {
@@ -122,5 +121,4 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PerfPowerMetric::class, 'AppleService_AppStore_PerfPowerMetric');
 

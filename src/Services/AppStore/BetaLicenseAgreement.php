@@ -41,7 +41,6 @@ class BetaLicenseAgreement_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaLicenseAgreement_Attributes::class, 'AppleService_AppStore_BetaLicenseAgreement_Attributes');
 
 class BetaLicenseAgreement_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class BetaLicenseAgreement_Relationships_App_Links extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(BetaLicenseAgreement_Relationships_App_Links::class, 'AppleService_AppStore_BetaLicenseAgreement_Relationships_App_Links');
 
 class BetaLicenseAgreement_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class BetaLicenseAgreement_Relationships_App_Data extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(BetaLicenseAgreement_Relationships_App_Data::class, 'AppleService_AppStore_BetaLicenseAgreement_Relationships_App_Data');
 
 class BetaLicenseAgreement_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class BetaLicenseAgreement_Relationships_App extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(BetaLicenseAgreement_Relationships_App::class, 'AppleService_AppStore_BetaLicenseAgreement_Relationships_App');
 
 class BetaLicenseAgreement_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -160,7 +156,6 @@ class BetaLicenseAgreement_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaLicenseAgreement_Relationships::class, 'AppleService_AppStore_BetaLicenseAgreement_Relationships');
 
 class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 {
@@ -238,5 +233,4 @@ class BetaLicenseAgreement extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaLicenseAgreement::class, 'AppleService_AppStore_BetaLicenseAgreement');
 

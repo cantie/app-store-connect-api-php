@@ -256,4 +256,3 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppStoreVersions::class, 'AppleService_AppStore_ResourceAppStoreVersions');

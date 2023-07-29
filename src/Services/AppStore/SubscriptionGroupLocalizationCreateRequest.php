@@ -61,7 +61,6 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Attributes extends \Cantie
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionGroupLocalizationCreateRequest_Data_Attributes');
 
 class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_SubscriptionGroup_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_Subscription
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationCreateRequest_Data_Relationships_SubscriptionGroup_Data::class, 'AppleService_AppStore_SubscriptionGroupLocalizationCreateRequest_Data_Relationships_SubscriptionGroup_Data');
 
 class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_SubscriptionGroup extends \Cantie\AppStoreConnect\Model
 {
@@ -112,7 +110,6 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships_Subscription
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationCreateRequest_Data_Relationships_SubscriptionGroup::class, 'AppleService_AppStore_SubscriptionGroupLocalizationCreateRequest_Data_Relationships_SubscriptionGroup');
 
 class SubscriptionGroupLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class SubscriptionGroupLocalizationCreateRequest_Data_Relationships extends \Can
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_SubscriptionGroupLocalizationCreateRequest_Data_Relationships');
 
 class SubscriptionGroupLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -187,7 +183,6 @@ class SubscriptionGroupLocalizationCreateRequest_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationCreateRequest_Data::class, 'AppleService_AppStore_SubscriptionGroupLocalizationCreateRequest_Data');
 
 class SubscriptionGroupLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -211,5 +206,4 @@ class SubscriptionGroupLocalizationCreateRequest extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionGroupLocalizationCreateRequest::class, 'AppleService_AppStore_SubscriptionGroupLocalizationCreateRequest');
 

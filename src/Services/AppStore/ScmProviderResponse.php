@@ -65,5 +65,4 @@ class ScmProviderResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmProviderResponse::class, 'AppleService_AppStore_ScmProviderResponse');
 

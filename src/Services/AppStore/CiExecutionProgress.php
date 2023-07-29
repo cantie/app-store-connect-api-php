@@ -35,5 +35,4 @@ class CiExecutionProgress extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CiExecutionProgress::class, 'AppleService_AppStore_CiExecutionProgress');
 

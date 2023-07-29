@@ -41,7 +41,6 @@ class AppPreOrderUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppPreOrderUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppPreOrderUpdateRequest_Data_Attributes');
 
 class AppPreOrderUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class AppPreOrderUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrderUpdateRequest_Data::class, 'AppleService_AppStore_AppPreOrderUpdateRequest_Data');
 
 class AppPreOrderUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class AppPreOrderUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrderUpdateRequest::class, 'AppleService_AppStore_AppPreOrderUpdateRequest');
 

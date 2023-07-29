@@ -75,4 +75,3 @@ class AppPriceTiers extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppPriceTiers::class, 'AppleService_AppStore_ResourceAppPriceTiers');

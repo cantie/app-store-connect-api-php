@@ -71,7 +71,6 @@ class AppClipDomainStatus_Attributes_Domains extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppClipDomainStatus_Attributes_Domains::class, 'AppleService_AppStore_AppClipDomainStatus_Attributes_Domains');
 
 class AppClipDomainStatus_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +104,6 @@ class AppClipDomainStatus_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipDomainStatus_Attributes::class, 'AppleService_AppStore_AppClipDomainStatus_Attributes');
 
 class AppClipDomainStatus extends \Cantie\AppStoreConnect\Model
 {
@@ -166,5 +164,4 @@ class AppClipDomainStatus extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipDomainStatus::class, 'AppleService_AppStore_AppClipDomainStatus');
 

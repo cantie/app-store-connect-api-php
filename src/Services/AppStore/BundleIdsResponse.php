@@ -93,5 +93,4 @@ class BundleIdsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdsResponse::class, 'AppleService_AppStore_BundleIdsResponse');
 

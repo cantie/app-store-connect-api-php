@@ -101,7 +101,6 @@ class AppStoreVersionLocalization_Attributes extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Attributes::class, 'AppleService_AppStore_AppStoreVersionLocalization_Attributes');
 
 class AppStoreVersionLocalization_Relationships_AppStoreVersion_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -128,7 +127,6 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion_Links extends \C
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppStoreVersion_Links::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppStoreVersion_Links');
 
 class AppStoreVersionLocalization_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -155,7 +153,6 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion_Data extends \Ca
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppStoreVersion_Data');
 
 class AppStoreVersionLocalization_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -196,7 +193,6 @@ class AppStoreVersionLocalization_Relationships_AppStoreVersion extends \Cantie\
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppStoreVersion::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppStoreVersion');
 
 class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -223,7 +219,6 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Links extends 
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppScreenshotSets_Links::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppScreenshotSets_Links');
 
 class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -250,7 +245,6 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data extends \
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppScreenshotSets_Data');
 
 class AppStoreVersionLocalization_Relationships_AppScreenshotSets extends \Cantie\AppStoreConnect\Model
 {
@@ -308,7 +302,6 @@ class AppStoreVersionLocalization_Relationships_AppScreenshotSets extends \Canti
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppScreenshotSets::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppScreenshotSets');
 
 class AppStoreVersionLocalization_Relationships_AppPreviewSets_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -335,7 +328,6 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets_Links extends \Ca
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppPreviewSets_Links::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppPreviewSets_Links');
 
 class AppStoreVersionLocalization_Relationships_AppPreviewSets_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -362,7 +354,6 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets_Data extends \Can
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppPreviewSets_Data::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppPreviewSets_Data');
 
 class AppStoreVersionLocalization_Relationships_AppPreviewSets extends \Cantie\AppStoreConnect\Model
 {
@@ -420,7 +411,6 @@ class AppStoreVersionLocalization_Relationships_AppPreviewSets extends \Cantie\A
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships_AppPreviewSets::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships_AppPreviewSets');
 
 class AppStoreVersionLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -478,7 +468,6 @@ class AppStoreVersionLocalization_Relationships extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppStoreVersionLocalization_Relationships::class, 'AppleService_AppStore_AppStoreVersionLocalization_Relationships');
 
 class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -556,5 +545,4 @@ class AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionLocalization::class, 'AppleService_AppStore_AppStoreVersionLocalization');
 

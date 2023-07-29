@@ -51,7 +51,6 @@ class BetaAppClipInvocationLocalization_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalization_Attributes::class, 'AppleService_AppStore_BetaAppClipInvocationLocalization_Attributes');
 
 class BetaAppClipInvocationLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -112,5 +111,4 @@ class BetaAppClipInvocationLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppClipInvocationLocalization::class, 'AppleService_AppStore_BetaAppClipInvocationLocalization');
 

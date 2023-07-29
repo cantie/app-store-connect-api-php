@@ -61,7 +61,6 @@ class BetaTesterCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data_Attributes');
 
 class BetaTesterCreateRequest_Data_Relationships_BetaGroups_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class BetaTesterCreateRequest_Data_Relationships_BetaGroups_Data extends \Cantie
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data_Relationships_BetaGroups_Data::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data_Relationships_BetaGroups_Data');
 
 class BetaTesterCreateRequest_Data_Relationships_BetaGroups extends \Cantie\AppStoreConnect\Model
 {
@@ -112,7 +110,6 @@ class BetaTesterCreateRequest_Data_Relationships_BetaGroups extends \Cantie\AppS
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data_Relationships_BetaGroups::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data_Relationships_BetaGroups');
 
 class BetaTesterCreateRequest_Data_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -139,7 +136,6 @@ class BetaTesterCreateRequest_Data_Relationships_Builds_Data extends \Cantie\App
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data_Relationships_Builds_Data::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data_Relationships_Builds_Data');
 
 class BetaTesterCreateRequest_Data_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +159,6 @@ class BetaTesterCreateRequest_Data_Relationships_Builds extends \Cantie\AppStore
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data_Relationships_Builds::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data_Relationships_Builds');
 
 class BetaTesterCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -204,7 +199,6 @@ class BetaTesterCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data_Relationships');
 
 class BetaTesterCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -255,7 +249,6 @@ class BetaTesterCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaTesterCreateRequest_Data::class, 'AppleService_AppStore_BetaTesterCreateRequest_Data');
 
 class BetaTesterCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -279,5 +272,4 @@ class BetaTesterCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaTesterCreateRequest::class, 'AppleService_AppStore_BetaTesterCreateRequest');
 

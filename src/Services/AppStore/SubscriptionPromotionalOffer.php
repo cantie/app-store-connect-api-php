@@ -93,7 +93,6 @@ class SubscriptionPromotionalOffer_Attributes extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Attributes::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Attributes');
 
 class SubscriptionPromotionalOffer_Relationships_Subscription_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -120,7 +119,6 @@ class SubscriptionPromotionalOffer_Relationships_Subscription_Links extends \Can
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships_Subscription_Links::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships_Subscription_Links');
 
 class SubscriptionPromotionalOffer_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -147,7 +145,6 @@ class SubscriptionPromotionalOffer_Relationships_Subscription_Data extends \Cant
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships_Subscription_Data');
 
 class SubscriptionPromotionalOffer_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -188,7 +185,6 @@ class SubscriptionPromotionalOffer_Relationships_Subscription extends \Cantie\Ap
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships_Subscription');
 
 class SubscriptionPromotionalOffer_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -215,7 +211,6 @@ class SubscriptionPromotionalOffer_Relationships_Prices_Links extends \Cantie\Ap
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships_Prices_Links::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships_Prices_Links');
 
 class SubscriptionPromotionalOffer_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -242,7 +237,6 @@ class SubscriptionPromotionalOffer_Relationships_Prices_Data extends \Cantie\App
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships_Prices_Data::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships_Prices_Data');
 
 class SubscriptionPromotionalOffer_Relationships_Prices extends \Cantie\AppStoreConnect\Model
 {
@@ -300,7 +294,6 @@ class SubscriptionPromotionalOffer_Relationships_Prices extends \Cantie\AppStore
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships_Prices::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships_Prices');
 
 class SubscriptionPromotionalOffer_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -341,7 +334,6 @@ class SubscriptionPromotionalOffer_Relationships extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer_Relationships::class, 'AppleService_AppStore_SubscriptionPromotionalOffer_Relationships');
 
 class SubscriptionPromotionalOffer extends \Cantie\AppStoreConnect\Model
 {
@@ -419,5 +411,4 @@ class SubscriptionPromotionalOffer extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionPromotionalOffer::class, 'AppleService_AppStore_SubscriptionPromotionalOffer');
 

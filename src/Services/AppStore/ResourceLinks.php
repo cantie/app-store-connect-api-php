@@ -41,5 +41,4 @@ class ResourceLinks extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ResourceLinks::class, 'AppleService_AppStore_ResourceLinks');
 

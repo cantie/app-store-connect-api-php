@@ -111,7 +111,6 @@ class BetaAppReviewDetailUpdateRequest_Data_Attributes extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(BetaAppReviewDetailUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_BetaAppReviewDetailUpdateRequest_Data_Attributes');
 
 class BetaAppReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -155,7 +154,6 @@ class BetaAppReviewDetailUpdateRequest_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BetaAppReviewDetailUpdateRequest_Data::class, 'AppleService_AppStore_BetaAppReviewDetailUpdateRequest_Data');
 
 class BetaAppReviewDetailUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -179,5 +177,4 @@ class BetaAppReviewDetailUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppReviewDetailUpdateRequest::class, 'AppleService_AppStore_BetaAppReviewDetailUpdateRequest');
 

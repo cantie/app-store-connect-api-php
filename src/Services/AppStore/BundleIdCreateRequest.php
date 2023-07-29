@@ -77,7 +77,6 @@ class BundleIdCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(BundleIdCreateRequest_Data_Attributes::class, 'AppleService_AppStore_BundleIdCreateRequest_Data_Attributes');
 
 class BundleIdCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -111,7 +110,6 @@ class BundleIdCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdCreateRequest_Data::class, 'AppleService_AppStore_BundleIdCreateRequest_Data');
 
 class BundleIdCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -135,5 +133,4 @@ class BundleIdCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdCreateRequest::class, 'AppleService_AppStore_BundleIdCreateRequest');
 

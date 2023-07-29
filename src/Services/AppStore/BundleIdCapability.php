@@ -64,7 +64,6 @@ class BundleIdCapability_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdCapability_Attributes::class, 'AppleService_AppStore_BundleIdCapability_Attributes');
 
 class BundleIdCapability extends \Cantie\AppStoreConnect\Model
 {
@@ -125,5 +124,4 @@ class BundleIdCapability extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BundleIdCapability::class, 'AppleService_AppStore_BundleIdCapability');
 

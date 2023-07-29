@@ -51,7 +51,6 @@ class BetaBuildLocalization_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaBuildLocalization_Attributes::class, 'AppleService_AppStore_BetaBuildLocalization_Attributes');
 
 class BetaBuildLocalization_Relationships_Build_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class BetaBuildLocalization_Relationships_Build_Links extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(BetaBuildLocalization_Relationships_Build_Links::class, 'AppleService_AppStore_BetaBuildLocalization_Relationships_Build_Links');
 
 class BetaBuildLocalization_Relationships_Build_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +103,6 @@ class BetaBuildLocalization_Relationships_Build_Data extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(BetaBuildLocalization_Relationships_Build_Data::class, 'AppleService_AppStore_BetaBuildLocalization_Relationships_Build_Data');
 
 class BetaBuildLocalization_Relationships_Build extends \Cantie\AppStoreConnect\Model
 {
@@ -146,7 +143,6 @@ class BetaBuildLocalization_Relationships_Build extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(BetaBuildLocalization_Relationships_Build::class, 'AppleService_AppStore_BetaBuildLocalization_Relationships_Build');
 
 class BetaBuildLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -170,7 +166,6 @@ class BetaBuildLocalization_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaBuildLocalization_Relationships::class, 'AppleService_AppStore_BetaBuildLocalization_Relationships');
 
 class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -248,5 +243,4 @@ class BetaBuildLocalization extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaBuildLocalization::class, 'AppleService_AppStore_BetaBuildLocalization');
 

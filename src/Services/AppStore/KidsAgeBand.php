@@ -35,5 +35,4 @@ class KidsAgeBand extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(KidsAgeBand::class, 'AppleService_AppStore_KidsAgeBand');
 

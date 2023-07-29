@@ -82,5 +82,4 @@ class CiTestResultsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTestResultsResponse::class, 'AppleService_AppStore_CiTestResultsResponse');
 

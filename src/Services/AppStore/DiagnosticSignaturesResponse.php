@@ -82,5 +82,4 @@ class DiagnosticSignaturesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(DiagnosticSignaturesResponse::class, 'AppleService_AppStore_DiagnosticSignaturesResponse');
 

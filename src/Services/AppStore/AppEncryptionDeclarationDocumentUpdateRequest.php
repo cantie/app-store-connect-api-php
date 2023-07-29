@@ -51,7 +51,6 @@ class AppEncryptionDeclarationDocumentUpdateRequest_Data_Attributes extends \Can
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentUpdateRequest_Data_Attributes');
 
 class AppEncryptionDeclarationDocumentUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppEncryptionDeclarationDocumentUpdateRequest_Data extends \Cantie\AppStor
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentUpdateRequest_Data::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentUpdateRequest_Data');
 
 class AppEncryptionDeclarationDocumentUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppEncryptionDeclarationDocumentUpdateRequest extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocumentUpdateRequest::class, 'AppleService_AppStore_AppEncryptionDeclarationDocumentUpdateRequest');
 

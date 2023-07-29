@@ -41,7 +41,6 @@ class ReviewSubmissionItem_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionItem_Attributes::class, 'AppleService_AppStore_ReviewSubmissionItem_Attributes');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersion_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion_Links extends \Cantie\A
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersion_Links::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersion_Links');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion_Data extends \Cantie\Ap
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersion_Data');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersion extends \Cantie\AppStor
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersion::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersion');
 
 class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +159,6 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Links exten
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Links::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Links');
 
 class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +185,6 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data extend
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppCustomProductPageVersion_Data');
 
 class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -231,7 +225,6 @@ class ReviewSubmissionItem_Relationships_AppCustomProductPageVersion extends \Ca
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppCustomProductPageVersion::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppCustomProductPageVersion');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -258,7 +251,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Links extends
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Links::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Links');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -285,7 +277,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data extends 
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersionExperiment_Data');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment extends \Cantie\AppStoreConnect\Model
 {
@@ -326,7 +317,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperiment extends \Cant
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersionExperiment::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersionExperiment');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -353,7 +343,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Links exten
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Links::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Links');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -380,7 +369,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data extend
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2_Data');
 
 class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -421,7 +409,6 @@ class ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2 extends \Ca
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppStoreVersionExperimentV2');
 
 class ReviewSubmissionItem_Relationships_AppEvent_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -448,7 +435,6 @@ class ReviewSubmissionItem_Relationships_AppEvent_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppEvent_Links::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppEvent_Links');
 
 class ReviewSubmissionItem_Relationships_AppEvent_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -475,7 +461,6 @@ class ReviewSubmissionItem_Relationships_AppEvent_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppEvent_Data::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppEvent_Data');
 
 class ReviewSubmissionItem_Relationships_AppEvent extends \Cantie\AppStoreConnect\Model
 {
@@ -516,7 +501,6 @@ class ReviewSubmissionItem_Relationships_AppEvent extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships_AppEvent::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships_AppEvent');
 
 class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -608,7 +592,6 @@ class ReviewSubmissionItem_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionItem_Relationships::class, 'AppleService_AppStore_ReviewSubmissionItem_Relationships');
 
 class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 {
@@ -686,5 +669,4 @@ class ReviewSubmissionItem extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ReviewSubmissionItem::class, 'AppleService_AppStore_ReviewSubmissionItem');
 

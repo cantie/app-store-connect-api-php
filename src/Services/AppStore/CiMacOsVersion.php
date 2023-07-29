@@ -51,7 +51,6 @@ class CiMacOsVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiMacOsVersion_Attributes::class, 'AppleService_AppStore_CiMacOsVersion_Attributes');
 
 class CiMacOsVersion_Relationships_XcodeVersions_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class CiMacOsVersion_Relationships_XcodeVersions_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(CiMacOsVersion_Relationships_XcodeVersions_Links::class, 'AppleService_AppStore_CiMacOsVersion_Relationships_XcodeVersions_Links');
 
 class CiMacOsVersion_Relationships_XcodeVersions_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +103,6 @@ class CiMacOsVersion_Relationships_XcodeVersions_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(CiMacOsVersion_Relationships_XcodeVersions_Data::class, 'AppleService_AppStore_CiMacOsVersion_Relationships_XcodeVersions_Data');
 
 class CiMacOsVersion_Relationships_XcodeVersions extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +160,6 @@ class CiMacOsVersion_Relationships_XcodeVersions extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CiMacOsVersion_Relationships_XcodeVersions::class, 'AppleService_AppStore_CiMacOsVersion_Relationships_XcodeVersions');
 
 class CiMacOsVersion_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -187,7 +183,6 @@ class CiMacOsVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiMacOsVersion_Relationships::class, 'AppleService_AppStore_CiMacOsVersion_Relationships');
 
 class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -265,5 +260,4 @@ class CiMacOsVersion extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiMacOsVersion::class, 'AppleService_AppStore_CiMacOsVersion');
 

@@ -74,4 +74,3 @@ class AppCustomProductPageVersions extends \Cantie\AppStoreConnect\Services\Reso
     }
 }
 
-class_alias(AppCustomProductPageVersions::class, 'AppleService_AppStore_ResourceAppCustomProductPageVersions');

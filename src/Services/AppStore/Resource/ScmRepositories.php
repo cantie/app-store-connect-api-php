@@ -87,4 +87,3 @@ class ScmRepositories extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(ScmRepositories::class, 'AppleService_AppStore_ResourceScmRepositories');

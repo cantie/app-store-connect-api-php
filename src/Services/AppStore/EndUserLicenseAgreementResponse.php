@@ -76,5 +76,4 @@ class EndUserLicenseAgreementResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(EndUserLicenseAgreementResponse::class, 'AppleService_AppStore_EndUserLicenseAgreementResponse');
 

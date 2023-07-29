@@ -97,7 +97,6 @@ class CustomerReview_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CustomerReview_Attributes::class, 'AppleService_AppStore_CustomerReview_Attributes');
 
 class CustomerReview_Relationships_Response_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -124,7 +123,6 @@ class CustomerReview_Relationships_Response_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(CustomerReview_Relationships_Response_Links::class, 'AppleService_AppStore_CustomerReview_Relationships_Response_Links');
 
 class CustomerReview_Relationships_Response_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -151,7 +149,6 @@ class CustomerReview_Relationships_Response_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(CustomerReview_Relationships_Response_Data::class, 'AppleService_AppStore_CustomerReview_Relationships_Response_Data');
 
 class CustomerReview_Relationships_Response extends \Cantie\AppStoreConnect\Model
 {
@@ -192,7 +189,6 @@ class CustomerReview_Relationships_Response extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(CustomerReview_Relationships_Response::class, 'AppleService_AppStore_CustomerReview_Relationships_Response');
 
 class CustomerReview_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -216,7 +212,6 @@ class CustomerReview_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CustomerReview_Relationships::class, 'AppleService_AppStore_CustomerReview_Relationships');
 
 class CustomerReview extends \Cantie\AppStoreConnect\Model
 {
@@ -294,5 +289,4 @@ class CustomerReview extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CustomerReview::class, 'AppleService_AppStore_CustomerReview');
 

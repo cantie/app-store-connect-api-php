@@ -64,5 +64,4 @@ class AppClipAdvancedExperienceLanguage extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(AppClipAdvancedExperienceLanguage::class, 'AppleService_AppStore_AppClipAdvancedExperienceLanguage');
 

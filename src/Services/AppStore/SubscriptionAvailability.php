@@ -41,7 +41,6 @@ class SubscriptionAvailability_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionAvailability_Attributes::class, 'AppleService_AppStore_SubscriptionAvailability_Attributes');
 
 class SubscriptionAvailability_Relationships_Subscription_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class SubscriptionAvailability_Relationships_Subscription_Links extends \Cantie\
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships_Subscription_Links::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships_Subscription_Links');
 
 class SubscriptionAvailability_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +93,6 @@ class SubscriptionAvailability_Relationships_Subscription_Data extends \Cantie\A
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships_Subscription_Data');
 
 class SubscriptionAvailability_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class SubscriptionAvailability_Relationships_Subscription extends \Cantie\AppSto
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships_Subscription');
 
 class SubscriptionAvailability_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -163,7 +159,6 @@ class SubscriptionAvailability_Relationships_AvailableTerritories_Links extends 
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships_AvailableTerritories_Links::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships_AvailableTerritories_Links');
 
 class SubscriptionAvailability_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +185,6 @@ class SubscriptionAvailability_Relationships_AvailableTerritories_Data extends \
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships_AvailableTerritories_Data::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships_AvailableTerritories_Data');
 
 class SubscriptionAvailability_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
 {
@@ -248,7 +242,6 @@ class SubscriptionAvailability_Relationships_AvailableTerritories extends \Canti
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships_AvailableTerritories::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships_AvailableTerritories');
 
 class SubscriptionAvailability_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -289,7 +282,6 @@ class SubscriptionAvailability_Relationships extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(SubscriptionAvailability_Relationships::class, 'AppleService_AppStore_SubscriptionAvailability_Relationships');
 
 class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 {
@@ -367,5 +359,4 @@ class SubscriptionAvailability extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionAvailability::class, 'AppleService_AppStore_SubscriptionAvailability');
 

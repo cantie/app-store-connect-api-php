@@ -47,7 +47,6 @@ class AppPreviewSetCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Attributes');
 
 class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -74,7 +73,6 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization_
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization_Data::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization_Data');
 
 class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -98,7 +96,6 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization 
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionLocalization');
 
 class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -125,7 +122,6 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocaliza
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization_Data::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization_Data');
 
 class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -149,7 +145,6 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocaliza
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships_AppCustomProductPageLocalization');
 
 class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -176,7 +171,6 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTre
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization_Data::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization_Data');
 
 class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization extends \Cantie\AppStoreConnect\Model
 {
@@ -200,7 +194,6 @@ class AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTre
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships_AppStoreVersionExperimentTreatmentLocalization');
 
 class AppPreviewSetCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -258,7 +251,6 @@ class AppPreviewSetCreateRequest_Data_Relationships extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data_Relationships');
 
 class AppPreviewSetCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -309,7 +301,6 @@ class AppPreviewSetCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest_Data::class, 'AppleService_AppStore_AppPreviewSetCreateRequest_Data');
 
 class AppPreviewSetCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -333,5 +324,4 @@ class AppPreviewSetCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreviewSetCreateRequest::class, 'AppleService_AppStore_AppPreviewSetCreateRequest');
 

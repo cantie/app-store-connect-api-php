@@ -52,4 +52,3 @@ class CiTestResults extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiTestResults::class, 'AppleService_AppStore_ResourceCiTestResults');

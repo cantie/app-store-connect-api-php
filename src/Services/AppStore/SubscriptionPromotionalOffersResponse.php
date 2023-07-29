@@ -93,5 +93,4 @@ class SubscriptionPromotionalOffersResponse extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(SubscriptionPromotionalOffersResponse::class, 'AppleService_AppStore_SubscriptionPromotionalOffersResponse');
 

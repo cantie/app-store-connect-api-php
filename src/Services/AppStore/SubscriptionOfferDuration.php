@@ -41,5 +41,4 @@ class SubscriptionOfferDuration extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(SubscriptionOfferDuration::class, 'AppleService_AppStore_SubscriptionOfferDuration');
 

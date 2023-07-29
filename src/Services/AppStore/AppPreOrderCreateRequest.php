@@ -41,7 +41,6 @@ class AppPreOrderCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(AppPreOrderCreateRequest_Data_Attributes::class, 'AppleService_AppStore_AppPreOrderCreateRequest_Data_Attributes');
 
 class AppPreOrderCreateRequest_Data_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -68,7 +67,6 @@ class AppPreOrderCreateRequest_Data_Relationships_App_Data extends \Cantie\AppSt
 	}
 
 }
-class_alias(AppPreOrderCreateRequest_Data_Relationships_App_Data::class, 'AppleService_AppStore_AppPreOrderCreateRequest_Data_Relationships_App_Data');
 
 class AppPreOrderCreateRequest_Data_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -92,7 +90,6 @@ class AppPreOrderCreateRequest_Data_Relationships_App extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(AppPreOrderCreateRequest_Data_Relationships_App::class, 'AppleService_AppStore_AppPreOrderCreateRequest_Data_Relationships_App');
 
 class AppPreOrderCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -116,7 +113,6 @@ class AppPreOrderCreateRequest_Data_Relationships extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppPreOrderCreateRequest_Data_Relationships::class, 'AppleService_AppStore_AppPreOrderCreateRequest_Data_Relationships');
 
 class AppPreOrderCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -167,7 +163,6 @@ class AppPreOrderCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrderCreateRequest_Data::class, 'AppleService_AppStore_AppPreOrderCreateRequest_Data');
 
 class AppPreOrderCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -191,5 +186,4 @@ class AppPreOrderCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrderCreateRequest::class, 'AppleService_AppStore_AppPreOrderCreateRequest');
 

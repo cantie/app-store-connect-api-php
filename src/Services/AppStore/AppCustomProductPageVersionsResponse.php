@@ -93,5 +93,4 @@ class AppCustomProductPageVersionsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCustomProductPageVersionsResponse::class, 'AppleService_AppStore_AppCustomProductPageVersionsResponse');
 

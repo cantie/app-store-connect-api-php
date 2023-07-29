@@ -61,7 +61,6 @@ class CiProduct_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct_Attributes::class, 'AppleService_AppStore_CiProduct_Attributes');
 
 class CiProduct_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class CiProduct_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct_Relationships_App_Links::class, 'AppleService_AppStore_CiProduct_Relationships_App_Links');
 
 class CiProduct_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -115,7 +113,6 @@ class CiProduct_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct_Relationships_App_Data::class, 'AppleService_AppStore_CiProduct_Relationships_App_Data');
 
 class CiProduct_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -156,7 +153,6 @@ class CiProduct_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct_Relationships_App::class, 'AppleService_AppStore_CiProduct_Relationships_App');
 
 class CiProduct_Relationships_BundleId_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -183,7 +179,6 @@ class CiProduct_Relationships_BundleId_Links extends \Cantie\AppStoreConnect\Mod
 	}
 
 }
-class_alias(CiProduct_Relationships_BundleId_Links::class, 'AppleService_AppStore_CiProduct_Relationships_BundleId_Links');
 
 class CiProduct_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -210,7 +205,6 @@ class CiProduct_Relationships_BundleId_Data extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(CiProduct_Relationships_BundleId_Data::class, 'AppleService_AppStore_CiProduct_Relationships_BundleId_Data');
 
 class CiProduct_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 {
@@ -251,7 +245,6 @@ class CiProduct_Relationships_BundleId extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct_Relationships_BundleId::class, 'AppleService_AppStore_CiProduct_Relationships_BundleId');
 
 class CiProduct_Relationships_PrimaryRepositories_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -278,7 +271,6 @@ class CiProduct_Relationships_PrimaryRepositories_Links extends \Cantie\AppStore
 	}
 
 }
-class_alias(CiProduct_Relationships_PrimaryRepositories_Links::class, 'AppleService_AppStore_CiProduct_Relationships_PrimaryRepositories_Links');
 
 class CiProduct_Relationships_PrimaryRepositories_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -305,7 +297,6 @@ class CiProduct_Relationships_PrimaryRepositories_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(CiProduct_Relationships_PrimaryRepositories_Data::class, 'AppleService_AppStore_CiProduct_Relationships_PrimaryRepositories_Data');
 
 class CiProduct_Relationships_PrimaryRepositories extends \Cantie\AppStoreConnect\Model
 {
@@ -363,7 +354,6 @@ class CiProduct_Relationships_PrimaryRepositories extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(CiProduct_Relationships_PrimaryRepositories::class, 'AppleService_AppStore_CiProduct_Relationships_PrimaryRepositories');
 
 class CiProduct_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -421,7 +411,6 @@ class CiProduct_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct_Relationships::class, 'AppleService_AppStore_CiProduct_Relationships');
 
 class CiProduct extends \Cantie\AppStoreConnect\Model
 {
@@ -499,5 +488,4 @@ class CiProduct extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiProduct::class, 'AppleService_AppStore_CiProduct');
 

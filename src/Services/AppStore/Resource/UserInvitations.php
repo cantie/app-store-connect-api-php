@@ -94,4 +94,3 @@ class UserInvitations extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(UserInvitations::class, 'AppleService_AppStore_ResourceUserInvitations');

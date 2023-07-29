@@ -74,7 +74,6 @@ class BuildIcon_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildIcon_Attributes::class, 'AppleService_AppStore_BuildIcon_Attributes');
 
 class BuildIcon extends \Cantie\AppStoreConnect\Model
 {
@@ -135,5 +134,4 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildIcon::class, 'AppleService_AppStore_BuildIcon');
 

@@ -99,5 +99,4 @@ class CustomerReviewsResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CustomerReviewsResponse::class, 'AppleService_AppStore_CustomerReviewsResponse');
 

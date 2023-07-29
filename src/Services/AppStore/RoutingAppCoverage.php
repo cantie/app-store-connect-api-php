@@ -95,7 +95,6 @@ class RoutingAppCoverage_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverage_Attributes::class, 'AppleService_AppStore_RoutingAppCoverage_Attributes');
 
 class RoutingAppCoverage_Relationships_AppStoreVersion_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -122,7 +121,6 @@ class RoutingAppCoverage_Relationships_AppStoreVersion_Links extends \Cantie\App
 	}
 
 }
-class_alias(RoutingAppCoverage_Relationships_AppStoreVersion_Links::class, 'AppleService_AppStore_RoutingAppCoverage_Relationships_AppStoreVersion_Links');
 
 class RoutingAppCoverage_Relationships_AppStoreVersion_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -149,7 +147,6 @@ class RoutingAppCoverage_Relationships_AppStoreVersion_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(RoutingAppCoverage_Relationships_AppStoreVersion_Data::class, 'AppleService_AppStore_RoutingAppCoverage_Relationships_AppStoreVersion_Data');
 
 class RoutingAppCoverage_Relationships_AppStoreVersion extends \Cantie\AppStoreConnect\Model
 {
@@ -190,7 +187,6 @@ class RoutingAppCoverage_Relationships_AppStoreVersion extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(RoutingAppCoverage_Relationships_AppStoreVersion::class, 'AppleService_AppStore_RoutingAppCoverage_Relationships_AppStoreVersion');
 
 class RoutingAppCoverage_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -214,7 +210,6 @@ class RoutingAppCoverage_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverage_Relationships::class, 'AppleService_AppStore_RoutingAppCoverage_Relationships');
 
 class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 {
@@ -292,5 +287,4 @@ class RoutingAppCoverage extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(RoutingAppCoverage::class, 'AppleService_AppStore_RoutingAppCoverage');
 

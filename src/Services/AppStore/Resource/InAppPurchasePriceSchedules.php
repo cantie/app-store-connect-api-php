@@ -97,4 +97,3 @@ class InAppPurchasePriceSchedules extends \Cantie\AppStoreConnect\Services\Resou
     }
 }
 
-class_alias(InAppPurchasePriceSchedules::class, 'AppleService_AppStore_ResourceInAppPurchasePriceSchedules');

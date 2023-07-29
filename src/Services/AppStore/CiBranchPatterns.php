@@ -51,7 +51,6 @@ class CiBranchPatterns_Patterns extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBranchPatterns_Patterns::class, 'AppleService_AppStore_CiBranchPatterns_Patterns');
 
 class CiBranchPatterns extends \Cantie\AppStoreConnect\Model
 {
@@ -85,5 +84,4 @@ class CiBranchPatterns extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiBranchPatterns::class, 'AppleService_AppStore_CiBranchPatterns');
 

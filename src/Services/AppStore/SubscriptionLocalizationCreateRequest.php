@@ -61,7 +61,6 @@ class SubscriptionLocalizationCreateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionLocalizationCreateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionLocalizationCreateRequest_Data_Attributes');
 
 class SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription_Data
 	}
 
 }
-class_alias(SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription_Data');
 
 class SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -112,7 +110,6 @@ class SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription exte
 	}
 
 }
-class_alias(SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionLocalizationCreateRequest_Data_Relationships_Subscription');
 
 class SubscriptionLocalizationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -136,7 +133,6 @@ class SubscriptionLocalizationCreateRequest_Data_Relationships extends \Cantie\A
 	}
 
 }
-class_alias(SubscriptionLocalizationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_SubscriptionLocalizationCreateRequest_Data_Relationships');
 
 class SubscriptionLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -187,7 +183,6 @@ class SubscriptionLocalizationCreateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionLocalizationCreateRequest_Data::class, 'AppleService_AppStore_SubscriptionLocalizationCreateRequest_Data');
 
 class SubscriptionLocalizationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -211,5 +206,4 @@ class SubscriptionLocalizationCreateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(SubscriptionLocalizationCreateRequest::class, 'AppleService_AppStore_SubscriptionLocalizationCreateRequest');
 

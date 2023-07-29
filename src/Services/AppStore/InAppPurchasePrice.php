@@ -61,7 +61,6 @@ class InAppPurchasePrice_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchasePrice_Attributes::class, 'AppleService_AppStore_InAppPurchasePrice_Attributes');
 
 class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -88,7 +87,6 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Links extends \Ca
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Links::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Links');
 
 class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -115,7 +113,6 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data extends \Can
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships_InAppPurchasePricePoint_Data');
 
 class InAppPurchasePrice_Relationships_InAppPurchasePricePoint extends \Cantie\AppStoreConnect\Model
 {
@@ -156,7 +153,6 @@ class InAppPurchasePrice_Relationships_InAppPurchasePricePoint extends \Cantie\A
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships_InAppPurchasePricePoint::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships_InAppPurchasePricePoint');
 
 class InAppPurchasePrice_Relationships_Territory_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -183,7 +179,6 @@ class InAppPurchasePrice_Relationships_Territory_Links extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships_Territory_Links::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships_Territory_Links');
 
 class InAppPurchasePrice_Relationships_Territory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -210,7 +205,6 @@ class InAppPurchasePrice_Relationships_Territory_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships_Territory_Data::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships_Territory_Data');
 
 class InAppPurchasePrice_Relationships_Territory extends \Cantie\AppStoreConnect\Model
 {
@@ -251,7 +245,6 @@ class InAppPurchasePrice_Relationships_Territory extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships_Territory::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships_Territory');
 
 class InAppPurchasePrice_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -292,7 +285,6 @@ class InAppPurchasePrice_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchasePrice_Relationships::class, 'AppleService_AppStore_InAppPurchasePrice_Relationships');
 
 class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 {
@@ -370,5 +362,4 @@ class InAppPurchasePrice extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchasePrice::class, 'AppleService_AppStore_InAppPurchasePrice');
 

@@ -51,7 +51,6 @@ class BuildBetaNotificationCreateRequest_Data_Relationships_Build_Data extends \
 	}
 
 }
-class_alias(BuildBetaNotificationCreateRequest_Data_Relationships_Build_Data::class, 'AppleService_AppStore_BuildBetaNotificationCreateRequest_Data_Relationships_Build_Data');
 
 class BuildBetaNotificationCreateRequest_Data_Relationships_Build extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class BuildBetaNotificationCreateRequest_Data_Relationships_Build extends \Canti
 	}
 
 }
-class_alias(BuildBetaNotificationCreateRequest_Data_Relationships_Build::class, 'AppleService_AppStore_BuildBetaNotificationCreateRequest_Data_Relationships_Build');
 
 class BuildBetaNotificationCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -99,7 +97,6 @@ class BuildBetaNotificationCreateRequest_Data_Relationships extends \Cantie\AppS
 	}
 
 }
-class_alias(BuildBetaNotificationCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BuildBetaNotificationCreateRequest_Data_Relationships');
 
 class BuildBetaNotificationCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -133,7 +130,6 @@ class BuildBetaNotificationCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(BuildBetaNotificationCreateRequest_Data::class, 'AppleService_AppStore_BuildBetaNotificationCreateRequest_Data');
 
 class BuildBetaNotificationCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -157,5 +153,4 @@ class BuildBetaNotificationCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BuildBetaNotificationCreateRequest::class, 'AppleService_AppStore_BuildBetaNotificationCreateRequest');
 

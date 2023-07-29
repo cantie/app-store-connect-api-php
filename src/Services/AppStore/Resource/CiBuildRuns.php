@@ -86,4 +86,3 @@ class CiBuildRuns extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiBuildRuns::class, 'AppleService_AppStore_ResourceCiBuildRuns');

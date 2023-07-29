@@ -51,7 +51,6 @@ class SubscriptionLocalizationUpdateRequest_Data_Attributes extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionLocalizationUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionLocalizationUpdateRequest_Data_Attributes');
 
 class SubscriptionLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class SubscriptionLocalizationUpdateRequest_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionLocalizationUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionLocalizationUpdateRequest_Data');
 
 class SubscriptionLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class SubscriptionLocalizationUpdateRequest extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(SubscriptionLocalizationUpdateRequest::class, 'AppleService_AppStore_SubscriptionLocalizationUpdateRequest');
 

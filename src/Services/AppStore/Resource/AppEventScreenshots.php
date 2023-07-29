@@ -82,4 +82,3 @@ class AppEventScreenshots extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppEventScreenshots::class, 'AppleService_AppStore_ResourceAppEventScreenshots');

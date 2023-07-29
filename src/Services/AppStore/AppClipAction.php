@@ -35,5 +35,4 @@ class AppClipAction extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(AppClipAction::class, 'AppleService_AppStore_AppClipAction');
 

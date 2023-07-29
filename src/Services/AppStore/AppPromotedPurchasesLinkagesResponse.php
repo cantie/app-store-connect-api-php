@@ -51,7 +51,6 @@ class AppPromotedPurchasesLinkagesResponse_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppPromotedPurchasesLinkagesResponse_Data::class, 'AppleService_AppStore_AppPromotedPurchasesLinkagesResponse_Data');
 
 class AppPromotedPurchasesLinkagesResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +108,4 @@ class AppPromotedPurchasesLinkagesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPromotedPurchasesLinkagesResponse::class, 'AppleService_AppStore_AppPromotedPurchasesLinkagesResponse');
 

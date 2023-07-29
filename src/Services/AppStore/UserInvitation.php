@@ -107,7 +107,6 @@ class UserInvitation_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserInvitation_Attributes::class, 'AppleService_AppStore_UserInvitation_Attributes');
 
 class UserInvitation_Relationships_VisibleApps_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -134,7 +133,6 @@ class UserInvitation_Relationships_VisibleApps_Links extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(UserInvitation_Relationships_VisibleApps_Links::class, 'AppleService_AppStore_UserInvitation_Relationships_VisibleApps_Links');
 
 class UserInvitation_Relationships_VisibleApps_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -161,7 +159,6 @@ class UserInvitation_Relationships_VisibleApps_Data extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(UserInvitation_Relationships_VisibleApps_Data::class, 'AppleService_AppStore_UserInvitation_Relationships_VisibleApps_Data');
 
 class UserInvitation_Relationships_VisibleApps extends \Cantie\AppStoreConnect\Model
 {
@@ -219,7 +216,6 @@ class UserInvitation_Relationships_VisibleApps extends \Cantie\AppStoreConnect\M
 	}
 
 }
-class_alias(UserInvitation_Relationships_VisibleApps::class, 'AppleService_AppStore_UserInvitation_Relationships_VisibleApps');
 
 class UserInvitation_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -243,7 +239,6 @@ class UserInvitation_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserInvitation_Relationships::class, 'AppleService_AppStore_UserInvitation_Relationships');
 
 class UserInvitation extends \Cantie\AppStoreConnect\Model
 {
@@ -321,5 +316,4 @@ class UserInvitation extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(UserInvitation::class, 'AppleService_AppStore_UserInvitation');
 

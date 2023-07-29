@@ -51,7 +51,6 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Attributes extends \
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Attributes');
 
 class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferCode_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferC
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferCode_Data::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferCode_Data');
 
 class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferCode extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferC
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferCode::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships_OfferCode');
 
 class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships extend
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data_Relationships');
 
 class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeCreateRequest_Data');
 
 class SubscriptionOfferCodeOneTimeUseCodeCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class SubscriptionOfferCodeOneTimeUseCodeCreateRequest extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeCreateRequest::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeCreateRequest');
 

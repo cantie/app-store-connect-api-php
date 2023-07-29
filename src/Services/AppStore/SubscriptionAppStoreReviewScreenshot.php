@@ -132,7 +132,6 @@ class SubscriptionAppStoreReviewScreenshot_Attributes extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshot_Attributes::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshot_Attributes');
 
 class SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -159,7 +158,6 @@ class SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Links exte
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Links::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Links');
 
 class SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -186,7 +184,6 @@ class SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Data exten
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Data::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshot_Relationships_Subscription_Data');
 
 class SubscriptionAppStoreReviewScreenshot_Relationships_Subscription extends \Cantie\AppStoreConnect\Model
 {
@@ -227,7 +224,6 @@ class SubscriptionAppStoreReviewScreenshot_Relationships_Subscription extends \C
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshot_Relationships_Subscription::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshot_Relationships_Subscription');
 
 class SubscriptionAppStoreReviewScreenshot_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -251,7 +247,6 @@ class SubscriptionAppStoreReviewScreenshot_Relationships extends \Cantie\AppStor
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshot_Relationships::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshot_Relationships');
 
 class SubscriptionAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Model
 {
@@ -329,5 +324,4 @@ class SubscriptionAppStoreReviewScreenshot extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SubscriptionAppStoreReviewScreenshot::class, 'AppleService_AppStore_SubscriptionAppStoreReviewScreenshot');
 

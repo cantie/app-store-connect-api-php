@@ -51,7 +51,6 @@ class InAppPurchasePriceInlineCreate_Attributes extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate_Attributes::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate_Attributes');
 
 class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2_Data extends 
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2_Data::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2_Data');
 
 class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2 extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2 extends \Cant
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate_Relationships_InAppPurchaseV2');
 
 class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -129,7 +126,6 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint_Data 
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint_Data::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint_Data');
 
 class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint extends \Cantie\AppStoreConnect\Model
 {
@@ -153,7 +149,6 @@ class InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint exten
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate_Relationships_InAppPurchasePricePoint');
 
 class InAppPurchasePriceInlineCreate_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -194,7 +189,6 @@ class InAppPurchasePriceInlineCreate_Relationships extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate_Relationships::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate_Relationships');
 
 class InAppPurchasePriceInlineCreate extends \Cantie\AppStoreConnect\Model
 {
@@ -255,5 +249,4 @@ class InAppPurchasePriceInlineCreate extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(InAppPurchasePriceInlineCreate::class, 'AppleService_AppStore_InAppPurchasePriceInlineCreate');
 

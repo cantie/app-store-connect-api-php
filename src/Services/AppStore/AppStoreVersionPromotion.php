@@ -68,5 +68,4 @@ class AppStoreVersionPromotion extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreVersionPromotion::class, 'AppleService_AppStore_AppStoreVersionPromotion');
 

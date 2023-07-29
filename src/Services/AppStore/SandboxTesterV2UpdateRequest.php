@@ -67,7 +67,6 @@ class SandboxTesterV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(SandboxTesterV2UpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SandboxTesterV2UpdateRequest_Data_Attributes');
 
 class SandboxTesterV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -111,7 +110,6 @@ class SandboxTesterV2UpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SandboxTesterV2UpdateRequest_Data::class, 'AppleService_AppStore_SandboxTesterV2UpdateRequest_Data');
 
 class SandboxTesterV2UpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -135,5 +133,4 @@ class SandboxTesterV2UpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(SandboxTesterV2UpdateRequest::class, 'AppleService_AppStore_SandboxTesterV2UpdateRequest');
 

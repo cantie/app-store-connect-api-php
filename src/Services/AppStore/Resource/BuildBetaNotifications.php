@@ -51,4 +51,3 @@ class BuildBetaNotifications extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(BuildBetaNotifications::class, 'AppleService_AppStore_ResourceBuildBetaNotifications');

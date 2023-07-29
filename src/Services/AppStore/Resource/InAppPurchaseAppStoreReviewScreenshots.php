@@ -82,4 +82,3 @@ class InAppPurchaseAppStoreReviewScreenshots extends \Cantie\AppStoreConnect\Ser
     }
 }
 
-class_alias(InAppPurchaseAppStoreReviewScreenshots::class, 'AppleService_AppStore_ResourceInAppPurchaseAppStoreReviewScreenshots');

@@ -51,7 +51,6 @@ class AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse_Data ext
 	}
 
 }
-class_alias(AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse_Data::class, 'AppleService_AppStore_AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse_Data');
 
 class AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse extends \Cantie\AppStoreConnect\Model
 {
@@ -92,5 +91,4 @@ class AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse extends 
 	}
 
 }
-class_alias(AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse::class, 'AppleService_AppStore_AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse');
 

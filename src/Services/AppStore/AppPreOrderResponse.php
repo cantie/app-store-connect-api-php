@@ -82,5 +82,4 @@ class AppPreOrderResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrderResponse::class, 'AppleService_AppStore_AppPreOrderResponse');
 

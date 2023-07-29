@@ -51,4 +51,3 @@ class InAppPurchaseSubmissions extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(InAppPurchaseSubmissions::class, 'AppleService_AppStore_ResourceInAppPurchaseSubmissions');

@@ -76,5 +76,4 @@ class AppEventLocalizationResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventLocalizationResponse::class, 'AppleService_AppStore_AppEventLocalizationResponse');
 

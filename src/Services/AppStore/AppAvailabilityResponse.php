@@ -76,5 +76,4 @@ class AppAvailabilityResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppAvailabilityResponse::class, 'AppleService_AppStore_AppAvailabilityResponse');
 

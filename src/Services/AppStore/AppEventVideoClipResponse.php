@@ -82,5 +82,4 @@ class AppEventVideoClipResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventVideoClipResponse::class, 'AppleService_AppStore_AppEventVideoClipResponse');
 

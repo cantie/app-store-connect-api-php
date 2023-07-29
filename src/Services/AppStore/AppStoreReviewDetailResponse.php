@@ -76,5 +76,4 @@ class AppStoreReviewDetailResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppStoreReviewDetailResponse::class, 'AppleService_AppStore_AppStoreReviewDetailResponse');
 

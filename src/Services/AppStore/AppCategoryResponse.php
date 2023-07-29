@@ -76,5 +76,4 @@ class AppCategoryResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppCategoryResponse::class, 'AppleService_AppStore_AppCategoryResponse');
 

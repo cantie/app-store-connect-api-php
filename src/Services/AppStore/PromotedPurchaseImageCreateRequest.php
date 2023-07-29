@@ -51,7 +51,6 @@ class PromotedPurchaseImageCreateRequest_Data_Attributes extends \Cantie\AppStor
 	}
 
 }
-class_alias(PromotedPurchaseImageCreateRequest_Data_Attributes::class, 'AppleService_AppStore_PromotedPurchaseImageCreateRequest_Data_Attributes');
 
 class PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase_Dat
 	}
 
 }
-class_alias(PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase_Data::class, 'AppleService_AppStore_PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase_Data');
 
 class PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase extends \Cantie\AppStoreConnect\Model
 {
@@ -102,7 +100,6 @@ class PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase ext
 	}
 
 }
-class_alias(PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase::class, 'AppleService_AppStore_PromotedPurchaseImageCreateRequest_Data_Relationships_PromotedPurchase');
 
 class PromotedPurchaseImageCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -126,7 +123,6 @@ class PromotedPurchaseImageCreateRequest_Data_Relationships extends \Cantie\AppS
 	}
 
 }
-class_alias(PromotedPurchaseImageCreateRequest_Data_Relationships::class, 'AppleService_AppStore_PromotedPurchaseImageCreateRequest_Data_Relationships');
 
 class PromotedPurchaseImageCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -177,7 +173,6 @@ class PromotedPurchaseImageCreateRequest_Data extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(PromotedPurchaseImageCreateRequest_Data::class, 'AppleService_AppStore_PromotedPurchaseImageCreateRequest_Data');
 
 class PromotedPurchaseImageCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -201,5 +196,4 @@ class PromotedPurchaseImageCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(PromotedPurchaseImageCreateRequest::class, 'AppleService_AppStore_PromotedPurchaseImageCreateRequest');
 

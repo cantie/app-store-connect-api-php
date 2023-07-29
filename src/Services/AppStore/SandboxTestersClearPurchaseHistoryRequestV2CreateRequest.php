@@ -51,7 +51,6 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	}
 
 }
-class_alias(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships_SandboxTesters_Data::class, 'AppleService_AppStore_SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships_SandboxTesters_Data');
 
 class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships_SandboxTesters extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	}
 
 }
-class_alias(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships_SandboxTesters::class, 'AppleService_AppStore_SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships_SandboxTesters');
 
 class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -99,7 +97,6 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationship
 	}
 
 }
-class_alias(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships::class, 'AppleService_AppStore_SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data_Relationships');
 
 class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -133,7 +130,6 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data extends \Can
 	}
 
 }
-class_alias(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data::class, 'AppleService_AppStore_SandboxTestersClearPurchaseHistoryRequestV2CreateRequest_Data');
 
 class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -157,5 +153,4 @@ class SandboxTestersClearPurchaseHistoryRequestV2CreateRequest extends \Cantie\A
 	}
 
 }
-class_alias(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest::class, 'AppleService_AppStore_SandboxTestersClearPurchaseHistoryRequestV2CreateRequest');
 

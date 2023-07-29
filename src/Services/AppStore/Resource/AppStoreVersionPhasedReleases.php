@@ -71,4 +71,3 @@ class AppStoreVersionPhasedReleases extends \Cantie\AppStoreConnect\Services\Res
     }
 }
 
-class_alias(AppStoreVersionPhasedReleases::class, 'AppleService_AppStore_ResourceAppStoreVersionPhasedReleases');

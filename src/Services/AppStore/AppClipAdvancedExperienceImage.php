@@ -112,7 +112,6 @@ class AppClipAdvancedExperienceImage_Attributes extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(AppClipAdvancedExperienceImage_Attributes::class, 'AppleService_AppStore_AppClipAdvancedExperienceImage_Attributes');
 
 class AppClipAdvancedExperienceImage extends \Cantie\AppStoreConnect\Model
 {
@@ -173,5 +172,4 @@ class AppClipAdvancedExperienceImage extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppClipAdvancedExperienceImage::class, 'AppleService_AppStore_AppClipAdvancedExperienceImage');
 

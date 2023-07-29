@@ -81,7 +81,6 @@ class Actor_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Actor_Attributes::class, 'AppleService_AppStore_Actor_Attributes');
 
 class Actor extends \Cantie\AppStoreConnect\Model
 {
@@ -142,5 +141,4 @@ class Actor extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(Actor::class, 'AppleService_AppStore_Actor');
 

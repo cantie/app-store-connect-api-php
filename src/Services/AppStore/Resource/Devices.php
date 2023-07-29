@@ -84,4 +84,3 @@ class Devices extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(Devices::class, 'AppleService_AppStore_ResourceDevices');

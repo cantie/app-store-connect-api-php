@@ -82,5 +82,4 @@ class CiIssuesResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiIssuesResponse::class, 'AppleService_AppStore_CiIssuesResponse');
 

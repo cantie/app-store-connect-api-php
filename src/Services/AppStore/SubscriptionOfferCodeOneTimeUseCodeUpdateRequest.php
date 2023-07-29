@@ -41,7 +41,6 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data_Attributes extends \
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data_Attributes');
 
 class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data extends \Cantie\AppS
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeUpdateRequest_Data');
 
 class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class SubscriptionOfferCodeOneTimeUseCodeUpdateRequest extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(SubscriptionOfferCodeOneTimeUseCodeUpdateRequest::class, 'AppleService_AppStore_SubscriptionOfferCodeOneTimeUseCodeUpdateRequest');
 

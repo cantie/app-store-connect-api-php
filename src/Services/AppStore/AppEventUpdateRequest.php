@@ -78,7 +78,6 @@ class AppEventUpdateRequest_Data_Attributes_TerritorySchedules extends \Cantie\A
 	}
 
 }
-class_alias(AppEventUpdateRequest_Data_Attributes_TerritorySchedules::class, 'AppleService_AppStore_AppEventUpdateRequest_Data_Attributes_TerritorySchedules');
 
 class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -172,7 +171,6 @@ class AppEventUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppEventUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppEventUpdateRequest_Data_Attributes');
 
 class AppEventUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -216,7 +214,6 @@ class AppEventUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventUpdateRequest_Data::class, 'AppleService_AppStore_AppEventUpdateRequest_Data');
 
 class AppEventUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -240,5 +237,4 @@ class AppEventUpdateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEventUpdateRequest::class, 'AppleService_AppStore_AppEventUpdateRequest');
 

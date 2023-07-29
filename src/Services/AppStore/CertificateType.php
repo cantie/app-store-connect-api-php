@@ -43,5 +43,4 @@ class CertificateType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(CertificateType::class, 'AppleService_AppStore_CertificateType');
 

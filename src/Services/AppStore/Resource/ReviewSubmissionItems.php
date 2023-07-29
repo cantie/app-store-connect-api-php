@@ -71,4 +71,3 @@ class ReviewSubmissionItems extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(ReviewSubmissionItems::class, 'AppleService_AppStore_ResourceReviewSubmissionItems');

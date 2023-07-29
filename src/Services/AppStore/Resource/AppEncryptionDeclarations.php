@@ -98,4 +98,3 @@ class AppEncryptionDeclarations extends \Cantie\AppStoreConnect\Services\Resourc
     }
 }
 
-class_alias(AppEncryptionDeclarations::class, 'AppleService_AppStore_ResourceAppEncryptionDeclarations');

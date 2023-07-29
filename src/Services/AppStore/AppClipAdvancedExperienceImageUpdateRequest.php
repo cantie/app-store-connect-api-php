@@ -51,7 +51,6 @@ class AppClipAdvancedExperienceImageUpdateRequest_Data_Attributes extends \Canti
 	}
 
 }
-class_alias(AppClipAdvancedExperienceImageUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_AppClipAdvancedExperienceImageUpdateRequest_Data_Attributes');
 
 class AppClipAdvancedExperienceImageUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -95,7 +94,6 @@ class AppClipAdvancedExperienceImageUpdateRequest_Data extends \Cantie\AppStoreC
 	}
 
 }
-class_alias(AppClipAdvancedExperienceImageUpdateRequest_Data::class, 'AppleService_AppStore_AppClipAdvancedExperienceImageUpdateRequest_Data');
 
 class AppClipAdvancedExperienceImageUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -119,5 +117,4 @@ class AppClipAdvancedExperienceImageUpdateRequest extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppClipAdvancedExperienceImageUpdateRequest::class, 'AppleService_AppStore_AppClipAdvancedExperienceImageUpdateRequest');
 

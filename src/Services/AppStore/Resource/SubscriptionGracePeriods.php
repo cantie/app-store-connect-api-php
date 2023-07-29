@@ -63,4 +63,3 @@ class SubscriptionGracePeriods extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(SubscriptionGracePeriods::class, 'AppleService_AppStore_ResourceSubscriptionGracePeriods');

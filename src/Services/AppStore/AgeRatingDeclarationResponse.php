@@ -65,5 +65,4 @@ class AgeRatingDeclarationResponse extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AgeRatingDeclarationResponse::class, 'AppleService_AppStore_AgeRatingDeclarationResponse');
 

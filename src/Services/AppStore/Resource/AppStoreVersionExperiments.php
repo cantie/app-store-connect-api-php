@@ -147,4 +147,3 @@ class AppStoreVersionExperiments extends \Cantie\AppStoreConnect\Services\Resour
     }
 }
 
-class_alias(AppStoreVersionExperiments::class, 'AppleService_AppStore_ResourceAppStoreVersionExperiments');

@@ -73,4 +73,3 @@ class AppEncryptionDeclarationDocuments extends \Cantie\AppStoreConnect\Services
     }
 }
 
-class_alias(AppEncryptionDeclarationDocuments::class, 'AppleService_AppStore_ResourceAppEncryptionDeclarationDocuments');

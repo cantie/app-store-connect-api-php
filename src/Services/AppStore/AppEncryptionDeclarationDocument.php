@@ -115,7 +115,6 @@ class AppEncryptionDeclarationDocument_Attributes extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocument_Attributes::class, 'AppleService_AppStore_AppEncryptionDeclarationDocument_Attributes');
 
 class AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 {
@@ -176,5 +175,4 @@ class AppEncryptionDeclarationDocument extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppEncryptionDeclarationDocument::class, 'AppleService_AppStore_AppEncryptionDeclarationDocument');
 

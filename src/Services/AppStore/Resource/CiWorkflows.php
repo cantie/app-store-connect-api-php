@@ -106,4 +106,3 @@ class CiWorkflows extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(CiWorkflows::class, 'AppleService_AppStore_ResourceCiWorkflows');

@@ -47,5 +47,4 @@ class PreviewType extends \Cantie\AppStoreConnect\Model
 
 
 }
-class_alias(PreviewType::class, 'AppleService_AppStore_PreviewType');
 

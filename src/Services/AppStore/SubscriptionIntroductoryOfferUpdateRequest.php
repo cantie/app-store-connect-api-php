@@ -41,7 +41,6 @@ class SubscriptionIntroductoryOfferUpdateRequest_Data_Attributes extends \Cantie
 	}
 
 }
-class_alias(SubscriptionIntroductoryOfferUpdateRequest_Data_Attributes::class, 'AppleService_AppStore_SubscriptionIntroductoryOfferUpdateRequest_Data_Attributes');
 
 class SubscriptionIntroductoryOfferUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -85,7 +84,6 @@ class SubscriptionIntroductoryOfferUpdateRequest_Data extends \Cantie\AppStoreCo
 	}
 
 }
-class_alias(SubscriptionIntroductoryOfferUpdateRequest_Data::class, 'AppleService_AppStore_SubscriptionIntroductoryOfferUpdateRequest_Data');
 
 class SubscriptionIntroductoryOfferUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -109,5 +107,4 @@ class SubscriptionIntroductoryOfferUpdateRequest extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(SubscriptionIntroductoryOfferUpdateRequest::class, 'AppleService_AppStore_SubscriptionIntroductoryOfferUpdateRequest');
 

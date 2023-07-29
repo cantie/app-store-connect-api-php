@@ -87,7 +87,6 @@ class CiTestResult_Attributes_DestinationTestResults extends \Cantie\AppStoreCon
 	}
 
 }
-class_alias(CiTestResult_Attributes_DestinationTestResults::class, 'AppleService_AppStore_CiTestResult_Attributes_DestinationTestResults');
 
 class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 {
@@ -174,7 +173,6 @@ class CiTestResult_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTestResult_Attributes::class, 'AppleService_AppStore_CiTestResult_Attributes');
 
 class CiTestResult extends \Cantie\AppStoreConnect\Model
 {
@@ -235,5 +233,4 @@ class CiTestResult extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(CiTestResult::class, 'AppleService_AppStore_CiTestResult');
 

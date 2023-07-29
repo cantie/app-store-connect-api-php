@@ -154,4 +154,3 @@ class AppInfos extends \Cantie\AppStoreConnect\Services\Resource
     }
 }
 
-class_alias(AppInfos::class, 'AppleService_AppStore_ResourceAppInfos');

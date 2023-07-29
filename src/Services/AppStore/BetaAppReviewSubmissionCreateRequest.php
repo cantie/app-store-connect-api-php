@@ -51,7 +51,6 @@ class BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build_Data extends
 	}
 
 }
-class_alias(BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build_Data::class, 'AppleService_AppStore_BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build_Data');
 
 class BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build extends \Cantie\AppStoreConnect\Model
 {
@@ -75,7 +74,6 @@ class BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build extends \Can
 	}
 
 }
-class_alias(BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build::class, 'AppleService_AppStore_BetaAppReviewSubmissionCreateRequest_Data_Relationships_Build');
 
 class BetaAppReviewSubmissionCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -99,7 +97,6 @@ class BetaAppReviewSubmissionCreateRequest_Data_Relationships extends \Cantie\Ap
 	}
 
 }
-class_alias(BetaAppReviewSubmissionCreateRequest_Data_Relationships::class, 'AppleService_AppStore_BetaAppReviewSubmissionCreateRequest_Data_Relationships');
 
 class BetaAppReviewSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -133,7 +130,6 @@ class BetaAppReviewSubmissionCreateRequest_Data extends \Cantie\AppStoreConnect\
 	}
 
 }
-class_alias(BetaAppReviewSubmissionCreateRequest_Data::class, 'AppleService_AppStore_BetaAppReviewSubmissionCreateRequest_Data');
 
 class BetaAppReviewSubmissionCreateRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -157,5 +153,4 @@ class BetaAppReviewSubmissionCreateRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(BetaAppReviewSubmissionCreateRequest::class, 'AppleService_AppStore_BetaAppReviewSubmissionCreateRequest');
 

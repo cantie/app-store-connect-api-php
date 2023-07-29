@@ -141,7 +141,6 @@ class ScmPullRequest_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmPullRequest_Attributes::class, 'AppleService_AppStore_ScmPullRequest_Attributes');
 
 class ScmPullRequest_Relationships_Repository_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -168,7 +167,6 @@ class ScmPullRequest_Relationships_Repository_Links extends \Cantie\AppStoreConn
 	}
 
 }
-class_alias(ScmPullRequest_Relationships_Repository_Links::class, 'AppleService_AppStore_ScmPullRequest_Relationships_Repository_Links');
 
 class ScmPullRequest_Relationships_Repository_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -195,7 +193,6 @@ class ScmPullRequest_Relationships_Repository_Data extends \Cantie\AppStoreConne
 	}
 
 }
-class_alias(ScmPullRequest_Relationships_Repository_Data::class, 'AppleService_AppStore_ScmPullRequest_Relationships_Repository_Data');
 
 class ScmPullRequest_Relationships_Repository extends \Cantie\AppStoreConnect\Model
 {
@@ -236,7 +233,6 @@ class ScmPullRequest_Relationships_Repository extends \Cantie\AppStoreConnect\Mo
 	}
 
 }
-class_alias(ScmPullRequest_Relationships_Repository::class, 'AppleService_AppStore_ScmPullRequest_Relationships_Repository');
 
 class ScmPullRequest_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -260,7 +256,6 @@ class ScmPullRequest_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmPullRequest_Relationships::class, 'AppleService_AppStore_ScmPullRequest_Relationships');
 
 class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 {
@@ -338,5 +333,4 @@ class ScmPullRequest extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ScmPullRequest::class, 'AppleService_AppStore_ScmPullRequest');
 

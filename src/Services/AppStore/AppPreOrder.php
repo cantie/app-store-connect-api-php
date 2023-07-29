@@ -51,7 +51,6 @@ class AppPreOrder_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrder_Attributes::class, 'AppleService_AppStore_AppPreOrder_Attributes');
 
 class AppPreOrder_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppPreOrder_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrder_Relationships_App_Links::class, 'AppleService_AppStore_AppPreOrder_Relationships_App_Links');
 
 class AppPreOrder_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +103,6 @@ class AppPreOrder_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrder_Relationships_App_Data::class, 'AppleService_AppStore_AppPreOrder_Relationships_App_Data');
 
 class AppPreOrder_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
@@ -146,7 +143,6 @@ class AppPreOrder_Relationships_App extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrder_Relationships_App::class, 'AppleService_AppStore_AppPreOrder_Relationships_App');
 
 class AppPreOrder_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -170,7 +166,6 @@ class AppPreOrder_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrder_Relationships::class, 'AppleService_AppStore_AppPreOrder_Relationships');
 
 class AppPreOrder extends \Cantie\AppStoreConnect\Model
 {
@@ -248,5 +243,4 @@ class AppPreOrder extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPreOrder::class, 'AppleService_AppStore_AppPreOrder');
 

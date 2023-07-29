@@ -41,5 +41,4 @@ class ErrorSourceParameter extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(ErrorSourceParameter::class, 'AppleService_AppStore_ErrorSourceParameter');
 

@@ -51,7 +51,6 @@ class AppPricePoint_Attributes extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPricePoint_Attributes::class, 'AppleService_AppStore_AppPricePoint_Attributes');
 
 class AppPricePoint_Relationships_PriceTier_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -78,7 +77,6 @@ class AppPricePoint_Relationships_PriceTier_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppPricePoint_Relationships_PriceTier_Links::class, 'AppleService_AppStore_AppPricePoint_Relationships_PriceTier_Links');
 
 class AppPricePoint_Relationships_PriceTier_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -105,7 +103,6 @@ class AppPricePoint_Relationships_PriceTier_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppPricePoint_Relationships_PriceTier_Data::class, 'AppleService_AppStore_AppPricePoint_Relationships_PriceTier_Data');
 
 class AppPricePoint_Relationships_PriceTier extends \Cantie\AppStoreConnect\Model
 {
@@ -146,7 +143,6 @@ class AppPricePoint_Relationships_PriceTier extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppPricePoint_Relationships_PriceTier::class, 'AppleService_AppStore_AppPricePoint_Relationships_PriceTier');
 
 class AppPricePoint_Relationships_Territory_Links extends \Cantie\AppStoreConnect\Model
 {
@@ -173,7 +169,6 @@ class AppPricePoint_Relationships_Territory_Links extends \Cantie\AppStoreConnec
 	}
 
 }
-class_alias(AppPricePoint_Relationships_Territory_Links::class, 'AppleService_AppStore_AppPricePoint_Relationships_Territory_Links');
 
 class AppPricePoint_Relationships_Territory_Data extends \Cantie\AppStoreConnect\Model
 {
@@ -200,7 +195,6 @@ class AppPricePoint_Relationships_Territory_Data extends \Cantie\AppStoreConnect
 	}
 
 }
-class_alias(AppPricePoint_Relationships_Territory_Data::class, 'AppleService_AppStore_AppPricePoint_Relationships_Territory_Data');
 
 class AppPricePoint_Relationships_Territory extends \Cantie\AppStoreConnect\Model
 {
@@ -241,7 +235,6 @@ class AppPricePoint_Relationships_Territory extends \Cantie\AppStoreConnect\Mode
 	}
 
 }
-class_alias(AppPricePoint_Relationships_Territory::class, 'AppleService_AppStore_AppPricePoint_Relationships_Territory');
 
 class AppPricePoint_Relationships extends \Cantie\AppStoreConnect\Model
 {
@@ -282,7 +275,6 @@ class AppPricePoint_Relationships extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPricePoint_Relationships::class, 'AppleService_AppStore_AppPricePoint_Relationships');
 
 class AppPricePoint extends \Cantie\AppStoreConnect\Model
 {
@@ -360,5 +352,4 @@ class AppPricePoint extends \Cantie\AppStoreConnect\Model
 	}
 
 }
-class_alias(AppPricePoint::class, 'AppleService_AppStore_AppPricePoint');
 
