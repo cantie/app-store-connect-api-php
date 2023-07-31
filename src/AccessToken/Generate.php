@@ -50,7 +50,7 @@ class Generate
         return [
             'iss' => $issuerId,
             'iat' => Carbon::now()->timestamp,
-            'exp' => Carbon::now()->addMinutes(config('appstore-connect.jwt.lifetime', 15))->timestamp,
+            'exp' => Carbon::now()->addMinutes(10)->timestamp,
             'aud' => 'appstoreconnect-v1'
         ];
     }
