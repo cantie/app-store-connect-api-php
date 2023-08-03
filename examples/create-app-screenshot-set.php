@@ -53,7 +53,6 @@ $request = new AppScreenshotSetCreateRequest([
   ]
 ]);
 $ret = $appstore->appScreenshotSets->createAppScreenshotSets($request);
-var_dump($ret);
 ?>
 
 <h3>Results:</h3>
