@@ -15,8 +15,18 @@ Once composer is installed, execute the following command in your project root t
 ```sh
 composer require cantie/app-store-connect-api
 ```
+## Examples ##
+See the [`examples/`](examples) directory for examples of some APIs. You can
+view them in your browser by running the php built-in web server.
 
-## Basic Example ##
+```
+$ php -S localhost:8000 -t examples/
+```
+
+And then browsing to the host and port you specified
+(in the above example, `http://localhost:8000`).
+
+### Basic Example ###
 ```php
 use AppleClient;
 use AppleService_AppStore;
@@ -66,7 +76,7 @@ foreach ($results->getData() as $app) {
 }
 ```
 
-## Create new client ##
+### Create new client ###
 ```php
 use AppleClient;
 
@@ -78,7 +88,7 @@ $client->setKeyIdentifier($keyIdentifier);
 $client->generateToken();
 ```
 
-## Making a request ##
+### Making a request ###
 For almost all request except upload service, we use AppStore service to handle
 ```php
 use AppleService_AppStore;
@@ -89,7 +99,7 @@ $appstore->apps->listAppsAppStoreVersions($APP_ID_HERE, $OPTIONAL_PARAMS);
 ```
 For detail, you can view in src/Services/AppStore/Resource/*
 
-## Aliases ##
+### Aliases ###
 Basic classes are aliased for convenient use, see more at src/aliases.php
 
 ```php
@@ -101,7 +111,7 @@ $classMap = [
 ];
 ```
 
-## Upload assets to App Store Connect ##
+### Upload assets to App Store Connect ###
 In this example we will upload one screenshot file to app screenshot set
 ```php
 // Firstly, we get app screenshot set step by step, we can reduce steps by include[] parameters in query
@@ -165,7 +175,7 @@ $appScreenshotUpdateRequest = new AppScreenshotUpdateRequest([
 $ret = $appstore->appScreenshots->updateAppScreenshots($appScreenshotId, $appScreenshotUpdateRequest); 
 ```
 
-## Initialize classes ##
+### Initialize classes ###
 All object classes are extended from Model.php can be initialized by an array of attribute names and values, as previous example:
 ```php
 use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotUpdateRequest;
@@ -181,7 +191,7 @@ $appScreenshotUpdateRequest = new AppScreenshotUpdateRequest([
 ]);
 ```
 
-## Caching ##
+### Caching ###
 JWT token are cached for 10 minutes and only be created if doesn't existed or has been expired. JWT token is not shared between clients. Each client has its own token as defined in src/Client.php
 ```php
 public function generateToken()
