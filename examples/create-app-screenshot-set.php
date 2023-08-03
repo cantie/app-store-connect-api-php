@@ -2,8 +2,9 @@
 
 include_once __DIR__ . '/../vendor/autoload.php';
 include_once "templates/base.php";
+use Cantie\AppStoreConnect\Services\AppStore\AppScreenshotSetCreateRequest;
 
-echo pageHeader("List App Screenshot Sets");
+echo pageHeader("Create App Screenshot Sets");
 $localizationId = null;
 ?>
 
@@ -17,6 +18,7 @@ $localizationId = null;
 <?php if ($localizationId == null) : ?>
 <div class="api-key">
   <strong>Enter App Localization ID</strong>
+  <strong>This example will create set APP_IPHONE_67</strong>
   <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
     App Localization ID:<input type="text" name="localization_id" placeholder="Localization-ID" required/>
     <input type="submit" value="Set Localization-ID"/>
@@ -34,7 +36,24 @@ $client->setIssuerId(getData('issuer_id'));
 $client->setKeyIdentifier(getData('key_identifier'));
 
 $appstore = new AppleService_AppStore($client);
-$ret = $appstore->appStoreVersionLocalizations->listAppStoreVersionLocalizationsAppScreenshotSets($localizationId);
+$request = new AppScreenshotSetCreateRequest([
+  'data' => [
+    'type' => 'appScreenshotSets',
+    'attributes' => [
+      'screenshotDisplayType' => 'APP_IPHONE_67'
+    ],
+    'relationships' => [
+      'appStoreVersionLocalization' => [
+        'data' => [
+          'type' => 'appStoreVersionLocalizations',
+          'id' => $localizationId
+        ]
+      ]
+    ]
+  ]
+]);
+$ret = $appstore->appScreenshotSets->createAppScreenshotSets($request);
+var_dump($ret);
 ?>
 
 <h3>Results:</h3>
