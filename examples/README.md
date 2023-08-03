@@ -1,4 +1,4 @@
-# Examples for Google APIs Client Library for PHP #
+# Examples for App Store Connect APIs Client Library for PHP #
 
 ## How to run the examples ##
 
