@@ -46,7 +46,7 @@ function missingApiKeyPathWarning()
 {
     $ret = "
     <h3 class='warn'>
-      Warning: You need to set a API key path of your local machine
+      Warning: You need to set a API key path
     </h3>";
 
     return $ret;
