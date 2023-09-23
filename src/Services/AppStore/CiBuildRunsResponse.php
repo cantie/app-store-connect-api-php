@@ -30,7 +30,7 @@ class CiBuildRunsResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = CiBuildRun::class;
 	protected $dataDataType = 'array';
-	protected $includedType = [Build::class, CiWorkflow::class, CiProduct::class, ScmGitReference::class, ScmGitReference::class, ScmPullRequest::class];
+	protected $includedType = [Build::class, CiWorkflow::class, CiProduct::class, ScmGitReference::class, ScmPullRequest::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';

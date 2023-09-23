@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
 use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationDocumentResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationBuildsLinkagesRequest;
 
@@ -67,13 +67,13 @@ class AppEncryptionDeclarations extends \Cantie\AppStoreConnect\Services\Resourc
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getAppEncryptionDeclarationsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAppEncryptionDeclarationsApp', [$params], AppResponse::class);
+        return $this->call('getAppEncryptionDeclarationsApp', [$params], AppWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource

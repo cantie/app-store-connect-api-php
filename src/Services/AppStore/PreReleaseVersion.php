@@ -26,7 +26,7 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class PreReleaseVersion_Attributes extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $version;
 	public $platform; // 
@@ -58,7 +58,7 @@ class PreReleaseVersion_Attributes extends \Cantie\AppStoreConnect\Model
 
 }
 
-class PreReleaseVersion_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships_Builds_Links extends \Cantie\AppStoreConnect\Model
 {
 	public $self;
 	public $related;
@@ -84,7 +84,7 @@ class PreReleaseVersion_Relationships_Builds_Links extends \Cantie\AppStoreConne
 
 }
 
-class PreReleaseVersion_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships_Builds_Data extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'builds';
 	public $id;
@@ -110,24 +110,24 @@ class PreReleaseVersion_Relationships_Builds_Data extends \Cantie\AppStoreConnec
 
 }
 
-class PreReleaseVersion_Relationships_Builds extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships_Builds extends \Cantie\AppStoreConnect\Model
 {
-	protected $linksType = PreReleaseVersion_Relationships_Builds_Links::class;
+	protected $linksType = PrereleaseVersion_Relationships_Builds_Links::class;
 	protected $linksDataType = 'object';
 	protected $metaType = PagingInformation::class;
 	protected $metaDataType = '';
-	protected $dataType = PreReleaseVersion_Relationships_Builds_Data::class;
+	protected $dataType = PrereleaseVersion_Relationships_Builds_Data::class;
 	protected $dataDataType = 'array';
 
 	/**
-	* @return  PreReleaseVersion_Relationships_Builds_Links
+	* @return  PrereleaseVersion_Relationships_Builds_Links
 	*/
 	public function getLinks()
 	{
 		return $this->links;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships_Builds_Links
+	* @param  PrereleaseVersion_Relationships_Builds_Links
 	*/
 	public function setLinks($links)
 	{
@@ -150,14 +150,14 @@ class PreReleaseVersion_Relationships_Builds extends \Cantie\AppStoreConnect\Mod
 		return $this;
 	}
 	/**
-	* @return  PreReleaseVersion_Relationships_Builds_Data[]
+	* @return  PrereleaseVersion_Relationships_Builds_Data[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships_Builds_Data[]
+	* @param  PrereleaseVersion_Relationships_Builds_Data[]
 	*/
 	public function setData($data)
 	{
@@ -167,7 +167,7 @@ class PreReleaseVersion_Relationships_Builds extends \Cantie\AppStoreConnect\Mod
 
 }
 
-class PreReleaseVersion_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships_App_Links extends \Cantie\AppStoreConnect\Model
 {
 	public $self;
 	public $related;
@@ -193,7 +193,7 @@ class PreReleaseVersion_Relationships_App_Links extends \Cantie\AppStoreConnect\
 
 }
 
-class PreReleaseVersion_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships_App_Data extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'apps';
 	public $id;
@@ -219,22 +219,22 @@ class PreReleaseVersion_Relationships_App_Data extends \Cantie\AppStoreConnect\M
 
 }
 
-class PreReleaseVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
 {
-	protected $linksType = PreReleaseVersion_Relationships_App_Links::class;
+	protected $linksType = PrereleaseVersion_Relationships_App_Links::class;
 	protected $linksDataType = 'object';
-	protected $dataType = PreReleaseVersion_Relationships_App_Data::class;
+	protected $dataType = PrereleaseVersion_Relationships_App_Data::class;
 	protected $dataDataType = 'object';
 
 	/**
-	* @return  PreReleaseVersion_Relationships_App_Links
+	* @return  PrereleaseVersion_Relationships_App_Links
 	*/
 	public function getLinks()
 	{
 		return $this->links;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships_App_Links
+	* @param  PrereleaseVersion_Relationships_App_Links
 	*/
 	public function setLinks($links)
 	{
@@ -242,14 +242,14 @@ class PreReleaseVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  PreReleaseVersion_Relationships_App_Data
+	* @return  PrereleaseVersion_Relationships_App_Data
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships_App_Data
+	* @param  PrereleaseVersion_Relationships_App_Data
 	*/
 	public function setData($data)
 	{
@@ -259,22 +259,22 @@ class PreReleaseVersion_Relationships_App extends \Cantie\AppStoreConnect\Model
 
 }
 
-class PreReleaseVersion_Relationships extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion_Relationships extends \Cantie\AppStoreConnect\Model
 {
-	protected $buildsType = PreReleaseVersion_Relationships_Builds::class;
+	protected $buildsType = PrereleaseVersion_Relationships_Builds::class;
 	protected $buildsDataType = 'object';
-	protected $appType = PreReleaseVersion_Relationships_App::class;
+	protected $appType = PrereleaseVersion_Relationships_App::class;
 	protected $appDataType = 'object';
 
 	/**
-	* @return  PreReleaseVersion_Relationships_Builds
+	* @return  PrereleaseVersion_Relationships_Builds
 	*/
 	public function getBuilds()
 	{
 		return $this->builds;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships_Builds
+	* @param  PrereleaseVersion_Relationships_Builds
 	*/
 	public function setBuilds($builds)
 	{
@@ -282,14 +282,14 @@ class PreReleaseVersion_Relationships extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  PreReleaseVersion_Relationships_App
+	* @return  PrereleaseVersion_Relationships_App
 	*/
 	public function getApp()
 	{
 		return $this->app;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships_App
+	* @param  PrereleaseVersion_Relationships_App
 	*/
 	public function setApp($app)
 	{
@@ -299,13 +299,13 @@ class PreReleaseVersion_Relationships extends \Cantie\AppStoreConnect\Model
 
 }
 
-class PreReleaseVersion extends \Cantie\AppStoreConnect\Model
+class PrereleaseVersion extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'preReleaseVersions';
 	public $id;
-	protected $attributesType = PreReleaseVersion_Attributes::class;
+	protected $attributesType = PrereleaseVersion_Attributes::class;
 	protected $attributesDataType = 'object';
-	protected $relationshipsType = PreReleaseVersion_Relationships::class;
+	protected $relationshipsType = PrereleaseVersion_Relationships::class;
 	protected $relationshipsDataType = 'object';
 	protected $linksType = ResourceLinks::class;
 	protected $linksDataType = '';
@@ -329,14 +329,14 @@ class PreReleaseVersion extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  PreReleaseVersion_Attributes
+	* @return  PrereleaseVersion_Attributes
 	*/
 	public function getAttributes()
 	{
 		return $this->attributes;
 	}
 	/**
-	* @param  PreReleaseVersion_Attributes
+	* @param  PrereleaseVersion_Attributes
 	*/
 	public function setAttributes($attributes)
 	{
@@ -344,14 +344,14 @@ class PreReleaseVersion extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  PreReleaseVersion_Relationships
+	* @return  PrereleaseVersion_Relationships
 	*/
 	public function getRelationships()
 	{
 		return $this->relationships;
 	}
 	/**
-	* @param  PreReleaseVersion_Relationships
+	* @param  PrereleaseVersion_Relationships
 	*/
 	public function setRelationships($relationships)
 	{

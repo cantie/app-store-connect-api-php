@@ -30,7 +30,7 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaAppLocalizationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppLocalizationResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppLocalizationCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppLocalizationUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
 
 /**
  * The "betaAppLocalizations" collection of methods.
@@ -95,13 +95,13 @@ class BetaAppLocalizations extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getBetaAppLocalizationsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBetaAppLocalizationsApp', [$params], AppResponse::class);
+        return $this->call('getBetaAppLocalizationsApp', [$params], AppWithoutIncludesResponse::class);
     }
 }
 

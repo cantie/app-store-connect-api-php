@@ -29,22 +29,22 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildAppEncryptionDeclarationLinkageResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildAppEncryptionDeclarationLinkageRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppEncryptionDeclarationWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionResponse;
-use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionResponse;
-use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationsWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBetaGroupsLinkagesRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\DiagnosticSignaturesResponse;
-use Cantie\AppStoreConnect\Services\AppStore\BuildIconsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildIconsWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildIndividualTestersLinkagesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildIndividualTestersLinkagesRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BetaTestersResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaTestersWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\xcodeMetrics;
-use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionResponse;
+use Cantie\AppStoreConnect\Services\AppStore\PrereleaseVersionWithoutIncludesResponse;
 
 /**
  * The "builds" collection of methods.
@@ -91,13 +91,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getBuildsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildsApp', [$params], AppResponse::class);
+        return $this->call('getBuildsApp', [$params], AppWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -121,13 +121,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppEncryptionDeclarationResponse
+     * @return AppEncryptionDeclarationWithoutIncludesResponse
      */
     public function getBuildsAppEncryptionDeclaration($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildsAppEncryptionDeclaration', [$params], AppEncryptionDeclarationResponse::class);
+        return $this->call('getBuildsAppEncryptionDeclaration', [$params], AppEncryptionDeclarationWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -143,24 +143,24 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BetaAppReviewSubmissionResponse
+     * @return BetaAppReviewSubmissionWithoutIncludesResponse
      */
     public function getBuildsBetaAppReviewSubmission($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildsBetaAppReviewSubmission', [$params], BetaAppReviewSubmissionResponse::class);
+        return $this->call('getBuildsBetaAppReviewSubmission', [$params], BetaAppReviewSubmissionWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BetaBuildLocalizationsResponse
+     * @return BetaBuildLocalizationsWithoutIncludesResponse
      */
     public function listBuildsBetaBuildLocalizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBuildsBetaBuildLocalizations', [$params], BetaBuildLocalizationsResponse::class);
+        return $this->call('listBuildsBetaBuildLocalizations', [$params], BetaBuildLocalizationsWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -185,13 +185,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildBetaDetailResponse
+     * @return BuildBetaDetailWithoutIncludesResponse
      */
     public function getBuildsBuildBetaDetail($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildsBuildBetaDetail', [$params], BuildBetaDetailResponse::class);
+        return $this->call('getBuildsBuildBetaDetail', [$params], BuildBetaDetailWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -207,13 +207,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildIconsResponse
+     * @return BuildIconsWithoutIncludesResponse
      */
     public function listBuildsIcons($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBuildsIcons', [$params], BuildIconsResponse::class);
+        return $this->call('listBuildsIcons', [$params], BuildIconsWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -249,13 +249,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BetaTestersResponse
+     * @return BetaTestersWithoutIncludesResponse
      */
     public function listBuildsIndividualTesters($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBuildsIndividualTesters', [$params], BetaTestersResponse::class);
+        return $this->call('listBuildsIndividualTesters', [$params], BetaTestersWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -271,13 +271,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return PreReleaseVersionResponse
+     * @return PrereleaseVersionWithoutIncludesResponse
      */
     public function getBuildsPreReleaseVersion($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildsPreReleaseVersion', [$params], PreReleaseVersionResponse::class);
+        return $this->call('getBuildsPreReleaseVersion', [$params], PrereleaseVersionWithoutIncludesResponse::class);
     }
 }
 

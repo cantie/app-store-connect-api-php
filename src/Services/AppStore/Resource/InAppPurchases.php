@@ -64,10 +64,10 @@ class InAppPurchases extends \Cantie\AppStoreConnect\Services\Resource
 	 * @param InAppPurchaseV2CreateRequest $postBody
      * @return InAppPurchaseV2Response
      */
-    public function createInAppPurchases(InAppPurchaseV2CreateRequest $postBody)
+    public function createInAppPurchasesV2(InAppPurchaseV2CreateRequest $postBody)
     {
 		$params = ['postBody' => $postBody];
-        return $this->call('createInAppPurchases', [$params], InAppPurchaseV2Response::class);
+        return $this->call('createInAppPurchasesV2', [$params], InAppPurchaseV2Response::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -85,96 +85,96 @@ class InAppPurchases extends \Cantie\AppStoreConnect\Services\Resource
 	 * @param InAppPurchaseV2UpdateRequest $postBody
      * @return InAppPurchaseV2Response
      */
-    public function updateInAppPurchases($id, InAppPurchaseV2UpdateRequest $postBody)
+    public function updateInAppPurchasesV2($id, InAppPurchaseV2UpdateRequest $postBody)
     {
 		$params = ['id' => $id, 'postBody' => $postBody];
-        return $this->call('updateInAppPurchases', [$params], InAppPurchaseV2Response::class);
+        return $this->call('updateInAppPurchasesV2', [$params], InAppPurchaseV2Response::class);
     }
     /**
 	 * @param string $id the id of the requested resource
      * @return null
      */
-    public function deleteInAppPurchases($id)
+    public function deleteInAppPurchasesV2($id)
     {
 		$params = ['id' => $id];
-        return $this->call('deleteInAppPurchases', [$params], null);
+        return $this->call('deleteInAppPurchasesV2', [$params], null);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return InAppPurchaseAppStoreReviewScreenshotResponse
      */
-    public function getInAppPurchasesAppStoreReviewScreenshot($id, $optParams = [])
+    public function getInAppPurchasesV2AppStoreReviewScreenshot($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getInAppPurchasesAppStoreReviewScreenshot', [$params], InAppPurchaseAppStoreReviewScreenshotResponse::class);
+        return $this->call('getInAppPurchasesV2AppStoreReviewScreenshot', [$params], InAppPurchaseAppStoreReviewScreenshotResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return InAppPurchaseContentResponse
      */
-    public function getInAppPurchasesContent($id, $optParams = [])
+    public function getInAppPurchasesV2Content($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getInAppPurchasesContent', [$params], InAppPurchaseContentResponse::class);
+        return $this->call('getInAppPurchasesV2Content', [$params], InAppPurchaseContentResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return InAppPurchasePriceScheduleResponse
      */
-    public function getInAppPurchasesIapPriceSchedule($id, $optParams = [])
+    public function getInAppPurchasesV2IapPriceSchedule($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getInAppPurchasesIapPriceSchedule', [$params], InAppPurchasePriceScheduleResponse::class);
+        return $this->call('getInAppPurchasesV2IapPriceSchedule', [$params], InAppPurchasePriceScheduleResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return InAppPurchaseAvailabilityResponse
      */
-    public function getInAppPurchasesInAppPurchaseAvailability($id, $optParams = [])
+    public function getInAppPurchasesV2InAppPurchaseAvailability($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getInAppPurchasesInAppPurchaseAvailability', [$params], InAppPurchaseAvailabilityResponse::class);
+        return $this->call('getInAppPurchasesV2InAppPurchaseAvailability', [$params], InAppPurchaseAvailabilityResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return InAppPurchaseLocalizationsResponse
      */
-    public function listInAppPurchasesInAppPurchaseLocalizations($id, $optParams = [])
+    public function listInAppPurchasesV2InAppPurchaseLocalizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listInAppPurchasesInAppPurchaseLocalizations', [$params], InAppPurchaseLocalizationsResponse::class);
+        return $this->call('listInAppPurchasesV2InAppPurchaseLocalizations', [$params], InAppPurchaseLocalizationsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return csv
      */
-    public function listInAppPurchasesPricePoints($id, $optParams = [])
+    public function listInAppPurchasesV2PricePoints($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listInAppPurchasesPricePoints', [$params], csv::class);
+        return $this->call('listInAppPurchasesV2PricePoints', [$params], csv::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return PromotedPurchaseResponse
      */
-    public function getInAppPurchasesPromotedPurchase($id, $optParams = [])
+    public function getInAppPurchasesV2PromotedPurchase($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getInAppPurchasesPromotedPurchase', [$params], PromotedPurchaseResponse::class);
+        return $this->call('getInAppPurchasesV2PromotedPurchase', [$params], PromotedPurchaseResponse::class);
     }
 }
 

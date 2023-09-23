@@ -30,8 +30,8 @@ class AppCategoryResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = AppCategory::class;
 	protected $dataDataType = '';
-	protected $includedType = [AppCategory::class, AppCategory::class];
-	protected $includedDataType = 'array[*]';
+	protected $includedType = AppCategory::class;
+	protected $includedDataType = 'array';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
@@ -50,10 +50,16 @@ class AppCategoryResponse extends \Cantie\AppStoreConnect\Model
 		$this->data = $data;
 		return $this;
 	}
+	/**
+	* @return  AppCategory[]
+	*/
 	public function getIncluded()
 	{
 		return $this->included;
 	}
+	/**
+	* @param  AppCategory[]
+	*/
 	public function setIncluded($included)
 	{
 		$this->included = $included;

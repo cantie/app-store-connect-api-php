@@ -80,11 +80,11 @@ class AppPricePoints extends \Cantie\AppStoreConnect\Services\Resource
 	 * @param array $optParams Optional parameters.
      * @return csv
      */
-    public function listAppPricePointsEqualizations($id, $optParams = [])
+    public function listAppPricePointsV3Equalizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listAppPricePointsEqualizations', [$params], csv::class);
+        return $this->call('listAppPricePointsV3Equalizations', [$params], csv::class);
     }
     /**
 	 * @param string $id the id of the requested resource

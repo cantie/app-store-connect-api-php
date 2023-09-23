@@ -45,21 +45,21 @@ class SandboxTesters extends \Cantie\AppStoreConnect\Services\Resource
 	 * @param array $optParams Optional parameters.
      * @return SandboxTestersV2Response
      */
-    public function listSandboxTesters($optParams = [])
+    public function listSandboxTestersV2($optParams = [])
     {
 		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('listSandboxTesters', [$params], SandboxTestersV2Response::class);
+        return $this->call('listSandboxTestersV2', [$params], SandboxTestersV2Response::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param SandboxTesterV2UpdateRequest $postBody
      * @return SandboxTesterV2Response
      */
-    public function updateSandboxTesters($id, SandboxTesterV2UpdateRequest $postBody)
+    public function updateSandboxTestersV2($id, SandboxTesterV2UpdateRequest $postBody)
     {
 		$params = ['id' => $id, 'postBody' => $postBody];
-        return $this->call('updateSandboxTesters', [$params], SandboxTesterV2Response::class);
+        return $this->call('updateSandboxTestersV2', [$params], SandboxTesterV2Response::class);
     }
 }
 

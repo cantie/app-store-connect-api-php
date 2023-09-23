@@ -100,8 +100,25 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 	public $customerReviewResponses;
 	public $customerReviews;
 	public $devices;
+	public $endAppAvailabilityPreOrders;
 	public $endUserLicenseAgreements;
 	public $financeReports;
+	public $gameCenterAchievementImages;
+	public $gameCenterAchievementLocalizations;
+	public $gameCenterAchievementReleases;
+	public $gameCenterAchievements;
+	public $gameCenterAppVersions;
+	public $gameCenterDetails;
+	public $gameCenterGroups;
+	public $gameCenterLeaderboardImages;
+	public $gameCenterLeaderboardLocalizations;
+	public $gameCenterLeaderboardReleases;
+	public $gameCenterLeaderboardSetImages;
+	public $gameCenterLeaderboardSetLocalizations;
+	public $gameCenterLeaderboardSetMemberLocalizations;
+	public $gameCenterLeaderboardSetReleases;
+	public $gameCenterLeaderboardSets;
+	public $gameCenterLeaderboards;
 	public $inAppPurchaseAppStoreReviewScreenshots;
 	public $inAppPurchaseAvailabilities;
 	public $inAppPurchaseContents;
@@ -140,6 +157,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 	public $subscriptionSubmissions;
 	public $subscriptions;
 	public $territories;
+	public $territoryAvailabilities;
 	public $userInvitations;
 	public $users;
 	public $buildBundles;
@@ -153,7 +171,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
         $this->rootUrl = $rootUrl ?: 'https://api.appstoreconnect.apple.com/';
         $this->servicePath = '';
         $this->batchPath = 'batch';
-        $this->version = 'v2.4';
+        $this->version = 'v3.0';
         $this->serviceName = 'appstore';
         
         $this->actors = new AppStore\Resource\Actors(
@@ -224,6 +242,38 @@ class AppStore extends \Cantie\AppStoreConnect\Service
             'appAvailabilities',
             [
                 'methods' => [
+                    'createAppAvailabilitiesV2' => [
+                        'path' => '/v2/appAvailabilities',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getAppAvailabilitiesV2' => [
+                        'path' => '/v2/appAvailabilities/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[appAvailabilities]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[territoryAvailabilities]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[territoryAvailabilities]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
                     'createAppAvailabilities' => [
                         'path' => '/v1/appAvailabilities',
                         'httpMethod' => 'POST',
@@ -253,6 +303,32 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit[availableTerritories]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'listAppAvailabilitiesV2TerritoryAvailabilities' => [
+                        'path' => '/v2/appAvailabilities/{id}/territoryAvailabilities',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[territoryAvailabilities]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[territories]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
                             ],
                         ]
                     ],
@@ -733,10 +809,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'id' => [
                                 'location' => 'path',
                                 'type' => 'string'
-                            ],
-                            'fields[appStoreVersionExperiments]' => [
-                                'location' => 'query',
-                                'type' => 'array'
                             ],
                             'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
@@ -2424,7 +2496,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'listAppPricePointsEqualizations' => [
+                    'listAppPricePointsV3Equalizations' => [
                         'path' => '/v3/appPricePoints/{id}/equalizations',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -3430,17 +3502,13 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'listAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsV2' => [
+                    'listAppStoreVersionExperimentsV2AppStoreVersionExperimentTreatments' => [
                         'path' => '/v2/appStoreVersionExperiments/{id}/appStoreVersionExperimentTreatments',
                         'httpMethod' => 'GET',
                         'parameters' => [
                             'id' => [
                                 'location' => 'path',
                                 'type' => 'string'
-                            ],
-                            'fields[appStoreVersionExperiments]' => [
-                                'location' => 'query',
-                                'type' => 'array'
                             ],
                             'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
@@ -3475,10 +3543,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'id' => [
                                 'location' => 'path',
                                 'type' => 'string'
-                            ],
-                            'fields[appStoreVersionExperiments]' => [
-                                'location' => 'query',
-                                'type' => 'array'
                             ],
                             'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
@@ -3807,10 +3871,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -4284,6 +4344,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[appPriceSchedules]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4340,19 +4404,11 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[inAppPurchases]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
                             'fields[preReleaseVersions]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[inAppPurchases]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -4392,6 +4448,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[appEncryptionDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4405,6 +4465,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'limit[appCustomProductPages]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[appEncryptionDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
@@ -4494,6 +4558,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[appPriceSchedules]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4550,19 +4618,11 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[inAppPurchases]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
                             'fields[preReleaseVersions]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[inAppPurchases]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -4602,6 +4662,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[appEncryptionDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4615,6 +4679,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'limit[appCustomProductPages]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[appEncryptionDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
@@ -4791,6 +4859,52 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'limit[appCustomProductPageVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listAppsAppEncryptionDeclarations' => [
+                        'path' => '/v1/apps/{id}/appEncryptionDeclarations',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[platform]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[builds]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appEncryptionDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[apps]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appEncryptionDeclarationDocuments]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[builds]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[builds]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
@@ -5019,10 +5133,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'filter[id]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -5287,6 +5397,88 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'string'
                             ],
                             'fields[endUserLicenseAgreements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getAppsGameCenterDetail' => [
+                        'path' => '/v1/apps/{id}/gameCenterDetail',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[apps]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[achievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[leaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[leaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -7272,10 +7464,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreVersionExperiments]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[ageRatingDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -8468,6 +8656,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[ciProducts]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -8520,10 +8712,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[inAppPurchases]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[subscriptionGroups]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -8556,6 +8744,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[appEncryptionDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[appCustomProductPages]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -8563,6 +8755,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
+                            ],
+                            'limit[appEncryptionDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
                             ],
                             'limit[betaGroups]' => [
                                 'location' => 'query',
@@ -9198,6 +9394,22 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                 ]
             ]
         );
+        $this->endAppAvailabilityPreOrders = new AppStore\Resource\EndAppAvailabilityPreOrders(
+            $this,
+            $this->serviceName,
+            'endAppAvailabilityPreOrders',
+            [
+                'methods' => [
+                    'createEndAppAvailabilityPreOrders' => [
+                        'path' => '/v1/endAppAvailabilityPreOrders',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+
+                ]
+            ]
+        );
         $this->endUserLicenseAgreements = new AppStore\Resource\EndUserLicenseAgreements(
             $this,
             $this->serviceName,
@@ -9301,6 +9513,2732 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'filter[vendorNumber]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterAchievementImages = new AppStore\Resource\GameCenterAchievementImages(
+            $this,
+            $this->serviceName,
+            'gameCenterAchievementImages',
+            [
+                'methods' => [
+                    'createGameCenterAchievementImages' => [
+                        'path' => '/v1/gameCenterAchievementImages',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterAchievementImages' => [
+                        'path' => '/v1/gameCenterAchievementImages/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterAchievementImages' => [
+                        'path' => '/v1/gameCenterAchievementImages/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterAchievementImages' => [
+                        'path' => '/v1/gameCenterAchievementImages/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterAchievementLocalizations = new AppStore\Resource\GameCenterAchievementLocalizations(
+            $this,
+            $this->serviceName,
+            'gameCenterAchievementLocalizations',
+            [
+                'methods' => [
+                    'createGameCenterAchievementLocalizations' => [
+                        'path' => '/v1/gameCenterAchievementLocalizations',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterAchievementLocalizations' => [
+                        'path' => '/v1/gameCenterAchievementLocalizations/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterAchievementLocalizations' => [
+                        'path' => '/v1/gameCenterAchievementLocalizations/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterAchievementLocalizations' => [
+                        'path' => '/v1/gameCenterAchievementLocalizations/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterAchievementLocalizationsGameCenterAchievement' => [
+                        'path' => '/v1/gameCenterAchievementLocalizations/{id}/gameCenterAchievement',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterAchievementLocalizationsGameCenterAchievementImage' => [
+                        'path' => '/v1/gameCenterAchievementLocalizations/{id}/gameCenterAchievementImage',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterAchievementReleases = new AppStore\Resource\GameCenterAchievementReleases(
+            $this,
+            $this->serviceName,
+            'gameCenterAchievementReleases',
+            [
+                'methods' => [
+                    'createGameCenterAchievementReleases' => [
+                        'path' => '/v1/gameCenterAchievementReleases',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterAchievementReleases' => [
+                        'path' => '/v1/gameCenterAchievementReleases/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterAchievementReleases' => [
+                        'path' => '/v1/gameCenterAchievementReleases/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterAchievements = new AppStore\Resource\GameCenterAchievements(
+            $this,
+            $this->serviceName,
+            'gameCenterAchievements',
+            [
+                'methods' => [
+                    'createGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterAchievements',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterAchievements/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterAchievements/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterAchievements/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterAchievementsGroupAchievementLinkages' => [
+                        'path' => '/v1/gameCenterAchievements/{id}/relationships/groupAchievement',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterAchievementsGroupAchievement' => [
+                        'path' => '/v1/gameCenterAchievements/{id}/relationships/groupAchievement',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterAchievementsGroupAchievement' => [
+                        'path' => '/v1/gameCenterAchievements/{id}/groupAchievement',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterAchievementsLocalizations' => [
+                        'path' => '/v1/gameCenterAchievements/{id}/localizations',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAchievementImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterAchievementsReleases' => [
+                        'path' => '/v1/gameCenterAchievements/{id}/releases',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[live]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterDetail]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterAppVersions = new AppStore\Resource\GameCenterAppVersions(
+            $this,
+            $this->serviceName,
+            'gameCenterAppVersions',
+            [
+                'methods' => [
+                    'createGameCenterAppVersions' => [
+                        'path' => '/v1/gameCenterAppVersions',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterAppVersions' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[compatibilityVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterAppVersions' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterAppVersionsAppStoreVersion' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}/appStoreVersion',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[appStoreVersionExperiments]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[ageRatingDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionSubmissions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreReviewDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[apps]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[routingAppCoverages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appClipDefaultExperiences]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionPhasedReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[builds]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[appStoreVersionLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[appStoreVersionExperiments]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[appStoreVersionExperimentsV2]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterAppVersionsCompatibilityVersionsLinkages' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createListGameCenterAppVersionsCompatibilityVersions' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteListGameCenterAppVersionsCompatibilityVersions' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterAppVersionsCompatibilityVersions' => [
+                        'path' => '/v1/gameCenterAppVersions/{id}/compatibilityVersions',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[enabled]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[compatibilityVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterDetails = new AppStore\Resource\GameCenterDetails(
+            $this,
+            $this->serviceName,
+            'gameCenterDetails',
+            [
+                'methods' => [
+                    'createGameCenterDetails' => [
+                        'path' => '/v1/gameCenterDetails',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterDetails' => [
+                        'path' => '/v1/gameCenterDetails/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[achievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[leaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[leaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterDetails' => [
+                        'path' => '/v1/gameCenterDetails/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsAchievementReleases' => [
+                        'path' => '/v1/gameCenterDetails/{id}/achievementReleases',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[live]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterAchievement]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterAchievementsLinkages' => [
+                        'path' => '/v1/gameCenterDetails/{id}/relationships/gameCenterAchievements',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterDetailsGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterDetails/{id}/relationships/gameCenterAchievements',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterDetails/{id}/gameCenterAchievements',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[archived]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterAppVersions' => [
+                        'path' => '/v1/gameCenterDetails/{id}/gameCenterAppVersions',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[enabled]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[compatibilityVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterDetailsGameCenterGroup' => [
+                        'path' => '/v1/gameCenterDetails/{id}/gameCenterGroup',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterLeaderboardSetsLinkages' => [
+                        'path' => '/v1/gameCenterDetails/{id}/relationships/gameCenterLeaderboardSets',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterDetailsGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterDetails/{id}/relationships/gameCenterLeaderboardSets',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterDetails/{id}/gameCenterLeaderboardSets',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterLeaderboardsLinkages' => [
+                        'path' => '/v1/gameCenterDetails/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterDetailsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterDetails/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterDetails/{id}/gameCenterLeaderboards',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[archived]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsLeaderboardReleases' => [
+                        'path' => '/v1/gameCenterDetails/{id}/leaderboardReleases',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[live]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterLeaderboard]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterDetailsLeaderboardSetReleases' => [
+                        'path' => '/v1/gameCenterDetails/{id}/leaderboardSetReleases',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[live]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterLeaderboardSet]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterGroups = new AppStore\Resource\GameCenterGroups(
+            $this,
+            $this->serviceName,
+            'gameCenterGroups',
+            [
+                'methods' => [
+                    'listGameCenterGroups' => [
+                        'path' => '/v1/gameCenterGroups',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'filter[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createGameCenterGroups' => [
+                        'path' => '/v1/gameCenterGroups',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterGroups' => [
+                        'path' => '/v1/gameCenterGroups/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterGroups' => [
+                        'path' => '/v1/gameCenterGroups/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterGroups' => [
+                        'path' => '/v1/gameCenterGroups/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterAchievementsLinkages' => [
+                        'path' => '/v1/gameCenterGroups/{id}/relationships/gameCenterAchievements',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterGroupsGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterGroups/{id}/relationships/gameCenterAchievements',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterAchievements' => [
+                        'path' => '/v1/gameCenterGroups/{id}/gameCenterAchievements',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[archived]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterDetails' => [
+                        'path' => '/v1/gameCenterGroups/{id}/gameCenterDetails',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[gameCenterAppVersions.enabled]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[apps]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterAppVersions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterAchievements]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[achievementReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[leaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[leaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterLeaderboardSetsLinkages' => [
+                        'path' => '/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardSets',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterGroupsGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardSets',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterGroups/{id}/gameCenterLeaderboardSets',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterLeaderboardsLinkages' => [
+                        'path' => '/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterGroupsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterGroupsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterGroups/{id}/gameCenterLeaderboards',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[archived]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardImages = new AppStore\Resource\GameCenterLeaderboardImages(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardImages',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardImages' => [
+                        'path' => '/v1/gameCenterLeaderboardImages',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardImages' => [
+                        'path' => '/v1/gameCenterLeaderboardImages/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardImages' => [
+                        'path' => '/v1/gameCenterLeaderboardImages/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardImages' => [
+                        'path' => '/v1/gameCenterLeaderboardImages/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardLocalizations = new AppStore\Resource\GameCenterLeaderboardLocalizations(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardLocalizations',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardLocalizations',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardLocalizations/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardLocalizations/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardLocalizations/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardLocalizationsGameCenterLeaderboardImage' => [
+                        'path' => '/v1/gameCenterLeaderboardLocalizations/{id}/gameCenterLeaderboardImage',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardReleases = new AppStore\Resource\GameCenterLeaderboardReleases(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardReleases',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardReleases',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardReleases/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardReleases/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardSetImages = new AppStore\Resource\GameCenterLeaderboardSetImages(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardSetImages',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardSetImages' => [
+                        'path' => '/v1/gameCenterLeaderboardSetImages',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetImages' => [
+                        'path' => '/v1/gameCenterLeaderboardSetImages/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardSetImages' => [
+                        'path' => '/v1/gameCenterLeaderboardSetImages/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardSetImages' => [
+                        'path' => '/v1/gameCenterLeaderboardSetImages/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardSetLocalizations = new AppStore\Resource\GameCenterLeaderboardSetLocalizations(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardSetLocalizations',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardSetLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetLocalizations',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetLocalizations/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardSetLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetLocalizations/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardSetLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetLocalizations/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImage' => [
+                        'path' => '/v1/gameCenterLeaderboardSetLocalizations/{id}/gameCenterLeaderboardSetImage',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardSetMemberLocalizations = new AppStore\Resource\GameCenterLeaderboardSetMemberLocalizations(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardSetMemberLocalizations',
+            [
+                'methods' => [
+                    'listGameCenterLeaderboardSetMemberLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetMemberLocalizations',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'filter[gameCenterLeaderboard]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterLeaderboardSet]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetMemberLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'createGameCenterLeaderboardSetMemberLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetMemberLocalizations',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardSetMemberLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetMemberLocalizations/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardSetMemberLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSetMemberLocalizations/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboard' => [
+                        'path' => '/v1/gameCenterLeaderboardSetMemberLocalizations/{id}/gameCenterLeaderboard',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSet' => [
+                        'path' => '/v1/gameCenterLeaderboardSetMemberLocalizations/{id}/gameCenterLeaderboardSet',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardSetReleases = new AppStore\Resource\GameCenterLeaderboardSetReleases(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardSetReleases',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardSetReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardSetReleases',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardSetReleases/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardSetReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardSetReleases/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardSets = new AppStore\Resource\GameCenterLeaderboardSets(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardSets',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterLeaderboardSets',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboardSets' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterLeaderboardSetsGameCenterLeaderboardsLinkages' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createListGameCenterLeaderboardSetsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'updateListGameCenterLeaderboardSetsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteListGameCenterLeaderboardSetsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/relationships/gameCenterLeaderboards',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterLeaderboardSetsGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/gameCenterLeaderboards',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[archived]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[referenceName]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetsGroupLeaderboardSetLinkages' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/relationships/groupLeaderboardSet',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardSetsGroupLeaderboardSet' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/relationships/groupLeaderboardSet',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardSetsGroupLeaderboardSet' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/groupLeaderboardSet',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterLeaderboardSetsLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/localizations',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardSetLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterLeaderboardSetsReleases' => [
+                        'path' => '/v1/gameCenterLeaderboardSets/{id}/releases',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[live]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterDetail]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSetReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboards = new AppStore\Resource\GameCenterLeaderboards(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboards',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboards',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterLeaderboards' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardsGroupLeaderboardLinkages' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}/relationships/groupLeaderboard',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterLeaderboardsGroupLeaderboard' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}/relationships/groupLeaderboard',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterLeaderboardsGroupLeaderboard' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}/groupLeaderboard',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[gameCenterLeaderboardSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[localizations]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[releases]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterLeaderboardsLocalizations' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}/localizations',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterLeaderboardLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardImages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterLeaderboardsReleases' => [
+                        'path' => '/v1/gameCenterLeaderboards/{id}/releases',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[live]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterDetail]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboards]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterLeaderboardReleases]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -9682,7 +12620,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'createInAppPurchases' => [
+                    'createInAppPurchasesV2' => [
                         'path' => '/v2/inAppPurchases',
                         'httpMethod' => 'POST',
                         'parameters' => [
@@ -9742,7 +12680,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'updateInAppPurchases' => [
+                    'updateInAppPurchasesV2' => [
                         'path' => '/v2/inAppPurchases/{id}',
                         'httpMethod' => 'PATCH',
                         'parameters' => [
@@ -9752,7 +12690,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'deleteInAppPurchases' => [
+                    'deleteInAppPurchasesV2' => [
                         'path' => '/v2/inAppPurchases/{id}',
                         'httpMethod' => 'DELETE',
                         'parameters' => [
@@ -9762,7 +12700,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'getInAppPurchasesAppStoreReviewScreenshot' => [
+                    'getInAppPurchasesV2AppStoreReviewScreenshot' => [
                         'path' => '/v2/inAppPurchases/{id}/appStoreReviewScreenshot',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -9784,7 +12722,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'getInAppPurchasesContent' => [
+                    'getInAppPurchasesV2Content' => [
                         'path' => '/v2/inAppPurchases/{id}/content',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -9806,7 +12744,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'getInAppPurchasesIapPriceSchedule' => [
+                    'getInAppPurchasesV2IapPriceSchedule' => [
                         'path' => '/v2/inAppPurchases/{id}/iapPriceSchedule',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -9844,7 +12782,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'getInAppPurchasesInAppPurchaseAvailability' => [
+                    'getInAppPurchasesV2InAppPurchaseAvailability' => [
                         'path' => '/v2/inAppPurchases/{id}/inAppPurchaseAvailability',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -9870,7 +12808,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'listInAppPurchasesInAppPurchaseLocalizations' => [
+                    'listInAppPurchasesV2InAppPurchaseLocalizations' => [
                         'path' => '/v2/inAppPurchases/{id}/inAppPurchaseLocalizations',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -9896,7 +12834,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'listInAppPurchasesPricePoints' => [
+                    'listInAppPurchasesV2PricePoints' => [
                         'path' => '/v2/inAppPurchases/{id}/pricePoints',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -9930,7 +12868,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'getInAppPurchasesPromotedPurchase' => [
+                    'getInAppPurchasesV2PromotedPurchase' => [
                         'path' => '/v2/inAppPurchases/{id}/promotedPurchase',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -10550,10 +13488,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreVersionExperiments]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[reviewSubmissionItems]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -10684,7 +13618,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
             'sandboxTesters',
             [
                 'methods' => [
-                    'listSandboxTesters' => [
+                    'listSandboxTestersV2' => [
                         'path' => '/v2/sandboxTesters',
                         'httpMethod' => 'GET',
                         'parameters' => [
@@ -10698,7 +13632,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'updateSandboxTesters' => [
+                    'updateSandboxTestersV2' => [
                         'path' => '/v2/sandboxTesters/{id}',
                         'httpMethod' => 'PATCH',
                         'parameters' => [
@@ -10718,7 +13652,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
             'sandboxTestersClearPurchaseHistoryRequest',
             [
                 'methods' => [
-                    'createSandboxTestersClearPurchaseHistoryRequest' => [
+                    'createSandboxTestersClearPurchaseHistoryRequestV2' => [
                         'path' => '/v2/sandboxTestersClearPurchaseHistoryRequest',
                         'httpMethod' => 'POST',
                         'parameters' => [
@@ -11549,10 +14483,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[subscriptionOfferCodeOneTimeUseCodeValues]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -12421,6 +15351,26 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit' => [
                                 'location' => 'query',
                                 'type' => 'integer'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->territoryAvailabilities = new AppStore\Resource\TerritoryAvailabilities(
+            $this,
+            $this->serviceName,
+            'territoryAvailabilities',
+            [
+                'methods' => [
+                    'updateTerritoryAvailabilities' => [
+                        'path' => '/v1/territoryAvailabilities/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
                             ],
                         ]
                     ],

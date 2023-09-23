@@ -294,8 +294,6 @@ class AppPriceV2 extends \Cantie\AppStoreConnect\Model
 	protected $attributesDataType = 'object';
 	protected $relationshipsType = AppPriceV2_Relationships::class;
 	protected $relationshipsDataType = 'object';
-	protected $linksType = ResourceLinks::class;
-	protected $linksDataType = '';
 
 	public function getType()
 	{
@@ -343,21 +341,6 @@ class AppPriceV2 extends \Cantie\AppStoreConnect\Model
 	public function setRelationships($relationships)
 	{
 		$this->relationships = $relationships;
-		return $this;
-	}
-	/**
-	* @return  ResourceLinks
-	*/
-	public function getLinks()
-	{
-		return $this->links;
-	}
-	/**
-	* @param  ResourceLinks
-	*/
-	public function setLinks($links)
-	{
-		$this->links = $links;
 		return $this;
 	}
 

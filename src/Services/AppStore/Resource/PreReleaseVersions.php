@@ -27,9 +27,9 @@
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
 use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionsResponse;
-use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
-use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\PrereleaseVersionResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildsWithoutIncludesResponse;
 
 /**
  * The "preReleaseVersions" collection of methods.
@@ -55,35 +55,35 @@ class PreReleaseVersions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return PreReleaseVersionResponse
+     * @return PrereleaseVersionResponse
      */
     public function getPreReleaseVersions($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getPreReleaseVersions', [$params], PreReleaseVersionResponse::class);
+        return $this->call('getPreReleaseVersions', [$params], PrereleaseVersionResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getPreReleaseVersionsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getPreReleaseVersionsApp', [$params], AppResponse::class);
+        return $this->call('getPreReleaseVersionsApp', [$params], AppWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildsResponse
+     * @return BuildsWithoutIncludesResponse
      */
     public function listPreReleaseVersionsBuilds($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listPreReleaseVersionsBuilds', [$params], BuildsResponse::class);
+        return $this->call('listPreReleaseVersionsBuilds', [$params], BuildsWithoutIncludesResponse::class);
     }
 }
 

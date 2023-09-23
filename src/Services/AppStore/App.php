@@ -154,6 +154,115 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 
 }
 
+class App_Relationships_AppEncryptionDeclarations_Links extends \Cantie\AppStoreConnect\Model
+{
+	public $self;
+	public $related;
+
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $this;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $this;
+	}
+
+}
+
+class App_Relationships_AppEncryptionDeclarations_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'appEncryptionDeclarations';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
+}
+
+class App_Relationships_AppEncryptionDeclarations extends \Cantie\AppStoreConnect\Model
+{
+	protected $linksType = App_Relationships_AppEncryptionDeclarations_Links::class;
+	protected $linksDataType = 'object';
+	protected $metaType = PagingInformation::class;
+	protected $metaDataType = '';
+	protected $dataType = App_Relationships_AppEncryptionDeclarations_Data::class;
+	protected $dataDataType = 'array';
+
+	/**
+	* @return  App_Relationships_AppEncryptionDeclarations_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  App_Relationships_AppEncryptionDeclarations_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $this;
+	}
+	/**
+	* @return  PagingInformation
+	*/
+	public function getMeta()
+	{
+		return $this->meta;
+	}
+	/**
+	* @param  PagingInformation
+	*/
+	public function setMeta($meta)
+	{
+		$this->meta = $meta;
+		return $this;
+	}
+	/**
+	* @return  App_Relationships_AppEncryptionDeclarations_Data[]
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  App_Relationships_AppEncryptionDeclarations_Data[]
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
+}
+
 class App_Relationships_CiProduct_Links extends \Cantie\AppStoreConnect\Model
 {
 	public $self;
@@ -2559,6 +2668,98 @@ class App_Relationships_SubscriptionGracePeriod extends \Cantie\AppStoreConnect\
 
 }
 
+class App_Relationships_GameCenterDetail_Links extends \Cantie\AppStoreConnect\Model
+{
+	public $self;
+	public $related;
+
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $this;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $this;
+	}
+
+}
+
+class App_Relationships_GameCenterDetail_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'gameCenterDetails';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
+}
+
+class App_Relationships_GameCenterDetail extends \Cantie\AppStoreConnect\Model
+{
+	protected $linksType = App_Relationships_GameCenterDetail_Links::class;
+	protected $linksDataType = 'object';
+	protected $dataType = App_Relationships_GameCenterDetail_Data::class;
+	protected $dataDataType = 'object';
+
+	/**
+	* @return  App_Relationships_GameCenterDetail_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  App_Relationships_GameCenterDetail_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $this;
+	}
+	/**
+	* @return  App_Relationships_GameCenterDetail_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  App_Relationships_GameCenterDetail_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
+}
+
 class App_Relationships_AppStoreVersionExperimentsV2_Links extends \Cantie\AppStoreConnect\Model
 {
 	public $self;
@@ -2670,6 +2871,8 @@ class App_Relationships_AppStoreVersionExperimentsV2 extends \Cantie\AppStoreCon
 
 class App_Relationships extends \Cantie\AppStoreConnect\Model
 {
+	protected $appEncryptionDeclarationsType = App_Relationships_AppEncryptionDeclarations::class;
+	protected $appEncryptionDeclarationsDataType = 'object';
 	protected $ciProductType = App_Relationships_CiProduct::class;
 	protected $ciProductDataType = 'object';
 	protected $betaGroupsType = App_Relationships_BetaGroups::class;
@@ -2716,9 +2919,26 @@ class App_Relationships extends \Cantie\AppStoreConnect\Model
 	protected $reviewSubmissionsDataType = 'object';
 	protected $subscriptionGracePeriodType = App_Relationships_SubscriptionGracePeriod::class;
 	protected $subscriptionGracePeriodDataType = 'object';
+	protected $gameCenterDetailType = App_Relationships_GameCenterDetail::class;
+	protected $gameCenterDetailDataType = 'object';
 	protected $appStoreVersionExperimentsV2Type = App_Relationships_AppStoreVersionExperimentsV2::class;
 	protected $appStoreVersionExperimentsV2DataType = 'object';
 
+	/**
+	* @return  App_Relationships_AppEncryptionDeclarations
+	*/
+	public function getAppEncryptionDeclarations()
+	{
+		return $this->appEncryptionDeclarations;
+	}
+	/**
+	* @param  App_Relationships_AppEncryptionDeclarations
+	*/
+	public function setAppEncryptionDeclarations($appEncryptionDeclarations)
+	{
+		$this->appEncryptionDeclarations = $appEncryptionDeclarations;
+		return $this;
+	}
 	/**
 	* @return  App_Relationships_CiProduct
 	*/
@@ -3062,6 +3282,21 @@ class App_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionGracePeriod($subscriptionGracePeriod)
 	{
 		$this->subscriptionGracePeriod = $subscriptionGracePeriod;
+		return $this;
+	}
+	/**
+	* @return  App_Relationships_GameCenterDetail
+	*/
+	public function getGameCenterDetail()
+	{
+		return $this->gameCenterDetail;
+	}
+	/**
+	* @param  App_Relationships_GameCenterDetail
+	*/
+	public function setGameCenterDetail($gameCenterDetail)
+	{
+		$this->gameCenterDetail = $gameCenterDetail;
 		return $this;
 	}
 	/**

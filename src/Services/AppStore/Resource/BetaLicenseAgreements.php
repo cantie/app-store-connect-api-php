@@ -29,7 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaLicenseAgreementUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
 
 /**
  * The "betaLicenseAgreements" collection of methods.
@@ -76,13 +76,13 @@ class BetaLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getBetaLicenseAgreementsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBetaLicenseAgreementsApp', [$params], AppResponse::class);
+        return $this->call('getBetaLicenseAgreementsApp', [$params], AppWithoutIncludesResponse::class);
     }
 }
 

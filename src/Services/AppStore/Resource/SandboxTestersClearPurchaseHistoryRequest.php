@@ -44,10 +44,10 @@ class SandboxTestersClearPurchaseHistoryRequest extends \Cantie\AppStoreConnect\
 	 * @param SandboxTestersClearPurchaseHistoryRequestV2CreateRequest $postBody
      * @return SandboxTestersClearPurchaseHistoryRequestV2Response
      */
-    public function createSandboxTestersClearPurchaseHistoryRequest(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest $postBody)
+    public function createSandboxTestersClearPurchaseHistoryRequestV2(SandboxTestersClearPurchaseHistoryRequestV2CreateRequest $postBody)
     {
 		$params = ['postBody' => $postBody];
-        return $this->call('createSandboxTestersClearPurchaseHistoryRequest', [$params], SandboxTestersClearPurchaseHistoryRequestV2Response::class);
+        return $this->call('createSandboxTestersClearPurchaseHistoryRequestV2', [$params], SandboxTestersClearPurchaseHistoryRequestV2Response::class);
     }
 }
 

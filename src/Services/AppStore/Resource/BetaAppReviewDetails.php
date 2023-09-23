@@ -29,7 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewDetailsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewDetailUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
 
 /**
  * The "betaAppReviewDetails" collection of methods.
@@ -76,13 +76,13 @@ class BetaAppReviewDetails extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getBetaAppReviewDetailsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBetaAppReviewDetailsApp', [$params], AppResponse::class);
+        return $this->call('getBetaAppReviewDetailsApp', [$params], AppWithoutIncludesResponse::class);
     }
 }
 

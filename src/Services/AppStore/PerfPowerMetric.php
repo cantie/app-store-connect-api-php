@@ -68,8 +68,6 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	public $id;
 	protected $attributesType = PerfPowerMetric_Attributes::class;
 	protected $attributesDataType = 'object';
-	protected $linksType = ResourceLinks::class;
-	protected $linksDataType = '';
 
 	public function getType()
 	{
@@ -102,21 +100,6 @@ class PerfPowerMetric extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
-		return $this;
-	}
-	/**
-	* @return  ResourceLinks
-	*/
-	public function getLinks()
-	{
-		return $this->links;
-	}
-	/**
-	* @param  ResourceLinks
-	*/
-	public function setLinks($links)
-	{
-		$this->links = $links;
 		return $this;
 	}
 

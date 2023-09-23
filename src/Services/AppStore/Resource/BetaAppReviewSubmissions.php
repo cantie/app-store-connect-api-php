@@ -29,7 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionCreateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildWithoutIncludesResponse;
 
 /**
  * The "betaAppReviewSubmissions" collection of methods.
@@ -75,13 +75,13 @@ class BetaAppReviewSubmissions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildResponse
+     * @return BuildWithoutIncludesResponse
      */
     public function getBetaAppReviewSubmissionsBuild($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBetaAppReviewSubmissionsBuild', [$params], BuildResponse::class);
+        return $this->call('getBetaAppReviewSubmissionsBuild', [$params], BuildWithoutIncludesResponse::class);
     }
 }
 

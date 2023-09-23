@@ -28,6 +28,8 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
 use Cantie\AppStoreConnect\Services\AppStore\AppCategoriesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppCategoryResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppCategoryWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppCategoriesWithoutIncludesResponse;
 
 /**
  * The "appCategories" collection of methods.
@@ -64,24 +66,24 @@ class AppCategories extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppCategoryResponse
+     * @return AppCategoryWithoutIncludesResponse
      */
     public function getAppCategoriesParent($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAppCategoriesParent', [$params], AppCategoryResponse::class);
+        return $this->call('getAppCategoriesParent', [$params], AppCategoryWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppCategoriesResponse
+     * @return AppCategoriesWithoutIncludesResponse
      */
     public function listAppCategoriesSubcategories($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listAppCategoriesSubcategories', [$params], AppCategoriesResponse::class);
+        return $this->call('listAppCategoriesSubcategories', [$params], AppCategoriesWithoutIncludesResponse::class);
     }
 }
 

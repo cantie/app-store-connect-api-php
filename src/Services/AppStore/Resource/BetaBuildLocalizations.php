@@ -30,7 +30,7 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildWithoutIncludesResponse;
 
 /**
  * The "betaBuildLocalizations" collection of methods.
@@ -95,13 +95,13 @@ class BetaBuildLocalizations extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildResponse
+     * @return BuildWithoutIncludesResponse
      */
     public function getBetaBuildLocalizationsBuild($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBetaBuildLocalizationsBuild', [$params], BuildResponse::class);
+        return $this->call('getBetaBuildLocalizationsBuild', [$params], BuildWithoutIncludesResponse::class);
     }
 }
 

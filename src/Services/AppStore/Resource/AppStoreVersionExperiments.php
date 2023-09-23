@@ -128,11 +128,11 @@ class AppStoreVersionExperiments extends \Cantie\AppStoreConnect\Services\Resour
 	 * @param array $optParams Optional parameters.
      * @return AppStoreVersionExperimentTreatmentsResponse
      */
-    public function listAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsV2($id, $optParams = [])
+    public function listAppStoreVersionExperimentsV2AppStoreVersionExperimentTreatments($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsV2', [$params], AppStoreVersionExperimentTreatmentsResponse::class);
+        return $this->call('listAppStoreVersionExperimentsV2AppStoreVersionExperimentTreatments', [$params], AppStoreVersionExperimentTreatmentsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource

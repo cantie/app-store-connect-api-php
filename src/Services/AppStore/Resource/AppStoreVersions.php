@@ -29,21 +29,21 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AgeRatingDeclarationResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AgeRatingDeclarationWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionAppClipDefaultExperienceLinkageResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionAppClipDefaultExperienceLinkageRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppClipDefaultExperienceResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentsV2Response;
-use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionLocalizationsResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionLocalizationsWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionSubmissionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionBuildLinkageResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionBuildLinkageRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\CustomerReviewsResponse;
-use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageResponse;
+use Cantie\AppStoreConnect\Services\AppStore\RoutingAppCoverageWithoutIncludesResponse;
 
 /**
  * The "appStoreVersions" collection of methods.
@@ -98,13 +98,13 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AgeRatingDeclarationResponse
+     * @return AgeRatingDeclarationWithoutIncludesResponse
      */
     public function getAppStoreVersionsAgeRatingDeclaration($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAppStoreVersionsAgeRatingDeclaration', [$params], AgeRatingDeclarationResponse::class);
+        return $this->call('getAppStoreVersionsAgeRatingDeclaration', [$params], AgeRatingDeclarationWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -172,24 +172,24 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppStoreVersionLocalizationsResponse
+     * @return AppStoreVersionLocalizationsWithoutIncludesResponse
      */
     public function listAppStoreVersionsAppStoreVersionLocalizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listAppStoreVersionsAppStoreVersionLocalizations', [$params], AppStoreVersionLocalizationsResponse::class);
+        return $this->call('listAppStoreVersionsAppStoreVersionLocalizations', [$params], AppStoreVersionLocalizationsWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppStoreVersionPhasedReleaseResponse
+     * @return AppStoreVersionPhasedReleaseWithoutIncludesResponse
      */
     public function getAppStoreVersionsAppStoreVersionPhasedRelease($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAppStoreVersionsAppStoreVersionPhasedRelease', [$params], AppStoreVersionPhasedReleaseResponse::class);
+        return $this->call('getAppStoreVersionsAppStoreVersionPhasedRelease', [$params], AppStoreVersionPhasedReleaseWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -224,13 +224,13 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildResponse
+     * @return BuildWithoutIncludesResponse
      */
     public function getAppStoreVersionsBuild($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAppStoreVersionsBuild', [$params], BuildResponse::class);
+        return $this->call('getAppStoreVersionsBuild', [$params], BuildWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -246,13 +246,13 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return RoutingAppCoverageResponse
+     * @return RoutingAppCoverageWithoutIncludesResponse
      */
     public function getAppStoreVersionsRoutingAppCoverage($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAppStoreVersionsRoutingAppCoverage', [$params], RoutingAppCoverageResponse::class);
+        return $this->call('getAppStoreVersionsRoutingAppCoverage', [$params], RoutingAppCoverageWithoutIncludesResponse::class);
     }
 }
 

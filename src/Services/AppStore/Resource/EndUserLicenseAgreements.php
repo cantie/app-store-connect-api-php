@@ -29,7 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\EndUserLicenseAgreementResponse;
 use Cantie\AppStoreConnect\Services\AppStore\EndUserLicenseAgreementCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\EndUserLicenseAgreementUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\TerritoriesWithoutIncludesResponse;
 
 /**
  * The "endUserLicenseAgreements" collection of methods.
@@ -84,13 +84,13 @@ class EndUserLicenseAgreements extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return TerritoriesResponse
+     * @return TerritoriesWithoutIncludesResponse
      */
     public function listEndUserLicenseAgreementsTerritories($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listEndUserLicenseAgreementsTerritories', [$params], TerritoriesResponse::class);
+        return $this->call('listEndUserLicenseAgreementsTerritories', [$params], TerritoriesWithoutIncludesResponse::class);
     }
 }
 
