@@ -30,9 +30,9 @@ use Cantie\AppStoreConnect\Services\AppStore\BundleIdsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BundleIdResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BundleIdCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BundleIdUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
-use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilitiesResponse;
-use Cantie\AppStoreConnect\Services\AppStore\ProfilesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BundleIdCapabilitiesWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\ProfilesWithoutIncludesResponse;
 
 /**
  * The "bundleIds" collection of methods.
@@ -97,35 +97,35 @@ class BundleIds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getBundleIdsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBundleIdsApp', [$params], AppResponse::class);
+        return $this->call('getBundleIdsApp', [$params], AppWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BundleIdCapabilitiesResponse
+     * @return BundleIdCapabilitiesWithoutIncludesResponse
      */
     public function listBundleIdsBundleIdCapabilities($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBundleIdsBundleIdCapabilities', [$params], BundleIdCapabilitiesResponse::class);
+        return $this->call('listBundleIdsBundleIdCapabilities', [$params], BundleIdCapabilitiesWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return ProfilesResponse
+     * @return ProfilesWithoutIncludesResponse
      */
     public function listBundleIdsProfiles($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBundleIdsProfiles', [$params], ProfilesResponse::class);
+        return $this->call('listBundleIdsProfiles', [$params], ProfilesWithoutIncludesResponse::class);
     }
 }
 

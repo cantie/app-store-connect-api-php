@@ -29,9 +29,9 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\ProfilesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ProfileResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ProfileCreateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BundleIdResponse;
-use Cantie\AppStoreConnect\Services\AppStore\CertificatesResponse;
-use Cantie\AppStoreConnect\Services\AppStore\DevicesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BundleIdWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\CertificatesWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\DevicesWithoutIncludesResponse;
 
 /**
  * The "profiles" collection of methods.
@@ -86,35 +86,35 @@ class Profiles extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BundleIdResponse
+     * @return BundleIdWithoutIncludesResponse
      */
     public function getProfilesBundleId($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getProfilesBundleId', [$params], BundleIdResponse::class);
+        return $this->call('getProfilesBundleId', [$params], BundleIdWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return CertificatesResponse
+     * @return CertificatesWithoutIncludesResponse
      */
     public function listProfilesCertificates($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listProfilesCertificates', [$params], CertificatesResponse::class);
+        return $this->call('listProfilesCertificates', [$params], CertificatesWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return DevicesResponse
+     * @return DevicesWithoutIncludesResponse
      */
     public function listProfilesDevices($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listProfilesDevices', [$params], DevicesResponse::class);
+        return $this->call('listProfilesDevices', [$params], DevicesWithoutIncludesResponse::class);
     }
 }
 

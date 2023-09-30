@@ -30,7 +30,7 @@ class AppPriceScheduleResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = AppPriceSchedule::class;
 	protected $dataDataType = '';
-	protected $includedType = [App::class, Territory::class, AppPriceV2::class, AppPriceV2::class];
+	protected $includedType = [App::class, Territory::class, AppPriceV2::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';

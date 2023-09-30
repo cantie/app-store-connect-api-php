@@ -30,7 +30,7 @@ class InAppPurchasePriceScheduleResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = InAppPurchasePriceSchedule::class;
 	protected $dataDataType = '';
-	protected $includedType = [InAppPurchaseV2::class, Territory::class, InAppPurchasePrice::class, InAppPurchasePrice::class];
+	protected $includedType = [InAppPurchaseV2::class, Territory::class, InAppPurchasePrice::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';

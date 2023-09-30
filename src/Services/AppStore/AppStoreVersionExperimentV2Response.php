@@ -30,7 +30,7 @@ class AppStoreVersionExperimentV2Response extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = AppStoreVersionExperimentV2::class;
 	protected $dataDataType = '';
-	protected $includedType = [App::class, AppStoreVersion::class, AppStoreVersion::class, AppStoreVersionExperimentTreatment::class];
+	protected $includedType = [App::class, AppStoreVersion::class, AppStoreVersionExperimentTreatment::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';

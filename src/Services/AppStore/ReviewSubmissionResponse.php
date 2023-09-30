@@ -30,7 +30,7 @@ class ReviewSubmissionResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = ReviewSubmission::class;
 	protected $dataDataType = '';
-	protected $includedType = [App::class, ReviewSubmissionItem::class, AppStoreVersion::class, Actor::class, Actor::class];
+	protected $includedType = [App::class, ReviewSubmissionItem::class, AppStoreVersion::class, Actor::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';

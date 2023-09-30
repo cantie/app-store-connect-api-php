@@ -29,7 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildWithoutIncludesResponse;
 
 /**
  * The "buildBetaDetails" collection of methods.
@@ -76,13 +76,13 @@ class BuildBetaDetails extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildResponse
+     * @return BuildWithoutIncludesResponse
      */
     public function getBuildBetaDetailsBuild($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildBetaDetailsBuild', [$params], BuildResponse::class);
+        return $this->call('getBuildBetaDetailsBuild', [$params], BuildWithoutIncludesResponse::class);
     }
 }
 

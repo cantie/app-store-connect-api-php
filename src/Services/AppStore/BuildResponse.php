@@ -30,7 +30,7 @@ class BuildResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = Build::class;
 	protected $dataDataType = '';
-	protected $includedType = [PreReleaseVersion::class, BetaTester::class, BetaGroup::class, BetaBuildLocalization::class, AppEncryptionDeclaration::class, BetaAppReviewSubmission::class, App::class, BuildBetaDetail::class, AppStoreVersion::class, BuildIcon::class, BuildBundle::class];
+	protected $includedType = [PrereleaseVersion::class, BetaTester::class, BetaGroup::class, BetaBuildLocalization::class, AppEncryptionDeclaration::class, BetaAppReviewSubmission::class, App::class, BuildBetaDetail::class, AppStoreVersion::class, BuildIcon::class, BuildBundle::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';

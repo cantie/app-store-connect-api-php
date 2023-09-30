@@ -30,7 +30,7 @@ class AppInfosResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = AppInfo::class;
 	protected $dataDataType = 'array';
-	protected $includedType = [App::class, AgeRatingDeclaration::class, AppInfoLocalization::class, AppCategory::class, AppCategory::class, AppCategory::class, AppCategory::class, AppCategory::class, AppCategory::class];
+	protected $includedType = [App::class, AgeRatingDeclaration::class, AppInfoLocalization::class, AppCategory::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';

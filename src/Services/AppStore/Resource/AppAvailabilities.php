@@ -26,8 +26,11 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
+use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityV2Response;
+use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityV2CreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\TerritoryAvailabilitiesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 
 /**
@@ -41,6 +44,26 @@ use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 class AppAvailabilities extends \Cantie\AppStoreConnect\Services\Resource
 {
 
+    /**
+	 * @param AppAvailabilityV2CreateRequest $postBody
+     * @return AppAvailabilityV2Response
+     */
+    public function createAppAvailabilitiesV2(AppAvailabilityV2CreateRequest $postBody)
+    {
+		$params = ['postBody' => $postBody];
+        return $this->call('createAppAvailabilitiesV2', [$params], AppAvailabilityV2Response::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppAvailabilityV2Response
+     */
+    public function getAppAvailabilitiesV2($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getAppAvailabilitiesV2', [$params], AppAvailabilityV2Response::class);
+    }
     /**
 	 * @param AppAvailabilityCreateRequest $postBody
      * @return AppAvailabilityResponse
@@ -60,6 +83,17 @@ class AppAvailabilities extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('getAppAvailabilities', [$params], AppAvailabilityResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return TerritoryAvailabilitiesResponse
+     */
+    public function listAppAvailabilitiesV2TerritoryAvailabilities($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppAvailabilitiesV2TerritoryAvailabilities', [$params], TerritoryAvailabilitiesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource

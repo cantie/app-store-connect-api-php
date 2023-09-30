@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class PreReleaseVersionsResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = PreReleaseVersion::class;
+	protected $dataType = PrereleaseVersion::class;
 	protected $dataDataType = 'array';
 	protected $includedType = [Build::class, App::class];
 	protected $includedDataType = 'array[*]';
@@ -38,14 +38,14 @@ class PreReleaseVersionsResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  PreReleaseVersion[]
+	* @return  PrereleaseVersion[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  PreReleaseVersion[]
+	* @param  PrereleaseVersion[]
 	*/
 	public function setData($data)
 	{

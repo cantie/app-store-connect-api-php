@@ -31,7 +31,7 @@ use Cantie\AppStoreConnect\Services\AppStore\UserResponse;
 use Cantie\AppStoreConnect\Services\AppStore\UserUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\UserVisibleAppsLinkagesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\UserVisibleAppsLinkagesRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppsWithoutIncludesResponse;
 
 /**
  * The "users" collection of methods.
@@ -128,13 +128,13 @@ class Users extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppsResponse
+     * @return AppsWithoutIncludesResponse
      */
     public function listUsersVisibleApps($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listUsersVisibleApps', [$params], AppsResponse::class);
+        return $this->call('listUsersVisibleApps', [$params], AppsWithoutIncludesResponse::class);
     }
 }
 

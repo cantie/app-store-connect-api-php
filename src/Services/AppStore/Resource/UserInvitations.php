@@ -29,7 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\UserInvitationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\UserInvitationResponse;
 use Cantie\AppStoreConnect\Services\AppStore\UserInvitationCreateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppsWithoutIncludesResponse;
 
 /**
  * The "userInvitations" collection of methods.
@@ -84,13 +84,13 @@ class UserInvitations extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppsResponse
+     * @return AppsWithoutIncludesResponse
      */
     public function listUserInvitationsVisibleApps($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listUserInvitationsVisibleApps', [$params], AppsResponse::class);
+        return $this->call('listUserInvitationsVisibleApps', [$params], AppsWithoutIncludesResponse::class);
     }
 }
 

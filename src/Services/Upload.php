@@ -31,7 +31,7 @@ class Upload extends \Cantie\AppStoreConnect\Service
 
 	public $uploadAssets;
 
-    public function __construct($clientOrConfig = [], $uploadOperation)
+    public function __construct($clientOrConfig, $uploadOperation)
     {
         parent::__construct($clientOrConfig);
         $this->rootUrl = '';

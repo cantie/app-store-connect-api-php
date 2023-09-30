@@ -30,13 +30,13 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaGroupsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupUpdateRequest;
-use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBetaTestersLinkagesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBetaTestersLinkagesRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BetaTestersResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaTestersWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBuildsLinkagesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBuildsLinkagesRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildsWithoutIncludesResponse;
 
 /**
  * The "betaGroups" collection of methods.
@@ -101,13 +101,13 @@ class BetaGroups extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppResponse
+     * @return AppWithoutIncludesResponse
      */
     public function getBetaGroupsApp($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBetaGroupsApp', [$params], AppResponse::class);
+        return $this->call('getBetaGroupsApp', [$params], AppWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -143,13 +143,13 @@ class BetaGroups extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BetaTestersResponse
+     * @return BetaTestersWithoutIncludesResponse
      */
     public function listBetaGroupsBetaTesters($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBetaGroupsBetaTesters', [$params], BetaTestersResponse::class);
+        return $this->call('listBetaGroupsBetaTesters', [$params], BetaTestersWithoutIncludesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -185,13 +185,13 @@ class BetaGroups extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildsResponse
+     * @return BuildsWithoutIncludesResponse
      */
     public function listBetaGroupsBuilds($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listBetaGroupsBuilds', [$params], BuildsResponse::class);
+        return $this->call('listBetaGroupsBuilds', [$params], BuildsWithoutIncludesResponse::class);
     }
 }
 

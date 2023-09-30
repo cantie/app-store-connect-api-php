@@ -28,5 +28,8 @@
         "classmap": [
             "src/aliases.php"
         ]
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
     }
 }
