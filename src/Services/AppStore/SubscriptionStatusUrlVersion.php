@@ -31,8 +31,8 @@ class SubscriptionStatusUrlVersion extends \Cantie\AppStoreConnect\Model
 	// enum class
 	public static $V1 = "V1";
 	public static $V2 = "V2";
-	public static $V1 = "v1";
-	public static $V2 = "v2";
+	public static $v1 = "v1";
+	public static $v2 = "v2";
 
 
 }
