@@ -35,7 +35,6 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public $subscriptionPeriod; // ONE_WEEK, ONE_MONTH, TWO_MONTHS, THREE_MONTHS, SIX_MONTHS, ONE_YEAR
 	public $reviewNote;
 	public $groupLevel;
-	public $availableInAllTerritories;
 
 	public function getName()
 	{
@@ -98,15 +97,6 @@ class Subscription_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setGroupLevel($groupLevel)
 	{
 		$this->groupLevel = $groupLevel;
-		return $this;
-	}
-	public function getAvailableInAllTerritories()
-	{
-		return $this->availableInAllTerritories;
-	}
-	public function setAvailableInAllTerritories($availableInAllTerritories)
-	{
-		$this->availableInAllTerritories = $availableInAllTerritories;
 		return $this;
 	}
 

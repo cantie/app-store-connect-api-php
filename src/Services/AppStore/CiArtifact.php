@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class CiArtifact_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	public $fileType; // ARCHIVE, ARCHIVE_EXPORT, LOG_BUNDLE, RESULT_BUNDLE, TEST_PRODUCTS, XCODEBUILD_PRODUCTS
+	public $fileType; // ARCHIVE, ARCHIVE_EXPORT, LOG_BUNDLE, RESULT_BUNDLE, TEST_PRODUCTS, XCODEBUILD_PRODUCTS, STAPLED_NOTARIZED_ARCHIVE
 	public $fileName;
 	public $fileSize;
 	public $downloadUrl;

@@ -30,13 +30,14 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionCreateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AgeRatingDeclarationWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionPackageResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionAppClipDefaultExperienceLinkageResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionAppClipDefaultExperienceLinkageRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppClipDefaultExperienceResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreReviewDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentsV2Response;
-use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionLocalizationsWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionLocalizationsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionPhasedReleaseWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionSubmissionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionBuildLinkageResponse;
@@ -108,6 +109,17 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     }
     /**
 	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AlternativeDistributionPackageResponse
+     */
+    public function getAppStoreVersionsAlternativeDistributionPackage($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getAppStoreVersionsAlternativeDistributionPackage', [$params], AlternativeDistributionPackageResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
      * @return AppStoreVersionAppClipDefaultExperienceLinkageResponse
      */
     public function getAppStoreVersionsAppClipDefaultExperienceLinkages($id)
@@ -172,13 +184,13 @@ class AppStoreVersions extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AppStoreVersionLocalizationsWithoutIncludesResponse
+     * @return AppStoreVersionLocalizationsResponse
      */
     public function listAppStoreVersionsAppStoreVersionLocalizations($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listAppStoreVersionsAppStoreVersionLocalizations', [$params], AppStoreVersionLocalizationsWithoutIncludesResponse::class);
+        return $this->call('listAppStoreVersionsAppStoreVersionLocalizations', [$params], AppStoreVersionLocalizationsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource

@@ -31,7 +31,9 @@ class AppStoreVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public $platform; // 
 	public $versionString;
 	public $appStoreState; // 
+	public $appVersionState; // 
 	public $copyright;
+	public $reviewType; // APP_STORE, NOTARIZATION
 	public $releaseType; // MANUAL, AFTER_APPROVAL, SCHEDULED
 	public $earliestReleaseDate;
 	public $downloadable;
@@ -76,6 +78,21 @@ class AppStoreVersion_Attributes extends \Cantie\AppStoreConnect\Model
 		$this->appStoreState = $appStoreState;
 		return $this;
 	}
+	/**
+	* @return  string
+	*/
+	public function getAppVersionState()
+	{
+		return $this->appVersionState;
+	}
+	/**
+	* @param  string
+	*/
+	public function setAppVersionState($appVersionState)
+	{
+		$this->appVersionState = $appVersionState;
+		return $this;
+	}
 	public function getCopyright()
 	{
 		return $this->copyright;
@@ -83,6 +100,15 @@ class AppStoreVersion_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setCopyright($copyright)
 	{
 		$this->copyright = $copyright;
+		return $this;
+	}
+	public function getReviewType()
+	{
+		return $this->reviewType;
+	}
+	public function setReviewType($reviewType)
+	{
+		$this->reviewType = $reviewType;
 		return $this;
 	}
 	public function getReleaseType()
@@ -1187,6 +1213,98 @@ class AppStoreVersion_Relationships_AppStoreVersionExperimentsV2 extends \Cantie
 
 }
 
+class AppStoreVersion_Relationships_AlternativeDistributionPackage_Links extends \Cantie\AppStoreConnect\Model
+{
+	public $self;
+	public $related;
+
+	public function getSelf()
+	{
+		return $this->self;
+	}
+	public function setSelf($self)
+	{
+		$this->self = $self;
+		return $this;
+	}
+	public function getRelated()
+	{
+		return $this->related;
+	}
+	public function setRelated($related)
+	{
+		$this->related = $related;
+		return $this;
+	}
+
+}
+
+class AppStoreVersion_Relationships_AlternativeDistributionPackage_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'alternativeDistributionPackages';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
+}
+
+class AppStoreVersion_Relationships_AlternativeDistributionPackage extends \Cantie\AppStoreConnect\Model
+{
+	protected $linksType = AppStoreVersion_Relationships_AlternativeDistributionPackage_Links::class;
+	protected $linksDataType = 'object';
+	protected $dataType = AppStoreVersion_Relationships_AlternativeDistributionPackage_Data::class;
+	protected $dataDataType = 'object';
+
+	/**
+	* @return  AppStoreVersion_Relationships_AlternativeDistributionPackage_Links
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  AppStoreVersion_Relationships_AlternativeDistributionPackage_Links
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
+		return $this;
+	}
+	/**
+	* @return  AppStoreVersion_Relationships_AlternativeDistributionPackage_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  AppStoreVersion_Relationships_AlternativeDistributionPackage_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
+}
+
 class AppStoreVersion_Relationships extends \Cantie\AppStoreConnect\Model
 {
 	protected $appType = AppStoreVersion_Relationships_App::class;
@@ -1211,6 +1329,8 @@ class AppStoreVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	protected $appStoreVersionExperimentsDataType = 'object';
 	protected $appStoreVersionExperimentsV2Type = AppStoreVersion_Relationships_AppStoreVersionExperimentsV2::class;
 	protected $appStoreVersionExperimentsV2DataType = 'object';
+	protected $alternativeDistributionPackageType = AppStoreVersion_Relationships_AlternativeDistributionPackage::class;
+	protected $alternativeDistributionPackageDataType = 'object';
 
 	/**
 	* @return  AppStoreVersion_Relationships_App
@@ -1375,6 +1495,21 @@ class AppStoreVersion_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreVersionExperimentsV2($appStoreVersionExperimentsV2)
 	{
 		$this->appStoreVersionExperimentsV2 = $appStoreVersionExperimentsV2;
+		return $this;
+	}
+	/**
+	* @return  AppStoreVersion_Relationships_AlternativeDistributionPackage
+	*/
+	public function getAlternativeDistributionPackage()
+	{
+		return $this->alternativeDistributionPackage;
+	}
+	/**
+	* @param  AppStoreVersion_Relationships_AlternativeDistributionPackage
+	*/
+	public function setAlternativeDistributionPackage($alternativeDistributionPackage)
+	{
+		$this->alternativeDistributionPackage = $alternativeDistributionPackage;
 		return $this;
 	}
 

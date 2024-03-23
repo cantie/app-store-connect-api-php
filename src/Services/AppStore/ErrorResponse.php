@@ -26,6 +26,13 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
+class ErrorResponse_Errors_Meta extends \Cantie\AppStoreConnect\Model
+{
+	// enum class
+
+
+}
+
 class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 {
 	public $id;
@@ -35,6 +42,8 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public $detail;
 	protected $sourceType = [ErrorSourcePointer::class, ErrorSourceParameter::class];
 	protected $sourceDataType = '[*]';
+	protected $metaType = ErrorResponse_Errors_Meta::class;
+	protected $metaDataType = 'object';
 
 	public function getId()
 	{
@@ -88,6 +97,21 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setSource($source)
 	{
 		$this->source = $source;
+		return $this;
+	}
+	/**
+	* @return  ErrorResponse_Errors_Meta
+	*/
+	public function getMeta()
+	{
+		return $this->meta;
+	}
+	/**
+	* @param  ErrorResponse_Errors_Meta
+	*/
+	public function setMeta($meta)
+	{
+		$this->meta = $meta;
 		return $this;
 	}
 

@@ -31,7 +31,6 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public $name;
 	public $reviewNote;
 	public $familySharable;
-	public $availableInAllTerritories;
 
 	public function getName()
 	{
@@ -58,15 +57,6 @@ class InAppPurchaseV2UpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setFamilySharable($familySharable)
 	{
 		$this->familySharable = $familySharable;
-		return $this;
-	}
-	public function getAvailableInAllTerritories()
-	{
-		return $this->availableInAllTerritories;
-	}
-	public function setAvailableInAllTerritories($availableInAllTerritories)
-	{
-		$this->availableInAllTerritories = $availableInAllTerritories;
 		return $this;
 	}
 

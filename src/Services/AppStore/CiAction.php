@@ -73,12 +73,12 @@ class CiAction extends \Cantie\AppStoreConnect\Model
 {
 	public $name;
 	public $actionType; // 
-	public $destination; // ANY_IOS_DEVICE, ANY_IOS_SIMULATOR, ANY_TVOS_DEVICE, ANY_TVOS_SIMULATOR, ANY_WATCHOS_DEVICE, ANY_WATCHOS_SIMULATOR, ANY_MAC, ANY_MAC_CATALYST
+	public $destination; // ANY_IOS_DEVICE, ANY_IOS_SIMULATOR, ANY_TVOS_DEVICE, ANY_TVOS_SIMULATOR, ANY_WATCHOS_DEVICE, ANY_WATCHOS_SIMULATOR, ANY_MAC, ANY_MAC_CATALYST, ANY_VISIONOS_DEVICE, ANY_VISIONOS_SIMULATOR
 	public $buildDistributionAudience; // 
 	protected $testConfigurationType = CiAction_TestConfiguration::class;
 	protected $testConfigurationDataType = 'object';
 	public $scheme;
-	public $platform; // MACOS, IOS, TVOS, WATCHOS
+	public $platform; // MACOS, IOS, TVOS, WATCHOS, VISIONOS
 	public $isRequiredToPass;
 
 	public function getName()

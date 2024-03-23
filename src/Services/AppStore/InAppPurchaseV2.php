@@ -35,7 +35,6 @@ class InAppPurchaseV2_Attributes extends \Cantie\AppStoreConnect\Model
 	public $reviewNote;
 	public $familySharable;
 	public $contentHosting;
-	public $availableInAllTerritories;
 
 	public function getName()
 	{
@@ -110,15 +109,6 @@ class InAppPurchaseV2_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setContentHosting($contentHosting)
 	{
 		$this->contentHosting = $contentHosting;
-		return $this;
-	}
-	public function getAvailableInAllTerritories()
-	{
-		return $this->availableInAllTerritories;
-	}
-	public function setAvailableInAllTerritories($availableInAllTerritories)
-	{
-		$this->availableInAllTerritories = $availableInAllTerritories;
 		return $this;
 	}
 

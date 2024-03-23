@@ -30,6 +30,7 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 {
 	public $versionString;
 	public $copyright;
+	public $reviewType; // APP_STORE, NOTARIZATION
 	public $releaseType; // MANUAL, AFTER_APPROVAL, SCHEDULED
 	public $earliestReleaseDate;
 	public $downloadable;
@@ -50,6 +51,15 @@ class AppStoreVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConne
 	public function setCopyright($copyright)
 	{
 		$this->copyright = $copyright;
+		return $this;
+	}
+	public function getReviewType()
+	{
+		return $this->reviewType;
+	}
+	public function setReviewType($reviewType)
+	{
+		$this->reviewType = $reviewType;
 		return $this;
 	}
 	public function getReleaseType()

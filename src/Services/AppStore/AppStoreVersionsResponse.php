@@ -30,7 +30,7 @@ class AppStoreVersionsResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = AppStoreVersion::class;
 	protected $dataDataType = 'array';
-	protected $includedType = [App::class, AgeRatingDeclaration::class, AppStoreVersionLocalization::class, Build::class, AppStoreVersionPhasedRelease::class, RoutingAppCoverage::class, AppStoreReviewDetail::class, AppStoreVersionSubmission::class, AppClipDefaultExperience::class, AppStoreVersionExperiment::class, AppStoreVersionExperimentV2::class];
+	protected $includedType = [App::class, AgeRatingDeclaration::class, AppStoreVersionLocalization::class, Build::class, AppStoreVersionPhasedRelease::class, RoutingAppCoverage::class, AppStoreReviewDetail::class, AppStoreVersionSubmission::class, AppClipDefaultExperience::class, AppStoreVersionExperiment::class, AppStoreVersionExperimentV2::class, AlternativeDistributionPackage::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
