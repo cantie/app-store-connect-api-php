@@ -29,6 +29,8 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 use Cantie\AppStoreConnect\Services\AppStore\AppsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppUpdateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionKeyResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AnalyticsReportRequestsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppAvailabilityResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppClipsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPagesResponse;
@@ -53,6 +55,7 @@ use Cantie\AppStoreConnect\Services\AppStore\GameCenterDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\GameCenterEnabledVersionsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchasesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchasesV2Response;
+use Cantie\AppStoreConnect\Services\AppStore\MarketplaceSearchDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\xcodeMetrics;
 use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionsWithoutIncludesResponse;
@@ -64,6 +67,7 @@ use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchasesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\ReviewSubmissionsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGracePeriodResponse;
 use Cantie\AppStoreConnect\Services\AppStore\SubscriptionGroupsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppsBetaTesterUsagesV1MetricResponse;
 
 /**
  * The "apps" collection of methods.
@@ -106,6 +110,28 @@ class Apps extends \Cantie\AppStoreConnect\Services\Resource
     {
 		$params = ['id' => $id, 'postBody' => $postBody];
         return $this->call('updateApps', [$params], AppResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AlternativeDistributionKeyResponse
+     */
+    public function getAppsAlternativeDistributionKey($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getAppsAlternativeDistributionKey', [$params], AlternativeDistributionKeyResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AnalyticsReportRequestsResponse
+     */
+    public function listAppsAnalyticsReportRequests($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('listAppsAnalyticsReportRequests', [$params], AnalyticsReportRequestsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -373,6 +399,17 @@ class Apps extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
+     * @return MarketplaceSearchDetailResponse
+     */
+    public function getAppsMarketplaceSearchDetail($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getAppsMarketplaceSearchDetail', [$params], MarketplaceSearchDetailResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
      * @return xcodeMetrics
      */
     public function listAppsPerfPowerMetrics($id, $optParams = [])
@@ -489,6 +526,17 @@ class Apps extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('listAppsSubscriptionGroups', [$params], SubscriptionGroupsResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppsBetaTesterUsagesV1MetricResponse
+     */
+    public function getAppsBetaTesterUsagesMetrics($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getAppsBetaTesterUsagesMetrics', [$params], AppsBetaTesterUsagesV1MetricResponse::class);
     }
 }
 

@@ -48,6 +48,7 @@ class AppStoreVersionState extends \Cantie\AppStoreConnect\Model
 	public static $WAITING_FOR_EXPORT_COMPLIANCE = "WAITING_FOR_EXPORT_COMPLIANCE";
 	public static $WAITING_FOR_REVIEW = "WAITING_FOR_REVIEW";
 	public static $REPLACED_WITH_NEW_VERSION = "REPLACED_WITH_NEW_VERSION";
+	public static $NOT_APPLICABLE = "NOT_APPLICABLE";
 
 
 }

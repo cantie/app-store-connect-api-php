@@ -39,6 +39,7 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public $sexualContentGraphicAndNudity; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
 	public $sexualContentOrNudity; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
 	public $seventeenPlus;
+	public $ageRatingOverride; // NONE, SEVENTEEN_PLUS, UNRATED
 	public $horrorOrFearThemes; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
 	public $matureOrSuggestiveThemes; // NONE, INFREQUENT_OR_MILD, FREQUENT_OR_INTENSE
 	public $unrestrictedWebAccess;
@@ -149,6 +150,15 @@ class AgeRatingDeclarationUpdateRequest_Data_Attributes extends \Cantie\AppStore
 	public function setSeventeenPlus($seventeenPlus)
 	{
 		$this->seventeenPlus = $seventeenPlus;
+		return $this;
+	}
+	public function getAgeRatingOverride()
+	{
+		return $this->ageRatingOverride;
+	}
+	public function setAgeRatingOverride($ageRatingOverride)
+	{
+		$this->ageRatingOverride = $ageRatingOverride;
 		return $this;
 	}
 	public function getHorrorOrFearThemes()

@@ -48,6 +48,7 @@ class ScreenshotDisplayType extends \Cantie\AppStoreConnect\Model
 	public static $APP_WATCH_SERIES_4 = "APP_WATCH_SERIES_4";
 	public static $APP_WATCH_SERIES_3 = "APP_WATCH_SERIES_3";
 	public static $APP_APPLE_TV = "APP_APPLE_TV";
+	public static $APP_APPLE_VISION_PRO = "APP_APPLE_VISION_PRO";
 	public static $IMESSAGE_APP_IPHONE_67 = "IMESSAGE_APP_IPHONE_67";
 	public static $IMESSAGE_APP_IPHONE_61 = "IMESSAGE_APP_IPHONE_61";
 	public static $IMESSAGE_APP_IPHONE_65 = "IMESSAGE_APP_IPHONE_65";

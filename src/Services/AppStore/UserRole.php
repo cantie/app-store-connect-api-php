@@ -42,6 +42,7 @@ class UserRole extends \Cantie\AppStoreConnect\Model
 	public static $CREATE_APPS = "CREATE_APPS";
 	public static $CLOUD_MANAGED_DEVELOPER_ID = "CLOUD_MANAGED_DEVELOPER_ID";
 	public static $CLOUD_MANAGED_APP_DISTRIBUTION = "CLOUD_MANAGED_APP_DISTRIBUTION";
+	public static $GENERATE_INDIVIDUAL_KEYS = "GENERATE_INDIVIDUAL_KEYS";
 
 
 }

@@ -37,6 +37,7 @@ use Cantie\AppStoreConnect\Services\AppStore\BetaTestersWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBuildsLinkagesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupBuildsLinkagesRequest;
 use Cantie\AppStoreConnect\Services\AppStore\BuildsWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AppsBetaTesterUsagesV1MetricResponse;
 
 /**
  * The "betaGroups" collection of methods.
@@ -192,6 +193,17 @@ class BetaGroups extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('listBetaGroupsBuilds', [$params], BuildsWithoutIncludesResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return AppsBetaTesterUsagesV1MetricResponse
+     */
+    public function getBetaGroupsBetaTesterUsagesMetrics($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getBetaGroupsBetaTesterUsagesMetrics', [$params], AppsBetaTesterUsagesV1MetricResponse::class);
     }
 }
 

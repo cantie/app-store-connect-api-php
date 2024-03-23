@@ -43,6 +43,7 @@ use Cantie\AppStoreConnect\Services\AppStore\GameCenterDetailGameCenterLeaderboa
 use Cantie\AppStoreConnect\Services\AppStore\GameCenterLeaderboardsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\GameCenterLeaderboardReleasesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\GameCenterLeaderboardSetReleasesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\GameCenterMatchmakingAppRequestsV1MetricResponse;
 
 /**
  * The "gameCenterDetails" collection of methods.
@@ -235,6 +236,28 @@ class GameCenterDetails extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('listGameCenterDetailsLeaderboardSetReleases', [$params], GameCenterLeaderboardSetReleasesResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return GameCenterMatchmakingAppRequestsV1MetricResponse
+     */
+    public function getGameCenterDetailsClassicMatchmakingRequestsMetrics($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getGameCenterDetailsClassicMatchmakingRequestsMetrics', [$params], GameCenterMatchmakingAppRequestsV1MetricResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return GameCenterMatchmakingAppRequestsV1MetricResponse
+     */
+    public function getGameCenterDetailsRuleBasedMatchmakingRequestsMetrics($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getGameCenterDetailsRuleBasedMatchmakingRequestsMetrics', [$params], GameCenterMatchmakingAppRequestsV1MetricResponse::class);
     }
 }
 

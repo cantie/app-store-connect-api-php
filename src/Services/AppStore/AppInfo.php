@@ -29,6 +29,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $appStoreState; // 
+	public $state; // ACCEPTED, DEVELOPER_REJECTED, IN_REVIEW, PENDING_RELEASE, PREPARE_FOR_SUBMISSION, READY_FOR_DISTRIBUTION, READY_FOR_REVIEW, REJECTED, REPLACED_WITH_NEW_INFO, WAITING_FOR_REVIEW
 	public $appStoreAgeRating; // 
 	public $brazilAgeRating; // 
 	public $brazilAgeRatingV2; // SELF_RATED_L, SELF_RATED_TEN, SELF_RATED_TWELVE, SELF_RATED_FOURTEEN, SELF_RATED_SIXTEEN, SELF_RATED_EIGHTEEN, OFFICIAL_L, OFFICIAL_TEN, OFFICIAL_TWELVE, OFFICIAL_FOURTEEN, OFFICIAL_SIXTEEN, OFFICIAL_EIGHTEEN
@@ -47,6 +48,15 @@ class AppInfo_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setAppStoreState($appStoreState)
 	{
 		$this->appStoreState = $appStoreState;
+		return $this;
+	}
+	public function getState()
+	{
+		return $this->state;
+	}
+	public function setState($state)
+	{
+		$this->state = $state;
 		return $this;
 	}
 	/**

@@ -52,6 +52,104 @@ class GameCenterLeaderboardSetCreateRequest_Data_Attributes extends \Cantie\AppS
 
 }
 
+class GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'gameCenterDetails';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
+}
+
+class GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail extends \Cantie\AppStoreConnect\Model
+{
+	protected $dataType = GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail_Data::class;
+	protected $dataDataType = 'object';
+
+	/**
+	* @return  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
+}
+
+class GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup_Data extends \Cantie\AppStoreConnect\Model
+{
+	public $type = 'gameCenterGroups';
+	public $id;
+
+	public function getType()
+	{
+		return $this->type;
+	}
+	public function setType($type)
+	{
+		$this->type = $type;
+		return $this;
+	}
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
+		return $this;
+	}
+
+}
+
+class GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup extends \Cantie\AppStoreConnect\Model
+{
+	protected $dataType = GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup_Data::class;
+	protected $dataDataType = 'object';
+
+	/**
+	* @return  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup_Data
+	*/
+	public function getData()
+	{
+		return $this->data;
+	}
+	/**
+	* @param  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup_Data
+	*/
+	public function setData($data)
+	{
+		$this->data = $data;
+		return $this;
+	}
+
+}
+
 class GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterLeaderboards_Data extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'gameCenterLeaderboards';
@@ -103,9 +201,43 @@ class GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterLeaderb
 
 class GameCenterLeaderboardSetCreateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
 {
+	protected $gameCenterDetailType = GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail::class;
+	protected $gameCenterDetailDataType = 'object';
+	protected $gameCenterGroupType = GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup::class;
+	protected $gameCenterGroupDataType = 'object';
 	protected $gameCenterLeaderboardsType = GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterLeaderboards::class;
 	protected $gameCenterLeaderboardsDataType = 'object';
 
+	/**
+	* @return  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail
+	*/
+	public function getGameCenterDetail()
+	{
+		return $this->gameCenterDetail;
+	}
+	/**
+	* @param  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterDetail
+	*/
+	public function setGameCenterDetail($gameCenterDetail)
+	{
+		$this->gameCenterDetail = $gameCenterDetail;
+		return $this;
+	}
+	/**
+	* @return  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup
+	*/
+	public function getGameCenterGroup()
+	{
+		return $this->gameCenterGroup;
+	}
+	/**
+	* @param  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterGroup
+	*/
+	public function setGameCenterGroup($gameCenterGroup)
+	{
+		$this->gameCenterGroup = $gameCenterGroup;
+		return $this;
+	}
 	/**
 	* @return  GameCenterLeaderboardSetCreateRequest_Data_Relationships_GameCenterLeaderboards
 	*/

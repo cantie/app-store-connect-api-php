@@ -31,6 +31,15 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 
 	public $actors;
 	public $ageRatingDeclarations;
+	public $alternativeDistributionKeys;
+	public $alternativeDistributionPackageDeltas;
+	public $alternativeDistributionPackageVariants;
+	public $alternativeDistributionPackageVersions;
+	public $alternativeDistributionPackages;
+	public $analyticsReportInstances;
+	public $analyticsReportRequests;
+	public $analyticsReportSegments;
+	public $analyticsReports;
 	public $appAvailabilities;
 	public $appCategories;
 	public $appClipAdvancedExperienceImages;
@@ -110,6 +119,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 	public $gameCenterAppVersions;
 	public $gameCenterDetails;
 	public $gameCenterGroups;
+	public $gameCenterLeaderboardEntrySubmissions;
 	public $gameCenterLeaderboardImages;
 	public $gameCenterLeaderboardLocalizations;
 	public $gameCenterLeaderboardReleases;
@@ -119,6 +129,12 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 	public $gameCenterLeaderboardSetReleases;
 	public $gameCenterLeaderboardSets;
 	public $gameCenterLeaderboards;
+	public $gameCenterMatchmakingQueues;
+	public $gameCenterMatchmakingRuleSetTests;
+	public $gameCenterMatchmakingRuleSets;
+	public $gameCenterMatchmakingRules;
+	public $gameCenterMatchmakingTeams;
+	public $gameCenterPlayerAchievementSubmissions;
 	public $inAppPurchaseAppStoreReviewScreenshots;
 	public $inAppPurchaseAvailabilities;
 	public $inAppPurchaseContents;
@@ -126,6 +142,9 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 	public $inAppPurchasePriceSchedules;
 	public $inAppPurchaseSubmissions;
 	public $inAppPurchases;
+	public $marketplaceDomains;
+	public $marketplaceSearchDetails;
+	public $marketplaceWebhooks;
 	public $preReleaseVersions;
 	public $profiles;
 	public $promotedPurchaseImages;
@@ -171,7 +190,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
         $this->rootUrl = $rootUrl ?: 'https://api.appstoreconnect.apple.com/';
         $this->servicePath = '';
         $this->batchPath = 'batch';
-        $this->version = 'v3.0';
+        $this->version = 'v3.4';
         $this->serviceName = 'appstore';
         
         $this->actors = new AppStore\Resource\Actors(
@@ -229,6 +248,464 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'id' => [
                                 'location' => 'path',
                                 'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->alternativeDistributionKeys = new AppStore\Resource\AlternativeDistributionKeys(
+            $this,
+            $this->serviceName,
+            'alternativeDistributionKeys',
+            [
+                'methods' => [
+                    'createAlternativeDistributionKeys' => [
+                        'path' => '/v1/alternativeDistributionKeys',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getAlternativeDistributionKeys' => [
+                        'path' => '/v1/alternativeDistributionKeys/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionKeys]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'deleteAlternativeDistributionKeys' => [
+                        'path' => '/v1/alternativeDistributionKeys/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->alternativeDistributionPackageDeltas = new AppStore\Resource\AlternativeDistributionPackageDeltas(
+            $this,
+            $this->serviceName,
+            'alternativeDistributionPackageDeltas',
+            [
+                'methods' => [
+                    'getAlternativeDistributionPackageDeltas' => [
+                        'path' => '/v1/alternativeDistributionPackageDeltas/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackageDeltas]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->alternativeDistributionPackageVariants = new AppStore\Resource\AlternativeDistributionPackageVariants(
+            $this,
+            $this->serviceName,
+            'alternativeDistributionPackageVariants',
+            [
+                'methods' => [
+                    'getAlternativeDistributionPackageVariants' => [
+                        'path' => '/v1/alternativeDistributionPackageVariants/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackageVariants]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->alternativeDistributionPackageVersions = new AppStore\Resource\AlternativeDistributionPackageVersions(
+            $this,
+            $this->serviceName,
+            'alternativeDistributionPackageVersions',
+            [
+                'methods' => [
+                    'getAlternativeDistributionPackageVersions' => [
+                        'path' => '/v1/alternativeDistributionPackageVersions/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackageVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageVariants]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageDeltas]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[deltas]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[variants]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'listAlternativeDistributionPackageVersionsDeltas' => [
+                        'path' => '/v1/alternativeDistributionPackageVersions/{id}/deltas',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackageDeltas]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'listAlternativeDistributionPackageVersionsVariants' => [
+                        'path' => '/v1/alternativeDistributionPackageVersions/{id}/variants',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackageVariants]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->alternativeDistributionPackages = new AppStore\Resource\AlternativeDistributionPackages(
+            $this,
+            $this->serviceName,
+            'alternativeDistributionPackages',
+            [
+                'methods' => [
+                    'createAlternativeDistributionPackages' => [
+                        'path' => '/v1/alternativeDistributionPackages',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getAlternativeDistributionPackages' => [
+                        'path' => '/v1/alternativeDistributionPackages/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[versions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'listAlternativeDistributionPackagesVersions' => [
+                        'path' => '/v1/alternativeDistributionPackages/{id}/versions',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[state]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageVariants]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageDeltas]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[variants]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[deltas]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->analyticsReportInstances = new AppStore\Resource\AnalyticsReportInstances(
+            $this,
+            $this->serviceName,
+            'analyticsReportInstances',
+            [
+                'methods' => [
+                    'getAnalyticsReportInstances' => [
+                        'path' => '/v1/analyticsReportInstances/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[analyticsReportInstances]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReportSegments]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listAnalyticsReportInstancesSegments' => [
+                        'path' => '/v1/analyticsReportInstances/{id}/segments',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[analyticsReportSegments]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->analyticsReportRequests = new AppStore\Resource\AnalyticsReportRequests(
+            $this,
+            $this->serviceName,
+            'analyticsReportRequests',
+            [
+                'methods' => [
+                    'createAnalyticsReportRequests' => [
+                        'path' => '/v1/analyticsReportRequests',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getAnalyticsReportRequests' => [
+                        'path' => '/v1/analyticsReportRequests/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[analyticsReportRequests]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReports]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[reports]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'deleteAnalyticsReportRequests' => [
+                        'path' => '/v1/analyticsReportRequests/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listAnalyticsReportRequestsReports' => [
+                        'path' => '/v1/analyticsReportRequests/{id}/reports',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[category]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[name]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReports]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->analyticsReportSegments = new AppStore\Resource\AnalyticsReportSegments(
+            $this,
+            $this->serviceName,
+            'analyticsReportSegments',
+            [
+                'methods' => [
+                    'getAnalyticsReportSegments' => [
+                        'path' => '/v1/analyticsReportSegments/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[analyticsReportSegments]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->analyticsReports = new AppStore\Resource\AnalyticsReports(
+            $this,
+            $this->serviceName,
+            'analyticsReports',
+            [
+                'methods' => [
+                    'getAnalyticsReports' => [
+                        'path' => '/v1/analyticsReports/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[analyticsReports]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReportInstances]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listAnalyticsReportsInstances' => [
+                        'path' => '/v1/analyticsReports/{id}/instances',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[granularity]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[processingDate]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReportInstances]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
                             ],
                         ]
                     ],
@@ -810,11 +1287,19 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'path',
                                 'type' => 'string'
                             ],
-                            'fields[appStoreVersionExperiments]' => [
+                            'fields[ageRatingDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[ageRatingDeclarations]' => [
+                            'fields[appStoreReviewDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -822,7 +1307,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreReviewDetails]' => [
+                            'fields[alternativeDistributionPackages]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -847,10 +1332,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[builds]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appStoreVersionLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -3886,6 +4367,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[alternativeDistributionPackages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[customerReviews]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -3957,6 +4442,32 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'string'
                             ],
                             'fields[ageRatingDeclarations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getAppStoreVersionsAlternativeDistributionPackage' => [
+                        'path' => '/v1/appStoreVersions/{id}/alternativeDistributionPackage',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionPackages]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[alternativeDistributionPackageVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[versions]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -4142,6 +4653,22 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'path',
                                 'type' => 'string'
                             ],
+                            'filter[locale]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appScreenshotSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersions]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appPreviewSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[appStoreVersionLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4149,6 +4676,18 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit' => [
                                 'location' => 'query',
                                 'type' => 'integer'
+                            ],
+                            'limit[appScreenshotSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[appPreviewSets]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
                             ],
                         ]
                     ],
@@ -4296,6 +4835,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'filter[appStoreVersions.appVersionState]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'filter[appStoreVersions.platform]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4356,6 +4899,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[alternativeDistributionKeys]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[reviewSubmissions]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4388,6 +4935,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[marketplaceSearchDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[appClips]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4413,6 +4964,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[subscriptionGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReportRequests]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -4570,6 +5125,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[alternativeDistributionKeys]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[reviewSubmissions]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4602,6 +5161,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'fields[marketplaceSearchDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[appClips]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -4627,6 +5190,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[subscriptionGroups]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReportRequests]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -4759,6 +5326,54 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'id' => [
                                 'location' => 'path',
                                 'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getAppsAlternativeDistributionKey' => [
+                        'path' => '/v1/apps/{id}/alternativeDistributionKey',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionKeys]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listAppsAnalyticsReportRequests' => [
+                        'path' => '/v1/apps/{id}/analyticsReportRequests',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'filter[accessType]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReportRequests]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[analyticsReports]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[reports]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
                             ],
                         ]
                     ],
@@ -5124,6 +5739,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'filter[appVersionState]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'filter[platform]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -5136,11 +5755,19 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreVersionExperiments]' => [
+                            'fields[ageRatingDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[ageRatingDeclarations]' => [
+                            'fields[appStoreReviewDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -5148,7 +5775,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreReviewDetails]' => [
+                            'fields[alternativeDistributionPackages]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -5173,10 +5800,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[builds]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appStoreVersionLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -5642,6 +6265,20 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
+                    'getAppsMarketplaceSearchDetail' => [
+                        'path' => '/v1/apps/{id}/marketplaceSearchDetail',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[marketplaceSearchDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
                     'listAppsPerfPowerMetrics' => [
                         'path' => '/v1/apps/{id}/perfPowerMetrics',
                         'httpMethod' => 'GET',
@@ -5941,6 +6578,32 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'include' => [
                                 'location' => 'query',
                                 'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getAppsBetaTesterUsagesMetrics' => [
+                        'path' => '/v1/apps/{id}/metrics/betaTesterUsages',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[betaTesters]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'period' => [
+                                'location' => 'query',
+                                'type' => 'string'
                             ],
                         ]
                     ],
@@ -6672,6 +7335,32 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
+                    'getBetaGroupsBetaTesterUsagesMetrics' => [
+                        'path' => '/v1/betaGroups/{id}/metrics/betaTesterUsages',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[betaTesters]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'period' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
 
                 ]
             ]
@@ -7059,6 +7748,28 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit' => [
                                 'location' => 'query',
                                 'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'getBetaTestersBetaTesterUsagesMetrics' => [
+                        'path' => '/v1/betaTesters/{id}/metrics/betaTesterUsages',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'filter[apps]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'period' => [
+                                'location' => 'query',
+                                'type' => 'string'
                             ],
                         ]
                     ],
@@ -7460,11 +8171,19 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'path',
                                 'type' => 'string'
                             ],
-                            'fields[appStoreVersionExperiments]' => [
+                            'fields[ageRatingDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[ageRatingDeclarations]' => [
+                            'fields[appStoreReviewDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -7472,7 +8191,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreReviewDetails]' => [
+                            'fields[alternativeDistributionPackages]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -7497,10 +8216,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[builds]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appStoreVersionLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -7583,6 +8298,14 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'string'
                             ],
                             'fields[buildBetaDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[builds]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -7713,6 +8436,20 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'fields[preReleaseVersions]' => [
                                 'location' => 'query',
                                 'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getBuildsBetaBuildUsagesMetrics' => [
+                        'path' => '/v1/builds/{id}/metrics/betaBuildUsages',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
                             ],
                         ]
                     ],
@@ -8850,6 +9587,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[scmGitReferences]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -9055,6 +9796,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'string'
                             ],
                             'filter[builds]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'sort' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -10002,11 +10747,19 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'path',
                                 'type' => 'string'
                             ],
-                            'fields[appStoreVersionExperiments]' => [
+                            'fields[ageRatingDeclarations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[ageRatingDeclarations]' => [
+                            'fields[appStoreReviewDetails]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionLocalizations]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[appStoreVersionExperiments]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -10014,7 +10767,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appStoreReviewDetails]' => [
+                            'fields[alternativeDistributionPackages]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -10039,10 +10792,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[builds]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appStoreVersionLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -10692,6 +11441,66 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
+                    'getGameCenterDetailsClassicMatchmakingRequestsMetrics' => [
+                        'path' => '/v1/gameCenterDetails/{id}/metrics/classicMatchmakingRequests',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[result]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterDetailsRuleBasedMatchmakingRequestsMetrics' => [
+                        'path' => '/v1/gameCenterDetails/{id}/metrics/ruleBasedMatchmakingRequests',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[result]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
 
                 ]
             ]
@@ -11178,6 +11987,22 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterLeaderboardEntrySubmissions = new AppStore\Resource\GameCenterLeaderboardEntrySubmissions(
+            $this,
+            $this->serviceName,
+            'gameCenterLeaderboardEntrySubmissions',
+            [
+                'methods' => [
+                    'createGameCenterLeaderboardEntrySubmissions' => [
+                        'path' => '/v1/gameCenterLeaderboardEntrySubmissions',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
                         ]
                     ],
 
@@ -12248,6 +13073,592 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                 ]
             ]
         );
+        $this->gameCenterMatchmakingQueues = new AppStore\Resource\GameCenterMatchmakingQueues(
+            $this,
+            $this->serviceName,
+            'gameCenterMatchmakingQueues',
+            [
+                'methods' => [
+                    'listGameCenterMatchmakingQueues' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'fields[gameCenterMatchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'createGameCenterMatchmakingQueues' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterMatchmakingQueues' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterMatchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterMatchmakingQueues' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterMatchmakingQueues' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingQueuesExperimentMatchmakingQueueSizesMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingQueueSizes',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingQueuesExperimentMatchmakingRequestsMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingRequests',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[result]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'filter[gameCenterDetail]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingQueuesMatchmakingQueueSizesMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingQueueSizes',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingQueuesMatchmakingRequestsMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingRequests',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[result]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'filter[gameCenterDetail]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingQueuesMatchmakingSessionsMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingSessions',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterMatchmakingRuleSetTests = new AppStore\Resource\GameCenterMatchmakingRuleSetTests(
+            $this,
+            $this->serviceName,
+            'gameCenterMatchmakingRuleSetTests',
+            [
+                'methods' => [
+                    'createGameCenterMatchmakingRuleSetTests' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSetTests',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterMatchmakingRuleSets = new AppStore\Resource\GameCenterMatchmakingRuleSets(
+            $this,
+            $this->serviceName,
+            'gameCenterMatchmakingRuleSets',
+            [
+                'methods' => [
+                    'listGameCenterMatchmakingRuleSets' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'fields[gameCenterMatchmakingRuleSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingTeams]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingRules]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[matchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[rules]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[teams]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createGameCenterMatchmakingRuleSets' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getGameCenterMatchmakingRuleSets' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterMatchmakingRuleSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingTeams]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingRules]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit[matchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[rules]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'limit[teams]' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'updateGameCenterMatchmakingRuleSets' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterMatchmakingRuleSets' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterMatchmakingRuleSetsMatchmakingQueues' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets/{id}/matchmakingQueues',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterMatchmakingQueues]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'fields[gameCenterMatchmakingRuleSets]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterMatchmakingRuleSetsRules' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets/{id}/rules',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterMatchmakingRules]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'listGameCenterMatchmakingRuleSetsTeams' => [
+                        'path' => '/v1/gameCenterMatchmakingRuleSets/{id}/teams',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[gameCenterMatchmakingTeams]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterMatchmakingRules = new AppStore\Resource\GameCenterMatchmakingRules(
+            $this,
+            $this->serviceName,
+            'gameCenterMatchmakingRules',
+            [
+                'methods' => [
+                    'createGameCenterMatchmakingRules' => [
+                        'path' => '/v1/gameCenterMatchmakingRules',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'updateGameCenterMatchmakingRules' => [
+                        'path' => '/v1/gameCenterMatchmakingRules/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterMatchmakingRules' => [
+                        'path' => '/v1/gameCenterMatchmakingRules/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingRulesMatchmakingBooleanRuleResultsMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingBooleanRuleResults',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[result]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'filter[gameCenterMatchmakingQueue]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingRulesMatchmakingNumberRuleResultsMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingNumberRuleResults',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterMatchmakingQueue]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'getGameCenterMatchmakingRulesMatchmakingRuleErrorsMetrics' => [
+                        'path' => '/v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingRuleErrors',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                            'granularity' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'groupBy' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[gameCenterMatchmakingQueue]' => [
+                                'location' => 'query',
+                                'type' => 'string'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterMatchmakingTeams = new AppStore\Resource\GameCenterMatchmakingTeams(
+            $this,
+            $this->serviceName,
+            'gameCenterMatchmakingTeams',
+            [
+                'methods' => [
+                    'createGameCenterMatchmakingTeams' => [
+                        'path' => '/v1/gameCenterMatchmakingTeams',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'updateGameCenterMatchmakingTeams' => [
+                        'path' => '/v1/gameCenterMatchmakingTeams/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteGameCenterMatchmakingTeams' => [
+                        'path' => '/v1/gameCenterMatchmakingTeams/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->gameCenterPlayerAchievementSubmissions = new AppStore\Resource\GameCenterPlayerAchievementSubmissions(
+            $this,
+            $this->serviceName,
+            'gameCenterPlayerAchievementSubmissions',
+            [
+                'methods' => [
+                    'createGameCenterPlayerAchievementSubmissions' => [
+                        'path' => '/v1/gameCenterPlayerAchievementSubmissions',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+
+                ]
+            ]
+        );
         $this->inAppPurchaseAppStoreReviewScreenshots = new AppStore\Resource\InAppPurchaseAppStoreReviewScreenshots(
             $this,
             $this->serviceName,
@@ -12899,6 +14310,146 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'include' => [
                                 'location' => 'query',
                                 'type' => 'array'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->marketplaceDomains = new AppStore\Resource\MarketplaceDomains(
+            $this,
+            $this->serviceName,
+            'marketplaceDomains',
+            [
+                'methods' => [
+                    'listMarketplaceDomains' => [
+                        'path' => '/v1/marketplaceDomains',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'fields[marketplaceDomains]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createMarketplaceDomains' => [
+                        'path' => '/v1/marketplaceDomains',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getMarketplaceDomains' => [
+                        'path' => '/v1/marketplaceDomains/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[marketplaceDomains]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'deleteMarketplaceDomains' => [
+                        'path' => '/v1/marketplaceDomains/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->marketplaceSearchDetails = new AppStore\Resource\MarketplaceSearchDetails(
+            $this,
+            $this->serviceName,
+            'marketplaceSearchDetails',
+            [
+                'methods' => [
+                    'createMarketplaceSearchDetails' => [
+                        'path' => '/v1/marketplaceSearchDetails',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'updateMarketplaceSearchDetails' => [
+                        'path' => '/v1/marketplaceSearchDetails/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteMarketplaceSearchDetails' => [
+                        'path' => '/v1/marketplaceSearchDetails/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
+        $this->marketplaceWebhooks = new AppStore\Resource\MarketplaceWebhooks(
+            $this,
+            $this->serviceName,
+            'marketplaceWebhooks',
+            [
+                'methods' => [
+                    'listMarketplaceWebhooks' => [
+                        'path' => '/v1/marketplaceWebhooks',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'fields[marketplaceWebhooks]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createMarketplaceWebhooks' => [
+                        'path' => '/v1/marketplaceWebhooks',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'updateMarketplaceWebhooks' => [
+                        'path' => '/v1/marketplaceWebhooks/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+                    'deleteMarketplaceWebhooks' => [
+                        'path' => '/v1/marketplaceWebhooks/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
                             ],
                         ]
                     ],

@@ -33,6 +33,7 @@ class AppStoreAgeRating extends \Cantie\AppStoreConnect\Model
 	public static $NINE_PLUS = "NINE_PLUS";
 	public static $TWELVE_PLUS = "TWELVE_PLUS";
 	public static $SEVENTEEN_PLUS = "SEVENTEEN_PLUS";
+	public static $UNRATED = "UNRATED";
 
 
 }

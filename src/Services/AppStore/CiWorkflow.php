@@ -38,6 +38,12 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	protected $pullRequestStartConditionDataType = '';
 	protected $scheduledStartConditionType = CiScheduledStartCondition::class;
 	protected $scheduledStartConditionDataType = '';
+	protected $manualBranchStartConditionType = CiManualBranchStartCondition::class;
+	protected $manualBranchStartConditionDataType = '';
+	protected $manualTagStartConditionType = CiManualTagStartCondition::class;
+	protected $manualTagStartConditionDataType = '';
+	protected $manualPullRequestStartConditionType = CiManualPullRequestStartCondition::class;
+	protected $manualPullRequestStartConditionDataType = '';
 	protected $actionsType = CiAction::class;
 	protected $actionsDataType = 'array';
 	public $isEnabled;
@@ -122,6 +128,51 @@ class CiWorkflow_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setScheduledStartCondition($scheduledStartCondition)
 	{
 		$this->scheduledStartCondition = $scheduledStartCondition;
+		return $this;
+	}
+	/**
+	* @return  CiManualBranchStartCondition
+	*/
+	public function getManualBranchStartCondition()
+	{
+		return $this->manualBranchStartCondition;
+	}
+	/**
+	* @param  CiManualBranchStartCondition
+	*/
+	public function setManualBranchStartCondition($manualBranchStartCondition)
+	{
+		$this->manualBranchStartCondition = $manualBranchStartCondition;
+		return $this;
+	}
+	/**
+	* @return  CiManualTagStartCondition
+	*/
+	public function getManualTagStartCondition()
+	{
+		return $this->manualTagStartCondition;
+	}
+	/**
+	* @param  CiManualTagStartCondition
+	*/
+	public function setManualTagStartCondition($manualTagStartCondition)
+	{
+		$this->manualTagStartCondition = $manualTagStartCondition;
+		return $this;
+	}
+	/**
+	* @return  CiManualPullRequestStartCondition
+	*/
+	public function getManualPullRequestStartCondition()
+	{
+		return $this->manualPullRequestStartCondition;
+	}
+	/**
+	* @param  CiManualPullRequestStartCondition
+	*/
+	public function setManualPullRequestStartCondition($manualPullRequestStartCondition)
+	{
+		$this->manualPullRequestStartCondition = $manualPullRequestStartCondition;
 		return $this;
 	}
 	/**

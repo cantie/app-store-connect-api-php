@@ -30,6 +30,8 @@ class DiagnosticLog extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'diagnosticLogs';
 	public $id;
+	protected $linksType = ResourceLinks::class;
+	protected $linksDataType = '';
 
 	public function getType()
 	{
@@ -47,6 +49,21 @@ class DiagnosticLog extends \Cantie\AppStoreConnect\Model
 	public function setId($id)
 	{
 		$this->id = $id;
+		return $this;
+	}
+	/**
+	* @return  ResourceLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ResourceLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
 		return $this;
 	}
 

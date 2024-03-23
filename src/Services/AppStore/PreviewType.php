@@ -44,6 +44,7 @@ class PreviewType extends \Cantie\AppStoreConnect\Model
 	public static $IPAD_97 = "IPAD_97";
 	public static $DESKTOP = "DESKTOP";
 	public static $APPLE_TV = "APPLE_TV";
+	public static $APPLE_VISION_PRO = "APPLE_VISION_PRO";
 
 
 }

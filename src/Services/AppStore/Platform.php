@@ -32,6 +32,7 @@ class Platform extends \Cantie\AppStoreConnect\Model
 	public static $IOS = "IOS";
 	public static $MAC_OS = "MAC_OS";
 	public static $TV_OS = "TV_OS";
+	public static $VISION_OS = "VISION_OS";
 
 
 }

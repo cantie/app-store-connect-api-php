@@ -81,6 +81,8 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	public $id;
 	protected $attributesType = BuildIcon_Attributes::class;
 	protected $attributesDataType = 'object';
+	protected $linksType = ResourceLinks::class;
+	protected $linksDataType = '';
 
 	public function getType()
 	{
@@ -113,6 +115,21 @@ class BuildIcon extends \Cantie\AppStoreConnect\Model
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
+		return $this;
+	}
+	/**
+	* @return  ResourceLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ResourceLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
 		return $this;
 	}
 

@@ -37,7 +37,7 @@ use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewSubmissionWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaBuildLocalizationsWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildBetaGroupsLinkagesRequest;
-use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BuildBetaDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\DiagnosticSignaturesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildIconsWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BuildIndividualTestersLinkagesResponse;
@@ -45,6 +45,7 @@ use Cantie\AppStoreConnect\Services\AppStore\BuildIndividualTestersLinkagesReque
 use Cantie\AppStoreConnect\Services\AppStore\BetaTestersWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\xcodeMetrics;
 use Cantie\AppStoreConnect\Services\AppStore\PrereleaseVersionWithoutIncludesResponse;
+use Cantie\AppStoreConnect\Services\AppStore\BetaBuildUsagesV1MetricResponse;
 
 /**
  * The "builds" collection of methods.
@@ -185,13 +186,13 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return BuildBetaDetailWithoutIncludesResponse
+     * @return BuildBetaDetailResponse
      */
     public function getBuildsBuildBetaDetail($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getBuildsBuildBetaDetail', [$params], BuildBetaDetailWithoutIncludesResponse::class);
+        return $this->call('getBuildsBuildBetaDetail', [$params], BuildBetaDetailResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -278,6 +279,17 @@ class Builds extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('getBuildsPreReleaseVersion', [$params], PrereleaseVersionWithoutIncludesResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param array $optParams Optional parameters.
+     * @return BetaBuildUsagesV1MetricResponse
+     */
+    public function getBuildsBetaBuildUsagesMetrics($id, $optParams = [])
+    {
+		$params = ['id' => $id];
+		$params = array_merge($params, $optParams);
+        return $this->call('getBuildsBetaBuildUsagesMetrics', [$params], BetaBuildUsagesV1MetricResponse::class);
     }
 }
 
