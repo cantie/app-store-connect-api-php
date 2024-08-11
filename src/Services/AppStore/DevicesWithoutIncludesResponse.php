@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class DevicesWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Profile::class;
+	protected $dataType = Device::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class DevicesWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  Profile[]
+	* @return  Device[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Profile[]
+	* @param  Device[]
 	*/
 	public function setData($data)
 	{

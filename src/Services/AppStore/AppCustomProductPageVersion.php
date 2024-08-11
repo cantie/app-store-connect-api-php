@@ -30,6 +30,7 @@ class AppCustomProductPageVersion_Attributes extends \Cantie\AppStoreConnect\Mod
 {
 	public $version;
 	public $state; // PREPARE_FOR_SUBMISSION, READY_FOR_REVIEW, WAITING_FOR_REVIEW, IN_REVIEW, ACCEPTED, APPROVED, REPLACED_WITH_NEW_VERSION, REJECTED
+	public $deepLink;
 
 	public function getVersion()
 	{
@@ -47,6 +48,15 @@ class AppCustomProductPageVersion_Attributes extends \Cantie\AppStoreConnect\Mod
 	public function setState($state)
 	{
 		$this->state = $state;
+		return $this;
+	}
+	public function getDeepLink()
+	{
+		return $this->deepLink;
+	}
+	public function setDeepLink($deepLink)
+	{
+		$this->deepLink = $deepLink;
 		return $this;
 	}
 

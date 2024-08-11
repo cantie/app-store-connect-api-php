@@ -31,6 +31,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 
 	public $actors;
 	public $ageRatingDeclarations;
+	public $alternativeDistributionDomains;
 	public $alternativeDistributionKeys;
 	public $alternativeDistributionPackageDeltas;
 	public $alternativeDistributionPackageVariants;
@@ -65,8 +66,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
 	public $appPreviews;
 	public $appPricePoints;
 	public $appPriceSchedules;
-	public $appPriceTiers;
-	public $appPrices;
 	public $appScreenshotSets;
 	public $appScreenshots;
 	public $appStoreReviewAttachments;
@@ -190,7 +189,7 @@ class AppStore extends \Cantie\AppStoreConnect\Service
         $this->rootUrl = $rootUrl ?: 'https://api.appstoreconnect.apple.com/';
         $this->servicePath = '';
         $this->batchPath = 'batch';
-        $this->version = 'v3.4';
+        $this->version = 'v3.5';
         $this->serviceName = 'appstore';
         
         $this->actors = new AppStore\Resource\Actors(
@@ -255,12 +254,84 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                 ]
             ]
         );
+        $this->alternativeDistributionDomains = new AppStore\Resource\AlternativeDistributionDomains(
+            $this,
+            $this->serviceName,
+            'alternativeDistributionDomains',
+            [
+                'methods' => [
+                    'listAlternativeDistributionDomains' => [
+                        'path' => '/v1/alternativeDistributionDomains',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'fields[alternativeDistributionDomains]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
+                    'createAlternativeDistributionDomains' => [
+                        'path' => '/v1/alternativeDistributionDomains',
+                        'httpMethod' => 'POST',
+                        'parameters' => [
+                        ]
+                    ],
+                    'getAlternativeDistributionDomains' => [
+                        'path' => '/v1/alternativeDistributionDomains/{id}',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                            'fields[alternativeDistributionDomains]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                        ]
+                    ],
+                    'deleteAlternativeDistributionDomains' => [
+                        'path' => '/v1/alternativeDistributionDomains/{id}',
+                        'httpMethod' => 'DELETE',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
+
+                ]
+            ]
+        );
         $this->alternativeDistributionKeys = new AppStore\Resource\AlternativeDistributionKeys(
             $this,
             $this->serviceName,
             'alternativeDistributionKeys',
             [
                 'methods' => [
+                    'listAlternativeDistributionKeys' => [
+                        'path' => '/v1/alternativeDistributionKeys',
+                        'httpMethod' => 'GET',
+                        'parameters' => [
+                            'exists[app]' => [
+                                'location' => 'query',
+                                'type' => 'boolean'
+                            ],
+                            'fields[alternativeDistributionKeys]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'limit' => [
+                                'location' => 'query',
+                                'type' => 'integer'
+                            ],
+                        ]
+                    ],
                     'createAlternativeDistributionKeys' => [
                         'path' => '/v1/alternativeDistributionKeys',
                         'httpMethod' => 'POST',
@@ -1763,6 +1834,16 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
+                    'updateAppCustomProductPageVersions' => [
+                        'path' => '/v1/appCustomProductPageVersions/{id}',
+                        'httpMethod' => 'PATCH',
+                        'parameters' => [
+                            'id' => [
+                                'location' => 'path',
+                                'type' => 'string'
+                            ],
+                        ]
+                    ],
                     'listAppCustomProductPageVersionsAppCustomProductPageLocalizations' => [
                         'path' => '/v1/appCustomProductPageVersions/{id}/appCustomProductPageLocalizations',
                         'httpMethod' => 'GET',
@@ -2925,58 +3006,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'listAppPricePoints' => [
-                        'path' => '/v1/appPricePoints',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'filter[priceTier]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'filter[territory]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                        ]
-                    ],
-                    'getAppPricePointsV1' => [
-                        'path' => '/v1/appPricePoints/{id}',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                        ]
-                    ],
                     'listAppPricePointsV3Equalizations' => [
                         'path' => '/v3/appPricePoints/{id}/equalizations',
                         'httpMethod' => 'GET',
@@ -3006,20 +3035,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                        ]
-                    ],
-                    'getAppPricePointsTerritory' => [
-                        'path' => '/v1/appPricePoints/{id}/territory',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -3166,134 +3181,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit' => [
                                 'location' => 'query',
                                 'type' => 'integer'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                        ]
-                    ],
-
-                ]
-            ]
-        );
-        $this->appPriceTiers = new AppStore\Resource\AppPriceTiers(
-            $this,
-            $this->serviceName,
-            'appPriceTiers',
-            [
-                'methods' => [
-                    'listAppPriceTiers' => [
-                        'path' => '/v1/appPriceTiers',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'filter[id]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPriceTiers]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit[pricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                        ]
-                    ],
-                    'getAppPriceTiers' => [
-                        'path' => '/v1/appPriceTiers/{id}',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[appPriceTiers]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit[pricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                        ]
-                    ],
-                    'listAppPriceTiersPricePoints' => [
-                        'path' => '/v1/appPriceTiers/{id}/pricePoints',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'filter[territory]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPriceTiers]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                        ]
-                    ],
-
-                ]
-            ]
-        );
-        $this->appPrices = new AppStore\Resource\AppPrices(
-            $this,
-            $this->serviceName,
-            'appPrices',
-            [
-                'methods' => [
-                    'getAppPrices' => [
-                        'path' => '/v1/appPrices/{id}',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[appPrices]' => [
-                                'location' => 'query',
-                                'type' => 'array'
                             ],
                             'include' => [
                                 'location' => 'query',
@@ -4971,10 +4858,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appPrices]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[appPreOrders]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -5004,10 +4887,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[appEncryptionDeclarations]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -5043,10 +4922,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
-                            'limit[availableTerritories]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
                             'limit[betaAppLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
@@ -5072,10 +4947,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'limit[preReleaseVersions]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'limit[prices]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
@@ -5197,10 +5068,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appPrices]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[appPreOrders]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -5230,10 +5097,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[appEncryptionDeclarations]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -5269,10 +5132,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
-                            'limit[availableTerritories]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
                             'limit[betaAppLocalizations]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
@@ -5298,10 +5157,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'limit[preReleaseVersions]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'limit[prices]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
@@ -5825,24 +5680,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             ],
                         ]
                     ],
-                    'listAppsAvailableTerritories' => [
-                        'path' => '/v1/apps/{id}/availableTerritories',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[territories]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                        ]
-                    ],
                     'listAppsBetaAppLocalizations' => [
                         'path' => '/v1/apps/{id}/betaAppLocalizations',
                         'httpMethod' => 'GET',
@@ -6330,78 +6167,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit' => [
                                 'location' => 'query',
                                 'type' => 'integer'
-                            ],
-                        ]
-                    ],
-                    'listAppsPricePoints' => [
-                        'path' => '/v1/apps/{id}/pricePoints',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'filter[priceTier]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'filter[territory]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPriceTiers]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPricePoints]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[apps]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                        ]
-                    ],
-                    'listAppsPrices' => [
-                        'path' => '/v1/apps/{id}/prices',
-                        'httpMethod' => 'GET',
-                        'parameters' => [
-                            'id' => [
-                                'location' => 'path',
-                                'type' => 'string'
-                            ],
-                            'fields[appPriceTiers]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[apps]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[appPrices]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'limit' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'include' => [
-                                'location' => 'query',
-                                'type' => 'array'
                             ],
                         ]
                     ],
@@ -9457,10 +9222,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
-                            'fields[appPrices]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
                             'fields[gameCenterEnabledVersions]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -9486,10 +9247,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'array'
                             ],
                             'fields[appCustomProductPages]' => [
-                                'location' => 'query',
-                                'type' => 'array'
-                            ],
-                            'fields[territories]' => [
                                 'location' => 'query',
                                 'type' => 'array'
                             ],
@@ -9522,14 +9279,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'type' => 'integer'
                             ],
                             'limit[appClips]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'limit[prices]' => [
-                                'location' => 'query',
-                                'type' => 'integer'
-                            ],
-                            'limit[availableTerritories]' => [
                                 'location' => 'query',
                                 'type' => 'integer'
                             ],
@@ -14252,10 +14001,6 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'id' => [
                                 'location' => 'path',
                                 'type' => 'string'
-                            ],
-                            'filter[priceTier]' => [
-                                'location' => 'query',
-                                'type' => 'array'
                             ],
                             'filter[territory]' => [
                                 'location' => 'query',

@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class TerritoriesWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = EndUserLicenseAgreement::class;
+	protected $dataType = Territory::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class TerritoriesWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  EndUserLicenseAgreement[]
+	* @return  Territory[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  EndUserLicenseAgreement[]
+	* @param  Territory[]
 	*/
 	public function setData($data)
 	{

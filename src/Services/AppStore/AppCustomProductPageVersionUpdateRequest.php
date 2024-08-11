@@ -26,67 +26,28 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
+class AppCustomProductPageVersionUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	public $diagnosticType; // DISK_WRITES, HANGS, LAUNCHES
-	public $signature;
-	public $weight;
-	protected $insightType = DiagnosticInsight::class;
-	protected $insightDataType = '';
+	public $deepLink;
 
-	public function getDiagnosticType()
+	public function getDeepLink()
 	{
-		return $this->diagnosticType;
+		return $this->deepLink;
 	}
-	public function setDiagnosticType($diagnosticType)
+	public function setDeepLink($deepLink)
 	{
-		$this->diagnosticType = $diagnosticType;
-		return $this;
-	}
-	public function getSignature()
-	{
-		return $this->signature;
-	}
-	public function setSignature($signature)
-	{
-		$this->signature = $signature;
-		return $this;
-	}
-	public function getWeight()
-	{
-		return $this->weight;
-	}
-	public function setWeight($weight)
-	{
-		$this->weight = $weight;
-		return $this;
-	}
-	/**
-	* @return  DiagnosticInsight
-	*/
-	public function getInsight()
-	{
-		return $this->insight;
-	}
-	/**
-	* @param  DiagnosticInsight
-	*/
-	public function setInsight($insight)
-	{
-		$this->insight = $insight;
+		$this->deepLink = $deepLink;
 		return $this;
 	}
 
 }
 
-class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
+class AppCustomProductPageVersionUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
-	public $type = 'diagnosticSignatures';
+	public $type = 'appCustomProductPageVersions';
 	public $id;
-	protected $attributesType = DiagnosticSignature_Attributes::class;
+	protected $attributesType = AppCustomProductPageVersionUpdateRequest_Data_Attributes::class;
 	protected $attributesDataType = 'object';
-	protected $linksType = ResourceLinks::class;
-	protected $linksDataType = '';
 
 	public function getType()
 	{
@@ -107,33 +68,41 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  DiagnosticSignature_Attributes
+	* @return  AppCustomProductPageVersionUpdateRequest_Data_Attributes
 	*/
 	public function getAttributes()
 	{
 		return $this->attributes;
 	}
 	/**
-	* @param  DiagnosticSignature_Attributes
+	* @param  AppCustomProductPageVersionUpdateRequest_Data_Attributes
 	*/
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
 		return $this;
 	}
+
+}
+
+class AppCustomProductPageVersionUpdateRequest extends \Cantie\AppStoreConnect\Model
+{
+	protected $dataType = AppCustomProductPageVersionUpdateRequest_Data::class;
+	protected $dataDataType = 'object';
+
 	/**
-	* @return  ResourceLinks
+	* @return  AppCustomProductPageVersionUpdateRequest_Data
 	*/
-	public function getLinks()
+	public function getData()
 	{
-		return $this->links;
+		return $this->data;
 	}
 	/**
-	* @param  ResourceLinks
+	* @param  AppCustomProductPageVersionUpdateRequest_Data
 	*/
-	public function setLinks($links)
+	public function setData($data)
 	{
-		$this->links = $links;
+		$this->data = $data;
 		return $this;
 	}
 

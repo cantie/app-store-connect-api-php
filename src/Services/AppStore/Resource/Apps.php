@@ -41,7 +41,6 @@ use Cantie\AppStoreConnect\Services\AppStore\csv;
 use Cantie\AppStoreConnect\Services\AppStore\AppPriceScheduleResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionExperimentsV2Response;
 use Cantie\AppStoreConnect\Services\AppStore\AppStoreVersionsResponse;
-use Cantie\AppStoreConnect\Services\AppStore\TerritoriesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppLocalizationsWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaAppReviewDetailWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\BetaGroupsWithoutIncludesResponse;
@@ -59,8 +58,6 @@ use Cantie\AppStoreConnect\Services\AppStore\MarketplaceSearchDetailResponse;
 use Cantie\AppStoreConnect\Services\AppStore\xcodeMetrics;
 use Cantie\AppStoreConnect\Services\AppStore\AppPreOrderWithoutIncludesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\PreReleaseVersionsWithoutIncludesResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AppPricePointsV2Response;
-use Cantie\AppStoreConnect\Services\AppStore\AppPricesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppPromotedPurchasesLinkagesResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppPromotedPurchasesLinkagesRequest;
 use Cantie\AppStoreConnect\Services\AppStore\PromotedPurchasesResponse;
@@ -242,17 +239,6 @@ class Apps extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('listAppsAppStoreVersions', [$params], AppStoreVersionsResponse::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return TerritoriesResponse
-     */
-    public function listAppsAvailableTerritories($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('listAppsAvailableTerritories', [$params], TerritoriesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
@@ -439,28 +425,6 @@ class Apps extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('listAppsPreReleaseVersions', [$params], PreReleaseVersionsWithoutIncludesResponse::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return AppPricePointsV2Response
-     */
-    public function listAppsPricePoints($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('listAppsPricePoints', [$params], AppPricePointsV2Response::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return AppPricesResponse
-     */
-    public function listAppsPrices($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('listAppsPrices', [$params], AppPricesResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource

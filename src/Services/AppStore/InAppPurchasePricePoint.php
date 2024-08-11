@@ -30,7 +30,6 @@ class InAppPurchasePricePoint_Attributes extends \Cantie\AppStoreConnect\Model
 {
 	public $customerPrice;
 	public $proceeds;
-	public $priceTier;
 
 	public function getCustomerPrice()
 	{
@@ -48,15 +47,6 @@ class InAppPurchasePricePoint_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setProceeds($proceeds)
 	{
 		$this->proceeds = $proceeds;
-		return $this;
-	}
-	public function getPriceTier()
-	{
-		return $this->priceTier;
-	}
-	public function setPriceTier($priceTier)
-	{
-		$this->priceTier = $priceTier;
 		return $this;
 	}
 

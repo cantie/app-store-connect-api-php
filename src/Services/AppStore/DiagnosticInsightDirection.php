@@ -26,43 +26,13 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class BetaAppReviewDetailWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
+class DiagnosticInsightDirection extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = BetaAppReviewDetail::class;
-	protected $dataDataType = '';
-	protected $linksType = DocumentLinks::class;
-	protected $linksDataType = '';
+	// enum class
+	public static $UP = "UP";
+	public static $DOWN = "DOWN";
+	public static $UNDEFINED = "UNDEFINED";
 
-	/**
-	* @return  BetaAppReviewDetail
-	*/
-	public function getData()
-	{
-		return $this->data;
-	}
-	/**
-	* @param  BetaAppReviewDetail
-	*/
-	public function setData($data)
-	{
-		$this->data = $data;
-		return $this;
-	}
-	/**
-	* @return  DocumentLinks
-	*/
-	public function getLinks()
-	{
-		return $this->links;
-	}
-	/**
-	* @param  DocumentLinks
-	*/
-	public function setLinks($links)
-	{
-		$this->links = $links;
-		return $this;
-	}
 
 }
 

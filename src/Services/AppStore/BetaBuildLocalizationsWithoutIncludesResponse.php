@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BetaBuildLocalizationsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Build::class;
+	protected $dataType = BetaBuildLocalization::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class BetaBuildLocalizationsWithoutIncludesResponse extends \Cantie\AppStoreConn
 	protected $metaDataType = '';
 
 	/**
-	* @return  Build[]
+	* @return  BetaBuildLocalization[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Build[]
+	* @param  BetaBuildLocalization[]
 	*/
 	public function setData($data)
 	{

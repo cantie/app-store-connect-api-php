@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class PrereleaseVersionWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Build::class;
+	protected $dataType = PrereleaseVersion::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  Build
+	* @return  PrereleaseVersion
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Build
+	* @param  PrereleaseVersion
 	*/
 	public function setData($data)
 	{

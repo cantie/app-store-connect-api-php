@@ -32,6 +32,7 @@ class BetaTester_Attributes extends \Cantie\AppStoreConnect\Model
 	public $lastName;
 	public $email;
 	public $inviteType; // 
+	public $state; // 
 
 	public function getFirstName()
 	{
@@ -73,6 +74,21 @@ class BetaTester_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setInviteType($inviteType)
 	{
 		$this->inviteType = $inviteType;
+		return $this;
+	}
+	/**
+	* @return  string
+	*/
+	public function getState()
+	{
+		return $this->state;
+	}
+	/**
+	* @param  string
+	*/
+	public function setState($state)
+	{
+		$this->state = $state;
 		return $this;
 	}
 

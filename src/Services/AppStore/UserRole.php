@@ -38,7 +38,6 @@ class UserRole extends \Cantie\AppStoreConnect\Model
 	public static $DEVELOPER = "DEVELOPER";
 	public static $ACCESS_TO_REPORTS = "ACCESS_TO_REPORTS";
 	public static $CUSTOMER_SUPPORT = "CUSTOMER_SUPPORT";
-	public static $IMAGE_MANAGER = "IMAGE_MANAGER";
 	public static $CREATE_APPS = "CREATE_APPS";
 	public static $CLOUD_MANAGED_DEVELOPER_ID = "CLOUD_MANAGED_DEVELOPER_ID";
 	public static $CLOUD_MANAGED_APP_DISTRIBUTION = "CLOUD_MANAGED_APP_DISTRIBUTION";

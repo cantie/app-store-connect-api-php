@@ -28,6 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
 use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageVersionResponse;
 use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageVersionCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageVersionUpdateRequest;
 use Cantie\AppStoreConnect\Services\AppStore\AppCustomProductPageLocalizationsResponse;
 
 /**
@@ -60,6 +61,16 @@ class AppCustomProductPageVersions extends \Cantie\AppStoreConnect\Services\Reso
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('getAppCustomProductPageVersions', [$params], AppCustomProductPageVersionResponse::class);
+    }
+    /**
+	 * @param string $id the id of the requested resource
+	 * @param AppCustomProductPageVersionUpdateRequest $postBody
+     * @return AppCustomProductPageVersionResponse
+     */
+    public function updateAppCustomProductPageVersions($id, AppCustomProductPageVersionUpdateRequest $postBody)
+    {
+		$params = ['id' => $id, 'postBody' => $postBody];
+        return $this->call('updateAppCustomProductPageVersions', [$params], AppCustomProductPageVersionResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource

@@ -42,6 +42,8 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public $detail;
 	protected $sourceType = [ErrorSourcePointer::class, ErrorSourceParameter::class];
 	protected $sourceDataType = '[*]';
+	protected $linksType = ErrorLinks::class;
+	protected $linksDataType = '';
 	protected $metaType = ErrorResponse_Errors_Meta::class;
 	protected $metaDataType = 'object';
 
@@ -97,6 +99,21 @@ class ErrorResponse_Errors extends \Cantie\AppStoreConnect\Model
 	public function setSource($source)
 	{
 		$this->source = $source;
+		return $this;
+	}
+	/**
+	* @return  ErrorLinks
+	*/
+	public function getLinks()
+	{
+		return $this->links;
+	}
+	/**
+	* @param  ErrorLinks
+	*/
+	public function setLinks($links)
+	{
+		$this->links = $links;
 		return $this;
 	}
 	/**

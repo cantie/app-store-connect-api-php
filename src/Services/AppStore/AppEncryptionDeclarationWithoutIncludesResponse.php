@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppEncryptionDeclarationWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Build::class;
+	protected $dataType = AppEncryptionDeclaration::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  Build
+	* @return  AppEncryptionDeclaration
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Build
+	* @param  AppEncryptionDeclaration
 	*/
 	public function setData($data)
 	{

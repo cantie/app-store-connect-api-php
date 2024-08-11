@@ -27,10 +27,7 @@
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
 use Cantie\AppStoreConnect\Services\AppStore\AppPricePointV3Response;
-use Cantie\AppStoreConnect\Services\AppStore\AppPricePointsResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AppPricePointResponse;
 use Cantie\AppStoreConnect\Services\AppStore\csv;
-use Cantie\AppStoreConnect\Services\AppStore\TerritoryResponse;
 
 /**
  * The "appPricePoints" collection of methods.
@@ -55,27 +52,6 @@ class AppPricePoints extends \Cantie\AppStoreConnect\Services\Resource
         return $this->call('getAppPricePointsV3', [$params], AppPricePointV3Response::class);
     }
     /**
-	 * @param array $optParams Optional parameters.
-     * @return AppPricePointsResponse
-     */
-    public function listAppPricePoints($optParams = [])
-    {
-		$params = [];
-		$params = array_merge($params, $optParams);
-        return $this->call('listAppPricePoints', [$params], AppPricePointsResponse::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return AppPricePointResponse
-     */
-    public function getAppPricePointsV1($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getAppPricePointsV1', [$params], AppPricePointResponse::class);
-    }
-    /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
      * @return csv
@@ -85,17 +61,6 @@ class AppPricePoints extends \Cantie\AppStoreConnect\Services\Resource
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
         return $this->call('listAppPricePointsV3Equalizations', [$params], csv::class);
-    }
-    /**
-	 * @param string $id the id of the requested resource
-	 * @param array $optParams Optional parameters.
-     * @return TerritoryResponse
-     */
-    public function getAppPricePointsTerritory($id, $optParams = [])
-    {
-		$params = ['id' => $id];
-		$params = array_merge($params, $optParams);
-        return $this->call('getAppPricePointsTerritory', [$params], TerritoryResponse::class);
     }
 }
 

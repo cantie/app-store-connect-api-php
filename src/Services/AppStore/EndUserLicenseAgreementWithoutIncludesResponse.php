@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class EndUserLicenseAgreementWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = App::class;
+	protected $dataType = EndUserLicenseAgreement::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  App
+	* @return  EndUserLicenseAgreement
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  App
+	* @param  EndUserLicenseAgreement
 	*/
 	public function setData($data)
 	{

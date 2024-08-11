@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = User::class;
+	protected $dataType = App::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class AppsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  User[]
+	* @return  App[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  User[]
+	* @param  App[]
 	*/
 	public function setData($data)
 	{

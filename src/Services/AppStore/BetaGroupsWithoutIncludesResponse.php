@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BetaGroupsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = BetaTester::class;
+	protected $dataType = BetaGroup::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class BetaGroupsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  BetaTester[]
+	* @return  BetaGroup[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  BetaTester[]
+	* @param  BetaGroup[]
 	*/
 	public function setData($data)
 	{
