@@ -80,7 +80,7 @@ class Client
     {
         return self::LIBVER;
     }
-    
+
     public function setApiKey($keyPath)
     {
         if (is_string($keyPath)) {
@@ -90,6 +90,11 @@ class Client
 
             $this->apiKey = file_get_contents($keyPath);
         }
+    }
+
+    public function setApiKeyFromString($key)
+    {
+        $this->apiKey = $key;
     }
 
     private function getApiKey()
