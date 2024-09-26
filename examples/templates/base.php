@@ -88,7 +88,7 @@ function setData($key, $value)
     $file = __DIR__ . '/../.dat';
     $content = file_get_contents($file);
     if (!$content) {
-      $content = array();
+      $content = "{}";
     }
     $content = json_decode($content);
     $content->{$key} = $value;
