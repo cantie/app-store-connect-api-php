@@ -54,7 +54,7 @@ class REST
     $runner = new Runner(
         $config,
         sprintf('%s %s', $request->getMethod(), (string) $request->getUri()),
-        array(get_class(), 'doExecute'),
+        array(__CLASS__, 'doExecute'),
         array($client, $request, $expectedClass)
     );
 
