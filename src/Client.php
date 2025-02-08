@@ -19,6 +19,7 @@ namespace Cantie\AppStoreConnect;
 
 use Cantie\AppStoreConnect\AccessToken\Generate;
 
+use DateTime;
 use InvalidArgumentException;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface;
@@ -28,7 +29,6 @@ use Psr\Log\LoggerInterface;
 use Psr\Http\Message\RequestInterface;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler as MonologStreamHandler;
-use Carbon\Carbon;
 
 /**
  * The Apple API Client
@@ -173,7 +173,7 @@ class Client
         $jwtToken = $tokenGenerator->generateToken();
         // cache for 10 minutes
         $this->jwtToken = $jwtToken;
-        $this->jwtTokenExpTime = Carbon::now()->addMinutes(10)->timestamp;
+        $this->jwtTokenExpTime = (new DateTime())->modify("+10 minutes")->getTimestamp();
         return $jwtToken;
     }
 
