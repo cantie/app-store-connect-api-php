@@ -130,11 +130,17 @@ class Model implements \ArrayAccess
                         }
                     }
                 } elseif ($dataType == '[*]') {
-                    $type = ModelConfig::getModelNameByType($val['type']);
-                    if ($val instanceof $type) {
-                        $this->$key = $val;
-                    } else {
-                        $this->$key = new $type($val);
+                    foreach ($keyType as $possibleType) {
+                        if ($val instanceof $possibleType) {
+                            $this->$key = $val;
+                            break;
+                        }
+                        $testType = new $possibleType($val);
+                        $isOK = count($testType->modelData) <= 0;
+                        if ($isOK) {
+                            $this->$key = $testType;
+                            break;
+                        }
                     }
                 } elseif ($val instanceof $keyType) {
                     $this->$key = $val;
