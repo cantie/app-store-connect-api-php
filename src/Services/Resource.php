@@ -22,6 +22,7 @@ use Cantie\AppStoreConnect\Http\MediaFileUpload;
 use Cantie\AppStoreConnect\Exception as AppleException;
 use Cantie\AppStoreConnect\Utils\UriTemplate;
 use GuzzleHttp\Psr7\Request;
+use Cantie\AppStoreConnect\Services\AppStore\gzip;
 
 class Resource
 {
@@ -219,6 +220,10 @@ class Resource
 
       // pull down the modified request
       $request = $upload->getRequest();
+    }
+    if ($expectedClass == gzip::class) {
+      $request = $request
+        ->withHeader('Accept', 'application/a-gzip');
     }
 
     // if this is a media type, we will return the raw response

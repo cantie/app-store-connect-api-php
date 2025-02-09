@@ -68,6 +68,7 @@
   <li><a href="list-app-screenshot-sets.php">List all screenshot sets for an app store version localization</a></li>
   <li><a href="create-app-screenshot-set.php">Create an app screenshot set</a></li>
   <li><a href="upload-app-screenshot.php">Upload an App Screenshot</a></li>
+  <li><a href="fetch-sale-reports.php">Fetch sale reports</a></li>
 </ul>
 
 <?= pageFooter();
