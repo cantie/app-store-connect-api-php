@@ -26,6 +26,7 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
+use Cantie\AppStoreConnect\Services\AppStore\InAppPurchasePricePointsResponse;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseResponse;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseV2Response;
 use Cantie\AppStoreConnect\Services\AppStore\InAppPurchaseV2CreateRequest;
@@ -157,13 +158,13 @@ class InAppPurchases extends \Cantie\AppStoreConnect\Services\Resource
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return csv
+     * @return InAppPurchasePricePointsResponse
      */
     public function listInAppPurchasesV2PricePoints($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('listInAppPurchasesV2PricePoints', [$params], csv::class);
+        return $this->call('listInAppPurchasesV2PricePoints', [$params], InAppPurchasePricePointsResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
