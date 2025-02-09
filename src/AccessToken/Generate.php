@@ -2,7 +2,7 @@
 
 namespace Cantie\AppStoreConnect\AccessToken;
 
-use Carbon\Carbon;
+use DateTime;
 use Firebase\JWT\JWT;
 
 class Generate
@@ -49,8 +49,8 @@ class Generate
     {
         return [
             'iss' => $issuerId,
-            'iat' => Carbon::now()->timestamp,
-            'exp' => Carbon::now()->addMinutes(10)->timestamp,
+            'iat' => (new DateTime())->getTimestamp(),
+            'exp' => (new DateTime())->modify("+10 minutes")->getTimestamp(),
             'aud' => 'appstoreconnect-v1'
         ];
     }

@@ -14,7 +14,6 @@
         "php": "^7.4|^8.0",
         "google/auth": "^1.28",
         "guzzlehttp/guzzle": "^7.0.1",
-        "nesbot/carbon": "^2.31",
         "firebase/php-jwt": "~6.0",
         "monolog/monolog": "^2.9||^3.0"
     },
