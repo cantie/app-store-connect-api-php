@@ -12,10 +12,10 @@
     "minimum-stability": "stable",
     "require": {
         "google/auth": "^1.10",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "^6.5",
         "nesbot/carbon": "^2.31",
         "firebase/php-jwt": "^5.3",
-        "monolog/monolog": "^2.0"
+        "monolog/monolog": "2.0.0-beta1"
     },
     "autoload": {
         "psr-4": {

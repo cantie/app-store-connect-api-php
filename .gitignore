@@ -1,3 +1,5 @@
 vendor/
 tools/
 examples/.dat
+.idea
+composer.lock
