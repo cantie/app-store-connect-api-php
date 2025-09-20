@@ -26,64 +26,47 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
+class AlternativeDistributionDomain_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	public $diagnosticType; // DISK_WRITES, HANGS, LAUNCHES
-	public $signature;
-	public $weight;
-	protected $insightType = DiagnosticInsight::class;
-	protected $insightDataType = '';
+	public $domain;
+	public $referenceName;
+	public $createdDate;
 
-	public function getDiagnosticType()
+	public function getDomain()
 	{
-		return $this->diagnosticType;
+		return $this->domain;
 	}
-	public function setDiagnosticType($diagnosticType)
+	public function setDomain($domain)
 	{
-		$this->diagnosticType = $diagnosticType;
+		$this->domain = $domain;
 		return $this;
 	}
-	public function getSignature()
+	public function getReferenceName()
 	{
-		return $this->signature;
+		return $this->referenceName;
 	}
-	public function setSignature($signature)
+	public function setReferenceName($referenceName)
 	{
-		$this->signature = $signature;
+		$this->referenceName = $referenceName;
 		return $this;
 	}
-	public function getWeight()
+	public function getCreatedDate()
 	{
-		return $this->weight;
+		return $this->createdDate;
 	}
-	public function setWeight($weight)
+	public function setCreatedDate($createdDate)
 	{
-		$this->weight = $weight;
-		return $this;
-	}
-	/**
-	* @return  DiagnosticInsight
-	*/
-	public function getInsight()
-	{
-		return $this->insight;
-	}
-	/**
-	* @param  DiagnosticInsight
-	*/
-	public function setInsight($insight)
-	{
-		$this->insight = $insight;
+		$this->createdDate = $createdDate;
 		return $this;
 	}
 
 }
 
-class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
+class AlternativeDistributionDomain extends \Cantie\AppStoreConnect\Model
 {
-	public $type = 'diagnosticSignatures';
+	public $type = 'alternativeDistributionDomains';
 	public $id;
-	protected $attributesType = DiagnosticSignature_Attributes::class;
+	protected $attributesType = AlternativeDistributionDomain_Attributes::class;
 	protected $attributesDataType = 'object';
 	protected $linksType = ResourceLinks::class;
 	protected $linksDataType = '';
@@ -107,14 +90,14 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 		return $this;
 	}
 	/**
-	* @return  DiagnosticSignature_Attributes
+	* @return  AlternativeDistributionDomain_Attributes
 	*/
 	public function getAttributes()
 	{
 		return $this->attributes;
 	}
 	/**
-	* @param  DiagnosticSignature_Attributes
+	* @param  AlternativeDistributionDomain_Attributes
 	*/
 	public function setAttributes($attributes)
 	{

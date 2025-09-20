@@ -26,59 +26,59 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore\Resource;
 
-use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionKeysResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionKeyResponse;
-use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionKeyCreateRequest;
+use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionDomainsResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionDomainResponse;
+use Cantie\AppStoreConnect\Services\AppStore\AlternativeDistributionDomainCreateRequest;
 
 /**
- * The "alternativeDistributionKeys" collection of methods.
+ * The "alternativeDistributionDomains" collection of methods.
  * Typical usage is:
  *  <code>
  *   $appStoreService = new Cantie\AppStoreConnect\Service\AppStore(...);
- *   $alternativeDistributionKeys = $appStoreService->alternativeDistributionKeys;
+ *   $alternativeDistributionDomains = $appStoreService->alternativeDistributionDomains;
  *  </code>
  */
-class AlternativeDistributionKeys extends \Cantie\AppStoreConnect\Services\Resource
+class AlternativeDistributionDomains extends \Cantie\AppStoreConnect\Services\Resource
 {
 
     /**
 	 * @param array $optParams Optional parameters.
-     * @return AlternativeDistributionKeysResponse
+     * @return AlternativeDistributionDomainsResponse
      */
-    public function listAlternativeDistributionKeys($optParams = [])
+    public function listAlternativeDistributionDomains($optParams = [])
     {
 		$params = [];
 		$params = array_merge($params, $optParams);
-        return $this->call('listAlternativeDistributionKeys', [$params], AlternativeDistributionKeysResponse::class);
+        return $this->call('listAlternativeDistributionDomains', [$params], AlternativeDistributionDomainsResponse::class);
     }
     /**
-	 * @param AlternativeDistributionKeyCreateRequest $postBody
-     * @return AlternativeDistributionKeyResponse
+	 * @param AlternativeDistributionDomainCreateRequest $postBody
+     * @return AlternativeDistributionDomainResponse
      */
-    public function createAlternativeDistributionKeys(AlternativeDistributionKeyCreateRequest $postBody)
+    public function createAlternativeDistributionDomains(AlternativeDistributionDomainCreateRequest $postBody)
     {
 		$params = ['postBody' => $postBody];
-        return $this->call('createAlternativeDistributionKeys', [$params], AlternativeDistributionKeyResponse::class);
+        return $this->call('createAlternativeDistributionDomains', [$params], AlternativeDistributionDomainResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
 	 * @param array $optParams Optional parameters.
-     * @return AlternativeDistributionKeyResponse
+     * @return AlternativeDistributionDomainResponse
      */
-    public function getAlternativeDistributionKeys($id, $optParams = [])
+    public function getAlternativeDistributionDomains($id, $optParams = [])
     {
 		$params = ['id' => $id];
 		$params = array_merge($params, $optParams);
-        return $this->call('getAlternativeDistributionKeys', [$params], AlternativeDistributionKeyResponse::class);
+        return $this->call('getAlternativeDistributionDomains', [$params], AlternativeDistributionDomainResponse::class);
     }
     /**
 	 * @param string $id the id of the requested resource
      * @return null
      */
-    public function deleteAlternativeDistributionKeys($id)
+    public function deleteAlternativeDistributionDomains($id)
     {
 		$params = ['id' => $id];
-        return $this->call('deleteAlternativeDistributionKeys', [$params], null);
+        return $this->call('deleteAlternativeDistributionDomains', [$params], null);
     }
 }
 

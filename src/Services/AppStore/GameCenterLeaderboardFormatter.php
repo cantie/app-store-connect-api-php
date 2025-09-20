@@ -34,6 +34,7 @@ class GameCenterLeaderboardFormatter extends \Cantie\AppStoreConnect\Model
 	public static $DECIMAL_POINT_2_PLACE = "DECIMAL_POINT_2_PLACE";
 	public static $DECIMAL_POINT_3_PLACE = "DECIMAL_POINT_3_PLACE";
 	public static $ELAPSED_TIME_MILLISECOND = "ELAPSED_TIME_MILLISECOND";
+	public static $ELAPSED_TIME_CENTISECOND = "ELAPSED_TIME_CENTISECOND";
 	public static $ELAPSED_TIME_MINUTE = "ELAPSED_TIME_MINUTE";
 	public static $ELAPSED_TIME_SECOND = "ELAPSED_TIME_SECOND";
 	public static $MONEY_POUND_DECIMAL = "MONEY_POUND_DECIMAL";

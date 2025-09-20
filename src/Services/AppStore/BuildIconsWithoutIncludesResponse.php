@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BuildIconsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Build::class;
+	protected $dataType = BuildIcon::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class BuildIconsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  Build[]
+	* @return  BuildIcon[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Build[]
+	* @param  BuildIcon[]
 	*/
 	public function setData($data)
 	{

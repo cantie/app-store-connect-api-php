@@ -26,6 +26,22 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
+class AppCustomProductPageVersionCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
+{
+	public $deepLink;
+
+	public function getDeepLink()
+	{
+		return $this->deepLink;
+	}
+	public function setDeepLink($deepLink)
+	{
+		$this->deepLink = $deepLink;
+		return $this;
+	}
+
+}
+
 class AppCustomProductPageVersionCreateRequest_Data_Relationships_AppCustomProductPage_Data extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'appCustomProductPages';
@@ -167,6 +183,8 @@ class AppCustomProductPageVersionCreateRequest_Data_Relationships extends \Canti
 class AppCustomProductPageVersionCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'appCustomProductPageVersions';
+	protected $attributesType = AppCustomProductPageVersionCreateRequest_Data_Attributes::class;
+	protected $attributesDataType = 'object';
 	protected $relationshipsType = AppCustomProductPageVersionCreateRequest_Data_Relationships::class;
 	protected $relationshipsDataType = 'object';
 
@@ -177,6 +195,21 @@ class AppCustomProductPageVersionCreateRequest_Data extends \Cantie\AppStoreConn
 	public function setType($type)
 	{
 		$this->type = $type;
+		return $this;
+	}
+	/**
+	* @return  AppCustomProductPageVersionCreateRequest_Data_Attributes
+	*/
+	public function getAttributes()
+	{
+		return $this->attributes;
+	}
+	/**
+	* @param  AppCustomProductPageVersionCreateRequest_Data_Attributes
+	*/
+	public function setAttributes($attributes)
+	{
+		$this->attributes = $attributes;
 		return $this;
 	}
 	/**

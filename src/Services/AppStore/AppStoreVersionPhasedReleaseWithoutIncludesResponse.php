@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppStoreVersionPhasedReleaseWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = AppStoreVersion::class;
+	protected $dataType = AppStoreVersionPhasedRelease::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  AppStoreVersion
+	* @return  AppStoreVersionPhasedRelease
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  AppStoreVersion
+	* @param  AppStoreVersionPhasedRelease
 	*/
 	public function setData($data)
 	{

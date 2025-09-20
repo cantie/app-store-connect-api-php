@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BetaAppReviewSubmissionWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Build::class;
+	protected $dataType = BetaAppReviewSubmission::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  Build
+	* @return  BetaAppReviewSubmission
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Build
+	* @param  BetaAppReviewSubmission
 	*/
 	public function setData($data)
 	{

@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class RoutingAppCoverageWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = AppStoreVersion::class;
+	protected $dataType = RoutingAppCoverage::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  AppStoreVersion
+	* @return  RoutingAppCoverage
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  AppStoreVersion
+	* @param  RoutingAppCoverage
 	*/
 	public function setData($data)
 	{

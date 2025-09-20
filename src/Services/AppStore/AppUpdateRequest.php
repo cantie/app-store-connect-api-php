@@ -34,7 +34,6 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 	public $subscriptionStatusUrlVersion; // 
 	public $subscriptionStatusUrlForSandbox;
 	public $subscriptionStatusUrlVersionForSandbox; // 
-	public $availableInNewTerritories;
 	public $contentRightsDeclaration; // DOES_NOT_USE_THIRD_PARTY_CONTENT, USES_THIRD_PARTY_CONTENT
 
 	public function getBundleId()
@@ -103,15 +102,6 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 		$this->subscriptionStatusUrlVersionForSandbox = $subscriptionStatusUrlVersionForSandbox;
 		return $this;
 	}
-	public function getAvailableInNewTerritories()
-	{
-		return $this->availableInNewTerritories;
-	}
-	public function setAvailableInNewTerritories($availableInNewTerritories)
-	{
-		$this->availableInNewTerritories = $availableInNewTerritories;
-		return $this;
-	}
 	public function getContentRightsDeclaration()
 	{
 		return $this->contentRightsDeclaration;
@@ -124,152 +114,12 @@ class AppUpdateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 
 }
 
-class AppUpdateRequest_Data_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
-{
-	public $type = 'appPrices';
-	public $id;
-
-	public function getType()
-	{
-		return $this->type;
-	}
-	public function setType($type)
-	{
-		$this->type = $type;
-		return $this;
-	}
-	public function getId()
-	{
-		return $this->id;
-	}
-	public function setId($id)
-	{
-		$this->id = $id;
-		return $this;
-	}
-
-}
-
-class AppUpdateRequest_Data_Relationships_Prices extends \Cantie\AppStoreConnect\Model
-{
-	protected $dataType = AppUpdateRequest_Data_Relationships_Prices_Data::class;
-	protected $dataDataType = 'array';
-
-	/**
-	* @return  AppUpdateRequest_Data_Relationships_Prices_Data[]
-	*/
-	public function getData()
-	{
-		return $this->data;
-	}
-	/**
-	* @param  AppUpdateRequest_Data_Relationships_Prices_Data[]
-	*/
-	public function setData($data)
-	{
-		$this->data = $data;
-		return $this;
-	}
-
-}
-
-class AppUpdateRequest_Data_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
-{
-	public $type = 'territories';
-	public $id;
-
-	public function getType()
-	{
-		return $this->type;
-	}
-	public function setType($type)
-	{
-		$this->type = $type;
-		return $this;
-	}
-	public function getId()
-	{
-		return $this->id;
-	}
-	public function setId($id)
-	{
-		$this->id = $id;
-		return $this;
-	}
-
-}
-
-class AppUpdateRequest_Data_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
-{
-	protected $dataType = AppUpdateRequest_Data_Relationships_AvailableTerritories_Data::class;
-	protected $dataDataType = 'array';
-
-	/**
-	* @return  AppUpdateRequest_Data_Relationships_AvailableTerritories_Data[]
-	*/
-	public function getData()
-	{
-		return $this->data;
-	}
-	/**
-	* @param  AppUpdateRequest_Data_Relationships_AvailableTerritories_Data[]
-	*/
-	public function setData($data)
-	{
-		$this->data = $data;
-		return $this;
-	}
-
-}
-
-class AppUpdateRequest_Data_Relationships extends \Cantie\AppStoreConnect\Model
-{
-	protected $pricesType = AppUpdateRequest_Data_Relationships_Prices::class;
-	protected $pricesDataType = 'object';
-	protected $availableTerritoriesType = AppUpdateRequest_Data_Relationships_AvailableTerritories::class;
-	protected $availableTerritoriesDataType = 'object';
-
-	/**
-	* @return  AppUpdateRequest_Data_Relationships_Prices
-	*/
-	public function getPrices()
-	{
-		return $this->prices;
-	}
-	/**
-	* @param  AppUpdateRequest_Data_Relationships_Prices
-	*/
-	public function setPrices($prices)
-	{
-		$this->prices = $prices;
-		return $this;
-	}
-	/**
-	* @return  AppUpdateRequest_Data_Relationships_AvailableTerritories
-	*/
-	public function getAvailableTerritories()
-	{
-		return $this->availableTerritories;
-	}
-	/**
-	* @param  AppUpdateRequest_Data_Relationships_AvailableTerritories
-	*/
-	public function setAvailableTerritories($availableTerritories)
-	{
-		$this->availableTerritories = $availableTerritories;
-		return $this;
-	}
-
-}
-
 class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
 	public $type = 'apps';
 	public $id;
 	protected $attributesType = AppUpdateRequest_Data_Attributes::class;
 	protected $attributesDataType = 'object';
-	protected $relationshipsType = AppUpdateRequest_Data_Relationships::class;
-	protected $relationshipsDataType = 'object';
 
 	public function getType()
 	{
@@ -304,21 +154,6 @@ class AppUpdateRequest_Data extends \Cantie\AppStoreConnect\Model
 		$this->attributes = $attributes;
 		return $this;
 	}
-	/**
-	* @return  AppUpdateRequest_Data_Relationships
-	*/
-	public function getRelationships()
-	{
-		return $this->relationships;
-	}
-	/**
-	* @param  AppUpdateRequest_Data_Relationships
-	*/
-	public function setRelationships($relationships)
-	{
-		$this->relationships = $relationships;
-		return $this;
-	}
 
 }
 
@@ -326,8 +161,6 @@ class AppUpdateRequest extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = AppUpdateRequest_Data::class;
 	protected $dataDataType = 'object';
-	protected $includedType = AppPriceInlineCreate::class;
-	protected $includedDataType = 'array';
 
 	/**
 	* @return  AppUpdateRequest_Data
@@ -342,21 +175,6 @@ class AppUpdateRequest extends \Cantie\AppStoreConnect\Model
 	public function setData($data)
 	{
 		$this->data = $data;
-		return $this;
-	}
-	/**
-	* @return  AppPriceInlineCreate[]
-	*/
-	public function getIncluded()
-	{
-		return $this->included;
-	}
-	/**
-	* @param  AppPriceInlineCreate[]
-	*/
-	public function setIncluded($included)
-	{
-		$this->included = $included;
 		return $this;
 	}
 

@@ -26,67 +26,37 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class DiagnosticSignature_Attributes extends \Cantie\AppStoreConnect\Model
+class AlternativeDistributionDomainCreateRequest_Data_Attributes extends \Cantie\AppStoreConnect\Model
 {
-	public $diagnosticType; // DISK_WRITES, HANGS, LAUNCHES
-	public $signature;
-	public $weight;
-	protected $insightType = DiagnosticInsight::class;
-	protected $insightDataType = '';
+	public $domain;
+	public $referenceName;
 
-	public function getDiagnosticType()
+	public function getDomain()
 	{
-		return $this->diagnosticType;
+		return $this->domain;
 	}
-	public function setDiagnosticType($diagnosticType)
+	public function setDomain($domain)
 	{
-		$this->diagnosticType = $diagnosticType;
+		$this->domain = $domain;
 		return $this;
 	}
-	public function getSignature()
+	public function getReferenceName()
 	{
-		return $this->signature;
+		return $this->referenceName;
 	}
-	public function setSignature($signature)
+	public function setReferenceName($referenceName)
 	{
-		$this->signature = $signature;
-		return $this;
-	}
-	public function getWeight()
-	{
-		return $this->weight;
-	}
-	public function setWeight($weight)
-	{
-		$this->weight = $weight;
-		return $this;
-	}
-	/**
-	* @return  DiagnosticInsight
-	*/
-	public function getInsight()
-	{
-		return $this->insight;
-	}
-	/**
-	* @param  DiagnosticInsight
-	*/
-	public function setInsight($insight)
-	{
-		$this->insight = $insight;
+		$this->referenceName = $referenceName;
 		return $this;
 	}
 
 }
 
-class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
+class AlternativeDistributionDomainCreateRequest_Data extends \Cantie\AppStoreConnect\Model
 {
-	public $type = 'diagnosticSignatures';
-	public $id;
-	protected $attributesType = DiagnosticSignature_Attributes::class;
+	public $type = 'alternativeDistributionDomains';
+	protected $attributesType = AlternativeDistributionDomainCreateRequest_Data_Attributes::class;
 	protected $attributesDataType = 'object';
-	protected $linksType = ResourceLinks::class;
-	protected $linksDataType = '';
 
 	public function getType()
 	{
@@ -97,43 +67,42 @@ class DiagnosticSignature extends \Cantie\AppStoreConnect\Model
 		$this->type = $type;
 		return $this;
 	}
-	public function getId()
-	{
-		return $this->id;
-	}
-	public function setId($id)
-	{
-		$this->id = $id;
-		return $this;
-	}
 	/**
-	* @return  DiagnosticSignature_Attributes
+	* @return  AlternativeDistributionDomainCreateRequest_Data_Attributes
 	*/
 	public function getAttributes()
 	{
 		return $this->attributes;
 	}
 	/**
-	* @param  DiagnosticSignature_Attributes
+	* @param  AlternativeDistributionDomainCreateRequest_Data_Attributes
 	*/
 	public function setAttributes($attributes)
 	{
 		$this->attributes = $attributes;
 		return $this;
 	}
+
+}
+
+class AlternativeDistributionDomainCreateRequest extends \Cantie\AppStoreConnect\Model
+{
+	protected $dataType = AlternativeDistributionDomainCreateRequest_Data::class;
+	protected $dataDataType = 'object';
+
 	/**
-	* @return  ResourceLinks
+	* @return  AlternativeDistributionDomainCreateRequest_Data
 	*/
-	public function getLinks()
+	public function getData()
 	{
-		return $this->links;
+		return $this->data;
 	}
 	/**
-	* @param  ResourceLinks
+	* @param  AlternativeDistributionDomainCreateRequest_Data
 	*/
-	public function setLinks($links)
+	public function setData($data)
 	{
-		$this->links = $links;
+		$this->data = $data;
 		return $this;
 	}
 

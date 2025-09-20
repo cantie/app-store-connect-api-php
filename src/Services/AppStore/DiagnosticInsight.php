@@ -26,52 +26,82 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class AppResponse extends \Cantie\AppStoreConnect\Model
+class DiagnosticInsight_ReferenceVersions extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = App::class;
-	protected $dataDataType = '';
-	protected $includedType = [AppEncryptionDeclaration::class, CiProduct::class, BetaGroup::class, AppStoreVersion::class, PrereleaseVersion::class, BetaAppLocalization::class, Build::class, BetaLicenseAgreement::class, BetaAppReviewDetail::class, AppInfo::class, AppClip::class, EndUserLicenseAgreement::class, AppPreOrder::class, InAppPurchase::class, SubscriptionGroup::class, GameCenterEnabledVersion::class, AppCustomProductPage::class, InAppPurchaseV2::class, PromotedPurchase::class, AppEvent::class, ReviewSubmission::class, SubscriptionGracePeriod::class, GameCenterDetail::class, AppStoreVersionExperimentV2::class];
-	protected $includedDataType = 'array[*]';
-	protected $linksType = DocumentLinks::class;
-	protected $linksDataType = '';
+	public $version;
+	public $value;
+
+	public function getVersion()
+	{
+		return $this->version;
+	}
+	public function setVersion($version)
+	{
+		$this->version = $version;
+		return $this;
+	}
+	public function getValue()
+	{
+		return $this->value;
+	}
+	public function setValue($value)
+	{
+		$this->value = $value;
+		return $this;
+	}
+
+}
+
+class DiagnosticInsight extends \Cantie\AppStoreConnect\Model
+{
+	public $insightType; // 
+	public $direction; // 
+	protected $referenceVersionsType = DiagnosticInsight_ReferenceVersions::class;
+	protected $referenceVersionsDataType = 'array';
 
 	/**
-	* @return  App
+	* @return  string
 	*/
-	public function getData()
+	public function getInsightType()
 	{
-		return $this->data;
+		return $this->insightType;
 	}
 	/**
-	* @param  App
+	* @param  string
 	*/
-	public function setData($data)
+	public function setInsightType($insightType)
 	{
-		$this->data = $data;
-		return $this;
-	}
-	public function getIncluded()
-	{
-		return $this->included;
-	}
-	public function setIncluded($included)
-	{
-		$this->included = $included;
+		$this->insightType = $insightType;
 		return $this;
 	}
 	/**
-	* @return  DocumentLinks
+	* @return  string
 	*/
-	public function getLinks()
+	public function getDirection()
 	{
-		return $this->links;
+		return $this->direction;
 	}
 	/**
-	* @param  DocumentLinks
+	* @param  string
 	*/
-	public function setLinks($links)
+	public function setDirection($direction)
 	{
-		$this->links = $links;
+		$this->direction = $direction;
+		return $this;
+	}
+	/**
+	* @return  DiagnosticInsight_ReferenceVersions[]
+	*/
+	public function getReferenceVersions()
+	{
+		return $this->referenceVersions;
+	}
+	/**
+	* @param  DiagnosticInsight_ReferenceVersions[]
+	*/
+	public function setReferenceVersions($referenceVersions)
+	{
+		$this->referenceVersions = $referenceVersions;
 		return $this;
 	}
 

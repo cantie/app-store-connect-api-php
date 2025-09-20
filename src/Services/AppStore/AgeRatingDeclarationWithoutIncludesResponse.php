@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AgeRatingDeclarationWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = AppStoreVersion::class;
+	protected $dataType = AgeRatingDeclaration::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  AppStoreVersion
+	* @return  AgeRatingDeclaration
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  AppStoreVersion
+	* @param  AgeRatingDeclaration
 	*/
 	public function setData($data)
 	{

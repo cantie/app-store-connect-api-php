@@ -37,7 +37,6 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 	public $subscriptionStatusUrlVersion; // 
 	public $subscriptionStatusUrlForSandbox;
 	public $subscriptionStatusUrlVersionForSandbox; // 
-	public $availableInNewTerritories;
 	public $contentRightsDeclaration; // DOES_NOT_USE_THIRD_PARTY_CONTENT, USES_THIRD_PARTY_CONTENT
 
 	public function getName()
@@ -131,15 +130,6 @@ class App_Attributes extends \Cantie\AppStoreConnect\Model
 	public function setSubscriptionStatusUrlVersionForSandbox($subscriptionStatusUrlVersionForSandbox)
 	{
 		$this->subscriptionStatusUrlVersionForSandbox = $subscriptionStatusUrlVersionForSandbox;
-		return $this;
-	}
-	public function getAvailableInNewTerritories()
-	{
-		return $this->availableInNewTerritories;
-	}
-	public function setAvailableInNewTerritories($availableInNewTerritories)
-	{
-		$this->availableInNewTerritories = $availableInNewTerritories;
 		return $this;
 	}
 	public function getContentRightsDeclaration()
@@ -1486,224 +1476,6 @@ class App_Relationships_PreOrder extends \Cantie\AppStoreConnect\Model
 
 }
 
-class App_Relationships_Prices_Links extends \Cantie\AppStoreConnect\Model
-{
-	public $self;
-	public $related;
-
-	public function getSelf()
-	{
-		return $this->self;
-	}
-	public function setSelf($self)
-	{
-		$this->self = $self;
-		return $this;
-	}
-	public function getRelated()
-	{
-		return $this->related;
-	}
-	public function setRelated($related)
-	{
-		$this->related = $related;
-		return $this;
-	}
-
-}
-
-class App_Relationships_Prices_Data extends \Cantie\AppStoreConnect\Model
-{
-	public $type = 'appPrices';
-	public $id;
-
-	public function getType()
-	{
-		return $this->type;
-	}
-	public function setType($type)
-	{
-		$this->type = $type;
-		return $this;
-	}
-	public function getId()
-	{
-		return $this->id;
-	}
-	public function setId($id)
-	{
-		$this->id = $id;
-		return $this;
-	}
-
-}
-
-class App_Relationships_Prices extends \Cantie\AppStoreConnect\Model
-{
-	protected $linksType = App_Relationships_Prices_Links::class;
-	protected $linksDataType = 'object';
-	protected $metaType = PagingInformation::class;
-	protected $metaDataType = '';
-	protected $dataType = App_Relationships_Prices_Data::class;
-	protected $dataDataType = 'array';
-
-	/**
-	* @return  App_Relationships_Prices_Links
-	*/
-	public function getLinks()
-	{
-		return $this->links;
-	}
-	/**
-	* @param  App_Relationships_Prices_Links
-	*/
-	public function setLinks($links)
-	{
-		$this->links = $links;
-		return $this;
-	}
-	/**
-	* @return  PagingInformation
-	*/
-	public function getMeta()
-	{
-		return $this->meta;
-	}
-	/**
-	* @param  PagingInformation
-	*/
-	public function setMeta($meta)
-	{
-		$this->meta = $meta;
-		return $this;
-	}
-	/**
-	* @return  App_Relationships_Prices_Data[]
-	*/
-	public function getData()
-	{
-		return $this->data;
-	}
-	/**
-	* @param  App_Relationships_Prices_Data[]
-	*/
-	public function setData($data)
-	{
-		$this->data = $data;
-		return $this;
-	}
-
-}
-
-class App_Relationships_AvailableTerritories_Links extends \Cantie\AppStoreConnect\Model
-{
-	public $self;
-	public $related;
-
-	public function getSelf()
-	{
-		return $this->self;
-	}
-	public function setSelf($self)
-	{
-		$this->self = $self;
-		return $this;
-	}
-	public function getRelated()
-	{
-		return $this->related;
-	}
-	public function setRelated($related)
-	{
-		$this->related = $related;
-		return $this;
-	}
-
-}
-
-class App_Relationships_AvailableTerritories_Data extends \Cantie\AppStoreConnect\Model
-{
-	public $type = 'territories';
-	public $id;
-
-	public function getType()
-	{
-		return $this->type;
-	}
-	public function setType($type)
-	{
-		$this->type = $type;
-		return $this;
-	}
-	public function getId()
-	{
-		return $this->id;
-	}
-	public function setId($id)
-	{
-		$this->id = $id;
-		return $this;
-	}
-
-}
-
-class App_Relationships_AvailableTerritories extends \Cantie\AppStoreConnect\Model
-{
-	protected $linksType = App_Relationships_AvailableTerritories_Links::class;
-	protected $linksDataType = 'object';
-	protected $metaType = PagingInformation::class;
-	protected $metaDataType = '';
-	protected $dataType = App_Relationships_AvailableTerritories_Data::class;
-	protected $dataDataType = 'array';
-
-	/**
-	* @return  App_Relationships_AvailableTerritories_Links
-	*/
-	public function getLinks()
-	{
-		return $this->links;
-	}
-	/**
-	* @param  App_Relationships_AvailableTerritories_Links
-	*/
-	public function setLinks($links)
-	{
-		$this->links = $links;
-		return $this;
-	}
-	/**
-	* @return  PagingInformation
-	*/
-	public function getMeta()
-	{
-		return $this->meta;
-	}
-	/**
-	* @param  PagingInformation
-	*/
-	public function setMeta($meta)
-	{
-		$this->meta = $meta;
-		return $this;
-	}
-	/**
-	* @return  App_Relationships_AvailableTerritories_Data[]
-	*/
-	public function getData()
-	{
-		return $this->data;
-	}
-	/**
-	* @param  App_Relationships_AvailableTerritories_Data[]
-	*/
-	public function setData($data)
-	{
-		$this->data = $data;
-		return $this;
-	}
-
-}
-
 class App_Relationships_InAppPurchases_Links extends \Cantie\AppStoreConnect\Model
 {
 	public $self;
@@ -2897,10 +2669,6 @@ class App_Relationships extends \Cantie\AppStoreConnect\Model
 	protected $endUserLicenseAgreementDataType = 'object';
 	protected $preOrderType = App_Relationships_PreOrder::class;
 	protected $preOrderDataType = 'object';
-	protected $pricesType = App_Relationships_Prices::class;
-	protected $pricesDataType = 'object';
-	protected $availableTerritoriesType = App_Relationships_AvailableTerritories::class;
-	protected $availableTerritoriesDataType = 'object';
 	protected $inAppPurchasesType = App_Relationships_InAppPurchases::class;
 	protected $inAppPurchasesDataType = 'object';
 	protected $subscriptionGroupsType = App_Relationships_SubscriptionGroups::class;
@@ -3117,36 +2885,6 @@ class App_Relationships extends \Cantie\AppStoreConnect\Model
 	public function setPreOrder($preOrder)
 	{
 		$this->preOrder = $preOrder;
-		return $this;
-	}
-	/**
-	* @return  App_Relationships_Prices
-	*/
-	public function getPrices()
-	{
-		return $this->prices;
-	}
-	/**
-	* @param  App_Relationships_Prices
-	*/
-	public function setPrices($prices)
-	{
-		$this->prices = $prices;
-		return $this;
-	}
-	/**
-	* @return  App_Relationships_AvailableTerritories
-	*/
-	public function getAvailableTerritories()
-	{
-		return $this->availableTerritories;
-	}
-	/**
-	* @param  App_Relationships_AvailableTerritories
-	*/
-	public function setAvailableTerritories($availableTerritories)
-	{
-		$this->availableTerritories = $availableTerritories;
 		return $this;
 	}
 	/**

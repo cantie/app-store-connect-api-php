@@ -28,7 +28,7 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BuildsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = PrereleaseVersion::class;
+	protected $dataType = Build::class;
 	protected $dataDataType = 'array';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
@@ -36,14 +36,14 @@ class BuildsWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 	protected $metaDataType = '';
 
 	/**
-	* @return  PrereleaseVersion[]
+	* @return  Build[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  PrereleaseVersion[]
+	* @param  Build[]
 	*/
 	public function setData($data)
 	{

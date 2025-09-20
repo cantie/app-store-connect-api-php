@@ -26,22 +26,24 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class BetaAppReviewDetailWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
+class AlternativeDistributionKeysResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = BetaAppReviewDetail::class;
-	protected $dataDataType = '';
-	protected $linksType = DocumentLinks::class;
+	protected $dataType = AlternativeDistributionKey::class;
+	protected $dataDataType = 'array';
+	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';
+	protected $metaType = PagingInformation::class;
+	protected $metaDataType = '';
 
 	/**
-	* @return  BetaAppReviewDetail
+	* @return  AlternativeDistributionKey[]
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  BetaAppReviewDetail
+	* @param  AlternativeDistributionKey[]
 	*/
 	public function setData($data)
 	{
@@ -49,18 +51,33 @@ class BetaAppReviewDetailWithoutIncludesResponse extends \Cantie\AppStoreConnect
 		return $this;
 	}
 	/**
-	* @return  DocumentLinks
+	* @return  PagedDocumentLinks
 	*/
 	public function getLinks()
 	{
 		return $this->links;
 	}
 	/**
-	* @param  DocumentLinks
+	* @param  PagedDocumentLinks
 	*/
 	public function setLinks($links)
 	{
 		$this->links = $links;
+		return $this;
+	}
+	/**
+	* @return  PagingInformation
+	*/
+	public function getMeta()
+	{
+		return $this->meta;
+	}
+	/**
+	* @param  PagingInformation
+	*/
+	public function setMeta($meta)
+	{
+		$this->meta = $meta;
 		return $this;
 	}
 

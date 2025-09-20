@@ -26,41 +26,27 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class BetaAppReviewDetailWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
+class ErrorLinks extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = BetaAppReviewDetail::class;
-	protected $dataDataType = '';
-	protected $linksType = DocumentLinks::class;
-	protected $linksDataType = '';
+	public $about;
+	public $associated;
 
-	/**
-	* @return  BetaAppReviewDetail
-	*/
-	public function getData()
+	public function getAbout()
 	{
-		return $this->data;
+		return $this->about;
 	}
-	/**
-	* @param  BetaAppReviewDetail
-	*/
-	public function setData($data)
+	public function setAbout($about)
 	{
-		$this->data = $data;
+		$this->about = $about;
 		return $this;
 	}
-	/**
-	* @return  DocumentLinks
-	*/
-	public function getLinks()
+	public function getAssociated()
 	{
-		return $this->links;
+		return $this->associated;
 	}
-	/**
-	* @param  DocumentLinks
-	*/
-	public function setLinks($links)
+	public function setAssociated($associated)
 	{
-		$this->links = $links;
+		$this->associated = $associated;
 		return $this;
 	}
 

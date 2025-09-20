@@ -30,7 +30,7 @@ class AppsResponse extends \Cantie\AppStoreConnect\Model
 {
 	protected $dataType = App::class;
 	protected $dataDataType = 'array';
-	protected $includedType = [AppEncryptionDeclaration::class, CiProduct::class, BetaGroup::class, AppStoreVersion::class, PrereleaseVersion::class, BetaAppLocalization::class, Build::class, BetaLicenseAgreement::class, BetaAppReviewDetail::class, AppInfo::class, AppClip::class, EndUserLicenseAgreement::class, AppPreOrder::class, AppPrice::class, Territory::class, InAppPurchase::class, SubscriptionGroup::class, GameCenterEnabledVersion::class, AppCustomProductPage::class, InAppPurchaseV2::class, PromotedPurchase::class, AppEvent::class, ReviewSubmission::class, SubscriptionGracePeriod::class, GameCenterDetail::class, AppStoreVersionExperimentV2::class];
+	protected $includedType = [AppEncryptionDeclaration::class, CiProduct::class, BetaGroup::class, AppStoreVersion::class, PrereleaseVersion::class, BetaAppLocalization::class, Build::class, BetaLicenseAgreement::class, BetaAppReviewDetail::class, AppInfo::class, AppClip::class, EndUserLicenseAgreement::class, AppPreOrder::class, InAppPurchase::class, SubscriptionGroup::class, GameCenterEnabledVersion::class, AppCustomProductPage::class, InAppPurchaseV2::class, PromotedPurchase::class, AppEvent::class, ReviewSubmission::class, SubscriptionGracePeriod::class, GameCenterDetail::class, AppStoreVersionExperimentV2::class];
 	protected $includedDataType = 'array[*]';
 	protected $linksType = PagedDocumentLinks::class;
 	protected $linksDataType = '';

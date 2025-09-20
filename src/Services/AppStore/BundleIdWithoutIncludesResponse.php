@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BundleIdWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = Profile::class;
+	protected $dataType = BundleId::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  Profile
+	* @return  BundleId
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  Profile
+	* @param  BundleId
 	*/
 	public function setData($data)
 	{

@@ -26,22 +26,22 @@
 
 namespace Cantie\AppStoreConnect\Services\AppStore;
 
-class BetaAppReviewDetailWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
+class AlternativeDistributionDomainResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = BetaAppReviewDetail::class;
+	protected $dataType = AlternativeDistributionDomain::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  BetaAppReviewDetail
+	* @return  AlternativeDistributionDomain
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  BetaAppReviewDetail
+	* @param  AlternativeDistributionDomain
 	*/
 	public function setData($data)
 	{

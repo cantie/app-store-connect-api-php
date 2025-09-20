@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class AppPreOrderWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = App::class;
+	protected $dataType = AppPreOrder::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  App
+	* @return  AppPreOrder
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  App
+	* @param  AppPreOrder
 	*/
 	public function setData($data)
 	{

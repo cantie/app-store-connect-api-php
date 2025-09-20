@@ -28,20 +28,20 @@ namespace Cantie\AppStoreConnect\Services\AppStore;
 
 class BuildWithoutIncludesResponse extends \Cantie\AppStoreConnect\Model
 {
-	protected $dataType = BuildBetaDetail::class;
+	protected $dataType = Build::class;
 	protected $dataDataType = '';
 	protected $linksType = DocumentLinks::class;
 	protected $linksDataType = '';
 
 	/**
-	* @return  BuildBetaDetail
+	* @return  Build
 	*/
 	public function getData()
 	{
 		return $this->data;
 	}
 	/**
-	* @param  BuildBetaDetail
+	* @param  Build
 	*/
 	public function setData($data)
 	{
