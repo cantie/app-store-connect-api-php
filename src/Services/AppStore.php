@@ -5762,6 +5762,34 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                                 'location' => 'path',
                                 'type' => 'string'
                             ],
+                            'filter[buildAudienceType]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[expired]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[id]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[processingState]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[usesNonExemptEncryption]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'filter[version]' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
+                            'sort' => [
+                                'location' => 'query',
+                                'type' => 'array'
+                            ],
                             'fields[builds]' => [
                                 'location' => 'query',
                                 'type' => 'array'
@@ -5769,6 +5797,10 @@ class AppStore extends \Cantie\AppStoreConnect\Service
                             'limit' => [
                                 'location' => 'query',
                                 'type' => 'integer'
+                            ],
+                            'include' => [
+                                'location' => 'query',
+                                'type' => 'array'
                             ],
                         ]
                     ],

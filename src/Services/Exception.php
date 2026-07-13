@@ -38,10 +38,10 @@ class Exception extends AppleException
    * response.  Defaults to [].
    */
   public function __construct(
-      $message,
-      $code = 0,
-      Exception $previous = null,
-      $errors = array()
+    $message,
+    $code = 0,
+    ?Exception $previous = null,
+    $errors = array()
   ) {
     if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
       parent::__construct($message, $code, $previous);
